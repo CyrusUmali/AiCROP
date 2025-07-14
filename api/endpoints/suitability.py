@@ -96,7 +96,11 @@ async def get_gemini_suggestions(crop: str, deficiencies: dict) -> str:
     """
     try:
         # Set up the model
-        model = genai.GenerativeModel('gemini-2.5-pro-exp-03-25')
+        # model = genai.GenerativeModel('gemini-2.5-pro-exp-03-25')
+
+        model = genai.GenerativeModel('gemini-1.5-flash')  # Fast & free
+
+        #  model = genai.GenerativeModel('gemini-1.5-pro')  # or 'gemini-1.5-flash'
         
         # Build the prompt
         prompt = f"""Act as an agricultural expert. Provide specific recommendations for growing {crop} given these conditions:
