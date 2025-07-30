@@ -1,9 +1,10 @@
 from fastapi import APIRouter, HTTPException
+from fastapi.responses import StreamingResponse
 from pydantic import BaseModel, Field
 import pickle
 import pandas as pd
 from pathlib import Path
-from typing import List, Optional
+from typing import List, Optional, AsyncGenerator
 import google.generativeai as genai
 import os 
 from .crop_mapping import CROP_IMAGE_MAPPING
@@ -31,6 +32,53 @@ try:
 
 except FileNotFoundError as e:
     raise RuntimeError(f"Model files not found: {e}")
+
+
+async def stream_gemini_suggestions(crop: str, deficiencies: dict) -> AsyncGenerator[str, None]:
+    """
+    Stream actionable farming suggestions using Google's Gemini API
+    
+    Args:
+        crop: Name of the crop
+        deficiencies: Dictionary of deficient parameters and their values
+    
+    Yields:
+        String chunks with formatted suggestions
+    """
+    try:
+        model = genai.GenerativeModel('gemini-1.5-flash')
+        
+        prompt = f"""Act as an agricultural expert. Provide specific recommendations for growing {crop} given these conditions:
+        
+        Deficient Parameters:
+        {", ".join(deficiencies.keys())}
+        
+        Current vs Ideal Values:
+        { {param: f"{details.current} (ideal: {details.ideal_min}-{details.ideal_max})" 
+           for param, details in deficiencies.items()}
+        }
+
+        Provide:
+        1. Specific fertilizer recommendations with quantities
+        2. Soil management techniques
+        3. Environmental adjustments
+        4. Any other relevant practices
+        
+        Important formatting instructions:
+        - Format as a clean bulleted list using simple hyphens (-) or bullet points (•)
+        - Do not use asterisks (*) or other unnecessary decorative markings
+        - Keep items concise and actionable
+        - Use plain text suitable for farmers
+        - Avoid any markdown or rich text formatting"""
+
+        # Generate content with streaming
+        response = await model.generate_content_async(prompt, stream=True)
+        
+        async for chunk in response:
+            yield chunk.text
+
+    except Exception as e:
+        yield f"Error: {str(e)}"
 
 class CropSuitabilityRequest(BaseModel):
     """Request model for crop suitability check"""
@@ -267,17 +315,17 @@ async def check_crop_suitability(request: CropSuitabilityRequest):
             detail=f"Internal server error: {str(e)}"
         )
 
+
 @router.post(
-    "/get-suggestions",
-    response_model=SuggestionResponse,
-    summary="Get AI-powered improvement suggestions",
-    description="""Generates detailed improvement suggestions for crop cultivation
+    "/get-suggestions-stream",
+    summary="Stream AI-powered improvement suggestions",
+    description="""Streams detailed improvement suggestions for crop cultivation
     based on parameter deficiencies using Google's Gemini AI.""",
     tags=["Crop Analysis"]
 )
-async def get_improvement_suggestions(request: SuggestionRequest):
+async def get_improvement_suggestions_stream(request: SuggestionRequest):
     """
-    Get AI-powered suggestions for improving crop cultivation conditions
+    Stream AI-powered suggestions for improving crop cultivation conditions
     
     Requires the original parameters plus a list of deficient parameters
     that need improvement suggestions.
@@ -310,15 +358,15 @@ async def get_improvement_suggestions(request: SuggestionRequest):
         }
 
         if not deficiencies:
-            return SuggestionResponse(
-                suggestions="No significant deficiencies found in the selected parameters.",
+            return StreamingResponse(
+                iter(["No significant deficiencies found in the selected parameters."]),
+                media_type="text/plain"
             )
 
-        # Get AI suggestions
-        suggestions = await get_gemini_suggestions(request.parameters.crop, deficiencies)
-
-        return SuggestionResponse(
-            suggestions=suggestions
+        # Return streaming response
+        return StreamingResponse(
+            stream_gemini_suggestions(request.parameters.crop, deficiencies),
+            media_type="text/plain"
         )
         
     except HTTPException:
