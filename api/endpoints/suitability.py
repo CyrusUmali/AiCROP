@@ -18,6 +18,16 @@ MODEL_PATH = MODEL_DIR / "models.pkl"
 LE_PATH = MODEL_DIR / "label_encoder.pkl"
 DATASET_PATH = Path("dataset/crop_recommendation.csv")
 
+# Language mapping
+LANGUAGE_MAPPING = {
+    "en": "English",
+    "fil": "Filipino",
+    "hi": "Hindi",
+    "es": "Spanish",
+    "fr": "French"
+    # Add more languages as needed
+}
+
 # Load models and encoder
 try:
     with open(MODEL_PATH, "rb") as f:
@@ -34,19 +44,23 @@ except FileNotFoundError as e:
     raise RuntimeError(f"Model files not found: {e}")
 
 
-async def stream_gemini_suggestions(crop: str, deficiencies: dict) -> AsyncGenerator[str, None]:
+async def stream_gemini_suggestions(crop: str, deficiencies: dict, language: str = "en") -> AsyncGenerator[str, None]:
     """
     Stream actionable farming suggestions using Google's Gemini API
     
     Args:
         crop: Name of the crop
         deficiencies: Dictionary of deficient parameters and their values
+        language: Language code for the response (default: 'en' for English)
     
     Yields:
         String chunks with formatted suggestions
     """
     try:
         model = genai.GenerativeModel('gemini-1.5-flash')
+        
+        # Get language name or default to English
+        language_name = LANGUAGE_MAPPING.get(language, "English")
         
         prompt = f"""Act as an agricultural expert. Provide specific recommendations for growing {crop} given these conditions:
         
@@ -58,18 +72,23 @@ async def stream_gemini_suggestions(crop: str, deficiencies: dict) -> AsyncGener
            for param, details in deficiencies.items()}
         }
 
+        Important Instructions:
+        - Provide recommendations in {language_name} language
+        - Use simple terms understandable by farmers
+        - Include local measurement units where applicable
+        - Consider regional agricultural practices
+
         Provide:
         1. Specific fertilizer recommendations with quantities
         2. Soil management techniques
         3. Environmental adjustments
         4. Any other relevant practices
         
-        Important formatting instructions:
-        - Format as a clean bulleted list using simple hyphens (-) or bullet points (•)
-        - Do not use asterisks (*) or other unnecessary decorative markings
-        - Keep items concise and actionable
-        - Use plain text suitable for farmers
-        - Avoid any markdown or rich text formatting"""
+        Formatting instructions:
+        - Use simple bullet points with hyphens (-)
+        - Keep each point concise
+        - Avoid complex formatting
+        - Use plain text only"""
 
         # Generate content with streaming
         response = await model.generate_content_async(prompt, stream=True)
@@ -119,11 +138,15 @@ class SuitabilityResponse(BaseModel):
 
 class SuggestionRequest(BaseModel):
     """Request model for getting AI suggestions"""
-    # Reuse the same parameters as CropSuitabilityRequest
     parameters: CropSuitabilityRequest
     deficient_params: List[str] = Field(
         ...,
         description="List of parameters that need improvement suggestions"
+    )
+    language: str = Field(
+        "en",
+        description="Language code for the suggestions (e.g., 'en' for English, 'fil' for Filipino)",
+        example="fil"
     )
 
 class SuggestionResponse(BaseModel):
@@ -131,26 +154,24 @@ class SuggestionResponse(BaseModel):
     suggestions: str
     disclaimer: str = "AI suggestions should be verified with local agricultural experts"
 
-async def get_gemini_suggestions(crop: str, deficiencies: dict) -> str:
+async def get_gemini_suggestions(crop: str, deficiencies: dict, language: str = "en") -> str:
     """
     Generate actionable farming suggestions using Google's Gemini API
     
     Args:
         crop: Name of the crop
         deficiencies: Dictionary of deficient parameters and their values
+        language: Language code for the response
     
     Returns:
         String with formatted suggestions
     """
     try:
-        # Set up the model
-        # model = genai.GenerativeModel('gemini-2.5-pro-exp-03-25')
-
-        model = genai.GenerativeModel('gemini-1.5-flash')  # Fast & free
-
-        #  model = genai.GenerativeModel('gemini-1.5-pro')  # or 'gemini-1.5-flash'
+        model = genai.GenerativeModel('gemini-1.5-flash')
         
-        # Build the prompt
+        # Get language name or default to English
+        language_name = LANGUAGE_MAPPING.get(language, "English")
+        
         prompt = f"""Act as an agricultural expert. Provide specific recommendations for growing {crop} given these conditions:
         
         Deficient Parameters:
@@ -161,18 +182,23 @@ async def get_gemini_suggestions(crop: str, deficiencies: dict) -> str:
            for param, details in deficiencies.items()}
         }
 
+        Important Instructions:
+        - Provide recommendations in {language_name} language
+        - Use simple terms understandable by farmers
+        - Include local measurement units where applicable
+        - Consider regional agricultural practices
+
         Provide:
         1. Specific fertilizer recommendations with quantities
         2. Soil management techniques
         3. Environmental adjustments
         4. Any other relevant practices
         
-        Important formatting instructions:
-        - Format as a clean bulleted list using simple hyphens (-) or bullet points (•)
-        - Do not use asterisks (*) or other unnecessary decorative markings
-        - Keep items concise and actionable
-        - Use plain text suitable for farmers
-        - Avoid any markdown or rich text formatting"""
+        Formatting instructions:
+        - Use simple bullet points with hyphens (-)
+        - Keep each point concise
+        - Avoid complex formatting
+        - Use plain text only"""
 
         # Generate content
         response = await model.generate_content_async(prompt)
@@ -329,6 +355,11 @@ async def get_improvement_suggestions_stream(request: SuggestionRequest):
     
     Requires the original parameters plus a list of deficient parameters
     that need improvement suggestions.
+    
+    Parameters:
+    - parameters: Original crop parameters
+    - deficient_params: List of parameters needing improvement
+    - language: Language code for the response (e.g., 'en', 'fil')
     """
     try:
         # First validate the crop exists
@@ -338,6 +369,13 @@ async def get_improvement_suggestions_stream(request: SuggestionRequest):
             raise HTTPException(
                 status_code=400,
                 detail=f"Crop '{request.parameters.crop}' not found in our database"
+            )
+
+        # Validate language
+        if request.language not in LANGUAGE_MAPPING:
+            raise HTTPException(
+                status_code=400,
+                detail=f"Unsupported language code. Supported languages: {', '.join(LANGUAGE_MAPPING.keys())}"
             )
 
         # Prepare input data for parameter analysis
@@ -363,9 +401,13 @@ async def get_improvement_suggestions_stream(request: SuggestionRequest):
                 media_type="text/plain"
             )
 
-        # Return streaming response
+        # Return streaming response with language support
         return StreamingResponse(
-            stream_gemini_suggestions(request.parameters.crop, deficiencies),
+            stream_gemini_suggestions(
+                request.parameters.crop, 
+                deficiencies,
+                request.language
+            ),
             media_type="text/plain"
         )
         
