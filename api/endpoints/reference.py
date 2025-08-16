@@ -7,7 +7,8 @@ from .crop_mapping import CROP_IMAGE_MAPPING
 router = APIRouter()
 
 # Path to the dataset and models
-DATASET_PATH = Path("dataset/crop_recommendation.csv")
+# DATASET_PATH = Path("dataset/crop_recommendation.csv") 
+DATASET_PATH = Path("dataset/enhanced_crop_data.csv")
 MODEL_PATH = Path("precomputation/models.pkl")
 
 # Load models from pickle file
