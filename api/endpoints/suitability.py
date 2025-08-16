@@ -9,14 +9,29 @@ import google.generativeai as genai
 import os 
 from .crop_mapping import CROP_IMAGE_MAPPING
 
-router = APIRouter()
+router = APIRouter() 
 genai.configure(api_key="AIzaSyCWiZmhjdh1GmYKnvJMLvgsY-bh20wYOZs") 
 
-# Model paths (adjust according to your project structure)
-MODEL_DIR = Path("precomputation")
-MODEL_PATH = MODEL_DIR / "models.pkl"
-LE_PATH = MODEL_DIR / "label_encoder.pkl"
-DATASET_PATH = Path("dataset/crop_recommendation.csv")
+# Load all artifacts (including scaler)
+ARTIFACTS_PATH = Path("precomputation/training_artifacts.pkl")
+DATASET_PATH = Path("dataset/enhanced_crop_data.csv")
+
+try:
+    # Load training artifacts
+    with open(ARTIFACTS_PATH, "rb") as f:
+        artifacts = pickle.load(f)
+    
+    models = artifacts['models'] 
+    metrics = artifacts['metrics']
+    le = artifacts['label_encoder']
+    scaler = artifacts['scaler']
+    X_cols = artifacts['feature_columns']
+    
+    # Load dataset for reference (needed for parameter analysis)
+    df = pd.read_csv(DATASET_PATH)
+    
+except FileNotFoundError as e:
+    raise RuntimeError(f"Artifacts file not found: {e}")
 
 # Language mapping
 LANGUAGE_MAPPING = {
@@ -27,22 +42,6 @@ LANGUAGE_MAPPING = {
     "fr": "French"
     # Add more languages as needed
 }
-
-# Load models and encoder
-try:
-    with open(MODEL_PATH, "rb") as f:
-        models = pickle.load(f)
-    
-    with open(LE_PATH, "rb") as f:
-        le = pickle.load(f)
-    
-    # Load dataset for reference
-    df = pd.read_csv(DATASET_PATH)
-    X_cols = df.drop('label', axis=1).columns.tolist()
-
-except FileNotFoundError as e:
-    raise RuntimeError(f"Model files not found: {e}")
-
 
 async def stream_gemini_suggestions(crop: str, deficiencies: dict, language: str = "en") -> AsyncGenerator[str, None]:
     """
@@ -210,7 +209,6 @@ async def get_gemini_suggestions(crop: str, deficiencies: dict, language: str = 
             detail=f"Failed to generate suggestions: {str(e)}"
         )
 
-
 def analyze_parameters(input_data: pd.DataFrame, crop: str) -> dict[str, ParameterAnalysis]:
     """
     Compare input parameters with ideal ranges for the specified crop
@@ -292,7 +290,7 @@ async def check_crop_suitability(request: CropSuitabilityRequest):
             )
 
         # Determine which models to use
-        models_to_use = request.selected_models if request.selected_models else models.keys()
+        models_to_use = request.selected_models if request.selected_models else list(models.keys())
         valid_models = [m for m in models_to_use if m in models]
         
         if not valid_models:
@@ -305,7 +303,12 @@ async def check_crop_suitability(request: CropSuitabilityRequest):
         confidences = []
         for model_name in valid_models:
             model = models[model_name]
-            proba = model.predict_proba(input_data)[0][crop_idx]
+            # Use scaled data for Logistic Regression, raw for others
+            if model_name == 'Logistic Regression':
+                input_data_scaled = scaler.transform(input_data)
+                proba = model.predict_proba(input_data_scaled)[0][crop_idx]
+            else:
+                proba = model.predict_proba(input_data)[0][crop_idx]
             confidences.append(proba)
 
         # Calculate average confidence
@@ -340,7 +343,6 @@ async def check_crop_suitability(request: CropSuitabilityRequest):
             status_code=500,
             detail=f"Internal server error: {str(e)}"
         )
-
 
 @router.post(
     "/get-suggestions-stream",

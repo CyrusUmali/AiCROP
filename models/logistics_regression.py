@@ -10,7 +10,8 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 # Load the dataset
-data = pd.read_csv('../dataset/crop_recommendation.csv')
+# data = pd.read_csv('../dataset/crop_recommendation.csv')
+data = pd.read_csv('../dataset/enhanced_crop_data.csv')
 
 # Display the first few rows of the dataset
 print(data.head())
