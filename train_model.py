@@ -34,11 +34,11 @@ X_test_scaled = scaler.transform(X_test)
 # Train models
 models = {
     'Logistic Regression': LogisticRegression(max_iter=1000),
-    'Decision Tree': DecisionTreeClassifier(max_depth=5),
-    'Random Forest': RandomForestClassifier(n_estimators=100, max_depth=5),
+    'Decision Tree': DecisionTreeClassifier(),
+    'Random Forest': RandomForestClassifier(),
     'XGBoost': XGBClassifier(
         n_estimators=100,
-        max_depth=5,
+        max_depth=5, 
         learning_rate=0.1,
         subsample=0.8,
         colsample_bytree=0.8,
