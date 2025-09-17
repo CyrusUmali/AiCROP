@@ -1,4 +1,4 @@
-from fastapi import APIRouter, Query
+from fastapi import APIRouter, Query, HTTPException
 import pandas as pd
 from pathlib import Path
 import pickle
@@ -6,14 +6,26 @@ from .crop_mapping import CROP_IMAGE_MAPPING
 
 router = APIRouter()
 
-# Path to the dataset and models
-# DATASET_PATH = Path("dataset/crop_recommendation.csv") 
+# Path to the artifacts and dataset
+ARTIFACTS_PATH = Path("precomputation/training_artifacts.pkl")
 DATASET_PATH = Path("dataset/enhanced_crop_data.csv")
-MODEL_PATH = Path("precomputation/models.pkl")
 
-# Load models from pickle file
-with open(MODEL_PATH, "rb") as f:
-    models = pickle.load(f)
+try:
+    # Load training artifacts (same as the other code)
+    with open(ARTIFACTS_PATH, "rb") as f:
+        artifacts = pickle.load(f)
+    
+    models = artifacts['models'] 
+    metrics = artifacts['metrics']
+    le = artifacts['label_encoder']
+    scaler = artifacts['scaler']
+    X_cols = artifacts['feature_columns']
+    
+    # Load dataset for reference
+    df = pd.read_csv(DATASET_PATH)
+    
+except FileNotFoundError as e:
+    raise RuntimeError(f"Artifacts file not found: {e}")
 
 # Get available models from the loaded models dictionary
 AVAILABLE_MODELS = list(models.keys())
@@ -23,13 +35,10 @@ async def get_crop_requirements(model: str = Query(..., enum=AVAILABLE_MODELS)):
     try:
         # Validate the selected model
         if model not in AVAILABLE_MODELS:
-            return {
-                "status": "error",
-                "message": f"Model '{model}' is not available. Choose from {AVAILABLE_MODELS}."
-            }
-
-        # Read the dataset
-        df = pd.read_csv(DATASET_PATH)
+            raise HTTPException(
+                status_code=400,
+                detail=f"Model '{model}' is not available. Choose from {AVAILABLE_MODELS}."
+            )
 
         # Extract unique crops from the 'label' column
         crops = df["label"].unique()
@@ -42,54 +51,51 @@ async def get_crop_requirements(model: str = Query(..., enum=AVAILABLE_MODELS)):
             # Calculate min, max, and mean for each relevant column
             stats = crop_df.describe().loc[["min", "max", "mean"]].to_dict()
 
-            # Add predictions from the selected model
-            # Note: We need to ensure we're only using the features the model expects
-            model_features = crop_df.drop('label', axis=1)
-
-            # With this:
-            mean_features = crop_df.drop('label', axis=1).mean().values.reshape(1, -1)
-            prediction = int(models[model].predict(mean_features)[0])
+            # Prepare features for prediction (using the same X_cols as the other code)
+            mean_features = crop_df[X_cols].mean().values.reshape(1, -1)
+            
+            # Get prediction (handle scaling for Logistic Regression like the other code)
+            if model == 'Logistic Regression':
+                mean_features_scaled = scaler.transform(mean_features)
+                prediction = int(models[model].predict(mean_features_scaled)[0])
+            else:
+                prediction = int(models[model].predict(mean_features)[0])
 
             # Construct the crop requirement data with stats and image URL
             requirements[crop] = {
                 "requirements": {
-                    "N": {
-                        "min": round(stats["N"]["min"], 2),
-                        "max": round(stats["N"]["max"], 2),
-                        "mean": round(stats["N"]["mean"], 2)
+                    "soil_ph": {
+                        "min": round(stats["soil_ph"]["min"], 2),
+                        "max": round(stats["soil_ph"]["max"], 2),
+                        "mean": round(stats["soil_ph"]["mean"], 2)
                     },
-                    "P": {
-                        "min": round(stats["P"]["min"], 2),
-                        "max": round(stats["P"]["max"], 2),
-                        "mean": round(stats["P"]["mean"], 2)
-                    },
-                    "K": {
-                        "min": round(stats["K"]["min"], 2),
-                        "max": round(stats["K"]["max"], 2),
-                        "mean": round(stats["K"]["mean"], 2)
-                    },
-                    "temperature": {
-                        "min": round(stats["temperature"]["min"], 2),
-                        "max": round(stats["temperature"]["max"], 2),
-                        "mean": round(stats["temperature"]["mean"], 2)
+                    "fertility_ec": {
+                        "min": round(stats["fertility_ec"]["min"], 2),
+                        "max": round(stats["fertility_ec"]["max"], 2),
+                        "mean": round(stats["fertility_ec"]["mean"], 2)
                     },
                     "humidity": {
                         "min": round(stats["humidity"]["min"], 2),
                         "max": round(stats["humidity"]["max"], 2),
                         "mean": round(stats["humidity"]["mean"], 2)
                     },
-                    "ph": {
-                        "min": round(stats["ph"]["min"], 2),
-                        "max": round(stats["ph"]["max"], 2),
-                        "mean": round(stats["ph"]["mean"], 2)
+                    "sunlight": {
+                        "min": round(stats["sunlight"]["min"], 2),
+                        "max": round(stats["sunlight"]["max"], 2),
+                        "mean": round(stats["sunlight"]["mean"], 2)
                     },
-                    "rainfall": {
-                        "min": round(stats["rainfall"]["min"], 2),
-                        "max": round(stats["rainfall"]["max"], 2),
-                        "mean": round(stats["rainfall"]["mean"], 2)
+                    "soil_temp": {
+                        "min": round(stats["soil_temp"]["min"], 2),
+                        "max": round(stats["soil_temp"]["max"], 2),
+                        "mean": round(stats["soil_temp"]["mean"], 2)
+                    },
+                    "soil_moisture": {
+                        "min": round(stats["soil_moisture"]["min"], 2),
+                        "max": round(stats["soil_moisture"]["max"], 2),
+                        "mean": round(stats["soil_moisture"]["mean"], 2)
                     }
                 },
-                  "prediction": prediction, 
+                "prediction": prediction, 
                 "image_url": CROP_IMAGE_MAPPING.get(crop.lower(), None)
             }
 
@@ -98,5 +104,11 @@ async def get_crop_requirements(model: str = Query(..., enum=AVAILABLE_MODELS)):
             "data": requirements,
             "model_used": model
         }
+        
+    except HTTPException:
+        raise
     except Exception as e:
-        return {"status": "error", "message": str(e)}
+        raise HTTPException(
+            status_code=500,
+            detail=f"Internal server error: {str(e)}"
+        )

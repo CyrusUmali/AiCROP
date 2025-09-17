@@ -100,13 +100,12 @@ async def stream_gemini_suggestions(crop: str, deficiencies: dict, language: str
 
 class CropSuitabilityRequest(BaseModel):
     """Request model for crop suitability check"""
-    N: float = Field(..., description="Nitrogen content in soil (kg/ha)")
-    P: float = Field(..., description="Phosphorus content in soil (kg/ha)")
-    K: float = Field(..., description="Potassium content in soil (kg/ha)")
-    temperature: float = Field(..., description="Temperature in °C")
+    soil_ph: float = Field(..., description="Soil pH value")
+    fertility_ec: float = Field(..., description="Fertility/EC (Electrical Conductivity) in dS/m")
     humidity: float = Field(..., description="Relative humidity in %")
-    ph: float = Field(..., description="Soil pH value")
-    rainfall: float = Field(..., description="Rainfall in mm")
+    sunlight: float = Field(..., description="Sunlight intensity in hours/day or lux")
+    soil_temp: float = Field(..., description="Soil temperature in °C")
+    soil_moisture: float = Field(..., description="Soil moisture content in %")
     crop: str = Field(..., description="Crop to check suitability for")
     selected_models: Optional[List[str]] = Field(
         None, 
@@ -262,22 +261,20 @@ async def check_crop_suitability(request: CropSuitabilityRequest):
     """
     Check suitability of specific crop for given parameters
     
-    - **N**: Nitrogen content in soil (kg/ha)
-    - **P**: Phosphorus content in soil (kg/ha)
-    - **K**: Potassium content in soil (kg/ha)
-    - **temperature**: Temperature in °C
+    - **soil_ph**: Soil pH value
+    - **fertility_ec**: Fertility/EC (Electrical Conductivity) in uS/cm
     - **humidity**: Relative humidity in %
-    - **ph**: Soil pH value
-    - **rainfall**: Rainfall in mm
+    - **sunlight**:  lux
+    - **soil_temp**: Soil temperature in °C
+    - **soil_moisture**: Soil moisture content in %
     - **crop**: Crop to check suitability for
     - **selected_models**: Optional list of models to use (default: all)
     """
     try:
         # Prepare input data
         input_data = pd.DataFrame([[
-            request.N, request.P, request.K,
-            request.temperature, request.humidity,
-            request.ph, request.rainfall
+            request.soil_ph, request.fertility_ec, request.humidity,
+            request.sunlight, request.soil_temp, request.soil_moisture
         ]], columns=X_cols)
 
         # Validate crop exists
@@ -382,9 +379,8 @@ async def get_improvement_suggestions_stream(request: SuggestionRequest):
 
         # Prepare input data for parameter analysis
         input_data = pd.DataFrame([[
-            request.parameters.N, request.parameters.P, request.parameters.K,
-            request.parameters.temperature, request.parameters.humidity,
-            request.parameters.ph, request.parameters.rainfall
+            request.parameters.soil_ph, request.parameters.fertility_ec, request.parameters.humidity,
+            request.parameters.sunlight, request.parameters.soil_temp, request.parameters.soil_moisture
         ]], columns=X_cols)
 
         # Get parameter analysis

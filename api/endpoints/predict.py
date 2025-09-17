@@ -11,7 +11,7 @@ router = APIRouter()
 # Load all artifacts (including scaler)
 ARTIFACTS_PATH = Path("precomputation/training_artifacts.pkl")
 with open(ARTIFACTS_PATH, "rb") as f:
-    artifacts = pickle.load(f)
+    artifacts = pickle.load(f) 
 
 models = artifacts['models']
 metrics = artifacts['metrics']
@@ -20,13 +20,12 @@ scaler = artifacts['scaler']
 X_cols = artifacts['feature_columns']
 
 class CropPredictionRequest(BaseModel):
-    N: float
-    P: float
-    K: float
-    temperature: float
+    soil_ph: float
+    fertility_ec: float
     humidity: float
-    ph: float
-    rainfall: float
+    sunlight: float
+    soil_temp: float
+    soil_moisture: float 
 
 class PredictionResponse(BaseModel):
     crop: str
@@ -51,9 +50,9 @@ async def predict_crop(
     try:
         # Prepare input
         input_data = pd.DataFrame([[ 
-            request.N, request.P, request.K,
-            request.temperature, request.humidity,
-            request.ph, request.rainfall
+            request.soil_ph, request.fertility_ec, request.humidity,
+            request.sunlight, request.soil_temp,
+            request.soil_moisture
         ]], columns=X_cols)
 
         # Scale the input data for models that require it
