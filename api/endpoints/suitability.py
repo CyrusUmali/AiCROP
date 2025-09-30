@@ -56,7 +56,7 @@ async def stream_gemini_suggestions(crop: str, deficiencies: dict, language: str
         String chunks with formatted suggestions
     """
     try:
-        model = genai.GenerativeModel('gemini-1.5-flash')
+        model = genai.GenerativeModel('gemini-2.5-flash')
         
         # Get language name or default to English
         language_name = LANGUAGE_MAPPING.get(language, "English")
@@ -165,7 +165,7 @@ async def get_gemini_suggestions(crop: str, deficiencies: dict, language: str = 
         String with formatted suggestions
     """
     try:
-        model = genai.GenerativeModel('gemini-1.5-flash')
+        model = genai.GenerativeModel('gemini-2.5-flash')
         
         # Get language name or default to English
         language_name = LANGUAGE_MAPPING.get(language, "English")
