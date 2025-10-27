@@ -213,12 +213,12 @@ if __name__ == "__main__":
     generator.fill_crop_to_target(
         crop_name="lanzones",
         target_count=100,
-        ph_range=(5.0, 6.5), ph_mean=5.8,
-        ec_range=(1000, 1500), ec_mean=1250,
-        humidity_range=(80, 95), humidity_mean=88,
-        sunlight_range=(20000, 50000), sunlight_mean=30000,  # semi-shade
-        soil_temp_range=(22, 28), soil_temp_mean=25,
-        soil_moisture_range=(70, 90), soil_moisture_mean=80
+        ph_range=(3.5, 6.0), ph_mean=4.8,
+        ec_range=(850, 1100), ec_mean=950,
+        humidity_range=(67, 80), humidity_mean=75,
+        sunlight_range=(4300, 10000), sunlight_mean=8000,  # semi-shade
+        soil_temp_range=(26, 31), soil_temp_mean=27,
+        soil_moisture_range=(80, 99), soil_moisture_mean=90
     )
 
     # Durian - deep-rooted, high water demand, sun-loving
@@ -238,11 +238,11 @@ if __name__ == "__main__":
         crop_name="rambutan",
         target_count=100,
         ph_range=(5.0, 6.5), ph_mean=5.8,
-        ec_range=(1200, 1800), ec_mean=1500,
-        humidity_range=(75, 95), humidity_mean=85,
-        sunlight_range=(30000, 60000), sunlight_mean=45000,
-        soil_temp_range=(23, 29), soil_temp_mean=26,
-        soil_moisture_range=(65, 85), soil_moisture_mean=75
+        ec_range=(680, 780), ec_mean=720,
+        humidity_range=(75, 85), humidity_mean=80,
+        sunlight_range=(2000, 10000), sunlight_mean=5000,
+        soil_temp_range=(25, 29), soil_temp_mean=27,
+        soil_moisture_range=(85, 99), soil_moisture_mean=93
     )
 
     
@@ -515,12 +515,12 @@ if __name__ == "__main__":
     generator.fill_crop_to_target(
         crop_name="banana",
         target_count=100,
-        ph_range=(5.5, 6.5), ph_mean=6.0,
-        ec_range=(1500, 2500), ec_mean=2000,                 # very nutrient hungry
-        humidity_range=(70, 90), humidity_mean=82,
-        sunlight_range=(40000, 85000), sunlight_mean=65000,  # prefers filtered/full sun
-        soil_temp_range=(25, 32), soil_temp_mean=28,
-        soil_moisture_range=(65, 85), soil_moisture_mean=75  # highest water demand
+        ph_range=(4.0, 5.5), ph_mean=5.0,
+        ec_range=(700, 1000), ec_mean=850,                 # very nutrient hungry
+        humidity_range=(65, 85), humidity_mean=75,
+        sunlight_range=(8000, 20000), sunlight_mean=15000,   
+        soil_temp_range=(27, 32), soil_temp_mean=28,
+        soil_moisture_range=(80, 99), soil_moisture_mean=90  # highest water demand
     )
 
     # Jackfruit - deep roots, less fertility and moisture demanding than banana
@@ -540,11 +540,11 @@ if __name__ == "__main__":
         crop_name="coconut",
         target_count=100,
         ph_range=(5.0, 7.0), ph_mean=6.2,
-        ec_range=(1000, 2000), ec_mean=1500,
+        ec_range=(350, 500), ec_mean=420,
         humidity_range=(65, 90), humidity_mean=78,
-        sunlight_range=(50000, 95000), sunlight_mean=80000,  # full sun, high light tolerance
+        sunlight_range=(12000, 25000), sunlight_mean=17000,  # full sun, high light tolerance
         soil_temp_range=(24, 33), soil_temp_mean=29,
-        soil_moisture_range=(45, 70), soil_moisture_mean=58  # more drought-tolerant than banana
+        soil_moisture_range=(80, 99), soil_moisture_mean=90  # more drought-tolerant than banana
     )
 
 
@@ -741,12 +741,12 @@ if __name__ == "__main__":
     generator.fill_crop_to_target(
         crop_name="pineapple",
         target_count=100,
-        ph_range=(4.5, 6.0), ph_mean=5.3,
-        ec_range=(600, 1400), ec_mean=1000,             # lower fertility
-        humidity_range=(50, 75), humidity_mean=65,
-        sunlight_range=(50000, 100000), sunlight_mean=75000,
-        soil_temp_range=(20, 32), soil_temp_mean=25,
-        soil_moisture_range=(30, 60), soil_moisture_mean=45  # prefers well-drained, not waterlogged
+        ph_range=(4.0, 6.0), ph_mean=5.0,
+        ec_range=(430, 700), ec_mean=600,             # lower fertility
+        humidity_range=(70, 76), humidity_mean=72,
+        sunlight_range=(20000, 45000), sunlight_mean=36000,
+        soil_temp_range=(31, 34), soil_temp_mean=32,
+        soil_moisture_range=(95, 99), soil_moisture_mean=97# prefers well-drained, not waterlogged
     )
 
     # Gabi (Taro) - shade tolerant, high humidity & soil moisture, lower light

@@ -8,6 +8,9 @@ def run_streamlit():
 def run_fastapi():
     subprocess.run(["uvicorn", "api.main:app", "--reload"])
 
+    # uvicorn api.main:app --reload
+
+
 if __name__ == "__main__":
     # Start Streamlit in a separate thread
     streamlit_thread = threading.Thread(target=run_streamlit)
