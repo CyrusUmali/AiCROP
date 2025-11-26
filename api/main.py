@@ -26,8 +26,6 @@ app.include_router(
     tags=["predictions"]
 )
 
- 
-
 app.include_router(
     reference_endpoints.router,
     prefix="/api/v1",
@@ -54,4 +52,16 @@ def read_root():
             "crop-reference": "/api/v1/reference",
             "crop-suitability": "/api/v1/check-suitability", 
         }
+    }
+
+@app.get("/wakeup")
+def wakeup():
+    """
+    Wakeup endpoint to keep the service alive.
+    Returns a simple response to confirm the API is responsive.
+    """
+    return {
+        "status": "awake",
+        "message": "AgriTrack CropAI API is ready",
+        "timestamp": "current_timestamp"  # You can add actual timestamp if needed
     }
