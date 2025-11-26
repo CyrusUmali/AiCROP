@@ -187,19 +187,19 @@ if __name__ == "__main__":
 
     # Cacao - understory crop, shade-tolerant, very sensitive to drought
     generator.fill_crop_to_target(
-        crop_name="cacao",
+        crop_name="Cacao",
         target_count=100,
-        ph_range=(5.0, 6.5), ph_mean=5.6,
-        ec_range=(1000, 1600), ec_mean=1300,
-        humidity_range=(75, 95), humidity_mean=85,
-        sunlight_range=(15000, 40000), sunlight_mean=25000,  # lower due to shade needs
-        soil_temp_range=(22, 28), soil_temp_mean=25,
+        ph_range=(5.4, 6.5), ph_mean=6,
+        ec_range=(420, 460), ec_mean=440,
+        humidity_range=(70, 88), humidity_mean=85,
+        sunlight_range=(800, 1100), sunlight_mean=900,  # lower due to shade needs
+        soil_temp_range=(25, 28), soil_temp_mean=26.9,
         soil_moisture_range=(65, 85), soil_moisture_mean=75
     )
 
     # Guyabano - sun-tolerant, prefers well-drained soils
     generator.fill_crop_to_target(
-        crop_name="guyabano",
+        crop_name="Guyabano",
         target_count=100,
         ph_range=(5.5, 7.0), ph_mean=6.3,
         ec_range=(1000, 1800), ec_mean=1400,
@@ -211,19 +211,19 @@ if __name__ == "__main__":
 
     # Lanzones - very sensitive to drought, thrives in shaded/humid conditions
     generator.fill_crop_to_target(
-        crop_name="lanzones",
+        crop_name="Lanzones",
         target_count=100,
-        ph_range=(3.5, 6.0), ph_mean=4.8,
-        ec_range=(850, 1100), ec_mean=950,
-        humidity_range=(67, 80), humidity_mean=75,
-        sunlight_range=(4300, 10000), sunlight_mean=8000,  # semi-shade
+        ph_range=(4, 6.0), ph_mean=5.3,
+        ec_range=(488, 950), ec_mean=750,
+        humidity_range=(66, 86), humidity_mean=78,
+        sunlight_range=(800, 4500), sunlight_mean=2700,   
         soil_temp_range=(26, 31), soil_temp_mean=27,
-        soil_moisture_range=(80, 99), soil_moisture_mean=90
+        soil_moisture_range=(83, 99), soil_moisture_mean=90
     )
 
     # Durian - deep-rooted, high water demand, sun-loving
     generator.fill_crop_to_target(
-        crop_name="durian",
+        crop_name="Durian",
         target_count=100,
         ph_range=(5.0, 6.5), ph_mean=5.7,
         ec_range=(1200, 2000), ec_mean=1600,
@@ -235,13 +235,13 @@ if __name__ == "__main__":
 
     # Rambutan - requires high humidity, fertile soils, partial to full sun
     generator.fill_crop_to_target(
-        crop_name="rambutan",
+        crop_name="Rambutan",
         target_count=100,
         ph_range=(5.0, 6.5), ph_mean=5.8,
-        ec_range=(680, 780), ec_mean=720,
-        humidity_range=(75, 85), humidity_mean=80,
-        sunlight_range=(2000, 10000), sunlight_mean=5000,
-        soil_temp_range=(25, 29), soil_temp_mean=27,
+        ec_range=(488, 760), ec_mean=600,
+        humidity_range=(80, 87), humidity_mean=84   ,
+        sunlight_range=(800, 2300), sunlight_mean=1500,
+        soil_temp_range=(26, 28.5), soil_temp_mean=27,
         soil_moisture_range=(85, 99), soil_moisture_mean=93
     )
 
@@ -258,19 +258,19 @@ if __name__ == "__main__":
 
     # Calamansi - tropical, tolerates humidity, grows well in lowland Philippines
     generator.fill_crop_to_target(
-        crop_name="calamansi",
+        crop_name="Calamansi",
         target_count=100,
-        ph_range=(5.5, 7.0), ph_mean=6.3,
-        ec_range=(1000, 1800), ec_mean=1400,
-        humidity_range=(65, 85), humidity_mean=75,   # slightly higher humidity than orange
-        sunlight_range=(50000, 90000), sunlight_mean=70000,
-        soil_temp_range=(23, 30), soil_temp_mean=27,  # warmer preference
-        soil_moisture_range=(55, 75), soil_moisture_mean=65
+        ph_range=(4.8, 5.3), ph_mean=5,
+        ec_range=(430, 442), ec_mean=435,
+        humidity_range=(77, 81), humidity_mean=79,   
+        sunlight_range=(1800, 2100), sunlight_mean=2000,
+        soil_temp_range=(27.8, 29.3), soil_temp_mean=28.1,   
+        soil_moisture_range=(78, 86), soil_moisture_mean=82
     )
 
     # Orange - subtropical, prefers drier air, cooler winters help fruiting
     generator.fill_crop_to_target(
-        crop_name="orange",
+        crop_name="Orange",
         target_count=100,
         ph_range=(5.5, 7.2), ph_mean=6.5,
         ec_range=(1000, 1800), ec_mean=1400,
@@ -289,33 +289,33 @@ if __name__ == "__main__":
 
   # === Legumes Group ===
 
-    # Snap Bean - prefers cooler, moist conditions
+    #(a) Snap Bean - prefers cooler, moist conditions
     generator.fill_crop_to_target(
-        crop_name="snap bean",
+        crop_name="Snap Bean",
         target_count=100,
         ph_range=(6.0, 7.0), ph_mean=6.5,
-        ec_range=(1500, 2500), ec_mean=2000,
-        humidity_range=(60, 85), humidity_mean=72,
-        sunlight_range=(35000, 70000), sunlight_mean=50000,  # not extreme sun
-        soil_temp_range=(18, 26), soil_temp_mean=22,         # cooler soil preferred
-        soil_moisture_range=(55, 80), soil_moisture_mean=68
+        ec_range=(500, 800), ec_mean=600,
+        humidity_range=(69, 81), humidity_mean=77,
+        sunlight_range=(1100, 13100), sunlight_mean=7100,  
+        soil_temp_range=(23, 29), soil_temp_mean=26,         
+        soil_moisture_range=(84, 94), soil_moisture_mean=89
     )
 
-    # String Bean (Yardlong Bean) - tropical, heat-loving
+    # (a)String Bean (Yardlong Bean) - tropical, heat-loving
     generator.fill_crop_to_target(
-        crop_name="string bean",
+        crop_name="String Bean",
         target_count=100,
-        ph_range=(5.8, 6.8), ph_mean=6.3,
-        ec_range=(1500, 2500), ec_mean=2000,
-        humidity_range=(55, 75), humidity_mean=65,           # less humidity sensitive
-        sunlight_range=(50000, 90000), sunlight_mean=75000,  # loves strong sun
-        soil_temp_range=(22, 32), soil_temp_mean=27,         # hotter than snap bean
-        soil_moisture_range=(45, 70), soil_moisture_mean=55  # tolerates drier soil
+        ph_range=(6.3, 7.5), ph_mean=7,
+        ec_range=(500, 700), ec_mean=600,
+        humidity_range=(68, 80), humidity_mean=76,         
+        sunlight_range=(1000, 13000), sunlight_mean=7000,  
+        soil_temp_range=(26, 32), soil_temp_mean=29,        
+        soil_moisture_range=(85, 93), soil_moisture_mean=88   
     )
 
     # Sigarilyas (Winged Bean) - tropical, rainfall-adapted
     generator.fill_crop_to_target(
-        crop_name="sigarilyas",
+        crop_name="Sigarilyas",
         target_count=100,
         ph_range=(5.5, 6.8), ph_mean=6.2,
         ec_range=(1200, 2000), ec_mean=1600,
@@ -327,7 +327,7 @@ if __name__ == "__main__":
 
     # Mungbean - drought-tolerant, low fertility needs
     generator.fill_crop_to_target(
-        crop_name="mungbean",
+        crop_name="Mungbean",
         target_count=100,
         ph_range=(5.5, 7.0), ph_mean=6.2,
         ec_range=(800, 1600), ec_mean=1200,                  # less fertilizer needed
@@ -345,21 +345,21 @@ if __name__ == "__main__":
     
     # === Leafy Greens Group ===
 
-# Pechay - tropical, fast growth, high fertility & water demand
+#(*) Pechay - tropical, fast growth, high fertility & water demand
     generator.fill_crop_to_target(
-        crop_name="pechay",
+        crop_name="Pechay",
         target_count=100,
-        ph_range=(5.5, 6.5), ph_mean=6.0,
-        ec_range=(1500, 2500), ec_mean=2000,                # higher fertility demand
-        humidity_range=(70, 90), humidity_mean=82,          # thrives in humid tropics
-        sunlight_range=(35000, 70000), sunlight_mean=50000, # moderate sun
-        soil_temp_range=(20, 28), soil_temp_mean=24,        # warm tropical soil
-        soil_moisture_range=(65, 85), soil_moisture_mean=75 # consistently moist soil
+        ph_range=(6.3, 7.5), ph_mean=6.8,
+        ec_range=(450, 550), ec_mean=500,             
+        humidity_range=(70, 85), humidity_mean=78,            
+        sunlight_range=(1000, 3000), sunlight_mean=2000,
+        soil_temp_range=(27, 29), soil_temp_mean=24,          
+        soil_moisture_range=(92, 97), soil_moisture_mean=95  
     )
 
     # Mustard - more cool-tolerant, lower fertility, tolerates drier soils
     generator.fill_crop_to_target(
-        crop_name="mustard",
+        crop_name="Mustard",
         target_count=100,
         ph_range=(5.5, 7.0), ph_mean=6.3,
         ec_range=(800, 1600), ec_mean=1200,                 # lower fertility need
@@ -379,21 +379,24 @@ if __name__ == "__main__":
 
     # === Gourds Group ===
 
-    # Ampalaya - tropical, heat-tolerant, moderate fertility
+    #(a) Ampalaya - tropical, heat-tolerant, moderate fertility
     generator.fill_crop_to_target(
-        crop_name="ampalaya",
+        crop_name="Ampalaya",
         target_count=100,
         ph_range=(5.5, 6.8), ph_mean=6.2,
-        ec_range=(1200, 1800), ec_mean=1500,                 # moderate fertility
-        humidity_range=(55, 75), humidity_mean=65,           # less humidity sensitive
-        sunlight_range=(40000, 85000), sunlight_mean=60000,  # full sun
-        soil_temp_range=(22, 32), soil_temp_mean=27,         # heat tolerant
-        soil_moisture_range=(45, 70), soil_moisture_mean=55  # avoids waterlogging
+        ec_range=(523, 532), ec_mean=527,                
+        humidity_range=(72, 77), humidity_mean=74,          
+        sunlight_range=(2000, 5000), sunlight_mean=3200,  
+        soil_temp_range=(28, 31), soil_temp_mean=29.5,        
+        soil_moisture_range=(87, 93), soil_moisture_mean=90   
     )
+
+
+
 
     # Patola (Sponge Gourd) - high fertility, water-loving
     generator.fill_crop_to_target(
-        crop_name="patola",
+        crop_name="Patola",
         target_count=100,
         ph_range=(5.5, 6.5), ph_mean=6.0,
         ec_range=(1500, 2500), ec_mean=2000,                 # higher fertility demand
@@ -405,26 +408,110 @@ if __name__ == "__main__":
 
     # Upo (Bottle Gourd) - adaptable, prefers moisture
     generator.fill_crop_to_target(
-        crop_name="upo",
+        crop_name="Upo",
         target_count=100,
-        ph_range=(5.5, 6.8), ph_mean=6.2,
-        ec_range=(1200, 2200), ec_mean=1700,
-        humidity_range=(60, 80), humidity_mean=70,
-        sunlight_range=(40000, 80000), sunlight_mean=60000,
-        soil_temp_range=(20, 30), soil_temp_mean=25,
-        soil_moisture_range=(55, 80), soil_moisture_mean=65
+        ph_range=(6.8, 7.2), ph_mean=7,
+        ec_range=(530, 560), ec_mean=540,
+        humidity_range=(70, 80), humidity_mean=76,
+        sunlight_range=(2100, 3000), sunlight_mean=2700,
+        soil_temp_range=(26.8, 28.5), soil_temp_mean=27.9,
+        soil_moisture_range=(91, 94), soil_moisture_mean=93.5
     )
 
-    # Squash (Calabaza) - drought-tolerant, wide pH and soil range
+    #(L) Squash (Calabaza) - drought-tolerant, wide pH and soil range
     generator.fill_crop_to_target(
-        crop_name="squash",
+        crop_name="Squash",
         target_count=100,
-        ph_range=(5.5, 7.2), ph_mean=6.4,                    # widest pH tolerance in group
-        ec_range=(1000, 2000), ec_mean=1500,                 # moderate fertility
-        humidity_range=(50, 75), humidity_mean=65,           # tolerates drier air
-        sunlight_range=(40000, 90000), sunlight_mean=65000,
-        soil_temp_range=(20, 32), soil_temp_mean=26,
-        soil_moisture_range=(40, 70), soil_moisture_mean=55  # drought-tolerant
+        ph_range=(5.8, 7.2), ph_mean=6.5,                     
+        ec_range=(500, 600), ec_mean=550,                  
+        humidity_range=(68, 80), humidity_mean=75,           
+        sunlight_range=(2000, 10000), sunlight_mean=6000,
+        soil_temp_range=(27, 32), soil_temp_mean=30,
+        soil_moisture_range=(86, 93), soil_moisture_mean=90  # drought-tolerant
+    )
+
+
+
+
+    generator.fill_crop_to_target(
+        crop_name="Avocado",
+        target_count=100,
+        ph_range=(5.7, 6.3), ph_mean=6.0,
+        ec_range=(453, 458), ec_mean=455,                
+        humidity_range=(83, 88), humidity_mean=85,          
+        sunlight_range=(1000, 4000), sunlight_mean=1150,  
+        soil_temp_range=(26, 28), soil_temp_mean=27.1,        
+        soil_moisture_range=(83, 88), soil_moisture_mean=85   
+    )
+
+    generator.fill_crop_to_target(
+        crop_name="Coffee",
+        target_count=100,
+        ph_range=(5.8, 7.2), ph_mean=6.6,
+        ec_range=(448, 478), ec_mean=460,                
+        humidity_range=(79, 87), humidity_mean=83,          
+        sunlight_range=(680, 1230), sunlight_mean=1150,  
+        soil_temp_range=(26.3, 27.5), soil_temp_mean=27.1,        
+        soil_moisture_range=(85, 99), soil_moisture_mean=92    
+    )
+
+
+    generator.fill_crop_to_target(
+        crop_name="Cowpea",
+        target_count=100,
+        ph_range=(5.8, 6.3), ph_mean=6.0,
+        ec_range=(406, 413), ec_mean=410,                
+        humidity_range=(76, 80), humidity_mean=78,          
+        sunlight_range=(2100, 2300), sunlight_mean=2200,  
+        soil_temp_range=(27.3, 29), soil_temp_mean=28.4,        
+        soil_moisture_range=(81, 86), soil_moisture_mean=83    
+    )
+
+
+    generator.fill_crop_to_target(
+        crop_name="Black Pepper",
+        target_count=100,
+        ph_range=(5.7, 6.3), ph_mean=6.0,
+        ec_range=(438, 443), ec_mean=442,                
+        humidity_range=(83, 88), humidity_mean=85,          
+        sunlight_range=(890, 920), sunlight_mean=905,  
+        soil_temp_range=(26, 29), soil_temp_mean=28.7,        
+        soil_moisture_range=(83, 88), soil_moisture_mean=85   
+    )
+
+
+    generator.fill_crop_to_target(
+        crop_name="Bush Sitao",
+        target_count=100,
+        ph_range=(6.5, 7.2), ph_mean=7,
+        ec_range=(530, 538), ec_mean=535,                
+        humidity_range=(73, 78), humidity_mean=75,          
+        sunlight_range=(2450, 2850), sunlight_mean=2600,  
+        soil_temp_range=(26, 29), soil_temp_mean=28.7,        
+        soil_moisture_range=(90, 98), soil_moisture_mean=94   
+    )
+
+    generator.fill_crop_to_target(
+        crop_name="Orchid",
+        target_count=100,
+        ph_range=(5.7, 6.3), ph_mean=6.0,
+        ec_range=(387, 393), ec_mean=390,                
+        humidity_range=(73, 79), humidity_mean=76,          
+        sunlight_range=(1600, 2000), sunlight_mean=1850,  
+        soil_temp_range=(26, 28), soil_temp_mean=27.1,        
+        soil_moisture_range=(76, 82), soil_moisture_mean=78   
+    )
+
+
+    generator.fill_crop_to_target(
+        crop_name="Bamboo",
+        target_count=100,
+        ph_range=(4, 5.5), ph_mean=4.5,
+        ec_range=(628, 637), ec_mean=632,                
+        humidity_range=(60, 66), humidity_mean=62,          
+        sunlight_range=(6000, 12000), sunlight_mean=8077,  
+        soil_temp_range=(28, 31), soil_temp_mean=29.5,        
+        soil_moisture_range=(92, 99), soil_moisture_mean=95   
     )
 
 
@@ -439,26 +526,37 @@ if __name__ == "__main__":
 
     # Sili Panigang (Long Green Chili) - vegetable use, prefers moderate humidity and moisture
     generator.fill_crop_to_target(
-        crop_name="sili panigang",
+        crop_name="Sili Panigang",
         target_count=100,
-        ph_range=(5.5, 6.8), ph_mean=6.2,
-        ec_range=(1500, 2500), ec_mean=2000,
-        humidity_range=(65, 85), humidity_mean=75,           # higher humidity preference
-        sunlight_range=(40000, 80000), sunlight_mean=60000,  # moderate sun
-        soil_temp_range=(20, 30), soil_temp_mean=25,
-        soil_moisture_range=(55, 80), soil_moisture_mean=68  # needs steady soil moisture
+        ph_range=(5.4, 6.6), ph_mean=6.0,
+        ec_range=(430, 570), ec_mean=500,                
+        humidity_range=(50, 75), humidity_mean=62,            
+        sunlight_range=(2000, 9000), sunlight_mean=5000,   
+        soil_temp_range=(27.1, 31.5), soil_temp_mean=29,       
+        soil_moisture_range=(81.2, 88.4), soil_moisture_mean=84 
     )
 
     # Sili Tingala (Bird’s Eye Chili) - hot pepper, stress-tolerant
     generator.fill_crop_to_target(
-        crop_name="sili tingala",
+        crop_name="Sili Tingala",
         target_count=100,
         ph_range=(5.5, 6.5), ph_mean=6.0,
-        ec_range=(1200, 2200), ec_mean=1700,                 # slightly less fertility need
-        humidity_range=(50, 75), humidity_mean=62,           # tolerates lower humidity
-        sunlight_range=(50000, 90000), sunlight_mean=75000,  # stronger sun preference
-        soil_temp_range=(22, 34), soil_temp_mean=28,         # hotter tolerance
-        soil_moisture_range=(40, 70), soil_moisture_mean=55  # tolerates drier soils
+        ec_range=(440, 560), ec_mean=500,                
+        humidity_range=(50, 75), humidity_mean=62,            
+        sunlight_range=(2000, 9000), sunlight_mean=5000,   
+        soil_temp_range=(27.1, 31.5), soil_temp_mean=29,       
+        soil_moisture_range=(81, 88), soil_moisture_mean=84 
+    )
+
+    generator.fill_crop_to_target(
+        crop_name="Sili Labuyo",
+        target_count=100,
+        ph_range=(5.5, 6.5), ph_mean=6.0,
+        ec_range=(450, 550), ec_mean=500,                 
+        humidity_range=(50, 75), humidity_mean=62,           
+        sunlight_range=(2000, 9000), sunlight_mean=5000,  
+        soil_temp_range=(27, 31), soil_temp_mean=29,         
+        soil_moisture_range=(80, 89), soil_moisture_mean=85   
     )
 
 
@@ -469,40 +567,95 @@ if __name__ == "__main__":
     
     # === Root Crops Group ===
 
-    # Sweet Potato - drought-tolerant, prefers sandy soils, fast grower
+    #(a) Sweet Potato - drought-tolerant, prefers sandy soils, fast grower
     generator.fill_crop_to_target(
-        crop_name="sweet potato",
+        crop_name="Sweet Potato",
         target_count=100,
         ph_range=(5.5, 6.8), ph_mean=6.2,
-        ec_range=(800, 1800), ec_mean=1300,                  # moderate fertility
-        humidity_range=(55, 75), humidity_mean=65,
-        sunlight_range=(30000, 75000), sunlight_mean=50000,  # moderate to high sun
-        soil_temp_range=(20, 30), soil_temp_mean=25,
-        soil_moisture_range=(40, 70), soil_moisture_mean=55  # drought-tolerant
+        ec_range=(460, 600), ec_mean=530,                 
+        humidity_range=(78, 86), humidity_mean=82 ,
+        sunlight_range=(1000, 12000), sunlight_mean=6000,   
+        soil_temp_range=(25 , 30), soil_temp_mean=27,
+        soil_moisture_range=(88, 93), soil_moisture_mean=90  
+    )
+
+    generator.fill_crop_to_target(
+        crop_name="Kamoteng Baging",
+        target_count=100,
+        ph_range=(4.9, 6.1), ph_mean=5,
+        ec_range=(340, 368), ec_mean=359,                 
+        humidity_range=(68, 74), humidity_mean=70 ,
+        sunlight_range=(1000, 16000), sunlight_mean=10000,   
+        soil_temp_range=(25 , 35), soil_temp_mean=34.6,
+        soil_moisture_range=(88, 99), soil_moisture_mean=95
+    )
+
+    generator.fill_crop_to_target(
+        crop_name="Katuray",
+        target_count=100,
+        ph_range=(5.5, 6.5), ph_mean=6,
+        ec_range=(340, 368), ec_mean=354,                 
+        humidity_range=(75, 81), humidity_mean=78 ,
+        sunlight_range=(2000, 2500), sunlight_mean=2250,   
+        soil_temp_range=(28.5 , 29), soil_temp_mean=28.4,
+        soil_moisture_range=(80, 88), soil_moisture_mean=83
+    )
+
+    generator.fill_crop_to_target(
+        crop_name="Kulo",
+        target_count=100,
+        ph_range=(5.5, 6.5), ph_mean=6,
+        ec_range=(450, 480), ec_mean=470,                 
+        humidity_range=(80, 88), humidity_mean=84 ,
+        sunlight_range=(1030, 1080), sunlight_mean=1050,   
+        soil_temp_range=(26.6 , 28), soil_temp_mean=27.4,
+        soil_moisture_range=(80, 88), soil_moisture_mean=83
+    )
+
+    generator.fill_crop_to_target(
+        crop_name="Lipute",
+        target_count=100,
+        ph_range=(5.5, 6.5), ph_mean=6,
+        ec_range=(450, 480), ec_mean=420,                 
+        humidity_range=(78, 84), humidity_mean=81 ,
+        sunlight_range=(935, 965), sunlight_mean=950 ,   
+        soil_temp_range=(26.6 , 28), soil_temp_mean=27.4,
+        soil_moisture_range=(78, 83), soil_moisture_mean=80
+    )
+
+    generator.fill_crop_to_target(
+        crop_name="Sweet Sorghum",
+        target_count=100,
+        ph_range=(5.5, 6.8), ph_mean=6.2,
+        ec_range=(460, 600), ec_mean=515,                 
+        humidity_range=(75, 86), humidity_mean=80 ,
+        sunlight_range=(1500, 12000), sunlight_mean=6000,   
+        soil_temp_range=(25 , 30), soil_temp_mean=28.4,
+        soil_moisture_range=(88, 93), soil_moisture_mean=89  
     )
 
     # Ube (Purple Yam) - needs fertile, moist soils for tuber development
     generator.fill_crop_to_target(
-        crop_name="ube",
+        crop_name="Ube",
         target_count=100,
-        ph_range=(5.5, 6.5), ph_mean=6.0,
-        ec_range=(1000, 2000), ec_mean=1500,                 # higher fertility need
-        humidity_range=(65, 85), humidity_mean=75,           # more humid than sweet potato
-        sunlight_range=(25000, 65000), sunlight_mean=45000,  # less sun than cassava
-        soil_temp_range=(22, 30), soil_temp_mean=26,
-        soil_moisture_range=(55, 80), soil_moisture_mean=68  # higher water demand
+        ph_range=(4.8, 5.4), ph_mean=5.0,
+        ec_range=(466, 475), ec_mean=470,                 
+        humidity_range=(81, 85), humidity_mean=83,           
+        sunlight_range=(1200, 5000), sunlight_mean=3200,   
+        soil_temp_range=(26, 28.2), soil_temp_mean=27.9,
+        soil_moisture_range=(88, 92), soil_moisture_mean=90  
     )
 
     # Cassava - extreme drought tolerance, can grow in poor soils
     generator.fill_crop_to_target(
-        crop_name="cassava",
+        crop_name="Cassava",
         target_count=100,
         ph_range=(5.0, 6.8), ph_mean=5.8,
-        ec_range=(600, 1400), ec_mean=1000,                  # lowest fertility requirement
-        humidity_range=(50, 75), humidity_mean=62,           # drier air tolerated
-        sunlight_range=(40000, 90000), sunlight_mean=70000,  # loves full sun
+        ec_range=(508, 530), ec_mean=517,                  # lowest fertility requirement
+        humidity_range=(85, 90), humidity_mean=88,           # drier air tolerated
+        sunlight_range=(1080, 1105), sunlight_mean=1094,  # loves full sun
         soil_temp_range=(24, 34), soil_temp_mean=28,         # hotter than others
-        soil_moisture_range=(35, 65), soil_moisture_mean=50  # lowest moisture need
+        soil_moisture_range=(90, 99), soil_moisture_mean=94  # lowest moisture need
     )
 
  
@@ -513,38 +666,38 @@ if __name__ == "__main__":
 
     # Banana - shallow roots, needs high fertility & moisture
     generator.fill_crop_to_target(
-        crop_name="banana",
+        crop_name="Banana",
         target_count=100,
-        ph_range=(4.0, 5.5), ph_mean=5.0,
-        ec_range=(700, 1000), ec_mean=850,                 # very nutrient hungry
-        humidity_range=(65, 85), humidity_mean=75,
-        sunlight_range=(8000, 20000), sunlight_mean=15000,   
-        soil_temp_range=(27, 32), soil_temp_mean=28,
-        soil_moisture_range=(80, 99), soil_moisture_mean=90  # highest water demand
+        ph_range=(5, 7.1), ph_mean=5.5,
+        ec_range=(468, 556), ec_mean=500,                 # very nutrient hungry
+        humidity_range=(73, 85), humidity_mean= 80,
+        sunlight_range=(1280, 2520), sunlight_mean=1800,   
+        soil_temp_range=(27, 30), soil_temp_mean=28.5,
+        soil_moisture_range=(88, 97), soil_moisture_mean=93  
     )
 
     # Jackfruit - deep roots, less fertility and moisture demanding than banana
     generator.fill_crop_to_target(
-        crop_name="jackfruit",
+        crop_name="Jackfruit",
         target_count=100,
-        ph_range=(5.5, 6.8), ph_mean=6.2,
-        ec_range=(800, 1600), ec_mean=1200,                  # lower fertility need
-        humidity_range=(65, 85), humidity_mean=75,
-        sunlight_range=(30000, 75000), sunlight_mean=55000,  # tolerates partial sun
-        soil_temp_range=(22, 32), soil_temp_mean=27,
-        soil_moisture_range=(50, 75), soil_moisture_mean=62  # moderate water demand
+        ph_range=(5.5, 6.3), ph_mean=6,
+        ec_range=(465, 475), ec_mean=470,                  # lower fertility need
+        humidity_range=(80, 87), humidity_mean=84,
+        sunlight_range=(1020, 1080), sunlight_mean=1050,  # tolerates partial sun
+        soil_temp_range=(26, 29), soil_temp_mean=27.4,
+        soil_moisture_range=(87, 91), soil_moisture_mean=89  # moderate water demand
     )
 
     # Coconut - hardy palm, tolerates salinity, thrives in coastal full sun
     generator.fill_crop_to_target(
-        crop_name="coconut",
+        crop_name="Coconut",
         target_count=100,
-        ph_range=(5.0, 7.0), ph_mean=6.2,
-        ec_range=(350, 500), ec_mean=420,
-        humidity_range=(65, 90), humidity_mean=78,
-        sunlight_range=(12000, 25000), sunlight_mean=17000,  # full sun, high light tolerance
-        soil_temp_range=(24, 33), soil_temp_mean=29,
-        soil_moisture_range=(80, 99), soil_moisture_mean=90  # more drought-tolerant than banana
+        ph_range=(5.8, 7.0), ph_mean=6.4,
+        ec_range=(350, 520), ec_mean=440,
+        humidity_range=(69, 86), humidity_mean=75,
+        sunlight_range=(1200, 13000), sunlight_mean=6000,  
+        soil_temp_range=(26.8, 34), soil_temp_mean=29,
+        soil_moisture_range=(84, 99), soil_moisture_mean=90   
     )
 
 
@@ -557,31 +710,31 @@ if __name__ == "__main__":
 
     # Maize - heavy feeder, adaptable but needs consistent water during grain fill
     generator.fill_crop_to_target(
-        crop_name="maize",
+        crop_name="Maize",
         target_count=100,
         ph_range=(5.5, 7.0), ph_mean=6.2,
-        ec_range=(1200, 2200), ec_mean=1700,               # high nutrient demand
-        humidity_range=(55, 75), humidity_mean=65,         # slightly lower tolerance
-        sunlight_range=(55000, 100000), sunlight_mean=80000,
-        soil_temp_range=(20, 30), soil_temp_mean=25,
-        soil_moisture_range=(50, 75), soil_moisture_mean=65
+        ec_range=(477, 524), ec_mean=500,               # high nutrient demand
+        humidity_range=(75, 85), humidity_mean=80,         # slightly lower tolerance
+        sunlight_range=(1400, 3000), sunlight_mean=2200,
+        soil_temp_range=(27, 30), soil_temp_mean=28.5,
+        soil_moisture_range=(84, 92), soil_moisture_mean=65
     )
 
     # Papaya - tropical, higher temperature requirement, shallow-rooted & sensitive to waterlogging
     generator.fill_crop_to_target(
-        crop_name="papaya",
+        crop_name="Papaya",
         target_count=100,
-        ph_range=(5.5, 7.0), ph_mean=6.3,
-        ec_range=(1200, 2200), ec_mean=1700,
-        humidity_range=(60, 85), humidity_mean=75,         # more humidity-tolerant than maize
-        sunlight_range=(50000, 90000), sunlight_mean=70000,
-        soil_temp_range=(25, 32), soil_temp_mean=28,       # prefers warmer soil
-        soil_moisture_range=(55, 80), soil_moisture_mean=65
+        ph_range=(5.8, 6.3), ph_mean=6.0,
+        ec_range=(428, 442), ec_mean=435,
+        humidity_range=(76, 81), humidity_mean=79,         # more humidity-tolerant than maize
+        sunlight_range=(1500, 8000), sunlight_mean=5000,
+        soil_temp_range=(26, 29), soil_temp_mean=28.1,       # prefers warmer soil
+        soil_moisture_range=(80, 84), soil_moisture_mean=82
     )
 
     # Watermelon - drought-tolerant cucurbit, wide pH range, less fertility demand
     generator.fill_crop_to_target(
-        crop_name="watermelon",
+        crop_name="Watermelon",
         target_count=100,
         ph_range=(5.5, 7.5), ph_mean=6.5,                 # widest tolerance here
         ec_range=(800, 1600), ec_mean=1200,               # lower fertility demand
@@ -601,7 +754,7 @@ if __name__ == "__main__":
     
         # Tomato - prefers cooler root zone, high fertility, consistent moisture
     generator.fill_crop_to_target(
-        crop_name="tomato",
+        crop_name="Tomato",
         target_count=100,
         ph_range=(5.5, 6.8), ph_mean=6.2,
         ec_range=(2000, 3000), ec_mean=2400,            # high nutrient demand
@@ -611,16 +764,29 @@ if __name__ == "__main__":
         soil_moisture_range=(60, 80), soil_moisture_mean=70  # steady moisture for fruit set
     )
 
-    # Eggplant - more heat-tolerant, slightly lower fertility requirement, tolerates wider conditions
+    #(a) Eggplant - more heat-tolerant, slightly lower fertility requirement, tolerates wider conditions
     generator.fill_crop_to_target(
-        crop_name="eggplant",
+        crop_name="Eggplant",
         target_count=100,
-        ph_range=(5.5, 7.0), ph_mean=6.3,
-        ec_range=(1500, 3000), ec_mean=2200,
-        humidity_range=(60, 85), humidity_mean=72,      # tolerates higher humidity
-        sunlight_range=(40000, 90000), sunlight_mean=65000,
-        soil_temp_range=(20, 32), soil_temp_mean=26,    # warmer root temps tolerated
-        soil_moisture_range=(50, 75), soil_moisture_mean=62  # a bit more drought-tolerant
+        ph_range=(5.8, 6.3), ph_mean=6,
+        ec_range=(482, 488), ec_mean=485,
+        humidity_range=(74, 78), humidity_mean=76,       
+        sunlight_range=(2300, 2500), sunlight_mean=2400,
+        soil_temp_range=(28.5, 29.3), soil_temp_mean=28.9,    
+        soil_moisture_range=(85, 89), soil_moisture_mean=87   
+    )
+
+
+     #(a) Eggplant - more heat-tolerant, slightly lower fertility requirement, tolerates wider conditions
+    generator.fill_crop_to_target(
+        crop_name="Forage Grass",
+        target_count=100,
+        ph_range=(6.6, 7.3), ph_mean=7,
+        ec_range=(400, 410), ec_mean=405,
+        humidity_range=(76, 81), humidity_mean=79,       
+        sunlight_range=(1800, 2000), sunlight_mean=1900,
+        soil_temp_range=(27.5, 29.3), soil_temp_mean=28,    
+        soil_moisture_range=(80, 88), soil_moisture_mean=84   
     )
 
 
@@ -631,7 +797,7 @@ if __name__ == "__main__":
 
         # Onion - prefers cool to mild temps, moderate fertility, sensitive to waterlogging
     generator.fill_crop_to_target(
-        crop_name="onion",
+        crop_name="Onion",
         target_count=100,
         ph_range=(6.0, 7.0), ph_mean=6.5,
         ec_range=(1500, 2500), ec_mean=2000,
@@ -643,7 +809,7 @@ if __name__ == "__main__":
 
     # Radish - faster growing, thrives in cooler soil, needs steadier moisture
     generator.fill_crop_to_target(
-        crop_name="radish",
+        crop_name="Radish",
         target_count=100,
         ph_range=(6.0, 7.0), ph_mean=6.5,
         ec_range=(1200, 2200), ec_mean=1700,              # slightly lower fertility need
@@ -661,7 +827,7 @@ if __name__ == "__main__":
 
     # Apple - temperate, requires chilling hours, cool soil temps
     generator.fill_crop_to_target(
-        crop_name="apple",
+        crop_name="Apple",
         target_count=100,
         ph_range=(5.5, 7.0), ph_mean=6.3,
         ec_range=(800, 1600), ec_mean=1200,
@@ -673,7 +839,7 @@ if __name__ == "__main__":
 
     # Grapes - Mediterranean climate crop, prefers warm temps, lots of sun, tolerates drought
     generator.fill_crop_to_target(
-        crop_name="grapes",
+        crop_name="Grapes",
         target_count=100,
         ph_range=(5.5, 6.8), ph_mean=6.2,
         ec_range=(800, 1600), ec_mean=1200,
@@ -685,19 +851,19 @@ if __name__ == "__main__":
 
     # Rice - semi-aquatic, flooded fields, high humidity, warm soil
     generator.fill_crop_to_target(
-        crop_name="rice",
+        crop_name="Rice",
         target_count=100,
-        ph_range=(5.0, 6.5), ph_mean=5.8,
-        ec_range=(1000, 2000), ec_mean=1500,
-        humidity_range=(70, 95), humidity_mean=85,        # high humidity crop
-        sunlight_range=(30000, 60000), sunlight_mean=45000,
-        soil_temp_range=(22, 32), soil_temp_mean=27,
-        soil_moisture_range=(80, 100), soil_moisture_mean=90  # flooded/paddy conditions
+        ph_range=(6.8, 7.3), ph_mean=7,
+        ec_range=(530, 570), ec_mean=550,
+        humidity_range=(70, 79), humidity_mean=75,        # high humidity crop
+        sunlight_range=(2400, 2700), sunlight_mean=2500,
+        soil_temp_range=(26, 31), soil_temp_mean=29.2,
+        soil_moisture_range=(92, 98), soil_moisture_mean=95  # flooded/paddy conditions
     )
 
     # Oyster Mushroom - shade crop, very high humidity, moderate temps
     generator.fill_crop_to_target(
-        crop_name="oyster mushroom",
+        crop_name="Oyster Mushroom",
         target_count=100,
         ph_range=(5.5, 6.5), ph_mean=6.0,
         ec_range=(500, 1500), ec_mean=1000,
@@ -715,19 +881,19 @@ if __name__ == "__main__":
    
     # Mango - drought-tolerant tropical tree, full sun, warmer soils, lower soil moisture for good fruiting
     generator.fill_crop_to_target(
-        crop_name="mango",
+        crop_name="Mango",
         target_count=100,
         ph_range=(5.5, 7.5), ph_mean=6.5,
-        ec_range=(800, 1600), ec_mean=1200,            # moderate fertility
-        humidity_range=(45, 70), humidity_mean=55,     # not excessively humid for good flowering
-        sunlight_range=(60000, 100000), sunlight_mean=80000,
-        soil_temp_range=(24, 36), soil_temp_mean=30,   # warm root zone
-        soil_moisture_range=(30, 60), soil_moisture_mean=45  # relatively drier than many tropical fruit trees
+        ec_range=(400, 530), ec_mean=460,           
+        humidity_range=(78, 90), humidity_mean=85,    
+        sunlight_range=(980, 1110), sunlight_mean=1050,
+        soil_temp_range=(26, 30), soil_temp_mean=29.5,  
+        soil_moisture_range=(78, 99), soil_moisture_mean=88   
     )
 
     # Okra - heat-loving, full-sun annual; tolerates drier spells but performs with moderate fertility
     generator.fill_crop_to_target(
-        crop_name="okra",
+        crop_name="Okra",
         target_count=100,
         ph_range=(5.5, 7.0), ph_mean=6.2,
         ec_range=(1200, 2200), ec_mean=1700,           # moderate-to-high fertility
@@ -737,86 +903,56 @@ if __name__ == "__main__":
         soil_moisture_range=(40, 75), soil_moisture_mean=55  # tolerates some dryness
     )
 
-    # Pineapple - prefers acidic, well-drained soils; drought-tolerant relative, high light requirement
+    # (L)Pineapple - prefers acidic, well-drained soils; drought-tolerant relative, high light requirement
     generator.fill_crop_to_target(
-        crop_name="pineapple",
+        crop_name="Pineapple",
         target_count=100,
-        ph_range=(4.0, 6.0), ph_mean=5.0,
-        ec_range=(430, 700), ec_mean=600,             # lower fertility
-        humidity_range=(70, 76), humidity_mean=72,
-        sunlight_range=(20000, 45000), sunlight_mean=36000,
-        soil_temp_range=(31, 34), soil_temp_mean=32,
-        soil_moisture_range=(95, 99), soil_moisture_mean=97# prefers well-drained, not waterlogged
+        ph_range=(4.5, 6.0), ph_mean=5.3,
+        ec_range=(430, 650), ec_mean=540,              
+        humidity_range=(70, 78), humidity_mean=75,
+        sunlight_range=(2500, 45000), sunlight_mean=20000,
+        soil_temp_range=(28, 34.5), soil_temp_mean=31,
+        soil_moisture_range=(85, 99), soil_moisture_mean=92 
     )
 
     # Gabi (Taro) - shade tolerant, high humidity & soil moisture, lower light
     generator.fill_crop_to_target(
-        crop_name="gabi",
+        crop_name="Gabi",
         target_count=100,
-        ph_range=(5.0, 6.5), ph_mean=5.8,
-        ec_range=(800, 1600), ec_mean=1200,
-        humidity_range=(75, 95), humidity_mean=85,     # very humid conditions
-        sunlight_range=(10000, 40000), sunlight_mean=25000,  # shade to partial shade
-        soil_temp_range=(22, 30), soil_temp_mean=26,
-        soil_moisture_range=(70, 95), soil_moisture_mean=85  # likes saturated/very moist soils
+        ph_range=(6.5, 7.2), ph_mean=6.8,
+        ec_range=(458, 470), ec_mean=464,
+        humidity_range=(80, 86), humidity_mean=83,     # very humid conditions
+        sunlight_range=(1100, 10000), sunlight_mean=5500,  # shade to partial shade
+        soil_temp_range=(26, 27.8), soil_temp_mean=26,
+        soil_moisture_range=(90, 96), soil_moisture_mean=93  # likes saturated/very moist soils
     )
 
     # Ginger - shade/understory crop, high humidity and consistent moisture, moderate fertility
     generator.fill_crop_to_target(
-        crop_name="ginger",
+        crop_name="Ginger",
         target_count=100,
         ph_range=(5.5, 6.5), ph_mean=6.0,
-        ec_range=(1000, 1800), ec_mean=1400,
-        humidity_range=(70, 95), humidity_mean=82,     # prefers very humid microclimate
-        sunlight_range=(5000, 35000), sunlight_mean=20000,   # low light / filtered shade
-        soil_temp_range=(20, 30), soil_temp_mean=25,
-        soil_moisture_range=(65, 90), soil_moisture_mean=78  # consistently moist but not waterlogged
+        ec_range=(453, 470), ec_mean=460,
+        humidity_range=(77, 86), humidity_mean=82,   
+        sunlight_range=(1130, 1810), sunlight_mean=1500,   # low light / filtered shade
+        soil_temp_range=(26, 29), soil_temp_mean=28,
+        soil_moisture_range=(84, 91), soil_moisture_mean=87  # consistently moist but not waterlogged
+    )
+
+    generator.fill_crop_to_target(
+        crop_name="Ipil Ipil",
+        target_count=100,
+        ph_range=(6.2, 7.2), ph_mean=6.8,
+        ec_range=(398, 412), ec_mean=405,
+        humidity_range=(77, 81), humidity_mean=79,   
+        sunlight_range=(1800, 2000), sunlight_mean=1900,   # low light / filtered shade
+        soil_temp_range=(26, 29), soil_temp_mean=28,
+        soil_moisture_range=(82, 87), soil_moisture_mean=84  # consistently moist but not waterlogged
     )
 
     
    
-   
-
-
     
-
-   
-
-    
-
-
-   
-   
-
-   
-
-    
-
-   
-
-    
-    
-
-    
-
-    
-
-    
-
-  
-
-    
-   
-
-    
-
-    
-    
-
-   
-
-    
- 
  
 
     generator.show_dataset_summary()
