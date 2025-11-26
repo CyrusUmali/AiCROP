@@ -116,7 +116,7 @@ async def predict_crop(
             "crop": crop,
             "confidence": round(scores["total_prob"] / scores["model_count"], 4),
             "supporting_models": scores["models"],
-            "image_url": CROP_IMAGE_MAPPING.get(crop.lower(), None),
+            "image_url": CROP_IMAGE_MAPPING.get(crop, None),
             "warning": "low_confidence" if (scores["total_prob"] / scores["model_count"]) < min_confidence else None,
             "model_used": list(set(scores["model_used"]))  # Deduplicate model names
         } for crop, scores in crop_scores.items()]
