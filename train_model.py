@@ -26,7 +26,7 @@ plt.rcParams['figure.figsize'] = (12, 8)
 
 # Load dataset
 # dataset_path = 'dataset/crop_recommendation.csv'
-dataset_path = 'dataset/enhanced_crop_data.csv'
+dataset_path = 'dataset/augmented_crop_data.csv'
 df = pd.read_csv(dataset_path)
 
 print(f"Dataset loaded: {len(df)} rows, {len(df['label'].unique())} unique crops")

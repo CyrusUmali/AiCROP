@@ -26,18 +26,6 @@ generator.fill_crop_to_target(
     moisture_range=(77.5, 92.5), moisture_mean=85,
 )
 
-# Bush Sitao
-generator.fill_crop_to_target(
-    crop_name="Bush Sitao",
-    target_count=100,  # Adjust as needed
-    ph_range=(6.1, 7.1), ph_mean=6.6,
-    ec_range=(454.8, 615.2), ec_mean=535,
-    humidity_range=(67.5, 82.5), humidity_mean=75,
-    sunlight_range=(2080.0, 3120.0), sunlight_mean=2600,
-    temp_range=(27.2, 30.2), temp_mean=28.7,
-    moisture_range=(86.5, 101.5), moisture_mean=94,
-)
-
 # Cassava
 generator.fill_crop_to_target(
     crop_name="Cassava",
@@ -48,18 +36,6 @@ generator.fill_crop_to_target(
     sunlight_range=(875.2, 1312.8), sunlight_mean=1094,
     temp_range=(27.0, 30.0), temp_mean=28.5,
     moisture_range=(91.5, 106.5), moisture_mean=99,
-)
-
-# Cowpea
-generator.fill_crop_to_target(
-    crop_name="Cowpea",
-    target_count=100,  # Adjust as needed
-    ph_range=(5.7, 6.7), ph_mean=6.2,
-    ec_range=(348.5, 471.5), ec_mean=410,
-    humidity_range=(70.5, 85.5), humidity_mean=78,
-    sunlight_range=(1760.0, 2640.0), sunlight_mean=2200,
-    temp_range=(26.9, 29.9), temp_mean=28.4,
-    moisture_range=(75.5, 90.5), moisture_mean=83,
 )
 
 # Forage Grass
@@ -146,9 +122,9 @@ generator.fill_crop_to_target(
     moisture_range=(81.5, 96.5), moisture_mean=89,
 )
 
-# Lipute
+# Lipote
 generator.fill_crop_to_target(
-    crop_name="Lipute",
+    crop_name="Lipote",
     target_count=100,  # Adjust as needed
     ph_range=(5.2, 6.2), ph_mean=5.7,
     ec_range=(357.0, 483.0), ec_mean=420,

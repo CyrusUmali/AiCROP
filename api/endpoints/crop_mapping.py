@@ -32,31 +32,20 @@ CROP_IMAGE_MAPPING = {
     "Calamansi": "https://res.cloudinary.com/dk41ykxsq/image/upload/v1755358854/testUpload/zokdcrnqbebprnzlwcvr.webp",
     "Cacao": "https://res.cloudinary.com/dk41ykxsq/image/upload/v1755358822/testUpload/upspvmyyswwmywmj2a2g.jpg",
     "Ampalaya": "https://res.cloudinary.com/dk41ykxsq/image/upload/v1755244861/testUpload/vp1brgaczhgvdvm4xizn.webp",
-    
-    # new 
-
-"Avocado":"https://res.cloudinary.com/dk41ykxsq/image/upload/v1764059427/testUpload/swdbhguncr51adjnf1n5.jpg",
-"Bamboo":"https://res.cloudinary.com/dk41ykxsq/image/upload/v1764059540/testUpload/ofgmv8cwdvnakujyuz7h.jpg",
-"Black Pepper":"https://res.cloudinary.com/dk41ykxsq/image/upload/v1764060006/testUpload/x5ozorazw6mb0qp5pclt.webp",
-"Ipil Ipil":"https://res.cloudinary.com/dk41ykxsq/image/upload/v1764060657/testUpload/skpsls8zlflxjtdlryk7.jpg",
-"Forage Grass":"https://res.cloudinary.com/dk41ykxsq/image/upload/v1764060567/testUpload/oivlsnwfzserem3eyf1q.webp",
-"Coffee":"https://res.cloudinary.com/dk41ykxsq/image/upload/v1764060364/testUpload/esetvq49mfz2ttvgxbi3.webp",
-"Kamoteng Baging":"https://res.cloudinary.com/dk41ykxsq/image/upload/v1764060892/testUpload/icfh2cxo5caagtf9rolf.jpg",
-"Katuray":"https://res.cloudinary.com/dk41ykxsq/image/upload/v1764060979/testUpload/eu9iylt9clspiazopwpw.jpg",
-"Kulo":"https://res.cloudinary.com/dk41ykxsq/image/upload/v1764061190/testUpload/l2ihu22qet02njyqmeys.jpg",
-"Lipote":"https://res.cloudinary.com/dk41ykxsq/image/upload/v1764061256/testUpload/k1gfinluncrmbjrkqn7w.jpg" ,
-"Orchid":"https://res.cloudinary.com/dk41ykxsq/image/upload/v1764061318/testUpload/jhgjkbip7slsetrrhfpg.jpg",
-"Sili Labuyo":"https://res.cloudinary.com/dk41ykxsq/image/upload/v1764061746/testUpload/oon5ittdlbhyixropfjf.jpg",
-"Sweet Sorghum":"https://res.cloudinary.com/dk41ykxsq/image/upload/v1764062319/testUpload/fb0vkjdmhdemsjpxjkte.webp",
-
-
-
-
-
-
-
-
-
+    # new
+    "Avocado": "https://res.cloudinary.com/dk41ykxsq/image/upload/v1764059427/testUpload/swdbhguncr51adjnf1n5.jpg",
+    "Bamboo": "https://res.cloudinary.com/dk41ykxsq/image/upload/v1764059540/testUpload/ofgmv8cwdvnakujyuz7h.jpg",
+    "Black Pepper": "https://res.cloudinary.com/dk41ykxsq/image/upload/v1764060006/testUpload/x5ozorazw6mb0qp5pclt.webp",
+    "Ipil Ipil": "https://res.cloudinary.com/dk41ykxsq/image/upload/v1764060657/testUpload/skpsls8zlflxjtdlryk7.jpg",
+    "Forage Grass": "https://res.cloudinary.com/dk41ykxsq/image/upload/v1764060567/testUpload/oivlsnwfzserem3eyf1q.webp",
+    "Coffee": "https://res.cloudinary.com/dk41ykxsq/image/upload/v1764060364/testUpload/esetvq49mfz2ttvgxbi3.webp",
+    "Kamoteng Baging": "https://res.cloudinary.com/dk41ykxsq/image/upload/v1764060892/testUpload/icfh2cxo5caagtf9rolf.jpg",
+    "Katuray": "https://res.cloudinary.com/dk41ykxsq/image/upload/v1764060979/testUpload/eu9iylt9clspiazopwpw.jpg",
+    "Kulo": "https://res.cloudinary.com/dk41ykxsq/image/upload/v1764061190/testUpload/l2ihu22qet02njyqmeys.jpg",
+    "Lipote": "https://res.cloudinary.com/dk41ykxsq/image/upload/v1764061256/testUpload/k1gfinluncrmbjrkqn7w.jpg",
+    "Orchid": "https://res.cloudinary.com/dk41ykxsq/image/upload/v1764061318/testUpload/jhgjkbip7slsetrrhfpg.jpg",
+    "Sili Labuyo": "https://res.cloudinary.com/dk41ykxsq/image/upload/v1764061746/testUpload/oon5ittdlbhyixropfjf.jpg",
+    "Sweet Sorghum": "https://res.cloudinary.com/dk41ykxsq/image/upload/v1764062319/testUpload/fb0vkjdmhdemsjpxjkte.webp",
     # old sets
     "Rice": "https://res.cloudinary.com/dk41ykxsq/image/upload/v1744884426/rice_kmoqmm.jpg",
     "Maize": "https://res.cloudinary.com/dk41ykxsq/image/upload/v1744884429/maize_p0kem9.jpg",

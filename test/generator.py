@@ -814,9 +814,9 @@ if __name__ == "__main__":
        soil_moisture_range=(81.5, 96.5),soil_moisture_mean=89,
     )
 
-    # Lipute
+    # Lipote
     generator.fill_crop_to_target(
-        crop_name="Lipute",
+        crop_name="Lipote",
         target_count=100,  # Adjust as needed
         ph_range=(5.2, 6.2), ph_mean=5.7,
         ec_range=(357.0, 483.0), ec_mean=420,
