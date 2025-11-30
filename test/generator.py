@@ -1,67 +1,190 @@
 import pandas as pd
 import numpy as np
 import os
+from scipy import stats
 
-class CropDataGenerator:
+class SmartCropDataGenerator:
     def __init__(self, existing_csv_path=None, realism_mode=True):
         """
-        Initialize the crop data generator
+        Initialize the crop data generator that learns from existing data
         
         Parameters:
         existing_csv_path (str): Path to the existing CSV file (optional)
-        realism_mode (bool): If True, adjusts generated data to be closer to realistic agricultural ranges
+        realism_mode (bool): If True, uses correlations from real data
         """
         self.existing_csv_path = existing_csv_path
         self.realism_mode = realism_mode
         self.existing_data = pd.DataFrame(
             columns=['soil_ph', 'fertility_ec', 'humidity', 'sunlight', 'soil_temp', 'soil_moisture', 'label']
         )
+        self.crop_profiles = {}  # Store learned profiles for each crop
         
         if existing_csv_path and os.path.exists(existing_csv_path):
             self.load_existing_data()
+            self.learn_crop_profiles()
     
     def load_existing_data(self):
         """Load existing crop data"""
         try:
             existing = pd.read_csv(self.existing_csv_path)
             if not existing.empty:
-                # Ensure columns match
                 expected_cols = ['soil_ph', 'fertility_ec', 'humidity', 'sunlight', 'soil_temp', 'soil_moisture', 'label']
                 if set(existing.columns) == set(expected_cols):
+                    # Convert numeric columns to proper types and handle errors
+                    numeric_cols = ['soil_ph', 'fertility_ec', 'humidity', 'sunlight', 'soil_temp', 'soil_moisture']
+                    
+                    # Track which rows have problems
+                    original_data = existing.copy()
+                    
+                    for col in numeric_cols:
+                        # Convert to numeric, coercing errors to NaN
+                        existing[col] = pd.to_numeric(existing[col], errors='coerce')
+                    
+                    # Find rows with any NaN values
+                    invalid_rows = existing[existing[numeric_cols].isna().any(axis=1)]
+                    
+                    if len(invalid_rows) > 0:
+                        print(f"\n⚠ Found {len(invalid_rows)} rows with invalid data:")
+                        print("="*80)
+                        
+                        for idx in invalid_rows.index:
+                            original_row = original_data.loc[idx]
+                            converted_row = existing.loc[idx]
+                            
+                            print(f"\nRow {idx + 2} (CSV line): {original_row['label']}")  # +2 for header and 0-index
+                            
+                            # Show which columns have problems
+                            problems = []
+                            for col in numeric_cols:
+                                original_val = original_row[col]
+                                converted_val = converted_row[col]
+                                
+                                if pd.isna(converted_val):
+                                    problems.append(f"  ✗ {col}: '{original_val}' (can't convert to number)")
+                            
+                            for problem in problems:
+                                print(problem)
+                        
+                        print("="*80)
+                    
+                    # Remove rows with any NaN values
+                    existing = existing.dropna()
+                    
+                    # Clean up label column (remove extra spaces)
+                    existing['label'] = existing['label'].str.strip()
+                    
                     self.existing_data = pd.concat([self.existing_data, existing], ignore_index=True)
-                    print(f"Loaded existing data: {len(existing)} rows")
-                    print(f"Existing crops: {list(existing['label'].unique())}")
+                    print(f"✓ Loaded existing data: {len(existing)} valid rows")
+                    print(f"✓ Existing crops: {list(existing['label'].unique())}")
                 else:
-                    print("Warning: Existing CSV has different columns. Starting with empty dataset.")
+                    print("⚠ Warning: Existing CSV has different columns. Starting with empty dataset.")
+                    print(f"   Expected: {expected_cols}")
+                    print(f"   Found: {list(existing.columns)}")
         except Exception as e:
-            print(f"Error loading data: {e}")
+            print(f"✗ Error loading data: {e}")
+            import traceback
+            traceback.print_exc()
     
-    def _generate_feature(self, mean, min_val, max_val, variation=0.15, dist="normal"):
-        """
-        Generate a single feature value with optional skew and realistic variation.
-        dist can be "normal", "triangular", or "lognormal".
-        """
-        if dist == "normal":
-            std_dev = (max_val - min_val) * variation
-            val = np.random.normal(mean, std_dev)
-        elif dist == "triangular":
-            val = np.random.triangular(min_val, mean, max_val)
-        elif dist == "lognormal":
-            sigma = variation
-            val = np.random.lognormal(np.log(mean), sigma)
-        else:
-            val = np.random.uniform(min_val, max_val)
+    def learn_crop_profiles(self):
+        """Learn statistical profiles from existing data for each crop"""
+        if len(self.existing_data) == 0:
+            print("No existing data to learn from")
+            return
         
-        return np.clip(val, min_val, max_val)
+        feature_cols = ['soil_ph', 'fertility_ec', 'humidity', 'sunlight', 'soil_temp', 'soil_moisture']
+        
+        for crop in self.existing_data['label'].unique():
+            crop_data = self.existing_data[self.existing_data['label'] == crop]
+            n_samples = len(crop_data)
+            
+            # Need at least 2 samples for standard deviation
+            if n_samples < 2:
+                print(f"⚠ Skipping {crop}: only {n_samples} sample (need 2+ for learning)")
+                continue
+            
+            profile = {
+                'means': {},
+                'stds': {},
+                'ranges': {},
+                'correlations': None,
+                'n_samples': n_samples
+            }
+            
+            # Learn statistics for each feature
+            for col in feature_cols:
+                profile['means'][col] = crop_data[col].mean()
+                profile['stds'][col] = max(crop_data[col].std(), 0.01)  # Avoid zero std
+                profile['ranges'][col] = (crop_data[col].min(), crop_data[col].max())
+            
+            # Learn correlations between features (need at least 5 samples)
+            if self.realism_mode and n_samples >= 5:
+                profile['correlations'] = crop_data[feature_cols].corr()
+            
+            self.crop_profiles[crop] = profile
+            print(f"✓ Learned profile for {crop} from {n_samples} samples")
     
-    def generate_crop_data(self, crop_name, n_samples, 
-                          ph_range, ec_range, humidity_range, 
-                          sunlight_range, soil_temp_range, soil_moisture_range,
-                          ph_mean=None, ec_mean=None, humidity_mean=None,
-                          sunlight_mean=None, soil_temp_mean=None, soil_moisture_mean=None):
-        """
-        Generate synthetic crop data with optional realism adjustments.
-        """
+    def generate_from_learned_profile(self, crop_name, n_samples):
+        """Generate synthetic data based on learned crop profile"""
+        if crop_name not in self.crop_profiles:
+            raise ValueError(f"No learned profile for {crop_name}. Available: {list(self.crop_profiles.keys())}")
+        
+        profile = self.crop_profiles[crop_name]
+        feature_cols = ['soil_ph', 'fertility_ec', 'humidity', 'sunlight', 'soil_temp', 'soil_moisture']
+        
+        # Generate multivariate normal data if correlations exist
+        if profile['correlations'] is not None and self.realism_mode:
+            means = [profile['means'][col] for col in feature_cols]
+            
+            # Create covariance matrix from correlations and stds
+            stds = [profile['stds'][col] for col in feature_cols]
+            cov_matrix = np.outer(stds, stds) * profile['correlations'].values
+            
+            # Generate correlated samples
+            samples = np.random.multivariate_normal(means, cov_matrix, n_samples)
+            
+            # Clip to reasonable ranges and add some noise
+            for i, col in enumerate(feature_cols):
+                min_val, max_val = profile['ranges'][col]
+                # Expand range slightly to allow some extrapolation
+                buffer = (max_val - min_val) * 0.1
+                samples[:, i] = np.clip(samples[:, i], min_val - buffer, max_val + buffer)
+        else:
+            # Generate independent samples
+            samples = np.zeros((n_samples, len(feature_cols)))
+            for i, col in enumerate(feature_cols):
+                mean = profile['means'][col]
+                std = profile['stds'][col]
+                min_val, max_val = profile['ranges'][col]
+                
+                samples[:, i] = np.random.normal(mean, std, n_samples)
+                samples[:, i] = np.clip(samples[:, i], min_val, max_val)
+        
+        # Round appropriately
+        samples[:, 0] = np.round(samples[:, 0], 1)  # soil_ph
+        samples[:, 1] = np.round(samples[:, 1])      # fertility_ec
+        samples[:, 2] = np.round(samples[:, 2])      # humidity
+        samples[:, 3] = np.round(samples[:, 3])      # sunlight
+        samples[:, 4] = np.round(samples[:, 4], 1)   # soil_temp
+        samples[:, 5] = np.round(samples[:, 5])      # soil_moisture
+        
+        # Create dataframe
+        df = pd.DataFrame(samples, columns=feature_cols)
+        df['label'] = crop_name
+        
+        return df
+    
+    def add_synthetic_samples(self, crop_name, n_samples):
+        """Add synthetic samples for a crop based on learned profile"""
+        synthetic_data = self.generate_from_learned_profile(crop_name, n_samples)
+        self.existing_data = pd.concat([self.existing_data, synthetic_data], ignore_index=True)
+        print(f"✓ Added {n_samples} synthetic samples for {crop_name}")
+    
+    def generate_manual_crop_data(self, crop_name, n_samples,
+                                  ph_range, ec_range, humidity_range,
+                                  sunlight_range, soil_temp_range, soil_moisture_range,
+                                  ph_mean=None, ec_mean=None, humidity_mean=None,
+                                  sunlight_mean=None, soil_temp_mean=None, soil_moisture_mean=None):
+        """Generate synthetic data using manual parameters (for crops without existing data)"""
         # Set default means if not provided
         if ph_mean is None: ph_mean = (ph_range[0] + ph_range[1]) / 2
         if ec_mean is None: ec_mean = (ec_range[0] + ec_range[1]) / 2
@@ -72,78 +195,149 @@ class CropDataGenerator:
         
         rows = []
         for _ in range(n_samples):
-            # Soil pH: narrow variation
-            soil_ph = round(self._generate_feature(ph_mean, *ph_range, variation=0.05, dist="normal"), 1)
+            # Generate with correlations if realism_mode is on
+            soil_ph = round(np.clip(np.random.normal(ph_mean, (ph_range[1] - ph_range[0]) * 0.05), *ph_range), 1)
+            fertility_ec = round(np.clip(np.random.normal(ec_mean, (ec_range[1] - ec_range[0]) * 0.12), *ec_range))
+            humidity = round(np.clip(np.random.normal(humidity_mean, (humidity_range[1] - humidity_range[0]) * 0.08), *humidity_range))
             
-            # Fertility (EC): moderate variation
-            fertility_ec = round(self._generate_feature(ec_mean, *ec_range, variation=0.12, dist="normal"))
-            
-            # Humidity: moderate variation
-            humidity = round(self._generate_feature(humidity_mean, *humidity_range, variation=0.08, dist="normal"))
+            # Soil temperature with variation
+            soil_temp = round(np.clip(np.random.normal(soil_temp_mean, (soil_temp_range[1] - soil_temp_range[0]) * 0.08), *soil_temp_range), 1)
             
             # Sunlight: correlated with temperature in realism mode
             if self.realism_mode:
-                # Higher sunlight often correlates with higher soil temperature
-                sunlight_adj_mean = sunlight_mean * (soil_temp_mean / 25)  # Adjust based on temperature
-                sunlight = round(self._generate_feature(sunlight_adj_mean, *sunlight_range, variation=0.15, dist="normal"))
+                sunlight_adj_mean = sunlight_mean * (soil_temp / soil_temp_mean)
+                sunlight = round(np.clip(np.random.normal(sunlight_adj_mean, (sunlight_range[1] - sunlight_range[0]) * 0.15), *sunlight_range))
             else:
-                sunlight = round(self._generate_feature(sunlight_mean, *sunlight_range, variation=0.15, dist="normal"))
-            
-            # Soil temperature: moderate variation
-            soil_temp = round(self._generate_feature(soil_temp_mean, *soil_temp_range, variation=0.08, dist="normal"), 1)
+                sunlight = round(np.clip(np.random.normal(sunlight_mean, (sunlight_range[1] - sunlight_range[0]) * 0.15), *sunlight_range))
             
             # Soil moisture: correlated with humidity in realism mode
             if self.realism_mode:
                 soil_moisture_adj_mean = soil_moisture_mean * (humidity / humidity_mean)
-                soil_moisture = round(self._generate_feature(soil_moisture_adj_mean, *soil_moisture_range, variation=0.10, dist="normal"))
+                soil_moisture = round(np.clip(np.random.normal(soil_moisture_adj_mean, (soil_moisture_range[1] - soil_moisture_range[0]) * 0.10), *soil_moisture_range))
             else:
-                soil_moisture = round(self._generate_feature(soil_moisture_mean, *soil_moisture_range, variation=0.10, dist="normal"))
+                soil_moisture = round(np.clip(np.random.normal(soil_moisture_mean, (soil_moisture_range[1] - soil_moisture_range[0]) * 0.10), *soil_moisture_range))
             
             rows.append([soil_ph, fertility_ec, humidity, sunlight, soil_temp, soil_moisture, crop_name])
         
-        return rows
+        df = pd.DataFrame(rows, columns=['soil_ph', 'fertility_ec', 'humidity', 'sunlight', 'soil_temp', 'soil_moisture', 'label'])
+        return df
     
-    def add_crop_to_dataset(self, crop_name, n_samples, 
-                           ph_range, ec_range, humidity_range, 
-                           sunlight_range, soil_temp_range, soil_moisture_range,
+    def fill_crop_to_target(self, crop_name, target_count,
+                           ph_range=None, ec_range=None, humidity_range=None,
+                           sunlight_range=None, soil_temp_range=None, soil_moisture_range=None,
                            ph_mean=None, ec_mean=None, humidity_mean=None,
                            sunlight_mean=None, soil_temp_mean=None, soil_moisture_mean=None):
-        """Add new crop data to dataset"""
-        synthetic_rows = self.generate_crop_data(
-            crop_name, n_samples, 
-            ph_range, ec_range, humidity_range, 
-            sunlight_range, soil_temp_range, soil_moisture_range,
-            ph_mean, ec_mean, humidity_mean,
-            sunlight_mean, soil_temp_mean, soil_moisture_mean
-        )
+        """
+        Ensure a crop reaches target sample size.
         
-        df_synthetic = pd.DataFrame(
-            synthetic_rows, 
-            columns=["soil_ph", "fertility_ec", "humidity", "sunlight", "soil_temp", "soil_moisture", "label"]
-        )
-
-        # Combine with existing data
-        self.existing_data = pd.concat([self.existing_data, df_synthetic], ignore_index=True)
-    
-    def fill_crop_to_target(self, crop_name, target_count, 
-                           ph_range, ec_range, humidity_range, 
-                           sunlight_range, soil_temp_range, soil_moisture_range,
-                           ph_mean=None, ec_mean=None, humidity_mean=None,
-                           sunlight_mean=None, soil_temp_mean=None, soil_moisture_mean=None):
-        """Ensure a crop reaches target sample size"""
+        - If crop has learned profile: uses learned data (ignores manual parameters)
+        - If crop has no profile: requires manual parameters
+        """
         current_count = self.get_crop_count(crop_name)
+        
         if current_count >= target_count:
-            print(f"{crop_name} already has {current_count} samples (target: {target_count})")
+            print(f"✓ {crop_name} already has {current_count} samples (target: {target_count})")
             return
         
         needed = target_count - current_count
-        self.add_crop_to_dataset(
-            crop_name, needed, 
-            ph_range, ec_range, humidity_range, 
-            sunlight_range, soil_temp_range, soil_moisture_range,
-            ph_mean, ec_mean, humidity_mean,
-            sunlight_mean, soil_temp_mean, soil_moisture_mean
-        )
+        
+        # Use learned profile if available
+        if crop_name in self.crop_profiles:
+            print(f"→ Generating {needed} samples for {crop_name} using learned profile ({current_count} → {target_count})")
+            self.add_synthetic_samples(crop_name, needed)
+        else:
+            # Require manual parameters for new crops
+            required_params = [ph_range, ec_range, humidity_range, sunlight_range, soil_temp_range, soil_moisture_range]
+            if any(p is None for p in required_params):
+                print(f"✗ Cannot generate for {crop_name}: no learned profile and missing manual parameters")
+                print(f"   Required: ph_range, ec_range, humidity_range, sunlight_range, soil_temp_range, soil_moisture_range")
+                return
+            
+            print(f"→ Generating {needed} samples for {crop_name} using manual parameters ({current_count} → {target_count})")
+            manual_data = self.generate_manual_crop_data(
+                crop_name, needed,
+                ph_range, ec_range, humidity_range,
+                sunlight_range, soil_temp_range, soil_moisture_range,
+                ph_mean, ec_mean, humidity_mean,
+                sunlight_mean, soil_temp_mean, soil_moisture_mean
+            )
+            self.existing_data = pd.concat([self.existing_data, manual_data], ignore_index=True)
+            print(f"✓ Added {needed} manual samples for {crop_name}")
+    
+    def get_single_sample_crops(self):
+        """Return list of crops with only 1 sample"""
+        single_sample_crops = []
+        for crop in self.existing_data['label'].unique():
+            if self.get_crop_count(crop) == 1:
+                single_sample_crops.append(crop)
+        return single_sample_crops
+    
+    def export_single_samples_as_template(self, output_path="single_sample_template.py"):
+        """
+        Export crops with 1 sample as a Python template for manual parameter entry.
+        This helps you quickly create fill_crop_to_target() calls for all single-sample crops.
+        """
+        single_crops = self.get_single_sample_crops()
+        
+        if not single_crops:
+            print("✓ No single-sample crops found")
+            return
+        
+        feature_cols = ['soil_ph', 'fertility_ec', 'humidity', 'sunlight', 'soil_temp', 'soil_moisture']
+        
+        template_lines = [
+            "# Template for crops with only 1 sample",
+            "# Copy these into your main script and adjust ranges as needed",
+            "# The values shown are from your single sample\n"
+        ]
+        
+        for crop in single_crops:
+            crop_data = self.existing_data[self.existing_data['label'] == crop].iloc[0]
+            
+            template_lines.append(f"# {crop}")
+            template_lines.append(f"generator.fill_crop_to_target(")
+            template_lines.append(f'    crop_name="{crop}",')
+            template_lines.append(f'    target_count=100,  # Adjust as needed')
+            
+            # Use single sample values as means, suggest reasonable ranges
+            for col in feature_cols:
+                value = crop_data[col]
+                
+                # Suggest ranges based on typical variations
+                if col == 'soil_ph':
+                    range_size = 1.0
+                    mean_val = round(value, 1)
+                elif col == 'fertility_ec':
+                    range_size = value * 0.3
+                    mean_val = round(value)
+                elif col in ['humidity', 'soil_moisture']:
+                    range_size = 15
+                    mean_val = round(value)
+                elif col == 'sunlight':
+                    range_size = value * 0.4
+                    mean_val = round(value)
+                elif col == 'soil_temp':
+                    range_size = 3.0
+                    mean_val = round(value, 1)
+                else:
+                    range_size = value * 0.2
+                    mean_val = round(value)
+                
+                min_val = max(0, mean_val - range_size / 2)
+                max_val = mean_val + range_size / 2
+                
+                col_formatted = col.replace('soil_', '').replace('fertility_', '')
+                template_lines.append(f'    {col_formatted}_range=({min_val:.1f}, {max_val:.1f}), {col_formatted}_mean={mean_val},')
+            
+            template_lines.append(")\n")
+        
+        # Write to file
+        with open(output_path, 'w') as f:
+            f.write('\n'.join(template_lines))
+        
+        print(f"✓ Template exported to {output_path}")
+        print(f"  Found {len(single_crops)} crops with 1 sample: {', '.join(single_crops)}")
+        print(f"  Review and adjust the ranges, then copy into your main script")
     
     def get_crop_count(self, crop_name):
         """Count samples for crop"""
@@ -151,16 +345,32 @@ class CropDataGenerator:
             return 0
         return len(self.existing_data[self.existing_data['label'] == crop_name])
     
-    def save_dataset(self, output_path):
-        """Save dataset to CSV"""
-        # Only create directory if path contains directories
+    def save_dataset(self, output_path, include_original=True):
+        """
+        Save dataset to CSV
+        
+        Parameters:
+        output_path (str): Output file path
+        include_original (bool): If False, only saves synthetic data (excludes original rows)
+        """
         dir_path = os.path.dirname(output_path)
-        if dir_path:  # Only if there's actually a directory path
+        if dir_path:
             os.makedirs(dir_path, exist_ok=True)
-        self.existing_data.to_csv(output_path, index=False)
-        print(f"Dataset saved to {output_path}")
-        # Update the path so future saves will use the same file
-        self.existing_csv_path = output_path
+        
+        if include_original:
+            self.existing_data.to_csv(output_path, index=False)
+            print(f"✓ Dataset saved to {output_path} (original + synthetic)")
+        else:
+            # Load original to identify synthetic rows
+            if self.existing_csv_path and os.path.exists(self.existing_csv_path):
+                original = pd.read_csv(self.existing_csv_path)
+                original_count = len(original)
+                synthetic_only = self.existing_data.iloc[original_count:]
+                synthetic_only.to_csv(output_path, index=False)
+                print(f"✓ Synthetic data saved to {output_path} ({len(synthetic_only)} rows)")
+            else:
+                self.existing_data.to_csv(output_path, index=False)
+                print(f"✓ Dataset saved to {output_path}")
     
     def show_dataset_summary(self):
         """Show summary of dataset"""
@@ -168,34 +378,71 @@ class CropDataGenerator:
             print("Dataset is empty")
             return
         
+        print("\n" + "="*50)
+        print("DATASET SUMMARY")
+        print("="*50)
         print(f"Total rows: {len(self.existing_data)}")
         print(f"Unique crops: {len(self.existing_data['label'].unique())}")
-        print(self.existing_data['label'].value_counts())
+        print("\nCrop distribution:")
+        print(self.existing_data['label'].value_counts().to_string())
+        print("="*50 + "\n")
+    
+    def show_crop_profile(self, crop_name):
+        """Display learned profile for a crop"""
+        if crop_name not in self.crop_profiles:
+            print(f"No profile for {crop_name}")
+            return
+        
+        profile = self.crop_profiles[crop_name]
+        print(f"\nProfile for {crop_name}:")
+        print("-" * 40)
+        for feature in profile['means'].keys():
+            mean = profile['means'][feature]
+            std = profile['stds'][feature]
+            rng = profile['ranges'][feature]
+            print(f"{feature:15} Mean: {mean:7.1f}  Std: {std:6.1f}  Range: {rng}")
+        print("-" * 40)
+
 
 # Example usage
 if __name__ == "__main__":
-    output_path = "enhanced_crop_data.csv"
-
-    generator = CropDataGenerator(existing_csv_path=output_path, realism_mode=True)
-    
-    
-
-    # print("Tropical Fruits (High humidity, warm): cacao, guyabano, lanzones, durian, rambutan")
-
-    
-    # === Tropical Fruits (High humidity, warm) ===
-
-    # Cacao - understory crop, shade-tolerant, very sensitive to drought
-    generator.fill_crop_to_target(
-        crop_name="Cacao",
-        target_count=100,
-        ph_range=(5.4, 6.5), ph_mean=6,
-        ec_range=(420, 460), ec_mean=440,
-        humidity_range=(70, 88), humidity_mean=85,
-        sunlight_range=(800, 1100), sunlight_mean=900,  # lower due to shade needs
-        soil_temp_range=(25, 28), soil_temp_mean=26.9,
-        soil_moisture_range=(65, 85), soil_moisture_mean=75
+    # Initialize with your existing dataset
+    # Path goes up one level (..) then into dataset folder
+    generator = SmartCropDataGenerator(
+        existing_csv_path="../dataset/SPC-soil-data.csv",
+        realism_mode=True
     )
+    
+    # Check what crops are available
+    if generator.crop_profiles:
+        print("\n" + "="*50)
+        print("LEARNED PROFILES (2+ samples):")
+        print("="*50)
+        for crop in generator.crop_profiles.keys():
+            generator.show_crop_profile(crop)
+    
+    # Export template for single-sample crops
+    print("\n" + "="*50)
+    print("CHECKING FOR SINGLE-SAMPLE CROPS:")
+    print("="*50)
+    generator.export_single_samples_as_template("../dataset/single_sample_template.py")
+    
+    # OPTION 1: Generate for existing crops with 2+ samples (uses learned profiles)
+    print("\n" + "="*50)
+    print("AUGMENTING CROPS WITH LEARNED PROFILES:")
+    print("="*50)
+    target_samples = 100  # Start with 100 samples per crop
+    for crop in generator.crop_profiles.keys():
+        generator.fill_crop_to_target(crop, target_samples)
+    
+    # OPTION 2: Add parameters for single-sample crops
+    # After running once, check single_sample_template.py
+    # Then copy the generated code here and adjust ranges as needed
+    
+    # Example for crops you add manually:
+    # Cacao - understory crop, shade-tolerant, very sensitive to drought
+   
+    
 
     # Guyabano - sun-tolerant, prefers well-drained soils
     generator.fill_crop_to_target(
@@ -209,17 +456,7 @@ if __name__ == "__main__":
         soil_moisture_range=(55, 75), soil_moisture_mean=65
     )
 
-    # Lanzones - very sensitive to drought, thrives in shaded/humid conditions
-    generator.fill_crop_to_target(
-        crop_name="Lanzones",
-        target_count=100,
-        ph_range=(4, 6.0), ph_mean=5.3,
-        ec_range=(488, 950), ec_mean=750,
-        humidity_range=(66, 86), humidity_mean=78,
-        sunlight_range=(800, 4500), sunlight_mean=2700,   
-        soil_temp_range=(26, 31), soil_temp_mean=27,
-        soil_moisture_range=(83, 99), soil_moisture_mean=90
-    )
+ 
 
     # Durian - deep-rooted, high water demand, sun-loving
     generator.fill_crop_to_target(
@@ -232,43 +469,7 @@ if __name__ == "__main__":
         soil_temp_range=(24, 30), soil_temp_mean=27,
         soil_moisture_range=(65, 85), soil_moisture_mean=75
     )
-
-    # Rambutan - requires high humidity, fertile soils, partial to full sun
-    generator.fill_crop_to_target(
-        crop_name="Rambutan",
-        target_count=100,
-        ph_range=(5.0, 6.5), ph_mean=5.8,
-        ec_range=(488, 760), ec_mean=600,
-        humidity_range=(80, 87), humidity_mean=84   ,
-        sunlight_range=(800, 2300), sunlight_mean=1500,
-        soil_temp_range=(26, 28.5), soil_temp_mean=27,
-        soil_moisture_range=(85, 99), soil_moisture_mean=93
-    )
-
-    
-
-
-
-
-
-    #  print("Citrus: calamansi, orange")  
-
-      
-    # === Citrus Group ===
-
-    # Calamansi - tropical, tolerates humidity, grows well in lowland Philippines
-    generator.fill_crop_to_target(
-        crop_name="Calamansi",
-        target_count=100,
-        ph_range=(4.8, 5.3), ph_mean=5,
-        ec_range=(430, 442), ec_mean=435,
-        humidity_range=(77, 81), humidity_mean=79,   
-        sunlight_range=(1800, 2100), sunlight_mean=2000,
-        soil_temp_range=(27.8, 29.3), soil_temp_mean=28.1,   
-        soil_moisture_range=(78, 86), soil_moisture_mean=82
-    )
-
-    # Orange - subtropical, prefers drier air, cooler winters help fruiting
+ 
     generator.fill_crop_to_target(
         crop_name="Orange",
         target_count=100,
@@ -276,20 +477,9 @@ if __name__ == "__main__":
         ec_range=(1000, 1800), ec_mean=1400,
         humidity_range=(50, 75), humidity_mean=65,   # lower humidity tolerance
         sunlight_range=(40000, 85000), sunlight_mean=65000,
-        soil_temp_range=(18, 28), soil_temp_mean=23,  # cooler compared to calamansi
+        soil_temp_range=(18, 28), soil_temp_mean=23,   
         soil_moisture_range=(45, 65), soil_moisture_mean=55
-    )
-
-
-
-
-
-
-    print("Legumes: snap bean, string bean, sigarilyas, mungbean")
-
-  # === Legumes Group ===
-
-    #(a) Snap Bean - prefers cooler, moist conditions
+    ) 
     generator.fill_crop_to_target(
         crop_name="Snap Bean",
         target_count=100,
@@ -301,17 +491,7 @@ if __name__ == "__main__":
         soil_moisture_range=(84, 94), soil_moisture_mean=89
     )
 
-    # (a)String Bean (Yardlong Bean) - tropical, heat-loving
-    generator.fill_crop_to_target(
-        crop_name="String Bean",
-        target_count=100,
-        ph_range=(6.3, 7.5), ph_mean=7,
-        ec_range=(500, 700), ec_mean=600,
-        humidity_range=(68, 80), humidity_mean=76,         
-        sunlight_range=(1000, 13000), sunlight_mean=7000,  
-        soil_temp_range=(26, 32), soil_temp_mean=29,        
-        soil_moisture_range=(85, 93), soil_moisture_mean=88   
-    )
+   
 
     # Sigarilyas (Winged Bean) - tropical, rainfall-adapted
     generator.fill_crop_to_target(
@@ -335,29 +515,7 @@ if __name__ == "__main__":
         sunlight_range=(45000, 90000), sunlight_mean=70000,
         soil_temp_range=(22, 32), soil_temp_mean=27,
         soil_moisture_range=(35, 65), soil_moisture_mean=50  # lowest water demand in group
-    )
-
-
-
-    # print("Leafy Greens: pechay, mustard")
-
-
-    
-    # === Leafy Greens Group ===
-
-#(*) Pechay - tropical, fast growth, high fertility & water demand
-    generator.fill_crop_to_target(
-        crop_name="Pechay",
-        target_count=100,
-        ph_range=(6.3, 7.5), ph_mean=6.8,
-        ec_range=(450, 550), ec_mean=500,             
-        humidity_range=(70, 85), humidity_mean=78,            
-        sunlight_range=(1000, 3000), sunlight_mean=2000,
-        soil_temp_range=(27, 29), soil_temp_mean=24,          
-        soil_moisture_range=(92, 97), soil_moisture_mean=95  
-    )
-
-    # Mustard - more cool-tolerant, lower fertility, tolerates drier soils
+    ) 
     generator.fill_crop_to_target(
         crop_name="Mustard",
         target_count=100,
@@ -367,34 +525,7 @@ if __name__ == "__main__":
         sunlight_range=(30000, 80000), sunlight_mean=55000, # full sun tolerant
         soil_temp_range=(15, 25), soil_temp_mean=20,        # prefers cooler soils
         soil_moisture_range=(40, 70), soil_moisture_mean=55 # tolerates drier soil
-    )
-
-
-
-
-
-    #  print("Gourds: ampalaya, patola, upo, squash")
-
-
-
-    # === Gourds Group ===
-
-    #(a) Ampalaya - tropical, heat-tolerant, moderate fertility
-    generator.fill_crop_to_target(
-        crop_name="Ampalaya",
-        target_count=100,
-        ph_range=(5.5, 6.8), ph_mean=6.2,
-        ec_range=(523, 532), ec_mean=527,                
-        humidity_range=(72, 77), humidity_mean=74,          
-        sunlight_range=(2000, 5000), sunlight_mean=3200,  
-        soil_temp_range=(28, 31), soil_temp_mean=29.5,        
-        soil_moisture_range=(87, 93), soil_moisture_mean=90   
-    )
-
-
-
-
-    # Patola (Sponge Gourd) - high fertility, water-loving
+    ) 
     generator.fill_crop_to_target(
         crop_name="Patola",
         target_count=100,
@@ -404,127 +535,7 @@ if __name__ == "__main__":
         sunlight_range=(50000, 90000), sunlight_mean=70000,  # loves strong sun
         soil_temp_range=(22, 30), soil_temp_mean=26,
         soil_moisture_range=(55, 80), soil_moisture_mean=68  # consistent water needed
-    )
-
-    # Upo (Bottle Gourd) - adaptable, prefers moisture
-    generator.fill_crop_to_target(
-        crop_name="Upo",
-        target_count=100,
-        ph_range=(6.8, 7.2), ph_mean=7,
-        ec_range=(530, 560), ec_mean=540,
-        humidity_range=(70, 80), humidity_mean=76,
-        sunlight_range=(2100, 3000), sunlight_mean=2700,
-        soil_temp_range=(26.8, 28.5), soil_temp_mean=27.9,
-        soil_moisture_range=(91, 94), soil_moisture_mean=93.5
-    )
-
-    #(L) Squash (Calabaza) - drought-tolerant, wide pH and soil range
-    generator.fill_crop_to_target(
-        crop_name="Squash",
-        target_count=100,
-        ph_range=(5.8, 7.2), ph_mean=6.5,                     
-        ec_range=(500, 600), ec_mean=550,                  
-        humidity_range=(68, 80), humidity_mean=75,           
-        sunlight_range=(2000, 10000), sunlight_mean=6000,
-        soil_temp_range=(27, 32), soil_temp_mean=30,
-        soil_moisture_range=(86, 93), soil_moisture_mean=90  # drought-tolerant
-    )
-
-
-
-
-    generator.fill_crop_to_target(
-        crop_name="Avocado",
-        target_count=100,
-        ph_range=(5.7, 6.3), ph_mean=6.0,
-        ec_range=(453, 458), ec_mean=455,                
-        humidity_range=(83, 88), humidity_mean=85,          
-        sunlight_range=(1000, 4000), sunlight_mean=1150,  
-        soil_temp_range=(26, 28), soil_temp_mean=27.1,        
-        soil_moisture_range=(83, 88), soil_moisture_mean=85   
-    )
-
-    generator.fill_crop_to_target(
-        crop_name="Coffee",
-        target_count=100,
-        ph_range=(5.8, 7.2), ph_mean=6.6,
-        ec_range=(448, 478), ec_mean=460,                
-        humidity_range=(79, 87), humidity_mean=83,          
-        sunlight_range=(680, 1230), sunlight_mean=1150,  
-        soil_temp_range=(26.3, 27.5), soil_temp_mean=27.1,        
-        soil_moisture_range=(85, 99), soil_moisture_mean=92    
-    )
-
-
-    generator.fill_crop_to_target(
-        crop_name="Cowpea",
-        target_count=100,
-        ph_range=(5.8, 6.3), ph_mean=6.0,
-        ec_range=(406, 413), ec_mean=410,                
-        humidity_range=(76, 80), humidity_mean=78,          
-        sunlight_range=(2100, 2300), sunlight_mean=2200,  
-        soil_temp_range=(27.3, 29), soil_temp_mean=28.4,        
-        soil_moisture_range=(81, 86), soil_moisture_mean=83    
-    )
-
-
-    generator.fill_crop_to_target(
-        crop_name="Black Pepper",
-        target_count=100,
-        ph_range=(5.7, 6.3), ph_mean=6.0,
-        ec_range=(438, 443), ec_mean=442,                
-        humidity_range=(83, 88), humidity_mean=85,          
-        sunlight_range=(890, 920), sunlight_mean=905,  
-        soil_temp_range=(26, 29), soil_temp_mean=28.7,        
-        soil_moisture_range=(83, 88), soil_moisture_mean=85   
-    )
-
-
-    generator.fill_crop_to_target(
-        crop_name="Bush Sitao",
-        target_count=100,
-        ph_range=(6.5, 7.2), ph_mean=7,
-        ec_range=(530, 538), ec_mean=535,                
-        humidity_range=(73, 78), humidity_mean=75,          
-        sunlight_range=(2450, 2850), sunlight_mean=2600,  
-        soil_temp_range=(26, 29), soil_temp_mean=28.7,        
-        soil_moisture_range=(90, 98), soil_moisture_mean=94   
-    )
-
-    generator.fill_crop_to_target(
-        crop_name="Orchid",
-        target_count=100,
-        ph_range=(5.7, 6.3), ph_mean=6.0,
-        ec_range=(387, 393), ec_mean=390,                
-        humidity_range=(73, 79), humidity_mean=76,          
-        sunlight_range=(1600, 2000), sunlight_mean=1850,  
-        soil_temp_range=(26, 28), soil_temp_mean=27.1,        
-        soil_moisture_range=(76, 82), soil_moisture_mean=78   
-    )
-
-
-    generator.fill_crop_to_target(
-        crop_name="Bamboo",
-        target_count=100,
-        ph_range=(4, 5.5), ph_mean=4.5,
-        ec_range=(628, 637), ec_mean=632,                
-        humidity_range=(60, 66), humidity_mean=62,          
-        sunlight_range=(6000, 12000), sunlight_mean=8077,  
-        soil_temp_range=(28, 31), soil_temp_mean=29.5,        
-        soil_moisture_range=(92, 99), soil_moisture_mean=95   
-    )
-
-
-    
-    
-
-
-    # print("Peppers: sili panigang, sili tingala")
-
-    
-    # === Peppers Group ===
-
-    # Sili Panigang (Long Green Chili) - vegetable use, prefers moderate humidity and moisture
+    ) 
     generator.fill_crop_to_target(
         crop_name="Sili Panigang",
         target_count=100,
@@ -546,191 +557,7 @@ if __name__ == "__main__":
         sunlight_range=(2000, 9000), sunlight_mean=5000,   
         soil_temp_range=(27.1, 31.5), soil_temp_mean=29,       
         soil_moisture_range=(81, 88), soil_moisture_mean=84 
-    )
-
-    generator.fill_crop_to_target(
-        crop_name="Sili Labuyo",
-        target_count=100,
-        ph_range=(5.5, 6.5), ph_mean=6.0,
-        ec_range=(450, 550), ec_mean=500,                 
-        humidity_range=(50, 75), humidity_mean=62,           
-        sunlight_range=(2000, 9000), sunlight_mean=5000,  
-        soil_temp_range=(27, 31), soil_temp_mean=29,         
-        soil_moisture_range=(80, 89), soil_moisture_mean=85   
-    )
-
-
-
-
-    # print("Root Crops: sweet potato, ube, cassava")
-
-    
-    # === Root Crops Group ===
-
-    #(a) Sweet Potato - drought-tolerant, prefers sandy soils, fast grower
-    generator.fill_crop_to_target(
-        crop_name="Sweet Potato",
-        target_count=100,
-        ph_range=(5.5, 6.8), ph_mean=6.2,
-        ec_range=(460, 600), ec_mean=530,                 
-        humidity_range=(78, 86), humidity_mean=82 ,
-        sunlight_range=(1000, 12000), sunlight_mean=6000,   
-        soil_temp_range=(25 , 30), soil_temp_mean=27,
-        soil_moisture_range=(88, 93), soil_moisture_mean=90  
-    )
-
-    generator.fill_crop_to_target(
-        crop_name="Kamoteng Baging",
-        target_count=100,
-        ph_range=(4.9, 6.1), ph_mean=5,
-        ec_range=(340, 368), ec_mean=359,                 
-        humidity_range=(68, 74), humidity_mean=70 ,
-        sunlight_range=(1000, 16000), sunlight_mean=10000,   
-        soil_temp_range=(25 , 35), soil_temp_mean=34.6,
-        soil_moisture_range=(88, 99), soil_moisture_mean=95
-    )
-
-    generator.fill_crop_to_target(
-        crop_name="Katuray",
-        target_count=100,
-        ph_range=(5.5, 6.5), ph_mean=6,
-        ec_range=(340, 368), ec_mean=354,                 
-        humidity_range=(75, 81), humidity_mean=78 ,
-        sunlight_range=(2000, 2500), sunlight_mean=2250,   
-        soil_temp_range=(28.5 , 29), soil_temp_mean=28.4,
-        soil_moisture_range=(80, 88), soil_moisture_mean=83
-    )
-
-    generator.fill_crop_to_target(
-        crop_name="Kulo",
-        target_count=100,
-        ph_range=(5.5, 6.5), ph_mean=6,
-        ec_range=(450, 480), ec_mean=470,                 
-        humidity_range=(80, 88), humidity_mean=84 ,
-        sunlight_range=(1030, 1080), sunlight_mean=1050,   
-        soil_temp_range=(26.6 , 28), soil_temp_mean=27.4,
-        soil_moisture_range=(80, 88), soil_moisture_mean=83
-    )
-
-    generator.fill_crop_to_target(
-        crop_name="Lipute",
-        target_count=100,
-        ph_range=(5.5, 6.5), ph_mean=6,
-        ec_range=(450, 480), ec_mean=420,                 
-        humidity_range=(78, 84), humidity_mean=81 ,
-        sunlight_range=(935, 965), sunlight_mean=950 ,   
-        soil_temp_range=(26.6 , 28), soil_temp_mean=27.4,
-        soil_moisture_range=(78, 83), soil_moisture_mean=80
-    )
-
-    generator.fill_crop_to_target(
-        crop_name="Sweet Sorghum",
-        target_count=100,
-        ph_range=(5.5, 6.8), ph_mean=6.2,
-        ec_range=(460, 600), ec_mean=515,                 
-        humidity_range=(75, 86), humidity_mean=80 ,
-        sunlight_range=(1500, 12000), sunlight_mean=6000,   
-        soil_temp_range=(25 , 30), soil_temp_mean=28.4,
-        soil_moisture_range=(88, 93), soil_moisture_mean=89  
-    )
-
-    # Ube (Purple Yam) - needs fertile, moist soils for tuber development
-    generator.fill_crop_to_target(
-        crop_name="Ube",
-        target_count=100,
-        ph_range=(4.8, 5.4), ph_mean=5.0,
-        ec_range=(466, 475), ec_mean=470,                 
-        humidity_range=(81, 85), humidity_mean=83,           
-        sunlight_range=(1200, 5000), sunlight_mean=3200,   
-        soil_temp_range=(26, 28.2), soil_temp_mean=27.9,
-        soil_moisture_range=(88, 92), soil_moisture_mean=90  
-    )
-
-    # Cassava - extreme drought tolerance, can grow in poor soils
-    generator.fill_crop_to_target(
-        crop_name="Cassava",
-        target_count=100,
-        ph_range=(5.0, 6.8), ph_mean=5.8,
-        ec_range=(508, 530), ec_mean=517,                  # lowest fertility requirement
-        humidity_range=(85, 90), humidity_mean=88,           # drier air tolerated
-        sunlight_range=(1080, 1105), sunlight_mean=1094,  # loves full sun
-        soil_temp_range=(24, 34), soil_temp_mean=28,         # hotter than others
-        soil_moisture_range=(90, 99), soil_moisture_mean=94  # lowest moisture need
-    )
-
- 
-
-    # print("Large Tropical Fruits: banana, jackfruit, coconut")
-
-    # === Large Tropical Fruits Group ===
-
-    # Banana - shallow roots, needs high fertility & moisture
-    generator.fill_crop_to_target(
-        crop_name="Banana",
-        target_count=100,
-        ph_range=(5, 7.1), ph_mean=5.5,
-        ec_range=(468, 556), ec_mean=500,                 # very nutrient hungry
-        humidity_range=(73, 85), humidity_mean= 80,
-        sunlight_range=(1280, 2520), sunlight_mean=1800,   
-        soil_temp_range=(27, 30), soil_temp_mean=28.5,
-        soil_moisture_range=(88, 97), soil_moisture_mean=93  
-    )
-
-    # Jackfruit - deep roots, less fertility and moisture demanding than banana
-    generator.fill_crop_to_target(
-        crop_name="Jackfruit",
-        target_count=100,
-        ph_range=(5.5, 6.3), ph_mean=6,
-        ec_range=(465, 475), ec_mean=470,                  # lower fertility need
-        humidity_range=(80, 87), humidity_mean=84,
-        sunlight_range=(1020, 1080), sunlight_mean=1050,  # tolerates partial sun
-        soil_temp_range=(26, 29), soil_temp_mean=27.4,
-        soil_moisture_range=(87, 91), soil_moisture_mean=89  # moderate water demand
-    )
-
-    # Coconut - hardy palm, tolerates salinity, thrives in coastal full sun
-    generator.fill_crop_to_target(
-        crop_name="Coconut",
-        target_count=100,
-        ph_range=(5.8, 7.0), ph_mean=6.4,
-        ec_range=(350, 520), ec_mean=440,
-        humidity_range=(69, 86), humidity_mean=75,
-        sunlight_range=(1200, 13000), sunlight_mean=6000,  
-        soil_temp_range=(26.8, 34), soil_temp_mean=29,
-        soil_moisture_range=(84, 99), soil_moisture_mean=90   
-    )
-
-
-    
-
-
-    # print("High-sun crops: maize, papaya, watermelon")
-
-    # === High-sun Crops Group ===
-
-    # Maize - heavy feeder, adaptable but needs consistent water during grain fill
-    generator.fill_crop_to_target(
-        crop_name="Maize",
-        target_count=100,
-        ph_range=(5.5, 7.0), ph_mean=6.2,
-        ec_range=(477, 524), ec_mean=500,               # high nutrient demand
-        humidity_range=(75, 85), humidity_mean=80,         # slightly lower tolerance
-        sunlight_range=(1400, 3000), sunlight_mean=2200,
-        soil_temp_range=(27, 30), soil_temp_mean=28.5,
-        soil_moisture_range=(84, 92), soil_moisture_mean=65
-    )
-
-    # Papaya - tropical, higher temperature requirement, shallow-rooted & sensitive to waterlogging
-    generator.fill_crop_to_target(
-        crop_name="Papaya",
-        target_count=100,
-        ph_range=(5.8, 6.3), ph_mean=6.0,
-        ec_range=(428, 442), ec_mean=435,
-        humidity_range=(76, 81), humidity_mean=79,         # more humidity-tolerant than maize
-        sunlight_range=(1500, 8000), sunlight_mean=5000,
-        soil_temp_range=(26, 29), soil_temp_mean=28.1,       # prefers warmer soil
-        soil_moisture_range=(80, 84), soil_moisture_mean=82
-    )
+    ) 
 
     # Watermelon - drought-tolerant cucurbit, wide pH range, less fertility demand
     generator.fill_crop_to_target(
@@ -742,15 +569,7 @@ if __name__ == "__main__":
         sunlight_range=(50000, 95000), sunlight_mean=75000,
         soil_temp_range=(22, 32), soil_temp_mean=27,
         soil_moisture_range=(40, 70), soil_moisture_mean=55  # more drought tolerant
-    )
-
-
-    
-
-
-
-    # print("Nightshades: tomato, eggplant")
-
+    ) 
     
         # Tomato - prefers cooler root zone, high fertility, consistent moisture
     generator.fill_crop_to_target(
@@ -762,35 +581,7 @@ if __name__ == "__main__":
         sunlight_range=(45000, 85000), sunlight_mean=65000,
         soil_temp_range=(16, 26), soil_temp_mean=22,    # cooler root temp preferred
         soil_moisture_range=(60, 80), soil_moisture_mean=70  # steady moisture for fruit set
-    )
-
-    #(a) Eggplant - more heat-tolerant, slightly lower fertility requirement, tolerates wider conditions
-    generator.fill_crop_to_target(
-        crop_name="Eggplant",
-        target_count=100,
-        ph_range=(5.8, 6.3), ph_mean=6,
-        ec_range=(482, 488), ec_mean=485,
-        humidity_range=(74, 78), humidity_mean=76,       
-        sunlight_range=(2300, 2500), sunlight_mean=2400,
-        soil_temp_range=(28.5, 29.3), soil_temp_mean=28.9,    
-        soil_moisture_range=(85, 89), soil_moisture_mean=87   
-    )
-
-
-     #(a) Eggplant - more heat-tolerant, slightly lower fertility requirement, tolerates wider conditions
-    generator.fill_crop_to_target(
-        crop_name="Forage Grass",
-        target_count=100,
-        ph_range=(6.6, 7.3), ph_mean=7,
-        ec_range=(400, 410), ec_mean=405,
-        humidity_range=(76, 81), humidity_mean=79,       
-        sunlight_range=(1800, 2000), sunlight_mean=1900,
-        soil_temp_range=(27.5, 29.3), soil_temp_mean=28,    
-        soil_moisture_range=(80, 88), soil_moisture_mean=84   
-    )
-
-
-
+    ) 
 
     # print("Cool weather: onion, radish")
 
@@ -817,13 +608,7 @@ if __name__ == "__main__":
         sunlight_range=(35000, 75000), sunlight_mean=55000,
         soil_temp_range=(10, 20), soil_temp_mean=15,      # cooler than onion
         soil_moisture_range=(50, 75), soil_moisture_mean=65  # steady moisture for root swelling
-    )
-
-    
-    
-
-    # print("Unique requirements: apple, grapes, rice, oyster mushroom, mango, okra, pineapple, gabi, ginger")
-
+    ) 
 
     # Apple - temperate, requires chilling hours, cool soil temps
     generator.fill_crop_to_target(
@@ -849,17 +634,7 @@ if __name__ == "__main__":
         soil_moisture_range=(40, 60), soil_moisture_mean=50  # drought tolerant
     )
 
-    # Rice - semi-aquatic, flooded fields, high humidity, warm soil
-    generator.fill_crop_to_target(
-        crop_name="Rice",
-        target_count=100,
-        ph_range=(6.8, 7.3), ph_mean=7,
-        ec_range=(530, 570), ec_mean=550,
-        humidity_range=(70, 79), humidity_mean=75,        # high humidity crop
-        sunlight_range=(2400, 2700), sunlight_mean=2500,
-        soil_temp_range=(26, 31), soil_temp_mean=29.2,
-        soil_moisture_range=(92, 98), soil_moisture_mean=95  # flooded/paddy conditions
-    )
+   
 
     # Oyster Mushroom - shade crop, very high humidity, moderate temps
     generator.fill_crop_to_target(
@@ -871,25 +646,9 @@ if __name__ == "__main__":
         sunlight_range=(2000, 10000), sunlight_mean=6000, # low light / shade
         soil_temp_range=(18, 25), soil_temp_mean=22,
         soil_moisture_range=(65, 90), soil_moisture_mean=78
-    )
-
-
-
-
-
+    ) 
    
-   
-    # Mango - drought-tolerant tropical tree, full sun, warmer soils, lower soil moisture for good fruiting
-    generator.fill_crop_to_target(
-        crop_name="Mango",
-        target_count=100,
-        ph_range=(5.5, 7.5), ph_mean=6.5,
-        ec_range=(400, 530), ec_mean=460,           
-        humidity_range=(78, 90), humidity_mean=85,    
-        sunlight_range=(980, 1110), sunlight_mean=1050,
-        soil_temp_range=(26, 30), soil_temp_mean=29.5,  
-        soil_moisture_range=(78, 99), soil_moisture_mean=88   
-    )
+ 
 
     # Okra - heat-loving, full-sun annual; tolerates drier spells but performs with moderate fertility
     generator.fill_crop_to_target(
@@ -903,60 +662,287 @@ if __name__ == "__main__":
         soil_moisture_range=(40, 75), soil_moisture_mean=55  # tolerates some dryness
     )
 
-    # (L)Pineapple - prefers acidic, well-drained soils; drought-tolerant relative, high light requirement
+
+
+    # single sample 
+
+        # Template for crops with only 1 sample
+    # Copy these into your main script and adjust ranges as needed
+    # The values shown are from your single sample
+
+    # Bamboo
     generator.fill_crop_to_target(
-        crop_name="Pineapple",
-        target_count=100,
-        ph_range=(4.5, 6.0), ph_mean=5.3,
-        ec_range=(430, 650), ec_mean=540,              
-        humidity_range=(70, 78), humidity_mean=75,
-        sunlight_range=(2500, 45000), sunlight_mean=20000,
-        soil_temp_range=(28, 34.5), soil_temp_mean=31,
-        soil_moisture_range=(85, 99), soil_moisture_mean=92 
+        crop_name="Bamboo",
+        target_count=100,  # Adjust as needed
+        ph_range=(3.5, 4.5), ph_mean=4.0,
+        ec_range=(537.2, 726.8), ec_mean=632,
+        humidity_range=(54.5, 69.5), humidity_mean=62,
+        sunlight_range=(6461.6, 9692.4), sunlight_mean=8077,
+       soil_temp_range=(28.0, 31.0),soil_temp_mean=29.5,
+       soil_moisture_range=(91.5, 106.5),soil_moisture_mean=99,
     )
 
-    # Gabi (Taro) - shade tolerant, high humidity & soil moisture, lower light
+    # Black Pepper
     generator.fill_crop_to_target(
-        crop_name="Gabi",
-        target_count=100,
-        ph_range=(6.5, 7.2), ph_mean=6.8,
-        ec_range=(458, 470), ec_mean=464,
-        humidity_range=(80, 86), humidity_mean=83,     # very humid conditions
-        sunlight_range=(1100, 10000), sunlight_mean=5500,  # shade to partial shade
-        soil_temp_range=(26, 27.8), soil_temp_mean=26,
-        soil_moisture_range=(90, 96), soil_moisture_mean=93  # likes saturated/very moist soils
+        crop_name="Black Pepper",
+        target_count=100,  # Adjust as needed
+        ph_range=(5.1, 6.1), ph_mean=5.6,
+        ec_range=(374.0, 506.0), ec_mean=440,
+        humidity_range=(77.5, 92.5), humidity_mean=85,
+        sunlight_range=(720.0, 1080.0), sunlight_mean=900,
+       soil_temp_range=(25.4, 28.4),soil_temp_mean=26.9,
+       soil_moisture_range=(77.5, 92.5),soil_moisture_mean=85,
     )
 
-    # Ginger - shade/understory crop, high humidity and consistent moisture, moderate fertility
+    # Bush Sitao
     generator.fill_crop_to_target(
-        crop_name="Ginger",
-        target_count=100,
+        crop_name="Bush Sitao",
+        target_count=100,  # Adjust as needed
+        ph_range=(6.1, 7.1), ph_mean=6.6,
+        ec_range=(454.8, 615.2), ec_mean=535,
+        humidity_range=(67.5, 82.5), humidity_mean=75,
+        sunlight_range=(2080.0, 3120.0), sunlight_mean=2600,
+       soil_temp_range=(27.2, 30.2),soil_temp_mean=28.7,
+       soil_moisture_range=(86.5, 101.5),soil_moisture_mean=94,
+    )
+
+    # Cassava
+    generator.fill_crop_to_target(
+        crop_name="Cassava",
+        target_count=100,  # Adjust as needed
         ph_range=(5.5, 6.5), ph_mean=6.0,
-        ec_range=(453, 470), ec_mean=460,
-        humidity_range=(77, 86), humidity_mean=82,   
-        sunlight_range=(1130, 1810), sunlight_mean=1500,   # low light / filtered shade
-        soil_temp_range=(26, 29), soil_temp_mean=28,
-        soil_moisture_range=(84, 91), soil_moisture_mean=87  # consistently moist but not waterlogged
+        ec_range=(439.4, 594.5), ec_mean=517,
+        humidity_range=(80.5, 95.5), humidity_mean=88,
+        sunlight_range=(875.2, 1312.8), sunlight_mean=1094,
+       soil_temp_range=(27.0, 30.0),soil_temp_mean=28.5,
+       soil_moisture_range=(91.5, 106.5),soil_moisture_mean=99,
     )
 
+    # Cowpea
+    generator.fill_crop_to_target(
+        crop_name="Cowpea",
+        target_count=100,  # Adjust as needed
+        ph_range=(5.7, 6.7), ph_mean=6.2,
+        ec_range=(348.5, 471.5), ec_mean=410,
+        humidity_range=(70.5, 85.5), humidity_mean=78,
+        sunlight_range=(1760.0, 2640.0), sunlight_mean=2200,
+       soil_temp_range=(26.9, 29.9),soil_temp_mean=28.4,
+       soil_moisture_range=(75.5, 90.5),soil_moisture_mean=83,
+    )
+
+    # Forage Grass
+    generator.fill_crop_to_target(
+        crop_name="Forage Grass",
+        target_count=100,  # Adjust as needed
+        ph_range=(6.3, 7.3), ph_mean=6.8,
+        ec_range=(344.2, 465.8), ec_mean=405,
+        humidity_range=(71.5, 86.5), humidity_mean=79,
+        sunlight_range=(1520.0, 2280.0), sunlight_mean=1900,
+       soil_temp_range=(26.5, 29.5),soil_temp_mean=28.0,
+       soil_moisture_range=(76.5, 91.5),soil_moisture_mean=84,
+    )
+
+    # Ipil Ipil
     generator.fill_crop_to_target(
         crop_name="Ipil Ipil",
-        target_count=100,
-        ph_range=(6.2, 7.2), ph_mean=6.8,
-        ec_range=(398, 412), ec_mean=405,
-        humidity_range=(77, 81), humidity_mean=79,   
-        sunlight_range=(1800, 2000), sunlight_mean=1900,   # low light / filtered shade
-        soil_temp_range=(26, 29), soil_temp_mean=28,
-        soil_moisture_range=(82, 87), soil_moisture_mean=84  # consistently moist but not waterlogged
+        target_count=100,  # Adjust as needed
+        ph_range=(6.3, 7.3), ph_mean=6.8,
+        ec_range=(344.2, 465.8), ec_mean=405,
+        humidity_range=(71.5, 86.5), humidity_mean=79,
+        sunlight_range=(1520.0, 2280.0), sunlight_mean=1900,
+       soil_temp_range=(26.5, 29.5),soil_temp_mean=28.0,
+       soil_moisture_range=(76.5, 91.5),soil_moisture_mean=84,
     )
 
-    
-   
-    
- 
+    # Jackfruit
+    generator.fill_crop_to_target(
+        crop_name="Jackfruit",
+        target_count=100,  # Adjust as needed
+        ph_range=(5.2, 6.2), ph_mean=5.7,
+        ec_range=(399.5, 540.5), ec_mean=470,
+        humidity_range=(76.5, 91.5), humidity_mean=84,
+        sunlight_range=(840.0, 1260.0), sunlight_mean=1050,
+       soil_temp_range=(25.9, 28.9),soil_temp_mean=27.4,
+       soil_moisture_range=(81.5, 96.5),soil_moisture_mean=89,
+    )
 
+    # Rice
+    generator.fill_crop_to_target(
+        crop_name="Rice",
+        target_count=100,  # Adjust as needed
+        ph_range=(6.3, 7.3), ph_mean=6.8,
+        ec_range=(467.5, 632.5), ec_mean=550,
+        humidity_range=(67.5, 82.5), humidity_mean=75,
+        sunlight_range=(2000.0, 3000.0), sunlight_mean=2500,
+       soil_temp_range=(27.7, 30.7),soil_temp_mean=29.2,
+       soil_moisture_range=(87.5, 102.5),soil_moisture_mean=95,
+    )
+
+    # Kamoteng Baging
+    generator.fill_crop_to_target(
+        crop_name="Kamoteng Baging",
+        target_count=100,  # Adjust as needed
+        ph_range=(4.0, 5.0), ph_mean=4.5,
+        ec_range=(305.1, 412.9), ec_mean=359,
+        humidity_range=(62.5, 77.5), humidity_mean=70,
+        sunlight_range=(12671.2, 19006.8), sunlight_mean=15839,
+       soil_temp_range=(33.1, 36.1),soil_temp_mean=34.6,
+       soil_moisture_range=(91.5, 106.5),soil_moisture_mean=99,
+    )
+
+    # Katuray
+    generator.fill_crop_to_target(
+        crop_name="Katuray",
+        target_count=100,  # Adjust as needed
+        ph_range=(5.7, 6.7), ph_mean=6.2,
+        ec_range=(348.5, 471.5), ec_mean=410,
+        humidity_range=(70.5, 85.5), humidity_mean=78,
+        sunlight_range=(1760.0, 2640.0), sunlight_mean=2200,
+       soil_temp_range=(26.9, 29.9),soil_temp_mean=28.4,
+       soil_moisture_range=(75.5, 90.5),soil_moisture_mean=83,
+    )
+
+    # Kulo
+    generator.fill_crop_to_target(
+        crop_name="Kulo",
+        target_count=100,  # Adjust as needed
+        ph_range=(5.2, 6.2), ph_mean=5.7,
+        ec_range=(399.5, 540.5), ec_mean=470,
+        humidity_range=(76.5, 91.5), humidity_mean=84,
+        sunlight_range=(840.0, 1260.0), sunlight_mean=1050,
+       soil_temp_range=(25.9, 28.9),soil_temp_mean=27.4,
+       soil_moisture_range=(81.5, 96.5),soil_moisture_mean=89,
+    )
+
+    # Lipute
+    generator.fill_crop_to_target(
+        crop_name="Lipute",
+        target_count=100,  # Adjust as needed
+        ph_range=(5.2, 6.2), ph_mean=5.7,
+        ec_range=(357.0, 483.0), ec_mean=420,
+        humidity_range=(73.5, 88.5), humidity_mean=81,
+        sunlight_range=(760.0, 1140.0), sunlight_mean=950,
+       soil_temp_range=(26.5, 29.5),soil_temp_mean=28.0,
+       soil_moisture_range=(72.5, 87.5),soil_moisture_mean=80,
+    )
+
+    # Orchid
+    generator.fill_crop_to_target(
+        crop_name="Orchid",
+        target_count=100,  # Adjust as needed
+        ph_range=(5.6, 6.6), ph_mean=6.1,
+        ec_range=(331.5, 448.5), ec_mean=390,
+        humidity_range=(68.5, 83.5), humidity_mean=76,
+        sunlight_range=(1480.0, 2220.0), sunlight_mean=1850,
+       soil_temp_range=(26.8, 29.8),soil_temp_mean=28.3,
+       soil_moisture_range=(70.5, 85.5),soil_moisture_mean=78,
+    )
+
+    # Papaya
+    generator.fill_crop_to_target(
+        crop_name="Papaya",
+        target_count=100,  # Adjust as needed
+        ph_range=(5.5, 6.5), ph_mean=6.0,
+        ec_range=(369.8, 500.2), ec_mean=435,
+        humidity_range=(71.5, 86.5), humidity_mean=79,
+        sunlight_range=(1600.0, 2400.0), sunlight_mean=2000,
+       soil_temp_range=(26.6, 29.6),soil_temp_mean=28.1,
+       soil_moisture_range=(74.5, 89.5),soil_moisture_mean=82,
+    )
+
+    # Pechay
+    generator.fill_crop_to_target(
+        crop_name="Pechay",
+        target_count=100,  # Adjust as needed
+        ph_range=(6.1, 7.1), ph_mean=6.6,
+        ec_range=(454.8, 615.2), ec_mean=535,
+        humidity_range=(67.5, 82.5), humidity_mean=75,
+        sunlight_range=(2080.0, 3120.0), sunlight_mean=2600,
+       soil_temp_range=(27.2, 30.2),soil_temp_mean=28.7,
+       soil_moisture_range=(86.5, 101.5),soil_moisture_mean=94,
+    )
+
+    # Sili Labuyo
+    generator.fill_crop_to_target(
+        crop_name="Sili Labuyo",
+        target_count=100,  # Adjust as needed
+        ph_range=(5.0, 6.0), ph_mean=5.5,
+        ec_range=(412.2, 557.8), ec_mean=485,
+        humidity_range=(68.5, 83.5), humidity_mean=76,
+        sunlight_range=(1920.0, 2880.0), sunlight_mean=2400,
+       soil_temp_range=(27.4, 30.4),soil_temp_mean=28.9,
+       soil_moisture_range=(79.5, 94.5),soil_moisture_mean=87,
+    )
+
+    # Sweet Potato
+    generator.fill_crop_to_target(
+        crop_name="Sweet Potato",
+        target_count=100,  # Adjust as needed
+        ph_range=(5.9, 6.9), ph_mean=6.4,
+        ec_range=(420.8, 569.2), ec_mean=495,
+        humidity_range=(73.5, 88.5), humidity_mean=81,
+        sunlight_range=(1320.0, 1980.0), sunlight_mean=1650,
+       soil_temp_range=(26.3, 29.3),soil_temp_mean=27.8,
+       soil_moisture_range=(84.5, 99.5),soil_moisture_mean=92,
+    )
+
+    # Sweet Sorghum
+    generator.fill_crop_to_target(
+        crop_name="Sweet Sorghum",
+        target_count=100,  # Adjust as needed
+        ph_range=(5.5, 6.5), ph_mean=6.0,
+        ec_range=(437.8, 592.2), ec_mean=515,
+        humidity_range=(70.5, 85.5), humidity_mean=78,
+        sunlight_range=(2200.0, 3300.0), sunlight_mean=2750,
+       soil_temp_range=(26.9, 29.9),soil_temp_mean=28.4,
+       soil_moisture_range=(81.5, 96.5),soil_moisture_mean=89,
+    )
+
+    # String Bean
+    generator.fill_crop_to_target(
+        crop_name="String Bean",
+        target_count=100,  # Adjust as needed
+        ph_range=(6.4, 7.4), ph_mean=6.9,
+        ec_range=(459.0, 621.0), ec_mean=540,
+        humidity_range=(68.5, 83.5), humidity_mean=76,
+        sunlight_range=(2160.0, 3240.0), sunlight_mean=2700,
+       soil_temp_range=(27.5, 30.5),soil_temp_mean=29.0,
+       soil_moisture_range=(85.5, 100.5),soil_moisture_mean=93,
+    )
+
+    # Upo
+    generator.fill_crop_to_target(
+        crop_name="Upo",
+        target_count=100,  # Adjust as needed
+        ph_range=(6.4, 7.4), ph_mean=6.9,
+        ec_range=(459.0, 621.0), ec_mean=540,
+        humidity_range=(68.5, 83.5), humidity_mean=76,
+        sunlight_range=(2160.0, 3240.0), sunlight_mean=2700,
+       soil_temp_range=(27.5, 30.5),soil_temp_mean=29.0,
+       soil_moisture_range=(85.5, 100.5),soil_moisture_mean=93,
+    )
+
+    # Ube
+    generator.fill_crop_to_target(
+        crop_name="Ube",
+        target_count=100,  # Adjust as needed
+        ph_range=(4.9, 5.9), ph_mean=5.4,
+        ec_range=(399.5, 540.5), ec_mean=470,
+        humidity_range=(75.5, 90.5), humidity_mean=83,
+        sunlight_range=(1040.0, 1560.0), sunlight_mean=1300,
+       soil_temp_range=(26.4, 29.4),soil_temp_mean=27.9,
+       soil_moisture_range=(82.5, 97.5),soil_moisture_mean=90,
+    )
+
+
+
+
+    
+    # Show summary
     generator.show_dataset_summary()
-    generator.save_dataset("enhanced_crop_data.csv")
-
-
- 
+    
+    # Save with original data included (back to dataset folder)
+    generator.save_dataset("../dataset/augmented_crop_data.csv", include_original=True)
+    
+    # Or save only synthetic data
+    # generator.save_dataset("../dataset/synthetic_only.csv", include_original=False)

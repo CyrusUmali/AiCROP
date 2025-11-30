@@ -6,7 +6,7 @@ CROP_IMAGE_MAPPING = {
     "Tomato": "https://res.cloudinary.com/dk41ykxsq/image/upload/v1755246155/testUpload/xxdraa3qvsad5inp6ya2.webp",
     "Sweet Potato": "https://res.cloudinary.com/dk41ykxsq/image/upload/v1755246761/testUpload/qvn0q0hy63nknszrn9p2.webp",
     "String Bean": "https://res.cloudinary.com/dk41ykxsq/image/upload/v1755245591/testUpload/kjz9fbexa1vo1ielj9yy.jpg",
-    "Pechay": "https://res.cloudinary.com/dk41ykxsq/image/upload/v1755245142/testUpload/q0mgtkhcvcgds3igx5of.webpest",
+    "Pechay": "https://res.cloudinary.com/dk41ykxsq/image/upload/v1755245142/testUpload/q0mgtkhcvcgds3igx5of.webp",
     "Patola": "https://res.cloudinary.com/dk41ykxsq/image/upload/v1755246257/testUpload/gdjlamgzvo0gkhh5ksjv.jpg",
     "Sigarilyas": "https://res.cloudinary.com/dk41ykxsq/image/upload/v1755358791/testUpload/oma0duqba3f8eiewna2x.jpg",
     "Papaya": "https://res.cloudinary.com/dk41ykxsq/image/upload/v1755244736/testUpload/tgo9yc53dnafemoq2pt9.webp",
