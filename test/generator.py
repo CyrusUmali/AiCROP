@@ -17,7 +17,7 @@ class SmartCropDataGenerator:
         self.existing_data = pd.DataFrame(
             columns=['soil_ph', 'fertility_ec', 'humidity', 'sunlight', 'soil_temp', 'soil_moisture', 'label']
         )
-        self.crop_profiles = {}  # Store learned profiles for each crop
+        self.crop_profiles = {}
         
         if existing_csv_path and os.path.exists(existing_csv_path):
             self.load_existing_data()
@@ -30,17 +30,13 @@ class SmartCropDataGenerator:
             if not existing.empty:
                 expected_cols = ['soil_ph', 'fertility_ec', 'humidity', 'sunlight', 'soil_temp', 'soil_moisture', 'label']
                 if set(existing.columns) == set(expected_cols):
-                    # Convert numeric columns to proper types and handle errors
                     numeric_cols = ['soil_ph', 'fertility_ec', 'humidity', 'sunlight', 'soil_temp', 'soil_moisture']
                     
-                    # Track which rows have problems
                     original_data = existing.copy()
                     
                     for col in numeric_cols:
-                        # Convert to numeric, coercing errors to NaN
                         existing[col] = pd.to_numeric(existing[col], errors='coerce')
                     
-                    # Find rows with any NaN values
                     invalid_rows = existing[existing[numeric_cols].isna().any(axis=1)]
                     
                     if len(invalid_rows) > 0:
@@ -51,9 +47,8 @@ class SmartCropDataGenerator:
                             original_row = original_data.loc[idx]
                             converted_row = existing.loc[idx]
                             
-                            print(f"\nRow {idx + 2} (CSV line): {original_row['label']}")  # +2 for header and 0-index
+                            print(f"\nRow {idx + 2} (CSV line): {original_row['label']}")
                             
-                            # Show which columns have problems
                             problems = []
                             for col in numeric_cols:
                                 original_val = original_row[col]
@@ -67,10 +62,7 @@ class SmartCropDataGenerator:
                         
                         print("="*80)
                     
-                    # Remove rows with any NaN values
                     existing = existing.dropna()
-                    
-                    # Clean up label column (remove extra spaces)
                     existing['label'] = existing['label'].str.strip()
                     
                     self.existing_data = pd.concat([self.existing_data, existing], ignore_index=True)
@@ -93,11 +85,20 @@ class SmartCropDataGenerator:
         
         feature_cols = ['soil_ph', 'fertility_ec', 'humidity', 'sunlight', 'soil_temp', 'soil_moisture']
         
+        # FIXED: Define minimum realistic standard deviations per feature
+        min_stds = {
+            'soil_ph': 0.15,           # At least 0.15 pH units variation
+            'fertility_ec': 20,         # At least 20 units
+            'humidity': 3.0,            # At least 3% variation
+            'sunlight': 200,            # At least 200 lux variation
+            'soil_temp': 0.5,           # At least 0.5°C variation
+            'soil_moisture': 3.0        # At least 3% variation
+        }
+        
         for crop in self.existing_data['label'].unique():
             crop_data = self.existing_data[self.existing_data['label'] == crop]
             n_samples = len(crop_data)
             
-            # Need at least 2 samples for standard deviation
             if n_samples < 2:
                 print(f"⚠ Skipping {crop}: only {n_samples} sample (need 2+ for learning)")
                 continue
@@ -110,18 +111,29 @@ class SmartCropDataGenerator:
                 'n_samples': n_samples
             }
             
-            # Learn statistics for each feature
             for col in feature_cols:
                 profile['means'][col] = crop_data[col].mean()
-                profile['stds'][col] = max(crop_data[col].std(), 0.01)  # Avoid zero std
-                profile['ranges'][col] = (crop_data[col].min(), crop_data[col].max())
+                
+                # FIXED: Use realistic minimum std OR 15% of range, whichever is larger
+                observed_std = crop_data[col].std()
+                range_span = crop_data[col].max() - crop_data[col].min()
+                range_based_std = range_span * 0.15  # 15% of observed range
+                
+                # Use the maximum of: observed std, minimum realistic std, or 15% of range
+                profile['stds'][col] = max(observed_std, min_stds[col], range_based_std)
+                
+                # FIXED: Expand ranges by 10% on each side for realistic variation
+                min_val = crop_data[col].min()
+                max_val = crop_data[col].max()
+                buffer = (max_val - min_val) * 0.1
+                profile['ranges'][col] = (max(0, min_val - buffer), max_val + buffer)
             
-            # Learn correlations between features (need at least 5 samples)
             if self.realism_mode and n_samples >= 5:
                 profile['correlations'] = crop_data[feature_cols].corr()
             
             self.crop_profiles[crop] = profile
             print(f"✓ Learned profile for {crop} from {n_samples} samples")
+            print(f"  Example std devs: pH={profile['stds']['soil_ph']:.2f}, humidity={profile['stds']['humidity']:.2f}")
     
     def generate_from_learned_profile(self, crop_name, n_samples):
         """Generate synthetic data based on learned crop profile"""
@@ -131,25 +143,17 @@ class SmartCropDataGenerator:
         profile = self.crop_profiles[crop_name]
         feature_cols = ['soil_ph', 'fertility_ec', 'humidity', 'sunlight', 'soil_temp', 'soil_moisture']
         
-        # Generate multivariate normal data if correlations exist
         if profile['correlations'] is not None and self.realism_mode:
             means = [profile['means'][col] for col in feature_cols]
-            
-            # Create covariance matrix from correlations and stds
             stds = [profile['stds'][col] for col in feature_cols]
             cov_matrix = np.outer(stds, stds) * profile['correlations'].values
             
-            # Generate correlated samples
             samples = np.random.multivariate_normal(means, cov_matrix, n_samples)
             
-            # Clip to reasonable ranges and add some noise
             for i, col in enumerate(feature_cols):
                 min_val, max_val = profile['ranges'][col]
-                # Expand range slightly to allow some extrapolation
-                buffer = (max_val - min_val) * 0.1
-                samples[:, i] = np.clip(samples[:, i], min_val - buffer, max_val + buffer)
+                samples[:, i] = np.clip(samples[:, i], min_val, max_val)
         else:
-            # Generate independent samples
             samples = np.zeros((n_samples, len(feature_cols)))
             for i, col in enumerate(feature_cols):
                 mean = profile['means'][col]
@@ -159,15 +163,14 @@ class SmartCropDataGenerator:
                 samples[:, i] = np.random.normal(mean, std, n_samples)
                 samples[:, i] = np.clip(samples[:, i], min_val, max_val)
         
-        # Round appropriately
-        samples[:, 0] = np.round(samples[:, 0], 1)  # soil_ph
-        samples[:, 1] = np.round(samples[:, 1])      # fertility_ec
-        samples[:, 2] = np.round(samples[:, 2])      # humidity
-        samples[:, 3] = np.round(samples[:, 3])      # sunlight
-        samples[:, 4] = np.round(samples[:, 4], 1)   # soil_temp
-        samples[:, 5] = np.round(samples[:, 5])      # soil_moisture
+        # FIXED: Use appropriate decimal places to preserve variation
+        samples[:, 0] = np.round(samples[:, 0], 2)  # soil_ph - 2 decimals
+        samples[:, 1] = np.round(samples[:, 1], 1)  # fertility_ec - 1 decimal (was 0!)
+        samples[:, 2] = np.round(samples[:, 2], 1)  # humidity - 1 decimal (was 0!)
+        samples[:, 3] = np.round(samples[:, 3], 1)  # sunlight - 1 decimal (was 0!)
+        samples[:, 4] = np.round(samples[:, 4], 2)  # soil_temp - 2 decimals
+        samples[:, 5] = np.round(samples[:, 5], 1)  # soil_moisture - 1 decimal (was 0!)
         
-        # Create dataframe
         df = pd.DataFrame(samples, columns=feature_cols)
         df['label'] = crop_name
         
@@ -184,8 +187,7 @@ class SmartCropDataGenerator:
                                   sunlight_range, soil_temp_range, soil_moisture_range,
                                   ph_mean=None, ec_mean=None, humidity_mean=None,
                                   sunlight_mean=None, soil_temp_mean=None, soil_moisture_mean=None):
-        """Generate synthetic data using manual parameters (for crops without existing data)"""
-        # Set default means if not provided
+        """Generate synthetic data using manual parameters"""
         if ph_mean is None: ph_mean = (ph_range[0] + ph_range[1]) / 2
         if ec_mean is None: ec_mean = (ec_range[0] + ec_range[1]) / 2
         if humidity_mean is None: humidity_mean = (humidity_range[0] + humidity_range[1]) / 2
@@ -195,27 +197,24 @@ class SmartCropDataGenerator:
         
         rows = []
         for _ in range(n_samples):
-            # Generate with correlations if realism_mode is on
-            soil_ph = round(np.clip(np.random.normal(ph_mean, (ph_range[1] - ph_range[0]) * 0.05), *ph_range), 1)
-            fertility_ec = round(np.clip(np.random.normal(ec_mean, (ec_range[1] - ec_range[0]) * 0.12), *ec_range))
-            humidity = round(np.clip(np.random.normal(humidity_mean, (humidity_range[1] - humidity_range[0]) * 0.08), *humidity_range))
+            # FIXED: Use 20% of range for std instead of 5-15%
+            soil_ph = round(np.clip(np.random.normal(ph_mean, (ph_range[1] - ph_range[0]) * 0.20), *ph_range), 2)
+            fertility_ec = round(np.clip(np.random.normal(ec_mean, (ec_range[1] - ec_range[0]) * 0.20), *ec_range), 1)
+            humidity = round(np.clip(np.random.normal(humidity_mean, (humidity_range[1] - humidity_range[0]) * 0.15), *humidity_range), 1)
+            soil_temp = round(np.clip(np.random.normal(soil_temp_mean, (soil_temp_range[1] - soil_temp_range[0]) * 0.15), *soil_temp_range), 2)
             
-            # Soil temperature with variation
-            soil_temp = round(np.clip(np.random.normal(soil_temp_mean, (soil_temp_range[1] - soil_temp_range[0]) * 0.08), *soil_temp_range), 1)
-            
-            # Sunlight: correlated with temperature in realism mode
+            # Correlations with more variation
             if self.realism_mode:
-                sunlight_adj_mean = sunlight_mean * (soil_temp / soil_temp_mean)
-                sunlight = round(np.clip(np.random.normal(sunlight_adj_mean, (sunlight_range[1] - sunlight_range[0]) * 0.15), *sunlight_range))
+                sunlight_variation = (sunlight_range[1] - sunlight_range[0]) * 0.25
+                sunlight_adj_mean = sunlight_mean * (0.85 + 0.30 * (soil_temp - soil_temp_range[0]) / (soil_temp_range[1] - soil_temp_range[0]))
+                sunlight = round(np.clip(np.random.normal(sunlight_adj_mean, sunlight_variation), *sunlight_range), 1)
+                
+                moisture_variation = (soil_moisture_range[1] - soil_moisture_range[0]) * 0.20
+                soil_moisture_adj_mean = soil_moisture_mean * (0.85 + 0.30 * (humidity - humidity_range[0]) / (humidity_range[1] - humidity_range[0]))
+                soil_moisture = round(np.clip(np.random.normal(soil_moisture_adj_mean, moisture_variation), *soil_moisture_range), 1)
             else:
-                sunlight = round(np.clip(np.random.normal(sunlight_mean, (sunlight_range[1] - sunlight_range[0]) * 0.15), *sunlight_range))
-            
-            # Soil moisture: correlated with humidity in realism mode
-            if self.realism_mode:
-                soil_moisture_adj_mean = soil_moisture_mean * (humidity / humidity_mean)
-                soil_moisture = round(np.clip(np.random.normal(soil_moisture_adj_mean, (soil_moisture_range[1] - soil_moisture_range[0]) * 0.10), *soil_moisture_range))
-            else:
-                soil_moisture = round(np.clip(np.random.normal(soil_moisture_mean, (soil_moisture_range[1] - soil_moisture_range[0]) * 0.10), *soil_moisture_range))
+                sunlight = round(np.clip(np.random.normal(sunlight_mean, (sunlight_range[1] - sunlight_range[0]) * 0.25), *sunlight_range), 1)
+                soil_moisture = round(np.clip(np.random.normal(soil_moisture_mean, (soil_moisture_range[1] - soil_moisture_range[0]) * 0.20), *soil_moisture_range), 1)
             
             rows.append([soil_ph, fertility_ec, humidity, sunlight, soil_temp, soil_moisture, crop_name])
         
@@ -241,16 +240,13 @@ class SmartCropDataGenerator:
         
         needed = target_count - current_count
         
-        # Use learned profile if available
         if crop_name in self.crop_profiles:
             print(f"→ Generating {needed} samples for {crop_name} using learned profile ({current_count} → {target_count})")
             self.add_synthetic_samples(crop_name, needed)
         else:
-            # Require manual parameters for new crops
             required_params = [ph_range, ec_range, humidity_range, sunlight_range, soil_temp_range, soil_moisture_range]
             if any(p is None for p in required_params):
                 print(f"✗ Cannot generate for {crop_name}: no learned profile and missing manual parameters")
-                print(f"   Required: ph_range, ec_range, humidity_range, sunlight_range, soil_temp_range, soil_moisture_range")
                 return
             
             print(f"→ Generating {needed} samples for {crop_name} using manual parameters ({current_count} → {target_count})")
@@ -395,30 +391,29 @@ class SmartCropDataGenerator:
         
         profile = self.crop_profiles[crop_name]
         print(f"\nProfile for {crop_name}:")
-        print("-" * 40)
+        print("-" * 60)
+        print(f"{'Feature':<15} {'Mean':>10} {'Std Dev':>10} {'Range':>20}")
+        print("-" * 60)
         for feature in profile['means'].keys():
             mean = profile['means'][feature]
             std = profile['stds'][feature]
             rng = profile['ranges'][feature]
-            print(f"{feature:15} Mean: {mean:7.1f}  Std: {std:6.1f}  Range: {rng}")
-        print("-" * 40)
+            print(f"{feature:<15} {mean:>10.2f} {std:>10.2f} {rng[0]:>9.2f}-{rng[1]:<9.2f}")
+        print("-" * 60)
 
 
 # Example usage
 if __name__ == "__main__":
-    # Initialize with your existing dataset
-    # Path goes up one level (..) then into dataset folder
     generator = SmartCropDataGenerator(
         existing_csv_path="../dataset/SPC-soil-data.csv",
         realism_mode=True
     )
     
-    # Check what crops are available
     if generator.crop_profiles:
         print("\n" + "="*50)
-        print("LEARNED PROFILES (2+ samples):")
+        print("LEARNED PROFILES:")
         print("="*50)
-        for crop in generator.crop_profiles.keys():
+        for crop in list(generator.crop_profiles.keys())[:3]:  # Show first 3
             generator.show_crop_profile(crop)
     
     # Export template for single-sample crops
@@ -444,223 +439,223 @@ if __name__ == "__main__":
    
     
 
-    # Guyabano - sun-tolerant, prefers well-drained soils
-    generator.fill_crop_to_target(
-        crop_name="Guyabano",
-        target_count=100,
-        ph_range=(5.5, 7.0), ph_mean=6.3,
-        ec_range=(1000, 1800), ec_mean=1400,
-        humidity_range=(70, 90), humidity_mean=80,
-        sunlight_range=(40000, 70000), sunlight_mean=55000,  # high sun
-        soil_temp_range=(24, 30), soil_temp_mean=27,
-        soil_moisture_range=(55, 75), soil_moisture_mean=65
-    )
+    # # Guyabano - sun-tolerant, prefers well-drained soils
+    # generator.fill_crop_to_target(
+    #     crop_name="Guyabano",
+    #     target_count=100,
+    #     ph_range=(5.5, 7.0), ph_mean=6.3,
+    #     ec_range=(1000, 1800), ec_mean=1400,
+    #     humidity_range=(70, 90), humidity_mean=80,
+    #     sunlight_range=(40000, 70000), sunlight_mean=55000,  # high sun
+    #     soil_temp_range=(24, 30), soil_temp_mean=27,
+    #     soil_moisture_range=(55, 75), soil_moisture_mean=65
+    # )
 
  
 
-    # Durian - deep-rooted, high water demand, sun-loving
-    generator.fill_crop_to_target(
-        crop_name="Durian",
-        target_count=100,
-        ph_range=(5.0, 6.5), ph_mean=5.7,
-        ec_range=(1200, 2000), ec_mean=1600,
-        humidity_range=(75, 95), humidity_mean=85,
-        sunlight_range=(40000, 70000), sunlight_mean=55000,  # high sun
-        soil_temp_range=(24, 30), soil_temp_mean=27,
-        soil_moisture_range=(65, 85), soil_moisture_mean=75
-    )
+    # # Durian - deep-rooted, high water demand, sun-loving
+    # generator.fill_crop_to_target(
+    #     crop_name="Durian",
+    #     target_count=100,
+    #     ph_range=(5.0, 6.5), ph_mean=5.7,
+    #     ec_range=(1200, 2000), ec_mean=1600,
+    #     humidity_range=(75, 95), humidity_mean=85,
+    #     sunlight_range=(40000, 70000), sunlight_mean=55000,  # high sun
+    #     soil_temp_range=(24, 30), soil_temp_mean=27,
+    #     soil_moisture_range=(65, 85), soil_moisture_mean=75
+    # )
  
-    generator.fill_crop_to_target(
-        crop_name="Orange",
-        target_count=100,
-        ph_range=(5.5, 7.2), ph_mean=6.5,
-        ec_range=(1000, 1800), ec_mean=1400,
-        humidity_range=(50, 75), humidity_mean=65,   # lower humidity tolerance
-        sunlight_range=(40000, 85000), sunlight_mean=65000,
-        soil_temp_range=(18, 28), soil_temp_mean=23,   
-        soil_moisture_range=(45, 65), soil_moisture_mean=55
-    ) 
-    generator.fill_crop_to_target(
-        crop_name="Snap Bean",
-        target_count=100,
-        ph_range=(6.0, 7.0), ph_mean=6.5,
-        ec_range=(500, 800), ec_mean=600,
-        humidity_range=(69, 81), humidity_mean=77,
-        sunlight_range=(1100, 13100), sunlight_mean=7100,  
-        soil_temp_range=(23, 29), soil_temp_mean=26,         
-        soil_moisture_range=(84, 94), soil_moisture_mean=89
-    )
+    # generator.fill_crop_to_target(
+    #     crop_name="Orange",
+    #     target_count=100,
+    #     ph_range=(5.5, 7.2), ph_mean=6.5,
+    #     ec_range=(1000, 1800), ec_mean=1400,
+    #     humidity_range=(50, 75), humidity_mean=65,   # lower humidity tolerance
+    #     sunlight_range=(40000, 85000), sunlight_mean=65000,
+    #     soil_temp_range=(18, 28), soil_temp_mean=23,   
+    #     soil_moisture_range=(45, 65), soil_moisture_mean=55
+    # ) 
+    # generator.fill_crop_to_target(
+    #     crop_name="Snap Bean",
+    #     target_count=100,
+    #     ph_range=(6.0, 7.0), ph_mean=6.5,
+    #     ec_range=(500, 800), ec_mean=600,
+    #     humidity_range=(69, 81), humidity_mean=77,
+    #     sunlight_range=(1100, 13100), sunlight_mean=7100,  
+    #     soil_temp_range=(23, 29), soil_temp_mean=26,         
+    #     soil_moisture_range=(84, 94), soil_moisture_mean=89
+    # )
 
    
 
-    # Sigarilyas (Winged Bean) - tropical, rainfall-adapted
-    generator.fill_crop_to_target(
-        crop_name="Sigarilyas",
-        target_count=100,
-        ph_range=(5.5, 6.8), ph_mean=6.2,
-        ec_range=(1200, 2000), ec_mean=1600,
-        humidity_range=(65, 85), humidity_mean=75,
-        sunlight_range=(40000, 80000), sunlight_mean=60000,
-        soil_temp_range=(22, 30), soil_temp_mean=26,
-        soil_moisture_range=(55, 80), soil_moisture_mean=68  # higher moisture demand
-    )
+    # # Sigarilyas (Winged Bean) - tropical, rainfall-adapted
+    # generator.fill_crop_to_target(
+    #     crop_name="Sigarilyas",
+    #     target_count=100,
+    #     ph_range=(5.5, 6.8), ph_mean=6.2,
+    #     ec_range=(1200, 2000), ec_mean=1600,
+    #     humidity_range=(65, 85), humidity_mean=75,
+    #     sunlight_range=(40000, 80000), sunlight_mean=60000,
+    #     soil_temp_range=(22, 30), soil_temp_mean=26,
+    #     soil_moisture_range=(55, 80), soil_moisture_mean=68  # higher moisture demand
+    # )
 
-    # Mungbean - drought-tolerant, low fertility needs
-    generator.fill_crop_to_target(
-        crop_name="Mungbean",
-        target_count=100,
-        ph_range=(5.5, 7.0), ph_mean=6.2,
-        ec_range=(800, 1600), ec_mean=1200,                  # less fertilizer needed
-        humidity_range=(50, 75), humidity_mean=65,           # can grow in drier air
-        sunlight_range=(45000, 90000), sunlight_mean=70000,
-        soil_temp_range=(22, 32), soil_temp_mean=27,
-        soil_moisture_range=(35, 65), soil_moisture_mean=50  # lowest water demand in group
-    ) 
-    generator.fill_crop_to_target(
-        crop_name="Mustard",
-        target_count=100,
-        ph_range=(5.5, 7.0), ph_mean=6.3,
-        ec_range=(800, 1600), ec_mean=1200,                 # lower fertility need
-        humidity_range=(50, 75), humidity_mean=62,          # tolerates drier air
-        sunlight_range=(30000, 80000), sunlight_mean=55000, # full sun tolerant
-        soil_temp_range=(15, 25), soil_temp_mean=20,        # prefers cooler soils
-        soil_moisture_range=(40, 70), soil_moisture_mean=55 # tolerates drier soil
-    ) 
-    generator.fill_crop_to_target(
-        crop_name="Patola",
-        target_count=100,
-        ph_range=(5.5, 6.5), ph_mean=6.0,
-        ec_range=(1500, 2500), ec_mean=2000,                 # higher fertility demand
-        humidity_range=(60, 85), humidity_mean=75,           # prefers more humidity
-        sunlight_range=(50000, 90000), sunlight_mean=70000,  # loves strong sun
-        soil_temp_range=(22, 30), soil_temp_mean=26,
-        soil_moisture_range=(55, 80), soil_moisture_mean=68  # consistent water needed
-    ) 
-    generator.fill_crop_to_target(
-        crop_name="Sili Panigang",
-        target_count=100,
-        ph_range=(5.4, 6.6), ph_mean=6.0,
-        ec_range=(430, 570), ec_mean=500,                
-        humidity_range=(50, 75), humidity_mean=62,            
-        sunlight_range=(2000, 9000), sunlight_mean=5000,   
-        soil_temp_range=(27.1, 31.5), soil_temp_mean=29,       
-        soil_moisture_range=(81.2, 88.4), soil_moisture_mean=84 
-    )
+    # # Mungbean - drought-tolerant, low fertility needs
+    # generator.fill_crop_to_target(
+    #     crop_name="Mungbean",
+    #     target_count=100,
+    #     ph_range=(5.5, 7.0), ph_mean=6.2,
+    #     ec_range=(800, 1600), ec_mean=1200,                  # less fertilizer needed
+    #     humidity_range=(50, 75), humidity_mean=65,           # can grow in drier air
+    #     sunlight_range=(45000, 90000), sunlight_mean=70000,
+    #     soil_temp_range=(22, 32), soil_temp_mean=27,
+    #     soil_moisture_range=(35, 65), soil_moisture_mean=50  # lowest water demand in group
+    # ) 
+    # generator.fill_crop_to_target(
+    #     crop_name="Mustard",
+    #     target_count=100,
+    #     ph_range=(5.5, 7.0), ph_mean=6.3,
+    #     ec_range=(800, 1600), ec_mean=1200,                 # lower fertility need
+    #     humidity_range=(50, 75), humidity_mean=62,          # tolerates drier air
+    #     sunlight_range=(30000, 80000), sunlight_mean=55000, # full sun tolerant
+    #     soil_temp_range=(15, 25), soil_temp_mean=20,        # prefers cooler soils
+    #     soil_moisture_range=(40, 70), soil_moisture_mean=55 # tolerates drier soil
+    # ) 
+    # generator.fill_crop_to_target(
+    #     crop_name="Patola",
+    #     target_count=100,
+    #     ph_range=(5.5, 6.5), ph_mean=6.0,
+    #     ec_range=(1500, 2500), ec_mean=2000,                 # higher fertility demand
+    #     humidity_range=(60, 85), humidity_mean=75,           # prefers more humidity
+    #     sunlight_range=(50000, 90000), sunlight_mean=70000,  # loves strong sun
+    #     soil_temp_range=(22, 30), soil_temp_mean=26,
+    #     soil_moisture_range=(55, 80), soil_moisture_mean=68  # consistent water needed
+    # ) 
+    # generator.fill_crop_to_target(
+    #     crop_name="Sili Panigang",
+    #     target_count=100,
+    #     ph_range=(5.4, 6.6), ph_mean=6.0,
+    #     ec_range=(430, 570), ec_mean=500,                
+    #     humidity_range=(50, 75), humidity_mean=62,            
+    #     sunlight_range=(2000, 9000), sunlight_mean=5000,   
+    #     soil_temp_range=(27.1, 31.5), soil_temp_mean=29,       
+    #     soil_moisture_range=(81.2, 88.4), soil_moisture_mean=84 
+    # )
 
-    # Sili Tingala (Bird’s Eye Chili) - hot pepper, stress-tolerant
-    generator.fill_crop_to_target(
-        crop_name="Sili Tingala",
-        target_count=100,
-        ph_range=(5.5, 6.5), ph_mean=6.0,
-        ec_range=(440, 560), ec_mean=500,                
-        humidity_range=(50, 75), humidity_mean=62,            
-        sunlight_range=(2000, 9000), sunlight_mean=5000,   
-        soil_temp_range=(27.1, 31.5), soil_temp_mean=29,       
-        soil_moisture_range=(81, 88), soil_moisture_mean=84 
-    ) 
+    # # Sili Tingala (Bird’s Eye Chili) - hot pepper, stress-tolerant
+    # generator.fill_crop_to_target(
+    #     crop_name="Sili Tingala",
+    #     target_count=100,
+    #     ph_range=(5.5, 6.5), ph_mean=6.0,
+    #     ec_range=(440, 560), ec_mean=500,                
+    #     humidity_range=(50, 75), humidity_mean=62,            
+    #     sunlight_range=(2000, 9000), sunlight_mean=5000,   
+    #     soil_temp_range=(27.1, 31.5), soil_temp_mean=29,       
+    #     soil_moisture_range=(81, 88), soil_moisture_mean=84 
+    # ) 
 
-    # Watermelon - drought-tolerant cucurbit, wide pH range, less fertility demand
-    generator.fill_crop_to_target(
-        crop_name="Watermelon",
-        target_count=100,
-        ph_range=(5.5, 7.5), ph_mean=6.5,                 # widest tolerance here
-        ec_range=(800, 1600), ec_mean=1200,               # lower fertility demand
-        humidity_range=(50, 70), humidity_mean=60,        # prefers drier air
-        sunlight_range=(50000, 95000), sunlight_mean=75000,
-        soil_temp_range=(22, 32), soil_temp_mean=27,
-        soil_moisture_range=(40, 70), soil_moisture_mean=55  # more drought tolerant
-    ) 
+    # # Watermelon - drought-tolerant cucurbit, wide pH range, less fertility demand
+    # generator.fill_crop_to_target(
+    #     crop_name="Watermelon",
+    #     target_count=100,
+    #     ph_range=(5.5, 7.5), ph_mean=6.5,                 # widest tolerance here
+    #     ec_range=(800, 1600), ec_mean=1200,               # lower fertility demand
+    #     humidity_range=(50, 70), humidity_mean=60,        # prefers drier air
+    #     sunlight_range=(50000, 95000), sunlight_mean=75000,
+    #     soil_temp_range=(22, 32), soil_temp_mean=27,
+    #     soil_moisture_range=(40, 70), soil_moisture_mean=55  # more drought tolerant
+    # ) 
     
-        # Tomato - prefers cooler root zone, high fertility, consistent moisture
-    generator.fill_crop_to_target(
-        crop_name="Tomato",
-        target_count=100,
-        ph_range=(5.5, 6.8), ph_mean=6.2,
-        ec_range=(2000, 3000), ec_mean=2400,            # high nutrient demand
-        humidity_range=(55, 75), humidity_mean=68,      # moderate humidity
-        sunlight_range=(45000, 85000), sunlight_mean=65000,
-        soil_temp_range=(16, 26), soil_temp_mean=22,    # cooler root temp preferred
-        soil_moisture_range=(60, 80), soil_moisture_mean=70  # steady moisture for fruit set
-    ) 
+    #     # Tomato - prefers cooler root zone, high fertility, consistent moisture
+    # generator.fill_crop_to_target(
+    #     crop_name="Tomato",
+    #     target_count=100,
+    #     ph_range=(5.5, 6.8), ph_mean=6.2,
+    #     ec_range=(2000, 3000), ec_mean=2400,            # high nutrient demand
+    #     humidity_range=(55, 75), humidity_mean=68,      # moderate humidity
+    #     sunlight_range=(45000, 85000), sunlight_mean=65000,
+    #     soil_temp_range=(16, 26), soil_temp_mean=22,    # cooler root temp preferred
+    #     soil_moisture_range=(60, 80), soil_moisture_mean=70  # steady moisture for fruit set
+    # ) 
 
-    # print("Cool weather: onion, radish")
+    # # print("Cool weather: onion, radish")
 
 
-        # Onion - prefers cool to mild temps, moderate fertility, sensitive to waterlogging
-    generator.fill_crop_to_target(
-        crop_name="Onion",
-        target_count=100,
-        ph_range=(6.0, 7.0), ph_mean=6.5,
-        ec_range=(1500, 2500), ec_mean=2000,
-        humidity_range=(50, 70), humidity_mean=60,
-        sunlight_range=(40000, 80000), sunlight_mean=60000,
-        soil_temp_range=(15, 25), soil_temp_mean=20,      # cool-moderate
-        soil_moisture_range=(40, 65), soil_moisture_mean=52  # dislikes excess water
-    )
+    #     # Onion - prefers cool to mild temps, moderate fertility, sensitive to waterlogging
+    # generator.fill_crop_to_target(
+    #     crop_name="Onion",
+    #     target_count=100,
+    #     ph_range=(6.0, 7.0), ph_mean=6.5,
+    #     ec_range=(1500, 2500), ec_mean=2000,
+    #     humidity_range=(50, 70), humidity_mean=60,
+    #     sunlight_range=(40000, 80000), sunlight_mean=60000,
+    #     soil_temp_range=(15, 25), soil_temp_mean=20,      # cool-moderate
+    #     soil_moisture_range=(40, 65), soil_moisture_mean=52  # dislikes excess water
+    # )
 
-    # Radish - faster growing, thrives in cooler soil, needs steadier moisture
-    generator.fill_crop_to_target(
-        crop_name="Radish",
-        target_count=100,
-        ph_range=(6.0, 7.0), ph_mean=6.5,
-        ec_range=(1200, 2200), ec_mean=1700,              # slightly lower fertility need
-        humidity_range=(50, 75), humidity_mean=62,        # tolerates a touch more humidity
-        sunlight_range=(35000, 75000), sunlight_mean=55000,
-        soil_temp_range=(10, 20), soil_temp_mean=15,      # cooler than onion
-        soil_moisture_range=(50, 75), soil_moisture_mean=65  # steady moisture for root swelling
-    ) 
+    # # Radish - faster growing, thrives in cooler soil, needs steadier moisture
+    # generator.fill_crop_to_target(
+    #     crop_name="Radish",
+    #     target_count=100,
+    #     ph_range=(6.0, 7.0), ph_mean=6.5,
+    #     ec_range=(1200, 2200), ec_mean=1700,              # slightly lower fertility need
+    #     humidity_range=(50, 75), humidity_mean=62,        # tolerates a touch more humidity
+    #     sunlight_range=(35000, 75000), sunlight_mean=55000,
+    #     soil_temp_range=(10, 20), soil_temp_mean=15,      # cooler than onion
+    #     soil_moisture_range=(50, 75), soil_moisture_mean=65  # steady moisture for root swelling
+    # ) 
 
-    # Apple - temperate, requires chilling hours, cool soil temps
-    generator.fill_crop_to_target(
-        crop_name="Apple",
-        target_count=100,
-        ph_range=(5.5, 7.0), ph_mean=6.3,
-        ec_range=(800, 1600), ec_mean=1200,
-        humidity_range=(45, 65), humidity_mean=55,        # drier temperate air
-        sunlight_range=(30000, 70000), sunlight_mean=50000,
-        soil_temp_range=(10, 20), soil_temp_mean=15,      # cooler soil temps
-        soil_moisture_range=(45, 65), soil_moisture_mean=55
-    )
+    # # Apple - temperate, requires chilling hours, cool soil temps
+    # generator.fill_crop_to_target(
+    #     crop_name="Apple",
+    #     target_count=100,
+    #     ph_range=(5.5, 7.0), ph_mean=6.3,
+    #     ec_range=(800, 1600), ec_mean=1200,
+    #     humidity_range=(45, 65), humidity_mean=55,        # drier temperate air
+    #     sunlight_range=(30000, 70000), sunlight_mean=50000,
+    #     soil_temp_range=(10, 20), soil_temp_mean=15,      # cooler soil temps
+    #     soil_moisture_range=(45, 65), soil_moisture_mean=55
+    # )
 
-    # Grapes - Mediterranean climate crop, prefers warm temps, lots of sun, tolerates drought
-    generator.fill_crop_to_target(
-        crop_name="Grapes",
-        target_count=100,
-        ph_range=(5.5, 6.8), ph_mean=6.2,
-        ec_range=(800, 1600), ec_mean=1200,
-        humidity_range=(40, 60), humidity_mean=50,        # needs drier climate to avoid rot
-        sunlight_range=(55000, 100000), sunlight_mean=80000,
-        soil_temp_range=(18, 28), soil_temp_mean=23,
-        soil_moisture_range=(40, 60), soil_moisture_mean=50  # drought tolerant
-    )
+    # # Grapes - Mediterranean climate crop, prefers warm temps, lots of sun, tolerates drought
+    # generator.fill_crop_to_target(
+    #     crop_name="Grapes",
+    #     target_count=100,
+    #     ph_range=(5.5, 6.8), ph_mean=6.2,
+    #     ec_range=(800, 1600), ec_mean=1200,
+    #     humidity_range=(40, 60), humidity_mean=50,        # needs drier climate to avoid rot
+    #     sunlight_range=(55000, 100000), sunlight_mean=80000,
+    #     soil_temp_range=(18, 28), soil_temp_mean=23,
+    #     soil_moisture_range=(40, 60), soil_moisture_mean=50  # drought tolerant
+    # )
 
    
 
-    # Oyster Mushroom - shade crop, very high humidity, moderate temps
-    generator.fill_crop_to_target(
-        crop_name="Oyster Mushroom",
-        target_count=100,
-        ph_range=(5.5, 6.5), ph_mean=6.0,
-        ec_range=(500, 1500), ec_mean=1000,
-        humidity_range=(85, 95), humidity_mean=90,        # nearly saturated air
-        sunlight_range=(2000, 10000), sunlight_mean=6000, # low light / shade
-        soil_temp_range=(18, 25), soil_temp_mean=22,
-        soil_moisture_range=(65, 90), soil_moisture_mean=78
-    ) 
+    # # Oyster Mushroom - shade crop, very high humidity, moderate temps
+    # generator.fill_crop_to_target(
+    #     crop_name="Oyster Mushroom",
+    #     target_count=100,
+    #     ph_range=(5.5, 6.5), ph_mean=6.0,
+    #     ec_range=(500, 1500), ec_mean=1000,
+    #     humidity_range=(85, 95), humidity_mean=90,        # nearly saturated air
+    #     sunlight_range=(2000, 10000), sunlight_mean=6000, # low light / shade
+    #     soil_temp_range=(18, 25), soil_temp_mean=22,
+    #     soil_moisture_range=(65, 90), soil_moisture_mean=78
+    # ) 
    
  
 
-    # Okra - heat-loving, full-sun annual; tolerates drier spells but performs with moderate fertility
-    generator.fill_crop_to_target(
-        crop_name="Okra",
-        target_count=100,
-        ph_range=(5.5, 7.0), ph_mean=6.2,
-        ec_range=(1200, 2200), ec_mean=1700,           # moderate-to-high fertility
-        humidity_range=(60, 85), humidity_mean=72,
-        sunlight_range=(60000, 100000), sunlight_mean=80000,
-        soil_temp_range=(22, 34), soil_temp_mean=28,
-        soil_moisture_range=(40, 75), soil_moisture_mean=55  # tolerates some dryness
-    )
+    # # Okra - heat-loving, full-sun annual; tolerates drier spells but performs with moderate fertility
+    # generator.fill_crop_to_target(
+    #     crop_name="Okra",
+    #     target_count=100,
+    #     ph_range=(5.5, 7.0), ph_mean=6.2,
+    #     ec_range=(1200, 2200), ec_mean=1700,           # moderate-to-high fertility
+    #     humidity_range=(60, 85), humidity_mean=72,
+    #     sunlight_range=(60000, 100000), sunlight_mean=80000,
+    #     soil_temp_range=(22, 34), soil_temp_mean=28,
+    #     soil_moisture_range=(40, 75), soil_moisture_mean=55  # tolerates some dryness
+    # )
 
 
 
@@ -694,18 +689,7 @@ if __name__ == "__main__":
        soil_moisture_range=(77.5, 92.5),soil_moisture_mean=85,
     )
 
-    # Bush Sitao
-    generator.fill_crop_to_target(
-        crop_name="Bush Sitao",
-        target_count=100,  # Adjust as needed
-        ph_range=(6.1, 7.1), ph_mean=6.6,
-        ec_range=(454.8, 615.2), ec_mean=535,
-        humidity_range=(67.5, 82.5), humidity_mean=75,
-        sunlight_range=(2080.0, 3120.0), sunlight_mean=2600,
-       soil_temp_range=(27.2, 30.2),soil_temp_mean=28.7,
-       soil_moisture_range=(86.5, 101.5),soil_moisture_mean=94,
-    )
-
+   
     # Cassava
     generator.fill_crop_to_target(
         crop_name="Cassava",

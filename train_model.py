@@ -6,6 +6,8 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.tree import DecisionTreeClassifier, export_graphviz
 from sklearn.ensemble import RandomForestClassifier
 from xgboost import XGBClassifier
+from sklearn.model_selection import RandomizedSearchCV
+
 from sklearn.metrics import (
     accuracy_score, 
     precision_score, 
@@ -26,7 +28,8 @@ plt.rcParams['figure.figsize'] = (12, 8)
 
 # Load dataset
 # dataset_path = 'dataset/crop_recommendation.csv'
-dataset_path = 'dataset/augmented_crop_data.csv'
+dataset_path = 'dataset/enhanced_crop_data.csv'
+# dataset_path = 'dataset/augmented_crop_data.csv'
 df = pd.read_csv(dataset_path)
 
 print(f"Dataset loaded: {len(df)} rows, {len(df['label'].unique())} unique crops")
@@ -110,25 +113,120 @@ X_train, X_test, y_train, y_test = train_test_split(
 print(f"Training set: {len(X_train)} samples")
 print(f"Test set: {len(X_test)} samples\n")
 
+
+
+
+
+
+
+
+# ==============================================================
+# RANDOM FOREST HYPERPARAMETER TUNING
+# ==============================================================
+
+rf_param_grid = {
+    'n_estimators': [200, 300, 500, 800],
+    'max_depth': [10, 20, 30, None],
+    'min_samples_split': [2, 5, 10],
+    'min_samples_leaf': [1, 2, 4],
+    'max_features': ['sqrt', 'log2']
+}
+
+rf_tuner = RandomizedSearchCV(
+    estimator=RandomForestClassifier(random_state=42),
+    param_distributions=rf_param_grid,
+    n_iter=20,
+    cv=3,
+    scoring='accuracy',
+    verbose=1,
+    n_jobs=-1
+)
+
+rf_tuner.fit(X_train, y_train)
+
+print("\nBest Random Forest Parameters:")
+print(rf_tuner.best_params_)
+
+best_rf = rf_tuner.best_estimator_
+
+
+
+
+# ==============================================================
+# XGBOOST HYPERPARAMETER TUNING
+# ==============================================================
+
+# Create XGBoost model with proper multi-class configuration
+xgb_model = XGBClassifier(
+    eval_metric='mlogloss',
+    objective='multi:softprob', 
+    random_state=42
+)
+
+xgb_param_grid = {
+    'n_estimators': [200, 300, 500],
+    'max_depth': [4, 6, 8],
+    'learning_rate': [0.01, 0.05, 0.1],
+    'subsample': [0.7, 0.8, 1.0],
+    'colsample_bytree': [0.6, 0.8, 1.0],
+    'gamma': [0, 1, 5]
+}
+
+# Use the model directly in RandomizedSearchCV
+xgb_tuner = RandomizedSearchCV(
+    estimator=xgb_model,
+    param_distributions=xgb_param_grid,
+    n_iter=20,
+    cv=3,
+    scoring='accuracy',
+    verbose=1,
+    n_jobs=-1,
+    random_state=42
+)
+
+xgb_tuner.fit(X_train, y_train)
+
+print("\nBest XGBoost Parameters:")
+print(xgb_tuner.best_params_)
+
+best_xgb = xgb_tuner.best_estimator_
+
+
+
+
+
+
+
 # Initialize StandardScaler
 scaler = StandardScaler()
 X_train_scaled = scaler.fit_transform(X_train)
 X_test_scaled = scaler.transform(X_test)
 
+
+
+
+
+
+
+
+
+
 # Train models
 models = {
     'Logistic Regression': LogisticRegression(max_iter=1000, random_state=42),
     'Decision Tree': DecisionTreeClassifier(random_state=42),
-    'Random Forest': RandomForestClassifier(n_estimators=100, random_state=42),
-    'XGBoost': XGBClassifier(
-        n_estimators=100,
-        max_depth=5, 
-        learning_rate=0.1,
-        subsample=0.8,
-        colsample_bytree=0.8,
-        random_state=42,
-        eval_metric='mlogloss'
-    )
+     'Random Forest': best_rf,
+    'XGBoost': best_xgb
+    # 'Random Forest': RandomForestClassifier(n_estimators=100, random_state=42),
+    # 'XGBoost': XGBClassifier(
+    #     n_estimators=100,
+    #     max_depth=5, 
+    #     learning_rate=0.1,
+    #     subsample=0.8,
+    #     colsample_bytree=0.8,
+    #     random_state=42,
+    #     eval_metric='mlogloss'
+    # )
 }
 
 metrics = {}

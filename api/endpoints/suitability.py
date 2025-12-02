@@ -12,6 +12,8 @@ router = APIRouter()
 # Load all artifacts (including scaler)
 ARTIFACTS_PATH = Path("precomputation/training_artifacts.pkl")
 DATASET_PATH = Path("dataset/enhanced_crop_data.csv")
+# DATASET_PATH = Path("dataset/augmented_crop_data.csv")
+
 
 try:
     # Load training artifacts
@@ -85,8 +87,8 @@ def analyze_parameters(input_data: pd.DataFrame, crop: str) -> dict[str, Paramet
     
     analysis = {}
     for param in X_cols:
-        ideal_min = crop_data[param].quantile(0.25)
-        ideal_max = crop_data[param].quantile(0.75)
+        ideal_min = crop_data[param].quantile(0.01)
+        ideal_max = crop_data[param].quantile(0.99)
         current_val = input_data[param].values[0]
         
         status = 'optimal'
@@ -100,7 +102,7 @@ def analyze_parameters(input_data: pd.DataFrame, crop: str) -> dict[str, Paramet
             difference = current_val - ideal_max
         
         analysis[param] = ParameterAnalysis(
-            status=status,
+            status=status, 
             current=current_val,
             ideal_min=float(ideal_min),
             ideal_max=float(ideal_max),

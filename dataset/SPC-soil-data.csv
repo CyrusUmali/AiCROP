@@ -1,19 +1,19 @@
 soil_ph,fertility_ec,humidity,sunlight,soil_temp,soil_moisture,label
 6.3,525,74,3200,29.1,88,Ampalaya
 6.7,530,74,3000,29.5,92,Ampalaya
-5.5,455,85,1150,27.1,85,Avocado 
-6.1,415,79,1750,28.3,83,Avocado 
+5.5,455,85,1150,27.1,85,Avocado
+6.1,415,79,1750,28.3,83,Avocado
 6.2,440,80,1450,28.1,88,Avocado
-5.9,430,82,1500,27,80,Avocado 
-5.7,425,85,1100,26.9,81,Avocado 
-5.5,410,86,1300,26.7,82,Avocado 
+5.9,430,82,1500,27,80,Avocado
+5.7,425,85,1100,26.9,81,Avocado
+5.5,410,86,1300,26.7,82,Avocado
 5.6,460,84,1000,27.5,85,Avocado
 6,450,83,950,27.8,86,Avocado
 4,632,62,8077,29.5,99,Bamboo
 5.4,470,83,1300,27.9,90,Banana
 4,771,79,8280,28.8,99,Banana
 4.5,810,66,9337,29.3,99,Banana
-5.6,440,85,900,26.9,85,Black Pepper 
+5.6,440,85,900,26.9,85,Black Pepper
 5.6,440,85,900,26.9,85,Cacao
 5.7,400,86,850,27,87,Cacao
 5.6,425,88,900,26.8,85,Cacao
@@ -22,7 +22,7 @@ soil_ph,fertility_ec,humidity,sunlight,soil_temp,soil_moisture,label
 5.9,405,85,950,27.1,86,Cacao
 5.5,415,87,750,26.5,84,Cacao
 5.7,420,83,1050,27.2,85,Cacao
-6,517,88,1094,28.5,99,Cassava 
+6,517,88,1094,28.5,99,Cassava
 5.5,450,86,700,26.5,87,Calamansi
 6.5,475,80,1215,27,99,Coconut
 6.2,480,82,1500,27.5,90,Coconut
@@ -34,7 +34,7 @@ soil_ph,fertility_ec,humidity,sunlight,soil_temp,soil_moisture,label
 5.3,520,77,2800,28.8,86,Maize
 6,515,78,2750,28.4,89,Maize
 6.5,475,80,1215,27,99,Coffee
-5.5,450,86,700,26.5,87,Coffee 
+5.5,450,86,700,26.5,87,Coffee
 5.5,485,76,2400,28.9,87,Eggplant
 6.8,405,79,1900,28,84,Forage Grass
 6.3,460,78,1800,28.2,90,Ginger
@@ -73,7 +73,7 @@ soil_ph,fertility_ec,humidity,sunlight,soil_temp,soil_moisture,label
 5.7,470,84,1050,27.4,89,Kulo
 5.7,420,81,950,28,80,Lipote
 6.1,390,76,1850,28.3,78,Orchid
-6,435,79,2000,28.1,82,Papaya 
+6,435,79,2000,28.1,82,Papaya
 6.6,535,75,2600,28.7,94,Pechay
 5.3,520,77,2800,28.8,86,Pineapple
 5.4,500,77,2900,28.6,88,Pineapple
@@ -82,7 +82,6 @@ soil_ph,fertility_ec,humidity,sunlight,soil_temp,soil_moisture,label
 9,624,72,43700,33.5,99,Pineapple
 5.7,420,81,950,28,80,Eggplant
 5.5,485,76,2400,28.9,87,Eggplant
-6.7,530,74,3000,29.5,92,Ampalaya
 5.5,485,76,2400,28.9,87,Sili Labuyo
 6.7,530,74,3000,29.5,92,Squash
 6.3,525,74,3200,29.1,88,Squash
@@ -99,3 +98,4 @@ soil_ph,fertility_ec,humidity,sunlight,soil_temp,soil_moisture,label
 6.6,495,81,1500,27.9,95,Gabi
 6.9,540,76,2700,29,93,Upo
 5.4,470,83,1300,27.9,90,Ube
+ 

@@ -1,0 +1,6140 @@
+[
+  {
+    "is_suitable": true,
+    "confidence": 0.9936,
+    "crop": "Ampalaya",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.3,
+        "ideal_min": 5.899,
+        "ideal_max": 6.502000000000001,
+        "difference": 0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 525.0,
+        "ideal_min": 523.0,
+        "ideal_max": 532.0,
+        "difference": 0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 74.0,
+        "ideal_min": 72.0,
+        "ideal_max": 76.0,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 3200.0,
+        "ideal_min": 2376.86,
+        "ideal_max": 4719.11,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 29.1,
+        "ideal_min": 28.0,
+        "ideal_max": 31.0,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 88.0,
+        "ideal_min": 87.0,
+        "ideal_max": 92.01,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 6.3,
+      "fertility_ec": 525.0,
+      "humidity": 74.0,
+      "sunlight": 3200.0,
+      "soil_temp": 29.1,
+      "soil_moisture": 88.0
+    },
+    "original_index": 0
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.2116,
+    "crop": "Ampalaya",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "high",
+        "current": 6.7,
+        "ideal_min": 5.899,
+        "ideal_max": 6.502000000000001,
+        "difference": 0.1979999999999995
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 530.0,
+        "ideal_min": 523.0,
+        "ideal_max": 532.0,
+        "difference": 0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 74.0,
+        "ideal_min": 72.0,
+        "ideal_max": 76.0,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 3000.0,
+        "ideal_min": 2376.86,
+        "ideal_max": 4719.11,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 29.5,
+        "ideal_min": 28.0,
+        "ideal_max": 31.0,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 92.0,
+        "ideal_min": 87.0,
+        "ideal_max": 92.01,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 6.7,
+      "fertility_ec": 530.0,
+      "humidity": 74.0,
+      "sunlight": 3000.0,
+      "soil_temp": 29.5,
+      "soil_moisture": 92.0
+    },
+    "original_index": 1
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.1166,
+    "crop": "Avocado",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 5.5,
+        "ideal_min": 5.5,
+        "ideal_max": 6.101,
+        "difference": 0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 455.0,
+        "ideal_min": 414.95,
+        "ideal_max": 455.05,
+        "difference": 0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 85.0,
+        "ideal_min": 79.0,
+        "ideal_max": 87.0,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1150.0,
+        "ideal_min": 999.5,
+        "ideal_max": 1726.2400000000002,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.1,
+        "ideal_min": 26.0,
+        "ideal_max": 29.0,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 85.0,
+        "ideal_min": 79.0,
+        "ideal_max": 88.0,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 5.5,
+      "fertility_ec": 455.0,
+      "humidity": 85.0,
+      "sunlight": 1150.0,
+      "soil_temp": 27.1,
+      "soil_moisture": 85.0
+    },
+    "original_index": 2
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.537,
+    "crop": "Avocado",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.1,
+        "ideal_min": 5.5,
+        "ideal_max": 6.101,
+        "difference": 0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 415.0,
+        "ideal_min": 414.95,
+        "ideal_max": 455.05,
+        "difference": 0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 79.0,
+        "ideal_min": 79.0,
+        "ideal_max": 87.0,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "high",
+        "current": 1750.0,
+        "ideal_min": 999.5,
+        "ideal_max": 1726.2400000000002,
+        "difference": 23.759999999999764
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 28.3,
+        "ideal_min": 26.0,
+        "ideal_max": 29.0,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 83.0,
+        "ideal_min": 79.0,
+        "ideal_max": 88.0,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 6.1,
+      "fertility_ec": 415.0,
+      "humidity": 79.0,
+      "sunlight": 1750.0,
+      "soil_temp": 28.3,
+      "soil_moisture": 83.0
+    },
+    "original_index": 3
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.4758,
+    "crop": "Avocado",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "high",
+        "current": 6.2,
+        "ideal_min": 5.5,
+        "ideal_max": 6.101,
+        "difference": 0.0990000000000002
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 440.0,
+        "ideal_min": 414.95,
+        "ideal_max": 455.05,
+        "difference": 0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 80.0,
+        "ideal_min": 79.0,
+        "ideal_max": 87.0,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1450.0,
+        "ideal_min": 999.5,
+        "ideal_max": 1726.2400000000002,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 28.1,
+        "ideal_min": 26.0,
+        "ideal_max": 29.0,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 88.0,
+        "ideal_min": 79.0,
+        "ideal_max": 88.0,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 6.2,
+      "fertility_ec": 440.0,
+      "humidity": 80.0,
+      "sunlight": 1450.0,
+      "soil_temp": 28.1,
+      "soil_moisture": 88.0
+    },
+    "original_index": 4
+  },
+  {
+    "is_suitable": true,
+    "confidence": 0.9758,
+    "crop": "Avocado",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 5.9,
+        "ideal_min": 5.5,
+        "ideal_max": 6.101,
+        "difference": 0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 430.0,
+        "ideal_min": 414.95,
+        "ideal_max": 455.05,
+        "difference": 0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 82.0,
+        "ideal_min": 79.0,
+        "ideal_max": 87.0,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1500.0,
+        "ideal_min": 999.5,
+        "ideal_max": 1726.2400000000002,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.0,
+        "ideal_min": 26.0,
+        "ideal_max": 29.0,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 80.0,
+        "ideal_min": 79.0,
+        "ideal_max": 88.0,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 5.9,
+      "fertility_ec": 430.0,
+      "humidity": 82.0,
+      "sunlight": 1500.0,
+      "soil_temp": 27.0,
+      "soil_moisture": 80.0
+    },
+    "original_index": 5
+  },
+  {
+    "is_suitable": true,
+    "confidence": 0.6818,
+    "crop": "Avocado",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 5.7,
+        "ideal_min": 5.5,
+        "ideal_max": 6.101,
+        "difference": 0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 425.0,
+        "ideal_min": 414.95,
+        "ideal_max": 455.05,
+        "difference": 0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 85.0,
+        "ideal_min": 79.0,
+        "ideal_max": 87.0,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1100.0,
+        "ideal_min": 999.5,
+        "ideal_max": 1726.2400000000002,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 26.9,
+        "ideal_min": 26.0,
+        "ideal_max": 29.0,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 81.0,
+        "ideal_min": 79.0,
+        "ideal_max": 88.0,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 5.7,
+      "fertility_ec": 425.0,
+      "humidity": 85.0,
+      "sunlight": 1100.0,
+      "soil_temp": 26.9,
+      "soil_moisture": 81.0
+    },
+    "original_index": 6
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.565,
+    "crop": "Avocado",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 5.5,
+        "ideal_min": 5.5,
+        "ideal_max": 6.101,
+        "difference": 0
+      },
+      "fertility_ec": {
+        "status": "low",
+        "current": 410.0,
+        "ideal_min": 414.95,
+        "ideal_max": 455.05,
+        "difference": -4.949999999999989
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 86.0,
+        "ideal_min": 79.0,
+        "ideal_max": 87.0,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1300.0,
+        "ideal_min": 999.5,
+        "ideal_max": 1726.2400000000002,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 26.7,
+        "ideal_min": 26.0,
+        "ideal_max": 29.0,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 82.0,
+        "ideal_min": 79.0,
+        "ideal_max": 88.0,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 5.5,
+      "fertility_ec": 410.0,
+      "humidity": 86.0,
+      "sunlight": 1300.0,
+      "soil_temp": 26.7,
+      "soil_moisture": 82.0
+    },
+    "original_index": 7
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.0231,
+    "crop": "Avocado",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 5.6,
+        "ideal_min": 5.5,
+        "ideal_max": 6.101,
+        "difference": 0
+      },
+      "fertility_ec": {
+        "status": "high",
+        "current": 460.0,
+        "ideal_min": 414.95,
+        "ideal_max": 455.05,
+        "difference": 4.949999999999989
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 84.0,
+        "ideal_min": 79.0,
+        "ideal_max": 87.0,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1000.0,
+        "ideal_min": 999.5,
+        "ideal_max": 1726.2400000000002,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.5,
+        "ideal_min": 26.0,
+        "ideal_max": 29.0,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 85.0,
+        "ideal_min": 79.0,
+        "ideal_max": 88.0,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 5.6,
+      "fertility_ec": 460.0,
+      "humidity": 84.0,
+      "sunlight": 1000.0,
+      "soil_temp": 27.5,
+      "soil_moisture": 85.0
+    },
+    "original_index": 8
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.2934,
+    "crop": "Avocado",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.0,
+        "ideal_min": 5.5,
+        "ideal_max": 6.101,
+        "difference": 0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 450.0,
+        "ideal_min": 414.95,
+        "ideal_max": 455.05,
+        "difference": 0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 83.0,
+        "ideal_min": 79.0,
+        "ideal_max": 87.0,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "low",
+        "current": 950.0,
+        "ideal_min": 999.5,
+        "ideal_max": 1726.2400000000002,
+        "difference": -49.5
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.8,
+        "ideal_min": 26.0,
+        "ideal_max": 29.0,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 86.0,
+        "ideal_min": 79.0,
+        "ideal_max": 88.0,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 6.0,
+      "fertility_ec": 450.0,
+      "humidity": 83.0,
+      "sunlight": 950.0,
+      "soil_temp": 27.8,
+      "soil_moisture": 86.0
+    },
+    "original_index": 9
+  },
+  {
+    "is_suitable": true,
+    "confidence": 0.9641,
+    "crop": "Bamboo",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "low",
+        "current": 4.0,
+        "ideal_min": 4.198,
+        "ideal_max": 4.8,
+        "difference": -0.1980000000000004
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 632.0,
+        "ideal_min": 628.0,
+        "ideal_max": 637.0,
+        "difference": 0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 62.0,
+        "ideal_min": 60.99,
+        "ideal_max": 65.0,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 8077.0,
+        "ideal_min": 6506.44,
+        "ideal_max": 11432.29,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 29.5,
+        "ideal_min": 28.0,
+        "ideal_max": 31.0,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 99.0,
+        "ideal_min": 92.0,
+        "ideal_max": 99.0,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 4.0,
+      "fertility_ec": 632.0,
+      "humidity": 62.0,
+      "sunlight": 8077.0,
+      "soil_temp": 29.5,
+      "soil_moisture": 99.0
+    },
+    "original_index": 10
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.03,
+    "crop": "Banana",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 5.4,
+        "ideal_min": 4.196,
+        "ideal_max": 6.407999999999999,
+        "difference": 0
+      },
+      "fertility_ec": {
+        "status": "low",
+        "current": 470.0,
+        "ideal_min": 494.5,
+        "ideal_max": 771.7799999999999,
+        "difference": -24.5
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 83.0,
+        "ideal_min": 66.98,
+        "ideal_max": 83.0,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "low",
+        "current": 1300.0,
+        "ideal_min": 1643.0,
+        "ideal_max": 8997.919999999998,
+        "difference": -343.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.9,
+        "ideal_min": 27.0,
+        "ideal_max": 30.0,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 90.0,
+        "ideal_min": 88.0,
+        "ideal_max": 99.0,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 5.4,
+      "fertility_ec": 470.0,
+      "humidity": 83.0,
+      "sunlight": 1300.0,
+      "soil_temp": 27.9,
+      "soil_moisture": 90.0
+    },
+    "original_index": 11
+  },
+  {
+    "is_suitable": true,
+    "confidence": 0.6835,
+    "crop": "Banana",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "low",
+        "current": 4.0,
+        "ideal_min": 4.196,
+        "ideal_max": 6.407999999999999,
+        "difference": -0.19599999999999973
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 771.0,
+        "ideal_min": 494.5,
+        "ideal_max": 771.7799999999999,
+        "difference": 0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 79.0,
+        "ideal_min": 66.98,
+        "ideal_max": 83.0,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 8280.0,
+        "ideal_min": 1643.0,
+        "ideal_max": 8997.919999999998,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 28.8,
+        "ideal_min": 27.0,
+        "ideal_max": 30.0,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 99.0,
+        "ideal_min": 88.0,
+        "ideal_max": 99.0,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 4.0,
+      "fertility_ec": 771.0,
+      "humidity": 79.0,
+      "sunlight": 8280.0,
+      "soil_temp": 28.8,
+      "soil_moisture": 99.0
+    },
+    "original_index": 12
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.5365,
+    "crop": "Banana",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 4.5,
+        "ideal_min": 4.196,
+        "ideal_max": 6.407999999999999,
+        "difference": 0
+      },
+      "fertility_ec": {
+        "status": "high",
+        "current": 810.0,
+        "ideal_min": 494.5,
+        "ideal_max": 771.7799999999999,
+        "difference": 38.22000000000014
+      },
+      "humidity": {
+        "status": "low",
+        "current": 66.0,
+        "ideal_min": 66.98,
+        "ideal_max": 83.0,
+        "difference": -0.980000000000004
+      },
+      "sunlight": {
+        "status": "high",
+        "current": 9337.0,
+        "ideal_min": 1643.0,
+        "ideal_max": 8997.919999999998,
+        "difference": 339.08000000000175
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 29.3,
+        "ideal_min": 27.0,
+        "ideal_max": 30.0,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 99.0,
+        "ideal_min": 88.0,
+        "ideal_max": 99.0,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 4.5,
+      "fertility_ec": 810.0,
+      "humidity": 66.0,
+      "sunlight": 9337.0,
+      "soil_temp": 29.3,
+      "soil_moisture": 99.0
+    },
+    "original_index": 13
+  },
+  {
+    "is_suitable": true,
+    "confidence": 0.7835,
+    "crop": "Black Pepper",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "low",
+        "current": 5.6,
+        "ideal_min": 5.798,
+        "ideal_max": 6.2,
+        "difference": -0.1980000000000004
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 440.0,
+        "ideal_min": 438.0,
+        "ideal_max": 443.0,
+        "difference": 0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 85.0,
+        "ideal_min": 83.0,
+        "ideal_max": 88.0,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 900.0,
+        "ideal_min": 892.98,
+        "ideal_max": 920.0,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 26.9,
+        "ideal_min": 26.898999999999997,
+        "ideal_max": 29.0,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 85.0,
+        "ideal_min": 83.0,
+        "ideal_max": 87.01,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 5.6,
+      "fertility_ec": 440.0,
+      "humidity": 85.0,
+      "sunlight": 900.0,
+      "soil_temp": 26.9,
+      "soil_moisture": 85.0
+    },
+    "original_index": 14
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.1026,
+    "crop": "Cacao",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 5.6,
+        "ideal_min": 5.5,
+        "ideal_max": 6.0,
+        "difference": 0
+      },
+      "fertility_ec": {
+        "status": "high",
+        "current": 440.0,
+        "ideal_min": 404.95,
+        "ideal_max": 434.06000000000006,
+        "difference": 5.939999999999941
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 85.0,
+        "ideal_min": 81.0,
+        "ideal_max": 89.0,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 900.0,
+        "ideal_min": 798.51,
+        "ideal_max": 1047.03,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 26.9,
+        "ideal_min": 25.198,
+        "ideal_max": 28.0,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 85.0,
+        "ideal_min": 80.0,
+        "ideal_max": 90.0,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 5.6,
+      "fertility_ec": 440.0,
+      "humidity": 85.0,
+      "sunlight": 900.0,
+      "soil_temp": 26.9,
+      "soil_moisture": 85.0
+    },
+    "original_index": 15
+  },
+  {
+    "is_suitable": true,
+    "confidence": 0.9055,
+    "crop": "Cacao",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 5.7,
+        "ideal_min": 5.5,
+        "ideal_max": 6.0,
+        "difference": 0
+      },
+      "fertility_ec": {
+        "status": "low",
+        "current": 400.0,
+        "ideal_min": 404.95,
+        "ideal_max": 434.06000000000006,
+        "difference": -4.949999999999989
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 86.0,
+        "ideal_min": 81.0,
+        "ideal_max": 89.0,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 850.0,
+        "ideal_min": 798.51,
+        "ideal_max": 1047.03,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.0,
+        "ideal_min": 25.198,
+        "ideal_max": 28.0,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 87.0,
+        "ideal_min": 80.0,
+        "ideal_max": 90.0,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 5.7,
+      "fertility_ec": 400.0,
+      "humidity": 86.0,
+      "sunlight": 850.0,
+      "soil_temp": 27.0,
+      "soil_moisture": 87.0
+    },
+    "original_index": 16
+  },
+  {
+    "is_suitable": true,
+    "confidence": 0.906,
+    "crop": "Cacao",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 5.6,
+        "ideal_min": 5.5,
+        "ideal_max": 6.0,
+        "difference": 0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 425.0,
+        "ideal_min": 404.95,
+        "ideal_max": 434.06000000000006,
+        "difference": 0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 88.0,
+        "ideal_min": 81.0,
+        "ideal_max": 89.0,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 900.0,
+        "ideal_min": 798.51,
+        "ideal_max": 1047.03,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 26.8,
+        "ideal_min": 25.198,
+        "ideal_max": 28.0,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 85.0,
+        "ideal_min": 80.0,
+        "ideal_max": 90.0,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 5.6,
+      "fertility_ec": 425.0,
+      "humidity": 88.0,
+      "sunlight": 900.0,
+      "soil_temp": 26.8,
+      "soil_moisture": 85.0
+    },
+    "original_index": 17
+  },
+  {
+    "is_suitable": true,
+    "confidence": 0.7653,
+    "crop": "Cacao",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 5.5,
+        "ideal_min": 5.5,
+        "ideal_max": 6.0,
+        "difference": 0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 410.0,
+        "ideal_min": 404.95,
+        "ideal_max": 434.06000000000006,
+        "difference": 0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 89.0,
+        "ideal_min": 81.0,
+        "ideal_max": 89.0,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 800.0,
+        "ideal_min": 798.51,
+        "ideal_max": 1047.03,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 26.6,
+        "ideal_min": 25.198,
+        "ideal_max": 28.0,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 89.0,
+        "ideal_min": 80.0,
+        "ideal_max": 90.0,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 5.5,
+      "fertility_ec": 410.0,
+      "humidity": 89.0,
+      "sunlight": 800.0,
+      "soil_temp": 26.6,
+      "soil_moisture": 89.0
+    },
+    "original_index": 18
+  },
+  {
+    "is_suitable": true,
+    "confidence": 0.8846,
+    "crop": "Cacao",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 5.8,
+        "ideal_min": 5.5,
+        "ideal_max": 6.0,
+        "difference": 0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 430.0,
+        "ideal_min": 404.95,
+        "ideal_max": 434.06000000000006,
+        "difference": 0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 84.0,
+        "ideal_min": 81.0,
+        "ideal_max": 89.0,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1000.0,
+        "ideal_min": 798.51,
+        "ideal_max": 1047.03,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.3,
+        "ideal_min": 25.198,
+        "ideal_max": 28.0,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 88.0,
+        "ideal_min": 80.0,
+        "ideal_max": 90.0,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 5.8,
+      "fertility_ec": 430.0,
+      "humidity": 84.0,
+      "sunlight": 1000.0,
+      "soil_temp": 27.3,
+      "soil_moisture": 88.0
+    },
+    "original_index": 19
+  },
+  {
+    "is_suitable": true,
+    "confidence": 0.8971,
+    "crop": "Cacao",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 5.9,
+        "ideal_min": 5.5,
+        "ideal_max": 6.0,
+        "difference": 0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 405.0,
+        "ideal_min": 404.95,
+        "ideal_max": 434.06000000000006,
+        "difference": 0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 85.0,
+        "ideal_min": 81.0,
+        "ideal_max": 89.0,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 950.0,
+        "ideal_min": 798.51,
+        "ideal_max": 1047.03,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.1,
+        "ideal_min": 25.198,
+        "ideal_max": 28.0,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 86.0,
+        "ideal_min": 80.0,
+        "ideal_max": 90.0,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 5.9,
+      "fertility_ec": 405.0,
+      "humidity": 85.0,
+      "sunlight": 950.0,
+      "soil_temp": 27.1,
+      "soil_moisture": 86.0
+    },
+    "original_index": 20
+  },
+  {
+    "is_suitable": true,
+    "confidence": 0.7963,
+    "crop": "Cacao",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 5.5,
+        "ideal_min": 5.5,
+        "ideal_max": 6.0,
+        "difference": 0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 415.0,
+        "ideal_min": 404.95,
+        "ideal_max": 434.06000000000006,
+        "difference": 0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 87.0,
+        "ideal_min": 81.0,
+        "ideal_max": 89.0,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "low",
+        "current": 750.0,
+        "ideal_min": 798.51,
+        "ideal_max": 1047.03,
+        "difference": -48.50999999999999
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 26.5,
+        "ideal_min": 25.198,
+        "ideal_max": 28.0,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 84.0,
+        "ideal_min": 80.0,
+        "ideal_max": 90.0,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 5.5,
+      "fertility_ec": 415.0,
+      "humidity": 87.0,
+      "sunlight": 750.0,
+      "soil_temp": 26.5,
+      "soil_moisture": 84.0
+    },
+    "original_index": 21
+  },
+  {
+    "is_suitable": true,
+    "confidence": 0.6881,
+    "crop": "Cacao",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 5.7,
+        "ideal_min": 5.5,
+        "ideal_max": 6.0,
+        "difference": 0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 420.0,
+        "ideal_min": 404.95,
+        "ideal_max": 434.06000000000006,
+        "difference": 0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 83.0,
+        "ideal_min": 81.0,
+        "ideal_max": 89.0,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "high",
+        "current": 1050.0,
+        "ideal_min": 798.51,
+        "ideal_max": 1047.03,
+        "difference": 2.9700000000000273
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.2,
+        "ideal_min": 25.198,
+        "ideal_max": 28.0,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 85.0,
+        "ideal_min": 80.0,
+        "ideal_max": 90.0,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 5.7,
+      "fertility_ec": 420.0,
+      "humidity": 83.0,
+      "sunlight": 1050.0,
+      "soil_temp": 27.2,
+      "soil_moisture": 85.0
+    },
+    "original_index": 22
+  },
+  {
+    "is_suitable": true,
+    "confidence": 0.9946,
+    "crop": "Cassava",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.0,
+        "ideal_min": 5.4,
+        "ideal_max": 6.101,
+        "difference": 0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 517.0,
+        "ideal_min": 508.0,
+        "ideal_max": 526.9,
+        "difference": 0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 88.0,
+        "ideal_min": 85.99,
+        "ideal_max": 90.0,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1094.0,
+        "ideal_min": 1081.0,
+        "ideal_max": 1105.0,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 28.5,
+        "ideal_min": 25.1,
+        "ideal_max": 30.904,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "high",
+        "current": 99.0,
+        "ideal_min": 90.0,
+        "ideal_max": 98.01,
+        "difference": 0.9899999999999949
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 6.0,
+      "fertility_ec": 517.0,
+      "humidity": 88.0,
+      "sunlight": 1094.0,
+      "soil_temp": 28.5,
+      "soil_moisture": 99.0
+    },
+    "original_index": 23
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.0085,
+    "crop": "Calamansi",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 5.5,
+        "ideal_min": 4.8,
+        "ideal_max": 5.505000000000003,
+        "difference": 0
+      },
+      "fertility_ec": {
+        "status": "high",
+        "current": 450.0,
+        "ideal_min": 430.0,
+        "ideal_max": 442.08000000000004,
+        "difference": 7.919999999999959
+      },
+      "humidity": {
+        "status": "high",
+        "current": 86.0,
+        "ideal_min": 77.99,
+        "ideal_max": 81.05000000000003,
+        "difference": 4.949999999999974
+      },
+      "sunlight": {
+        "status": "low",
+        "current": 700.0,
+        "ideal_min": 1808.8,
+        "ideal_max": 2096.01,
+        "difference": -1108.8
+      },
+      "soil_temp": {
+        "status": "low",
+        "current": 26.5,
+        "ideal_min": 27.787,
+        "ideal_max": 29.3,
+        "difference": -1.286999999999999
+      },
+      "soil_moisture": {
+        "status": "high",
+        "current": 87.0,
+        "ideal_min": 78.0,
+        "ideal_max": 85.02000000000001,
+        "difference": 1.9799999999999898
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 5.5,
+      "fertility_ec": 450.0,
+      "humidity": 86.0,
+      "sunlight": 700.0,
+      "soil_temp": 26.5,
+      "soil_moisture": 87.0
+    },
+    "original_index": 24
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.0294,
+    "crop": "Coconut",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.5,
+        "ideal_min": 5.997,
+        "ideal_max": 6.602,
+        "difference": 0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 475.0,
+        "ideal_min": 410.44,
+        "ideal_max": 480.3000000000002,
+        "difference": 0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 80.0,
+        "ideal_min": 69.99,
+        "ideal_max": 84.01,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1215.0,
+        "ideal_min": 1212.65,
+        "ideal_max": 12762.53,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.0,
+        "ideal_min": 26.8,
+        "ideal_max": 32.01900000000001,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 99.0,
+        "ideal_min": 85.0,
+        "ideal_max": 99.0,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 6.5,
+      "fertility_ec": 475.0,
+      "humidity": 80.0,
+      "sunlight": 1215.0,
+      "soil_temp": 27.0,
+      "soil_moisture": 99.0
+    },
+    "original_index": 25
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.0211,
+    "crop": "Coconut",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.2,
+        "ideal_min": 5.997,
+        "ideal_max": 6.602,
+        "difference": 0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 480.0,
+        "ideal_min": 410.44,
+        "ideal_max": 480.3000000000002,
+        "difference": 0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 82.0,
+        "ideal_min": 69.99,
+        "ideal_max": 84.01,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1500.0,
+        "ideal_min": 1212.65,
+        "ideal_max": 12762.53,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.5,
+        "ideal_min": 26.8,
+        "ideal_max": 32.01900000000001,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 90.0,
+        "ideal_min": 85.0,
+        "ideal_max": 99.0,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 6.2,
+      "fertility_ec": 480.0,
+      "humidity": 82.0,
+      "sunlight": 1500.0,
+      "soil_temp": 27.5,
+      "soil_moisture": 90.0
+    },
+    "original_index": 26
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.0315,
+    "crop": "Coconut",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.3,
+        "ideal_min": 5.997,
+        "ideal_max": 6.602,
+        "difference": 0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 460.0,
+        "ideal_min": 410.44,
+        "ideal_max": 480.3000000000002,
+        "difference": 0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 78.0,
+        "ideal_min": 69.99,
+        "ideal_max": 84.01,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1800.0,
+        "ideal_min": 1212.65,
+        "ideal_max": 12762.53,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 28.2,
+        "ideal_min": 26.8,
+        "ideal_max": 32.01900000000001,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 90.0,
+        "ideal_min": 85.0,
+        "ideal_max": 99.0,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 6.3,
+      "fertility_ec": 460.0,
+      "humidity": 78.0,
+      "sunlight": 1800.0,
+      "soil_temp": 28.2,
+      "soil_moisture": 90.0
+    },
+    "original_index": 27
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.2068,
+    "crop": "Coconut",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.1,
+        "ideal_min": 5.997,
+        "ideal_max": 6.602,
+        "difference": 0
+      },
+      "fertility_ec": {
+        "status": "high",
+        "current": 510.0,
+        "ideal_min": 410.44,
+        "ideal_max": 480.3000000000002,
+        "difference": 29.699999999999818
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 83.0,
+        "ideal_min": 69.99,
+        "ideal_max": 84.01,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1400.0,
+        "ideal_min": 1212.65,
+        "ideal_max": 12762.53,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 28.0,
+        "ideal_min": 26.8,
+        "ideal_max": 32.01900000000001,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 98.0,
+        "ideal_min": 85.0,
+        "ideal_max": 99.0,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 6.1,
+      "fertility_ec": 510.0,
+      "humidity": 83.0,
+      "sunlight": 1400.0,
+      "soil_temp": 28.0,
+      "soil_moisture": 98.0
+    },
+    "original_index": 28
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.0003,
+    "crop": "Coconut",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "low",
+        "current": 5.7,
+        "ideal_min": 5.997,
+        "ideal_max": 6.602,
+        "difference": -0.2969999999999997
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 445.0,
+        "ideal_min": 410.44,
+        "ideal_max": 480.3000000000002,
+        "difference": 0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 84.0,
+        "ideal_min": 69.99,
+        "ideal_max": 84.01,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "low",
+        "current": 980.0,
+        "ideal_min": 1212.65,
+        "ideal_max": 12762.53,
+        "difference": -232.6500000000001
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.2,
+        "ideal_min": 26.8,
+        "ideal_max": 32.01900000000001,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 86.0,
+        "ideal_min": 85.0,
+        "ideal_max": 99.0,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 5.7,
+      "fertility_ec": 445.0,
+      "humidity": 84.0,
+      "sunlight": 980.0,
+      "soil_temp": 27.2,
+      "soil_moisture": 86.0
+    },
+    "original_index": 29
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.0742,
+    "crop": "Coconut",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.0,
+        "ideal_min": 5.997,
+        "ideal_max": 6.602,
+        "difference": 0
+      },
+      "fertility_ec": {
+        "status": "low",
+        "current": 355.0,
+        "ideal_min": 410.44,
+        "ideal_max": 480.3000000000002,
+        "difference": -55.44
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 70.0,
+        "ideal_min": 69.99,
+        "ideal_max": 84.01,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 12571.0,
+        "ideal_min": 1212.65,
+        "ideal_max": 12762.53,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "high",
+        "current": 33.9,
+        "ideal_min": 26.8,
+        "ideal_max": 32.01900000000001,
+        "difference": 1.880999999999986
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 99.0,
+        "ideal_min": 85.0,
+        "ideal_max": 99.0,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 6.0,
+      "fertility_ec": 355.0,
+      "humidity": 70.0,
+      "sunlight": 12571.0,
+      "soil_temp": 33.9,
+      "soil_moisture": 99.0
+    },
+    "original_index": 30
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.3757,
+    "crop": "Maize",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.2,
+        "ideal_min": 5.894,
+        "ideal_max": 6.5,
+        "difference": 0
+      },
+      "fertility_ec": {
+        "status": "low",
+        "current": 480.0,
+        "ideal_min": 485.84099999999995,
+        "ideal_max": 515.0500000000001,
+        "difference": -5.840999999999951
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 82.0,
+        "ideal_min": 76.0,
+        "ideal_max": 84.01,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1500.0,
+        "ideal_min": 1499.94,
+        "ideal_max": 2916.4500000000003,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.5,
+        "ideal_min": 27.0,
+        "ideal_max": 30.0,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 90.0,
+        "ideal_min": 84.0,
+        "ideal_max": 91.01,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 6.2,
+      "fertility_ec": 480.0,
+      "humidity": 82.0,
+      "sunlight": 1500.0,
+      "soil_temp": 27.5,
+      "soil_moisture": 90.0
+    },
+    "original_index": 31
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.2576,
+    "crop": "Maize",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "low",
+        "current": 5.3,
+        "ideal_min": 5.894,
+        "ideal_max": 6.5,
+        "difference": -0.5940000000000003
+      },
+      "fertility_ec": {
+        "status": "high",
+        "current": 520.0,
+        "ideal_min": 485.84099999999995,
+        "ideal_max": 515.0500000000001,
+        "difference": 4.949999999999932
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 77.0,
+        "ideal_min": 76.0,
+        "ideal_max": 84.01,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 2800.0,
+        "ideal_min": 1499.94,
+        "ideal_max": 2916.4500000000003,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 28.8,
+        "ideal_min": 27.0,
+        "ideal_max": 30.0,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 86.0,
+        "ideal_min": 84.0,
+        "ideal_max": 91.01,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 5.3,
+      "fertility_ec": 520.0,
+      "humidity": 77.0,
+      "sunlight": 2800.0,
+      "soil_temp": 28.8,
+      "soil_moisture": 86.0
+    },
+    "original_index": 32
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.4152,
+    "crop": "Maize",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.0,
+        "ideal_min": 5.894,
+        "ideal_max": 6.5,
+        "difference": 0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 515.0,
+        "ideal_min": 485.84099999999995,
+        "ideal_max": 515.0500000000001,
+        "difference": 0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 78.0,
+        "ideal_min": 76.0,
+        "ideal_max": 84.01,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 2750.0,
+        "ideal_min": 1499.94,
+        "ideal_max": 2916.4500000000003,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 28.4,
+        "ideal_min": 27.0,
+        "ideal_max": 30.0,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 89.0,
+        "ideal_min": 84.0,
+        "ideal_max": 91.01,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 6.0,
+      "fertility_ec": 515.0,
+      "humidity": 78.0,
+      "sunlight": 2750.0,
+      "soil_temp": 28.4,
+      "soil_moisture": 89.0
+    },
+    "original_index": 33
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.3475,
+    "crop": "Coffee",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.5,
+        "ideal_min": 6.292,
+        "ideal_max": 6.8020000000000005,
+        "difference": 0
+      },
+      "fertility_ec": {
+        "status": "high",
+        "current": 475.0,
+        "ideal_min": 449.998,
+        "ideal_max": 470.545,
+        "difference": 4.454999999999984
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 80.0,
+        "ideal_min": 79.99,
+        "ideal_max": 86.01,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1215.0,
+        "ideal_min": 699.96,
+        "ideal_max": 1223.01,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.0,
+        "ideal_min": 26.3,
+        "ideal_max": 27.5,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "high",
+        "current": 99.0,
+        "ideal_min": 85.99,
+        "ideal_max": 98.01,
+        "difference": 0.9899999999999949
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 6.5,
+      "fertility_ec": 475.0,
+      "humidity": 80.0,
+      "sunlight": 1215.0,
+      "soil_temp": 27.0,
+      "soil_moisture": 99.0
+    },
+    "original_index": 34
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.3287,
+    "crop": "Coffee",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "low",
+        "current": 5.5,
+        "ideal_min": 6.292,
+        "ideal_max": 6.8020000000000005,
+        "difference": -0.7919999999999998
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 450.0,
+        "ideal_min": 449.998,
+        "ideal_max": 470.545,
+        "difference": 0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 86.0,
+        "ideal_min": 79.99,
+        "ideal_max": 86.01,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 700.0,
+        "ideal_min": 699.96,
+        "ideal_max": 1223.01,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 26.5,
+        "ideal_min": 26.3,
+        "ideal_max": 27.5,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 87.0,
+        "ideal_min": 85.99,
+        "ideal_max": 98.01,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 5.5,
+      "fertility_ec": 450.0,
+      "humidity": 86.0,
+      "sunlight": 700.0,
+      "soil_temp": 26.5,
+      "soil_moisture": 87.0
+    },
+    "original_index": 35
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.2401,
+    "crop": "Eggplant",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "low",
+        "current": 5.5,
+        "ideal_min": 5.696,
+        "ideal_max": 6.2,
+        "difference": -0.19599999999999973
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 485.0,
+        "ideal_min": 480.76,
+        "ideal_max": 488.0,
+        "difference": 0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 76.0,
+        "ideal_min": 74.0,
+        "ideal_max": 78.05999999999999,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 2400.0,
+        "ideal_min": 2290.64,
+        "ideal_max": 2500.0,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 28.9,
+        "ideal_min": 28.49,
+        "ideal_max": 29.3,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 87.0,
+        "ideal_min": 84.9,
+        "ideal_max": 89.0,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 5.5,
+      "fertility_ec": 485.0,
+      "humidity": 76.0,
+      "sunlight": 2400.0,
+      "soil_temp": 28.9,
+      "soil_moisture": 87.0
+    },
+    "original_index": 36
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.2069,
+    "crop": "Forage Grass",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.8,
+        "ideal_min": 6.8,
+        "ideal_max": 7.2,
+        "difference": 0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 405.0,
+        "ideal_min": 400.0,
+        "ideal_max": 410.0,
+        "difference": 0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 79.0,
+        "ideal_min": 76.0,
+        "ideal_max": 81.0,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1900.0,
+        "ideal_min": 1833.87,
+        "ideal_max": 1996.02,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 28.0,
+        "ideal_min": 27.5,
+        "ideal_max": 29.3,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 84.0,
+        "ideal_min": 80.0,
+        "ideal_max": 87.0,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 6.8,
+      "fertility_ec": 405.0,
+      "humidity": 79.0,
+      "sunlight": 1900.0,
+      "soil_temp": 28.0,
+      "soil_moisture": 84.0
+    },
+    "original_index": 37
+  },
+  {
+    "is_suitable": true,
+    "confidence": 0.6863,
+    "crop": "Ginger",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.3,
+        "ideal_min": 5.698,
+        "ideal_max": 6.401000000000001,
+        "difference": 0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 460.0,
+        "ideal_min": 453.0,
+        "ideal_max": 525.0500000000001,
+        "difference": 0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 78.0,
+        "ideal_min": 77.0,
+        "ideal_max": 85.01,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1800.0,
+        "ideal_min": 1164.85,
+        "ideal_max": 2401.0000000000005,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 28.2,
+        "ideal_min": 26.0,
+        "ideal_max": 29.0,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 90.0,
+        "ideal_min": 84.0,
+        "ideal_max": 93.01,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 6.3,
+      "fertility_ec": 460.0,
+      "humidity": 78.0,
+      "sunlight": 1800.0,
+      "soil_temp": 28.2,
+      "soil_moisture": 90.0
+    },
+    "original_index": 38
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.375,
+    "crop": "Ginger",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "low",
+        "current": 5.5,
+        "ideal_min": 5.698,
+        "ideal_max": 6.401000000000001,
+        "difference": -0.1980000000000004
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 455.0,
+        "ideal_min": 453.0,
+        "ideal_max": 525.0500000000001,
+        "difference": 0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 85.0,
+        "ideal_min": 77.0,
+        "ideal_max": 85.01,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "low",
+        "current": 1150.0,
+        "ideal_min": 1164.85,
+        "ideal_max": 2401.0000000000005,
+        "difference": -14.849999999999909
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.1,
+        "ideal_min": 26.0,
+        "ideal_max": 29.0,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 85.0,
+        "ideal_min": 84.0,
+        "ideal_max": 93.01,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 5.5,
+      "fertility_ec": 455.0,
+      "humidity": 85.0,
+      "sunlight": 1150.0,
+      "soil_temp": 27.1,
+      "soil_moisture": 85.0
+    },
+    "original_index": 39
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.1402,
+    "crop": "Ginger",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.4,
+        "ideal_min": 5.698,
+        "ideal_max": 6.401000000000001,
+        "difference": 0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 500.0,
+        "ideal_min": 453.0,
+        "ideal_max": 525.0500000000001,
+        "difference": 0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 80.0,
+        "ideal_min": 77.0,
+        "ideal_max": 85.01,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1900.0,
+        "ideal_min": 1164.85,
+        "ideal_max": 2401.0000000000005,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.7,
+        "ideal_min": 26.0,
+        "ideal_max": 29.0,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 93.0,
+        "ideal_min": 84.0,
+        "ideal_max": 93.01,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 6.4,
+      "fertility_ec": 500.0,
+      "humidity": 80.0,
+      "sunlight": 1900.0,
+      "soil_temp": 27.7,
+      "soil_moisture": 93.0
+    },
+    "original_index": 40
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.2751,
+    "crop": "Ginger",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.2,
+        "ideal_min": 5.698,
+        "ideal_max": 6.401000000000001,
+        "difference": 0
+      },
+      "fertility_ec": {
+        "status": "high",
+        "current": 530.0,
+        "ideal_min": 453.0,
+        "ideal_max": 525.0500000000001,
+        "difference": 4.949999999999932
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 79.0,
+        "ideal_min": 77.0,
+        "ideal_max": 85.01,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 2400.0,
+        "ideal_min": 1164.85,
+        "ideal_max": 2401.0000000000005,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 28.2,
+        "ideal_min": 26.0,
+        "ideal_max": 29.0,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 91.0,
+        "ideal_min": 84.0,
+        "ideal_max": 93.01,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 6.2,
+      "fertility_ec": 530.0,
+      "humidity": 79.0,
+      "sunlight": 2400.0,
+      "soil_temp": 28.2,
+      "soil_moisture": 91.0
+    },
+    "original_index": 41
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.0829,
+    "crop": "Ginger",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.0,
+        "ideal_min": 5.698,
+        "ideal_max": 6.401000000000001,
+        "difference": 0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 525.0,
+        "ideal_min": 453.0,
+        "ideal_max": 525.0500000000001,
+        "difference": 0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 81.0,
+        "ideal_min": 77.0,
+        "ideal_max": 85.01,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 2000.0,
+        "ideal_min": 1164.85,
+        "ideal_max": 2401.0000000000005,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.8,
+        "ideal_min": 26.0,
+        "ideal_max": 29.0,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "high",
+        "current": 94.0,
+        "ideal_min": 84.0,
+        "ideal_max": 93.01,
+        "difference": 0.9899999999999949
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 6.0,
+      "fertility_ec": 525.0,
+      "humidity": 81.0,
+      "sunlight": 2000.0,
+      "soil_temp": 27.8,
+      "soil_moisture": 94.0
+    },
+    "original_index": 42
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.2063,
+    "crop": "Ginger",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.1,
+        "ideal_min": 5.698,
+        "ideal_max": 6.401000000000001,
+        "difference": 0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 515.0,
+        "ideal_min": 453.0,
+        "ideal_max": 525.0500000000001,
+        "difference": 0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 77.0,
+        "ideal_min": 77.0,
+        "ideal_max": 85.01,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "high",
+        "current": 2500.0,
+        "ideal_min": 1164.85,
+        "ideal_max": 2401.0000000000005,
+        "difference": 98.99999999999955
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 28.4,
+        "ideal_min": 26.0,
+        "ideal_max": 29.0,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 88.0,
+        "ideal_min": 84.0,
+        "ideal_max": 93.01,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 6.1,
+      "fertility_ec": 515.0,
+      "humidity": 77.0,
+      "sunlight": 2500.0,
+      "soil_temp": 28.4,
+      "soil_moisture": 88.0
+    },
+    "original_index": 43
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.2629,
+    "crop": "Ginger",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "high",
+        "current": 6.5,
+        "ideal_min": 5.698,
+        "ideal_max": 6.401000000000001,
+        "difference": 0.09899999999999931
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 490.0,
+        "ideal_min": 453.0,
+        "ideal_max": 525.0500000000001,
+        "difference": 0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 80.0,
+        "ideal_min": 77.0,
+        "ideal_max": 85.01,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1800.0,
+        "ideal_min": 1164.85,
+        "ideal_max": 2401.0000000000005,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 28.0,
+        "ideal_min": 26.0,
+        "ideal_max": 29.0,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 92.0,
+        "ideal_min": 84.0,
+        "ideal_max": 93.01,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 6.5,
+      "fertility_ec": 490.0,
+      "humidity": 80.0,
+      "sunlight": 1800.0,
+      "soil_temp": 28.0,
+      "soil_moisture": 92.0
+    },
+    "original_index": 44
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.2687,
+    "crop": "Ginger",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.3,
+        "ideal_min": 5.698,
+        "ideal_max": 6.401000000000001,
+        "difference": 0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 505.0,
+        "ideal_min": 453.0,
+        "ideal_max": 525.0500000000001,
+        "difference": 0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 78.0,
+        "ideal_min": 77.0,
+        "ideal_max": 85.01,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 2200.0,
+        "ideal_min": 1164.85,
+        "ideal_max": 2401.0000000000005,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.5,
+        "ideal_min": 26.0,
+        "ideal_max": 29.0,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 90.0,
+        "ideal_min": 84.0,
+        "ideal_max": 93.01,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 6.3,
+      "fertility_ec": 505.0,
+      "humidity": 78.0,
+      "sunlight": 2200.0,
+      "soil_temp": 27.5,
+      "soil_moisture": 90.0
+    },
+    "original_index": 45
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.2605,
+    "crop": "Ginger",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 5.9,
+        "ideal_min": 5.698,
+        "ideal_max": 6.401000000000001,
+        "difference": 0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 485.0,
+        "ideal_min": 453.0,
+        "ideal_max": 525.0500000000001,
+        "difference": 0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 83.0,
+        "ideal_min": 77.0,
+        "ideal_max": 85.01,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1500.0,
+        "ideal_min": 1164.85,
+        "ideal_max": 2401.0000000000005,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 26.9,
+        "ideal_min": 26.0,
+        "ideal_max": 29.0,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 89.0,
+        "ideal_min": 84.0,
+        "ideal_max": 93.01,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 5.9,
+      "fertility_ec": 485.0,
+      "humidity": 83.0,
+      "sunlight": 1500.0,
+      "soil_temp": 26.9,
+      "soil_moisture": 89.0
+    },
+    "original_index": 46
+  },
+  {
+    "is_suitable": true,
+    "confidence": 0.7913,
+    "crop": "Ipil Ipil",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.8,
+        "ideal_min": 6.5,
+        "ideal_max": 7.1,
+        "difference": 0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 405.0,
+        "ideal_min": 398.0,
+        "ideal_max": 412.0,
+        "difference": 0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 79.0,
+        "ideal_min": 77.0,
+        "ideal_max": 81.0,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1900.0,
+        "ideal_min": 1827.92,
+        "ideal_max": 1998.01,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 28.0,
+        "ideal_min": 26.1,
+        "ideal_max": 29.0,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 84.0,
+        "ideal_min": 82.0,
+        "ideal_max": 86.01,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 6.8,
+      "fertility_ec": 405.0,
+      "humidity": 79.0,
+      "sunlight": 1900.0,
+      "soil_temp": 28.0,
+      "soil_moisture": 84.0
+    },
+    "original_index": 47
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.4075,
+    "crop": "Jackfruit",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "low",
+        "current": 5.7,
+        "ideal_min": 5.7989999999999995,
+        "ideal_max": 6.2,
+        "difference": -0.09899999999999931
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 470.0,
+        "ideal_min": 465.0,
+        "ideal_max": 475.0,
+        "difference": 0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 84.0,
+        "ideal_min": 80.0,
+        "ideal_max": 86.01,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1050.0,
+        "ideal_min": 1022.98,
+        "ideal_max": 1080.0,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.4,
+        "ideal_min": 26.0,
+        "ideal_max": 29.0,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 89.0,
+        "ideal_min": 87.0,
+        "ideal_max": 90.01,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 5.7,
+      "fertility_ec": 470.0,
+      "humidity": 84.0,
+      "sunlight": 1050.0,
+      "soil_temp": 27.4,
+      "soil_moisture": 89.0
+    },
+    "original_index": 48
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.0002,
+    "crop": "Mango",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.0,
+        "ideal_min": 6.0,
+        "ideal_max": 7.0,
+        "difference": 0
+      },
+      "fertility_ec": {
+        "status": "high",
+        "current": 517.0,
+        "ideal_min": 440.887,
+        "ideal_max": 477.2020000000002,
+        "difference": 39.797999999999774
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 88.0,
+        "ideal_min": 78.99,
+        "ideal_max": 89.0,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1094.0,
+        "ideal_min": 986.97,
+        "ideal_max": 1109.0,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 28.5,
+        "ideal_min": 27.5,
+        "ideal_max": 30.0,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "high",
+        "current": 99.0,
+        "ideal_min": 79.0,
+        "ideal_max": 98.01,
+        "difference": 0.9899999999999949
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 6.0,
+      "fertility_ec": 517.0,
+      "humidity": 88.0,
+      "sunlight": 1094.0,
+      "soil_temp": 28.5,
+      "soil_moisture": 99.0
+    },
+    "original_index": 49
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.3208,
+    "crop": "Mango",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.0,
+        "ideal_min": 6.0,
+        "ideal_max": 7.0,
+        "difference": 0
+      },
+      "fertility_ec": {
+        "status": "low",
+        "current": 400.0,
+        "ideal_min": 440.887,
+        "ideal_max": 477.2020000000002,
+        "difference": -40.887
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 80.0,
+        "ideal_min": 78.99,
+        "ideal_max": 89.0,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1000.0,
+        "ideal_min": 986.97,
+        "ideal_max": 1109.0,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.9,
+        "ideal_min": 27.5,
+        "ideal_max": 30.0,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 80.0,
+        "ideal_min": 79.0,
+        "ideal_max": 98.01,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 6.0,
+      "fertility_ec": 400.0,
+      "humidity": 80.0,
+      "sunlight": 1000.0,
+      "soil_temp": 27.9,
+      "soil_moisture": 80.0
+    },
+    "original_index": 50
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.2441,
+    "crop": "Lanzones",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 5.8,
+        "ideal_min": 4.886,
+        "ideal_max": 5.801,
+        "difference": 0
+      },
+      "fertility_ec": {
+        "status": "low",
+        "current": 490.0,
+        "ideal_min": 504.85,
+        "ideal_max": 815.9290000000004,
+        "difference": -14.850000000000023
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 85.0,
+        "ideal_min": 67.0,
+        "ideal_max": 85.0,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "low",
+        "current": 850.0,
+        "ideal_min": 915.34,
+        "ideal_max": 4264.52,
+        "difference": -65.34000000000003
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 26.8,
+        "ideal_min": 26.0,
+        "ideal_max": 29.215000000000007,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 85.0,
+        "ideal_min": 83.0,
+        "ideal_max": 98.01,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 5.8,
+      "fertility_ec": 490.0,
+      "humidity": 85.0,
+      "sunlight": 850.0,
+      "soil_temp": 26.8,
+      "soil_moisture": 85.0
+    },
+    "original_index": 51
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.0227,
+    "crop": "Lanzones",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "high",
+        "current": 5.9,
+        "ideal_min": 4.886,
+        "ideal_max": 5.801,
+        "difference": 0.0990000000000002
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 505.0,
+        "ideal_min": 504.85,
+        "ideal_max": 815.9290000000004,
+        "difference": 0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 84.0,
+        "ideal_min": 67.0,
+        "ideal_max": 85.0,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1100.0,
+        "ideal_min": 915.34,
+        "ideal_max": 4264.52,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.3,
+        "ideal_min": 26.0,
+        "ideal_max": 29.215000000000007,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 88.0,
+        "ideal_min": 83.0,
+        "ideal_max": 98.01,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 5.9,
+      "fertility_ec": 505.0,
+      "humidity": 84.0,
+      "sunlight": 1100.0,
+      "soil_temp": 27.3,
+      "soil_moisture": 88.0
+    },
+    "original_index": 52
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.5462,
+    "crop": "Lanzones",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "low",
+        "current": 3.5,
+        "ideal_min": 4.886,
+        "ideal_max": 5.801,
+        "difference": -1.3860000000000001
+      },
+      "fertility_ec": {
+        "status": "high",
+        "current": 898.0,
+        "ideal_min": 504.85,
+        "ideal_max": 815.9290000000004,
+        "difference": 82.07099999999957
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 67.0,
+        "ideal_min": 67.0,
+        "ideal_max": 85.0,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "high",
+        "current": 4316.0,
+        "ideal_min": 915.34,
+        "ideal_max": 4264.52,
+        "difference": 51.47999999999956
+      },
+      "soil_temp": {
+        "status": "high",
+        "current": 30.7,
+        "ideal_min": 26.0,
+        "ideal_max": 29.215000000000007,
+        "difference": 1.4849999999999923
+      },
+      "soil_moisture": {
+        "status": "high",
+        "current": 99.0,
+        "ideal_min": 83.0,
+        "ideal_max": 98.01,
+        "difference": 0.9899999999999949
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 3.5,
+      "fertility_ec": 898.0,
+      "humidity": 67.0,
+      "sunlight": 4316.0,
+      "soil_temp": 30.7,
+      "soil_moisture": 99.0
+    },
+    "original_index": 53
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.3789,
+    "crop": "Rambutan",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 5.8,
+        "ideal_min": 5.5,
+        "ideal_max": 6.104000000000002,
+        "difference": 0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 490.0,
+        "ideal_min": 439.95,
+        "ideal_max": 649.7620000000004,
+        "difference": 0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 85.0,
+        "ideal_min": 81.0,
+        "ideal_max": 87.01,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 850.0,
+        "ideal_min": 849.5,
+        "ideal_max": 2137.2400000000002,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 26.8,
+        "ideal_min": 26.0,
+        "ideal_max": 28.5,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 85.0,
+        "ideal_min": 81.99,
+        "ideal_max": 98.01,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 5.8,
+      "fertility_ec": 490.0,
+      "humidity": 85.0,
+      "sunlight": 850.0,
+      "soil_temp": 26.8,
+      "soil_moisture": 85.0
+    },
+    "original_index": 54
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.429,
+    "crop": "Rambutan",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 5.9,
+        "ideal_min": 5.5,
+        "ideal_max": 6.104000000000002,
+        "difference": 0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 505.0,
+        "ideal_min": 439.95,
+        "ideal_max": 649.7620000000004,
+        "difference": 0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 84.0,
+        "ideal_min": 81.0,
+        "ideal_max": 87.01,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1100.0,
+        "ideal_min": 849.5,
+        "ideal_max": 2137.2400000000002,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.3,
+        "ideal_min": 26.0,
+        "ideal_max": 28.5,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 88.0,
+        "ideal_min": 81.99,
+        "ideal_max": 98.01,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 5.9,
+      "fertility_ec": 505.0,
+      "humidity": 84.0,
+      "sunlight": 1100.0,
+      "soil_temp": 27.3,
+      "soil_moisture": 88.0
+    },
+    "original_index": 55
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.55,
+    "crop": "Rambutan",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "high",
+        "current": 6.5,
+        "ideal_min": 5.5,
+        "ideal_max": 6.104000000000002,
+        "difference": 0.39599999999999813
+      },
+      "fertility_ec": {
+        "status": "high",
+        "current": 745.0,
+        "ideal_min": 439.95,
+        "ideal_max": 649.7620000000004,
+        "difference": 95.2379999999996
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 81.0,
+        "ideal_min": 81.0,
+        "ideal_max": 87.01,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 2090.0,
+        "ideal_min": 849.5,
+        "ideal_max": 2137.2400000000002,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.8,
+        "ideal_min": 26.0,
+        "ideal_max": 28.5,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "high",
+        "current": 99.0,
+        "ideal_min": 81.99,
+        "ideal_max": 98.01,
+        "difference": 0.9899999999999949
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 6.5,
+      "fertility_ec": 745.0,
+      "humidity": 81.0,
+      "sunlight": 2090.0,
+      "soil_temp": 27.8,
+      "soil_moisture": 99.0
+    },
+    "original_index": 56
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.3026,
+    "crop": "Rambutan",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 5.9,
+        "ideal_min": 5.5,
+        "ideal_max": 6.104000000000002,
+        "difference": 0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 455.0,
+        "ideal_min": 439.95,
+        "ideal_max": 649.7620000000004,
+        "difference": 0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 84.0,
+        "ideal_min": 81.0,
+        "ideal_max": 87.01,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1050.0,
+        "ideal_min": 849.5,
+        "ideal_max": 2137.2400000000002,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.0,
+        "ideal_min": 26.0,
+        "ideal_max": 28.5,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 85.0,
+        "ideal_min": 81.99,
+        "ideal_max": 98.01,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 5.9,
+      "fertility_ec": 455.0,
+      "humidity": 84.0,
+      "sunlight": 1050.0,
+      "soil_temp": 27.0,
+      "soil_moisture": 85.0
+    },
+    "original_index": 57
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.2181,
+    "crop": "Rambutan",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.0,
+        "ideal_min": 5.5,
+        "ideal_max": 6.104000000000002,
+        "difference": 0
+      },
+      "fertility_ec": {
+        "status": "low",
+        "current": 435.0,
+        "ideal_min": 439.95,
+        "ideal_max": 649.7620000000004,
+        "difference": -4.949999999999989
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 83.0,
+        "ideal_min": 81.0,
+        "ideal_max": 87.01,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1150.0,
+        "ideal_min": 849.5,
+        "ideal_max": 2137.2400000000002,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.4,
+        "ideal_min": 26.0,
+        "ideal_max": 28.5,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 83.0,
+        "ideal_min": 81.99,
+        "ideal_max": 98.01,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 6.0,
+      "fertility_ec": 435.0,
+      "humidity": 83.0,
+      "sunlight": 1150.0,
+      "soil_temp": 27.4,
+      "soil_moisture": 83.0
+    },
+    "original_index": 58
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.3908,
+    "crop": "Rambutan",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 5.8,
+        "ideal_min": 5.5,
+        "ideal_max": 6.104000000000002,
+        "difference": 0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 460.0,
+        "ideal_min": 439.95,
+        "ideal_max": 649.7620000000004,
+        "difference": 0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 85.0,
+        "ideal_min": 81.0,
+        "ideal_max": 87.01,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 950.0,
+        "ideal_min": 849.5,
+        "ideal_max": 2137.2400000000002,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.2,
+        "ideal_min": 26.0,
+        "ideal_max": 28.5,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 87.0,
+        "ideal_min": 81.99,
+        "ideal_max": 98.01,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 5.8,
+      "fertility_ec": 460.0,
+      "humidity": 85.0,
+      "sunlight": 950.0,
+      "soil_temp": 27.2,
+      "soil_moisture": 87.0
+    },
+    "original_index": 59
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.3877,
+    "crop": "Rambutan",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 5.6,
+        "ideal_min": 5.5,
+        "ideal_max": 6.104000000000002,
+        "difference": 0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 450.0,
+        "ideal_min": 439.95,
+        "ideal_max": 649.7620000000004,
+        "difference": 0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 86.0,
+        "ideal_min": 81.0,
+        "ideal_max": 87.01,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1000.0,
+        "ideal_min": 849.5,
+        "ideal_max": 2137.2400000000002,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 26.8,
+        "ideal_min": 26.0,
+        "ideal_max": 28.5,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 84.0,
+        "ideal_min": 81.99,
+        "ideal_max": 98.01,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 5.6,
+      "fertility_ec": 450.0,
+      "humidity": 86.0,
+      "sunlight": 1000.0,
+      "soil_temp": 26.8,
+      "soil_moisture": 84.0
+    },
+    "original_index": 60
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.2776,
+    "crop": "Rambutan",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.1,
+        "ideal_min": 5.5,
+        "ideal_max": 6.104000000000002,
+        "difference": 0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 465.0,
+        "ideal_min": 439.95,
+        "ideal_max": 649.7620000000004,
+        "difference": 0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 82.0,
+        "ideal_min": 81.0,
+        "ideal_max": 87.01,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1250.0,
+        "ideal_min": 849.5,
+        "ideal_max": 2137.2400000000002,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.5,
+        "ideal_min": 26.0,
+        "ideal_max": 28.5,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 86.0,
+        "ideal_min": 81.99,
+        "ideal_max": 98.01,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 6.1,
+      "fertility_ec": 465.0,
+      "humidity": 82.0,
+      "sunlight": 1250.0,
+      "soil_temp": 27.5,
+      "soil_moisture": 86.0
+    },
+    "original_index": 61
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.0429,
+    "crop": "Rambutan",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 5.5,
+        "ideal_min": 5.5,
+        "ideal_max": 6.104000000000002,
+        "difference": 0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 445.0,
+        "ideal_min": 439.95,
+        "ideal_max": 649.7620000000004,
+        "difference": 0
+      },
+      "humidity": {
+        "status": "high",
+        "current": 88.0,
+        "ideal_min": 81.0,
+        "ideal_max": 87.01,
+        "difference": 0.9899999999999949
+      },
+      "sunlight": {
+        "status": "low",
+        "current": 800.0,
+        "ideal_min": 849.5,
+        "ideal_max": 2137.2400000000002,
+        "difference": -49.5
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 26.6,
+        "ideal_min": 26.0,
+        "ideal_max": 28.5,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "low",
+        "current": 81.0,
+        "ideal_min": 81.99,
+        "ideal_max": 98.01,
+        "difference": -0.9899999999999949
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 5.5,
+      "fertility_ec": 445.0,
+      "humidity": 88.0,
+      "sunlight": 800.0,
+      "soil_temp": 26.6,
+      "soil_moisture": 81.0
+    },
+    "original_index": 62
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.0308,
+    "crop": "Rambutan",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 5.7,
+        "ideal_min": 5.5,
+        "ideal_max": 6.104000000000002,
+        "difference": 0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 440.0,
+        "ideal_min": 439.95,
+        "ideal_max": 649.7620000000004,
+        "difference": 0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 87.0,
+        "ideal_min": 81.0,
+        "ideal_max": 87.01,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 900.0,
+        "ideal_min": 849.5,
+        "ideal_max": 2137.2400000000002,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 26.7,
+        "ideal_min": 26.0,
+        "ideal_max": 28.5,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 82.0,
+        "ideal_min": 81.99,
+        "ideal_max": 98.01,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 5.7,
+      "fertility_ec": 440.0,
+      "humidity": 87.0,
+      "sunlight": 900.0,
+      "soil_temp": 26.7,
+      "soil_moisture": 82.0
+    },
+    "original_index": 63
+  },
+  {
+    "is_suitable": true,
+    "confidence": 0.909,
+    "crop": "Rice",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.8,
+        "ideal_min": 6.8,
+        "ideal_max": 7.2,
+        "difference": 0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 550.0,
+        "ideal_min": 538.196,
+        "ideal_max": 562.912,
+        "difference": 0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 75.0,
+        "ideal_min": 70.99,
+        "ideal_max": 78.01,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 2500.0,
+        "ideal_min": 2441.94,
+        "ideal_max": 2695.0,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 29.2,
+        "ideal_min": 26.998,
+        "ideal_max": 31.0,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 95.0,
+        "ideal_min": 92.0,
+        "ideal_max": 97.01,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 6.8,
+      "fertility_ec": 550.0,
+      "humidity": 75.0,
+      "sunlight": 2500.0,
+      "soil_temp": 29.2,
+      "soil_moisture": 95.0
+    },
+    "original_index": 64
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.0003,
+    "crop": "Banana",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "high",
+        "current": 6.8,
+        "ideal_min": 4.196,
+        "ideal_max": 6.407999999999999,
+        "difference": 0.39200000000000124
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 550.0,
+        "ideal_min": 494.5,
+        "ideal_max": 771.7799999999999,
+        "difference": 0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 75.0,
+        "ideal_min": 66.98,
+        "ideal_max": 83.0,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 2500.0,
+        "ideal_min": 1643.0,
+        "ideal_max": 8997.919999999998,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 29.2,
+        "ideal_min": 27.0,
+        "ideal_max": 30.0,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 95.0,
+        "ideal_min": 88.0,
+        "ideal_max": 99.0,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 6.8,
+      "fertility_ec": 550.0,
+      "humidity": 75.0,
+      "sunlight": 2500.0,
+      "soil_temp": 29.2,
+      "soil_moisture": 95.0
+    },
+    "original_index": 65
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.1345,
+    "crop": "Banana",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.4,
+        "ideal_min": 4.196,
+        "ideal_max": 6.407999999999999,
+        "difference": 0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 495.0,
+        "ideal_min": 494.5,
+        "ideal_max": 771.7799999999999,
+        "difference": 0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 81.0,
+        "ideal_min": 66.98,
+        "ideal_max": 83.0,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1650.0,
+        "ideal_min": 1643.0,
+        "ideal_max": 8997.919999999998,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.8,
+        "ideal_min": 27.0,
+        "ideal_max": 30.0,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 92.0,
+        "ideal_min": 88.0,
+        "ideal_max": 99.0,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 6.4,
+      "fertility_ec": 495.0,
+      "humidity": 81.0,
+      "sunlight": 1650.0,
+      "soil_temp": 27.8,
+      "soil_moisture": 92.0
+    },
+    "original_index": 66
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.03,
+    "crop": "Banana",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 5.4,
+        "ideal_min": 4.196,
+        "ideal_max": 6.407999999999999,
+        "difference": 0
+      },
+      "fertility_ec": {
+        "status": "low",
+        "current": 470.0,
+        "ideal_min": 494.5,
+        "ideal_max": 771.7799999999999,
+        "difference": -24.5
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 83.0,
+        "ideal_min": 66.98,
+        "ideal_max": 83.0,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "low",
+        "current": 1300.0,
+        "ideal_min": 1643.0,
+        "ideal_max": 8997.919999999998,
+        "difference": -343.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.9,
+        "ideal_min": 27.0,
+        "ideal_max": 30.0,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 90.0,
+        "ideal_min": 88.0,
+        "ideal_max": 99.0,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 5.4,
+      "fertility_ec": 470.0,
+      "humidity": 83.0,
+      "sunlight": 1300.0,
+      "soil_temp": 27.9,
+      "soil_moisture": 90.0
+    },
+    "original_index": 67
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.3061,
+    "crop": "Calamansi",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "high",
+        "current": 6.0,
+        "ideal_min": 4.8,
+        "ideal_max": 5.505000000000003,
+        "difference": 0.49499999999999744
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 435.0,
+        "ideal_min": 430.0,
+        "ideal_max": 442.08000000000004,
+        "difference": 0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 79.0,
+        "ideal_min": 77.99,
+        "ideal_max": 81.05000000000003,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 2000.0,
+        "ideal_min": 1808.8,
+        "ideal_max": 2096.01,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 28.1,
+        "ideal_min": 27.787,
+        "ideal_max": 29.3,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 82.0,
+        "ideal_min": 78.0,
+        "ideal_max": 85.02000000000001,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 6.0,
+      "fertility_ec": 435.0,
+      "humidity": 79.0,
+      "sunlight": 2000.0,
+      "soil_temp": 28.1,
+      "soil_moisture": 82.0
+    },
+    "original_index": 68
+  },
+  {
+    "is_suitable": true,
+    "confidence": 0.695,
+    "crop": "Kamoteng Baging",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "low",
+        "current": 4.5,
+        "ideal_min": 4.896,
+        "ideal_max": 5.3,
+        "difference": -0.3959999999999999
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 359.0,
+        "ideal_min": 351.295,
+        "ideal_max": 366.61400000000003,
+        "difference": 0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 70.0,
+        "ideal_min": 68.0,
+        "ideal_max": 73.01,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "high",
+        "current": 15839.0,
+        "ideal_min": 1793.35,
+        "ideal_max": 15335.090000000002,
+        "difference": 503.90999999999804
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 34.6,
+        "ideal_min": 31.494,
+        "ideal_max": 35.0,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "high",
+        "current": 99.0,
+        "ideal_min": 88.0,
+        "ideal_max": 97.02000000000001,
+        "difference": 1.9799999999999898
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 4.5,
+      "fertility_ec": 359.0,
+      "humidity": 70.0,
+      "sunlight": 15839.0,
+      "soil_temp": 34.6,
+      "soil_moisture": 99.0
+    },
+    "original_index": 69
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.1149,
+    "crop": "Katuray",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.2,
+        "ideal_min": 5.8,
+        "ideal_max": 6.2010000000000005,
+        "difference": 0
+      },
+      "fertility_ec": {
+        "status": "high",
+        "current": 410.0,
+        "ideal_min": 346.293,
+        "ideal_max": 362.1830000000002,
+        "difference": 47.81699999999978
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 78.0,
+        "ideal_min": 76.0,
+        "ideal_max": 80.01,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 2200.0,
+        "ideal_min": 2074.0,
+        "ideal_max": 2497.02,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "low",
+        "current": 28.4,
+        "ideal_min": 28.499,
+        "ideal_max": 29.0,
+        "difference": -0.0990000000000002
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 83.0,
+        "ideal_min": 80.0,
+        "ideal_max": 87.0,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 6.2,
+      "fertility_ec": 410.0,
+      "humidity": 78.0,
+      "sunlight": 2200.0,
+      "soil_temp": 28.4,
+      "soil_moisture": 83.0
+    },
+    "original_index": 70
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.5124,
+    "crop": "Kulo",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 5.7,
+        "ideal_min": 5.7,
+        "ideal_max": 6.2010000000000005,
+        "difference": 0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 470.0,
+        "ideal_min": 459.08700000000005,
+        "ideal_max": 480.0,
+        "difference": 0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 84.0,
+        "ideal_min": 81.0,
+        "ideal_max": 87.0,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1050.0,
+        "ideal_min": 1031.99,
+        "ideal_max": 1080.0,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.4,
+        "ideal_min": 26.6,
+        "ideal_max": 28.0,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "high",
+        "current": 89.0,
+        "ideal_min": 80.0,
+        "ideal_max": 87.02000000000001,
+        "difference": 1.9799999999999898
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 5.7,
+      "fertility_ec": 470.0,
+      "humidity": 84.0,
+      "sunlight": 1050.0,
+      "soil_temp": 27.4,
+      "soil_moisture": 89.0
+    },
+    "original_index": 71
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.3857,
+    "crop": "Lipote",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 5.7,
+        "ideal_min": 5.7,
+        "ideal_max": 6.2,
+        "difference": 0
+      },
+      "fertility_ec": {
+        "status": "low",
+        "current": 420.0,
+        "ideal_min": 449.7,
+        "ideal_max": 450.0,
+        "difference": -29.69999999999999
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 81.0,
+        "ideal_min": 78.0,
+        "ideal_max": 83.01,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 950.0,
+        "ideal_min": 937.99,
+        "ideal_max": 964.01,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 28.0,
+        "ideal_min": 26.6,
+        "ideal_max": 28.0,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 80.0,
+        "ideal_min": 78.0,
+        "ideal_max": 82.0,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 5.7,
+      "fertility_ec": 420.0,
+      "humidity": 81.0,
+      "sunlight": 950.0,
+      "soil_temp": 28.0,
+      "soil_moisture": 80.0
+    },
+    "original_index": 72
+  },
+  {
+    "is_suitable": true,
+    "confidence": 0.9376,
+    "crop": "Orchid",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.1,
+        "ideal_min": 5.899,
+        "ideal_max": 6.2,
+        "difference": 0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 390.0,
+        "ideal_min": 387.0,
+        "ideal_max": 393.0,
+        "difference": 0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 76.0,
+        "ideal_min": 73.99,
+        "ideal_max": 79.0,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1850.0,
+        "ideal_min": 1666.72,
+        "ideal_max": 1996.03,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "high",
+        "current": 28.3,
+        "ideal_min": 26.0,
+        "ideal_max": 28.003,
+        "difference": 0.2970000000000006
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 78.0,
+        "ideal_min": 76.0,
+        "ideal_max": 81.0,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 6.1,
+      "fertility_ec": 390.0,
+      "humidity": 76.0,
+      "sunlight": 1850.0,
+      "soil_temp": 28.3,
+      "soil_moisture": 78.0
+    },
+    "original_index": 73
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.4136,
+    "crop": "Papaya",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.0,
+        "ideal_min": 5.899,
+        "ideal_max": 6.2,
+        "difference": 0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 435.0,
+        "ideal_min": 428.0,
+        "ideal_max": 442.0,
+        "difference": 0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 79.0,
+        "ideal_min": 76.0,
+        "ideal_max": 81.0,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "low",
+        "current": 2000.0,
+        "ideal_min": 2571.23,
+        "ideal_max": 7578.35,
+        "difference": -571.23
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 28.1,
+        "ideal_min": 26.198999999999998,
+        "ideal_max": 29.0,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 82.0,
+        "ideal_min": 80.0,
+        "ideal_max": 84.0,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 6.0,
+      "fertility_ec": 435.0,
+      "humidity": 79.0,
+      "sunlight": 2000.0,
+      "soil_temp": 28.1,
+      "soil_moisture": 82.0
+    },
+    "original_index": 74
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.3604,
+    "crop": "Pechay",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.6,
+        "ideal_min": 6.6,
+        "ideal_max": 7.1,
+        "difference": 0
+      },
+      "fertility_ec": {
+        "status": "high",
+        "current": 535.0,
+        "ideal_min": 485.349,
+        "ideal_max": 518.2690000000001,
+        "difference": 16.73099999999988
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 75.0,
+        "ideal_min": 71.99,
+        "ideal_max": 84.01,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 2600.0,
+        "ideal_min": 1140.36,
+        "ideal_max": 2887.23,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "high",
+        "current": 28.7,
+        "ideal_min": 27.0,
+        "ideal_max": 27.01700000000001,
+        "difference": 1.6829999999999892
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 94.0,
+        "ideal_min": 92.0,
+        "ideal_max": 96.01,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 6.6,
+      "fertility_ec": 535.0,
+      "humidity": 75.0,
+      "sunlight": 2600.0,
+      "soil_temp": 28.7,
+      "soil_moisture": 94.0
+    },
+    "original_index": 75
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.3732,
+    "crop": "Pineapple",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 5.3,
+        "ideal_min": 4.99,
+        "ideal_max": 5.733000000000017,
+        "difference": 0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 520.0,
+        "ideal_min": 499.4,
+        "ideal_max": 594.3000000000002,
+        "difference": 0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 77.0,
+        "ideal_min": 70.0,
+        "ideal_max": 78.0,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "low",
+        "current": 2800.0,
+        "ideal_min": 2899.0,
+        "ideal_max": 41623.97000000001,
+        "difference": -99.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 28.8,
+        "ideal_min": 28.0,
+        "ideal_max": 33.803,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 86.0,
+        "ideal_min": 85.0,
+        "ideal_max": 99.0,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 5.3,
+      "fertility_ec": 520.0,
+      "humidity": 77.0,
+      "sunlight": 2800.0,
+      "soil_temp": 28.8,
+      "soil_moisture": 86.0
+    },
+    "original_index": 76
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.2557,
+    "crop": "Pineapple",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 5.4,
+        "ideal_min": 4.99,
+        "ideal_max": 5.733000000000017,
+        "difference": 0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 500.0,
+        "ideal_min": 499.4,
+        "ideal_max": 594.3000000000002,
+        "difference": 0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 77.0,
+        "ideal_min": 70.0,
+        "ideal_max": 78.0,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 2900.0,
+        "ideal_min": 2899.0,
+        "ideal_max": 41623.97000000001,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 28.6,
+        "ideal_min": 28.0,
+        "ideal_max": 33.803,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 88.0,
+        "ideal_min": 85.0,
+        "ideal_max": 99.0,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 5.4,
+      "fertility_ec": 500.0,
+      "humidity": 77.0,
+      "sunlight": 2900.0,
+      "soil_temp": 28.6,
+      "soil_moisture": 88.0
+    },
+    "original_index": 77
+  },
+  {
+    "is_suitable": true,
+    "confidence": 0.6955,
+    "crop": "Pineapple",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "low",
+        "current": 4.0,
+        "ideal_min": 4.99,
+        "ideal_max": 5.733000000000017,
+        "difference": -0.9900000000000002
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 594.0,
+        "ideal_min": 499.4,
+        "ideal_max": 594.3000000000002,
+        "difference": 0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 73.0,
+        "ideal_min": 70.0,
+        "ideal_max": 78.0,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 39100.0,
+        "ideal_min": 2899.0,
+        "ideal_max": 41623.97000000001,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "high",
+        "current": 34.1,
+        "ideal_min": 28.0,
+        "ideal_max": 33.803,
+        "difference": 0.29700000000000415
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 99.0,
+        "ideal_min": 85.0,
+        "ideal_max": 99.0,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 4.0,
+      "fertility_ec": 594.0,
+      "humidity": 73.0,
+      "sunlight": 39100.0,
+      "soil_temp": 34.1,
+      "soil_moisture": 99.0
+    },
+    "original_index": 78
+  },
+  {
+    "is_suitable": true,
+    "confidence": 0.7648,
+    "crop": "Pineapple",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 5.5,
+        "ideal_min": 4.99,
+        "ideal_max": 5.733000000000017,
+        "difference": 0
+      },
+      "fertility_ec": {
+        "status": "low",
+        "current": 440.0,
+        "ideal_min": 499.4,
+        "ideal_max": 594.3000000000002,
+        "difference": -59.39999999999998
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 76.0,
+        "ideal_min": 70.0,
+        "ideal_max": 78.0,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 21062.0,
+        "ideal_min": 2899.0,
+        "ideal_max": 41623.97000000001,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 31.5,
+        "ideal_min": 28.0,
+        "ideal_max": 33.803,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 99.0,
+        "ideal_min": 85.0,
+        "ideal_max": 99.0,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 5.5,
+      "fertility_ec": 440.0,
+      "humidity": 76.0,
+      "sunlight": 21062.0,
+      "soil_temp": 31.5,
+      "soil_moisture": 99.0
+    },
+    "original_index": 79
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.5925,
+    "crop": "Pineapple",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "high",
+        "current": 9.0,
+        "ideal_min": 4.99,
+        "ideal_max": 5.733000000000017,
+        "difference": 3.2669999999999826
+      },
+      "fertility_ec": {
+        "status": "high",
+        "current": 624.0,
+        "ideal_min": 499.4,
+        "ideal_max": 594.3000000000002,
+        "difference": 29.699999999999818
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 72.0,
+        "ideal_min": 70.0,
+        "ideal_max": 78.0,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "high",
+        "current": 43700.0,
+        "ideal_min": 2899.0,
+        "ideal_max": 41623.97000000001,
+        "difference": 2076.0299999999916
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 33.5,
+        "ideal_min": 28.0,
+        "ideal_max": 33.803,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 99.0,
+        "ideal_min": 85.0,
+        "ideal_max": 99.0,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 9.0,
+      "fertility_ec": 624.0,
+      "humidity": 72.0,
+      "sunlight": 43700.0,
+      "soil_temp": 33.5,
+      "soil_moisture": 99.0
+    },
+    "original_index": 80
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.0,
+    "crop": "Eggplant",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 5.7,
+        "ideal_min": 5.696,
+        "ideal_max": 6.2,
+        "difference": 0
+      },
+      "fertility_ec": {
+        "status": "low",
+        "current": 420.0,
+        "ideal_min": 480.76,
+        "ideal_max": 488.0,
+        "difference": -60.75999999999999
+      },
+      "humidity": {
+        "status": "high",
+        "current": 81.0,
+        "ideal_min": 74.0,
+        "ideal_max": 78.05999999999999,
+        "difference": 2.940000000000012
+      },
+      "sunlight": {
+        "status": "low",
+        "current": 950.0,
+        "ideal_min": 2290.64,
+        "ideal_max": 2500.0,
+        "difference": -1340.6399999999999
+      },
+      "soil_temp": {
+        "status": "low",
+        "current": 28.0,
+        "ideal_min": 28.49,
+        "ideal_max": 29.3,
+        "difference": -0.48999999999999844
+      },
+      "soil_moisture": {
+        "status": "low",
+        "current": 80.0,
+        "ideal_min": 84.9,
+        "ideal_max": 89.0,
+        "difference": -4.900000000000006
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 5.7,
+      "fertility_ec": 420.0,
+      "humidity": 81.0,
+      "sunlight": 950.0,
+      "soil_temp": 28.0,
+      "soil_moisture": 80.0
+    },
+    "original_index": 81
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.2401,
+    "crop": "Eggplant",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "low",
+        "current": 5.5,
+        "ideal_min": 5.696,
+        "ideal_max": 6.2,
+        "difference": -0.19599999999999973
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 485.0,
+        "ideal_min": 480.76,
+        "ideal_max": 488.0,
+        "difference": 0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 76.0,
+        "ideal_min": 74.0,
+        "ideal_max": 78.05999999999999,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 2400.0,
+        "ideal_min": 2290.64,
+        "ideal_max": 2500.0,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 28.9,
+        "ideal_min": 28.49,
+        "ideal_max": 29.3,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 87.0,
+        "ideal_min": 84.9,
+        "ideal_max": 89.0,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 5.5,
+      "fertility_ec": 485.0,
+      "humidity": 76.0,
+      "sunlight": 2400.0,
+      "soil_temp": 28.9,
+      "soil_moisture": 87.0
+    },
+    "original_index": 82
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.3171,
+    "crop": "Sili Labuyo",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "low",
+        "current": 5.5,
+        "ideal_min": 5.698,
+        "ideal_max": 6.301,
+        "difference": -0.1980000000000004
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 485.0,
+        "ideal_min": 483.997,
+        "ideal_max": 516.7,
+        "difference": 0
+      },
+      "humidity": {
+        "status": "high",
+        "current": 76.0,
+        "ideal_min": 51.99,
+        "ideal_max": 74.02000000000001,
+        "difference": 1.9799999999999898
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 2400.0,
+        "ideal_min": 2399.63,
+        "ideal_max": 7977.550000000004,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 28.9,
+        "ideal_min": 27.0,
+        "ideal_max": 31.0,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 87.0,
+        "ideal_min": 80.0,
+        "ideal_max": 87.0,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 5.5,
+      "fertility_ec": 485.0,
+      "humidity": 76.0,
+      "sunlight": 2400.0,
+      "soil_temp": 28.9,
+      "soil_moisture": 87.0
+    },
+    "original_index": 83
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.4817,
+    "crop": "Squash",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.7,
+        "ideal_min": 6.2989999999999995,
+        "ideal_max": 6.8,
+        "difference": 0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 530.0,
+        "ideal_min": 529.95,
+        "ideal_max": 564.81,
+        "difference": 0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 74.0,
+        "ideal_min": 68.0,
+        "ideal_max": 79.0,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 3000.0,
+        "ideal_min": 2590.25,
+        "ideal_max": 9462.62,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 29.5,
+        "ideal_min": 27.697,
+        "ideal_max": 32.0,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 92.0,
+        "ideal_min": 86.0,
+        "ideal_max": 92.01,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 6.7,
+      "fertility_ec": 530.0,
+      "humidity": 74.0,
+      "sunlight": 3000.0,
+      "soil_temp": 29.5,
+      "soil_moisture": 92.0
+    },
+    "original_index": 84
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.0023,
+    "crop": "Squash",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.3,
+        "ideal_min": 6.2989999999999995,
+        "ideal_max": 6.8,
+        "difference": 0
+      },
+      "fertility_ec": {
+        "status": "low",
+        "current": 525.0,
+        "ideal_min": 529.95,
+        "ideal_max": 564.81,
+        "difference": -4.9500000000000455
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 74.0,
+        "ideal_min": 68.0,
+        "ideal_max": 79.0,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 3200.0,
+        "ideal_min": 2590.25,
+        "ideal_max": 9462.62,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 29.1,
+        "ideal_min": 27.697,
+        "ideal_max": 32.0,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 88.0,
+        "ideal_min": 86.0,
+        "ideal_max": 92.01,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 6.3,
+      "fertility_ec": 525.0,
+      "humidity": 74.0,
+      "sunlight": 3200.0,
+      "soil_temp": 29.1,
+      "soil_moisture": 88.0
+    },
+    "original_index": 85
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.1477,
+    "crop": "Sweet Potato",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.4,
+        "ideal_min": 5.899,
+        "ideal_max": 6.5,
+        "difference": 0
+      },
+      "fertility_ec": {
+        "status": "low",
+        "current": 495.0,
+        "ideal_min": 504.108,
+        "ideal_max": 551.343,
+        "difference": -9.108000000000004
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 81.0,
+        "ideal_min": 79.0,
+        "ideal_max": 86.0,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "low",
+        "current": 1650.0,
+        "ideal_min": 1901.46,
+        "ideal_max": 10235.79,
+        "difference": -251.46000000000004
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.8,
+        "ideal_min": 25.0,
+        "ideal_max": 29.2,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 92.0,
+        "ideal_min": 88.0,
+        "ideal_max": 93.0,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 6.4,
+      "fertility_ec": 495.0,
+      "humidity": 81.0,
+      "sunlight": 1650.0,
+      "soil_temp": 27.8,
+      "soil_moisture": 92.0
+    },
+    "original_index": 86
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.3572,
+    "crop": "Sweet Sorghum",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.0,
+        "ideal_min": 5.999,
+        "ideal_max": 6.5,
+        "difference": 0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 515.0,
+        "ideal_min": 496.59900000000005,
+        "ideal_max": 534.932,
+        "difference": 0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 78.0,
+        "ideal_min": 76.99,
+        "ideal_max": 85.0,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 2750.0,
+        "ideal_min": 2546.46,
+        "ideal_max": 11298.11,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 28.4,
+        "ideal_min": 26.788,
+        "ideal_max": 30.0,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 89.0,
+        "ideal_min": 88.0,
+        "ideal_max": 92.01,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 6.0,
+      "fertility_ec": 515.0,
+      "humidity": 78.0,
+      "sunlight": 2750.0,
+      "soil_temp": 28.4,
+      "soil_moisture": 89.0
+    },
+    "original_index": 87
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.0537,
+    "crop": "String Bean",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.9,
+        "ideal_min": 6.7,
+        "ideal_max": 7.301,
+        "difference": 0
+      },
+      "fertility_ec": {
+        "status": "low",
+        "current": 540.0,
+        "ideal_min": 568.413,
+        "ideal_max": 624.609,
+        "difference": -28.41300000000001
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 76.0,
+        "ideal_min": 69.0,
+        "ideal_max": 79.0,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 2700.0,
+        "ideal_min": 2146.86,
+        "ideal_max": 11675.470000000005,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 29.0,
+        "ideal_min": 26.7,
+        "ideal_max": 31.404,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "high",
+        "current": 93.0,
+        "ideal_min": 85.0,
+        "ideal_max": 92.01,
+        "difference": 0.9899999999999949
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 6.9,
+      "fertility_ec": 540.0,
+      "humidity": 76.0,
+      "sunlight": 2700.0,
+      "soil_temp": 29.0,
+      "soil_moisture": 93.0
+    },
+    "original_index": 88
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.4578,
+    "crop": "Gabi",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.5,
+        "ideal_min": 6.399,
+        "ideal_max": 7.0,
+        "difference": 0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 465.0,
+        "ideal_min": 458.0,
+        "ideal_max": 495.1,
+        "difference": 0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 82.0,
+        "ideal_min": 80.0,
+        "ideal_max": 85.01,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1200.0,
+        "ideal_min": 1099.0,
+        "ideal_max": 8894.640000000001,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.6,
+        "ideal_min": 26.0,
+        "ideal_max": 28.003,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 95.0,
+        "ideal_min": 90.0,
+        "ideal_max": 98.01,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 6.5,
+      "fertility_ec": 465.0,
+      "humidity": 82.0,
+      "sunlight": 1200.0,
+      "soil_temp": 27.6,
+      "soil_moisture": 95.0
+    },
+    "original_index": 89
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.4058,
+    "crop": "Gabi",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.5,
+        "ideal_min": 6.399,
+        "ideal_max": 7.0,
+        "difference": 0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 485.0,
+        "ideal_min": 458.0,
+        "ideal_max": 495.1,
+        "difference": 0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 82.0,
+        "ideal_min": 80.0,
+        "ideal_max": 85.01,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1200.0,
+        "ideal_min": 1099.0,
+        "ideal_max": 8894.640000000001,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.5,
+        "ideal_min": 26.0,
+        "ideal_max": 28.003,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 98.0,
+        "ideal_min": 90.0,
+        "ideal_max": 98.01,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 6.5,
+      "fertility_ec": 485.0,
+      "humidity": 82.0,
+      "sunlight": 1200.0,
+      "soil_temp": 27.5,
+      "soil_moisture": 98.0
+    },
+    "original_index": 90
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.0468,
+    "crop": "Gabi",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.7,
+        "ideal_min": 6.399,
+        "ideal_max": 7.0,
+        "difference": 0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 470.0,
+        "ideal_min": 458.0,
+        "ideal_max": 495.1,
+        "difference": 0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 84.0,
+        "ideal_min": 80.0,
+        "ideal_max": 85.01,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "low",
+        "current": 1000.0,
+        "ideal_min": 1099.0,
+        "ideal_max": 8894.640000000001,
+        "difference": -99.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.1,
+        "ideal_min": 26.0,
+        "ideal_max": 28.003,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 96.0,
+        "ideal_min": 90.0,
+        "ideal_max": 98.01,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 6.7,
+      "fertility_ec": 470.0,
+      "humidity": 84.0,
+      "sunlight": 1000.0,
+      "soil_temp": 27.1,
+      "soil_moisture": 96.0
+    },
+    "original_index": 91
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.2239,
+    "crop": "Gabi",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.4,
+        "ideal_min": 6.399,
+        "ideal_max": 7.0,
+        "difference": 0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 475.0,
+        "ideal_min": 458.0,
+        "ideal_max": 495.1,
+        "difference": 0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 80.0,
+        "ideal_min": 80.0,
+        "ideal_max": 85.01,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1300.0,
+        "ideal_min": 1099.0,
+        "ideal_max": 8894.640000000001,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "high",
+        "current": 28.3,
+        "ideal_min": 26.0,
+        "ideal_max": 28.003,
+        "difference": 0.2970000000000006
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 97.0,
+        "ideal_min": 90.0,
+        "ideal_max": 98.01,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 6.4,
+      "fertility_ec": 475.0,
+      "humidity": 80.0,
+      "sunlight": 1300.0,
+      "soil_temp": 28.3,
+      "soil_moisture": 97.0
+    },
+    "original_index": 92
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.3747,
+    "crop": "Gabi",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.7,
+        "ideal_min": 6.399,
+        "ideal_max": 7.0,
+        "difference": 0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 460.0,
+        "ideal_min": 458.0,
+        "ideal_max": 495.1,
+        "difference": 0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 85.0,
+        "ideal_min": 80.0,
+        "ideal_max": 85.01,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1100.0,
+        "ideal_min": 1099.0,
+        "ideal_max": 8894.640000000001,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.3,
+        "ideal_min": 26.0,
+        "ideal_max": 28.003,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "high",
+        "current": 99.0,
+        "ideal_min": 90.0,
+        "ideal_max": 98.01,
+        "difference": 0.9899999999999949
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 6.7,
+      "fertility_ec": 460.0,
+      "humidity": 85.0,
+      "sunlight": 1100.0,
+      "soil_temp": 27.3,
+      "soil_moisture": 99.0
+    },
+    "original_index": 93
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.3042,
+    "crop": "Gabi",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "low",
+        "current": 6.3,
+        "ideal_min": 6.399,
+        "ideal_max": 7.0,
+        "difference": -0.0990000000000002
+      },
+      "fertility_ec": {
+        "status": "high",
+        "current": 505.0,
+        "ideal_min": 458.0,
+        "ideal_max": 495.1,
+        "difference": 9.899999999999977
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 83.0,
+        "ideal_min": 80.0,
+        "ideal_max": 85.01,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1400.0,
+        "ideal_min": 1099.0,
+        "ideal_max": 8894.640000000001,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.6,
+        "ideal_min": 26.0,
+        "ideal_max": 28.003,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 94.0,
+        "ideal_min": 90.0,
+        "ideal_max": 98.01,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 6.3,
+      "fertility_ec": 505.0,
+      "humidity": 83.0,
+      "sunlight": 1400.0,
+      "soil_temp": 27.6,
+      "soil_moisture": 94.0
+    },
+    "original_index": 94
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.4954,
+    "crop": "Gabi",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.8,
+        "ideal_min": 6.399,
+        "ideal_max": 7.0,
+        "difference": 0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 480.0,
+        "ideal_min": 458.0,
+        "ideal_max": 495.1,
+        "difference": 0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 80.0,
+        "ideal_min": 80.0,
+        "ideal_max": 85.01,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1600.0,
+        "ideal_min": 1099.0,
+        "ideal_max": 8894.640000000001,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 28.0,
+        "ideal_min": 26.0,
+        "ideal_max": 28.003,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 96.0,
+        "ideal_min": 90.0,
+        "ideal_max": 98.01,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 6.8,
+      "fertility_ec": 480.0,
+      "humidity": 80.0,
+      "sunlight": 1600.0,
+      "soil_temp": 28.0,
+      "soil_moisture": 96.0
+    },
+    "original_index": 95
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.3841,
+    "crop": "Gabi",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.6,
+        "ideal_min": 6.399,
+        "ideal_max": 7.0,
+        "difference": 0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 495.0,
+        "ideal_min": 458.0,
+        "ideal_max": 495.1,
+        "difference": 0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 81.0,
+        "ideal_min": 80.0,
+        "ideal_max": 85.01,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1500.0,
+        "ideal_min": 1099.0,
+        "ideal_max": 8894.640000000001,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.9,
+        "ideal_min": 26.0,
+        "ideal_max": 28.003,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 95.0,
+        "ideal_min": 90.0,
+        "ideal_max": 98.01,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 6.6,
+      "fertility_ec": 495.0,
+      "humidity": 81.0,
+      "sunlight": 1500.0,
+      "soil_temp": 27.9,
+      "soil_moisture": 95.0
+    },
+    "original_index": 96
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.5901,
+    "crop": "Upo",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.9,
+        "ideal_min": 6.8,
+        "ideal_max": 7.2,
+        "difference": 0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 540.0,
+        "ideal_min": 530.0,
+        "ideal_max": 551.102,
+        "difference": 0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 76.0,
+        "ideal_min": 70.99,
+        "ideal_max": 79.0,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 2700.0,
+        "ideal_min": 2227.62,
+        "ideal_max": 2992.03,
+        "difference": 0
+      },
+      "soil_temp": {
+        "status": "high",
+        "current": 29.0,
+        "ideal_min": 26.8,
+        "ideal_max": 28.505000000000003,
+        "difference": 0.49499999999999744
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 93.0,
+        "ideal_min": 91.0,
+        "ideal_max": 94.0,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 6.9,
+      "fertility_ec": 540.0,
+      "humidity": 76.0,
+      "sunlight": 2700.0,
+      "soil_temp": 29.0,
+      "soil_moisture": 93.0
+    },
+    "original_index": 97
+  },
+  {
+    "is_suitable": false,
+    "confidence": 0.3358,
+    "crop": "Ube",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "high",
+        "current": 5.4,
+        "ideal_min": 4.8,
+        "ideal_max": 5.202000000000001,
+        "difference": 0.1979999999999995
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 470.0,
+        "ideal_min": 466.0,
+        "ideal_max": 475.0,
+        "difference": 0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 83.0,
+        "ideal_min": 81.0,
+        "ideal_max": 85.0,
+        "difference": 0
+      },
+      "sunlight": {
+        "status": "low",
+        "current": 1300.0,
+        "ideal_min": 1527.7,
+        "ideal_max": 4699.650000000001,
+        "difference": -227.70000000000005
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.9,
+        "ideal_min": 26.198999999999998,
+        "ideal_max": 28.2,
+        "difference": 0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 90.0,
+        "ideal_min": 88.0,
+        "ideal_max": 91.01,
+        "difference": 0
+      }
+    },
+    "model_used": [
+      "Random Forest"
+    ],
+    "disclaimer": "Results should be verified with local agricultural experts",
+    "input_values": {
+      "soil_ph": 5.4,
+      "fertility_ec": 470.0,
+      "humidity": 83.0,
+      "sunlight": 1300.0,
+      "soil_temp": 27.9,
+      "soil_moisture": 90.0
+    },
+    "original_index": 98
+  }
+]

@@ -9,6 +9,7 @@ router = APIRouter()
 # Path to the artifacts and dataset
 ARTIFACTS_PATH = Path("precomputation/training_artifacts.pkl")
 DATASET_PATH = Path("dataset/enhanced_crop_data.csv")
+# DATASET_PATH = Path("dataset/augmented_crop_data.csv")
 
 try:
     # Load training artifacts (same as the other code)
