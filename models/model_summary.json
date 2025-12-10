@@ -1,0 +1,97 @@
+{
+  "dataset_info": {
+    "total_samples": 5284,
+    "num_crops": 54,
+    "crops": [
+      "Ampalaya",
+      "Apple",
+      "Avocado",
+      "Bamboo",
+      "Banana",
+      "Black Pepper",
+      "Cacao",
+      "Calamansi",
+      "Cassava",
+      "Coconut",
+      "Coffee",
+      "Durian",
+      "Eggplant",
+      "Forage Grass",
+      "Gabi",
+      "Ginger",
+      "Grapes",
+      "Guyabano",
+      "Ipil Ipil",
+      "Jackfruit",
+      "Kamoteng Baging",
+      "Katuray",
+      "Kulo",
+      "Lanzones",
+      "Lipote",
+      "Maize",
+      "Mango",
+      "Mungbean",
+      "Mustard",
+      "Okra",
+      "Onion",
+      "Orange",
+      "Orchid",
+      "Oyster Mushroom",
+      "Papaya",
+      "Patola",
+      "Pechay",
+      "Pineapple",
+      "Radish",
+      "Rambutan",
+      "Rice",
+      "Sigarilyas",
+      "Sili Labuyo",
+      "Sili Panigang",
+      "Sili Tingala",
+      "Snap Bean",
+      "Squash",
+      "String Bean",
+      "Sweet Potato",
+      "Sweet Sorghum",
+      "Tomato",
+      "Ube",
+      "Upo",
+      "Watermelon"
+    ],
+    "features": [
+      "soil_ph",
+      "fertility_ec",
+      "humidity",
+      "sunlight",
+      "soil_temp",
+      "soil_moisture"
+    ]
+  },
+  "model_performance": {
+    "Logistic Regression": {
+      "accuracy": 0.8575031525851198,
+      "precision": 0.8625004938824767,
+      "recall": 0.8575031525851198,
+      "f1_score": 0.8534988154932521
+    },
+    "Decision Tree": {
+      "accuracy": 0.9331651954602774,
+      "precision": 0.9336134768388608,
+      "recall": 0.9331651954602774,
+      "f1_score": 0.9323943091092949
+    },
+    "Random Forest": {
+      "accuracy": 0.9514501891551072,
+      "precision": 0.9518589877071945,
+      "recall": 0.9514501891551072,
+      "f1_score": 0.9512241687624835
+    },
+    "XGBoost": {
+      "accuracy": 0.9533417402269861,
+      "precision": 0.9541674672406707,
+      "recall": 0.9533417402269861,
+      "f1_score": 0.9530353394409836
+    }
+  },
+  "best_model": "XGBoost"
+}
