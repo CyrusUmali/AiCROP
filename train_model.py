@@ -21,6 +21,7 @@ import os
 import matplotlib.pyplot as plt
 import seaborn as sns
 from pathlib import Path
+import json
 
 # Set style
 sns.set_style("whitegrid")
@@ -44,6 +45,10 @@ if df.isnull().any().any():
 
 # Create visualization directory
 os.makedirs('visualizations', exist_ok=True)
+
+# Create directories for saving individual models
+os.makedirs('models', exist_ok=True)
+os.makedirs('models/individual', exist_ok=True)
 
 # ============================================================================
 # VISUALIZATION 1: Class Distribution
@@ -113,17 +118,9 @@ X_train, X_test, y_train, y_test = train_test_split(
 print(f"Training set: {len(X_train)} samples")
 print(f"Test set: {len(X_test)} samples\n")
 
-
-
-
-
-
-
-
 # ==============================================================
 # RANDOM FOREST HYPERPARAMETER TUNING
 # ==============================================================
-
 rf_param_grid = {
     'n_estimators': [200, 300, 500, 800],
     'max_depth': [10, 20, 30, None],
@@ -149,13 +146,9 @@ print(rf_tuner.best_params_)
 
 best_rf = rf_tuner.best_estimator_
 
-
-
-
 # ==============================================================
 # XGBOOST HYPERPARAMETER TUNING
 # ==============================================================
-
 # Create XGBoost model with proper multi-class configuration
 xgb_model = XGBClassifier(
     eval_metric='mlogloss',
@@ -191,42 +184,17 @@ print(xgb_tuner.best_params_)
 
 best_xgb = xgb_tuner.best_estimator_
 
-
-
-
-
-
-
 # Initialize StandardScaler
 scaler = StandardScaler()
 X_train_scaled = scaler.fit_transform(X_train)
 X_test_scaled = scaler.transform(X_test)
 
-
-
-
-
-
-
-
-
-
 # Train models
 models = {
     'Logistic Regression': LogisticRegression(max_iter=1000, random_state=42),
     'Decision Tree': DecisionTreeClassifier(random_state=42),
-     'Random Forest': best_rf,
+    'Random Forest': best_rf,
     'XGBoost': best_xgb
-    # 'Random Forest': RandomForestClassifier(n_estimators=100, random_state=42),
-    # 'XGBoost': XGBClassifier(
-    #     n_estimators=100,
-    #     max_depth=5, 
-    #     learning_rate=0.1,
-    #     subsample=0.8,
-    #     colsample_bytree=0.8,
-    #     random_state=42,
-    #     eval_metric='mlogloss'
-    # )
 }
 
 metrics = {}
@@ -242,6 +210,8 @@ for name, model in models.items():
     if name == 'Logistic Regression':
         model.fit(X_train_scaled, y_train)
         X_test_used = X_test_scaled
+        # Save the scaler for logistic regression separately
+        logistic_scaler = scaler
     else:
         model.fit(X_train, y_train)
         X_test_used = X_test
@@ -263,10 +233,54 @@ for name, model in models.items():
             target_names=le.classes_, 
             zero_division=0
         ),
-        'confusion_matrix': cm
+        'confusion_matrix': cm.tolist()  # Convert to list for JSON serialization
     }
     
     print(f"✓ {name} trained - Accuracy: {metrics[name]['accuracy']:.4f}")
+
+    # ==============================================================
+    # SAVE INDIVIDUAL MODEL
+    # ==============================================================
+    # Create a safe filename
+    model_filename = name.lower().replace(' ', '_')
+    
+    # Prepare model artifacts
+    model_artifacts = {
+        'model': model,
+        'model_name': name,
+        'model_type': type(model).__name__,
+        'feature_columns': X.columns.tolist(),
+        'crop_classes': le.classes_.tolist(),
+        'label_encoder': le,
+        'performance_metrics': metrics[name],
+        'training_params': model.get_params() if hasattr(model, 'get_params') else {}
+    }
+    
+    # Add scaler for logistic regression
+    if name == 'Logistic Regression':
+        model_artifacts['scaler'] = logistic_scaler
+        model_artifacts['requires_scaling'] = True
+    else:
+        model_artifacts['requires_scaling'] = False
+    
+    # Save the model as pickle
+    model_path = f'models/individual/{model_filename}.pkl'
+    with open(model_path, 'wb') as f:
+        pickle.dump(model_artifacts, f)
+    
+    # Save performance metrics as JSON for easy reading
+    metrics_path = f'models/individual/{model_filename}_metrics.json'
+    with open(metrics_path, 'w') as f:
+        # Convert numpy types to Python types for JSON serialization
+        json_metrics = metrics[name].copy()
+        json_metrics['accuracy'] = float(json_metrics['accuracy'])
+        json_metrics['precision'] = float(json_metrics['precision'])
+        json_metrics['recall'] = float(json_metrics['recall'])
+        json_metrics['f1_score'] = float(json_metrics['f1_score'])
+        json.dump(json_metrics, f, indent=2)
+    
+    print(f"  ✓ Model saved to: {model_path}")
+    print(f"  ✓ Metrics saved to: {metrics_path}")
 
     # Save Decision Tree visualization
     if name == 'Decision Tree':
@@ -281,7 +295,7 @@ for name, model in models.items():
             rounded=True, 
             max_depth=3
         )
-        print(f"  Decision tree visualization saved to {dot_file_path}")
+        print(f"  ✓ Decision tree visualization saved to {dot_file_path}")
 
 # ============================================================================
 # VISUALIZATION 4: Model Performance Comparison
@@ -324,7 +338,7 @@ sorted_models = sorted(metrics.items(), key=lambda x: x[1]['accuracy'], reverse=
 fig, axes = plt.subplots(1, 2, figsize=(16, 7))
 
 for idx, (model_name, model_metrics) in enumerate(sorted_models):
-    cm = model_metrics['confusion_matrix']
+    cm = np.array(model_metrics['confusion_matrix'])
     
     # Normalize confusion matrix
     cm_normalized = cm.astype('float') / cm.sum(axis=1)[:, np.newaxis]
@@ -368,24 +382,53 @@ plt.savefig('visualizations/06_feature_importance.png', dpi=300, bbox_inches='ti
 print("✓ Saved: visualizations/06_feature_importance.png")
 plt.close()
 
-# Save all artifacts
-artifacts = {
+# ============================================================================
+# SAVE SUMMARY AND ALL MODELS TOGETHER
+# ============================================================================
+# Save all models together in one file
+all_models_artifacts = {
     'models': models,
     'metrics': metrics,
     'label_encoder': le,
     'scaler': scaler,
     'feature_columns': X.columns.tolist(),
-    'crop_classes': le.classes_.tolist()
+    'crop_classes': le.classes_.tolist(),
+    'best_model': max(metrics.items(), key=lambda x: x[1]['accuracy'])[0]
 }
 
 os.makedirs('precomputation', exist_ok=True)
-with open('precomputation/training_artifacts.pkl', 'wb') as f:
-    pickle.dump(artifacts, f)
+with open('precomputation/all_models_artifacts.pkl', 'wb') as f:
+    pickle.dump(all_models_artifacts, f)
+
+# Save summary as JSON for easy reading
+summary = {
+    'dataset_info': {
+        'total_samples': len(df),
+        'num_crops': len(le.classes_),
+        'crops': le.classes_.tolist(),
+        'features': X.columns.tolist()
+    },
+    'model_performance': {},
+    'best_model': max(metrics.items(), key=lambda x: x[1]['accuracy'])[0]
+}
+
+for model_name, model_metrics in metrics.items():
+    summary['model_performance'][model_name] = {
+        'accuracy': float(model_metrics['accuracy']),
+        'precision': float(model_metrics['precision']),
+        'recall': float(model_metrics['recall']),
+        'f1_score': float(model_metrics['f1_score'])
+    }
+
+with open('models/model_summary.json', 'w') as f:
+    json.dump(summary, f, indent=2)
 
 print("\n" + "="*80)
 print("TRAINING COMPLETE")
 print("="*80)
-print(f"✓ All artifacts saved to precomputation/training_artifacts.pkl")
+print(f"✓ All models saved individually in models/individual/")
+print(f"✓ All models together saved to precomputation/all_models_artifacts.pkl")
+print(f"✓ Model summary saved to models/model_summary.json")
 print(f"✓ All visualizations saved to visualizations/")
 
 # Print detailed results
@@ -414,3 +457,5 @@ for model_name, metric in metrics.items():
 # Find best model
 best_model = max(metrics.items(), key=lambda x: x[1]['accuracy'])
 print(f"\n🏆 Best Model: {best_model[0]} (Accuracy: {best_model[1]['accuracy']:.4f})")
+print(f"   Individual model file: models/individual/{best_model[0].lower().replace(' ', '_')}.pkl")
+ 
