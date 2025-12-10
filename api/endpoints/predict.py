@@ -42,7 +42,7 @@ MODELS_REQUIRING_SCALING = ['Logistic Regression']  # Define which models need s
 @router.post("/predict")
 async def predict_crop(
     request: CropPredictionRequest,
-    min_confidence: float = 0.6,
+    min_confidence: float = 0.3,
     max_recommendations: int = 10,
     selected_models: Optional[List[str]] = None
 ):
