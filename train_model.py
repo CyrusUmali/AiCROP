@@ -31,7 +31,7 @@ CREATE_VISUALIZATIONS = True  # Change to False to skip visualizations
 
 # Hyperparameter tuning configuration
 # Set to False to use default parameters instead of RandomizedSearchCV
-USE_HYPERPARAMETER_TUNING = True  # Change to False to skip hyperparameter tuning
+USE_HYPERPARAMETER_TUNING = False  # Change to False to skip hyperparameter tuning
 RANDOM_SEARCH_ITERATIONS = 20  # Number of iterations for RandomizedSearchCV
 RANDOM_SEARCH_CV = 3  # Cross-validation folds for RandomizedSearchCV
 RANDOM_SEED = 42
@@ -47,7 +47,7 @@ if CREATE_VISUALIZATIONS:
 # dataset_path = 'dataset/crop_recommendation.csv'
 dataset_path = 'dataset/enhanced_crop_data.csv'
 # dataset_path = 'dataset/augmented_crop_data.csv'
-df = pd.read_csv(dataset_path)
+df = pd.read_csv(dataset_path) 
 
 print(f"Dataset loaded: {len(df)} rows, {len(df['label'].unique())} unique crops")
 print(f"Crops: {sorted(df['label'].unique())}\n")
@@ -185,7 +185,7 @@ else:
     print("="*80)
     best_rf = RandomForestClassifier(
         n_estimators=300,
-        max_depth=20,
+        max_depth=10,
         min_samples_split=2,
         min_samples_leaf=1,
         max_features='sqrt',
