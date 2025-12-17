@@ -1,0 +1,7278 @@
+[
+  {
+    "is_suitable": true,
+    "final_confidence": 0.9935,
+    "parameter_confidence": 1.0,
+    "ml_confidence": {
+      "XGBoost": 0.9675363898277283
+    },
+    "crop": "Ampalaya",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.3,
+        "ideal_min": 6.098999999999999,
+        "ideal_max": 6.801,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 525.0,
+        "ideal_min": 523.0,
+        "ideal_max": 532.0,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 74.0,
+        "ideal_min": 71.99,
+        "ideal_max": 76.0,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 3200.0,
+        "ideal_min": 2441.64,
+        "ideal_max": 5000.0,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 29.1,
+        "ideal_min": 28.0,
+        "ideal_max": 31.0,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 88.0,
+        "ideal_min": 87.0,
+        "ideal_max": 94.0,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 6.3,
+      "fertility_ec": 525.0,
+      "humidity": 74.0,
+      "sunlight": 3200.0,
+      "soil_temp": 29.1,
+      "soil_moisture": 88.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:45.577155",
+    "original_index": 0,
+    "row_in_batch": 0
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.8965,
+    "parameter_confidence": 1.0,
+    "ml_confidence": {
+      "XGBoost": 0.48262718319892883
+    },
+    "crop": "Ampalaya",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.7,
+        "ideal_min": 6.098999999999999,
+        "ideal_max": 6.801,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 530.0,
+        "ideal_min": 523.0,
+        "ideal_max": 532.0,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 74.0,
+        "ideal_min": 71.99,
+        "ideal_max": 76.0,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 3000.0,
+        "ideal_min": 2441.64,
+        "ideal_max": 5000.0,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 29.5,
+        "ideal_min": 28.0,
+        "ideal_max": 31.0,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 92.0,
+        "ideal_min": 87.0,
+        "ideal_max": 94.0,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 6.7,
+      "fertility_ec": 530.0,
+      "humidity": 74.0,
+      "sunlight": 3000.0,
+      "soil_temp": 29.5,
+      "soil_moisture": 92.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:45.597714",
+    "original_index": 1,
+    "row_in_batch": 1
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.9957,
+    "parameter_confidence": 1.0,
+    "ml_confidence": {
+      "XGBoost": 0.9785075187683105
+    },
+    "crop": "Ampalaya",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.3,
+        "ideal_min": 6.098999999999999,
+        "ideal_max": 6.801,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 526.0,
+        "ideal_min": 523.0,
+        "ideal_max": 532.0,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 72.0,
+        "ideal_min": 71.99,
+        "ideal_max": 76.0,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 3180.0,
+        "ideal_min": 2441.64,
+        "ideal_max": 5000.0,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 29.2,
+        "ideal_min": 28.0,
+        "ideal_max": 31.0,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 89.0,
+        "ideal_min": 87.0,
+        "ideal_max": 94.0,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 6.3,
+      "fertility_ec": 526.0,
+      "humidity": 72.0,
+      "sunlight": 3180.0,
+      "soil_temp": 29.2,
+      "soil_moisture": 89.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:45.618296",
+    "original_index": 2,
+    "row_in_batch": 2
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.9636,
+    "parameter_confidence": 1.0,
+    "ml_confidence": {
+      "XGBoost": 0.8180493116378784
+    },
+    "crop": "Ampalaya",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.7,
+        "ideal_min": 6.098999999999999,
+        "ideal_max": 6.801,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 529.0,
+        "ideal_min": 523.0,
+        "ideal_max": 532.0,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 73.0,
+        "ideal_min": 71.99,
+        "ideal_max": 76.0,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 3010.0,
+        "ideal_min": 2441.64,
+        "ideal_max": 5000.0,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 29.2,
+        "ideal_min": 28.0,
+        "ideal_max": 31.0,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 87.0,
+        "ideal_min": 87.0,
+        "ideal_max": 94.0,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 6.7,
+      "fertility_ec": 529.0,
+      "humidity": 73.0,
+      "sunlight": 3010.0,
+      "soil_temp": 29.2,
+      "soil_moisture": 87.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:45.637272",
+    "original_index": 3,
+    "row_in_batch": 3
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.9632,
+    "parameter_confidence": 0.9589,
+    "ml_confidence": {
+      "XGBoost": 0.9806986451148987
+    },
+    "crop": "Ampalaya",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.3,
+        "ideal_min": 6.098999999999999,
+        "ideal_max": 6.801,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 527.0,
+        "ideal_min": 523.0,
+        "ideal_max": 532.0,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "low",
+        "current": 71.0,
+        "ideal_min": 71.99,
+        "ideal_max": 76.0,
+        "difference": -0.9899999999999949
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 3160.0,
+        "ideal_min": 2441.64,
+        "ideal_max": 5000.0,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 29.0,
+        "ideal_min": 28.0,
+        "ideal_max": 31.0,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 90.0,
+        "ideal_min": 87.0,
+        "ideal_max": 94.0,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 6.3,
+      "fertility_ec": 527.0,
+      "humidity": 71.0,
+      "sunlight": 3160.0,
+      "soil_temp": 29.0,
+      "soil_moisture": 90.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:45.657803",
+    "original_index": 4,
+    "row_in_batch": 4
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.9229,
+    "parameter_confidence": 1.0,
+    "ml_confidence": {
+      "XGBoost": 0.6146324872970581
+    },
+    "crop": "Ampalaya",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.7,
+        "ideal_min": 6.098999999999999,
+        "ideal_max": 6.801,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 528.0,
+        "ideal_min": 523.0,
+        "ideal_max": 532.0,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 73.0,
+        "ideal_min": 71.99,
+        "ideal_max": 76.0,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 3050.0,
+        "ideal_min": 2441.64,
+        "ideal_max": 5000.0,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 29.2,
+        "ideal_min": 28.0,
+        "ideal_max": 31.0,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 91.0,
+        "ideal_min": 87.0,
+        "ideal_max": 94.0,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 6.7,
+      "fertility_ec": 528.0,
+      "humidity": 73.0,
+      "sunlight": 3050.0,
+      "soil_temp": 29.2,
+      "soil_moisture": 91.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:45.678497",
+    "original_index": 5,
+    "row_in_batch": 5
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.8019,
+    "parameter_confidence": 1.0,
+    "ml_confidence": {
+      "XGBoost": 0.009563330560922623
+    },
+    "crop": "Avocado",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 5.5,
+        "ideal_min": 5.5,
+        "ideal_max": 6.2,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 455.0,
+        "ideal_min": 414.95,
+        "ideal_max": 455.05,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 85.0,
+        "ideal_min": 79.0,
+        "ideal_max": 87.0,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1150.0,
+        "ideal_min": 997.52,
+        "ideal_max": 1800.0,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.1,
+        "ideal_min": 26.0,
+        "ideal_max": 29.0,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 85.0,
+        "ideal_min": 79.0,
+        "ideal_max": 86.02000000000001,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 5.5,
+      "fertility_ec": 455.0,
+      "humidity": 85.0,
+      "sunlight": 1150.0,
+      "soil_temp": 27.1,
+      "soil_moisture": 85.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:45.698917",
+    "original_index": 6,
+    "row_in_batch": 6
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.8449,
+    "parameter_confidence": 1.0,
+    "ml_confidence": {
+      "XGBoost": 0.2247488796710968
+    },
+    "crop": "Avocado",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.1,
+        "ideal_min": 5.5,
+        "ideal_max": 6.2,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 415.0,
+        "ideal_min": 414.95,
+        "ideal_max": 455.05,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 79.0,
+        "ideal_min": 79.0,
+        "ideal_max": 87.0,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1750.0,
+        "ideal_min": 997.52,
+        "ideal_max": 1800.0,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 28.3,
+        "ideal_min": 26.0,
+        "ideal_max": 29.0,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 83.0,
+        "ideal_min": 79.0,
+        "ideal_max": 86.02000000000001,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 6.1,
+      "fertility_ec": 415.0,
+      "humidity": 79.0,
+      "sunlight": 1750.0,
+      "soil_temp": 28.3,
+      "soil_moisture": 83.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:45.717352",
+    "original_index": 7,
+    "row_in_batch": 7
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.8649,
+    "parameter_confidence": 0.953,
+    "ml_confidence": {
+      "XGBoost": 0.5127038955688477
+    },
+    "crop": "Avocado",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.2,
+        "ideal_min": 5.5,
+        "ideal_max": 6.2,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 440.0,
+        "ideal_min": 414.95,
+        "ideal_max": 455.05,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 80.0,
+        "ideal_min": 79.0,
+        "ideal_max": 87.0,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1450.0,
+        "ideal_min": 997.52,
+        "ideal_max": 1800.0,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 28.1,
+        "ideal_min": 26.0,
+        "ideal_max": 29.0,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "high",
+        "current": 88.0,
+        "ideal_min": 79.0,
+        "ideal_max": 86.02000000000001,
+        "difference": 1.9799999999999898
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 6.2,
+      "fertility_ec": 440.0,
+      "humidity": 80.0,
+      "sunlight": 1450.0,
+      "soil_temp": 28.1,
+      "soil_moisture": 88.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:45.737654",
+    "original_index": 8,
+    "row_in_batch": 8
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.9879,
+    "parameter_confidence": 1.0,
+    "ml_confidence": {
+      "XGBoost": 0.9394883513450623
+    },
+    "crop": "Avocado",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 5.9,
+        "ideal_min": 5.5,
+        "ideal_max": 6.2,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 430.0,
+        "ideal_min": 414.95,
+        "ideal_max": 455.05,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 82.0,
+        "ideal_min": 79.0,
+        "ideal_max": 87.0,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1500.0,
+        "ideal_min": 997.52,
+        "ideal_max": 1800.0,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.0,
+        "ideal_min": 26.0,
+        "ideal_max": 29.0,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 80.0,
+        "ideal_min": 79.0,
+        "ideal_max": 86.02000000000001,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 5.9,
+      "fertility_ec": 430.0,
+      "humidity": 82.0,
+      "sunlight": 1500.0,
+      "soil_temp": 27.0,
+      "soil_moisture": 80.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:45.758149",
+    "original_index": 9,
+    "row_in_batch": 9
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.8947,
+    "parameter_confidence": 1.0,
+    "ml_confidence": {
+      "XGBoost": 0.47373154759407043
+    },
+    "crop": "Avocado",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 5.7,
+        "ideal_min": 5.5,
+        "ideal_max": 6.2,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 425.0,
+        "ideal_min": 414.95,
+        "ideal_max": 455.05,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 85.0,
+        "ideal_min": 79.0,
+        "ideal_max": 87.0,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1100.0,
+        "ideal_min": 997.52,
+        "ideal_max": 1800.0,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 26.9,
+        "ideal_min": 26.0,
+        "ideal_max": 29.0,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 81.0,
+        "ideal_min": 79.0,
+        "ideal_max": 86.02000000000001,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 5.7,
+      "fertility_ec": 425.0,
+      "humidity": 85.0,
+      "sunlight": 1100.0,
+      "soil_temp": 26.9,
+      "soil_moisture": 81.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:45.777514",
+    "original_index": 10,
+    "row_in_batch": 10
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.8983,
+    "parameter_confidence": 0.9794,
+    "ml_confidence": {
+      "XGBoost": 0.5736365914344788
+    },
+    "crop": "Avocado",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 5.5,
+        "ideal_min": 5.5,
+        "ideal_max": 6.2,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "low",
+        "current": 410.0,
+        "ideal_min": 414.95,
+        "ideal_max": 455.05,
+        "difference": -4.949999999999989
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 86.0,
+        "ideal_min": 79.0,
+        "ideal_max": 87.0,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1300.0,
+        "ideal_min": 997.52,
+        "ideal_max": 1800.0,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 26.7,
+        "ideal_min": 26.0,
+        "ideal_max": 29.0,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 82.0,
+        "ideal_min": 79.0,
+        "ideal_max": 86.02000000000001,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 5.5,
+      "fertility_ec": 410.0,
+      "humidity": 86.0,
+      "sunlight": 1300.0,
+      "soil_temp": 26.7,
+      "soil_moisture": 82.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:45.797399",
+    "original_index": 11,
+    "row_in_batch": 11
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.7837,
+    "parameter_confidence": 0.9794,
+    "ml_confidence": {
+      "XGBoost": 0.0008772197179496288
+    },
+    "crop": "Avocado",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 5.6,
+        "ideal_min": 5.5,
+        "ideal_max": 6.2,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "high",
+        "current": 460.0,
+        "ideal_min": 414.95,
+        "ideal_max": 455.05,
+        "difference": 4.949999999999989
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 84.0,
+        "ideal_min": 79.0,
+        "ideal_max": 87.0,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1000.0,
+        "ideal_min": 997.52,
+        "ideal_max": 1800.0,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.5,
+        "ideal_min": 26.0,
+        "ideal_max": 29.0,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 85.0,
+        "ideal_min": 79.0,
+        "ideal_max": 86.02000000000001,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 5.6,
+      "fertility_ec": 460.0,
+      "humidity": 84.0,
+      "sunlight": 1000.0,
+      "soil_temp": 27.5,
+      "soil_moisture": 85.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:45.817379",
+    "original_index": 12,
+    "row_in_batch": 12
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.8126,
+    "parameter_confidence": 0.9901,
+    "ml_confidence": {
+      "XGBoost": 0.10232250392436981
+    },
+    "crop": "Avocado",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.0,
+        "ideal_min": 5.5,
+        "ideal_max": 6.2,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 450.0,
+        "ideal_min": 414.95,
+        "ideal_max": 455.05,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 83.0,
+        "ideal_min": 79.0,
+        "ideal_max": 87.0,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "low",
+        "current": 950.0,
+        "ideal_min": 997.52,
+        "ideal_max": 1800.0,
+        "difference": -47.51999999999998
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.8,
+        "ideal_min": 26.0,
+        "ideal_max": 29.0,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 86.0,
+        "ideal_min": 79.0,
+        "ideal_max": 86.02000000000001,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 6.0,
+      "fertility_ec": 450.0,
+      "humidity": 83.0,
+      "sunlight": 950.0,
+      "soil_temp": 27.8,
+      "soil_moisture": 86.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:45.837114",
+    "original_index": 13,
+    "row_in_batch": 13
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.8145,
+    "parameter_confidence": 0.7785,
+    "ml_confidence": {
+      "XGBoost": 0.9586358070373535
+    },
+    "crop": "Bamboo",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "low",
+        "current": 4.0,
+        "ideal_min": 4.198,
+        "ideal_max": 4.8,
+        "difference": -0.1980000000000004
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 632.0,
+        "ideal_min": 628.0,
+        "ideal_max": 637.0,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 62.0,
+        "ideal_min": 60.0,
+        "ideal_max": 64.0,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 8077.0,
+        "ideal_min": 6081.18,
+        "ideal_max": 12000.0,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 29.5,
+        "ideal_min": 28.0,
+        "ideal_max": 31.0,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "high",
+        "current": 99.0,
+        "ideal_min": 92.0,
+        "ideal_max": 92.07000000000004,
+        "difference": 6.929999999999964
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 4.0,
+      "fertility_ec": 632.0,
+      "humidity": 62.0,
+      "sunlight": 8077.0,
+      "soil_temp": 29.5,
+      "soil_moisture": 99.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:45.858508",
+    "original_index": 14,
+    "row_in_batch": 14
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.7675,
+    "parameter_confidence": 0.9559,
+    "ml_confidence": {
+      "XGBoost": 0.013993564061820507
+    },
+    "crop": "Banana",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 5.4,
+        "ideal_min": 4.49,
+        "ideal_max": 6.407999999999999,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "low",
+        "current": 470.0,
+        "ideal_min": 494.5,
+        "ideal_max": 771.7799999999999,
+        "difference": -24.5
+      },
+      "humidity": {
+        "status": "high",
+        "current": 83.0,
+        "ideal_min": 69.92,
+        "ideal_max": 81.03999999999999,
+        "difference": 1.960000000000008
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1300.0,
+        "ideal_min": 1280.0,
+        "ideal_max": 8301.139999999996,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.9,
+        "ideal_min": 27.0,
+        "ideal_max": 30.0,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 90.0,
+        "ideal_min": 88.0,
+        "ideal_max": 99.0,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 5.4,
+      "fertility_ec": 470.0,
+      "humidity": 83.0,
+      "sunlight": 1300.0,
+      "soil_temp": 27.9,
+      "soil_moisture": 90.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:45.878754",
+    "original_index": 15,
+    "row_in_batch": 15
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.907,
+    "parameter_confidence": 0.9574,
+    "ml_confidence": {
+      "XGBoost": 0.7053617835044861
+    },
+    "crop": "Banana",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "low",
+        "current": 4.0,
+        "ideal_min": 4.49,
+        "ideal_max": 6.407999999999999,
+        "difference": -0.4900000000000002
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 771.0,
+        "ideal_min": 494.5,
+        "ideal_max": 771.7799999999999,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 79.0,
+        "ideal_min": 69.92,
+        "ideal_max": 81.03999999999999,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 8280.0,
+        "ideal_min": 1280.0,
+        "ideal_max": 8301.139999999996,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 28.8,
+        "ideal_min": 27.0,
+        "ideal_max": 30.0,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 99.0,
+        "ideal_min": 88.0,
+        "ideal_max": 99.0,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 4.0,
+      "fertility_ec": 771.0,
+      "humidity": 79.0,
+      "sunlight": 8280.0,
+      "soil_temp": 28.8,
+      "soil_moisture": 99.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:45.898200",
+    "original_index": 16,
+    "row_in_batch": 16
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.8288,
+    "parameter_confidence": 0.8937,
+    "ml_confidence": {
+      "XGBoost": 0.5693843960762024
+    },
+    "crop": "Banana",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 4.5,
+        "ideal_min": 4.49,
+        "ideal_max": 6.407999999999999,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "high",
+        "current": 810.0,
+        "ideal_min": 494.5,
+        "ideal_max": 771.7799999999999,
+        "difference": 38.22000000000014
+      },
+      "humidity": {
+        "status": "low",
+        "current": 66.0,
+        "ideal_min": 69.92,
+        "ideal_max": 81.03999999999999,
+        "difference": -3.9200000000000017
+      },
+      "sunlight": {
+        "status": "high",
+        "current": 9337.0,
+        "ideal_min": 1280.0,
+        "ideal_max": 8301.139999999996,
+        "difference": 1035.8600000000042
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 29.3,
+        "ideal_min": 27.0,
+        "ideal_max": 30.0,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 99.0,
+        "ideal_min": 88.0,
+        "ideal_max": 99.0,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 4.5,
+      "fertility_ec": 810.0,
+      "humidity": 66.0,
+      "sunlight": 9337.0,
+      "soil_temp": 29.3,
+      "soil_moisture": 99.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:45.918523",
+    "original_index": 17,
+    "row_in_batch": 17
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.7726,
+    "parameter_confidence": 0.7961,
+    "ml_confidence": {
+      "XGBoost": 0.6787201762199402
+    },
+    "crop": "Black Pepper",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "low",
+        "current": 5.6,
+        "ideal_min": 5.778,
+        "ideal_max": 6.2,
+        "difference": -0.17799999999999994
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 440.0,
+        "ideal_min": 438.0,
+        "ideal_max": 443.0,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 85.0,
+        "ideal_min": 83.0,
+        "ideal_max": 87.11,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 900.0,
+        "ideal_min": 890.0,
+        "ideal_max": 920.0,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 26.9,
+        "ideal_min": 26.878,
+        "ideal_max": 29.0,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "high",
+        "current": 85.0,
+        "ideal_min": 83.0,
+        "ideal_max": 84.11,
+        "difference": 0.8900000000000006
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 5.6,
+      "fertility_ec": 440.0,
+      "humidity": 85.0,
+      "sunlight": 900.0,
+      "soil_temp": 26.9,
+      "soil_moisture": 85.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:45.938187",
+    "original_index": 18,
+    "row_in_batch": 18
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.7704,
+    "parameter_confidence": 0.9589,
+    "ml_confidence": {
+      "XGBoost": 0.016268867999315262
+    },
+    "crop": "Cacao",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 5.6,
+        "ideal_min": 5.5,
+        "ideal_max": 6.0,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "high",
+        "current": 440.0,
+        "ideal_min": 404.95,
+        "ideal_max": 433.07000000000005,
+        "difference": 6.92999999999995
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 85.0,
+        "ideal_min": 81.99,
+        "ideal_max": 88.01,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 900.0,
+        "ideal_min": 753.96,
+        "ideal_max": 1060.0,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 26.9,
+        "ideal_min": 25.0,
+        "ideal_max": 28.0,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 85.0,
+        "ideal_min": 80.0,
+        "ideal_max": 88.01,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 5.6,
+      "fertility_ec": 440.0,
+      "humidity": 85.0,
+      "sunlight": 900.0,
+      "soil_temp": 26.9,
+      "soil_moisture": 85.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:45.958856",
+    "original_index": 19,
+    "row_in_batch": 19
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.9677,
+    "parameter_confidence": 0.9707,
+    "ml_confidence": {
+      "XGBoost": 0.9557489156723022
+    },
+    "crop": "Cacao",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 5.7,
+        "ideal_min": 5.5,
+        "ideal_max": 6.0,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "low",
+        "current": 400.0,
+        "ideal_min": 404.95,
+        "ideal_max": 433.07000000000005,
+        "difference": -4.949999999999989
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 86.0,
+        "ideal_min": 81.99,
+        "ideal_max": 88.01,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 850.0,
+        "ideal_min": 753.96,
+        "ideal_max": 1060.0,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.0,
+        "ideal_min": 25.0,
+        "ideal_max": 28.0,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 87.0,
+        "ideal_min": 80.0,
+        "ideal_max": 88.01,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 5.7,
+      "fertility_ec": 400.0,
+      "humidity": 86.0,
+      "sunlight": 850.0,
+      "soil_temp": 27.0,
+      "soil_moisture": 87.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:45.977598",
+    "original_index": 20,
+    "row_in_batch": 20
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.992,
+    "parameter_confidence": 1.0,
+    "ml_confidence": {
+      "XGBoost": 0.9601381421089172
+    },
+    "crop": "Cacao",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 5.6,
+        "ideal_min": 5.5,
+        "ideal_max": 6.0,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 425.0,
+        "ideal_min": 404.95,
+        "ideal_max": 433.07000000000005,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 88.0,
+        "ideal_min": 81.99,
+        "ideal_max": 88.01,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 900.0,
+        "ideal_min": 753.96,
+        "ideal_max": 1060.0,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 26.8,
+        "ideal_min": 25.0,
+        "ideal_max": 28.0,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 85.0,
+        "ideal_min": 80.0,
+        "ideal_max": 88.01,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 5.6,
+      "fertility_ec": 425.0,
+      "humidity": 88.0,
+      "sunlight": 900.0,
+      "soil_temp": 26.8,
+      "soil_moisture": 85.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:45.997861",
+    "original_index": 21,
+    "row_in_batch": 21
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.951,
+    "parameter_confidence": 0.952,
+    "ml_confidence": {
+      "XGBoost": 0.9469693899154663
+    },
+    "crop": "Cacao",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 5.5,
+        "ideal_min": 5.5,
+        "ideal_max": 6.0,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 410.0,
+        "ideal_min": 404.95,
+        "ideal_max": 433.07000000000005,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "high",
+        "current": 89.0,
+        "ideal_min": 81.99,
+        "ideal_max": 88.01,
+        "difference": 0.9899999999999949
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 800.0,
+        "ideal_min": 753.96,
+        "ideal_max": 1060.0,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 26.6,
+        "ideal_min": 25.0,
+        "ideal_max": 28.0,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "high",
+        "current": 89.0,
+        "ideal_min": 80.0,
+        "ideal_max": 88.01,
+        "difference": 0.9899999999999949
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 5.5,
+      "fertility_ec": 410.0,
+      "humidity": 89.0,
+      "sunlight": 800.0,
+      "soil_temp": 26.6,
+      "soil_moisture": 89.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:46.017238",
+    "original_index": 22,
+    "row_in_batch": 22
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.9912,
+    "parameter_confidence": 1.0,
+    "ml_confidence": {
+      "XGBoost": 0.9561130404472351
+    },
+    "crop": "Cacao",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 5.8,
+        "ideal_min": 5.5,
+        "ideal_max": 6.0,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 430.0,
+        "ideal_min": 404.95,
+        "ideal_max": 433.07000000000005,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 84.0,
+        "ideal_min": 81.99,
+        "ideal_max": 88.01,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1000.0,
+        "ideal_min": 753.96,
+        "ideal_max": 1060.0,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.3,
+        "ideal_min": 25.0,
+        "ideal_max": 28.0,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 88.0,
+        "ideal_min": 80.0,
+        "ideal_max": 88.01,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 5.8,
+      "fertility_ec": 430.0,
+      "humidity": 84.0,
+      "sunlight": 1000.0,
+      "soil_temp": 27.3,
+      "soil_moisture": 88.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:46.036916",
+    "original_index": 23,
+    "row_in_batch": 23
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.9925,
+    "parameter_confidence": 1.0,
+    "ml_confidence": {
+      "XGBoost": 0.9626400470733643
+    },
+    "crop": "Cacao",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 5.9,
+        "ideal_min": 5.5,
+        "ideal_max": 6.0,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 405.0,
+        "ideal_min": 404.95,
+        "ideal_max": 433.07000000000005,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 85.0,
+        "ideal_min": 81.99,
+        "ideal_max": 88.01,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 950.0,
+        "ideal_min": 753.96,
+        "ideal_max": 1060.0,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.1,
+        "ideal_min": 25.0,
+        "ideal_max": 28.0,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 86.0,
+        "ideal_min": 80.0,
+        "ideal_max": 88.01,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 5.9,
+      "fertility_ec": 405.0,
+      "humidity": 85.0,
+      "sunlight": 950.0,
+      "soil_temp": 27.1,
+      "soil_moisture": 86.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:46.056020",
+    "original_index": 24,
+    "row_in_batch": 24
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.9921,
+    "parameter_confidence": 0.9978,
+    "ml_confidence": {
+      "XGBoost": 0.969322144985199
+    },
+    "crop": "Cacao",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 5.5,
+        "ideal_min": 5.5,
+        "ideal_max": 6.0,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 415.0,
+        "ideal_min": 404.95,
+        "ideal_max": 433.07000000000005,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 87.0,
+        "ideal_min": 81.99,
+        "ideal_max": 88.01,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "low",
+        "current": 750.0,
+        "ideal_min": 753.96,
+        "ideal_max": 1060.0,
+        "difference": -3.9600000000000364
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 26.5,
+        "ideal_min": 25.0,
+        "ideal_max": 28.0,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 84.0,
+        "ideal_min": 80.0,
+        "ideal_max": 88.01,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 5.5,
+      "fertility_ec": 415.0,
+      "humidity": 87.0,
+      "sunlight": 750.0,
+      "soil_temp": 26.5,
+      "soil_moisture": 84.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:46.077473",
+    "original_index": 25,
+    "row_in_batch": 25
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.9901,
+    "parameter_confidence": 1.0,
+    "ml_confidence": {
+      "XGBoost": 0.9503466486930847
+    },
+    "crop": "Cacao",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 5.7,
+        "ideal_min": 5.5,
+        "ideal_max": 6.0,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 420.0,
+        "ideal_min": 404.95,
+        "ideal_max": 433.07000000000005,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 83.0,
+        "ideal_min": 81.99,
+        "ideal_max": 88.01,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1050.0,
+        "ideal_min": 753.96,
+        "ideal_max": 1060.0,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.2,
+        "ideal_min": 25.0,
+        "ideal_max": 28.0,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 85.0,
+        "ideal_min": 80.0,
+        "ideal_max": 88.01,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 5.7,
+      "fertility_ec": 420.0,
+      "humidity": 83.0,
+      "sunlight": 1050.0,
+      "soil_temp": 27.2,
+      "soil_moisture": 85.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:46.097353",
+    "original_index": 26,
+    "row_in_batch": 26
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.8924,
+    "parameter_confidence": 0.869,
+    "ml_confidence": {
+      "XGBoost": 0.9855807423591614
+    },
+    "crop": "Cassava",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.0,
+        "ideal_min": 5.4,
+        "ideal_max": 6.1,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 517.0,
+        "ideal_min": 508.0,
+        "ideal_max": 527.01,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 88.0,
+        "ideal_min": 85.99,
+        "ideal_max": 90.0,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1094.0,
+        "ideal_min": 1080.0,
+        "ideal_max": 1105.0,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 28.5,
+        "ideal_min": 25.098000000000003,
+        "ideal_max": 30.705000000000002,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "high",
+        "current": 99.0,
+        "ideal_min": 90.0,
+        "ideal_max": 95.04000000000002,
+        "difference": 3.9599999999999795
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 6.0,
+      "fertility_ec": 517.0,
+      "humidity": 88.0,
+      "sunlight": 1094.0,
+      "soil_temp": 28.5,
+      "soil_moisture": 99.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:46.118256",
+    "original_index": 27,
+    "row_in_batch": 27
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.7386,
+    "parameter_confidence": 0.9221,
+    "ml_confidence": {
+      "XGBoost": 0.004535908345133066
+    },
+    "crop": "Calamansi",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 5.5,
+        "ideal_min": 5.5,
+        "ideal_max": 6.0,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "high",
+        "current": 450.0,
+        "ideal_min": 420.95,
+        "ideal_max": 448.02,
+        "difference": 1.9800000000000182
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 86.0,
+        "ideal_min": 78.0,
+        "ideal_max": 86.02000000000001,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 700.0,
+        "ideal_min": 699.0,
+        "ideal_max": 2196.04,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 26.5,
+        "ideal_min": 25.5,
+        "ideal_max": 29.003,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "high",
+        "current": 87.0,
+        "ideal_min": 80.0,
+        "ideal_max": 85.02000000000001,
+        "difference": 1.9799999999999898
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 5.5,
+      "fertility_ec": 450.0,
+      "humidity": 86.0,
+      "sunlight": 700.0,
+      "soil_temp": 26.5,
+      "soil_moisture": 87.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:46.137483",
+    "original_index": 28,
+    "row_in_batch": 28
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.8628,
+    "parameter_confidence": 1.0,
+    "ml_confidence": {
+      "XGBoost": 0.31409716606140137
+    },
+    "crop": "Calamansi",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.0,
+        "ideal_min": 5.5,
+        "ideal_max": 6.0,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 435.0,
+        "ideal_min": 420.95,
+        "ideal_max": 448.02,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 79.0,
+        "ideal_min": 78.0,
+        "ideal_max": 86.02000000000001,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 2000.0,
+        "ideal_min": 699.0,
+        "ideal_max": 2196.04,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 28.1,
+        "ideal_min": 25.5,
+        "ideal_max": 29.003,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 82.0,
+        "ideal_min": 80.0,
+        "ideal_max": 85.02000000000001,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 6.0,
+      "fertility_ec": 435.0,
+      "humidity": 79.0,
+      "sunlight": 2000.0,
+      "soil_temp": 28.1,
+      "soil_moisture": 82.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:46.155887",
+    "original_index": 29,
+    "row_in_batch": 29
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.8006,
+    "parameter_confidence": 1.0,
+    "ml_confidence": {
+      "XGBoost": 0.0027693414594978094
+    },
+    "crop": "Coconut",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.5,
+        "ideal_min": 5.997,
+        "ideal_max": 6.7,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 475.0,
+        "ideal_min": 389.65,
+        "ideal_max": 480.3000000000002,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 80.0,
+        "ideal_min": 72.97,
+        "ideal_max": 83.01,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1215.0,
+        "ideal_min": 1212.65,
+        "ideal_max": 13000.0,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.0,
+        "ideal_min": 25.998,
+        "ideal_max": 32.21700000000001,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 99.0,
+        "ideal_min": 84.0,
+        "ideal_max": 99.0,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 6.5,
+      "fertility_ec": 475.0,
+      "humidity": 80.0,
+      "sunlight": 1215.0,
+      "soil_temp": 27.0,
+      "soil_moisture": 99.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:46.177714",
+    "original_index": 30,
+    "row_in_batch": 30
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.8114,
+    "parameter_confidence": 1.0,
+    "ml_confidence": {
+      "XGBoost": 0.05677381157875061
+    },
+    "crop": "Coconut",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.2,
+        "ideal_min": 5.997,
+        "ideal_max": 6.7,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 480.0,
+        "ideal_min": 389.65,
+        "ideal_max": 480.3000000000002,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 82.0,
+        "ideal_min": 72.97,
+        "ideal_max": 83.01,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1500.0,
+        "ideal_min": 1212.65,
+        "ideal_max": 13000.0,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.5,
+        "ideal_min": 25.998,
+        "ideal_max": 32.21700000000001,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 90.0,
+        "ideal_min": 84.0,
+        "ideal_max": 99.0,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 6.2,
+      "fertility_ec": 480.0,
+      "humidity": 82.0,
+      "sunlight": 1500.0,
+      "soil_temp": 27.5,
+      "soil_moisture": 90.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:46.197117",
+    "original_index": 31,
+    "row_in_batch": 31
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.8032,
+    "parameter_confidence": 1.0,
+    "ml_confidence": {
+      "XGBoost": 0.015762899070978165
+    },
+    "crop": "Coconut",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.3,
+        "ideal_min": 5.997,
+        "ideal_max": 6.7,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 460.0,
+        "ideal_min": 389.65,
+        "ideal_max": 480.3000000000002,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 78.0,
+        "ideal_min": 72.97,
+        "ideal_max": 83.01,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1800.0,
+        "ideal_min": 1212.65,
+        "ideal_max": 13000.0,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 28.2,
+        "ideal_min": 25.998,
+        "ideal_max": 32.21700000000001,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 90.0,
+        "ideal_min": 84.0,
+        "ideal_max": 99.0,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 6.3,
+      "fertility_ec": 460.0,
+      "humidity": 78.0,
+      "sunlight": 1800.0,
+      "soil_temp": 28.2,
+      "soil_moisture": 90.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:46.217104",
+    "original_index": 32,
+    "row_in_batch": 32
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.7652,
+    "parameter_confidence": 0.9454,
+    "ml_confidence": {
+      "XGBoost": 0.04420968145132065
+    },
+    "crop": "Coconut",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.1,
+        "ideal_min": 5.997,
+        "ideal_max": 6.7,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "high",
+        "current": 510.0,
+        "ideal_min": 389.65,
+        "ideal_max": 480.3000000000002,
+        "difference": 29.699999999999818
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 83.0,
+        "ideal_min": 72.97,
+        "ideal_max": 83.01,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1400.0,
+        "ideal_min": 1212.65,
+        "ideal_max": 13000.0,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 28.0,
+        "ideal_min": 25.998,
+        "ideal_max": 32.21700000000001,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 98.0,
+        "ideal_min": 84.0,
+        "ideal_max": 99.0,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 6.1,
+      "fertility_ec": 510.0,
+      "humidity": 83.0,
+      "sunlight": 1400.0,
+      "soil_temp": 28.0,
+      "soil_moisture": 98.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:46.233762",
+    "original_index": 33,
+    "row_in_batch": 33
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.73,
+    "parameter_confidence": 0.9099,
+    "ml_confidence": {
+      "XGBoost": 0.010593390092253685
+    },
+    "crop": "Coconut",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "low",
+        "current": 5.7,
+        "ideal_min": 5.997,
+        "ideal_max": 6.7,
+        "difference": -0.2969999999999997
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 445.0,
+        "ideal_min": 389.65,
+        "ideal_max": 480.3000000000002,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "high",
+        "current": 84.0,
+        "ideal_min": 72.97,
+        "ideal_max": 83.01,
+        "difference": 0.9899999999999949
+      },
+      "sunlight": {
+        "status": "low",
+        "current": 980.0,
+        "ideal_min": 1212.65,
+        "ideal_max": 13000.0,
+        "difference": -232.6500000000001
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.2,
+        "ideal_min": 25.998,
+        "ideal_max": 32.21700000000001,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 86.0,
+        "ideal_min": 84.0,
+        "ideal_max": 99.0,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 5.7,
+      "fertility_ec": 445.0,
+      "humidity": 84.0,
+      "sunlight": 980.0,
+      "soil_temp": 27.2,
+      "soil_moisture": 86.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:46.253720",
+    "original_index": 34,
+    "row_in_batch": 34
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.7065,
+    "parameter_confidence": 0.8419,
+    "ml_confidence": {
+      "XGBoost": 0.1651509702205658
+    },
+    "crop": "Coconut",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.0,
+        "ideal_min": 5.997,
+        "ideal_max": 6.7,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "low",
+        "current": 355.0,
+        "ideal_min": 389.65,
+        "ideal_max": 480.3000000000002,
+        "difference": -34.64999999999998
+      },
+      "humidity": {
+        "status": "low",
+        "current": 70.0,
+        "ideal_min": 72.97,
+        "ideal_max": 83.01,
+        "difference": -2.969999999999999
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 12571.0,
+        "ideal_min": 1212.65,
+        "ideal_max": 13000.0,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "high",
+        "current": 33.9,
+        "ideal_min": 25.998,
+        "ideal_max": 32.21700000000001,
+        "difference": 1.6829999999999856
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 99.0,
+        "ideal_min": 84.0,
+        "ideal_max": 99.0,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 6.0,
+      "fertility_ec": 355.0,
+      "humidity": 70.0,
+      "sunlight": 12571.0,
+      "soil_temp": 33.9,
+      "soil_moisture": 99.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:46.271868",
+    "original_index": 35,
+    "row_in_batch": 35
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.7293,
+    "parameter_confidence": 0.9025,
+    "ml_confidence": {
+      "XGBoost": 0.03630980849266052
+    },
+    "crop": "Maize",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "high",
+        "current": 6.2,
+        "ideal_min": 5.399,
+        "ideal_max": 6.101,
+        "difference": 0.0990000000000002
+      },
+      "fertility_ec": {
+        "status": "low",
+        "current": 480.0,
+        "ideal_min": 486.93,
+        "ideal_max": 515.0500000000001,
+        "difference": -6.930000000000007
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 82.0,
+        "ideal_min": 76.0,
+        "ideal_max": 83.0,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1500.0,
+        "ideal_min": 1499.12,
+        "ideal_max": 3000.0,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.5,
+        "ideal_min": 26.5,
+        "ideal_max": 30.0,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "high",
+        "current": 90.0,
+        "ideal_min": 84.0,
+        "ideal_max": 89.01,
+        "difference": 0.9899999999999949
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 6.2,
+      "fertility_ec": 480.0,
+      "humidity": 82.0,
+      "sunlight": 1500.0,
+      "soil_temp": 27.5,
+      "soil_moisture": 90.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:46.292742",
+    "original_index": 36,
+    "row_in_batch": 36
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.8348,
+    "parameter_confidence": 0.9472,
+    "ml_confidence": {
+      "XGBoost": 0.3853909373283386
+    },
+    "crop": "Maize",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "low",
+        "current": 5.3,
+        "ideal_min": 5.399,
+        "ideal_max": 6.101,
+        "difference": -0.0990000000000002
+      },
+      "fertility_ec": {
+        "status": "high",
+        "current": 520.0,
+        "ideal_min": 486.93,
+        "ideal_max": 515.0500000000001,
+        "difference": 4.949999999999932
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 77.0,
+        "ideal_min": 76.0,
+        "ideal_max": 83.0,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 2800.0,
+        "ideal_min": 1499.12,
+        "ideal_max": 3000.0,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 28.8,
+        "ideal_min": 26.5,
+        "ideal_max": 30.0,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 86.0,
+        "ideal_min": 84.0,
+        "ideal_max": 89.01,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 5.3,
+      "fertility_ec": 520.0,
+      "humidity": 77.0,
+      "sunlight": 2800.0,
+      "soil_temp": 28.8,
+      "soil_moisture": 86.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:46.312870",
+    "original_index": 37,
+    "row_in_batch": 37
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.8157,
+    "parameter_confidence": 1.0,
+    "ml_confidence": {
+      "XGBoost": 0.07825234532356262
+    },
+    "crop": "Maize",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.0,
+        "ideal_min": 5.399,
+        "ideal_max": 6.101,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 515.0,
+        "ideal_min": 486.93,
+        "ideal_max": 515.0500000000001,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 78.0,
+        "ideal_min": 76.0,
+        "ideal_max": 83.0,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 2750.0,
+        "ideal_min": 1499.12,
+        "ideal_max": 3000.0,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 28.4,
+        "ideal_min": 26.5,
+        "ideal_max": 30.0,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 89.0,
+        "ideal_min": 84.0,
+        "ideal_max": 89.01,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 6.0,
+      "fertility_ec": 515.0,
+      "humidity": 78.0,
+      "sunlight": 2750.0,
+      "soil_temp": 28.4,
+      "soil_moisture": 89.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:46.333041",
+    "original_index": 38,
+    "row_in_batch": 38
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.9457,
+    "parameter_confidence": 0.9804,
+    "ml_confidence": {
+      "XGBoost": 0.8068972826004028
+    },
+    "crop": "Coffee",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.5,
+        "ideal_min": 5.598999999999999,
+        "ideal_max": 6.901000000000001,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "high",
+        "current": 475.0,
+        "ideal_min": 449.99,
+        "ideal_max": 474.01,
+        "difference": 0.9900000000000091
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 80.0,
+        "ideal_min": 79.99,
+        "ideal_max": 86.0,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1215.0,
+        "ideal_min": 719.8,
+        "ideal_max": 1230.05,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.0,
+        "ideal_min": 26.3,
+        "ideal_max": 27.5,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "high",
+        "current": 99.0,
+        "ideal_min": 85.0,
+        "ideal_max": 98.01,
+        "difference": 0.9899999999999949
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 6.5,
+      "fertility_ec": 475.0,
+      "humidity": 80.0,
+      "sunlight": 1215.0,
+      "soil_temp": 27.0,
+      "soil_moisture": 99.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:46.351760",
+    "original_index": 39,
+    "row_in_batch": 39
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.8867,
+    "parameter_confidence": 0.9809,
+    "ml_confidence": {
+      "XGBoost": 0.5102325677871704
+    },
+    "crop": "Coffee",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "low",
+        "current": 5.5,
+        "ideal_min": 5.598999999999999,
+        "ideal_max": 6.901000000000001,
+        "difference": -0.09899999999999931
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 450.0,
+        "ideal_min": 449.99,
+        "ideal_max": 474.01,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 86.0,
+        "ideal_min": 79.99,
+        "ideal_max": 86.0,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "low",
+        "current": 700.0,
+        "ideal_min": 719.8,
+        "ideal_max": 1230.05,
+        "difference": -19.799999999999955
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 26.5,
+        "ideal_min": 26.3,
+        "ideal_max": 27.5,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 87.0,
+        "ideal_min": 85.0,
+        "ideal_max": 98.01,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 5.5,
+      "fertility_ec": 450.0,
+      "humidity": 86.0,
+      "sunlight": 700.0,
+      "soil_temp": 26.5,
+      "soil_moisture": 87.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:46.371241",
+    "original_index": 40,
+    "row_in_batch": 40
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.9659,
+    "parameter_confidence": 1.0,
+    "ml_confidence": {
+      "XGBoost": 0.8294571042060852
+    },
+    "crop": "Coffee",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.5,
+        "ideal_min": 5.598999999999999,
+        "ideal_max": 6.901000000000001,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 474.0,
+        "ideal_min": 449.99,
+        "ideal_max": 474.01,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 81.0,
+        "ideal_min": 79.99,
+        "ideal_max": 86.0,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1215.0,
+        "ideal_min": 719.8,
+        "ideal_max": 1230.05,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.0,
+        "ideal_min": 26.3,
+        "ideal_max": 27.5,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 98.0,
+        "ideal_min": 85.0,
+        "ideal_max": 98.01,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 6.5,
+      "fertility_ec": 474.0,
+      "humidity": 81.0,
+      "sunlight": 1215.0,
+      "soil_temp": 27.0,
+      "soil_moisture": 98.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:46.392111",
+    "original_index": 41,
+    "row_in_batch": 41
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.9004,
+    "parameter_confidence": 1.0,
+    "ml_confidence": {
+      "XGBoost": 0.5020125508308411
+    },
+    "crop": "Coffee",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 5.6,
+        "ideal_min": 5.598999999999999,
+        "ideal_max": 6.901000000000001,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 456.0,
+        "ideal_min": 449.99,
+        "ideal_max": 474.01,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 85.0,
+        "ideal_min": 79.99,
+        "ideal_max": 86.0,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 720.0,
+        "ideal_min": 719.8,
+        "ideal_max": 1230.05,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 26.5,
+        "ideal_min": 26.3,
+        "ideal_max": 27.5,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 88.0,
+        "ideal_min": 85.0,
+        "ideal_max": 98.01,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 5.6,
+      "fertility_ec": 456.0,
+      "humidity": 85.0,
+      "sunlight": 720.0,
+      "soil_temp": 26.5,
+      "soil_moisture": 88.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:46.411823",
+    "original_index": 42,
+    "row_in_batch": 42
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.9585,
+    "parameter_confidence": 0.9984,
+    "ml_confidence": {
+      "XGBoost": 0.7991500496864319
+    },
+    "crop": "Coffee",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.5,
+        "ideal_min": 5.598999999999999,
+        "ideal_max": 6.901000000000001,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 470.0,
+        "ideal_min": 449.99,
+        "ideal_max": 474.01,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 83.0,
+        "ideal_min": 79.99,
+        "ideal_max": 86.0,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "high",
+        "current": 1235.0,
+        "ideal_min": 719.8,
+        "ideal_max": 1230.05,
+        "difference": 4.9500000000000455
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.0,
+        "ideal_min": 26.3,
+        "ideal_max": 27.5,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 97.0,
+        "ideal_min": 85.0,
+        "ideal_max": 98.01,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 6.5,
+      "fertility_ec": 470.0,
+      "humidity": 83.0,
+      "sunlight": 1235.0,
+      "soil_temp": 27.0,
+      "soil_moisture": 97.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:46.431201",
+    "original_index": 43,
+    "row_in_batch": 43
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.9196,
+    "parameter_confidence": 1.0,
+    "ml_confidence": {
+      "XGBoost": 0.5977687835693359
+    },
+    "crop": "Coffee",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 5.7,
+        "ideal_min": 5.598999999999999,
+        "ideal_max": 6.901000000000001,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 456.0,
+        "ideal_min": 449.99,
+        "ideal_max": 474.01,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 85.0,
+        "ideal_min": 79.99,
+        "ideal_max": 86.0,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 720.0,
+        "ideal_min": 719.8,
+        "ideal_max": 1230.05,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 26.5,
+        "ideal_min": 26.3,
+        "ideal_max": 27.5,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 88.0,
+        "ideal_min": 85.0,
+        "ideal_max": 98.01,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 5.7,
+      "fertility_ec": 456.0,
+      "humidity": 85.0,
+      "sunlight": 720.0,
+      "soil_temp": 26.5,
+      "soil_moisture": 88.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:46.452059",
+    "original_index": 44,
+    "row_in_batch": 44
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.8226,
+    "parameter_confidence": 1.0,
+    "ml_confidence": {
+      "XGBoost": 0.11281300336122513
+    },
+    "crop": "Eggplant",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 5.5,
+        "ideal_min": 5.298,
+        "ideal_max": 5.7,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 485.0,
+        "ideal_min": 403.94,
+        "ideal_max": 522.06,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 76.0,
+        "ideal_min": 75.98,
+        "ideal_max": 81.0,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 2400.0,
+        "ideal_min": 909.8,
+        "ideal_max": 2600.0,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 28.9,
+        "ideal_min": 27.5,
+        "ideal_max": 31.2,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 87.0,
+        "ideal_min": 78.0,
+        "ideal_max": 87.03999999999999,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 5.5,
+      "fertility_ec": 485.0,
+      "humidity": 76.0,
+      "sunlight": 2400.0,
+      "soil_temp": 28.9,
+      "soil_moisture": 87.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:46.471505",
+    "original_index": 45,
+    "row_in_batch": 45
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.926,
+    "parameter_confidence": 1.0,
+    "ml_confidence": {
+      "XGBoost": 0.6300714015960693
+    },
+    "crop": "Forage Grass",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.8,
+        "ideal_min": 6.8,
+        "ideal_max": 7.203,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 405.0,
+        "ideal_min": 400.0,
+        "ideal_max": 410.0,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 79.0,
+        "ideal_min": 76.97,
+        "ideal_max": 81.0,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1900.0,
+        "ideal_min": 1800.0,
+        "ideal_max": 2000.0,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 28.0,
+        "ideal_min": 27.5,
+        "ideal_max": 29.3,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 84.0,
+        "ideal_min": 80.0,
+        "ideal_max": 88.0,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 6.8,
+      "fertility_ec": 405.0,
+      "humidity": 79.0,
+      "sunlight": 1900.0,
+      "soil_temp": 28.0,
+      "soil_moisture": 84.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:46.490218",
+    "original_index": 46,
+    "row_in_batch": 46
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.9639,
+    "parameter_confidence": 1.0,
+    "ml_confidence": {
+      "XGBoost": 0.8193795680999756
+    },
+    "crop": "Ginger",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.3,
+        "ideal_min": 5.698,
+        "ideal_max": 6.401000000000001,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 460.0,
+        "ideal_min": 453.0,
+        "ideal_max": 525.0500000000001,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 78.0,
+        "ideal_min": 77.99,
+        "ideal_max": 85.01,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1800.0,
+        "ideal_min": 1171.78,
+        "ideal_max": 2401.0000000000005,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 28.2,
+        "ideal_min": 26.0,
+        "ideal_max": 29.0,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 90.0,
+        "ideal_min": 84.0,
+        "ideal_max": 93.01,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 6.3,
+      "fertility_ec": 460.0,
+      "humidity": 78.0,
+      "sunlight": 1800.0,
+      "soil_temp": 28.2,
+      "soil_moisture": 90.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:46.512528",
+    "original_index": 47,
+    "row_in_batch": 47
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.7785,
+    "parameter_confidence": 0.9501,
+    "ml_confidence": {
+      "XGBoost": 0.09203872829675674
+    },
+    "crop": "Ginger",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "low",
+        "current": 5.5,
+        "ideal_min": 5.698,
+        "ideal_max": 6.401000000000001,
+        "difference": -0.1980000000000004
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 455.0,
+        "ideal_min": 453.0,
+        "ideal_max": 525.0500000000001,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 85.0,
+        "ideal_min": 77.99,
+        "ideal_max": 85.01,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "low",
+        "current": 1150.0,
+        "ideal_min": 1171.78,
+        "ideal_max": 2401.0000000000005,
+        "difference": -21.779999999999973
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.1,
+        "ideal_min": 26.0,
+        "ideal_max": 29.0,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 85.0,
+        "ideal_min": 84.0,
+        "ideal_max": 93.01,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 5.5,
+      "fertility_ec": 455.0,
+      "humidity": 85.0,
+      "sunlight": 1150.0,
+      "soil_temp": 27.1,
+      "soil_moisture": 85.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:46.532285",
+    "original_index": 48,
+    "row_in_batch": 48
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.8166,
+    "parameter_confidence": 1.0,
+    "ml_confidence": {
+      "XGBoost": 0.08310973644256592
+    },
+    "crop": "Ginger",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.4,
+        "ideal_min": 5.698,
+        "ideal_max": 6.401000000000001,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 500.0,
+        "ideal_min": 453.0,
+        "ideal_max": 525.0500000000001,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 80.0,
+        "ideal_min": 77.99,
+        "ideal_max": 85.01,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1900.0,
+        "ideal_min": 1171.78,
+        "ideal_max": 2401.0000000000005,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.7,
+        "ideal_min": 26.0,
+        "ideal_max": 29.0,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 93.0,
+        "ideal_min": 84.0,
+        "ideal_max": 93.01,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 6.4,
+      "fertility_ec": 500.0,
+      "humidity": 80.0,
+      "sunlight": 1900.0,
+      "soil_temp": 27.7,
+      "soil_moisture": 93.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:46.551691",
+    "original_index": 49,
+    "row_in_batch": 49
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.8326,
+    "parameter_confidence": 0.9885,
+    "ml_confidence": {
+      "XGBoost": 0.2090391218662262
+    },
+    "crop": "Ginger",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.2,
+        "ideal_min": 5.698,
+        "ideal_max": 6.401000000000001,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "high",
+        "current": 530.0,
+        "ideal_min": 453.0,
+        "ideal_max": 525.0500000000001,
+        "difference": 4.949999999999932
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 79.0,
+        "ideal_min": 77.99,
+        "ideal_max": 85.01,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 2400.0,
+        "ideal_min": 1171.78,
+        "ideal_max": 2401.0000000000005,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 28.2,
+        "ideal_min": 26.0,
+        "ideal_max": 29.0,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 91.0,
+        "ideal_min": 84.0,
+        "ideal_max": 93.01,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 6.2,
+      "fertility_ec": 530.0,
+      "humidity": 79.0,
+      "sunlight": 2400.0,
+      "soil_temp": 28.2,
+      "soil_moisture": 91.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:46.571969",
+    "original_index": 50,
+    "row_in_batch": 50
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.796,
+    "parameter_confidence": 0.9817,
+    "ml_confidence": {
+      "XGBoost": 0.053183820098638535
+    },
+    "crop": "Ginger",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.0,
+        "ideal_min": 5.698,
+        "ideal_max": 6.401000000000001,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 525.0,
+        "ideal_min": 453.0,
+        "ideal_max": 525.0500000000001,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 81.0,
+        "ideal_min": 77.99,
+        "ideal_max": 85.01,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 2000.0,
+        "ideal_min": 1171.78,
+        "ideal_max": 2401.0000000000005,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.8,
+        "ideal_min": 26.0,
+        "ideal_max": 29.0,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "high",
+        "current": 94.0,
+        "ideal_min": 84.0,
+        "ideal_max": 93.01,
+        "difference": 0.9899999999999949
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 6.0,
+      "fertility_ec": 525.0,
+      "humidity": 81.0,
+      "sunlight": 2000.0,
+      "soil_temp": 27.8,
+      "soil_moisture": 94.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:46.592965",
+    "original_index": 51,
+    "row_in_batch": 51
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.7896,
+    "parameter_confidence": 0.9631,
+    "ml_confidence": {
+      "XGBoost": 0.09554079920053482
+    },
+    "crop": "Ginger",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.1,
+        "ideal_min": 5.698,
+        "ideal_max": 6.401000000000001,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 515.0,
+        "ideal_min": 453.0,
+        "ideal_max": 525.0500000000001,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "low",
+        "current": 77.0,
+        "ideal_min": 77.99,
+        "ideal_max": 85.01,
+        "difference": -0.9899999999999949
+      },
+      "sunlight": {
+        "status": "high",
+        "current": 2500.0,
+        "ideal_min": 1171.78,
+        "ideal_max": 2401.0000000000005,
+        "difference": 98.99999999999955
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 28.4,
+        "ideal_min": 26.0,
+        "ideal_max": 29.0,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 88.0,
+        "ideal_min": 84.0,
+        "ideal_max": 93.01,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 6.1,
+      "fertility_ec": 515.0,
+      "humidity": 77.0,
+      "sunlight": 2500.0,
+      "soil_temp": 28.4,
+      "soil_moisture": 88.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:46.613149",
+    "original_index": 52,
+    "row_in_batch": 52
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.8361,
+    "parameter_confidence": 0.9765,
+    "ml_confidence": {
+      "XGBoost": 0.2741438150405884
+    },
+    "crop": "Ginger",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "high",
+        "current": 6.5,
+        "ideal_min": 5.698,
+        "ideal_max": 6.401000000000001,
+        "difference": 0.09899999999999931
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 490.0,
+        "ideal_min": 453.0,
+        "ideal_max": 525.0500000000001,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 80.0,
+        "ideal_min": 77.99,
+        "ideal_max": 85.01,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1800.0,
+        "ideal_min": 1171.78,
+        "ideal_max": 2401.0000000000005,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 28.0,
+        "ideal_min": 26.0,
+        "ideal_max": 29.0,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 92.0,
+        "ideal_min": 84.0,
+        "ideal_max": 93.01,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 6.5,
+      "fertility_ec": 490.0,
+      "humidity": 80.0,
+      "sunlight": 1800.0,
+      "soil_temp": 28.0,
+      "soil_moisture": 92.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:46.631708",
+    "original_index": 53,
+    "row_in_batch": 53
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.8388,
+    "parameter_confidence": 1.0,
+    "ml_confidence": {
+      "XGBoost": 0.19411925971508026
+    },
+    "crop": "Ginger",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.3,
+        "ideal_min": 5.698,
+        "ideal_max": 6.401000000000001,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 505.0,
+        "ideal_min": 453.0,
+        "ideal_max": 525.0500000000001,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 78.0,
+        "ideal_min": 77.99,
+        "ideal_max": 85.01,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 2200.0,
+        "ideal_min": 1171.78,
+        "ideal_max": 2401.0000000000005,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.5,
+        "ideal_min": 26.0,
+        "ideal_max": 29.0,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 90.0,
+        "ideal_min": 84.0,
+        "ideal_max": 93.01,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 6.3,
+      "fertility_ec": 505.0,
+      "humidity": 78.0,
+      "sunlight": 2200.0,
+      "soil_temp": 27.5,
+      "soil_moisture": 90.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:46.651621",
+    "original_index": 54,
+    "row_in_batch": 54
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.8185,
+    "parameter_confidence": 1.0,
+    "ml_confidence": {
+      "XGBoost": 0.09226294606924057
+    },
+    "crop": "Ginger",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 5.9,
+        "ideal_min": 5.698,
+        "ideal_max": 6.401000000000001,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 485.0,
+        "ideal_min": 453.0,
+        "ideal_max": 525.0500000000001,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 83.0,
+        "ideal_min": 77.99,
+        "ideal_max": 85.01,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1500.0,
+        "ideal_min": 1171.78,
+        "ideal_max": 2401.0000000000005,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 26.9,
+        "ideal_min": 26.0,
+        "ideal_max": 29.0,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 89.0,
+        "ideal_min": 84.0,
+        "ideal_max": 93.01,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 5.9,
+      "fertility_ec": 485.0,
+      "humidity": 83.0,
+      "sunlight": 1500.0,
+      "soil_temp": 26.9,
+      "soil_moisture": 89.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:46.671661",
+    "original_index": 55,
+    "row_in_batch": 55
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.7234,
+    "parameter_confidence": 0.8333,
+    "ml_confidence": {
+      "XGBoost": 0.28372418880462646
+    },
+    "crop": "Ipil Ipil",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.8,
+        "ideal_min": 6.598,
+        "ideal_max": 7.002,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 405.0,
+        "ideal_min": 398.0,
+        "ideal_max": 412.0,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 79.0,
+        "ideal_min": 77.0,
+        "ideal_max": 81.0,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1900.0,
+        "ideal_min": 1800.0,
+        "ideal_max": 2000.0,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 28.0,
+        "ideal_min": 26.098000000000003,
+        "ideal_max": 29.0,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "high",
+        "current": 84.0,
+        "ideal_min": 82.0,
+        "ideal_max": 82.03999999999999,
+        "difference": 1.960000000000008
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 6.8,
+      "fertility_ec": 405.0,
+      "humidity": 79.0,
+      "sunlight": 1900.0,
+      "soil_temp": 28.0,
+      "soil_moisture": 84.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:46.691213",
+    "original_index": 56,
+    "row_in_batch": 56
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.726,
+    "parameter_confidence": 0.904,
+    "ml_confidence": {
+      "XGBoost": 0.013990934938192368
+    },
+    "crop": "Jackfruit",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "low",
+        "current": 5.7,
+        "ideal_min": 5.7989999999999995,
+        "ideal_max": 6.2,
+        "difference": -0.09899999999999931
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 470.0,
+        "ideal_min": 458.99,
+        "ideal_max": 479.01,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 84.0,
+        "ideal_min": 81.0,
+        "ideal_max": 86.0,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1050.0,
+        "ideal_min": 861.58,
+        "ideal_max": 1280.0,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.4,
+        "ideal_min": 26.0,
+        "ideal_max": 29.5,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "high",
+        "current": 89.0,
+        "ideal_min": 85.0,
+        "ideal_max": 88.01,
+        "difference": 0.9899999999999949
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 5.7,
+      "fertility_ec": 470.0,
+      "humidity": 84.0,
+      "sunlight": 1050.0,
+      "soil_temp": 27.4,
+      "soil_moisture": 89.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:46.711307",
+    "original_index": 57,
+    "row_in_batch": 57
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.7202,
+    "parameter_confidence": 0.8991,
+    "ml_confidence": {
+      "XGBoost": 0.004491323139518499
+    },
+    "crop": "Mango",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.0,
+        "ideal_min": 6.0,
+        "ideal_max": 6.8020000000000005,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 517.0,
+        "ideal_min": 439.6,
+        "ideal_max": 530.0,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 88.0,
+        "ideal_min": 79.99,
+        "ideal_max": 90.0,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1094.0,
+        "ideal_min": 1036.63,
+        "ideal_max": 1150.0,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 28.5,
+        "ideal_min": 27.2,
+        "ideal_max": 31.0,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "high",
+        "current": 99.0,
+        "ideal_min": 78.0,
+        "ideal_max": 91.08000000000004,
+        "difference": 7.919999999999959
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 6.0,
+      "fertility_ec": 517.0,
+      "humidity": 88.0,
+      "sunlight": 1094.0,
+      "soil_temp": 28.5,
+      "soil_moisture": 99.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:46.731060",
+    "original_index": 58,
+    "row_in_batch": 58
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.7274,
+    "parameter_confidence": 0.8731,
+    "ml_confidence": {
+      "XGBoost": 0.1443922072649002
+    },
+    "crop": "Mango",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.0,
+        "ideal_min": 6.0,
+        "ideal_max": 6.8020000000000005,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "low",
+        "current": 400.0,
+        "ideal_min": 439.6,
+        "ideal_max": 530.0,
+        "difference": -39.60000000000002
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 80.0,
+        "ideal_min": 79.99,
+        "ideal_max": 90.0,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "low",
+        "current": 1000.0,
+        "ideal_min": 1036.63,
+        "ideal_max": 1150.0,
+        "difference": -36.63000000000011
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.9,
+        "ideal_min": 27.2,
+        "ideal_max": 31.0,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 80.0,
+        "ideal_min": 78.0,
+        "ideal_max": 91.08000000000004,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 6.0,
+      "fertility_ec": 400.0,
+      "humidity": 80.0,
+      "sunlight": 1000.0,
+      "soil_temp": 27.9,
+      "soil_moisture": 80.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:46.751258",
+    "original_index": 59,
+    "row_in_batch": 59
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.7808,
+    "parameter_confidence": 0.9742,
+    "ml_confidence": {
+      "XGBoost": 0.007215272169560194
+    },
+    "crop": "Lanzones",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 5.8,
+        "ideal_min": 4.688,
+        "ideal_max": 5.9,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "low",
+        "current": 490.0,
+        "ideal_min": 504.85,
+        "ideal_max": 802.9600000000005,
+        "difference": -14.850000000000023
+      },
+      "humidity": {
+        "status": "high",
+        "current": 85.0,
+        "ideal_min": 66.99,
+        "ideal_max": 84.01,
+        "difference": 0.9899999999999949
+      },
+      "sunlight": {
+        "status": "low",
+        "current": 850.0,
+        "ideal_min": 1010.38,
+        "ideal_max": 4437.63,
+        "difference": -160.38
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 26.8,
+        "ideal_min": 25.0,
+        "ideal_max": 29.908,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 85.0,
+        "ideal_min": 82.0,
+        "ideal_max": 99.0,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 5.8,
+      "fertility_ec": 490.0,
+      "humidity": 85.0,
+      "sunlight": 850.0,
+      "soil_temp": 26.8,
+      "soil_moisture": 85.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:46.770022",
+    "original_index": 60,
+    "row_in_batch": 60
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.801,
+    "parameter_confidence": 1.0,
+    "ml_confidence": {
+      "XGBoost": 0.004883293993771076
+    },
+    "crop": "Lanzones",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 5.9,
+        "ideal_min": 4.688,
+        "ideal_max": 5.9,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 505.0,
+        "ideal_min": 504.85,
+        "ideal_max": 802.9600000000005,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 84.0,
+        "ideal_min": 66.99,
+        "ideal_max": 84.01,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1100.0,
+        "ideal_min": 1010.38,
+        "ideal_max": 4437.63,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.3,
+        "ideal_min": 25.0,
+        "ideal_max": 29.908,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 88.0,
+        "ideal_min": 82.0,
+        "ideal_max": 99.0,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 5.9,
+      "fertility_ec": 505.0,
+      "humidity": 84.0,
+      "sunlight": 1100.0,
+      "soil_temp": 27.3,
+      "soil_moisture": 88.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:46.789313",
+    "original_index": 61,
+    "row_in_batch": 61
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.7905,
+    "parameter_confidence": 0.7566,
+    "ml_confidence": {
+      "XGBoost": 0.926315426826477
+    },
+    "crop": "Lanzones",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "low",
+        "current": 3.5,
+        "ideal_min": 4.688,
+        "ideal_max": 5.9,
+        "difference": -1.1879999999999997
+      },
+      "fertility_ec": {
+        "status": "high",
+        "current": 898.0,
+        "ideal_min": 504.85,
+        "ideal_max": 802.9600000000005,
+        "difference": 95.03999999999951
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 67.0,
+        "ideal_min": 66.99,
+        "ideal_max": 84.01,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 4316.0,
+        "ideal_min": 1010.38,
+        "ideal_max": 4437.63,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "high",
+        "current": 30.7,
+        "ideal_min": 25.0,
+        "ideal_max": 29.908,
+        "difference": 0.791999999999998
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 99.0,
+        "ideal_min": 82.0,
+        "ideal_max": 99.0,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 3.5,
+      "fertility_ec": 898.0,
+      "humidity": 67.0,
+      "sunlight": 4316.0,
+      "soil_temp": 30.7,
+      "soil_moisture": 99.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:46.811164",
+    "original_index": 62,
+    "row_in_batch": 62
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.8746,
+    "parameter_confidence": 1.0,
+    "ml_confidence": {
+      "XGBoost": 0.37324243783950806
+    },
+    "crop": "Rambutan",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 5.8,
+        "ideal_min": 5.499,
+        "ideal_max": 6.3020000000000005,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 490.0,
+        "ideal_min": 439.95,
+        "ideal_max": 659.8600000000005,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 85.0,
+        "ideal_min": 79.99,
+        "ideal_max": 88.0,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 850.0,
+        "ideal_min": 799.7,
+        "ideal_max": 2223.01,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 26.8,
+        "ideal_min": 26.0,
+        "ideal_max": 28.5,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 85.0,
+        "ideal_min": 78.99,
+        "ideal_max": 96.03000000000002,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 5.8,
+      "fertility_ec": 490.0,
+      "humidity": 85.0,
+      "sunlight": 850.0,
+      "soil_temp": 26.8,
+      "soil_moisture": 85.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:46.831134",
+    "original_index": 63,
+    "row_in_batch": 63
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.8657,
+    "parameter_confidence": 1.0,
+    "ml_confidence": {
+      "XGBoost": 0.32845789194107056
+    },
+    "crop": "Rambutan",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 5.9,
+        "ideal_min": 5.499,
+        "ideal_max": 6.3020000000000005,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 505.0,
+        "ideal_min": 439.95,
+        "ideal_max": 659.8600000000005,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 84.0,
+        "ideal_min": 79.99,
+        "ideal_max": 88.0,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1100.0,
+        "ideal_min": 799.7,
+        "ideal_max": 2223.01,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.3,
+        "ideal_min": 26.0,
+        "ideal_max": 28.5,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 88.0,
+        "ideal_min": 78.99,
+        "ideal_max": 96.03000000000002,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 5.9,
+      "fertility_ec": 505.0,
+      "humidity": 84.0,
+      "sunlight": 1100.0,
+      "soil_temp": 27.3,
+      "soil_moisture": 88.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:46.850649",
+    "original_index": 64,
+    "row_in_batch": 64
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.8367,
+    "parameter_confidence": 0.8653,
+    "ml_confidence": {
+      "XGBoost": 0.7221304774284363
+    },
+    "crop": "Rambutan",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "high",
+        "current": 6.5,
+        "ideal_min": 5.499,
+        "ideal_max": 6.3020000000000005,
+        "difference": 0.1979999999999995
+      },
+      "fertility_ec": {
+        "status": "high",
+        "current": 745.0,
+        "ideal_min": 439.95,
+        "ideal_max": 659.8600000000005,
+        "difference": 85.13999999999953
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 81.0,
+        "ideal_min": 79.99,
+        "ideal_max": 88.0,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 2090.0,
+        "ideal_min": 799.7,
+        "ideal_max": 2223.01,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.8,
+        "ideal_min": 26.0,
+        "ideal_max": 28.5,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "high",
+        "current": 99.0,
+        "ideal_min": 78.99,
+        "ideal_max": 96.03000000000002,
+        "difference": 2.9699999999999847
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 6.5,
+      "fertility_ec": 745.0,
+      "humidity": 81.0,
+      "sunlight": 2090.0,
+      "soil_temp": 27.8,
+      "soil_moisture": 99.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:46.899576",
+    "original_index": 65,
+    "row_in_batch": 65
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.8804,
+    "parameter_confidence": 1.0,
+    "ml_confidence": {
+      "XGBoost": 0.4019812047481537
+    },
+    "crop": "Rambutan",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 5.9,
+        "ideal_min": 5.499,
+        "ideal_max": 6.3020000000000005,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 455.0,
+        "ideal_min": 439.95,
+        "ideal_max": 659.8600000000005,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 84.0,
+        "ideal_min": 79.99,
+        "ideal_max": 88.0,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1050.0,
+        "ideal_min": 799.7,
+        "ideal_max": 2223.01,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.0,
+        "ideal_min": 26.0,
+        "ideal_max": 28.5,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 85.0,
+        "ideal_min": 78.99,
+        "ideal_max": 96.03000000000002,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 5.9,
+      "fertility_ec": 455.0,
+      "humidity": 84.0,
+      "sunlight": 1050.0,
+      "soil_temp": 27.0,
+      "soil_moisture": 85.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:46.918784",
+    "original_index": 66,
+    "row_in_batch": 66
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.8016,
+    "parameter_confidence": 0.9962,
+    "ml_confidence": {
+      "XGBoost": 0.023034876212477684
+    },
+    "crop": "Rambutan",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.0,
+        "ideal_min": 5.499,
+        "ideal_max": 6.3020000000000005,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "low",
+        "current": 435.0,
+        "ideal_min": 439.95,
+        "ideal_max": 659.8600000000005,
+        "difference": -4.949999999999989
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 83.0,
+        "ideal_min": 79.99,
+        "ideal_max": 88.0,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1150.0,
+        "ideal_min": 799.7,
+        "ideal_max": 2223.01,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.4,
+        "ideal_min": 26.0,
+        "ideal_max": 28.5,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 83.0,
+        "ideal_min": 78.99,
+        "ideal_max": 96.03000000000002,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 6.0,
+      "fertility_ec": 435.0,
+      "humidity": 83.0,
+      "sunlight": 1150.0,
+      "soil_temp": 27.4,
+      "soil_moisture": 83.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:46.939617",
+    "original_index": 67,
+    "row_in_batch": 67
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.8228,
+    "parameter_confidence": 1.0,
+    "ml_confidence": {
+      "XGBoost": 0.11382655054330826
+    },
+    "crop": "Rambutan",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 5.8,
+        "ideal_min": 5.499,
+        "ideal_max": 6.3020000000000005,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 460.0,
+        "ideal_min": 439.95,
+        "ideal_max": 659.8600000000005,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 85.0,
+        "ideal_min": 79.99,
+        "ideal_max": 88.0,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 950.0,
+        "ideal_min": 799.7,
+        "ideal_max": 2223.01,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.2,
+        "ideal_min": 26.0,
+        "ideal_max": 28.5,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 87.0,
+        "ideal_min": 78.99,
+        "ideal_max": 96.03000000000002,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 5.8,
+      "fertility_ec": 460.0,
+      "humidity": 85.0,
+      "sunlight": 950.0,
+      "soil_temp": 27.2,
+      "soil_moisture": 87.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:46.958479",
+    "original_index": 68,
+    "row_in_batch": 68
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.8617,
+    "parameter_confidence": 1.0,
+    "ml_confidence": {
+      "XGBoost": 0.30845126509666443
+    },
+    "crop": "Rambutan",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 5.6,
+        "ideal_min": 5.499,
+        "ideal_max": 6.3020000000000005,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 450.0,
+        "ideal_min": 439.95,
+        "ideal_max": 659.8600000000005,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 86.0,
+        "ideal_min": 79.99,
+        "ideal_max": 88.0,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1000.0,
+        "ideal_min": 799.7,
+        "ideal_max": 2223.01,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 26.8,
+        "ideal_min": 26.0,
+        "ideal_max": 28.5,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 84.0,
+        "ideal_min": 78.99,
+        "ideal_max": 96.03000000000002,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 5.6,
+      "fertility_ec": 450.0,
+      "humidity": 86.0,
+      "sunlight": 1000.0,
+      "soil_temp": 26.8,
+      "soil_moisture": 84.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:46.979546",
+    "original_index": 69,
+    "row_in_batch": 69
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.8052,
+    "parameter_confidence": 1.0,
+    "ml_confidence": {
+      "XGBoost": 0.026210371404886246
+    },
+    "crop": "Rambutan",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.1,
+        "ideal_min": 5.499,
+        "ideal_max": 6.3020000000000005,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 465.0,
+        "ideal_min": 439.95,
+        "ideal_max": 659.8600000000005,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 82.0,
+        "ideal_min": 79.99,
+        "ideal_max": 88.0,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1250.0,
+        "ideal_min": 799.7,
+        "ideal_max": 2223.01,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.5,
+        "ideal_min": 26.0,
+        "ideal_max": 28.5,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 86.0,
+        "ideal_min": 78.99,
+        "ideal_max": 96.03000000000002,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 6.1,
+      "fertility_ec": 465.0,
+      "humidity": 82.0,
+      "sunlight": 1250.0,
+      "soil_temp": 27.5,
+      "soil_moisture": 86.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:46.998717",
+    "original_index": 70,
+    "row_in_batch": 70
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.8071,
+    "parameter_confidence": 1.0,
+    "ml_confidence": {
+      "XGBoost": 0.035659004002809525
+    },
+    "crop": "Rambutan",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 5.5,
+        "ideal_min": 5.499,
+        "ideal_max": 6.3020000000000005,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 445.0,
+        "ideal_min": 439.95,
+        "ideal_max": 659.8600000000005,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 88.0,
+        "ideal_min": 79.99,
+        "ideal_max": 88.0,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 800.0,
+        "ideal_min": 799.7,
+        "ideal_max": 2223.01,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 26.6,
+        "ideal_min": 26.0,
+        "ideal_max": 28.5,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 81.0,
+        "ideal_min": 78.99,
+        "ideal_max": 96.03000000000002,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 5.5,
+      "fertility_ec": 445.0,
+      "humidity": 88.0,
+      "sunlight": 800.0,
+      "soil_temp": 26.6,
+      "soil_moisture": 81.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:47.017644",
+    "original_index": 71,
+    "row_in_batch": 71
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.8049,
+    "parameter_confidence": 1.0,
+    "ml_confidence": {
+      "XGBoost": 0.024626590311527252
+    },
+    "crop": "Rambutan",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 5.7,
+        "ideal_min": 5.499,
+        "ideal_max": 6.3020000000000005,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 440.0,
+        "ideal_min": 439.95,
+        "ideal_max": 659.8600000000005,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 87.0,
+        "ideal_min": 79.99,
+        "ideal_max": 88.0,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 900.0,
+        "ideal_min": 799.7,
+        "ideal_max": 2223.01,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 26.7,
+        "ideal_min": 26.0,
+        "ideal_max": 28.5,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 82.0,
+        "ideal_min": 78.99,
+        "ideal_max": 96.03000000000002,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 5.7,
+      "fertility_ec": 440.0,
+      "humidity": 87.0,
+      "sunlight": 900.0,
+      "soil_temp": 26.7,
+      "soil_moisture": 82.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:47.038516",
+    "original_index": 72,
+    "row_in_batch": 72
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.9074,
+    "parameter_confidence": 1.0,
+    "ml_confidence": {
+      "XGBoost": 0.5368481874465942
+    },
+    "crop": "Rice",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.8,
+        "ideal_min": 6.8,
+        "ideal_max": 7.2,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 550.0,
+        "ideal_min": 536.97,
+        "ideal_max": 563.01,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 75.0,
+        "ideal_min": 72.98,
+        "ideal_max": 78.0,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 2500.0,
+        "ideal_min": 2441.58,
+        "ideal_max": 2700.0,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 29.2,
+        "ideal_min": 27.0,
+        "ideal_max": 31.0,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 95.0,
+        "ideal_min": 92.0,
+        "ideal_max": 98.0,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 6.8,
+      "fertility_ec": 550.0,
+      "humidity": 75.0,
+      "sunlight": 2500.0,
+      "soil_temp": 29.2,
+      "soil_moisture": 95.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:47.056872",
+    "original_index": 73,
+    "row_in_batch": 73
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.7732,
+    "parameter_confidence": 0.9659,
+    "ml_confidence": {
+      "XGBoost": 0.0021206678356975317
+    },
+    "crop": "Banana",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "high",
+        "current": 6.8,
+        "ideal_min": 4.49,
+        "ideal_max": 6.407999999999999,
+        "difference": 0.39200000000000124
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 550.0,
+        "ideal_min": 494.5,
+        "ideal_max": 771.7799999999999,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 75.0,
+        "ideal_min": 69.92,
+        "ideal_max": 81.03999999999999,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 2500.0,
+        "ideal_min": 1280.0,
+        "ideal_max": 8301.139999999996,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 29.2,
+        "ideal_min": 27.0,
+        "ideal_max": 30.0,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 95.0,
+        "ideal_min": 88.0,
+        "ideal_max": 99.0,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 6.8,
+      "fertility_ec": 550.0,
+      "humidity": 75.0,
+      "sunlight": 2500.0,
+      "soil_temp": 29.2,
+      "soil_moisture": 95.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:47.076512",
+    "original_index": 74,
+    "row_in_batch": 74
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.8016,
+    "parameter_confidence": 1.0,
+    "ml_confidence": {
+      "XGBoost": 0.007987258024513721
+    },
+    "crop": "Banana",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.4,
+        "ideal_min": 4.49,
+        "ideal_max": 6.407999999999999,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 495.0,
+        "ideal_min": 494.5,
+        "ideal_max": 771.7799999999999,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 81.0,
+        "ideal_min": 69.92,
+        "ideal_max": 81.03999999999999,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1650.0,
+        "ideal_min": 1280.0,
+        "ideal_max": 8301.139999999996,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.8,
+        "ideal_min": 27.0,
+        "ideal_max": 30.0,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 92.0,
+        "ideal_min": 88.0,
+        "ideal_max": 99.0,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 6.4,
+      "fertility_ec": 495.0,
+      "humidity": 81.0,
+      "sunlight": 1650.0,
+      "soil_temp": 27.8,
+      "soil_moisture": 92.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:47.097598",
+    "original_index": 75,
+    "row_in_batch": 75
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.7675,
+    "parameter_confidence": 0.9559,
+    "ml_confidence": {
+      "XGBoost": 0.013993564061820507
+    },
+    "crop": "Banana",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 5.4,
+        "ideal_min": 4.49,
+        "ideal_max": 6.407999999999999,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "low",
+        "current": 470.0,
+        "ideal_min": 494.5,
+        "ideal_max": 771.7799999999999,
+        "difference": -24.5
+      },
+      "humidity": {
+        "status": "high",
+        "current": 83.0,
+        "ideal_min": 69.92,
+        "ideal_max": 81.03999999999999,
+        "difference": 1.960000000000008
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1300.0,
+        "ideal_min": 1280.0,
+        "ideal_max": 8301.139999999996,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.9,
+        "ideal_min": 27.0,
+        "ideal_max": 30.0,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 90.0,
+        "ideal_min": 88.0,
+        "ideal_max": 99.0,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 5.4,
+      "fertility_ec": 470.0,
+      "humidity": 83.0,
+      "sunlight": 1300.0,
+      "soil_temp": 27.9,
+      "soil_moisture": 90.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:47.117056",
+    "original_index": 76,
+    "row_in_batch": 76
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.728,
+    "parameter_confidence": 0.6667,
+    "ml_confidence": {
+      "XGBoost": 0.9732552766799927
+    },
+    "crop": "Kamoteng Baging",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 4.5,
+        "ideal_min": 4.199,
+        "ideal_max": 4.9,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 359.0,
+        "ideal_min": 350.99,
+        "ideal_max": 367.01,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 70.0,
+        "ideal_min": 68.0,
+        "ideal_max": 73.0,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "low",
+        "current": 15839.0,
+        "ideal_min": 16988.39,
+        "ideal_max": 17000.0,
+        "difference": -1149.3899999999994
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 34.6,
+        "ideal_min": 31.493,
+        "ideal_max": 35.0,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "high",
+        "current": 99.0,
+        "ideal_min": 88.0,
+        "ideal_max": 91.08000000000004,
+        "difference": 7.919999999999959
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 4.5,
+      "fertility_ec": 359.0,
+      "humidity": 70.0,
+      "sunlight": 15839.0,
+      "soil_temp": 34.6,
+      "soil_moisture": 99.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:47.137170",
+    "original_index": 77,
+    "row_in_batch": 77
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.7234,
+    "parameter_confidence": 0.8333,
+    "ml_confidence": {
+      "XGBoost": 0.2837899625301361
+    },
+    "crop": "Katuray",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.2,
+        "ideal_min": 5.7989999999999995,
+        "ideal_max": 6.2,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 410.0,
+        "ideal_min": 398.0,
+        "ideal_max": 422.01,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 78.0,
+        "ideal_min": 75.0,
+        "ideal_max": 80.0,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 2200.0,
+        "ideal_min": 2101.8,
+        "ideal_max": 2500.0,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 28.4,
+        "ideal_min": 26.5,
+        "ideal_max": 30.602000000000004,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "high",
+        "current": 83.0,
+        "ideal_min": 80.0,
+        "ideal_max": 81.02000000000001,
+        "difference": 1.9799999999999898
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 6.2,
+      "fertility_ec": 410.0,
+      "humidity": 78.0,
+      "sunlight": 2200.0,
+      "soil_temp": 28.4,
+      "soil_moisture": 83.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:47.157451",
+    "original_index": 78,
+    "row_in_batch": 78
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.9753,
+    "parameter_confidence": 1.0,
+    "ml_confidence": {
+      "XGBoost": 0.8764923810958862
+    },
+    "crop": "Kulo",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 5.7,
+        "ideal_min": 5.5,
+        "ideal_max": 5.9,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 470.0,
+        "ideal_min": 458.99,
+        "ideal_max": 483.0,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 84.0,
+        "ideal_min": 80.99,
+        "ideal_max": 87.0,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1050.0,
+        "ideal_min": 890.0,
+        "ideal_max": 1280.0,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.4,
+        "ideal_min": 25.6,
+        "ideal_max": 29.801000000000002,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 89.0,
+        "ideal_min": 84.0,
+        "ideal_max": 89.0,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 5.7,
+      "fertility_ec": 470.0,
+      "humidity": 84.0,
+      "sunlight": 1050.0,
+      "soil_temp": 27.4,
+      "soil_moisture": 89.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:47.177787",
+    "original_index": 79,
+    "row_in_batch": 79
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.9616,
+    "parameter_confidence": 1.0,
+    "ml_confidence": {
+      "XGBoost": 0.808020293712616
+    },
+    "crop": "Lipote",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 5.7,
+        "ideal_min": 5.5,
+        "ideal_max": 5.901000000000001,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 420.0,
+        "ideal_min": 419.9,
+        "ideal_max": 480.0,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 81.0,
+        "ideal_min": 78.99,
+        "ideal_max": 84.0,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 950.0,
+        "ideal_min": 835.0,
+        "ideal_max": 1255.0,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 28.0,
+        "ideal_min": 26.6,
+        "ideal_max": 29.0,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 80.0,
+        "ideal_min": 78.0,
+        "ideal_max": 83.0,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 5.7,
+      "fertility_ec": 420.0,
+      "humidity": 81.0,
+      "sunlight": 950.0,
+      "soil_temp": 28.0,
+      "soil_moisture": 80.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:47.197540",
+    "original_index": 80,
+    "row_in_batch": 80
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.8399,
+    "parameter_confidence": 0.8095,
+    "ml_confidence": {
+      "XGBoost": 0.9614659547805786
+    },
+    "crop": "Orchid",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.1,
+        "ideal_min": 5.8,
+        "ideal_max": 6.2,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 390.0,
+        "ideal_min": 387.0,
+        "ideal_max": 393.0,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 76.0,
+        "ideal_min": 73.96,
+        "ideal_max": 78.0,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1850.0,
+        "ideal_min": 1657.52,
+        "ideal_max": 2000.0,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "high",
+        "current": 28.3,
+        "ideal_min": 26.0,
+        "ideal_max": 28.011999999999997,
+        "difference": 0.2880000000000038
+      },
+      "soil_moisture": {
+        "status": "high",
+        "current": 78.0,
+        "ideal_min": 76.0,
+        "ideal_max": 76.07999999999998,
+        "difference": 1.920000000000016
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 6.1,
+      "fertility_ec": 390.0,
+      "humidity": 76.0,
+      "sunlight": 1850.0,
+      "soil_temp": 28.3,
+      "soil_moisture": 78.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:47.217034",
+    "original_index": 81,
+    "row_in_batch": 81
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.7481,
+    "parameter_confidence": 0.8333,
+    "ml_confidence": {
+      "XGBoost": 0.40720900893211365
+    },
+    "crop": "Papaya",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.0,
+        "ideal_min": 5.8,
+        "ideal_max": 6.2,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 435.0,
+        "ideal_min": 424.98,
+        "ideal_max": 445.0,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 79.0,
+        "ideal_min": 77.0,
+        "ideal_max": 81.0,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 2000.0,
+        "ideal_min": 1881.92,
+        "ideal_max": 2200.0,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 28.1,
+        "ideal_min": 26.198,
+        "ideal_max": 29.0,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "high",
+        "current": 82.0,
+        "ideal_min": 80.0,
+        "ideal_max": 80.03999999999999,
+        "difference": 1.960000000000008
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 6.0,
+      "fertility_ec": 435.0,
+      "humidity": 79.0,
+      "sunlight": 2000.0,
+      "soil_temp": 28.1,
+      "soil_moisture": 82.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:47.238125",
+    "original_index": 82,
+    "row_in_batch": 82
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.7293,
+    "parameter_confidence": 0.8333,
+    "ml_confidence": {
+      "XGBoost": 0.31296029686927795
+    },
+    "crop": "Pechay",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.6,
+        "ideal_min": 6.399,
+        "ideal_max": 6.9,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 535.0,
+        "ideal_min": 516.0,
+        "ideal_max": 553.03,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 75.0,
+        "ideal_min": 70.99,
+        "ideal_max": 80.0,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 2600.0,
+        "ideal_min": 2450.49,
+        "ideal_max": 2800.0,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 28.7,
+        "ideal_min": 26.1,
+        "ideal_max": 31.0,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "high",
+        "current": 94.0,
+        "ideal_min": 91.0,
+        "ideal_max": 91.03000000000002,
+        "difference": 2.9699999999999847
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 6.6,
+      "fertility_ec": 535.0,
+      "humidity": 75.0,
+      "sunlight": 2600.0,
+      "soil_temp": 28.7,
+      "soil_moisture": 94.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:47.257626",
+    "original_index": 83,
+    "row_in_batch": 83
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.8321,
+    "parameter_confidence": 1.0,
+    "ml_confidence": {
+      "XGBoost": 0.1602512001991272
+    },
+    "crop": "Pineapple",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 5.3,
+        "ideal_min": 4.99,
+        "ideal_max": 5.634000000000017,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 520.0,
+        "ideal_min": 499.4,
+        "ideal_max": 658.01,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 77.0,
+        "ideal_min": 72.0,
+        "ideal_max": 78.0,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 2800.0,
+        "ideal_min": 2500.0,
+        "ideal_max": 44838.63,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 28.8,
+        "ideal_min": 28.398999999999997,
+        "ideal_max": 33.506,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 86.0,
+        "ideal_min": 85.0,
+        "ideal_max": 99.0,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 5.3,
+      "fertility_ec": 520.0,
+      "humidity": 77.0,
+      "sunlight": 2800.0,
+      "soil_temp": 28.8,
+      "soil_moisture": 86.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:47.277942",
+    "original_index": 84,
+    "row_in_batch": 84
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.81,
+    "parameter_confidence": 1.0,
+    "ml_confidence": {
+      "XGBoost": 0.0497858040034771
+    },
+    "crop": "Pineapple",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 5.4,
+        "ideal_min": 4.99,
+        "ideal_max": 5.634000000000017,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 500.0,
+        "ideal_min": 499.4,
+        "ideal_max": 658.01,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 77.0,
+        "ideal_min": 72.0,
+        "ideal_max": 78.0,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 2900.0,
+        "ideal_min": 2500.0,
+        "ideal_max": 44838.63,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 28.6,
+        "ideal_min": 28.398999999999997,
+        "ideal_max": 33.506,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 88.0,
+        "ideal_min": 85.0,
+        "ideal_max": 99.0,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 5.4,
+      "fertility_ec": 500.0,
+      "humidity": 77.0,
+      "sunlight": 2900.0,
+      "soil_temp": 28.6,
+      "soil_moisture": 88.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:47.297890",
+    "original_index": 85,
+    "row_in_batch": 85
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.7698,
+    "parameter_confidence": 0.8139,
+    "ml_confidence": {
+      "XGBoost": 0.5929925441741943
+    },
+    "crop": "Pineapple",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "low",
+        "current": 4.0,
+        "ideal_min": 4.99,
+        "ideal_max": 5.634000000000017,
+        "difference": -0.9900000000000002
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 594.0,
+        "ideal_min": 499.4,
+        "ideal_max": 658.01,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 73.0,
+        "ideal_min": 72.0,
+        "ideal_max": 78.0,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 39100.0,
+        "ideal_min": 2500.0,
+        "ideal_max": 44838.63,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "high",
+        "current": 34.1,
+        "ideal_min": 28.398999999999997,
+        "ideal_max": 33.506,
+        "difference": 0.5940000000000012
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 99.0,
+        "ideal_min": 85.0,
+        "ideal_max": 99.0,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 4.0,
+      "fertility_ec": 594.0,
+      "humidity": 73.0,
+      "sunlight": 39100.0,
+      "soil_temp": 34.1,
+      "soil_moisture": 99.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:47.317533",
+    "original_index": 86,
+    "row_in_batch": 86
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.9073,
+    "parameter_confidence": 0.9376,
+    "ml_confidence": {
+      "XGBoost": 0.7862001657485962
+    },
+    "crop": "Pineapple",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 5.5,
+        "ideal_min": 4.99,
+        "ideal_max": 5.634000000000017,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "low",
+        "current": 440.0,
+        "ideal_min": 499.4,
+        "ideal_max": 658.01,
+        "difference": -59.39999999999998
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 76.0,
+        "ideal_min": 72.0,
+        "ideal_max": 78.0,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 21062.0,
+        "ideal_min": 2500.0,
+        "ideal_max": 44838.63,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 31.5,
+        "ideal_min": 28.398999999999997,
+        "ideal_max": 33.506,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 99.0,
+        "ideal_min": 85.0,
+        "ideal_max": 99.0,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 5.5,
+      "fertility_ec": 440.0,
+      "humidity": 76.0,
+      "sunlight": 21062.0,
+      "soil_temp": 31.5,
+      "soil_moisture": 99.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:47.337523",
+    "original_index": 87,
+    "row_in_batch": 87
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.7505,
+    "parameter_confidence": 0.8333,
+    "ml_confidence": {
+      "XGBoost": 0.4193074107170105
+    },
+    "crop": "Pineapple",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "high",
+        "current": 9.0,
+        "ideal_min": 4.99,
+        "ideal_max": 5.634000000000017,
+        "difference": 3.365999999999983
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 624.0,
+        "ideal_min": 499.4,
+        "ideal_max": 658.01,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 72.0,
+        "ideal_min": 72.0,
+        "ideal_max": 78.0,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 43700.0,
+        "ideal_min": 2500.0,
+        "ideal_max": 44838.63,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 33.5,
+        "ideal_min": 28.398999999999997,
+        "ideal_max": 33.506,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 99.0,
+        "ideal_min": 85.0,
+        "ideal_max": 99.0,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 9.0,
+      "fertility_ec": 624.0,
+      "humidity": 72.0,
+      "sunlight": 43700.0,
+      "soil_temp": 33.5,
+      "soil_moisture": 99.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:47.356184",
+    "original_index": 88,
+    "row_in_batch": 88
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.8007,
+    "parameter_confidence": 1.0,
+    "ml_confidence": {
+      "XGBoost": 0.003341300878673792
+    },
+    "crop": "Eggplant",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 5.7,
+        "ideal_min": 5.298,
+        "ideal_max": 5.7,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 420.0,
+        "ideal_min": 403.94,
+        "ideal_max": 522.06,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 81.0,
+        "ideal_min": 75.98,
+        "ideal_max": 81.0,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 950.0,
+        "ideal_min": 909.8,
+        "ideal_max": 2600.0,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 28.0,
+        "ideal_min": 27.5,
+        "ideal_max": 31.2,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 80.0,
+        "ideal_min": 78.0,
+        "ideal_max": 87.03999999999999,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 5.7,
+      "fertility_ec": 420.0,
+      "humidity": 81.0,
+      "sunlight": 950.0,
+      "soil_temp": 28.0,
+      "soil_moisture": 80.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:47.376958",
+    "original_index": 89,
+    "row_in_batch": 89
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.8226,
+    "parameter_confidence": 1.0,
+    "ml_confidence": {
+      "XGBoost": 0.11281300336122513
+    },
+    "crop": "Eggplant",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 5.5,
+        "ideal_min": 5.298,
+        "ideal_max": 5.7,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 485.0,
+        "ideal_min": 403.94,
+        "ideal_max": 522.06,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 76.0,
+        "ideal_min": 75.98,
+        "ideal_max": 81.0,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 2400.0,
+        "ideal_min": 909.8,
+        "ideal_max": 2600.0,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 28.9,
+        "ideal_min": 27.5,
+        "ideal_max": 31.2,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 87.0,
+        "ideal_min": 78.0,
+        "ideal_max": 87.03999999999999,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 5.5,
+      "fertility_ec": 485.0,
+      "humidity": 76.0,
+      "sunlight": 2400.0,
+      "soil_temp": 28.9,
+      "soil_moisture": 87.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:47.397247",
+    "original_index": 90,
+    "row_in_batch": 90
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.8237,
+    "parameter_confidence": 0.8333,
+    "ml_confidence": {
+      "XGBoost": 0.7851349711418152
+    },
+    "crop": "Sili Labuyo",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 5.5,
+        "ideal_min": 5.2989999999999995,
+        "ideal_max": 5.8,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 485.0,
+        "ideal_min": 466.97,
+        "ideal_max": 503.02,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 76.0,
+        "ideal_min": 74.0,
+        "ideal_max": 79.01,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 2400.0,
+        "ideal_min": 2306.38,
+        "ideal_max": 2600.0,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 28.9,
+        "ideal_min": 27.0,
+        "ideal_max": 31.0,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "high",
+        "current": 87.0,
+        "ideal_min": 84.0,
+        "ideal_max": 85.02000000000001,
+        "difference": 1.9799999999999898
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 5.5,
+      "fertility_ec": 485.0,
+      "humidity": 76.0,
+      "sunlight": 2400.0,
+      "soil_temp": 28.9,
+      "soil_moisture": 87.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:47.417402",
+    "original_index": 91,
+    "row_in_batch": 91
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.8008,
+    "parameter_confidence": 0.9958,
+    "ml_confidence": {
+      "XGBoost": 0.020701337605714798
+    },
+    "crop": "Squash",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.7,
+        "ideal_min": 6.2,
+        "ideal_max": 6.8,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 530.0,
+        "ideal_min": 500.0,
+        "ideal_max": 600.0,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 74.0,
+        "ideal_min": 71.99,
+        "ideal_max": 79.0,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "low",
+        "current": 3000.0,
+        "ideal_min": 3172.26,
+        "ideal_max": 10000.0,
+        "difference": -172.26000000000022
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 29.5,
+        "ideal_min": 27.698999999999998,
+        "ideal_max": 32.0,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 92.0,
+        "ideal_min": 85.0,
+        "ideal_max": 94.02000000000001,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 6.7,
+      "fertility_ec": 530.0,
+      "humidity": 74.0,
+      "sunlight": 3000.0,
+      "soil_temp": 29.5,
+      "soil_moisture": 92.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:47.437705",
+    "original_index": 92,
+    "row_in_batch": 92
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.8009,
+    "parameter_confidence": 1.0,
+    "ml_confidence": {
+      "XGBoost": 0.004290694370865822
+    },
+    "crop": "Squash",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.3,
+        "ideal_min": 6.2,
+        "ideal_max": 6.8,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 525.0,
+        "ideal_min": 500.0,
+        "ideal_max": 600.0,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 74.0,
+        "ideal_min": 71.99,
+        "ideal_max": 79.0,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 3200.0,
+        "ideal_min": 3172.26,
+        "ideal_max": 10000.0,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 29.1,
+        "ideal_min": 27.698999999999998,
+        "ideal_max": 32.0,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 88.0,
+        "ideal_min": 85.0,
+        "ideal_max": 94.02000000000001,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 6.3,
+      "fertility_ec": 525.0,
+      "humidity": 74.0,
+      "sunlight": 3200.0,
+      "soil_temp": 29.1,
+      "soil_moisture": 88.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:47.457552",
+    "original_index": 93,
+    "row_in_batch": 93
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.855,
+    "parameter_confidence": 0.9179,
+    "ml_confidence": {
+      "XGBoost": 0.6033551096916199
+    },
+    "crop": "Sweet Potato",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.4,
+        "ideal_min": 5.9,
+        "ideal_max": 6.6,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 495.0,
+        "ideal_min": 471.95,
+        "ideal_max": 526.0,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 81.0,
+        "ideal_min": 79.0,
+        "ideal_max": 85.0,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1650.0,
+        "ideal_min": 1255.42,
+        "ideal_max": 2500.0,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.8,
+        "ideal_min": 25.398999999999997,
+        "ideal_max": 29.901,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "high",
+        "current": 92.0,
+        "ideal_min": 89.0,
+        "ideal_max": 91.01,
+        "difference": 0.9899999999999949
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 6.4,
+      "fertility_ec": 495.0,
+      "humidity": 81.0,
+      "sunlight": 1650.0,
+      "soil_temp": 27.8,
+      "soil_moisture": 92.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:47.477020",
+    "original_index": 94,
+    "row_in_batch": 94
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.7737,
+    "parameter_confidence": 0.8333,
+    "ml_confidence": {
+      "XGBoost": 0.5353809595108032
+    },
+    "crop": "Sweet Sorghum",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.0,
+        "ideal_min": 5.7,
+        "ideal_max": 6.3,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 515.0,
+        "ideal_min": 495.99,
+        "ideal_max": 532.0600000000001,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 78.0,
+        "ideal_min": 76.99,
+        "ideal_max": 84.0,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 2750.0,
+        "ideal_min": 2069.66,
+        "ideal_max": 3808.03,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 28.4,
+        "ideal_min": 26.498,
+        "ideal_max": 30.0,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "high",
+        "current": 89.0,
+        "ideal_min": 88.0,
+        "ideal_max": 88.01,
+        "difference": 0.9899999999999949
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 6.0,
+      "fertility_ec": 515.0,
+      "humidity": 78.0,
+      "sunlight": 2750.0,
+      "soil_temp": 28.4,
+      "soil_moisture": 89.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:47.497595",
+    "original_index": 95,
+    "row_in_batch": 95
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.8068,
+    "parameter_confidence": 1.0,
+    "ml_confidence": {
+      "XGBoost": 0.03416292741894722
+    },
+    "crop": "String Bean",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.9,
+        "ideal_min": 6.6,
+        "ideal_max": 7.2,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 540.0,
+        "ideal_min": 521.98,
+        "ideal_max": 555.03,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 76.0,
+        "ideal_min": 72.99,
+        "ideal_max": 79.0,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 2700.0,
+        "ideal_min": 2376.46,
+        "ideal_max": 3000.0,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 29.0,
+        "ideal_min": 26.897,
+        "ideal_max": 31.403,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 93.0,
+        "ideal_min": 90.0,
+        "ideal_max": 96.0,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 6.9,
+      "fertility_ec": 540.0,
+      "humidity": 76.0,
+      "sunlight": 2700.0,
+      "soil_temp": 29.0,
+      "soil_moisture": 93.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:47.516782",
+    "original_index": 96,
+    "row_in_batch": 96
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.953,
+    "parameter_confidence": 1.0,
+    "ml_confidence": {
+      "XGBoost": 0.7650240659713745
+    },
+    "crop": "Gabi",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.5,
+        "ideal_min": 6.399,
+        "ideal_max": 7.0,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 465.0,
+        "ideal_min": 458.0,
+        "ideal_max": 495.1,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 82.0,
+        "ideal_min": 80.0,
+        "ideal_max": 85.01,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1200.0,
+        "ideal_min": 1099.0,
+        "ideal_max": 9371.65,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.6,
+        "ideal_min": 26.0,
+        "ideal_max": 28.003,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 95.0,
+        "ideal_min": 90.0,
+        "ideal_max": 98.01,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 6.5,
+      "fertility_ec": 465.0,
+      "humidity": 82.0,
+      "sunlight": 1200.0,
+      "soil_temp": 27.6,
+      "soil_moisture": 95.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:47.537071",
+    "original_index": 97,
+    "row_in_batch": 97
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.9264,
+    "parameter_confidence": 1.0,
+    "ml_confidence": {
+      "XGBoost": 0.6320556402206421
+    },
+    "crop": "Gabi",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.5,
+        "ideal_min": 6.399,
+        "ideal_max": 7.0,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 485.0,
+        "ideal_min": 458.0,
+        "ideal_max": 495.1,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 82.0,
+        "ideal_min": 80.0,
+        "ideal_max": 85.01,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1200.0,
+        "ideal_min": 1099.0,
+        "ideal_max": 9371.65,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.5,
+        "ideal_min": 26.0,
+        "ideal_max": 28.003,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 98.0,
+        "ideal_min": 90.0,
+        "ideal_max": 98.01,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 6.5,
+      "fertility_ec": 485.0,
+      "humidity": 82.0,
+      "sunlight": 1200.0,
+      "soil_temp": 27.5,
+      "soil_moisture": 98.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:47.556696",
+    "original_index": 98,
+    "row_in_batch": 98
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.8863,
+    "parameter_confidence": 0.998,
+    "ml_confidence": {
+      "XGBoost": 0.4392806887626648
+    },
+    "crop": "Gabi",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.7,
+        "ideal_min": 6.399,
+        "ideal_max": 7.0,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 470.0,
+        "ideal_min": 458.0,
+        "ideal_max": 495.1,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 84.0,
+        "ideal_min": 80.0,
+        "ideal_max": 85.01,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "low",
+        "current": 1000.0,
+        "ideal_min": 1099.0,
+        "ideal_max": 9371.65,
+        "difference": -99.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.1,
+        "ideal_min": 26.0,
+        "ideal_max": 28.003,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 96.0,
+        "ideal_min": 90.0,
+        "ideal_max": 98.01,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 6.7,
+      "fertility_ec": 470.0,
+      "humidity": 84.0,
+      "sunlight": 1000.0,
+      "soil_temp": 27.1,
+      "soil_moisture": 96.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:47.575406",
+    "original_index": 99,
+    "row_in_batch": 99
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.8515,
+    "parameter_confidence": 0.9753,
+    "ml_confidence": {
+      "XGBoost": 0.35621824860572815
+    },
+    "crop": "Gabi",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.4,
+        "ideal_min": 6.399,
+        "ideal_max": 7.0,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 475.0,
+        "ideal_min": 458.0,
+        "ideal_max": 495.1,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 80.0,
+        "ideal_min": 80.0,
+        "ideal_max": 85.01,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1300.0,
+        "ideal_min": 1099.0,
+        "ideal_max": 9371.65,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "high",
+        "current": 28.3,
+        "ideal_min": 26.0,
+        "ideal_max": 28.003,
+        "difference": 0.2970000000000006
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 97.0,
+        "ideal_min": 90.0,
+        "ideal_max": 98.01,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 6.4,
+      "fertility_ec": 475.0,
+      "humidity": 80.0,
+      "sunlight": 1300.0,
+      "soil_temp": 28.3,
+      "soil_moisture": 97.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:47.595465",
+    "original_index": 100,
+    "row_in_batch": 100
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.8604,
+    "parameter_confidence": 0.9794,
+    "ml_confidence": {
+      "XGBoost": 0.38444241881370544
+    },
+    "crop": "Gabi",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.7,
+        "ideal_min": 6.399,
+        "ideal_max": 7.0,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 460.0,
+        "ideal_min": 458.0,
+        "ideal_max": 495.1,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 85.0,
+        "ideal_min": 80.0,
+        "ideal_max": 85.01,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1100.0,
+        "ideal_min": 1099.0,
+        "ideal_max": 9371.65,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.3,
+        "ideal_min": 26.0,
+        "ideal_max": 28.003,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "high",
+        "current": 99.0,
+        "ideal_min": 90.0,
+        "ideal_max": 98.01,
+        "difference": 0.9899999999999949
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 6.7,
+      "fertility_ec": 460.0,
+      "humidity": 85.0,
+      "sunlight": 1100.0,
+      "soil_temp": 27.3,
+      "soil_moisture": 99.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:47.616404",
+    "original_index": 101,
+    "row_in_batch": 101
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.8269,
+    "parameter_confidence": 0.9281,
+    "ml_confidence": {
+      "XGBoost": 0.42197784781455994
+    },
+    "crop": "Gabi",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "low",
+        "current": 6.3,
+        "ideal_min": 6.399,
+        "ideal_max": 7.0,
+        "difference": -0.0990000000000002
+      },
+      "fertility_ec": {
+        "status": "high",
+        "current": 505.0,
+        "ideal_min": 458.0,
+        "ideal_max": 495.1,
+        "difference": 9.899999999999977
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 83.0,
+        "ideal_min": 80.0,
+        "ideal_max": 85.01,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1400.0,
+        "ideal_min": 1099.0,
+        "ideal_max": 9371.65,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.6,
+        "ideal_min": 26.0,
+        "ideal_max": 28.003,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 94.0,
+        "ideal_min": 90.0,
+        "ideal_max": 98.01,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 6.3,
+      "fertility_ec": 505.0,
+      "humidity": 83.0,
+      "sunlight": 1400.0,
+      "soil_temp": 27.6,
+      "soil_moisture": 94.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:47.637336",
+    "original_index": 102,
+    "row_in_batch": 102
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.9654,
+    "parameter_confidence": 1.0,
+    "ml_confidence": {
+      "XGBoost": 0.8269420266151428
+    },
+    "crop": "Gabi",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.8,
+        "ideal_min": 6.399,
+        "ideal_max": 7.0,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 480.0,
+        "ideal_min": 458.0,
+        "ideal_max": 495.1,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 80.0,
+        "ideal_min": 80.0,
+        "ideal_max": 85.01,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1600.0,
+        "ideal_min": 1099.0,
+        "ideal_max": 9371.65,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 28.0,
+        "ideal_min": 26.0,
+        "ideal_max": 28.003,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 96.0,
+        "ideal_min": 90.0,
+        "ideal_max": 98.01,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 6.8,
+      "fertility_ec": 480.0,
+      "humidity": 80.0,
+      "sunlight": 1600.0,
+      "soil_temp": 28.0,
+      "soil_moisture": 96.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:47.657198",
+    "original_index": 103,
+    "row_in_batch": 103
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.9661,
+    "parameter_confidence": 1.0,
+    "ml_confidence": {
+      "XGBoost": 0.8304421305656433
+    },
+    "crop": "Gabi",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.6,
+        "ideal_min": 6.399,
+        "ideal_max": 7.0,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 495.0,
+        "ideal_min": 458.0,
+        "ideal_max": 495.1,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 81.0,
+        "ideal_min": 80.0,
+        "ideal_max": 85.01,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1500.0,
+        "ideal_min": 1099.0,
+        "ideal_max": 9371.65,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.9,
+        "ideal_min": 26.0,
+        "ideal_max": 28.003,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 95.0,
+        "ideal_min": 90.0,
+        "ideal_max": 98.01,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 6.6,
+      "fertility_ec": 495.0,
+      "humidity": 81.0,
+      "sunlight": 1500.0,
+      "soil_temp": 27.9,
+      "soil_moisture": 95.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:47.675953",
+    "original_index": 104,
+    "row_in_batch": 104
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.8378,
+    "parameter_confidence": 1.0,
+    "ml_confidence": {
+      "XGBoost": 0.18901048600673676
+    },
+    "crop": "Upo",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 6.9,
+        "ideal_min": 6.7,
+        "ideal_max": 7.101,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 540.0,
+        "ideal_min": 530.0,
+        "ideal_max": 551.0,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 76.0,
+        "ideal_min": 73.0,
+        "ideal_max": 79.0,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 2700.0,
+        "ideal_min": 2502.08,
+        "ideal_max": 3000.0,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 29.0,
+        "ideal_min": 26.5,
+        "ideal_max": 31.202,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 93.0,
+        "ideal_min": 90.0,
+        "ideal_max": 96.0,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 6.9,
+      "fertility_ec": 540.0,
+      "humidity": 76.0,
+      "sunlight": 2700.0,
+      "soil_temp": 29.0,
+      "soil_moisture": 93.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:47.697736",
+    "original_index": 105,
+    "row_in_batch": 105
+  },
+  {
+    "is_suitable": true,
+    "final_confidence": 0.983,
+    "parameter_confidence": 1.0,
+    "ml_confidence": {
+      "XGBoost": 0.9148738384246826
+    },
+    "crop": "Ube",
+    "parameters_analysis": {
+      "soil_ph": {
+        "status": "optimal",
+        "current": 5.4,
+        "ideal_min": 5.2,
+        "ideal_max": 5.6,
+        "difference": 0.0
+      },
+      "fertility_ec": {
+        "status": "optimal",
+        "current": 470.0,
+        "ideal_min": 460.0,
+        "ideal_max": 480.0,
+        "difference": 0.0
+      },
+      "humidity": {
+        "status": "optimal",
+        "current": 83.0,
+        "ideal_min": 80.0,
+        "ideal_max": 85.0,
+        "difference": 0.0
+      },
+      "sunlight": {
+        "status": "optimal",
+        "current": 1300.0,
+        "ideal_min": 1000.0,
+        "ideal_max": 2000.0,
+        "difference": 0.0
+      },
+      "soil_temp": {
+        "status": "optimal",
+        "current": 27.9,
+        "ideal_min": 26.0,
+        "ideal_max": 29.2,
+        "difference": 0.0
+      },
+      "soil_moisture": {
+        "status": "optimal",
+        "current": 90.0,
+        "ideal_min": 86.0,
+        "ideal_max": 90.0,
+        "difference": 0.0
+      }
+    },
+    "model_used": [
+      "XGBoost"
+    ],
+    "input_values": {
+      "soil_ph": 5.4,
+      "fertility_ec": 470.0,
+      "humidity": 83.0,
+      "sunlight": 1300.0,
+      "soil_temp": 27.9,
+      "soil_moisture": 90.0
+    },
+    "threshold_used": 0.7,
+    "timestamp": "2025-12-17T08:09:47.717486",
+    "original_index": 106,
+    "row_in_batch": 106
+  }
+]

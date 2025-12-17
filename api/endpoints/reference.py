@@ -392,10 +392,18 @@ async def compare_crops(
     Compare requirements between multiple crops.
     """
     try:
-        if not df:
+        # Check if system is initialized
+        if df is None:
             raise HTTPException(
                 status_code=503,
-                detail="Dataset not loaded"
+                detail="Requirements system not initialized"
+            )
+        
+        # Check if dataset is empty
+        if df.empty:
+            raise HTTPException(
+                status_code=503,
+                detail="Dataset is empty"
             )
         
         # Validate crops
@@ -410,7 +418,13 @@ async def compare_crops(
         comparison = {}
         
         # If specific feature requested
-        if feature and feature in feature_columns:
+        if feature:
+            if feature not in feature_columns:
+                raise HTTPException(
+                    status_code=400,
+                    detail=f"Feature '{feature}' not found. Available features: {', '.join(feature_columns)}"
+                )
+            
             for crop in crops:
                 crop_df = df[df["label"] == crop]
                 if not crop_df.empty:

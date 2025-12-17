@@ -1,0 +1,89 @@
+{
+  "dataset_signature": "5f8015f3c075b7bf",
+  "models": {
+    "Random Forest": {
+      "best_params": {
+        "n_estimators": 300,
+        "min_samples_split": 10,
+        "min_samples_leaf": 1,
+        "max_features": "sqrt",
+        "max_depth": 20,
+        "bootstrap": true
+      },
+      "metrics": {
+        "cv_score": 0.939375
+      },
+      "saved_date": "2025-12-16 15:43:19",
+      "model_type": "Random Forest"
+    }
+  },
+  "last_updated": "2025-12-16 15:43:19",
+  "dataset_info": {
+    "num_samples": 5331,
+    "num_classes": 54,
+    "features": [
+      "soil_ph",
+      "fertility_ec",
+      "humidity",
+      "sunlight",
+      "soil_temp",
+      "soil_moisture"
+    ],
+    "crops": [
+      "Ampalaya",
+      "Apple",
+      "Avocado",
+      "Bamboo",
+      "Banana",
+      "Black Pepper",
+      "Cacao",
+      "Calamansi",
+      "Cassava",
+      "Coconut",
+      "Coffee",
+      "Durian",
+      "Eggplant",
+      "Forage Grass",
+      "Gabi",
+      "Ginger",
+      "Grapes",
+      "Guyabano",
+      "Ipil Ipil",
+      "Jackfruit",
+      "Kamoteng Baging",
+      "Katuray",
+      "Kulo",
+      "Lanzones",
+      "Lipote",
+      "Maize",
+      "Mango",
+      "Mungbean",
+      "Mustard",
+      "Okra",
+      "Onion",
+      "Orange",
+      "Orchid",
+      "Oyster Mushroom",
+      "Papaya",
+      "Patola",
+      "Pechay",
+      "Pineapple",
+      "Radish",
+      "Rambutan",
+      "Rice",
+      "Sigarilyas",
+      "Sili Labuyo",
+      "Sili Panigang",
+      "Sili Tingala",
+      "Snap Bean",
+      "Squash",
+      "String Bean",
+      "Sweet Potato",
+      "Sweet Sorghum",
+      "Tomato",
+      "Ube",
+      "Upo",
+      "Watermelon"
+    ]
+  }
+}

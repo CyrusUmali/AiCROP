@@ -159,8 +159,8 @@ class CropDataGenerator:
             soil_ph = self._generate_feature(ph_sample_mean, *ph_range, variation=0.08, dist="normal")
             soil_ph = round(soil_ph, 1)
             
-            # 2. EC: Lognormal 
-            fertility_ec = round(self._generate_feature(ec_sample_mean, *ec_range, variation=0.05, dist="normal"), 1)
+              
+            fertility_ec = int(self._generate_feature(ec_sample_mean, *ec_range, variation=0.05, dist="normal") + 0.5)
             
             # 3. Humidity: Triangular
             # humidity = round(self._generate_feature(humidity_sample_mean, *humidity_range, variation=0.12, dist="triangular"))
@@ -464,9 +464,9 @@ if __name__ == "__main__":
     print("\n=== Initial SPC Data Summary ===")
     generator.show_dataset_summary()
  
-    #(a) Ampalaya - tropical, heat-tolerant, moderate fertility
+   
     generator.fill_crop_to_target(
-        crop_name="Ampalaya",
+        crop_name="Ampalaya", 
         target_count=100,
         ph_range=(5.5, 7.3), ph_mean=6.5,
         ec_range=(523, 532), ec_mean=527,                
@@ -500,16 +500,17 @@ if __name__ == "__main__":
         soil_moisture_range=(55, 75), soil_moisture_mean=65
     )
 
-    # Lanzones - very sensitive to drought, thrives in shaded/humid conditions
+    
+   
     generator.fill_crop_to_target(
         crop_name="Lanzones",
         target_count=100,
-        ph_range=(4, 6.0), ph_mean=5.3,
-        ec_range=(488, 950), ec_mean=750,
-        humidity_range=(66, 86), humidity_mean=78,
+        ph_range=(3.2, 6.2), ph_mean=5.3,
+        ec_range=(468, 950), ec_mean=750,
+        humidity_range=(64, 88), humidity_mean=76,
         sunlight_range=(800, 4500), sunlight_mean=2700,   
-        soil_temp_range=(26, 31), soil_temp_mean=27,
-        soil_moisture_range=(83, 99), soil_moisture_mean=90
+        soil_temp_range=(25, 31), soil_temp_mean=27,
+        soil_moisture_range=(82, 99), soil_moisture_mean=90
     )
 
     # Durian - deep-rooted, high water demand, sun-loving
@@ -524,32 +525,33 @@ if __name__ == "__main__":
         soil_moisture_range=(65, 85), soil_moisture_mean=75
     )
 
+ 
+
     # Rambutan - requires high humidity, fertile soils, partial to full sun
     generator.fill_crop_to_target(
         crop_name="Rambutan",
         target_count=100,
-        ph_range=(5.0, 6.5), ph_mean=5.8,
-        ec_range=(488, 760), ec_mean=600,
-        humidity_range=(80, 87), humidity_mean=84   ,
-        sunlight_range=(800, 2300), sunlight_mean=1500,
+        ph_range=(5.0, 6.7), ph_mean=5.8,
+        ec_range=(418, 770), ec_mean=600,
+        humidity_range=(78, 90), humidity_mean=84   ,
+        sunlight_range=(770, 2300), sunlight_mean=1500,
         soil_temp_range=(26, 28.5), soil_temp_mean=27,
-        soil_moisture_range=(85, 99), soil_moisture_mean=93
+        soil_moisture_range=(78, 99), soil_moisture_mean=90
     )
 
-    
-
-
+     
+ 
  
     # Calamansi - tropical, tolerates humidity, grows well in lowland Philippines
     generator.fill_crop_to_target(
         crop_name="Calamansi",
         target_count=100,
-        ph_range=(4.8, 5.3), ph_mean=5,
-        ec_range=(430, 442), ec_mean=435,
-        humidity_range=(77, 81), humidity_mean=79,   
-        sunlight_range=(1800, 2100), sunlight_mean=2000,
-        soil_temp_range=(27.8, 29.3), soil_temp_mean=28.1,   
-        soil_moisture_range=(78, 86), soil_moisture_mean=82
+        ph_range=(5.2, 6.3), ph_mean=5.7,
+        ec_range=(400, 470), ec_mean=435,
+        humidity_range=(75, 90), humidity_mean=83,   
+        sunlight_range=(600, 2200), sunlight_mean=1400,
+        soil_temp_range=(25.5, 29.3), soil_temp_mean=27.1,   
+        soil_moisture_range=(80, 90), soil_moisture_mean=85
     )
 
     # Orange - subtropical, prefers drier air, cooler winters help fruiting
@@ -567,9 +569,7 @@ if __name__ == "__main__":
 
 
 
-
-
-    # print("Legumes: snap bean, string bean, sigarilyas, mungbean")
+ 
 
   # === Legumes Group ===
 
@@ -685,8 +685,9 @@ if __name__ == "__main__":
         soil_moisture_range=(90, 96), soil_moisture_mean=93.0
     )
 
- 
-    #(L) Squash (Calabaza) - drought-tolerant, wide pH and soil range
+  
+     
+
     generator.fill_crop_to_target(
         crop_name="Squash",
         target_count=100,
@@ -695,7 +696,7 @@ if __name__ == "__main__":
         humidity_range=(68, 80), humidity_mean=75,           
         sunlight_range=(2000, 10000), sunlight_mean=6000,
         soil_temp_range=(27, 32), soil_temp_mean=30,
-        soil_moisture_range=(86, 93), soil_moisture_mean=90  # drought-tolerant
+        soil_moisture_range=(85, 94), soil_moisture_mean=90  # drought-tolerant
     )
 
 
@@ -834,36 +835,38 @@ if __name__ == "__main__":
         soil_moisture_range=(88, 99), soil_moisture_mean=95
     )
 
+    
     generator.fill_crop_to_target(
         crop_name="Katuray",
         target_count=100,
         ph_range=(5.5, 6.5), ph_mean=6,
-        ec_range=(340, 368), ec_mean=354,                 
-        humidity_range=(75, 81), humidity_mean=78 ,
+        ec_range=(370, 450), ec_mean=410,                 
+        humidity_range=(74, 82), humidity_mean=78 ,
         sunlight_range=(2000, 2500), sunlight_mean=2250,   
-        soil_temp_range=(28.5 , 29), soil_temp_mean=28.4,
-        soil_moisture_range=(80, 88), soil_moisture_mean=83
-    )
-
-    generator.fill_crop_to_target(
-        crop_name="Kulo",
-        target_count=100,
-        ph_range=(5.5, 6.5), ph_mean=6,
-        ec_range=(450, 480), ec_mean=470,                 
-        humidity_range=(80, 88), humidity_mean=84 ,
-        sunlight_range=(1030, 1080), sunlight_mean=1050,   
-        soil_temp_range=(26.6 , 28), soil_temp_mean=27.4,
+        soil_temp_range=(26.5 , 31), soil_temp_mean=28.4,
         soil_moisture_range=(80, 88), soil_moisture_mean=83
     )
  
     generator.fill_crop_to_target(
+        crop_name="Kulo",
+        target_count=100,
+        ph_range=(5.2, 6.2), ph_mean=5.7,
+        ec_range=(440, 500), ec_mean=470,                 
+        humidity_range=(80, 88), humidity_mean=84 ,
+        sunlight_range=(830, 1280), sunlight_mean=1050,   
+        soil_temp_range=(25.6 , 31), soil_temp_mean=27.4,
+        soil_moisture_range=(84, 93), soil_moisture_mean=89
+    )
+ 
+ 
+    generator.fill_crop_to_target(
         crop_name="Lipote",
         target_count=100,
-        ph_range=(5.5, 6.5), ph_mean=6,
+        ph_range=(5.3, 6.1), ph_mean=5.7,
         ec_range=(450, 480), ec_mean=420,                 
-        humidity_range=(78, 84), humidity_mean=81 ,
-        sunlight_range=(935, 965), sunlight_mean=950 ,   
-        soil_temp_range=(26.6 , 28), soil_temp_mean=27.4,
+        humidity_range=(78, 85), humidity_mean=81 ,
+        sunlight_range=(835, 1255), sunlight_mean=950 ,   
+        soil_temp_range=(26.6 , 29), soil_temp_mean=27.4,
         soil_moisture_range=(78, 83), soil_moisture_mean=80
     )
  
@@ -915,47 +918,47 @@ if __name__ == "__main__":
         soil_moisture_range=(88, 99), soil_moisture_mean=95.8  
     )
    
+ 
     generator.fill_crop_to_target(
         crop_name="Jackfruit",
         target_count=100,
         ph_range=(5.5, 6.3), ph_mean=6,
-        ec_range=(465, 475), ec_mean=470,                  # lower fertility need
+        ec_range=(455, 495), ec_mean=470,                  # lower fertility need
         humidity_range=(80, 87), humidity_mean=84,
-        sunlight_range=(1020, 1080), sunlight_mean=1050,  # tolerates partial sun
-        soil_temp_range=(26, 29), soil_temp_mean=27.4,
-        soil_moisture_range=(87, 91), soil_moisture_mean=89  # moderate water demand
+        sunlight_range=(820, 1280), sunlight_mean=1050,  # tolerates partial sun
+        soil_temp_range=(26, 30), soil_temp_mean=27.4,
+        soil_moisture_range=(85, 93), soil_moisture_mean=89  # moderate water demand
     )
 
-    # Coconut - hardy palm, tolerates salinity, thrives in coastal full sun
+    
+ 
+
     generator.fill_crop_to_target(
         crop_name="Coconut",
         target_count=100,
-        ph_range=(5.6, 6.8), ph_mean=6.4,
-        ec_range=(340, 520), ec_mean=430,
-        humidity_range=(69, 86), humidity_mean=78,
-        sunlight_range=(970, 13000), sunlight_mean=11591,  
-        soil_temp_range=(26.8, 34), soil_temp_mean=29,
+        ph_range=(5.4, 6.8), ph_mean=6.4,
+        ec_range=(330, 560), ec_mean=430,
+        humidity_range=(67, 86), humidity_mean=78,
+        sunlight_range=(950, 13000), sunlight_mean=11591,  
+        soil_temp_range=(25.8, 34), soil_temp_mean=29,
         soil_moisture_range=(84, 99), soil_moisture_mean=90   
     )
 
 
-    
+     
 
-
-    # print("High-sun crops: maize, papaya, watermelon")
-
-    # === High-sun Crops Group ===
+ 
 
     # Maize - heavy feeder, adaptable but needs consistent water during grain fill
     generator.fill_crop_to_target(
         crop_name="Maize",
         target_count=100,
-        ph_range=(5.5, 7.0), ph_mean=6.2,
-        ec_range=(477, 524), ec_mean=500,               # high nutrient demand
-        humidity_range=(75, 85), humidity_mean=80,         # slightly lower tolerance
-        sunlight_range=(1400, 3000), sunlight_mean=2200,
-        soil_temp_range=(27, 30), soil_temp_mean=28.5,
-        soil_moisture_range=(84, 92), soil_moisture_mean=65
+        ph_range=(5.0, 6.5), ph_mean=5.7,
+        ec_range=(460, 540), ec_mean=500,               
+        humidity_range=(75, 85), humidity_mean=80,          
+        sunlight_range=(1300, 3000), sunlight_mean=2200,
+        soil_temp_range=(26.5, 30), soil_temp_mean=28.5,
+        soil_moisture_range=(84, 93), soil_moisture_mean=87
     )
 
  
@@ -986,10 +989,7 @@ if __name__ == "__main__":
 
     
 
-
-
-    # print("Nightshades: tomato, eggplant")
-
+ 
     
         # Tomato - prefers cooler root zone, high fertility, consistent moisture
     generator.fill_crop_to_target(
@@ -1003,16 +1003,18 @@ if __name__ == "__main__":
         soil_moisture_range=(60, 80), soil_moisture_mean=70  # steady moisture for fruit set
     )
 
-    #(a) Eggplant - more heat-tolerant, slightly lower fertility requirement, tolerates wider conditions
+ 
+  
+
     generator.fill_crop_to_target(
         crop_name="Eggplant",
         target_count=100,
-        ph_range=(5.8, 6.3), ph_mean=6,
-        ec_range=(482, 488), ec_mean=485,
-        humidity_range=(74, 78), humidity_mean=76,       
-        sunlight_range=(2300, 2500), sunlight_mean=2400,
-        soil_temp_range=(28.5, 29.3), soil_temp_mean=28.9,    
-        soil_moisture_range=(85, 89), soil_moisture_mean=87   
+        ph_range=(5.1, 5.9), ph_mean=5.5,
+        ec_range=(400, 528), ec_mean=485,
+        humidity_range=(73, 83), humidity_mean=78,       
+        sunlight_range=(900, 2600), sunlight_mean=1700,
+        soil_temp_range=(27.5, 31.3), soil_temp_mean=28.9,    
+        soil_moisture_range=(78, 91), soil_moisture_mean=87   
     )
 
 
@@ -1111,18 +1113,15 @@ if __name__ == "__main__":
 
 
 
-
-   
-   
-    # Mango - drought-tolerant tropical tree, full sun, warmer soils, lower soil moisture for good fruiting
+ 
     generator.fill_crop_to_target(
         crop_name="Mango",
         target_count=100,
         ph_range=(5.5, 7.5), ph_mean=6.5,
-        ec_range=(400, 530), ec_mean=460,           
-        humidity_range=(78, 90), humidity_mean=85,    
-        sunlight_range=(980, 1110), sunlight_mean=1050,
-        soil_temp_range=(26, 30), soil_temp_mean=29.5,  
+        ec_range=(380, 530), ec_mean=460,           
+        humidity_range=(76, 91), humidity_mean=85,    
+        sunlight_range=(950, 1150), sunlight_mean=1050,
+        soil_temp_range=(26, 31), soil_temp_mean=29.5,  
         soil_moisture_range=(78, 99), soil_moisture_mean=88   
     )
 
@@ -1138,15 +1137,16 @@ if __name__ == "__main__":
         soil_moisture_range=(40, 75), soil_moisture_mean=55  # tolerates some dryness
     )
 
-    # (L)Pineapple - prefers acidic, well-drained soils; drought-tolerant relative, high light requirement
+  
+    
     generator.fill_crop_to_target(
         crop_name="Pineapple",
         target_count=100,
         ph_range=(4.5, 6.0), ph_mean=5.3,
-        ec_range=(430, 650), ec_mean=540,              
-        humidity_range=(70, 78), humidity_mean=75,
+        ec_range=(430, 750), ec_mean=624,              
+        humidity_range=(70, 80), humidity_mean=75,
         sunlight_range=(2500, 45000), sunlight_mean=20000,
-        soil_temp_range=(28, 34.5), soil_temp_mean=31,
+        soil_temp_range=(27, 34.5), soil_temp_mean=31,
         soil_moisture_range=(85, 99), soil_moisture_mean=92 
     )
 

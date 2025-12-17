@@ -1,6 +1,10 @@
 soil_ph,fertility_ec,humidity,sunlight,soil_temp,soil_moisture,label
 6.3,525,74,3200,29.1,88,Ampalaya
 6.7,530,74,3000,29.5,92,Ampalaya
+6.3,526,72,3180,29.2,89,Ampalaya
+6.7,529,73,3010,29.2,87,Ampalaya
+6.3,527,71,3160,29.0,90,Ampalaya
+6.7,528,73,3050,29.2,91,Ampalaya
 5.5,455,85,1150,27.1,85,Avocado
 6.1,415,79,1750,28.3,83,Avocado
 6.2,440,80,1450,28.1,88,Avocado
@@ -24,6 +28,7 @@ soil_ph,fertility_ec,humidity,sunlight,soil_temp,soil_moisture,label
 5.7,420,83,1050,27.2,85,Cacao
 6,517,88,1094,28.5,99,Cassava
 5.5,450,86,700,26.5,87,Calamansi
+6,435,79,2000,28.1,82,Calamansi
 6.5,475,80,1215,27,99,Coconut
 6.2,480,82,1500,27.5,90,Coconut
 6.3,460,78,1800,28.2,90,Coconut
@@ -35,6 +40,10 @@ soil_ph,fertility_ec,humidity,sunlight,soil_temp,soil_moisture,label
 6,515,78,2750,28.4,89,Maize
 6.5,475,80,1215,27,99,Coffee
 5.5,450,86,700,26.5,87,Coffee
+6.5,474,81,1215,27,98,Coffee
+5.6,456,85,720,26.5,88,Coffee
+6.5,470,83,1235,27,97,Coffee
+5.7,456,85,720,26.5,88,Coffee
 5.5,485,76,2400,28.9,87,Eggplant
 6.8,405,79,1900,28,84,Forage Grass
 6.3,460,78,1800,28.2,90,Ginger
@@ -67,7 +76,6 @@ soil_ph,fertility_ec,humidity,sunlight,soil_temp,soil_moisture,label
 6.8,550,75,2500,29.2,95,Banana
 6.4,495,81,1650,27.8,92,Banana
 5.4,470,83,1300,27.9,90,Banana
-6,435,79,2000,28.1,82,Calamansi
 4.5,359,70,15839,34.6,99,Kamoteng Baging
 6.2,410,78,2200,28.4,83,Katuray
 5.7,470,84,1050,27.4,89,Kulo

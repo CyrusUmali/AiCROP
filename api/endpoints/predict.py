@@ -72,21 +72,12 @@ class PredictionResponse(BaseModel):
 
 ZERO_THRESHOLD = 1e-6
 
-
-@router.get("/available-models")
-async def get_available_prediction_models():
-    """Get list of available models for prediction"""
-    return {
-        "available_models": list(models_data.keys()),
-        "available_crops": crop_classes,
-        "features": feature_columns
-    }
-
+ 
 
 @router.post("/predict")
 async def predict_crop(
     request: CropPredictionRequest,
-    min_confidence: float = 0.3,
+    min_confidence: float = 0.05,
     max_recommendations: int = 10,
     selected_models: Optional[List[str]] = None
 ):
@@ -119,8 +110,7 @@ async def predict_crop(
                 detail=f"Invalid models selected: {invalid_models}. Available models: {list(models_data.keys())}"
             )
 
-        # Determine if we should exclude 0-confidence predictions
-        exclude_zero_conf = len(models_to_use) == 1
+        # REMOVED: exclude_zero_conf = len(models_to_use) == 1
 
         # Get predictions from selected models
         all_predictions = []
@@ -145,9 +135,9 @@ async def predict_crop(
                 probas = model.predict_proba(input_processed)[0]
                 
                 for class_idx, prob in enumerate(probas):
-                    # Skip 0-confidence predictions ONLY if single model is selected
-                    if exclude_zero_conf and prob <= ZERO_THRESHOLD:
-                        continue
+                    # REMOVED: Zero-confidence filtering
+                    # if exclude_zero_conf and prob <= ZERO_THRESHOLD:
+                    #     continue
                     
                     crop_name = label_encoder.inverse_transform([class_idx])[0]
                     all_predictions.append({
@@ -209,7 +199,7 @@ async def predict_crop(
         # Sort by confidence (descending)
         recommendations.sort(key=lambda x: x["confidence"], reverse=True)
 
-        # Apply confidence threshold (but always return at least top 3)
+        # Apply confidence threshold
         suitable_crops = [
             crop for crop in recommendations 
             if crop["confidence"] >= min_confidence
@@ -232,7 +222,6 @@ async def predict_crop(
             "confidence_threshold": min_confidence,
             "total_crops_considered": len(recommendations),
             "note": "Showing top 3 crops as fallback" if len(suitable_crops) < 3 else None,
-            "excluded_zero_confidence": exclude_zero_conf,
             "models_used": models_to_use
         }
     
@@ -242,101 +231,4 @@ async def predict_crop(
         raise HTTPException(
             status_code=500,
             detail=f"Prediction failed: {str(e)}"
-        )
-
-
-@router.post("/predict/best-model")
-async def predict_with_best_model(
-    request: CropPredictionRequest,
-    min_confidence: float = 0.3,
-    max_recommendations: int = 10
-):
-    """Predict using only the best performing model (based on accuracy)"""
-    try:
-        # Load model summary to find best model
-        with open(SUMMARY_PATH, 'r') as f:
-            summary = json.load(f)
-        
-        best_model_name = summary.get('best_model')
-        if not best_model_name:
-            # If no best model specified, use the one with highest accuracy
-            best_model_name = max(
-                summary['model_performance'].items(),
-                key=lambda x: x[1]['accuracy']
-            )[0]
-        
-        # Call the main predict function with only the best model
-        response = await predict_crop(
-            request=request,
-            min_confidence=min_confidence,
-            max_recommendations=max_recommendations,
-            selected_models=[best_model_name]
-        )
-        
-        # Add best model info to response
-        if response.get("status") == "success":
-            response["best_model_used"] = best_model_name
-            response["best_model_accuracy"] = summary['model_performance'][best_model_name]['accuracy']
-        
-        return response
-    
-    except Exception as e:
-        raise HTTPException(
-            status_code=500,
-            detail=f"Best model prediction failed: {str(e)}"
-        )
-
-
-@router.post("/predict/ensemble")
-async def predict_with_ensemble(
-    request: CropPredictionRequest,
-    ensemble_type: str = "all",  # "all", "tree_based", "top2"
-    min_confidence: float = 0.3,
-    max_recommendations: int = 10
-):
-    """Predict using different ensemble strategies"""
-    try:
-        # Load model summary for performance data
-        with open(SUMMARY_PATH, 'r') as f:
-            summary = json.load(f)
-        
-        # Determine which models to use based on ensemble type
-        all_models = list(models_data.keys())
-        
-        if ensemble_type == "tree_based":
-            # Use only tree-based models
-            models_to_use = [m for m in all_models if m in ['Random Forest', 'Decision Tree', 'XGBoost']]
-        elif ensemble_type == "top2":
-            # Use top 2 models by accuracy
-            sorted_models = sorted(
-                summary['model_performance'].items(),
-                key=lambda x: x[1]['accuracy'],
-                reverse=True
-            )[:2]
-            models_to_use = [m[0] for m in sorted_models]
-        else:  # "all" or default
-            models_to_use = all_models
-        
-        if not models_to_use:
-            models_to_use = all_models  # Fallback to all models
-        
-        # Call the main predict function
-        response = await predict_crop(
-            request=request,
-            min_confidence=min_confidence,
-            max_recommendations=max_recommendations,
-            selected_models=models_to_use
-        )
-        
-        # Add ensemble info to response
-        if response.get("status") == "success":
-            response["ensemble_type"] = ensemble_type
-            response["ensemble_models"] = models_to_use
-        
-        return response
-    
-    except Exception as e:
-        raise HTTPException(
-            status_code=500,
-            detail=f"Ensemble prediction failed: {str(e)}"
         )
