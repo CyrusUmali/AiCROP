@@ -1,0 +1,41 @@
+MODEL CHECK
+========================================
+Available (36):
+Ampalaya
+Avocado
+Bamboo
+Banana
+Black Pepper
+Cacao
+Calamansi
+Cassava
+Coconut
+Coffee
+Eggplant
+Forage Grass
+Gabi
+Ginger
+Ipil Ipil
+Jackfruit
+Kamoteng Baging
+Katuray
+Kulo
+Lanzones
+Lipote
+Maize
+Mango
+Orchid
+Papaya
+Pechay
+Pineapple
+Rambutan
+Rice
+Sili Labuyo
+Squash
+String Bean
+Sweet Potato
+Sweet Sorghum
+Ube
+Upo
+
+Missing:

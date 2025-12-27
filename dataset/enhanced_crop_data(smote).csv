@@ -1,0 +1,3601 @@
+soil_ph,fertility_ec,humidity,sunlight,soil_temp,soil_moisture,label,source
+6.3,525,74,3200,29.1,88,Ampalaya,original
+6.7,530,74,3000,29.5,92,Ampalaya,original
+6.3,526,72,3180,29.2,89,Ampalaya,original
+6.7,529,73,3010,29.2,87,Ampalaya,original
+6.3,527,71,3160,29.0,90,Ampalaya,original
+6.7,528,73,3050,29.2,91,Ampalaya,original
+5.5,455,85,1150,27.1,85,Avocado,original
+6.1,415,79,1750,28.3,83,Avocado,original
+6.2,440,80,1450,28.1,88,Avocado,original
+5.9,430,82,1500,27.0,80,Avocado,original
+5.7,425,85,1100,26.9,81,Avocado,original
+5.5,410,86,1300,26.7,82,Avocado,original
+5.6,460,84,1000,27.5,85,Avocado,original
+6.0,450,83,950,27.8,86,Avocado,original
+4.0,632,62,8077,29.5,99,Bamboo,original
+6.8,405,79,1900,28.0,84,Bamboo,original
+5.7,470,84,1050,27.4,89,Bamboo,original
+5.7,420,81,950,28.0,80,Bamboo,original
+6.1,390,76,1850,28.3,78,Bamboo,original
+5.7,400,86,850,27.0,87,Black Pepper,original
+5.6,425,88,900,26.8,85,Black Pepper,original
+5.5,410,89,800,26.6,89,Black Pepper,original
+5.8,430,84,1000,27.3,88,Black Pepper,original
+5.9,405,85,950,27.1,86,Black Pepper,original
+5.5,415,87,750,26.5,84,Black Pepper,original
+5.7,420,83,1050,27.2,85,Black Pepper,original
+5.6,440,85,900,26.9,85,Black Pepper,original
+5.6,440,85,900,26.9,85,Cacao,original
+5.7,400,86,850,27.0,87,Cacao,original
+5.6,425,88,900,26.8,85,Cacao,original
+5.5,410,89,800,26.6,89,Cacao,original
+5.8,430,84,1000,27.3,88,Cacao,original
+5.9,405,85,950,27.1,86,Cacao,original
+5.5,415,87,750,26.5,84,Cacao,original
+5.7,420,83,1050,27.2,85,Cacao,original
+6.0,517,88,1094,28.5,99,Cassava,original
+6.0,400,80,1000,27.9,80,Cassava,original
+5.5,450,86,700,26.5,87,Calamansi,original
+6.0,435,79,2000,28.1,82,Calamansi,original
+6.5,475,80,1215,27.0,99,Coconut,original
+6.2,480,82,1500,27.5,90,Coconut,original
+6.3,460,78,1800,28.2,90,Coconut,original
+6.1,510,83,1400,28.0,98,Coconut,original
+5.7,445,84,980,27.2,86,Coconut,original
+6.0,355,70,12571,33.9,99,Coconut,original
+6.2,480,82,1500,27.5,90,Maize,original
+5.3,520,77,2800,28.8,86,Maize,original
+6.0,515,78,2750,28.4,89,Maize,original
+6.8,550,75,2500,29.2,95,Maize,original
+6.0,515,78,2750,28.4,89,Maize,original
+6.2,480,82,1500,27.5,90,Maize,original
+5.3,520,77,2800,28.8,86,Maize,original
+6.8,405,79,1900,28.0,84,Maize,original
+6.5,475,80,1215,27.0,99,Coffee,original
+5.5,450,86,700,26.5,87,Coffee,original
+6.5,474,81,1215,27.0,98,Coffee,original
+5.6,456,85,720,26.5,88,Coffee,original
+6.5,470,83,1235,27.0,97,Coffee,original
+5.7,456,85,720,26.5,88,Coffee,original
+6.8,405,79,1900,28.0,84,Forage Grass,original
+6.8,550,75,2500,29.2,95,Forage Grass,original
+6.2,480,82,1500,27.5,90,Forage Grass,original
+5.3,520,77,2800,28.8,86,Forage Grass,original
+6.0,515,78,2750,28.4,89,Forage Grass,original
+6.0,515,78,2750,28.4,89,Forage Grass,original
+6.2,480,82,1500,27.5,90,Forage Grass,original
+5.3,520,77,2800,28.8,86,Forage Grass,original
+6.3,460,78,1800,28.2,90,Ginger,original
+5.5,455,85,1150,27.1,85,Ginger,original
+6.4,500,80,1900,27.7,93,Ginger,original
+6.2,530,79,2400,28.2,91,Ginger,original
+6.0,525,81,2000,27.8,94,Ginger,original
+6.1,515,77,2500,28.4,88,Ginger,original
+6.5,490,80,1800,28.0,92,Ginger,original
+6.3,505,78,2200,27.5,90,Ginger,original
+5.9,485,83,1500,26.9,89,Ginger,original
+6.2,410,78,2200,28.4,83,Ipil Ipil,original
+6.8,405,79,1900,28.0,84,Ipil Ipil,original
+5.7,470,84,1050,27.4,89,Jackfruit,original
+6.8,405,79,1900,28.0,84,Jackfruit,original
+5.7,420,81,950,28.0,80,Jackfruit,original
+6.1,390,76,1850,28.3,78,Jackfruit,original
+4.0,632,62,8077,29.5,99,Jackfruit,original
+6.0,517,88,1094,28.5,99,Mango,original
+6.0,400,80,1000,27.9,80,Mango,original
+5.8,490,85,850,26.8,85,Lanzones,original
+5.9,505,84,1100,27.3,88,Lanzones,original
+3.5,898,67,4316,30.7,99,Lanzones,original
+5.8,490,85,850,26.8,85,Rambutan,original
+5.9,505,84,1100,27.3,88,Rambutan,original
+6.5,745,81,2090,27.8,99,Rambutan,original
+5.9,455,84,1050,27.0,85,Rambutan,original
+6.0,435,83,1150,27.4,83,Rambutan,original
+5.8,460,85,950,27.2,87,Rambutan,original
+5.6,450,86,1000,26.8,84,Rambutan,original
+6.1,465,82,1250,27.5,86,Rambutan,original
+5.5,445,88,800,26.6,81,Rambutan,original
+5.7,440,87,900,26.7,82,Rambutan,original
+6.8,550,75,2500,29.2,95,Rice,original
+6.2,480,82,1500,27.5,90,Rice,original
+5.3,520,77,2800,28.8,86,Rice,original
+6.0,515,78,2750,28.4,89,Rice,original
+6.0,515,78,2750,28.4,89,Rice,original
+6.2,480,82,1500,27.5,90,Rice,original
+5.3,520,77,2800,28.8,86,Rice,original
+6.8,405,79,1900,28.0,84,Rice,original
+6.8,550,75,2500,29.2,95,Banana,original
+6.4,495,81,1650,27.8,92,Banana,original
+5.4,470,83,1300,27.9,90,Banana,original
+4.0,771,79,8280,28.8,99,Banana,original
+4.5,810,66,9337,29.3,99,Banana,original
+4.5,359,70,15839,34.6,99,Kamoteng Baging,original
+6.0,517,88,1094,28.5,99,Kamoteng Baging,original
+6.5,465,82,1200,27.6,95,Kamoteng Baging,original
+6.5,485,82,1200,27.5,98,Kamoteng Baging,original
+6.7,470,84,1000,27.1,96,Kamoteng Baging,original
+6.4,475,80,1300,28.3,97,Kamoteng Baging,original
+6.7,460,85,1100,27.3,99,Kamoteng Baging,original
+6.3,505,83,1400,27.6,94,Kamoteng Baging,original
+6.8,480,80,1600,28.0,96,Kamoteng Baging,original
+6.6,495,81,1500,27.9,95,Kamoteng Baging,original
+6.3,460,78,1800,28.2,90,Kamoteng Baging,original
+5.5,455,85,1150,27.1,85,Kamoteng Baging,original
+6.4,500,80,1900,27.7,93,Kamoteng Baging,original
+6.2,530,79,2400,28.2,91,Kamoteng Baging,original
+6.0,525,81,2000,27.8,94,Kamoteng Baging,original
+6.1,515,77,2500,28.4,88,Kamoteng Baging,original
+6.5,490,80,1800,28.0,92,Kamoteng Baging,original
+6.3,505,78,2200,27.5,90,Kamoteng Baging,original
+5.9,485,83,1500,26.9,89,Kamoteng Baging,original
+4.5,359,70,15839,34.6,99,Kamoteng Baging,original
+6.4,495,81,1650,27.8,92,Kamoteng Baging,original
+5.4,470,83,1300,27.9,90,Kamoteng Baging,original
+6.2,410,78,2200,28.4,83,Katuray,original
+6.8,405,79,1900,28.0,84,Katuray,original
+5.7,470,84,1050,27.4,89,Kulo,original
+5.7,470,84,1050,27.4,89,Kulo,original
+6.8,405,79,1900,28.0,84,Kulo,original
+5.7,420,81,950,28.0,80,Kulo,original
+6.1,390,76,1850,28.3,78,Kulo,original
+4.0,632,62,8077,29.5,99,Kulo,original
+5.7,420,81,950,28.0,80,Lipote,original
+5.5,485,76,2400,28.9,87,Lipote,original
+5.5,485,76,2400,28.9,87,Sili Labuyo,original
+6.1,390,76,1850,28.3,78,Orchid,original
+6.8,405,79,1900,28.0,84,Orchid,original
+5.7,470,84,1050,27.4,89,Orchid,original
+5.7,420,81,950,28.0,80,Orchid,original
+4.0,632,62,8077,29.5,99,Orchid,original
+6.0,435,79,2000,28.1,82,Papaya,original
+5.5,450,86,700,26.5,87,Papaya,original
+6.6,535,75,2600,28.7,94,Pechay,original
+6.9,540,76,2700,29.0,93,Pechay,original
+5.3,520,77,2800,28.8,86,Pineapple,original
+5.4,500,77,2900,28.6,88,Pineapple,original
+4.0,594,73,39100,34.1,99,Pineapple,original
+5.5,440,76,21062,31.5,99,Pineapple,original
+9.0,624,72,43700,33.5,99,Pineapple,original
+5.7,420,81,950,28.0,80,Eggplant,original
+5.5,485,76,2400,28.9,87,Eggplant,original
+5.5,485,76,2400,28.9,87,Sili Labuyo,original
+5.7,420,81,950,28.0,80,Sili Labuyo,original
+6.7,530,74,3000,29.5,92,Squash,original
+6.3,525,74,3200,29.1,88,Squash,original
+6.3,526,72,3180,29.2,89,Squash,original
+6.7,529,73,3010,29.2,87,Squash,original
+6.3,527,71,3160,29.0,90,Squash,original
+6.7,528,73,3050,29.2,91,Squash,original
+6.4,495,81,1650,27.8,92,Sweet Potato,original
+6.8,550,75,2500,29.2,95,Sweet Potato,original
+5.4,470,83,1300,27.9,90,Sweet Potato,original
+4.0,771,79,8280,28.8,99,Sweet Potato,original
+4.5,810,66,9337,29.3,99,Sweet Potato,original
+6.0,515,78,2750,28.4,89,Sweet Sorghum,original
+6.2,480,82,1500,27.5,90,Sweet Sorghum,original
+5.3,520,77,2800,28.8,86,Sweet Sorghum,original
+6.0,515,78,2750,28.4,89,Sweet Sorghum,original
+6.2,480,82,1500,27.5,90,Sweet Sorghum,original
+5.3,520,77,2800,28.8,86,Sweet Sorghum,original
+6.9,540,76,2700,29.0,93,String Bean,original
+6.6,535,75,2600,28.7,94,String Bean,original
+6.5,465,82,1200,27.6,95,Gabi,original
+6.5,485,82,1200,27.5,98,Gabi,original
+6.7,470,84,1000,27.1,96,Gabi,original
+6.4,475,80,1300,28.3,97,Gabi,original
+6.7,460,85,1100,27.3,99,Gabi,original
+6.3,505,83,1400,27.6,94,Gabi,original
+6.8,480,80,1600,28.0,96,Gabi,original
+6.6,495,81,1500,27.9,95,Gabi,original
+6.9,540,76,2700,29.0,93,Upo,original
+6.9,540,76,2700,29.0,93,Upo,original
+6.6,535,75,2600,28.7,94,Upo,original
+5.4,470,83,1300,27.9,90,Ube,original
+6.8,550,75,2500,29.2,95,Ube,original
+6.4,495,81,1650,27.8,92,Ube,original
+5.4,470,83,1300,27.9,90,Ube,original
+4.0,771,79,8280,28.8,99,Ube,original
+4.5,810,66,9337,29.3,99,Ube,original
+6.3,525,74,3200,29.1,88,Ampalaya,original
+6.7,530,74,3000,29.5,92,Ampalaya,original
+6.3,526,72,3180,29.2,89,Ampalaya,original
+6.7,529,73,3010,29.2,87,Ampalaya,original
+6.3,527,71,3160,29.0,90,Ampalaya,original
+6.7,528,73,3050,29.2,91,Ampalaya,original
+6.6,529,73,3033,29.2,87,Ampalaya,augmented_smote
+6.6,528,73,3073,29.2,91,Ampalaya,augmented_smote
+6.7,529,73,3011,29.2,87,Ampalaya,augmented_smote
+6.5,528,74,3084,29.3,90,Ampalaya,augmented_smote
+6.7,530,74,3003,29.4,90,Ampalaya,augmented_smote
+6.3,527,72,3162,29.0,90,Ampalaya,augmented_smote
+6.7,530,74,3001,29.5,91,Ampalaya,augmented_smote
+6.7,530,74,3001,29.5,91,Ampalaya,augmented_smote
+6.3,526,72,3170,29.1,89,Ampalaya,augmented_smote
+6.6,528,74,3074,29.4,91,Ampalaya,augmented_smote
+6.7,528,73,3042,29.2,91,Ampalaya,augmented_smote
+6.3,526,72,3159,29.2,89,Ampalaya,augmented_smote
+6.6,528,72,3084,29.1,91,Ampalaya,augmented_smote
+6.6,528,73,3044,29.2,87,Ampalaya,augmented_smote
+6.3,526,73,3188,29.2,89,Ampalaya,augmented_smote
+6.4,527,72,3135,29.2,88,Ampalaya,augmented_smote
+6.4,526,74,3137,29.1,88,Ampalaya,augmented_smote
+6.6,529,74,3049,29.4,91,Ampalaya,augmented_smote
+6.7,529,73,3007,29.3,88,Ampalaya,augmented_smote
+6.3,525,74,3198,29.1,88,Ampalaya,augmented_smote
+6.7,530,74,3004,29.5,92,Ampalaya,augmented_smote
+6.6,529,74,3027,29.5,92,Ampalaya,augmented_smote
+6.7,529,73,3007,29.3,88,Ampalaya,augmented_smote
+6.3,527,72,3168,29.0,90,Ampalaya,augmented_smote
+6.6,527,73,3076,29.2,90,Ampalaya,augmented_smote
+6.7,528,73,3032,29.2,89,Ampalaya,augmented_smote
+6.3,526,72,3179,29.2,89,Ampalaya,augmented_smote
+6.7,529,73,3018,29.2,88,Ampalaya,augmented_smote
+6.4,527,73,3119,29.3,90,Ampalaya,augmented_smote
+6.6,528,73,3079,29.2,91,Ampalaya,augmented_smote
+6.3,525,73,3191,29.1,88,Ampalaya,augmented_smote
+6.5,528,72,3067,29.1,88,Ampalaya,augmented_smote
+6.7,530,74,3000,29.5,92,Ampalaya,augmented_smote
+6.3,526,73,3186,29.1,89,Ampalaya,augmented_smote
+6.3,526,72,3179,29.0,89,Ampalaya,augmented_smote
+6.5,527,73,3082,29.2,87,Ampalaya,augmented_smote
+6.3,527,72,3142,29.1,90,Ampalaya,augmented_smote
+6.7,529,74,3019,29.4,92,Ampalaya,augmented_smote
+6.4,528,72,3104,29.2,91,Ampalaya,augmented_smote
+6.7,529,73,3010,29.2,87,Ampalaya,augmented_smote
+6.4,527,72,3121,29.1,90,Ampalaya,augmented_smote
+6.3,527,72,3165,29.0,90,Ampalaya,augmented_smote
+6.3,526,72,3181,29.2,89,Ampalaya,augmented_smote
+6.5,528,73,3106,29.3,90,Ampalaya,augmented_smote
+6.7,529,73,3017,29.2,87,Ampalaya,augmented_smote
+6.7,529,73,3008,29.2,88,Ampalaya,augmented_smote
+6.4,525,74,3181,29.1,88,Ampalaya,augmented_smote
+6.7,529,73,3026,29.3,91,Ampalaya,augmented_smote
+6.7,530,74,3001,29.5,91,Ampalaya,augmented_smote
+6.6,529,73,3037,29.2,88,Ampalaya,augmented_smote
+6.3,526,72,3169,29.2,89,Ampalaya,augmented_smote
+6.7,530,74,3016,29.5,92,Ampalaya,augmented_smote
+6.5,528,72,3069,29.1,88,Ampalaya,augmented_smote
+6.3,527,72,3161,29.0,90,Ampalaya,augmented_smote
+6.5,528,74,3099,29.3,90,Ampalaya,augmented_smote
+6.6,529,73,3051,29.4,91,Ampalaya,augmented_smote
+6.5,527,74,3109,29.3,90,Ampalaya,augmented_smote
+6.6,527,73,3100,29.2,90,Ampalaya,augmented_smote
+6.4,527,72,3139,29.0,90,Ampalaya,augmented_smote
+6.7,529,73,3023,29.2,88,Ampalaya,augmented_smote
+6.5,527,72,3119,29.1,90,Ampalaya,augmented_smote
+6.3,526,72,3175,29.2,89,Ampalaya,augmented_smote
+6.7,529,73,3030,29.2,87,Ampalaya,augmented_smote
+6.3,526,72,3171,29.2,89,Ampalaya,augmented_smote
+6.6,528,72,3083,29.1,91,Ampalaya,augmented_smote
+6.3,525,74,3181,29.1,88,Ampalaya,augmented_smote
+6.3,525,74,3193,29.1,88,Ampalaya,augmented_smote
+6.3,525,74,3196,29.1,88,Ampalaya,augmented_smote
+6.6,527,73,3100,29.2,90,Ampalaya,augmented_smote
+6.7,528,73,3049,29.2,91,Ampalaya,augmented_smote
+6.6,529,73,3037,29.4,92,Ampalaya,augmented_smote
+6.4,527,72,3154,29.2,89,Ampalaya,augmented_smote
+6.6,527,73,3090,29.2,90,Ampalaya,augmented_smote
+6.7,528,73,3037,29.2,90,Ampalaya,augmented_smote
+6.7,529,73,3024,29.2,87,Ampalaya,augmented_smote
+6.3,526,72,3174,29.1,89,Ampalaya,augmented_smote
+6.3,526,72,3180,29.2,89,Ampalaya,augmented_smote
+6.7,528,73,3047,29.2,91,Ampalaya,augmented_smote
+6.7,529,73,3009,29.2,87,Ampalaya,augmented_smote
+6.7,530,74,3001,29.5,91,Ampalaya,augmented_smote
+6.3,527,72,3161,29.0,90,Ampalaya,augmented_smote
+6.6,528,73,3064,29.2,88,Ampalaya,augmented_smote
+6.5,528,73,3093,29.2,88,Ampalaya,augmented_smote
+6.7,530,74,3001,29.5,92,Ampalaya,augmented_smote
+6.3,525,73,3191,29.1,88,Ampalaya,augmented_smote
+6.6,528,73,3034,29.2,87,Ampalaya,augmented_smote
+6.3,526,73,3187,29.1,89,Ampalaya,augmented_smote
+6.5,529,73,3075,29.3,91,Ampalaya,augmented_smote
+5.5,455,85,1150,27.1,85,Avocado,original
+6.1,415,79,1750,28.3,83,Avocado,original
+6.2,440,80,1450,28.1,88,Avocado,original
+5.9,430,82,1500,27.0,80,Avocado,original
+5.7,425,85,1100,26.9,81,Avocado,original
+5.5,410,86,1300,26.7,82,Avocado,original
+5.6,460,84,1000,27.5,85,Avocado,original
+6.0,450,83,950,27.8,86,Avocado,original
+5.9,430,82,1498,27.0,80,Avocado,augmented_smote
+5.6,417,86,1208,26.8,82,Avocado,augmented_smote
+5.7,456,84,982,27.6,85,Avocado,augmented_smote
+5.9,451,83,957,27.8,86,Avocado,augmented_smote
+5.6,449,84,1241,27.1,84,Avocado,augmented_smote
+6.0,433,81,1485,27.3,82,Avocado,augmented_smote
+5.8,427,84,1150,27.1,82,Avocado,augmented_smote
+5.6,452,84,1023,27.4,84,Avocado,augmented_smote
+5.7,424,85,1116,26.9,81,Avocado,augmented_smote
+5.6,454,84,1092,27.3,85,Avocado,augmented_smote
+6.0,433,82,1292,27.6,85,Avocado,augmented_smote
+5.7,422,84,1422,26.9,81,Avocado,augmented_smote
+5.8,429,84,1182,27.2,83,Avocado,augmented_smote
+5.6,421,85,1153,26.8,81,Avocado,augmented_smote
+6.1,416,79,1741,28.3,83,Avocado,augmented_smote
+5.9,427,81,1551,27.3,81,Avocado,augmented_smote
+5.6,454,85,1104,27.3,85,Avocado,augmented_smote
+5.6,459,84,994,27.5,85,Avocado,augmented_smote
+5.6,442,85,1129,27.0,83,Avocado,augmented_smote
+5.9,429,82,1393,27.6,86,Avocado,augmented_smote
+5.6,443,84,1050,27.2,83,Avocado,augmented_smote
+6.1,415,79,1748,28.3,83,Avocado,augmented_smote
+5.7,434,85,1075,27.0,82,Avocado,augmented_smote
+5.7,425,85,1119,26.9,81,Avocado,augmented_smote
+6.0,420,80,1673,27.9,82,Avocado,augmented_smote
+5.7,425,85,1097,26.9,81,Avocado,augmented_smote
+6.2,440,80,1442,28.1,88,Avocado,augmented_smote
+5.5,430,86,1234,26.9,83,Avocado,augmented_smote
+5.8,421,84,1356,27.2,84,Avocado,augmented_smote
+5.5,427,86,1243,26.9,83,Avocado,augmented_smote
+5.6,440,85,1125,27.0,83,Avocado,augmented_smote
+5.6,460,84,1010,27.5,85,Avocado,augmented_smote
+6.0,450,83,968,27.7,86,Avocado,augmented_smote
+6.0,420,80,1674,27.9,82,Avocado,augmented_smote
+5.6,459,84,1044,27.4,85,Avocado,augmented_smote
+5.6,452,84,1213,27.3,86,Avocado,augmented_smote
+5.6,458,84,1052,27.4,85,Avocado,augmented_smote
+5.9,451,83,980,27.7,86,Avocado,augmented_smote
+5.8,450,83,1259,27.5,86,Avocado,augmented_smote
+5.8,413,82,1546,27.6,83,Avocado,augmented_smote
+5.6,451,84,1026,27.3,84,Avocado,augmented_smote
+6.0,418,81,1537,27.8,82,Avocado,augmented_smote
+6.0,430,82,1400,27.6,86,Avocado,augmented_smote
+6.1,415,80,1716,28.2,83,Avocado,augmented_smote
+5.5,454,85,1172,27.1,85,Avocado,augmented_smote
+6.1,415,80,1714,28.2,83,Avocado,augmented_smote
+5.5,455,85,1152,27.1,85,Avocado,augmented_smote
+5.9,451,83,985,27.7,86,Avocado,augmented_smote
+5.8,425,83,1373,27.4,85,Avocado,augmented_smote
+5.6,451,84,1212,27.2,85,Avocado,augmented_smote
+5.6,435,85,1117,27.0,82,Avocado,augmented_smote
+5.9,446,82,1337,27.7,87,Avocado,augmented_smote
+5.8,423,84,1257,27.2,81,Avocado,augmented_smote
+5.8,452,84,1047,27.5,86,Avocado,augmented_smote
+5.6,415,85,1325,26.9,83,Avocado,augmented_smote
+5.7,426,85,1116,27.0,81,Avocado,augmented_smote
+5.6,460,84,1009,27.5,85,Avocado,augmented_smote
+5.8,424,83,1370,27.4,85,Avocado,augmented_smote
+6.0,432,82,1488,27.3,82,Avocado,augmented_smote
+5.8,428,84,1166,27.1,82,Avocado,augmented_smote
+5.5,440,85,1201,27.0,84,Avocado,augmented_smote
+5.8,432,84,1108,27.3,84,Avocado,augmented_smote
+5.8,455,84,976,27.6,85,Avocado,augmented_smote
+5.7,426,85,1094,26.9,81,Avocado,augmented_smote
+5.9,431,82,1493,27.2,81,Avocado,augmented_smote
+6.1,435,81,1475,27.6,84,Avocado,augmented_smote
+5.7,458,84,992,27.6,85,Avocado,augmented_smote
+5.5,424,85,1217,26.9,83,Avocado,augmented_smote
+5.5,456,85,1116,27.2,85,Avocado,augmented_smote
+5.5,445,85,1184,27.0,84,Avocado,augmented_smote
+5.7,424,85,1114,26.9,81,Avocado,augmented_smote
+5.6,442,85,1129,27.0,83,Avocado,augmented_smote
+6.1,434,81,1422,27.8,87,Avocado,augmented_smote
+5.7,427,85,1154,27.2,84,Avocado,augmented_smote
+5.6,454,85,1106,27.3,85,Avocado,augmented_smote
+5.5,455,85,1152,27.1,85,Avocado,augmented_smote
+5.9,428,82,1479,27.0,80,Avocado,augmented_smote
+5.7,425,85,1099,26.9,81,Avocado,augmented_smote
+5.6,416,86,1216,26.8,82,Avocado,augmented_smote
+5.7,421,84,1407,26.9,81,Avocado,augmented_smote
+6.2,429,80,1584,28.2,86,Avocado,augmented_smote
+5.8,429,85,1074,27.1,82,Avocado,augmented_smote
+5.7,434,85,1076,27.0,82,Avocado,augmented_smote
+5.9,430,83,1218,27.3,83,Avocado,augmented_smote
+4.0,632,62,8077,29.5,99,Bamboo,original
+5.5,628,66,6000,28.0,92,Bamboo,augmented_smote
+4.8,628,66,6000,28.8,92,Bamboo,augmented_smote
+5.5,628,66,6000,28.0,92,Bamboo,augmented_smote
+5.5,628,66,6000,28.0,92,Bamboo,augmented_smote
+4.1,628,63,7867,29.4,99,Bamboo,augmented_smote
+5.5,628,66,6000,28.4,92,Bamboo,augmented_smote
+4.2,628,64,7215,29.3,97,Bamboo,augmented_smote
+5.0,628,66,6000,28.3,93,Bamboo,augmented_smote
+5.5,628,66,6000,28.0,92,Bamboo,augmented_smote
+5.5,628,66,6000,28.0,92,Bamboo,augmented_smote
+4.5,628,65,6865,29.2,96,Bamboo,augmented_smote
+5.5,628,66,6000,28.0,92,Bamboo,augmented_smote
+5.5,628,66,6000,28.1,92,Bamboo,augmented_smote
+5.5,628,66,6000,28.0,92,Bamboo,augmented_smote
+5.5,628,66,6000,28.1,92,Bamboo,augmented_smote
+5.5,628,66,6000,28.3,92,Bamboo,augmented_smote
+5.5,628,66,6000,28.1,92,Bamboo,augmented_smote
+5.5,628,66,6000,28.1,92,Bamboo,augmented_smote
+5.5,628,66,6000,28.0,92,Bamboo,augmented_smote
+5.5,628,66,6000,28.0,92,Bamboo,augmented_smote
+5.5,628,66,6000,28.0,92,Bamboo,augmented_smote
+5.4,628,66,6000,28.2,92,Bamboo,augmented_smote
+5.5,628,66,6000,28.0,92,Bamboo,augmented_smote
+4.2,628,65,7272,29.3,98,Bamboo,augmented_smote
+5.5,628,66,6000,28.0,92,Bamboo,augmented_smote
+5.5,628,66,6000,28.0,92,Bamboo,augmented_smote
+4.4,628,64,7234,29.3,97,Bamboo,augmented_smote
+5.5,628,66,6000,28.0,92,Bamboo,augmented_smote
+5.5,628,66,6000,28.0,92,Bamboo,augmented_smote
+5.2,628,66,6000,28.8,92,Bamboo,augmented_smote
+5.5,628,66,6000,28.0,92,Bamboo,augmented_smote
+4.5,628,65,7021,29.2,96,Bamboo,augmented_smote
+5.5,628,66,6000,28.0,92,Bamboo,augmented_smote
+5.5,628,66,6000,28.0,92,Bamboo,augmented_smote
+5.5,628,66,6000,28.0,92,Bamboo,augmented_smote
+5.5,628,66,6000,28.2,92,Bamboo,augmented_smote
+5.5,628,66,6000,28.0,92,Bamboo,augmented_smote
+4.1,628,63,7811,29.4,98,Bamboo,augmented_smote
+5.4,628,66,6000,28.0,92,Bamboo,augmented_smote
+5.3,628,66,6000,28.8,92,Bamboo,augmented_smote
+4.1,628,63,7833,29.5,98,Bamboo,augmented_smote
+5.5,628,66,6000,28.0,92,Bamboo,augmented_smote
+5.5,628,66,6000,28.0,92,Bamboo,augmented_smote
+5.5,628,66,6000,28.5,92,Bamboo,augmented_smote
+4.9,628,66,6000,29.0,92,Bamboo,augmented_smote
+5.5,628,66,6000,28.6,92,Bamboo,augmented_smote
+5.5,628,66,6000,28.0,92,Bamboo,augmented_smote
+5.5,628,66,6000,28.0,92,Bamboo,augmented_smote
+5.5,628,66,6000,28.2,92,Bamboo,augmented_smote
+5.5,628,66,6000,28.0,92,Bamboo,augmented_smote
+4.9,628,66,6000,29.0,92,Bamboo,augmented_smote
+5.5,628,66,6000,28.2,92,Bamboo,augmented_smote
+5.5,628,66,6000,28.0,92,Bamboo,augmented_smote
+5.5,628,66,6000,28.0,92,Bamboo,augmented_smote
+4.0,630,62,8022,29.5,99,Bamboo,augmented_smote
+5.5,628,66,6000,28.0,92,Bamboo,augmented_smote
+4.3,628,66,6696,29.2,95,Bamboo,augmented_smote
+5.5,628,66,6000,28.0,92,Bamboo,augmented_smote
+4.4,628,66,6383,29.0,97,Bamboo,augmented_smote
+5.5,628,66,6000,28.0,92,Bamboo,augmented_smote
+5.5,628,66,6000,28.0,92,Bamboo,augmented_smote
+5.5,628,66,6000,28.0,92,Bamboo,augmented_smote
+5.5,628,66,6000,28.0,92,Bamboo,augmented_smote
+5.5,628,66,6000,28.2,92,Bamboo,augmented_smote
+5.5,628,66,6000,28.3,92,Bamboo,augmented_smote
+5.5,628,66,6000,28.0,92,Bamboo,augmented_smote
+5.5,628,66,6000,28.0,92,Bamboo,augmented_smote
+5.5,628,66,6000,28.0,92,Bamboo,augmented_smote
+5.5,628,66,6000,28.0,92,Bamboo,augmented_smote
+5.5,628,66,6000,28.3,92,Bamboo,augmented_smote
+5.5,628,66,6000,28.0,92,Bamboo,augmented_smote
+5.4,628,66,6000,28.8,92,Bamboo,augmented_smote
+5.5,628,66,6000,28.1,92,Bamboo,augmented_smote
+4.2,628,64,7165,29.3,97,Bamboo,augmented_smote
+4.8,628,66,6000,28.5,94,Bamboo,augmented_smote
+5.5,628,66,6000,28.3,92,Bamboo,augmented_smote
+5.5,628,66,6000,28.2,92,Bamboo,augmented_smote
+5.5,628,66,6000,28.0,92,Bamboo,augmented_smote
+4.5,628,66,6039,29.1,94,Bamboo,augmented_smote
+5.5,628,66,6000,28.1,92,Bamboo,augmented_smote
+4.5,628,65,7006,29.2,96,Bamboo,augmented_smote
+5.5,628,66,6000,28.2,92,Bamboo,augmented_smote
+5.4,628,66,6000,28.0,92,Bamboo,augmented_smote
+5.5,628,66,6000,28.3,92,Bamboo,augmented_smote
+5.5,628,66,6000,28.0,92,Bamboo,augmented_smote
+5.5,628,66,6000,28.0,92,Bamboo,augmented_smote
+4.7,628,66,6000,28.9,92,Bamboo,augmented_smote
+5.5,628,66,6000,28.0,92,Bamboo,augmented_smote
+5.5,628,66,6000,28.0,92,Bamboo,augmented_smote
+5.5,628,66,6000,28.0,92,Bamboo,augmented_smote
+5.5,628,66,6000,28.1,92,Bamboo,augmented_smote
+5.5,628,66,6000,28.0,92,Bamboo,augmented_smote
+5.5,628,66,6000,28.0,92,Bamboo,augmented_smote
+5.5,628,66,6000,28.0,92,Bamboo,augmented_smote
+5.7,400,86,850,27.0,87,Black Pepper,original
+5.6,425,88,900,26.8,85,Black Pepper,original
+5.5,410,89,800,26.6,89,Black Pepper,original
+5.8,430,84,1000,27.3,88,Black Pepper,original
+5.9,405,85,950,27.1,86,Black Pepper,original
+5.5,415,87,750,26.5,84,Black Pepper,original
+5.7,420,83,1050,27.2,85,Black Pepper,original
+5.6,440,85,900,26.9,85,Black Pepper,original
+5.7,438,88,890,26.7,85,Black Pepper,augmented_smote
+5.7,438,88,890,26.8,85,Black Pepper,augmented_smote
+5.7,438,88,900,26.8,85,Black Pepper,augmented_smote
+5.7,438,87,913,26.9,85,Black Pepper,augmented_smote
+5.7,438,86,890,26.8,85,Black Pepper,augmented_smote
+5.7,440,85,901,26.9,85,Black Pepper,augmented_smote
+5.7,438,88,897,26.8,85,Black Pepper,augmented_smote
+5.7,438,88,890,26.6,88,Black Pepper,augmented_smote
+5.7,438,87,900,26.8,85,Black Pepper,augmented_smote
+5.7,438,86,920,27.0,85,Black Pepper,augmented_smote
+5.7,438,85,890,26.9,86,Black Pepper,augmented_smote
+5.7,438,87,900,26.8,85,Black Pepper,augmented_smote
+5.7,438,87,920,26.9,86,Black Pepper,augmented_smote
+5.7,438,88,895,26.8,85,Black Pepper,augmented_smote
+5.7,438,83,920,27.2,85,Black Pepper,augmented_smote
+5.8,438,84,920,27.2,87,Black Pepper,augmented_smote
+5.8,438,85,920,27.1,86,Black Pepper,augmented_smote
+5.7,438,84,920,27.1,86,Black Pepper,augmented_smote
+5.9,438,85,920,27.1,86,Black Pepper,augmented_smote
+5.7,438,87,916,26.9,85,Black Pepper,augmented_smote
+5.7,438,88,890,26.6,88,Black Pepper,augmented_smote
+5.7,438,86,890,27.0,87,Black Pepper,augmented_smote
+5.7,438,87,890,26.5,84,Black Pepper,augmented_smote
+5.7,438,87,900,26.8,85,Black Pepper,augmented_smote
+5.7,438,88,890,26.6,87,Black Pepper,augmented_smote
+5.7,438,87,890,26.9,86,Black Pepper,augmented_smote
+5.7,438,88,890,26.7,86,Black Pepper,augmented_smote
+5.7,438,83,920,27.2,86,Black Pepper,augmented_smote
+5.8,438,84,920,27.1,86,Black Pepper,augmented_smote
+5.7,438,88,890,26.7,88,Black Pepper,augmented_smote
+5.7,438,86,890,26.8,85,Black Pepper,augmented_smote
+5.7,438,87,890,26.9,86,Black Pepper,augmented_smote
+5.9,438,85,920,27.2,87,Black Pepper,augmented_smote
+5.7,438,88,907,26.8,85,Black Pepper,augmented_smote
+5.7,438,86,920,27.0,86,Black Pepper,augmented_smote
+5.7,438,85,890,26.9,85,Black Pepper,augmented_smote
+5.8,438,85,920,27.2,87,Black Pepper,augmented_smote
+5.7,438,87,920,26.9,86,Black Pepper,augmented_smote
+5.7,438,88,900,26.8,85,Black Pepper,augmented_smote
+5.7,438,87,890,26.5,85,Black Pepper,augmented_smote
+5.7,438,88,908,26.8,85,Black Pepper,augmented_smote
+5.8,438,84,920,27.2,85,Black Pepper,augmented_smote
+5.7,438,88,890,26.6,87,Black Pepper,augmented_smote
+5.7,438,87,914,26.9,85,Black Pepper,augmented_smote
+5.9,438,85,920,27.1,86,Black Pepper,augmented_smote
+5.7,438,88,890,26.8,88,Black Pepper,augmented_smote
+5.7,438,87,890,26.6,85,Black Pepper,augmented_smote
+5.8,438,85,909,27.1,86,Black Pepper,augmented_smote
+5.8,438,84,920,27.1,86,Black Pepper,augmented_smote
+5.7,438,86,890,27.0,87,Black Pepper,augmented_smote
+5.8,438,85,920,27.2,87,Black Pepper,augmented_smote
+5.7,438,84,920,27.1,85,Black Pepper,augmented_smote
+5.7,438,87,890,26.5,85,Black Pepper,augmented_smote
+5.8,438,84,920,27.2,85,Black Pepper,augmented_smote
+5.8,438,86,893,27.0,87,Black Pepper,augmented_smote
+5.7,438,88,890,26.6,88,Black Pepper,augmented_smote
+5.7,438,87,890,26.6,84,Black Pepper,augmented_smote
+5.7,438,86,890,26.9,87,Black Pepper,augmented_smote
+5.7,438,85,916,27.0,85,Black Pepper,augmented_smote
+5.7,438,86,890,26.7,85,Black Pepper,augmented_smote
+5.7,438,88,890,26.8,86,Black Pepper,augmented_smote
+5.8,438,86,890,27.0,87,Black Pepper,augmented_smote
+5.7,438,87,890,26.8,88,Black Pepper,augmented_smote
+5.8,438,84,920,27.1,86,Black Pepper,augmented_smote
+5.8,438,84,920,27.2,87,Black Pepper,augmented_smote
+5.7,438,85,920,27.0,85,Black Pepper,augmented_smote
+5.7,438,86,900,26.9,85,Black Pepper,augmented_smote
+5.7,438,88,890,26.6,88,Black Pepper,augmented_smote
+5.7,438,83,920,27.2,86,Black Pepper,augmented_smote
+5.7,438,86,890,26.9,86,Black Pepper,augmented_smote
+5.7,438,86,920,27.1,87,Black Pepper,augmented_smote
+5.8,438,84,920,27.2,88,Black Pepper,augmented_smote
+5.7,438,86,890,26.8,86,Black Pepper,augmented_smote
+5.8,438,84,920,27.3,88,Black Pepper,augmented_smote
+5.8,438,85,920,27.2,87,Black Pepper,augmented_smote
+5.7,438,87,900,26.8,85,Black Pepper,augmented_smote
+5.7,438,88,890,26.8,88,Black Pepper,augmented_smote
+5.8,438,85,920,27.2,88,Black Pepper,augmented_smote
+5.9,438,85,920,27.1,86,Black Pepper,augmented_smote
+5.7,438,86,890,27.0,87,Black Pepper,augmented_smote
+5.7,438,87,920,26.9,85,Black Pepper,augmented_smote
+5.7,438,87,890,26.6,84,Black Pepper,augmented_smote
+5.7,439,85,907,26.9,85,Black Pepper,augmented_smote
+5.7,438,87,909,26.9,85,Black Pepper,augmented_smote
+5.6,440,85,900,26.9,85,Cacao,original
+5.7,400,86,850,27.0,87,Cacao,original
+5.6,425,88,900,26.8,85,Cacao,original
+5.5,410,89,800,26.6,89,Cacao,original
+5.8,430,84,1000,27.3,88,Cacao,original
+5.9,405,85,950,27.1,86,Cacao,original
+5.5,415,87,750,26.5,84,Cacao,original
+5.7,420,83,1050,27.2,85,Cacao,original
+5.7,427,86,941,27.0,86,Cacao,augmented_smote
+5.7,414,84,992,27.1,86,Cacao,augmented_smote
+5.7,402,86,842,26.9,87,Cacao,augmented_smote
+5.6,404,87,831,26.8,88,Cacao,augmented_smote
+5.6,434,86,880,26.8,86,Cacao,augmented_smote
+5.6,426,88,900,26.8,85,Cacao,augmented_smote
+5.6,438,85,893,26.9,85,Cacao,augmented_smote
+5.6,416,87,883,26.9,86,Cacao,augmented_smote
+5.7,428,85,964,27.1,87,Cacao,augmented_smote
+5.6,425,88,911,26.8,85,Cacao,augmented_smote
+5.8,408,86,893,26.9,85,Cacao,augmented_smote
+5.5,408,89,808,26.7,89,Cacao,augmented_smote
+5.6,430,86,866,26.8,86,Cacao,augmented_smote
+5.8,426,84,1021,27.3,87,Cacao,augmented_smote
+5.8,423,84,963,27.2,88,Cacao,augmented_smote
+5.9,410,85,942,27.1,86,Cacao,augmented_smote
+5.8,416,85,934,27.0,86,Cacao,augmented_smote
+5.8,425,84,1025,27.3,87,Cacao,augmented_smote
+5.6,413,87,789,26.6,84,Cacao,augmented_smote
+5.6,438,85,920,27.0,86,Cacao,augmented_smote
+5.5,413,89,811,26.6,89,Cacao,augmented_smote
+5.8,428,84,1009,27.3,87,Cacao,augmented_smote
+5.5,416,87,765,26.5,84,Cacao,augmented_smote
+5.5,411,89,804,26.6,89,Cacao,augmented_smote
+5.6,433,86,900,26.9,85,Cacao,augmented_smote
+5.7,401,86,855,27.0,87,Cacao,augmented_smote
+5.5,409,89,807,26.7,89,Cacao,augmented_smote
+5.8,430,84,999,27.3,88,Cacao,augmented_smote
+5.5,414,87,760,26.5,85,Cacao,augmented_smote
+5.7,412,84,970,27.1,86,Cacao,augmented_smote
+5.6,409,88,835,26.7,88,Cacao,augmented_smote
+5.5,408,88,812,26.7,89,Cacao,augmented_smote
+5.6,429,87,900,26.8,85,Cacao,augmented_smote
+5.8,425,84,990,27.3,88,Cacao,augmented_smote
+5.7,417,83,1032,27.2,85,Cacao,augmented_smote
+5.5,411,89,789,26.6,88,Cacao,augmented_smote
+5.6,414,87,776,26.6,84,Cacao,augmented_smote
+5.7,416,87,922,26.9,85,Cacao,augmented_smote
+5.7,427,86,941,27.0,86,Cacao,augmented_smote
+5.8,421,84,983,27.2,87,Cacao,augmented_smote
+5.9,404,85,935,27.1,86,Cacao,augmented_smote
+5.8,423,84,986,27.2,87,Cacao,augmented_smote
+5.7,403,86,854,27.0,87,Cacao,augmented_smote
+5.5,413,88,770,26.5,86,Cacao,augmented_smote
+5.6,433,84,955,27.0,85,Cacao,augmented_smote
+5.5,409,89,806,26.7,89,Cacao,augmented_smote
+5.7,409,85,893,27.1,87,Cacao,augmented_smote
+5.6,426,88,910,26.9,85,Cacao,augmented_smote
+5.6,426,88,900,26.8,85,Cacao,augmented_smote
+5.9,406,85,959,27.1,86,Cacao,augmented_smote
+5.5,414,87,759,26.5,85,Cacao,augmented_smote
+5.9,407,85,947,27.1,86,Cacao,augmented_smote
+5.5,419,88,831,26.7,88,Cacao,augmented_smote
+5.6,405,88,824,26.8,88,Cacao,augmented_smote
+5.6,429,86,837,26.7,85,Cacao,augmented_smote
+5.6,423,88,904,26.8,85,Cacao,augmented_smote
+5.6,429,87,862,26.8,87,Cacao,augmented_smote
+5.7,402,86,836,26.9,87,Cacao,augmented_smote
+5.8,417,85,933,27.0,86,Cacao,augmented_smote
+5.5,415,87,754,26.5,84,Cacao,augmented_smote
+5.6,408,87,799,26.7,85,Cacao,augmented_smote
+5.8,411,84,990,27.1,86,Cacao,augmented_smote
+5.7,406,86,858,27.0,87,Cacao,augmented_smote
+5.9,408,85,971,27.1,86,Cacao,augmented_smote
+5.5,419,87,807,26.6,84,Cacao,augmented_smote
+5.7,423,83,1033,27.2,86,Cacao,augmented_smote
+5.6,423,88,889,26.8,85,Cacao,augmented_smote
+5.5,415,87,753,26.5,84,Cacao,augmented_smote
+5.6,411,87,776,26.6,85,Cacao,augmented_smote
+5.5,414,89,824,26.6,88,Cacao,augmented_smote
+5.9,406,85,954,27.1,86,Cacao,augmented_smote
+5.6,423,86,959,27.0,85,Cacao,augmented_smote
+5.8,426,84,980,27.3,88,Cacao,augmented_smote
+5.7,417,83,1031,27.2,85,Cacao,augmented_smote
+5.8,417,85,934,27.2,88,Cacao,augmented_smote
+5.8,417,85,933,27.0,86,Cacao,augmented_smote
+5.6,423,86,964,27.0,85,Cacao,augmented_smote
+5.5,413,88,769,26.5,86,Cacao,augmented_smote
+5.9,405,85,942,27.1,86,Cacao,augmented_smote
+5.6,436,85,905,26.9,85,Cacao,augmented_smote
+5.8,431,84,985,27.2,88,Cacao,augmented_smote
+5.5,409,89,805,26.6,89,Cacao,augmented_smote
+5.6,424,87,935,26.9,85,Cacao,augmented_smote
+5.7,417,83,1030,27.2,85,Cacao,augmented_smote
+6.0,517,88,1094,28.5,99,Cassava,original
+6.0,400,80,1000,27.9,80,Cassava,original
+6.0,508,85,1080,28.0,90,Cassava,augmented_smote
+6.0,508,85,1080,28.2,91,Cassava,augmented_smote
+6.0,508,85,1080,28.0,90,Cassava,augmented_smote
+6.0,508,86,1080,28.4,94,Cassava,augmented_smote
+6.0,508,85,1080,28.1,90,Cassava,augmented_smote
+6.0,508,85,1080,28.2,90,Cassava,augmented_smote
+6.0,508,85,1080,28.0,90,Cassava,augmented_smote
+6.0,508,85,1080,28.0,90,Cassava,augmented_smote
+6.0,512,88,1090,28.5,98,Cassava,augmented_smote
+6.0,508,87,1081,28.4,96,Cassava,augmented_smote
+6.0,508,86,1080,28.3,94,Cassava,augmented_smote
+6.0,508,85,1080,28.2,90,Cassava,augmented_smote
+6.0,508,85,1080,28.3,91,Cassava,augmented_smote
+6.0,508,86,1080,28.3,94,Cassava,augmented_smote
+6.0,508,86,1080,28.4,95,Cassava,augmented_smote
+6.0,508,85,1080,28.0,90,Cassava,augmented_smote
+6.0,508,85,1080,28.3,91,Cassava,augmented_smote
+6.0,508,86,1080,28.3,94,Cassava,augmented_smote
+6.0,508,85,1080,28.3,92,Cassava,augmented_smote
+6.0,511,88,1089,28.5,98,Cassava,augmented_smote
+6.0,508,85,1080,28.2,90,Cassava,augmented_smote
+6.0,508,87,1080,28.4,96,Cassava,augmented_smote
+6.0,508,87,1084,28.4,97,Cassava,augmented_smote
+6.0,508,85,1080,28.2,90,Cassava,augmented_smote
+6.0,508,86,1080,28.3,93,Cassava,augmented_smote
+6.0,508,85,1080,28.2,90,Cassava,augmented_smote
+6.0,508,86,1080,28.4,95,Cassava,augmented_smote
+6.0,508,85,1080,28.1,90,Cassava,augmented_smote
+6.0,508,87,1082,28.4,97,Cassava,augmented_smote
+6.0,508,87,1080,28.4,96,Cassava,augmented_smote
+6.0,508,85,1080,28.2,91,Cassava,augmented_smote
+6.0,508,86,1080,28.4,95,Cassava,augmented_smote
+6.0,508,85,1080,28.1,90,Cassava,augmented_smote
+6.0,508,85,1080,28.0,90,Cassava,augmented_smote
+6.0,508,85,1080,28.3,91,Cassava,augmented_smote
+6.0,508,85,1080,28.3,92,Cassava,augmented_smote
+6.0,508,85,1080,28.2,90,Cassava,augmented_smote
+6.0,508,85,1080,28.1,90,Cassava,augmented_smote
+6.0,508,85,1080,28.3,93,Cassava,augmented_smote
+6.0,508,85,1080,28.1,90,Cassava,augmented_smote
+6.0,513,88,1090,28.5,98,Cassava,augmented_smote
+6.0,508,85,1080,28.0,90,Cassava,augmented_smote
+6.0,508,86,1080,28.3,93,Cassava,augmented_smote
+6.0,508,85,1080,27.9,90,Cassava,augmented_smote
+6.0,508,85,1080,28.1,90,Cassava,augmented_smote
+6.0,508,85,1080,28.1,90,Cassava,augmented_smote
+6.0,508,85,1080,28.2,90,Cassava,augmented_smote
+6.0,508,86,1080,28.4,94,Cassava,augmented_smote
+6.0,508,85,1080,28.2,90,Cassava,augmented_smote
+6.0,508,85,1080,28.2,90,Cassava,augmented_smote
+6.0,508,86,1080,28.4,95,Cassava,augmented_smote
+6.0,508,85,1080,28.0,90,Cassava,augmented_smote
+6.0,508,87,1080,28.4,96,Cassava,augmented_smote
+6.0,508,85,1080,28.0,90,Cassava,augmented_smote
+6.0,508,86,1080,28.4,95,Cassava,augmented_smote
+6.0,508,85,1080,28.0,90,Cassava,augmented_smote
+6.0,508,85,1080,28.1,90,Cassava,augmented_smote
+6.0,508,85,1080,28.1,90,Cassava,augmented_smote
+6.0,508,87,1082,28.4,97,Cassava,augmented_smote
+6.0,508,85,1080,28.2,90,Cassava,augmented_smote
+6.0,508,85,1080,28.3,92,Cassava,augmented_smote
+6.0,508,86,1080,28.3,93,Cassava,augmented_smote
+6.0,508,85,1080,28.3,93,Cassava,augmented_smote
+6.0,508,85,1080,28.0,90,Cassava,augmented_smote
+6.0,508,85,1080,28.1,90,Cassava,augmented_smote
+6.0,508,85,1080,27.9,90,Cassava,augmented_smote
+6.0,514,88,1092,28.5,99,Cassava,augmented_smote
+6.0,508,85,1080,28.2,90,Cassava,augmented_smote
+6.0,508,85,1080,28.3,93,Cassava,augmented_smote
+6.0,508,85,1080,28.0,90,Cassava,augmented_smote
+6.0,508,85,1080,28.1,90,Cassava,augmented_smote
+6.0,508,85,1080,28.2,90,Cassava,augmented_smote
+6.0,508,85,1080,28.3,92,Cassava,augmented_smote
+6.0,508,85,1080,28.0,90,Cassava,augmented_smote
+6.0,513,88,1091,28.5,98,Cassava,augmented_smote
+6.0,508,87,1084,28.4,97,Cassava,augmented_smote
+6.0,508,86,1080,28.3,94,Cassava,augmented_smote
+6.0,508,85,1080,27.9,90,Cassava,augmented_smote
+6.0,508,87,1080,28.4,96,Cassava,augmented_smote
+6.0,508,85,1080,28.0,90,Cassava,augmented_smote
+6.0,508,85,1080,27.9,90,Cassava,augmented_smote
+6.0,508,85,1080,28.1,90,Cassava,augmented_smote
+6.0,508,86,1080,28.4,95,Cassava,augmented_smote
+6.0,508,85,1080,28.1,90,Cassava,augmented_smote
+6.0,508,85,1080,28.0,90,Cassava,augmented_smote
+6.0,517,88,1094,28.5,99,Cassava,augmented_smote
+6.0,508,85,1080,28.3,92,Cassava,augmented_smote
+6.0,508,85,1080,28.2,91,Cassava,augmented_smote
+6.0,508,85,1080,28.1,90,Cassava,augmented_smote
+6.0,508,85,1080,28.0,90,Cassava,augmented_smote
+6.0,508,85,1080,28.2,90,Cassava,augmented_smote
+6.0,508,85,1080,28.2,90,Cassava,augmented_smote
+6.0,508,85,1080,28.0,90,Cassava,augmented_smote
+6.0,508,86,1080,28.3,94,Cassava,augmented_smote
+6.0,508,85,1080,28.1,90,Cassava,augmented_smote
+6.0,508,85,1080,28.0,90,Cassava,augmented_smote
+5.5,450,86,700,26.5,87,Calamansi,original
+6.0,435,79,2000,28.1,82,Calamansi,original
+5.8,441,82,1473,27.5,84,Calamansi,augmented_smote
+5.8,441,82,1500,27.5,84,Calamansi,augmented_smote
+5.9,438,80,1775,27.8,83,Calamansi,augmented_smote
+5.9,437,80,1856,27.9,83,Calamansi,augmented_smote
+5.7,443,83,1272,27.2,85,Calamansi,augmented_smote
+5.7,443,83,1316,27.3,85,Calamansi,augmented_smote
+5.8,441,82,1463,27.4,84,Calamansi,augmented_smote
+5.6,446,84,1070,27.0,86,Calamansi,augmented_smote
+5.9,437,80,1847,27.9,83,Calamansi,augmented_smote
+5.8,441,82,1518,27.5,84,Calamansi,augmented_smote
+5.5,450,86,727,26.5,87,Calamansi,augmented_smote
+5.7,445,84,1131,27.0,85,Calamansi,augmented_smote
+5.8,441,82,1478,27.5,84,Calamansi,augmented_smote
+5.6,446,84,1084,27.0,86,Calamansi,augmented_smote
+5.6,447,85,970,26.8,86,Calamansi,augmented_smote
+5.8,440,81,1596,27.6,84,Calamansi,augmented_smote
+5.6,447,85,966,26.8,86,Calamansi,augmented_smote
+6.0,435,79,1990,28.1,82,Calamansi,augmented_smote
+5.9,439,81,1693,27.7,83,Calamansi,augmented_smote
+5.9,439,81,1611,27.6,83,Calamansi,augmented_smote
+5.9,439,81,1684,27.7,83,Calamansi,augmented_smote
+5.6,447,85,967,26.8,86,Calamansi,augmented_smote
+5.6,447,85,953,26.8,86,Calamansi,augmented_smote
+5.7,444,83,1238,27.2,85,Calamansi,augmented_smote
+5.8,441,82,1441,27.4,84,Calamansi,augmented_smote
+5.6,447,85,971,26.8,86,Calamansi,augmented_smote
+5.9,437,80,1796,27.8,83,Calamansi,augmented_smote
+5.9,439,81,1662,27.7,83,Calamansi,augmented_smote
+5.9,439,81,1637,27.7,83,Calamansi,augmented_smote
+5.5,449,86,760,26.6,87,Calamansi,augmented_smote
+5.6,448,85,879,26.7,86,Calamansi,augmented_smote
+5.7,444,83,1229,27.2,85,Calamansi,augmented_smote
+5.9,438,80,1751,27.8,83,Calamansi,augmented_smote
+5.7,444,83,1202,27.1,85,Calamansi,augmented_smote
+5.6,446,84,1081,27.0,86,Calamansi,augmented_smote
+5.9,439,81,1662,27.7,83,Calamansi,augmented_smote
+5.9,439,81,1614,27.6,83,Calamansi,augmented_smote
+5.9,438,81,1706,27.7,83,Calamansi,augmented_smote
+5.7,443,83,1291,27.2,85,Calamansi,augmented_smote
+5.6,446,84,1038,26.9,86,Calamansi,augmented_smote
+5.9,439,81,1675,27.7,83,Calamansi,augmented_smote
+5.9,437,80,1808,27.9,83,Calamansi,augmented_smote
+5.6,446,84,1006,26.9,86,Calamansi,augmented_smote
+5.9,438,80,1779,27.8,83,Calamansi,augmented_smote
+5.8,441,82,1474,27.5,84,Calamansi,augmented_smote
+6.0,436,80,1888,28.0,82,Calamansi,augmented_smote
+6.0,435,79,1995,28.1,82,Calamansi,augmented_smote
+5.7,444,83,1215,27.1,85,Calamansi,augmented_smote
+5.9,438,80,1774,27.8,83,Calamansi,augmented_smote
+5.7,444,83,1257,27.2,85,Calamansi,augmented_smote
+5.7,445,84,1161,27.1,85,Calamansi,augmented_smote
+6.0,436,80,1875,27.9,82,Calamansi,augmented_smote
+5.7,443,83,1346,27.3,85,Calamansi,augmented_smote
+5.7,445,84,1091,27.0,85,Calamansi,augmented_smote
+5.6,447,85,968,26.8,86,Calamansi,augmented_smote
+6.0,436,79,1953,28.0,82,Calamansi,augmented_smote
+6.0,435,79,1959,28.0,82,Calamansi,augmented_smote
+5.9,438,80,1757,27.8,83,Calamansi,augmented_smote
+5.7,443,83,1285,27.2,85,Calamansi,augmented_smote
+5.7,443,83,1280,27.2,85,Calamansi,augmented_smote
+5.6,447,85,926,26.8,86,Calamansi,augmented_smote
+5.5,449,85,814,26.6,87,Calamansi,augmented_smote
+5.7,445,84,1102,27.0,85,Calamansi,augmented_smote
+6.0,436,80,1901,28.0,82,Calamansi,augmented_smote
+5.6,447,85,926,26.8,86,Calamansi,augmented_smote
+5.7,444,83,1208,27.1,85,Calamansi,augmented_smote
+5.7,445,84,1127,27.0,85,Calamansi,augmented_smote
+5.9,437,80,1819,27.9,83,Calamansi,augmented_smote
+5.8,440,81,1572,27.6,84,Calamansi,augmented_smote
+5.6,446,84,1039,26.9,86,Calamansi,augmented_smote
+5.5,449,86,778,26.6,87,Calamansi,augmented_smote
+5.7,444,83,1221,27.1,85,Calamansi,augmented_smote
+5.8,441,82,1514,27.5,84,Calamansi,augmented_smote
+5.6,446,84,1071,27.0,86,Calamansi,augmented_smote
+5.6,446,84,1048,26.9,86,Calamansi,augmented_smote
+5.8,442,82,1436,27.4,84,Calamansi,augmented_smote
+5.6,448,85,885,26.7,86,Calamansi,augmented_smote
+5.8,441,82,1487,27.5,84,Calamansi,augmented_smote
+5.6,448,85,906,26.8,86,Calamansi,augmented_smote
+5.5,450,86,742,26.6,87,Calamansi,augmented_smote
+5.6,446,84,1021,26.9,86,Calamansi,augmented_smote
+5.7,444,83,1231,27.2,85,Calamansi,augmented_smote
+5.5,449,85,825,26.7,87,Calamansi,augmented_smote
+5.9,438,80,1748,27.8,83,Calamansi,augmented_smote
+5.5,450,86,720,26.5,87,Calamansi,augmented_smote
+5.7,445,84,1139,27.0,85,Calamansi,augmented_smote
+5.7,444,83,1230,27.2,85,Calamansi,augmented_smote
+5.7,445,84,1141,27.0,85,Calamansi,augmented_smote
+5.5,449,86,790,26.6,87,Calamansi,augmented_smote
+6.0,435,79,1991,28.1,82,Calamansi,augmented_smote
+5.9,437,80,1842,27.9,83,Calamansi,augmented_smote
+5.7,445,83,1175,27.1,85,Calamansi,augmented_smote
+5.6,447,85,926,26.8,86,Calamansi,augmented_smote
+5.8,442,82,1351,27.3,84,Calamansi,augmented_smote
+5.8,440,81,1541,27.5,84,Calamansi,augmented_smote
+5.7,443,83,1282,27.2,85,Calamansi,augmented_smote
+6.5,475,80,1215,27.0,99,Coconut,original
+6.2,480,82,1500,27.5,90,Coconut,original
+6.3,460,78,1800,28.2,90,Coconut,original
+6.1,510,83,1400,28.0,98,Coconut,original
+5.7,445,84,980,27.2,86,Coconut,original
+6.0,355,70,12571,33.9,99,Coconut,original
+6.2,487,82,1475,27.6,92,Coconut,augmented_smote
+5.9,449,82,1189,27.5,87,Coconut,augmented_smote
+6.2,453,79,3859,28.9,92,Coconut,augmented_smote
+5.9,400,77,6831,30.6,93,Coconut,augmented_smote
+6.3,460,78,1797,28.2,90,Coconut,augmented_smote
+5.8,453,84,1101,27.3,87,Coconut,augmented_smote
+5.9,481,83,1209,27.6,93,Coconut,augmented_smote
+6.1,475,80,3928,29.3,98,Coconut,augmented_smote
+6.1,482,81,3414,29.1,98,Coconut,augmented_smote
+6.0,383,73,10107,32.5,97,Coconut,augmented_smote
+6.1,476,82,1445,27.5,90,Coconut,augmented_smote
+6.0,454,81,1449,27.8,88,Coconut,augmented_smote
+6.3,467,81,1152,27.1,96,Coconut,augmented_smote
+6.2,459,79,1719,28.1,90,Coconut,augmented_smote
+6.2,405,74,7823,31.0,99,Coconut,augmented_smote
+6.2,398,74,8480,31.4,99,Coconut,augmented_smote
+6.2,397,73,8628,31.5,99,Coconut,augmented_smote
+6.0,372,71,10795,33.0,98,Coconut,augmented_smote
+6.5,475,80,1211,27.0,99,Coconut,augmented_smote
+6.2,393,73,9005,31.7,99,Coconut,augmented_smote
+6.3,492,81,1304,27.5,99,Coconut,augmented_smote
+6.3,479,82,1451,27.4,92,Coconut,augmented_smote
+6.0,456,83,1068,27.1,91,Coconut,augmented_smote
+6.3,463,78,1695,28.0,92,Coconut,augmented_smote
+6.3,467,79,1698,28.0,90,Coconut,augmented_smote
+6.1,388,73,9617,32.2,97,Coconut,augmented_smote
+6.0,457,82,1075,27.1,91,Coconut,augmented_smote
+6.1,506,83,1413,27.9,97,Coconut,augmented_smote
+6.4,470,79,1412,27.4,96,Coconut,augmented_smote
+6.5,473,80,1285,27.1,98,Coconut,augmented_smote
+5.9,477,84,1188,27.6,92,Coconut,augmented_smote
+5.7,431,82,2797,28.3,88,Coconut,augmented_smote
+6.4,477,81,1313,27.2,96,Coconut,augmented_smote
+6.5,472,80,1351,27.3,97,Coconut,augmented_smote
+6.1,469,80,4333,29.5,98,Coconut,augmented_smote
+6.2,480,82,1499,27.5,90,Coconut,augmented_smote
+6.5,474,80,1257,27.1,98,Coconut,augmented_smote
+6.1,399,74,8667,31.6,96,Coconut,augmented_smote
+5.9,399,77,6915,30.6,93,Coconut,augmented_smote
+6.2,458,79,1713,28.1,90,Coconut,augmented_smote
+6.3,478,81,1374,27.3,94,Coconut,augmented_smote
+6.0,370,71,11033,33.1,98,Coconut,augmented_smote
+6.3,492,81,1304,27.5,99,Coconut,augmented_smote
+6.5,472,80,1327,27.2,97,Coconut,augmented_smote
+6.2,473,81,1601,27.7,90,Coconut,augmented_smote
+5.7,440,83,1590,27.6,87,Coconut,augmented_smote
+6.2,474,79,1689,28.1,92,Coconut,augmented_smote
+6.0,361,70,12012,33.6,99,Coconut,augmented_smote
+6.4,464,79,1643,27.9,92,Coconut,augmented_smote
+6.4,463,79,2389,27.7,99,Coconut,augmented_smote
+5.9,383,74,8909,31.8,95,Coconut,augmented_smote
+6.3,478,81,1374,27.3,94,Coconut,augmented_smote
+6.1,470,80,4276,29.5,98,Coconut,augmented_smote
+5.9,458,83,1174,27.3,87,Coconut,augmented_smote
+6.2,466,81,2723,28.2,91,Coconut,augmented_smote
+6.2,480,80,1637,28.1,93,Coconut,augmented_smote
+6.2,464,81,1128,27.1,94,Coconut,augmented_smote
+5.9,460,83,1200,27.3,88,Coconut,augmented_smote
+6.3,464,78,1766,28.2,91,Coconut,augmented_smote
+6.2,441,77,3706,29.2,92,Coconut,augmented_smote
+6.4,477,81,1348,27.2,95,Coconut,augmented_smote
+6.1,391,73,8848,31.9,96,Coconut,augmented_smote
+5.8,455,84,1047,27.3,88,Coconut,augmented_smote
+6.0,362,71,11692,33.4,98,Coconut,augmented_smote
+5.9,453,83,1046,27.1,90,Coconut,augmented_smote
+6.4,467,79,1515,27.6,94,Coconut,augmented_smote
+6.2,478,82,1529,27.6,90,Coconut,augmented_smote
+6.1,506,83,1714,28.2,98,Coconut,augmented_smote
+6.3,472,79,1704,28.2,92,Coconut,augmented_smote
+6.1,507,83,1387,27.9,98,Coconut,augmented_smote
+6.2,475,80,1677,28.1,92,Coconut,augmented_smote
+5.9,459,83,1194,27.3,88,Coconut,augmented_smote
+6.3,468,79,1733,28.2,91,Coconut,augmented_smote
+6.2,421,75,5808,30.3,93,Coconut,augmented_smote
+6.2,464,82,1127,27.1,94,Coconut,augmented_smote
+6.1,470,83,1354,27.4,89,Coconut,augmented_smote
+5.8,450,83,1016,27.2,88,Coconut,augmented_smote
+6.0,366,71,11578,33.3,98,Coconut,augmented_smote
+6.0,364,71,11815,33.5,98,Coconut,augmented_smote
+6.2,486,81,1595,28.1,94,Coconut,augmented_smote
+6.3,479,82,1444,27.4,92,Coconut,augmented_smote
+6.3,460,78,1773,28.2,90,Coconut,augmented_smote
+6.2,478,82,1525,27.6,90,Coconut,augmented_smote
+6.1,499,82,2210,28.4,98,Coconut,augmented_smote
+6.0,488,83,1255,27.7,94,Coconut,augmented_smote
+5.8,448,83,1160,27.4,87,Coconut,augmented_smote
+6.4,477,81,1311,27.2,96,Coconut,augmented_smote
+6.3,479,82,1432,27.4,92,Coconut,augmented_smote
+6.2,480,82,1500,27.5,90,Maize,original
+5.3,520,77,2800,28.8,86,Maize,original
+6.0,515,78,2750,28.4,89,Maize,original
+6.8,550,75,2500,29.2,95,Maize,original
+6.0,515,78,2750,28.4,89,Maize,original
+6.2,480,82,1500,27.5,90,Maize,original
+5.3,520,77,2800,28.8,86,Maize,original
+6.8,405,79,1900,28.0,84,Maize,original
+6.5,538,76,2585,28.9,93,Maize,augmented_smote
+6.2,484,82,1627,27.6,90,Maize,augmented_smote
+6.2,539,76,2612,29.1,92,Maize,augmented_smote
+5.7,517,78,2775,28.6,88,Maize,augmented_smote
+6.5,540,75,2503,29.2,93,Maize,augmented_smote
+6.5,460,79,2044,28.1,85,Maize,augmented_smote
+6.3,466,81,1573,27.6,89,Maize,augmented_smote
+6.5,540,75,2521,29.2,93,Maize,augmented_smote
+6.1,518,78,2726,28.5,90,Maize,augmented_smote
+6.5,460,79,1858,27.9,85,Maize,augmented_smote
+5.7,517,78,2774,28.6,88,Maize,augmented_smote
+5.8,529,76,2708,28.9,89,Maize,augmented_smote
+5.4,519,77,2794,28.8,86,Maize,augmented_smote
+6.5,540,75,2552,29.1,93,Maize,augmented_smote
+5.3,520,77,2798,28.8,86,Maize,augmented_smote
+5.6,518,77,2780,28.6,87,Maize,augmented_smote
+6.3,466,81,1573,27.6,89,Maize,augmented_smote
+6.0,515,78,2750,28.4,89,Maize,augmented_smote
+6.1,489,81,1820,27.7,90,Maize,augmented_smote
+6.1,494,80,2002,27.9,90,Maize,augmented_smote
+6.2,483,82,1548,27.6,90,Maize,augmented_smote
+5.9,516,78,2757,28.5,89,Maize,augmented_smote
+5.9,516,78,2756,28.4,89,Maize,augmented_smote
+6.5,460,79,2040,28.1,84,Maize,augmented_smote
+6.5,524,78,2126,28.6,93,Maize,augmented_smote
+6.3,479,78,2470,28.3,87,Maize,augmented_smote
+6.1,520,78,2715,28.5,90,Maize,augmented_smote
+6.2,480,82,1500,27.5,90,Maize,augmented_smote
+6.5,535,76,2607,28.9,92,Maize,augmented_smote
+6.4,535,76,2610,28.8,92,Maize,augmented_smote
+5.7,517,78,2769,28.5,88,Maize,augmented_smote
+6.5,460,80,1804,27.9,85,Maize,augmented_smote
+5.6,518,77,2782,28.7,87,Maize,augmented_smote
+5.6,518,77,2776,28.6,87,Maize,augmented_smote
+6.5,460,78,2082,28.4,87,Maize,augmented_smote
+6.1,489,81,1836,27.7,90,Maize,augmented_smote
+6.3,539,76,2606,29.1,92,Maize,augmented_smote
+6.5,540,75,2486,29.2,93,Maize,augmented_smote
+6.3,529,77,2647,28.7,91,Maize,augmented_smote
+5.3,520,77,2800,28.8,86,Maize,augmented_smote
+5.3,519,77,2795,28.8,86,Maize,augmented_smote
+6.4,540,76,2583,29.1,93,Maize,augmented_smote
+6.4,540,76,2579,29.1,93,Maize,augmented_smote
+6.3,475,78,2439,28.3,87,Maize,augmented_smote
+6.5,460,79,2002,28.0,85,Maize,augmented_smote
+5.8,516,78,2763,28.5,88,Maize,augmented_smote
+6.5,540,75,2547,29.1,93,Maize,augmented_smote
+5.4,519,77,2793,28.7,86,Maize,augmented_smote
+6.2,485,81,1690,27.6,90,Maize,augmented_smote
+6.5,460,80,1803,27.9,85,Maize,augmented_smote
+5.8,531,76,2693,28.9,89,Maize,augmented_smote
+6.5,460,81,1699,27.7,87,Maize,augmented_smote
+6.0,516,78,2740,28.4,89,Maize,augmented_smote
+5.4,519,77,2790,28.7,87,Maize,augmented_smote
+6.3,526,77,2671,28.7,91,Maize,augmented_smote
+6.0,515,78,2748,28.4,89,Maize,augmented_smote
+6.5,540,75,2503,29.2,93,Maize,augmented_smote
+6.5,460,79,2034,28.1,84,Maize,augmented_smote
+6.5,476,77,2194,28.6,89,Maize,augmented_smote
+6.4,463,78,2350,28.2,87,Maize,augmented_smote
+6.0,515,78,2750,28.4,89,Maize,augmented_smote
+6.5,460,80,1758,27.8,86,Maize,augmented_smote
+6.2,480,82,1500,27.5,90,Maize,augmented_smote
+6.1,498,80,2142,28.0,89,Maize,augmented_smote
+6.1,504,79,2351,28.1,89,Maize,augmented_smote
+5.7,527,77,2726,28.9,88,Maize,augmented_smote
+6.2,481,82,1540,27.5,90,Maize,augmented_smote
+6.5,460,80,1757,27.8,86,Maize,augmented_smote
+5.8,482,78,2506,28.5,85,Maize,augmented_smote
+6.5,460,80,1814,27.9,85,Maize,augmented_smote
+5.3,520,77,2800,28.8,86,Maize,augmented_smote
+5.6,525,77,2749,28.9,88,Maize,augmented_smote
+5.8,516,78,2762,28.5,88,Maize,augmented_smote
+6.2,480,82,1500,27.5,90,Maize,augmented_smote
+6.5,460,78,2047,28.3,87,Maize,augmented_smote
+5.8,516,78,2761,28.5,88,Maize,augmented_smote
+5.7,517,78,2773,28.6,88,Maize,augmented_smote
+6.5,540,76,2379,29.0,93,Maize,augmented_smote
+6.3,473,78,2422,28.2,87,Maize,augmented_smote
+6.2,488,81,1800,27.7,90,Maize,augmented_smote
+6.0,512,78,2725,28.4,89,Maize,augmented_smote
+6.5,515,76,2356,28.9,92,Maize,augmented_smote
+6.5,460,78,2123,28.4,88,Maize,augmented_smote
+6.5,540,75,2509,29.2,93,Maize,augmented_smote
+6.5,475,80,1215,27.0,99,Coffee,original
+5.5,450,86,700,26.5,87,Coffee,original
+6.5,474,81,1215,27.0,98,Coffee,original
+5.6,456,85,720,26.5,88,Coffee,original
+6.5,470,83,1235,27.0,97,Coffee,original
+5.7,456,85,720,26.5,88,Coffee,original
+6.1,461,84,1004,26.8,93,Coffee,augmented_smote
+6.2,470,81,1072,26.9,96,Coffee,augmented_smote
+6.1,465,83,1018,26.8,94,Coffee,augmented_smote
+5.8,450,86,702,26.5,87,Coffee,augmented_smote
+5.8,456,85,720,26.5,88,Coffee,augmented_smote
+6.5,474,80,1217,27.0,99,Coffee,augmented_smote
+6.4,473,81,1151,26.9,98,Coffee,augmented_smote
+5.8,457,85,760,26.5,89,Coffee,augmented_smote
+6.0,462,84,927,26.7,92,Coffee,augmented_smote
+6.5,473,81,1192,27.0,98,Coffee,augmented_smote
+5.9,461,83,923,26.7,92,Coffee,augmented_smote
+6.5,472,82,1229,27.0,98,Coffee,augmented_smote
+6.5,470,83,1230,27.0,97,Coffee,augmented_smote
+6.3,471,81,1123,26.9,97,Coffee,augmented_smote
+6.5,471,83,1230,27.0,97,Coffee,augmented_smote
+6.4,472,81,1148,26.9,98,Coffee,augmented_smote
+5.8,458,85,787,26.6,89,Coffee,augmented_smote
+6.5,473,81,1224,27.0,98,Coffee,augmented_smote
+5.9,460,84,854,26.6,90,Coffee,augmented_smote
+6.2,469,81,1071,26.9,96,Coffee,augmented_smote
+6.5,475,80,1215,27.0,99,Coffee,augmented_smote
+5.8,452,86,743,26.5,88,Coffee,augmented_smote
+6.2,468,82,1054,26.8,95,Coffee,augmented_smote
+6.2,468,82,1059,26.8,95,Coffee,augmented_smote
+6.2,469,82,1050,26.8,95,Coffee,augmented_smote
+5.8,452,86,706,26.5,87,Coffee,augmented_smote
+6.5,475,80,1215,27.0,99,Coffee,augmented_smote
+6.2,464,84,1026,26.8,93,Coffee,augmented_smote
+5.8,454,85,714,26.5,88,Coffee,augmented_smote
+6.4,468,83,1169,26.9,96,Coffee,augmented_smote
+6.2,468,82,1031,26.8,95,Coffee,augmented_smote
+6.5,471,83,1230,27.0,97,Coffee,augmented_smote
+6.0,461,84,993,26.8,92,Coffee,augmented_smote
+6.5,474,81,1219,27.0,99,Coffee,augmented_smote
+5.8,456,85,720,26.5,88,Coffee,augmented_smote
+5.9,457,85,889,26.7,91,Coffee,augmented_smote
+6.1,467,82,995,26.8,94,Coffee,augmented_smote
+6.2,464,84,1076,26.9,94,Coffee,augmented_smote
+6.5,473,81,1185,27.0,97,Coffee,augmented_smote
+6.5,473,81,1218,27.0,98,Coffee,augmented_smote
+5.8,457,85,746,26.5,89,Coffee,augmented_smote
+5.8,453,86,710,26.5,87,Coffee,augmented_smote
+5.8,450,86,701,26.5,87,Coffee,augmented_smote
+5.8,455,85,715,26.5,88,Coffee,augmented_smote
+5.8,458,85,762,26.5,89,Coffee,augmented_smote
+6.3,469,81,1068,26.9,96,Coffee,augmented_smote
+6.5,474,81,1215,27.0,98,Coffee,augmented_smote
+6.5,475,80,1215,27.0,99,Coffee,augmented_smote
+6.3,467,83,1123,26.9,95,Coffee,augmented_smote
+6.5,473,81,1222,27.0,98,Coffee,augmented_smote
+5.8,457,85,762,26.5,89,Coffee,augmented_smote
+6.5,471,82,1229,27.0,97,Coffee,augmented_smote
+5.8,459,84,802,26.6,90,Coffee,augmented_smote
+6.0,460,85,964,26.7,92,Coffee,augmented_smote
+6.2,468,82,1079,26.9,95,Coffee,augmented_smote
+5.8,456,85,726,26.5,88,Coffee,augmented_smote
+5.8,456,85,720,26.5,88,Coffee,augmented_smote
+6.5,471,82,1230,27.0,97,Coffee,augmented_smote
+5.8,451,86,702,26.5,87,Coffee,augmented_smote
+5.8,458,85,797,26.6,89,Coffee,augmented_smote
+6.3,470,82,1111,26.9,96,Coffee,augmented_smote
+5.8,460,84,812,26.6,90,Coffee,augmented_smote
+5.8,455,85,717,26.5,88,Coffee,augmented_smote
+6.5,475,80,1216,27.0,99,Coffee,augmented_smote
+6.3,470,81,1113,26.9,97,Coffee,augmented_smote
+5.8,456,85,720,26.5,88,Coffee,augmented_smote
+5.8,456,85,720,26.5,88,Coffee,augmented_smote
+5.8,450,86,700,26.5,87,Coffee,augmented_smote
+6.1,463,84,989,26.8,93,Coffee,augmented_smote
+6.0,460,84,885,26.7,91,Coffee,augmented_smote
+5.8,458,85,778,26.6,89,Coffee,augmented_smote
+5.8,453,86,777,26.6,88,Coffee,augmented_smote
+6.0,463,83,904,26.7,92,Coffee,augmented_smote
+6.1,465,82,1008,26.8,94,Coffee,augmented_smote
+6.4,471,82,1150,26.9,97,Coffee,augmented_smote
+6.4,473,80,1177,27.0,98,Coffee,augmented_smote
+6.2,464,84,1074,26.8,94,Coffee,augmented_smote
+6.5,472,82,1228,27.0,98,Coffee,augmented_smote
+6.5,474,81,1215,27.0,98,Coffee,augmented_smote
+5.8,451,86,704,26.5,87,Coffee,augmented_smote
+6.1,464,83,951,26.7,93,Coffee,augmented_smote
+5.8,456,85,835,26.6,90,Coffee,augmented_smote
+5.8,453,86,786,26.6,89,Coffee,augmented_smote
+5.8,456,85,724,26.5,88,Coffee,augmented_smote
+6.5,474,81,1215,27.0,98,Coffee,augmented_smote
+5.9,462,83,879,26.7,92,Coffee,augmented_smote
+6.5,474,81,1213,27.0,98,Coffee,augmented_smote
+6.5,473,81,1222,27.0,98,Coffee,augmented_smote
+6.8,405,79,1900,28.0,84,Forage Grass,original
+6.8,550,75,2500,29.2,95,Forage Grass,original
+6.2,480,82,1500,27.5,90,Forage Grass,original
+5.3,520,77,2800,28.8,86,Forage Grass,original
+6.0,515,78,2750,28.4,89,Forage Grass,original
+6.0,515,78,2750,28.4,89,Forage Grass,original
+6.2,480,82,1500,27.5,90,Forage Grass,original
+5.3,520,77,2800,28.8,86,Forage Grass,original
+6.6,410,76,2000,29.1,88,Forage Grass,augmented_smote
+6.6,410,78,2000,28.4,88,Forage Grass,augmented_smote
+6.6,410,76,2000,28.9,88,Forage Grass,augmented_smote
+6.6,410,78,2000,28.2,87,Forage Grass,augmented_smote
+6.6,410,77,2000,28.8,86,Forage Grass,augmented_smote
+6.6,410,76,2000,29.0,88,Forage Grass,augmented_smote
+6.6,410,77,2000,28.7,87,Forage Grass,augmented_smote
+6.6,410,77,2000,28.7,88,Forage Grass,augmented_smote
+6.6,410,79,2000,28.2,88,Forage Grass,augmented_smote
+6.6,410,77,2000,28.6,87,Forage Grass,augmented_smote
+6.7,410,79,2000,28.0,85,Forage Grass,augmented_smote
+6.6,410,78,2000,28.4,88,Forage Grass,augmented_smote
+6.6,410,78,2000,28.4,88,Forage Grass,augmented_smote
+6.6,410,79,1863,28.1,88,Forage Grass,augmented_smote
+6.6,410,76,2000,29.0,88,Forage Grass,augmented_smote
+6.6,410,77,2000,28.9,88,Forage Grass,augmented_smote
+6.6,410,78,2000,28.2,87,Forage Grass,augmented_smote
+6.6,410,77,2000,28.8,86,Forage Grass,augmented_smote
+6.6,410,81,1800,27.6,88,Forage Grass,augmented_smote
+6.6,410,78,2000,28.2,87,Forage Grass,augmented_smote
+6.6,410,78,2000,28.5,88,Forage Grass,augmented_smote
+6.6,410,77,2000,28.6,87,Forage Grass,augmented_smote
+6.6,410,77,2000,28.8,86,Forage Grass,augmented_smote
+6.6,410,78,2000,28.2,87,Forage Grass,augmented_smote
+6.6,410,76,2000,29.0,88,Forage Grass,augmented_smote
+6.6,410,77,2000,28.7,88,Forage Grass,augmented_smote
+6.6,410,81,1800,27.5,88,Forage Grass,augmented_smote
+6.6,410,77,2000,28.8,87,Forage Grass,augmented_smote
+6.6,410,79,2000,28.2,84,Forage Grass,augmented_smote
+6.8,410,76,2000,29.2,88,Forage Grass,augmented_smote
+6.6,410,78,2000,28.4,88,Forage Grass,augmented_smote
+6.8,410,79,1920,28.0,84,Forage Grass,augmented_smote
+6.6,410,78,2000,28.4,88,Forage Grass,augmented_smote
+6.6,410,77,2000,28.7,88,Forage Grass,augmented_smote
+6.6,410,78,2000,28.5,88,Forage Grass,augmented_smote
+6.6,410,76,2000,28.8,88,Forage Grass,augmented_smote
+6.6,410,78,2000,28.4,88,Forage Grass,augmented_smote
+6.6,410,78,2000,28.5,88,Forage Grass,augmented_smote
+6.8,410,78,1991,28.2,86,Forage Grass,augmented_smote
+6.6,410,77,2000,28.7,87,Forage Grass,augmented_smote
+6.6,410,78,2000,28.4,88,Forage Grass,augmented_smote
+6.6,410,78,2000,28.6,88,Forage Grass,augmented_smote
+6.6,410,77,2000,28.8,88,Forage Grass,augmented_smote
+6.6,410,78,2000,28.4,88,Forage Grass,augmented_smote
+6.6,410,77,2000,28.8,86,Forage Grass,augmented_smote
+6.6,410,81,1800,27.7,88,Forage Grass,augmented_smote
+6.6,410,76,2000,29.0,88,Forage Grass,augmented_smote
+6.6,410,76,2000,28.9,88,Forage Grass,augmented_smote
+6.6,410,77,2000,28.9,88,Forage Grass,augmented_smote
+6.6,410,76,2000,29.1,88,Forage Grass,augmented_smote
+6.6,410,78,2000,28.3,88,Forage Grass,augmented_smote
+6.6,410,81,1800,27.6,88,Forage Grass,augmented_smote
+6.6,410,78,2000,28.4,88,Forage Grass,augmented_smote
+6.6,410,77,2000,28.8,86,Forage Grass,augmented_smote
+6.6,410,77,2000,28.8,86,Forage Grass,augmented_smote
+6.6,410,80,1800,28.0,88,Forage Grass,augmented_smote
+6.6,410,78,2000,28.5,88,Forage Grass,augmented_smote
+6.6,410,76,2000,29.0,88,Forage Grass,augmented_smote
+6.6,410,78,2000,28.4,88,Forage Grass,augmented_smote
+6.6,410,78,2000,28.5,88,Forage Grass,augmented_smote
+6.6,410,78,2000,28.4,88,Forage Grass,augmented_smote
+6.6,410,78,2000,28.5,88,Forage Grass,augmented_smote
+6.6,410,80,1800,27.8,87,Forage Grass,augmented_smote
+6.6,410,76,2000,29.1,88,Forage Grass,augmented_smote
+6.6,410,81,1800,27.5,88,Forage Grass,augmented_smote
+6.6,410,81,1800,27.6,88,Forage Grass,augmented_smote
+6.6,410,76,2000,29.0,88,Forage Grass,augmented_smote
+6.6,410,80,2000,27.9,88,Forage Grass,augmented_smote
+6.6,410,81,1800,27.5,88,Forage Grass,augmented_smote
+6.6,410,78,2000,28.6,88,Forage Grass,augmented_smote
+6.6,410,76,2000,29.1,88,Forage Grass,augmented_smote
+6.6,410,79,2000,28.1,88,Forage Grass,augmented_smote
+6.6,410,78,2000,28.6,88,Forage Grass,augmented_smote
+6.6,410,81,1800,27.5,88,Forage Grass,augmented_smote
+6.6,410,78,2000,28.4,88,Forage Grass,augmented_smote
+6.6,410,79,2000,28.1,85,Forage Grass,augmented_smote
+6.6,410,77,2000,28.7,87,Forage Grass,augmented_smote
+6.6,410,78,2000,28.3,88,Forage Grass,augmented_smote
+6.8,405,79,1898,28.0,84,Forage Grass,augmented_smote
+6.8,410,76,2000,28.8,88,Forage Grass,augmented_smote
+6.6,410,81,1867,27.8,88,Forage Grass,augmented_smote
+6.6,410,79,2000,28.2,88,Forage Grass,augmented_smote
+6.6,410,81,1831,27.7,88,Forage Grass,augmented_smote
+6.6,410,78,2000,28.4,88,Forage Grass,augmented_smote
+6.3,460,78,1800,28.2,90,Ginger,original
+5.5,455,85,1150,27.1,85,Ginger,original
+6.4,500,80,1900,27.7,93,Ginger,original
+6.2,530,79,2400,28.2,91,Ginger,original
+6.0,525,81,2000,27.8,94,Ginger,original
+6.1,515,77,2500,28.4,88,Ginger,original
+6.5,490,80,1800,28.0,92,Ginger,original
+6.3,505,78,2200,27.5,90,Ginger,original
+5.9,485,83,1500,26.9,89,Ginger,original
+6.0,470,81,1810,27.8,91,Ginger,augmented_smote
+5.6,460,85,1203,27.1,86,Ginger,augmented_smote
+6.3,470,81,1722,27.7,91,Ginger,augmented_smote
+5.7,470,84,1352,27.0,87,Ginger,augmented_smote
+6.3,470,80,1810,27.7,91,Ginger,augmented_smote
+6.1,470,81,1810,27.8,91,Ginger,augmented_smote
+6.0,470,81,1810,27.7,91,Ginger,augmented_smote
+6.1,470,77,1810,28.4,88,Ginger,augmented_smote
+6.2,470,79,1810,28.1,91,Ginger,augmented_smote
+6.4,470,80,1810,27.7,91,Ginger,augmented_smote
+6.5,470,80,1810,27.9,91,Ginger,augmented_smote
+6.4,470,79,1810,27.8,91,Ginger,augmented_smote
+6.0,470,81,1810,27.8,91,Ginger,augmented_smote
+6.5,470,80,1810,28.0,91,Ginger,augmented_smote
+6.5,470,80,1810,27.9,91,Ginger,augmented_smote
+6.1,470,81,1631,27.5,89,Ginger,augmented_smote
+6.4,470,79,1800,28.1,91,Ginger,augmented_smote
+6.1,470,77,1810,28.3,89,Ginger,augmented_smote
+6.4,470,80,1773,27.9,91,Ginger,augmented_smote
+6.3,470,78,1810,27.5,90,Ginger,augmented_smote
+6.1,470,80,1651,27.6,90,Ginger,augmented_smote
+6.2,470,77,1810,28.2,89,Ginger,augmented_smote
+6.5,470,80,1800,28.0,91,Ginger,augmented_smote
+6.5,470,80,1810,27.9,91,Ginger,augmented_smote
+6.2,470,79,1810,28.2,91,Ginger,augmented_smote
+6.2,470,79,1810,28.2,91,Ginger,augmented_smote
+6.2,470,79,1810,27.6,91,Ginger,augmented_smote
+6.3,470,78,1810,27.5,90,Ginger,augmented_smote
+5.7,464,84,1306,27.2,87,Ginger,augmented_smote
+5.5,457,85,1184,27.1,85,Ginger,augmented_smote
+5.8,470,84,1405,27.0,88,Ginger,augmented_smote
+6.4,470,79,1800,28.1,91,Ginger,augmented_smote
+6.4,470,79,1800,28.1,91,Ginger,augmented_smote
+6.2,470,82,1635,27.4,90,Ginger,augmented_smote
+6.2,470,78,1810,28.2,90,Ginger,augmented_smote
+5.7,462,84,1289,27.3,86,Ginger,augmented_smote
+6.2,470,79,1810,28.1,91,Ginger,augmented_smote
+6.2,459,79,1732,28.1,89,Ginger,augmented_smote
+6.5,470,80,1810,27.9,91,Ginger,augmented_smote
+6.0,470,83,1538,27.0,89,Ginger,augmented_smote
+6.5,470,80,1810,27.9,91,Ginger,augmented_smote
+6.3,470,79,1810,28.0,91,Ginger,augmented_smote
+6.1,470,82,1616,27.3,90,Ginger,augmented_smote
+6.3,460,78,1801,28.2,90,Ginger,augmented_smote
+6.2,470,79,1810,28.1,91,Ginger,augmented_smote
+5.6,465,84,1269,27.0,86,Ginger,augmented_smote
+6.2,470,79,1810,28.2,91,Ginger,augmented_smote
+6.1,470,80,1810,27.9,91,Ginger,augmented_smote
+6.2,470,79,1810,28.0,91,Ginger,augmented_smote
+6.4,470,79,1810,27.9,91,Ginger,augmented_smote
+6.5,470,80,1810,27.9,91,Ginger,augmented_smote
+6.3,470,78,1810,27.5,90,Ginger,augmented_smote
+6.3,465,78,1810,28.1,90,Ginger,augmented_smote
+6.3,470,78,1810,27.6,90,Ginger,augmented_smote
+5.7,460,84,1251,27.2,86,Ginger,augmented_smote
+6.3,470,79,1810,27.6,91,Ginger,augmented_smote
+6.4,470,80,1810,27.8,91,Ginger,augmented_smote
+5.8,470,83,1433,26.9,88,Ginger,augmented_smote
+6.0,470,81,1810,27.8,91,Ginger,augmented_smote
+5.8,468,84,1366,27.3,87,Ginger,augmented_smote
+6.2,470,78,1810,28.3,90,Ginger,augmented_smote
+6.5,470,80,1800,28.0,91,Ginger,augmented_smote
+6.3,470,81,1810,27.6,91,Ginger,augmented_smote
+5.9,470,83,1614,27.1,90,Ginger,augmented_smote
+6.4,470,79,1810,27.7,91,Ginger,augmented_smote
+5.9,470,82,1674,27.2,91,Ginger,augmented_smote
+6.4,470,80,1810,27.7,91,Ginger,augmented_smote
+6.2,470,79,1810,28.0,91,Ginger,augmented_smote
+6.4,470,80,1810,28.1,91,Ginger,augmented_smote
+6.4,470,80,1810,27.7,91,Ginger,augmented_smote
+6.4,470,81,1743,27.8,91,Ginger,augmented_smote
+6.1,470,80,1810,28.0,91,Ginger,augmented_smote
+5.6,466,84,1276,27.0,86,Ginger,augmented_smote
+6.3,467,78,1810,28.1,91,Ginger,augmented_smote
+6.5,470,80,1801,28.0,91,Ginger,augmented_smote
+6.3,470,79,1810,28.2,91,Ginger,augmented_smote
+6.3,470,80,1810,27.7,91,Ginger,augmented_smote
+6.3,470,78,1810,28.1,90,Ginger,augmented_smote
+6.3,470,81,1696,27.6,91,Ginger,augmented_smote
+6.3,470,79,1810,28.1,91,Ginger,augmented_smote
+6.2,470,81,1660,27.5,91,Ginger,augmented_smote
+6.3,461,78,1791,28.2,90,Ginger,augmented_smote
+6.8,405,79,1900,28.0,84,Ipil Ipil,original
+6.7,406,79,1953,28.1,84,Ipil Ipil,augmented_smote
+6.3,409,78,2000,28.4,83,Ipil Ipil,augmented_smote
+6.5,408,78,2000,28.2,83,Ipil Ipil,augmented_smote
+6.5,407,79,2000,28.2,84,Ipil Ipil,augmented_smote
+6.3,409,78,2000,28.3,83,Ipil Ipil,augmented_smote
+6.4,408,78,2000,28.3,83,Ipil Ipil,augmented_smote
+6.8,405,79,1920,28.0,84,Ipil Ipil,augmented_smote
+6.6,407,79,2000,28.2,84,Ipil Ipil,augmented_smote
+6.3,409,78,2000,28.3,83,Ipil Ipil,augmented_smote
+6.8,405,79,1915,28.0,84,Ipil Ipil,augmented_smote
+6.7,406,79,1937,28.0,84,Ipil Ipil,augmented_smote
+6.4,409,78,2000,28.3,83,Ipil Ipil,augmented_smote
+6.3,409,78,2000,28.3,83,Ipil Ipil,augmented_smote
+6.7,406,79,1954,28.1,84,Ipil Ipil,augmented_smote
+6.8,405,79,1913,28.0,84,Ipil Ipil,augmented_smote
+6.5,407,79,2000,28.2,84,Ipil Ipil,augmented_smote
+6.5,408,78,2000,28.2,83,Ipil Ipil,augmented_smote
+6.5,407,79,2000,28.2,84,Ipil Ipil,augmented_smote
+6.3,409,78,2000,28.3,83,Ipil Ipil,augmented_smote
+6.6,406,79,1976,28.1,84,Ipil Ipil,augmented_smote
+6.7,406,79,1957,28.1,84,Ipil Ipil,augmented_smote
+6.7,406,79,1971,28.1,84,Ipil Ipil,augmented_smote
+6.7,406,79,1945,28.1,84,Ipil Ipil,augmented_smote
+6.4,408,78,2000,28.3,83,Ipil Ipil,augmented_smote
+6.4,409,78,2000,28.3,83,Ipil Ipil,augmented_smote
+6.3,409,78,2000,28.3,83,Ipil Ipil,augmented_smote
+6.2,410,78,2000,28.4,83,Ipil Ipil,augmented_smote
+6.4,408,78,2000,28.2,83,Ipil Ipil,augmented_smote
+6.2,410,78,2000,28.4,83,Ipil Ipil,augmented_smote
+6.3,409,78,2000,28.3,83,Ipil Ipil,augmented_smote
+6.6,407,79,2000,28.2,84,Ipil Ipil,augmented_smote
+6.4,408,78,2000,28.2,83,Ipil Ipil,augmented_smote
+6.5,408,78,2000,28.2,83,Ipil Ipil,augmented_smote
+6.5,407,79,2000,28.2,84,Ipil Ipil,augmented_smote
+6.2,410,78,2000,28.4,83,Ipil Ipil,augmented_smote
+6.2,410,78,2000,28.4,83,Ipil Ipil,augmented_smote
+6.5,407,79,2000,28.2,84,Ipil Ipil,augmented_smote
+6.6,407,79,2000,28.2,84,Ipil Ipil,augmented_smote
+6.8,405,79,1903,28.0,84,Ipil Ipil,augmented_smote
+6.3,409,78,2000,28.3,83,Ipil Ipil,augmented_smote
+6.6,407,79,2000,28.2,84,Ipil Ipil,augmented_smote
+6.5,407,79,2000,28.2,84,Ipil Ipil,augmented_smote
+6.6,406,79,1984,28.1,84,Ipil Ipil,augmented_smote
+6.7,406,79,1937,28.0,84,Ipil Ipil,augmented_smote
+6.7,406,79,1960,28.1,84,Ipil Ipil,augmented_smote
+6.5,408,78,2000,28.2,83,Ipil Ipil,augmented_smote
+6.6,407,79,1994,28.1,84,Ipil Ipil,augmented_smote
+6.7,406,79,1975,28.1,84,Ipil Ipil,augmented_smote
+6.6,407,79,2000,28.1,84,Ipil Ipil,augmented_smote
+6.7,406,79,1950,28.1,84,Ipil Ipil,augmented_smote
+6.7,406,79,1951,28.1,84,Ipil Ipil,augmented_smote
+6.8,405,79,1904,28.0,84,Ipil Ipil,augmented_smote
+6.6,407,79,2000,28.2,84,Ipil Ipil,augmented_smote
+6.4,408,78,2000,28.2,83,Ipil Ipil,augmented_smote
+6.4,408,78,2000,28.3,83,Ipil Ipil,augmented_smote
+6.5,408,78,2000,28.2,83,Ipil Ipil,augmented_smote
+6.2,410,78,2000,28.4,83,Ipil Ipil,augmented_smote
+6.3,409,78,2000,28.3,83,Ipil Ipil,augmented_smote
+6.3,410,78,2000,28.4,83,Ipil Ipil,augmented_smote
+6.6,407,79,1999,28.1,84,Ipil Ipil,augmented_smote
+6.5,407,79,2000,28.2,84,Ipil Ipil,augmented_smote
+6.7,406,79,1940,28.1,84,Ipil Ipil,augmented_smote
+6.6,407,79,2000,28.1,84,Ipil Ipil,augmented_smote
+6.6,407,79,2000,28.2,84,Ipil Ipil,augmented_smote
+6.8,405,79,1913,28.0,84,Ipil Ipil,augmented_smote
+6.2,410,78,2000,28.4,83,Ipil Ipil,augmented_smote
+6.2,410,78,2000,28.4,83,Ipil Ipil,augmented_smote
+6.5,408,78,2000,28.2,83,Ipil Ipil,augmented_smote
+6.4,408,78,2000,28.3,83,Ipil Ipil,augmented_smote
+6.4,409,78,2000,28.3,83,Ipil Ipil,augmented_smote
+6.6,407,79,2000,28.1,84,Ipil Ipil,augmented_smote
+6.7,406,79,1933,28.0,84,Ipil Ipil,augmented_smote
+6.3,409,78,2000,28.3,83,Ipil Ipil,augmented_smote
+6.7,405,79,1929,28.0,84,Ipil Ipil,augmented_smote
+6.6,406,79,1988,28.1,84,Ipil Ipil,augmented_smote
+6.2,410,78,2000,28.4,83,Ipil Ipil,augmented_smote
+6.7,406,79,1975,28.1,84,Ipil Ipil,augmented_smote
+6.8,405,79,1904,28.0,84,Ipil Ipil,augmented_smote
+6.5,408,78,2000,28.2,83,Ipil Ipil,augmented_smote
+6.4,408,78,2000,28.3,83,Ipil Ipil,augmented_smote
+6.5,407,79,2000,28.2,84,Ipil Ipil,augmented_smote
+6.4,409,78,2000,28.3,83,Ipil Ipil,augmented_smote
+6.7,406,79,1934,28.0,84,Ipil Ipil,augmented_smote
+6.4,408,78,2000,28.3,83,Ipil Ipil,augmented_smote
+6.7,405,79,1927,28.0,84,Ipil Ipil,augmented_smote
+6.5,407,79,2000,28.2,84,Ipil Ipil,augmented_smote
+6.7,406,79,1932,28.0,84,Ipil Ipil,augmented_smote
+6.7,406,79,1973,28.1,84,Ipil Ipil,augmented_smote
+6.8,405,79,1909,28.0,84,Ipil Ipil,augmented_smote
+6.2,410,78,2000,28.4,83,Ipil Ipil,augmented_smote
+6.5,407,79,2000,28.2,84,Ipil Ipil,augmented_smote
+6.8,405,79,1920,28.0,84,Ipil Ipil,augmented_smote
+6.4,408,78,2000,28.3,83,Ipil Ipil,augmented_smote
+6.5,407,79,2000,28.2,84,Ipil Ipil,augmented_smote
+6.3,409,78,2000,28.3,83,Ipil Ipil,augmented_smote
+6.5,408,78,2000,28.2,83,Ipil Ipil,augmented_smote
+6.5,407,79,2000,28.2,84,Ipil Ipil,augmented_smote
+5.7,470,84,1050,27.4,89,Jackfruit,original
+6.2,455,80,1280,28.3,85,Jackfruit,augmented_smote
+5.5,476,80,1280,28.4,85,Jackfruit,augmented_smote
+5.7,455,81,957,28.0,85,Jackfruit,augmented_smote
+6.1,455,80,1280,28.3,85,Jackfruit,augmented_smote
+6.1,455,80,1257,28.0,85,Jackfruit,augmented_smote
+6.3,455,81,1280,27.8,86,Jackfruit,augmented_smote
+5.7,455,82,1000,27.7,85,Jackfruit,augmented_smote
+5.5,485,80,1280,28.5,86,Jackfruit,augmented_smote
+6.3,455,80,1280,28.0,85,Jackfruit,augmented_smote
+5.5,495,80,1280,28.1,93,Jackfruit,augmented_smote
+5.8,459,83,1162,27.5,87,Jackfruit,augmented_smote
+6.3,455,80,1280,28.0,85,Jackfruit,augmented_smote
+5.5,495,80,1280,27.8,91,Jackfruit,augmented_smote
+5.5,495,80,1280,29.4,93,Jackfruit,augmented_smote
+5.7,455,81,991,28.0,85,Jackfruit,augmented_smote
+6.3,455,80,1280,28.2,86,Jackfruit,augmented_smote
+5.7,455,83,1002,27.7,85,Jackfruit,augmented_smote
+5.7,455,81,1039,28.0,85,Jackfruit,augmented_smote
+5.8,467,84,1091,27.4,89,Jackfruit,augmented_smote
+5.5,495,80,1280,29.2,93,Jackfruit,augmented_smote
+6.3,455,80,1280,28.1,85,Jackfruit,augmented_smote
+5.8,455,80,1095,28.0,85,Jackfruit,augmented_smote
+5.5,455,80,1280,28.2,85,Jackfruit,augmented_smote
+6.3,455,80,1280,28.2,85,Jackfruit,augmented_smote
+5.7,465,84,1041,27.5,88,Jackfruit,augmented_smote
+5.7,469,84,1047,27.4,89,Jackfruit,augmented_smote
+5.5,495,80,1280,29.1,93,Jackfruit,augmented_smote
+5.5,495,80,1280,28.7,89,Jackfruit,augmented_smote
+5.5,495,80,1280,27.8,91,Jackfruit,augmented_smote
+6.3,455,80,1280,28.1,85,Jackfruit,augmented_smote
+5.7,466,84,1094,27.4,88,Jackfruit,augmented_smote
+5.8,455,80,1208,28.1,85,Jackfruit,augmented_smote
+5.7,455,82,991,27.8,85,Jackfruit,augmented_smote
+5.8,455,82,1266,27.6,86,Jackfruit,augmented_smote
+6.3,455,80,1280,28.1,85,Jackfruit,augmented_smote
+6.3,455,80,1280,27.9,85,Jackfruit,augmented_smote
+5.5,461,80,1280,28.7,85,Jackfruit,augmented_smote
+5.7,455,83,1015,27.6,86,Jackfruit,augmented_smote
+6.0,455,82,1280,27.6,87,Jackfruit,augmented_smote
+6.3,455,80,1280,28.0,85,Jackfruit,augmented_smote
+6.0,455,80,1280,28.1,85,Jackfruit,augmented_smote
+5.7,455,81,951,28.0,85,Jackfruit,augmented_smote
+6.3,455,80,1280,28.0,85,Jackfruit,augmented_smote
+6.3,455,80,1280,28.0,85,Jackfruit,augmented_smote
+6.1,455,80,1280,28.0,85,Jackfruit,augmented_smote
+5.5,495,80,1280,29.0,90,Jackfruit,augmented_smote
+5.5,495,80,1280,28.8,90,Jackfruit,augmented_smote
+6.1,455,82,1280,27.6,87,Jackfruit,augmented_smote
+5.9,457,83,1216,27.5,88,Jackfruit,augmented_smote
+6.2,455,80,1280,28.0,85,Jackfruit,augmented_smote
+5.7,464,84,1038,27.5,88,Jackfruit,augmented_smote
+5.8,455,81,1038,28.0,85,Jackfruit,augmented_smote
+6.0,455,80,1280,28.4,85,Jackfruit,augmented_smote
+6.3,455,80,1280,27.8,85,Jackfruit,augmented_smote
+6.3,455,80,1280,28.2,86,Jackfruit,augmented_smote
+5.7,455,82,985,27.8,85,Jackfruit,augmented_smote
+5.5,495,80,1280,28.7,89,Jackfruit,augmented_smote
+5.9,460,83,1179,27.5,88,Jackfruit,augmented_smote
+5.5,495,80,1280,28.8,93,Jackfruit,augmented_smote
+5.5,495,80,1280,29.3,93,Jackfruit,augmented_smote
+5.8,455,81,997,28.0,85,Jackfruit,augmented_smote
+5.8,455,82,1239,27.6,86,Jackfruit,augmented_smote
+5.9,455,80,1280,28.4,85,Jackfruit,augmented_smote
+6.3,455,80,1280,28.2,85,Jackfruit,augmented_smote
+5.5,495,80,1280,28.5,93,Jackfruit,augmented_smote
+6.1,455,80,1253,28.0,85,Jackfruit,augmented_smote
+5.8,455,82,1264,27.6,86,Jackfruit,augmented_smote
+6.3,455,80,1280,28.2,85,Jackfruit,augmented_smote
+5.5,495,80,1280,28.3,93,Jackfruit,augmented_smote
+5.5,485,80,1280,28.5,86,Jackfruit,augmented_smote
+5.5,495,80,1280,28.6,88,Jackfruit,augmented_smote
+5.7,455,82,990,27.8,85,Jackfruit,augmented_smote
+5.9,455,80,1280,28.2,85,Jackfruit,augmented_smote
+6.0,455,80,1280,28.2,85,Jackfruit,augmented_smote
+6.1,455,82,1280,27.6,87,Jackfruit,augmented_smote
+5.5,495,80,1280,29.0,93,Jackfruit,augmented_smote
+5.5,495,80,1280,29.4,93,Jackfruit,augmented_smote
+5.5,495,80,1280,28.5,93,Jackfruit,augmented_smote
+5.5,495,80,1280,28.7,93,Jackfruit,augmented_smote
+6.1,455,82,1280,27.6,87,Jackfruit,augmented_smote
+5.5,495,80,1280,29.4,93,Jackfruit,augmented_smote
+6.3,455,80,1280,28.0,85,Jackfruit,augmented_smote
+6.3,455,80,1280,27.9,85,Jackfruit,augmented_smote
+6.3,455,81,1280,27.7,86,Jackfruit,augmented_smote
+6.0,455,83,1280,27.6,88,Jackfruit,augmented_smote
+5.8,487,80,1280,28.5,89,Jackfruit,augmented_smote
+5.8,455,80,1210,28.1,85,Jackfruit,augmented_smote
+6.3,455,80,1280,28.0,85,Jackfruit,augmented_smote
+6.3,455,80,1280,28.0,85,Jackfruit,augmented_smote
+6.2,455,82,1280,27.7,87,Jackfruit,augmented_smote
+5.6,495,80,1280,28.7,91,Jackfruit,augmented_smote
+5.5,495,80,1280,28.9,88,Jackfruit,augmented_smote
+6.0,455,80,1280,28.4,85,Jackfruit,augmented_smote
+6.3,455,80,1280,27.9,85,Jackfruit,augmented_smote
+6.0,517,88,1094,28.5,99,Mango,original
+6.0,400,80,1000,27.9,80,Mango,original
+6.0,456,84,1045,28.2,89,Mango,augmented_smote
+6.0,424,82,1019,28.0,84,Mango,augmented_smote
+6.0,451,83,1041,28.2,88,Mango,augmented_smote
+6.0,433,82,1026,28.1,85,Mango,augmented_smote
+6.0,414,81,1011,28.0,82,Mango,augmented_smote
+6.0,466,84,1053,28.2,91,Mango,augmented_smote
+6.0,461,84,1049,28.2,90,Mango,augmented_smote
+6.0,410,81,1008,27.9,82,Mango,augmented_smote
+6.0,497,87,1078,28.4,96,Mango,augmented_smote
+6.0,449,83,1039,28.2,88,Mango,augmented_smote
+6.0,473,85,1058,28.3,92,Mango,augmented_smote
+6.0,443,83,1035,28.1,87,Mango,augmented_smote
+6.0,496,87,1077,28.4,96,Mango,augmented_smote
+6.0,493,86,1075,28.4,95,Mango,augmented_smote
+6.0,483,86,1067,28.3,94,Mango,augmented_smote
+6.0,402,80,1002,27.9,80,Mango,augmented_smote
+6.0,426,82,1021,28.0,84,Mango,augmented_smote
+6.0,413,81,1010,28.0,82,Mango,augmented_smote
+6.0,470,85,1057,28.3,91,Mango,augmented_smote
+6.0,423,82,1018,28.0,84,Mango,augmented_smote
+6.0,436,82,1029,28.1,86,Mango,augmented_smote
+6.0,469,85,1056,28.3,91,Mango,augmented_smote
+6.0,453,84,1043,28.2,89,Mango,augmented_smote
+6.0,488,86,1070,28.3,94,Mango,augmented_smote
+6.0,410,81,1008,27.9,82,Mango,augmented_smote
+6.0,512,88,1090,28.5,98,Mango,augmented_smote
+6.0,481,86,1065,28.3,93,Mango,augmented_smote
+6.0,507,87,1086,28.4,97,Mango,augmented_smote
+6.0,422,82,1018,28.0,84,Mango,augmented_smote
+6.0,507,87,1086,28.4,97,Mango,augmented_smote
+6.0,510,88,1088,28.5,98,Mango,augmented_smote
+6.0,460,84,1048,28.2,90,Mango,augmented_smote
+6.0,489,86,1072,28.4,94,Mango,augmented_smote
+6.0,459,84,1047,28.2,90,Mango,augmented_smote
+6.0,504,87,1084,28.4,97,Mango,augmented_smote
+6.0,445,83,1036,28.1,87,Mango,augmented_smote
+6.0,448,83,1038,28.1,88,Mango,augmented_smote
+6.0,505,87,1084,28.4,97,Mango,augmented_smote
+6.0,466,85,1053,28.2,91,Mango,augmented_smote
+6.0,410,81,1008,28.0,82,Mango,augmented_smote
+6.0,420,81,1016,28.0,83,Mango,augmented_smote
+6.0,455,84,1045,28.2,89,Mango,augmented_smote
+6.0,479,85,1063,28.3,93,Mango,augmented_smote
+6.0,515,88,1092,28.5,99,Mango,augmented_smote
+6.0,475,85,1060,28.3,92,Mango,augmented_smote
+6.0,512,88,1090,28.5,98,Mango,augmented_smote
+6.0,463,84,1050,28.2,90,Mango,augmented_smote
+6.0,505,87,1084,28.4,97,Mango,augmented_smote
+6.0,452,84,1042,28.2,89,Mango,augmented_smote
+6.0,467,85,1054,28.2,91,Mango,augmented_smote
+6.0,411,81,1009,28.0,82,Mango,augmented_smote
+6.0,492,86,1074,28.4,95,Mango,augmented_smote
+6.0,490,86,1072,28.4,95,Mango,augmented_smote
+6.0,408,81,1006,27.9,81,Mango,augmented_smote
+6.0,491,86,1073,28.4,95,Mango,augmented_smote
+6.0,438,83,1031,28.1,86,Mango,augmented_smote
+6.0,511,88,1089,28.5,98,Mango,augmented_smote
+6.0,422,82,1018,28.0,84,Mango,augmented_smote
+6.0,409,81,1007,27.9,81,Mango,augmented_smote
+6.0,488,86,1071,28.4,94,Mango,augmented_smote
+6.0,496,87,1077,28.4,96,Mango,augmented_smote
+6.0,454,84,1044,28.2,89,Mango,augmented_smote
+6.0,425,82,1020,28.0,84,Mango,augmented_smote
+6.0,449,83,1039,28.1,88,Mango,augmented_smote
+6.0,440,83,1032,28.1,87,Mango,augmented_smote
+6.0,458,84,1046,28.2,89,Mango,augmented_smote
+6.0,405,80,1004,27.9,81,Mango,augmented_smote
+6.0,417,81,1014,28.0,83,Mango,augmented_smote
+6.0,455,84,1044,28.2,89,Mango,augmented_smote
+6.0,452,84,1042,28.2,88,Mango,augmented_smote
+6.0,503,87,1083,28.4,97,Mango,augmented_smote
+6.0,414,81,1011,28.0,82,Mango,augmented_smote
+6.0,491,86,1073,28.4,95,Mango,augmented_smote
+6.0,493,86,1075,28.4,95,Mango,augmented_smote
+6.0,473,85,1058,28.3,92,Mango,augmented_smote
+6.0,477,85,1062,28.3,93,Mango,augmented_smote
+6.0,452,84,1042,28.2,88,Mango,augmented_smote
+6.0,505,87,1085,28.4,97,Mango,augmented_smote
+6.0,448,83,1039,28.1,88,Mango,augmented_smote
+6.0,418,81,1014,28.0,83,Mango,augmented_smote
+6.0,476,85,1061,28.3,92,Mango,augmented_smote
+6.0,467,85,1054,28.2,91,Mango,augmented_smote
+6.0,415,81,1012,28.0,82,Mango,augmented_smote
+6.0,402,80,1002,27.9,80,Mango,augmented_smote
+6.0,414,81,1011,28.0,82,Mango,augmented_smote
+6.0,430,82,1024,28.1,85,Mango,augmented_smote
+6.0,438,83,1031,28.1,86,Mango,augmented_smote
+6.0,435,82,1028,28.1,86,Mango,augmented_smote
+6.0,501,87,1081,28.4,96,Mango,augmented_smote
+6.0,409,81,1007,27.9,81,Mango,augmented_smote
+6.0,436,82,1029,28.1,86,Mango,augmented_smote
+6.0,408,81,1007,27.9,81,Mango,augmented_smote
+6.0,453,84,1042,28.2,89,Mango,augmented_smote
+6.0,416,81,1013,28.0,83,Mango,augmented_smote
+6.0,494,86,1076,28.4,95,Mango,augmented_smote
+6.0,449,83,1039,28.2,88,Mango,augmented_smote
+5.8,490,85,850,26.8,85,Lanzones,original
+5.9,505,84,1100,27.3,88,Lanzones,original
+3.5,898,67,4316,30.7,99,Lanzones,original
+4.5,741,74,3029,29.3,95,Lanzones,augmented_smote
+5.1,642,78,2221,28.5,92,Lanzones,augmented_smote
+5.9,499,84,993,27.1,87,Lanzones,augmented_smote
+3.5,891,67,4254,30.6,99,Lanzones,augmented_smote
+4.9,645,78,2168,28.3,90,Lanzones,augmented_smote
+3.6,873,68,4102,30.5,98,Lanzones,augmented_smote
+5.8,495,85,938,27.0,86,Lanzones,augmented_smote
+4.2,778,72,3294,29.6,95,Lanzones,augmented_smote
+4.7,684,76,2499,28.7,92,Lanzones,augmented_smote
+5.1,643,78,2232,28.5,92,Lanzones,augmented_smote
+5.6,550,82,1464,27.7,89,Lanzones,augmented_smote
+5.9,509,84,1136,27.3,88,Lanzones,augmented_smote
+4.2,772,73,3246,29.5,95,Lanzones,augmented_smote
+3.6,883,68,4193,30.6,99,Lanzones,augmented_smote
+5.8,494,85,910,26.9,86,Lanzones,augmented_smote
+4.0,814,71,3600,29.9,96,Lanzones,augmented_smote
+4.7,691,76,2559,28.7,92,Lanzones,augmented_smote
+4.6,723,75,2886,29.2,94,Lanzones,augmented_smote
+5.2,599,80,1772,27.8,89,Lanzones,augmented_smote
+4.1,800,71,3511,29.8,96,Lanzones,augmented_smote
+5.8,497,85,965,27.0,86,Lanzones,augmented_smote
+3.6,873,68,4104,30.5,98,Lanzones,augmented_smote
+5.9,502,84,1053,27.2,87,Lanzones,augmented_smote
+4.3,761,73,3153,29.4,94,Lanzones,augmented_smote
+4.4,754,73,3135,29.5,95,Lanzones,augmented_smote
+5.7,531,83,1309,27.5,89,Lanzones,augmented_smote
+5.5,551,82,1369,27.4,87,Lanzones,augmented_smote
+3.5,893,67,4277,30.7,99,Lanzones,augmented_smote
+5.9,501,84,1026,27.2,87,Lanzones,augmented_smote
+5.1,611,80,1879,28.0,89,Lanzones,augmented_smote
+5.8,496,85,957,27.0,86,Lanzones,augmented_smote
+5.9,501,84,1031,27.2,87,Lanzones,augmented_smote
+5.3,582,81,1633,27.7,88,Lanzones,augmented_smote
+4.1,805,71,3557,29.9,96,Lanzones,augmented_smote
+4.2,775,72,3313,29.6,96,Lanzones,augmented_smote
+5.9,502,84,1045,27.2,87,Lanzones,augmented_smote
+5.4,595,80,1835,28.1,91,Lanzones,augmented_smote
+5.3,582,81,1628,27.7,88,Lanzones,augmented_smote
+5.9,501,84,1032,27.2,87,Lanzones,augmented_smote
+5.6,556,82,1514,27.7,89,Lanzones,augmented_smote
+4.2,776,72,3278,29.5,95,Lanzones,augmented_smote
+4.3,754,73,3091,29.3,94,Lanzones,augmented_smote
+4.8,666,77,2341,28.5,91,Lanzones,augmented_smote
+5.9,503,84,1061,27.2,88,Lanzones,augmented_smote
+5.0,634,79,2070,28.2,90,Lanzones,augmented_smote
+4.5,714,75,2757,28.9,93,Lanzones,augmented_smote
+5.9,511,84,1148,27.4,88,Lanzones,augmented_smote
+4.5,715,75,2764,29.0,93,Lanzones,augmented_smote
+5.7,546,82,1432,27.7,89,Lanzones,augmented_smote
+5.3,609,79,1951,28.2,91,Lanzones,augmented_smote
+5.9,498,84,976,27.1,87,Lanzones,augmented_smote
+5.9,503,84,1061,27.2,88,Lanzones,augmented_smote
+4.7,694,76,2645,28.9,93,Lanzones,augmented_smote
+5.8,495,85,927,27.0,86,Lanzones,augmented_smote
+5.8,496,85,950,27.0,86,Lanzones,augmented_smote
+5.7,535,83,1344,27.6,89,Lanzones,augmented_smote
+5.9,504,84,1078,27.3,88,Lanzones,augmented_smote
+5.9,498,84,985,27.1,87,Lanzones,augmented_smote
+3.9,832,70,3755,30.1,97,Lanzones,augmented_smote
+5.8,493,85,877,26.8,85,Lanzones,augmented_smote
+5.0,652,78,2303,28.6,92,Lanzones,augmented_smote
+5.9,501,84,1028,27.2,87,Lanzones,augmented_smote
+4.8,673,77,2408,28.6,91,Lanzones,augmented_smote
+3.5,897,67,4306,30.7,99,Lanzones,augmented_smote
+5.0,660,77,2371,28.6,92,Lanzones,augmented_smote
+5.8,495,85,939,27.0,86,Lanzones,augmented_smote
+5.8,493,85,905,26.9,86,Lanzones,augmented_smote
+5.9,505,84,1096,27.3,88,Lanzones,augmented_smote
+5.6,558,82,1532,27.8,89,Lanzones,augmented_smote
+5.7,509,84,1015,27.0,86,Lanzones,augmented_smote
+5.6,547,82,1443,27.7,89,Lanzones,augmented_smote
+5.9,504,84,1086,27.3,88,Lanzones,augmented_smote
+5.8,514,84,1173,27.4,88,Lanzones,augmented_smote
+4.9,661,77,2380,28.7,92,Lanzones,augmented_smote
+5.9,502,84,1057,27.2,87,Lanzones,augmented_smote
+4.2,768,73,3214,29.5,95,Lanzones,augmented_smote
+5.9,499,84,1000,27.1,87,Lanzones,augmented_smote
+3.9,835,70,3783,30.1,97,Lanzones,augmented_smote
+4.0,808,71,3581,29.9,96,Lanzones,augmented_smote
+5.8,494,85,920,26.9,86,Lanzones,augmented_smote
+5.9,501,84,1034,27.2,87,Lanzones,augmented_smote
+5.0,645,78,2244,28.5,92,Lanzones,augmented_smote
+5.5,538,83,1257,27.3,87,Lanzones,augmented_smote
+3.6,875,68,4126,30.5,98,Lanzones,augmented_smote
+5.9,499,84,994,27.1,87,Lanzones,augmented_smote
+5.9,503,84,1069,27.2,88,Lanzones,augmented_smote
+5.8,491,85,859,26.8,85,Lanzones,augmented_smote
+5.9,500,84,1013,27.1,87,Lanzones,augmented_smote
+5.1,612,80,1890,28.0,89,Lanzones,augmented_smote
+3.9,834,70,3771,30.1,97,Lanzones,augmented_smote
+5.1,635,78,2162,28.4,92,Lanzones,augmented_smote
+4.2,785,72,3391,29.7,96,Lanzones,augmented_smote
+4.6,712,75,2732,28.9,93,Lanzones,augmented_smote
+5.8,496,85,957,27.0,86,Lanzones,augmented_smote
+5.8,490,85,850,26.8,85,Rambutan,original
+5.9,505,84,1100,27.3,88,Rambutan,original
+6.5,745,81,2090,27.8,99,Rambutan,original
+5.9,455,84,1050,27.0,85,Rambutan,original
+6.0,435,83,1150,27.4,83,Rambutan,original
+5.8,460,85,950,27.2,87,Rambutan,original
+5.6,450,86,1000,26.8,84,Rambutan,original
+6.1,465,82,1250,27.5,86,Rambutan,original
+5.5,445,88,800,26.6,81,Rambutan,original
+5.7,440,87,900,26.7,82,Rambutan,original
+5.8,458,85,984,27.1,86,Rambutan,augmented_smote
+6.0,555,83,1307,27.4,90,Rambutan,augmented_smote
+6.1,457,82,1223,27.5,85,Rambutan,augmented_smote
+5.5,446,88,810,26.6,81,Rambutan,augmented_smote
+6.0,459,83,1123,27.2,85,Rambutan,augmented_smote
+5.8,478,85,891,27.0,86,Rambutan,augmented_smote
+5.6,442,87,858,26.7,82,Rambutan,augmented_smote
+5.7,454,86,894,27.0,85,Rambutan,augmented_smote
+5.9,474,84,1117,27.1,86,Rambutan,augmented_smote
+5.7,454,86,979,27.0,85,Rambutan,augmented_smote
+5.8,479,85,914,26.9,85,Rambutan,augmented_smote
+6.0,437,83,1138,27.4,83,Rambutan,augmented_smote
+5.7,441,87,899,26.7,82,Rambutan,augmented_smote
+5.7,476,85,1047,27.0,86,Rambutan,augmented_smote
+5.7,462,86,878,26.7,83,Rambutan,augmented_smote
+5.8,458,85,960,27.1,86,Rambutan,augmented_smote
+5.6,447,87,841,26.7,82,Rambutan,augmented_smote
+5.7,441,87,902,26.7,82,Rambutan,augmented_smote
+5.7,443,86,930,26.8,83,Rambutan,augmented_smote
+5.7,450,86,924,26.9,84,Rambutan,augmented_smote
+5.7,456,85,969,27.0,86,Rambutan,augmented_smote
+5.8,459,85,961,27.2,87,Rambutan,augmented_smote
+5.6,443,88,838,26.6,81,Rambutan,augmented_smote
+6.4,709,81,1962,27.7,97,Rambutan,augmented_smote
+5.8,488,85,856,26.8,85,Rambutan,augmented_smote
+5.9,502,84,1092,27.3,88,Rambutan,augmented_smote
+5.9,492,84,1087,27.2,87,Rambutan,augmented_smote
+5.7,443,86,931,26.8,83,Rambutan,augmented_smote
+5.7,471,85,1038,27.0,86,Rambutan,augmented_smote
+5.9,455,84,1042,27.0,85,Rambutan,augmented_smote
+5.9,496,84,1135,27.3,88,Rambutan,augmented_smote
+5.9,486,84,1113,27.3,87,Rambutan,augmented_smote
+5.7,460,86,880,26.7,83,Rambutan,augmented_smote
+5.9,455,84,1040,27.0,85,Rambutan,augmented_smote
+5.7,472,85,916,26.8,85,Rambutan,augmented_smote
+5.8,526,85,1282,27.1,88,Rambutan,augmented_smote
+6.5,740,81,2070,27.8,99,Rambutan,augmented_smote
+5.5,446,88,838,26.6,82,Rambutan,augmented_smote
+5.7,452,85,1016,26.9,84,Rambutan,augmented_smote
+5.9,438,84,1116,27.3,83,Rambutan,augmented_smote
+5.8,456,84,1108,27.1,85,Rambutan,augmented_smote
+6.5,744,81,2087,27.8,99,Rambutan,augmented_smote
+5.8,487,85,870,26.8,85,Rambutan,augmented_smote
+5.9,458,84,1053,27.0,85,Rambutan,augmented_smote
+6.1,465,82,1245,27.5,86,Rambutan,augmented_smote
+5.8,480,85,885,26.9,86,Rambutan,augmented_smote
+6.0,440,83,1125,27.3,83,Rambutan,augmented_smote
+5.8,458,85,928,27.1,86,Rambutan,augmented_smote
+5.9,452,85,1020,26.9,84,Rambutan,augmented_smote
+5.6,450,87,854,26.8,83,Rambutan,augmented_smote
+6.0,461,83,1179,27.3,85,Rambutan,augmented_smote
+6.1,456,82,1218,27.5,85,Rambutan,augmented_smote
+5.7,455,86,975,27.0,85,Rambutan,augmented_smote
+5.8,451,85,1008,26.9,84,Rambutan,augmented_smote
+5.9,445,84,1100,27.2,84,Rambutan,augmented_smote
+5.6,452,86,1004,26.8,84,Rambutan,augmented_smote
+6.1,487,83,1306,27.5,86,Rambutan,augmented_smote
+5.8,472,85,909,27.0,86,Rambutan,augmented_smote
+6.0,464,83,1178,27.4,86,Rambutan,augmented_smote
+5.8,457,85,944,27.1,86,Rambutan,augmented_smote
+5.8,474,86,866,26.8,84,Rambutan,augmented_smote
+6.0,448,83,1194,27.4,84,Rambutan,augmented_smote
+5.7,444,87,936,26.7,83,Rambutan,augmented_smote
+5.6,449,87,842,26.8,83,Rambutan,augmented_smote
+5.8,488,85,859,26.8,85,Rambutan,augmented_smote
+6.2,610,82,1607,27.4,92,Rambutan,augmented_smote
+5.6,451,86,997,26.8,84,Rambutan,augmented_smote
+5.9,457,84,1006,27.1,86,Rambutan,augmented_smote
+5.7,443,87,907,26.8,83,Rambutan,augmented_smote
+5.9,500,84,1119,27.3,88,Rambutan,augmented_smote
+5.6,451,86,1007,26.8,84,Rambutan,augmented_smote
+5.8,456,85,941,27.1,86,Rambutan,augmented_smote
+5.8,479,85,910,26.9,85,Rambutan,augmented_smote
+5.8,452,86,931,27.0,85,Rambutan,augmented_smote
+5.8,476,86,864,26.8,84,Rambutan,augmented_smote
+5.8,452,86,931,27.0,85,Rambutan,augmented_smote
+5.8,452,85,981,26.9,84,Rambutan,augmented_smote
+5.8,481,85,904,26.9,85,Rambutan,augmented_smote
+5.8,458,85,962,27.1,86,Rambutan,augmented_smote
+6.0,477,83,1206,27.4,87,Rambutan,augmented_smote
+6.8,550,75,2500,29.2,95,Rice,original
+6.2,480,82,1500,27.5,90,Rice,original
+5.3,520,77,2800,28.8,86,Rice,original
+6.0,515,78,2750,28.4,89,Rice,original
+6.0,515,78,2750,28.4,89,Rice,original
+6.2,480,82,1500,27.5,90,Rice,original
+5.3,520,77,2800,28.8,86,Rice,original
+6.8,405,79,1900,28.0,84,Rice,original
+6.8,530,78,2400,28.6,93,Rice,augmented_smote
+6.8,536,76,2400,28.9,94,Rice,augmented_smote
+6.8,530,78,2700,28.5,92,Rice,augmented_smote
+6.8,530,78,2566,28.3,92,Rice,augmented_smote
+6.8,530,79,2400,27.7,92,Rice,augmented_smote
+6.8,530,78,2400,28.4,93,Rice,augmented_smote
+6.8,530,79,2400,28.1,92,Rice,augmented_smote
+6.8,535,76,2609,28.9,92,Rice,augmented_smote
+6.8,530,77,2700,28.6,92,Rice,augmented_smote
+6.8,535,76,2650,29.0,92,Rice,augmented_smote
+6.8,530,79,2400,28.2,92,Rice,augmented_smote
+6.8,530,79,2400,27.5,92,Rice,augmented_smote
+6.8,530,78,2523,28.6,92,Rice,augmented_smote
+6.8,530,79,2400,27.6,92,Rice,augmented_smote
+6.8,530,79,2400,28.0,92,Rice,augmented_smote
+6.8,530,78,2700,28.6,92,Rice,augmented_smote
+6.8,530,79,2400,27.5,92,Rice,augmented_smote
+6.8,530,78,2700,28.4,92,Rice,augmented_smote
+6.8,539,76,2576,29.0,93,Rice,augmented_smote
+6.8,530,78,2700,28.4,92,Rice,augmented_smote
+6.8,530,77,2700,28.8,92,Rice,augmented_smote
+6.8,530,77,2670,28.7,92,Rice,augmented_smote
+6.8,530,77,2696,28.6,92,Rice,augmented_smote
+6.8,539,76,2400,28.9,94,Rice,augmented_smote
+6.8,530,77,2700,28.7,92,Rice,augmented_smote
+6.8,530,79,2400,27.5,92,Rice,augmented_smote
+6.8,530,78,2700,28.5,92,Rice,augmented_smote
+6.8,530,77,2700,28.8,92,Rice,augmented_smote
+6.8,530,79,2400,27.8,92,Rice,augmented_smote
+6.8,530,78,2700,28.5,92,Rice,augmented_smote
+6.8,530,79,2400,27.5,92,Rice,augmented_smote
+6.8,530,77,2700,28.7,92,Rice,augmented_smote
+6.8,530,77,2700,28.7,92,Rice,augmented_smote
+6.8,546,75,2436,29.1,95,Rice,augmented_smote
+6.8,530,79,2400,27.8,92,Rice,augmented_smote
+6.8,534,76,2659,29.0,92,Rice,augmented_smote
+6.8,530,77,2400,28.7,92,Rice,augmented_smote
+6.8,530,79,2400,28.0,92,Rice,augmented_smote
+6.8,530,79,2400,28.0,92,Rice,augmented_smote
+6.8,530,77,2700,28.7,92,Rice,augmented_smote
+6.8,530,78,2700,28.4,92,Rice,augmented_smote
+6.8,530,78,2700,28.5,92,Rice,augmented_smote
+6.8,530,79,2400,28.1,92,Rice,augmented_smote
+6.8,530,79,2400,27.5,92,Rice,augmented_smote
+6.8,530,77,2700,28.6,92,Rice,augmented_smote
+6.8,530,79,2400,27.6,92,Rice,augmented_smote
+6.8,530,79,2400,28.0,92,Rice,augmented_smote
+6.8,530,78,2700,28.6,92,Rice,augmented_smote
+6.8,530,77,2686,28.6,92,Rice,augmented_smote
+6.8,530,77,2400,28.7,94,Rice,augmented_smote
+6.8,530,79,2400,27.5,92,Rice,augmented_smote
+6.8,530,77,2700,28.7,92,Rice,augmented_smote
+6.8,530,77,2700,28.6,92,Rice,augmented_smote
+6.8,530,78,2400,28.3,92,Rice,augmented_smote
+6.8,530,79,2400,27.8,92,Rice,augmented_smote
+6.8,530,79,2400,28.0,92,Rice,augmented_smote
+6.8,530,77,2652,28.7,92,Rice,augmented_smote
+6.8,530,78,2400,28.4,92,Rice,augmented_smote
+6.8,530,78,2700,28.5,92,Rice,augmented_smote
+6.8,530,77,2700,28.6,92,Rice,augmented_smote
+6.8,530,78,2700,28.4,92,Rice,augmented_smote
+6.8,530,77,2700,28.9,92,Rice,augmented_smote
+6.8,530,78,2700,28.6,92,Rice,augmented_smote
+6.8,530,79,2400,27.7,92,Rice,augmented_smote
+6.8,530,79,2400,27.7,92,Rice,augmented_smote
+6.8,530,77,2700,28.7,92,Rice,augmented_smote
+6.8,530,79,2400,27.9,92,Rice,augmented_smote
+6.8,530,79,2400,27.7,92,Rice,augmented_smote
+6.8,530,78,2700,28.5,92,Rice,augmented_smote
+6.8,530,78,2700,28.4,92,Rice,augmented_smote
+6.8,530,79,2400,27.6,92,Rice,augmented_smote
+6.8,530,78,2700,28.4,92,Rice,augmented_smote
+6.8,530,79,2400,27.7,92,Rice,augmented_smote
+6.8,530,77,2700,28.8,92,Rice,augmented_smote
+6.8,530,79,2462,28.2,92,Rice,augmented_smote
+6.8,530,77,2700,28.6,92,Rice,augmented_smote
+6.8,530,77,2700,28.9,92,Rice,augmented_smote
+6.8,530,78,2421,28.2,92,Rice,augmented_smote
+6.8,541,76,2564,29.0,93,Rice,augmented_smote
+6.8,530,77,2700,28.8,92,Rice,augmented_smote
+6.8,530,79,2400,27.9,92,Rice,augmented_smote
+6.8,530,78,2700,28.6,92,Rice,augmented_smote
+6.8,530,79,2400,28.1,92,Rice,augmented_smote
+6.8,530,78,2700,28.5,92,Rice,augmented_smote
+6.8,550,75,2500,29.2,95,Banana,original
+6.4,495,81,1650,27.8,92,Banana,original
+5.4,470,83,1300,27.9,90,Banana,original
+4.0,771,79,8280,28.8,99,Banana,original
+4.5,810,66,9337,29.3,99,Banana,original
+6.6,538,76,2326,29.0,94,Banana,augmented_smote
+6.7,532,77,2218,28.7,94,Banana,augmented_smote
+5.0,660,80,5602,28.4,96,Banana,augmented_smote
+6.4,595,73,3684,29.2,96,Banana,augmented_smote
+6.6,524,78,2102,28.5,94,Banana,augmented_smote
+6.7,561,75,2797,29.2,95,Banana,augmented_smote
+5.9,617,76,4256,29.1,96,Banana,augmented_smote
+6.3,491,81,1598,27.8,92,Banana,augmented_smote
+5.7,670,71,5659,29.2,97,Banana,augmented_smote
+6.7,532,77,2222,28.7,94,Banana,augmented_smote
+6.1,488,82,1548,27.8,91,Banana,augmented_smote
+4.1,776,77,8426,28.9,99,Banana,augmented_smote
+6.7,541,76,2366,29.0,95,Banana,augmented_smote
+5.3,717,69,6888,29.3,98,Banana,augmented_smote
+4.9,751,69,7886,29.0,98,Banana,augmented_smote
+6.7,560,75,2750,29.2,95,Banana,augmented_smote
+5.8,662,71,5452,29.2,97,Banana,augmented_smote
+5.0,734,70,7474,28.9,97,Banana,augmented_smote
+4.8,778,67,8507,29.3,99,Banana,augmented_smote
+6.1,488,82,1550,27.8,91,Banana,augmented_smote
+5.0,721,70,7163,28.9,97,Banana,augmented_smote
+5.8,626,76,4496,29.1,96,Banana,augmented_smote
+4.6,797,66,9007,29.3,99,Banana,augmented_smote
+6.4,496,81,1661,27.8,92,Banana,augmented_smote
+6.7,542,76,2377,29.1,94,Banana,augmented_smote
+4.4,800,69,9077,29.2,99,Banana,augmented_smote
+4.5,717,79,6977,28.6,98,Banana,augmented_smote
+5.4,614,80,4503,28.2,95,Banana,augmented_smote
+6.4,502,80,1755,28.0,92,Banana,augmented_smote
+5.9,552,81,3017,28.0,93,Banana,augmented_smote
+5.9,551,81,3006,28.0,93,Banana,augmented_smote
+4.5,659,80,5692,28.5,96,Banana,augmented_smote
+6.4,495,81,1653,27.8,92,Banana,augmented_smote
+4.3,714,80,6960,28.6,97,Banana,augmented_smote
+6.7,542,76,2379,29.0,95,Banana,augmented_smote
+6.4,495,81,1646,27.8,92,Banana,augmented_smote
+4.2,758,79,7940,28.8,99,Banana,augmented_smote
+4.8,758,68,8073,29.1,98,Banana,augmented_smote
+4.6,804,66,9184,29.3,99,Banana,augmented_smote
+6.2,596,76,3708,29.1,96,Banana,augmented_smote
+4.1,762,79,8040,28.8,99,Banana,augmented_smote
+4.5,809,66,9305,29.3,99,Banana,augmented_smote
+4.5,712,79,6856,28.6,97,Banana,augmented_smote
+4.2,783,75,8600,29.0,99,Banana,augmented_smote
+6.4,494,81,1642,27.8,92,Banana,augmented_smote
+6.5,578,75,3222,29.2,95,Banana,augmented_smote
+5.0,734,70,7481,28.9,97,Banana,augmented_smote
+5.4,470,83,1301,27.9,90,Banana,augmented_smote
+5.0,566,82,3515,28.2,93,Banana,augmented_smote
+4.1,776,77,8414,28.9,99,Banana,augmented_smote
+5.7,676,71,5819,29.2,97,Banana,augmented_smote
+6.7,533,77,2245,28.8,94,Banana,augmented_smote
+5.1,640,80,5128,28.3,96,Banana,augmented_smote
+5.7,674,71,5753,29.2,97,Banana,augmented_smote
+4.5,674,80,6025,28.5,96,Banana,augmented_smote
+5.7,478,82,1419,27.9,91,Banana,augmented_smote
+4.9,655,74,5665,28.7,95,Banana,augmented_smote
+6.7,547,75,2455,29.2,95,Banana,augmented_smote
+5.1,719,70,7109,28.9,97,Banana,augmented_smote
+6.0,613,76,4159,29.1,96,Banana,augmented_smote
+5.4,657,73,5594,28.6,96,Banana,augmented_smote
+6.6,541,76,2369,29.1,94,Banana,augmented_smote
+5.3,519,81,2459,28.1,91,Banana,augmented_smote
+4.1,778,77,8461,28.9,99,Banana,augmented_smote
+6.3,506,80,1930,27.9,92,Banana,augmented_smote
+4.3,793,72,8865,29.1,99,Banana,augmented_smote
+6.0,484,82,1500,27.8,91,Banana,augmented_smote
+4.5,717,79,6973,28.6,98,Banana,augmented_smote
+4.0,772,79,8318,28.8,99,Banana,augmented_smote
+5.4,664,77,5485,29.0,97,Banana,augmented_smote
+5.4,477,83,1457,27.9,90,Banana,augmented_smote
+5.6,480,82,1446,28.1,91,Banana,augmented_smote
+6.0,554,78,3090,28.1,93,Banana,augmented_smote
+6.5,506,80,1815,28.1,93,Banana,augmented_smote
+6.7,534,77,2252,28.8,94,Banana,augmented_smote
+6.6,519,78,2017,28.4,93,Banana,augmented_smote
+4.0,768,79,8199,28.8,99,Banana,augmented_smote
+4.5,733,78,7279,28.9,98,Banana,augmented_smote
+5.6,592,80,3982,28.2,94,Banana,augmented_smote
+4.3,704,80,6721,28.6,97,Banana,augmented_smote
+6.5,505,80,1798,28.0,93,Banana,augmented_smote
+4.2,785,74,8661,29.0,99,Banana,augmented_smote
+6.6,577,74,3211,29.2,95,Banana,augmented_smote
+4.9,769,67,8251,29.3,98,Banana,augmented_smote
+4.8,711,78,6709,28.9,98,Banana,augmented_smote
+5.0,610,76,4601,28.5,94,Banana,augmented_smote
+4.4,803,68,9159,29.2,99,Banana,augmented_smote
+4.4,805,68,9212,29.2,99,Banana,augmented_smote
+5.0,627,75,5005,28.5,94,Banana,augmented_smote
+5.8,481,82,1448,27.9,91,Banana,augmented_smote
+4.5,359,70,15839,34.6,99,Kamoteng Baging,original
+5.5,368,74,14000,30.1,93,Kamoteng Baging,augmented_smote
+5.5,368,74,14000,27.6,96,Kamoteng Baging,augmented_smote
+5.4,368,74,14000,30.5,96,Kamoteng Baging,augmented_smote
+5.5,368,74,14000,27.8,93,Kamoteng Baging,augmented_smote
+5.5,368,74,14000,27.3,91,Kamoteng Baging,augmented_smote
+5.5,368,74,14000,27.8,91,Kamoteng Baging,augmented_smote
+5.5,368,74,14000,27.7,94,Kamoteng Baging,augmented_smote
+5.5,368,74,14000,28.1,97,Kamoteng Baging,augmented_smote
+5.5,368,74,14000,28.1,94,Kamoteng Baging,augmented_smote
+5.5,368,74,14000,27.1,88,Kamoteng Baging,augmented_smote
+5.5,368,74,14000,27.9,92,Kamoteng Baging,augmented_smote
+5.5,368,74,14000,28.3,98,Kamoteng Baging,augmented_smote
+5.5,368,74,14000,27.5,90,Kamoteng Baging,augmented_smote
+5.5,368,74,14000,28.0,96,Kamoteng Baging,augmented_smote
+5.5,368,74,14000,27.9,94,Kamoteng Baging,augmented_smote
+5.5,368,74,14000,28.1,91,Kamoteng Baging,augmented_smote
+5.5,368,74,14000,27.9,95,Kamoteng Baging,augmented_smote
+5.5,368,74,14000,27.0,90,Kamoteng Baging,augmented_smote
+5.5,368,74,14000,28.0,92,Kamoteng Baging,augmented_smote
+5.5,368,74,14000,27.0,90,Kamoteng Baging,augmented_smote
+5.5,368,74,14000,27.2,91,Kamoteng Baging,augmented_smote
+5.5,368,74,14000,28.1,91,Kamoteng Baging,augmented_smote
+5.5,368,74,14000,27.9,97,Kamoteng Baging,augmented_smote
+5.5,368,74,14000,27.8,94,Kamoteng Baging,augmented_smote
+5.5,368,74,14000,27.4,98,Kamoteng Baging,augmented_smote
+5.5,368,74,14000,28.0,92,Kamoteng Baging,augmented_smote
+5.5,368,74,14000,28.1,94,Kamoteng Baging,augmented_smote
+5.5,368,74,14000,28.2,99,Kamoteng Baging,augmented_smote
+5.5,368,74,14000,27.7,92,Kamoteng Baging,augmented_smote
+5.5,368,74,14000,27.5,98,Kamoteng Baging,augmented_smote
+5.5,368,74,14000,27.7,99,Kamoteng Baging,augmented_smote
+5.4,368,74,14000,30.4,96,Kamoteng Baging,augmented_smote
+5.5,368,74,14000,27.4,97,Kamoteng Baging,augmented_smote
+5.5,368,74,14000,27.5,91,Kamoteng Baging,augmented_smote
+5.5,368,74,14000,27.8,92,Kamoteng Baging,augmented_smote
+5.5,368,74,14000,28.0,96,Kamoteng Baging,augmented_smote
+5.5,368,74,14000,28.4,99,Kamoteng Baging,augmented_smote
+5.5,368,74,14000,28.3,99,Kamoteng Baging,augmented_smote
+5.5,368,74,14000,27.8,94,Kamoteng Baging,augmented_smote
+5.5,368,74,14000,27.2,97,Kamoteng Baging,augmented_smote
+5.5,368,74,14000,27.9,93,Kamoteng Baging,augmented_smote
+5.5,368,74,14000,27.9,93,Kamoteng Baging,augmented_smote
+5.5,368,74,14000,27.4,97,Kamoteng Baging,augmented_smote
+5.5,368,74,14000,28.7,92,Kamoteng Baging,augmented_smote
+5.5,368,74,14000,28.1,92,Kamoteng Baging,augmented_smote
+5.5,368,74,14000,28.2,90,Kamoteng Baging,augmented_smote
+5.5,368,74,14000,27.6,96,Kamoteng Baging,augmented_smote
+5.5,368,74,14000,27.7,93,Kamoteng Baging,augmented_smote
+5.5,368,74,14000,27.6,94,Kamoteng Baging,augmented_smote
+5.5,368,74,14000,28.0,94,Kamoteng Baging,augmented_smote
+5.5,368,74,14000,28.0,92,Kamoteng Baging,augmented_smote
+5.5,368,74,14000,27.7,91,Kamoteng Baging,augmented_smote
+5.5,368,74,14000,28.2,90,Kamoteng Baging,augmented_smote
+5.5,368,74,14000,27.4,98,Kamoteng Baging,augmented_smote
+5.5,368,74,14000,28.2,96,Kamoteng Baging,augmented_smote
+5.5,368,74,14000,27.8,92,Kamoteng Baging,augmented_smote
+5.5,368,74,14000,27.2,97,Kamoteng Baging,augmented_smote
+5.5,368,74,14000,27.1,88,Kamoteng Baging,augmented_smote
+5.5,368,74,14000,27.8,92,Kamoteng Baging,augmented_smote
+5.5,368,74,14000,28.0,92,Kamoteng Baging,augmented_smote
+5.5,368,74,14000,28.0,92,Kamoteng Baging,augmented_smote
+5.5,368,74,14000,27.3,90,Kamoteng Baging,augmented_smote
+5.5,368,74,14000,27.9,95,Kamoteng Baging,augmented_smote
+5.5,368,74,14000,27.4,92,Kamoteng Baging,augmented_smote
+5.5,368,74,14000,27.9,93,Kamoteng Baging,augmented_smote
+5.5,368,74,14000,27.4,98,Kamoteng Baging,augmented_smote
+5.5,368,74,14000,27.1,90,Kamoteng Baging,augmented_smote
+5.5,368,74,14000,27.2,95,Kamoteng Baging,augmented_smote
+5.5,368,74,14000,27.5,91,Kamoteng Baging,augmented_smote
+5.5,368,74,14000,27.9,92,Kamoteng Baging,augmented_smote
+5.5,368,74,14000,27.0,90,Kamoteng Baging,augmented_smote
+5.5,368,74,14000,27.8,95,Kamoteng Baging,augmented_smote
+5.5,368,74,14000,27.7,97,Kamoteng Baging,augmented_smote
+5.5,368,74,14000,27.9,95,Kamoteng Baging,augmented_smote
+5.5,368,74,14000,27.8,94,Kamoteng Baging,augmented_smote
+5.5,368,74,14000,27.9,92,Kamoteng Baging,augmented_smote
+5.5,368,74,14000,27.8,94,Kamoteng Baging,augmented_smote
+6.2,410,78,2200,28.4,83,Katuray,original
+6.5,407,79,2044,28.2,84,Katuray,augmented_smote
+6.5,406,79,2000,28.1,84,Katuray,augmented_smote
+6.2,410,78,2194,28.4,83,Katuray,augmented_smote
+6.5,406,79,2000,28.1,84,Katuray,augmented_smote
+6.3,409,78,2169,28.4,83,Katuray,augmented_smote
+6.5,405,79,2000,28.0,84,Katuray,augmented_smote
+6.5,408,78,2065,28.2,83,Katuray,augmented_smote
+6.3,409,78,2167,28.4,83,Katuray,augmented_smote
+6.5,408,78,2055,28.2,83,Katuray,augmented_smote
+6.5,408,78,2073,28.2,83,Katuray,augmented_smote
+6.3,409,78,2159,28.3,83,Katuray,augmented_smote
+6.5,405,79,2000,28.0,84,Katuray,augmented_smote
+6.4,409,78,2112,28.3,83,Katuray,augmented_smote
+6.3,410,78,2172,28.4,83,Katuray,augmented_smote
+6.5,407,79,2022,28.2,84,Katuray,augmented_smote
+6.3,409,78,2139,28.3,83,Katuray,augmented_smote
+6.5,406,79,2000,28.1,84,Katuray,augmented_smote
+6.5,405,79,2000,28.0,84,Katuray,augmented_smote
+6.5,406,79,2000,28.0,84,Katuray,augmented_smote
+6.2,410,78,2177,28.4,83,Katuray,augmented_smote
+6.4,408,78,2094,28.3,83,Katuray,augmented_smote
+6.5,408,78,2050,28.2,83,Katuray,augmented_smote
+6.3,409,78,2155,28.3,83,Katuray,augmented_smote
+6.2,410,78,2192,28.4,83,Katuray,augmented_smote
+6.5,407,79,2004,28.1,84,Katuray,augmented_smote
+6.4,409,78,2116,28.3,83,Katuray,augmented_smote
+6.5,407,79,2041,28.2,84,Katuray,augmented_smote
+6.4,408,78,2108,28.3,83,Katuray,augmented_smote
+6.5,407,79,2024,28.2,84,Katuray,augmented_smote
+6.3,409,78,2144,28.3,83,Katuray,augmented_smote
+6.4,409,78,2116,28.3,83,Katuray,augmented_smote
+6.5,407,79,2018,28.2,84,Katuray,augmented_smote
+6.2,410,78,2195,28.4,83,Katuray,augmented_smote
+6.3,409,78,2132,28.3,83,Katuray,augmented_smote
+6.3,409,78,2151,28.3,83,Katuray,augmented_smote
+6.5,407,79,2000,28.1,84,Katuray,augmented_smote
+6.4,409,78,2111,28.3,83,Katuray,augmented_smote
+6.4,408,78,2083,28.2,83,Katuray,augmented_smote
+6.5,406,79,2000,28.1,84,Katuray,augmented_smote
+6.3,410,78,2174,28.4,83,Katuray,augmented_smote
+6.2,410,78,2175,28.4,83,Katuray,augmented_smote
+6.5,407,79,2048,28.2,84,Katuray,augmented_smote
+6.3,409,78,2148,28.3,83,Katuray,augmented_smote
+6.5,405,79,2000,28.0,84,Katuray,augmented_smote
+6.5,405,79,2000,28.0,84,Katuray,augmented_smote
+6.4,408,78,2101,28.3,83,Katuray,augmented_smote
+6.5,407,79,2034,28.2,84,Katuray,augmented_smote
+6.2,410,78,2184,28.4,83,Katuray,augmented_smote
+6.2,410,78,2197,28.4,83,Katuray,augmented_smote
+6.5,406,79,2000,28.1,84,Katuray,augmented_smote
+6.2,410,78,2197,28.4,83,Katuray,augmented_smote
+6.5,405,79,2000,28.0,84,Katuray,augmented_smote
+6.5,408,78,2064,28.2,83,Katuray,augmented_smote
+6.3,409,78,2139,28.3,83,Katuray,augmented_smote
+6.4,408,78,2097,28.3,83,Katuray,augmented_smote
+6.3,409,78,2152,28.3,83,Katuray,augmented_smote
+6.5,408,78,2069,28.2,83,Katuray,augmented_smote
+6.5,406,79,2000,28.0,84,Katuray,augmented_smote
+6.4,409,78,2122,28.3,83,Katuray,augmented_smote
+6.5,406,79,2000,28.1,84,Katuray,augmented_smote
+6.4,408,78,2095,28.3,83,Katuray,augmented_smote
+6.3,409,78,2170,28.4,83,Katuray,augmented_smote
+6.5,405,79,2000,28.0,84,Katuray,augmented_smote
+6.5,407,79,2050,28.2,84,Katuray,augmented_smote
+6.2,410,78,2183,28.4,83,Katuray,augmented_smote
+6.3,409,78,2150,28.3,83,Katuray,augmented_smote
+6.5,405,79,2000,28.0,84,Katuray,augmented_smote
+6.3,409,78,2152,28.3,83,Katuray,augmented_smote
+6.4,408,78,2087,28.2,83,Katuray,augmented_smote
+6.5,406,79,2000,28.1,84,Katuray,augmented_smote
+6.4,409,78,2125,28.3,83,Katuray,augmented_smote
+6.2,410,78,2190,28.4,83,Katuray,augmented_smote
+6.5,406,79,2000,28.1,84,Katuray,augmented_smote
+6.5,408,78,2060,28.2,83,Katuray,augmented_smote
+6.2,410,78,2180,28.4,83,Katuray,augmented_smote
+6.4,409,78,2113,28.3,83,Katuray,augmented_smote
+6.5,407,79,2000,28.1,84,Katuray,augmented_smote
+6.3,409,78,2136,28.3,83,Katuray,augmented_smote
+6.5,405,79,2000,28.0,84,Katuray,augmented_smote
+6.2,410,78,2194,28.4,83,Katuray,augmented_smote
+6.5,406,79,2000,28.1,84,Katuray,augmented_smote
+6.5,408,78,2059,28.2,83,Katuray,augmented_smote
+6.5,408,78,2052,28.2,83,Katuray,augmented_smote
+6.4,408,78,2086,28.2,83,Katuray,augmented_smote
+6.5,406,79,2000,28.0,84,Katuray,augmented_smote
+6.4,408,78,2076,28.2,83,Katuray,augmented_smote
+6.3,409,78,2136,28.3,83,Katuray,augmented_smote
+6.3,409,78,2136,28.3,83,Katuray,augmented_smote
+6.5,407,79,2046,28.2,84,Katuray,augmented_smote
+6.4,408,78,2088,28.3,83,Katuray,augmented_smote
+6.5,406,79,2000,28.1,84,Katuray,augmented_smote
+6.5,407,79,2047,28.2,84,Katuray,augmented_smote
+6.5,406,79,2000,28.1,84,Katuray,augmented_smote
+6.5,407,79,2042,28.2,84,Katuray,augmented_smote
+6.5,407,79,2014,28.2,84,Katuray,augmented_smote
+6.4,408,78,2098,28.3,83,Katuray,augmented_smote
+6.5,407,79,2000,28.1,84,Katuray,augmented_smote
+5.7,470,84,1050,27.4,89,Kulo,original
+6.2,440,80,1280,27.9,85,Kulo,augmented_smote
+6.2,443,82,1280,27.6,87,Kulo,augmented_smote
+5.7,470,84,1050,27.4,89,Kulo,augmented_smote
+6.0,440,80,1280,28.1,84,Kulo,augmented_smote
+5.2,500,80,1280,29.1,93,Kulo,augmented_smote
+5.9,440,81,1280,27.8,85,Kulo,augmented_smote
+5.7,464,83,1111,27.5,88,Kulo,augmented_smote
+5.2,500,80,1280,29.0,93,Kulo,augmented_smote
+5.7,470,84,1050,27.4,89,Kulo,augmented_smote
+5.5,457,80,1280,28.6,84,Kulo,augmented_smote
+6.2,440,81,1280,27.8,86,Kulo,augmented_smote
+5.2,500,80,1280,29.1,92,Kulo,augmented_smote
+5.7,440,80,1280,28.5,84,Kulo,augmented_smote
+6.0,440,80,1280,28.1,84,Kulo,augmented_smote
+6.1,447,82,1280,27.6,87,Kulo,augmented_smote
+5.2,500,80,1280,28.4,93,Kulo,augmented_smote
+5.9,440,80,1280,28.2,84,Kulo,augmented_smote
+5.7,440,82,967,27.9,84,Kulo,augmented_smote
+5.7,470,84,1050,27.4,89,Kulo,augmented_smote
+5.2,500,80,1280,28.1,92,Kulo,augmented_smote
+6.0,440,80,1280,28.2,84,Kulo,augmented_smote
+5.7,440,82,970,27.9,84,Kulo,augmented_smote
+5.7,458,83,1025,27.5,87,Kulo,augmented_smote
+6.2,440,80,1280,28.2,84,Kulo,augmented_smote
+5.7,440,81,955,28.0,84,Kulo,augmented_smote
+6.2,440,80,1280,28.0,84,Kulo,augmented_smote
+5.8,457,83,1177,27.5,87,Kulo,augmented_smote
+5.2,500,80,1280,28.0,92,Kulo,augmented_smote
+5.7,470,84,1050,27.4,89,Kulo,augmented_smote
+6.0,440,80,1280,28.2,84,Kulo,augmented_smote
+5.7,440,80,1045,28.0,84,Kulo,augmented_smote
+5.2,500,80,1280,28.3,93,Kulo,augmented_smote
+5.7,440,80,1280,28.5,84,Kulo,augmented_smote
+5.2,500,80,1280,28.8,93,Kulo,augmented_smote
+5.7,470,84,1050,27.4,89,Kulo,augmented_smote
+6.0,440,80,1280,28.1,84,Kulo,augmented_smote
+5.7,454,83,1019,27.6,86,Kulo,augmented_smote
+6.2,440,81,1280,27.8,86,Kulo,augmented_smote
+6.2,440,80,1280,28.0,84,Kulo,augmented_smote
+6.2,440,80,1280,28.0,84,Kulo,augmented_smote
+5.3,465,80,1280,28.3,84,Kulo,augmented_smote
+5.7,462,83,1126,27.5,88,Kulo,augmented_smote
+5.2,500,80,1280,29.1,93,Kulo,augmented_smote
+6.0,452,83,1280,27.6,88,Kulo,augmented_smote
+5.9,440,81,1151,28.0,84,Kulo,augmented_smote
+5.7,466,84,1042,27.4,88,Kulo,augmented_smote
+5.9,440,80,1280,28.4,84,Kulo,augmented_smote
+5.7,444,82,998,27.7,84,Kulo,augmented_smote
+6.2,440,80,1280,28.0,84,Kulo,augmented_smote
+5.7,440,82,969,27.9,84,Kulo,augmented_smote
+5.9,457,83,1227,27.5,88,Kulo,augmented_smote
+6.0,440,80,1280,28.1,84,Kulo,augmented_smote
+5.7,470,84,1050,27.4,89,Kulo,augmented_smote
+6.2,440,80,1280,28.0,84,Kulo,augmented_smote
+6.1,445,82,1280,27.6,87,Kulo,augmented_smote
+5.2,500,80,1280,29.1,93,Kulo,augmented_smote
+6.0,440,80,1280,28.0,84,Kulo,augmented_smote
+6.2,440,80,1280,28.0,84,Kulo,augmented_smote
+5.7,470,84,1050,27.4,89,Kulo,augmented_smote
+6.0,440,80,1280,28.2,84,Kulo,augmented_smote
+6.2,440,80,1280,28.0,84,Kulo,augmented_smote
+5.7,470,84,1050,27.4,89,Kulo,augmented_smote
+5.9,440,80,1280,28.1,84,Kulo,augmented_smote
+5.9,440,80,1280,28.1,84,Kulo,augmented_smote
+5.7,469,84,1064,27.4,89,Kulo,augmented_smote
+6.2,440,80,1280,28.0,84,Kulo,augmented_smote
+5.2,500,80,1280,29.2,93,Kulo,augmented_smote
+6.2,440,80,1280,28.0,84,Kulo,augmented_smote
+5.7,470,84,1050,27.4,89,Kulo,augmented_smote
+5.8,440,80,1090,28.0,84,Kulo,augmented_smote
+6.2,440,80,1280,28.2,84,Kulo,augmented_smote
+5.7,497,80,1280,28.6,90,Kulo,augmented_smote
+5.7,452,83,1014,27.6,86,Kulo,augmented_smote
+6.2,440,80,1280,28.0,84,Kulo,augmented_smote
+6.1,446,82,1280,27.6,87,Kulo,augmented_smote
+5.8,440,80,1280,28.5,84,Kulo,augmented_smote
+6.2,440,80,1280,28.2,84,Kulo,augmented_smote
+6.1,440,80,1280,28.3,84,Kulo,augmented_smote
+5.2,500,80,1280,29.3,93,Kulo,augmented_smote
+5.3,500,80,1280,28.8,92,Kulo,augmented_smote
+5.4,500,80,1280,27.8,91,Kulo,augmented_smote
+6.0,440,80,1280,28.0,84,Kulo,augmented_smote
+5.9,440,80,1280,28.1,84,Kulo,augmented_smote
+5.7,440,82,971,27.9,84,Kulo,augmented_smote
+5.9,440,81,1280,27.7,85,Kulo,augmented_smote
+6.1,440,80,1280,28.2,84,Kulo,augmented_smote
+5.7,470,84,1065,27.4,89,Kulo,augmented_smote
+6.2,440,80,1280,28.2,84,Kulo,augmented_smote
+5.2,500,80,1280,29.2,93,Kulo,augmented_smote
+5.8,440,80,1107,28.1,84,Kulo,augmented_smote
+5.2,500,80,1280,29.2,93,Kulo,augmented_smote
+5.7,440,81,961,27.9,84,Kulo,augmented_smote
+5.2,500,80,1280,29.5,93,Kulo,augmented_smote
+5.7,420,81,950,28.0,80,Lipote,original
+5.5,485,76,2400,28.9,87,Lipote,original
+5.7,450,81,1030,28.0,80,Lipote,augmented_smote
+5.6,462,78,1255,28.6,83,Lipote,augmented_smote
+5.6,450,79,1255,28.4,83,Lipote,augmented_smote
+5.7,450,80,1255,28.2,82,Lipote,augmented_smote
+5.5,478,78,1255,28.8,83,Lipote,augmented_smote
+5.6,450,79,1255,28.3,82,Lipote,augmented_smote
+5.6,460,78,1255,28.6,83,Lipote,augmented_smote
+5.5,472,78,1255,28.7,83,Lipote,augmented_smote
+5.6,469,78,1255,28.7,83,Lipote,augmented_smote
+5.6,452,79,1255,28.4,83,Lipote,augmented_smote
+5.6,459,78,1255,28.5,83,Lipote,augmented_smote
+5.6,469,78,1255,28.7,83,Lipote,augmented_smote
+5.7,450,80,1204,28.2,81,Lipote,augmented_smote
+5.6,465,78,1255,28.6,83,Lipote,augmented_smote
+5.5,473,78,1255,28.7,83,Lipote,augmented_smote
+5.7,450,81,1094,28.1,81,Lipote,augmented_smote
+5.5,475,78,1255,28.8,83,Lipote,augmented_smote
+5.6,459,78,1255,28.5,83,Lipote,augmented_smote
+5.6,450,79,1255,28.4,83,Lipote,augmented_smote
+5.6,456,78,1255,28.5,83,Lipote,augmented_smote
+5.7,450,81,1062,28.1,81,Lipote,augmented_smote
+5.5,478,78,1255,28.8,83,Lipote,augmented_smote
+5.6,458,78,1255,28.5,83,Lipote,augmented_smote
+5.6,463,78,1255,28.6,83,Lipote,augmented_smote
+5.6,453,78,1255,28.5,83,Lipote,augmented_smote
+5.6,460,78,1255,28.5,83,Lipote,augmented_smote
+5.6,455,78,1255,28.5,83,Lipote,augmented_smote
+5.6,450,79,1255,28.4,83,Lipote,augmented_smote
+5.5,480,78,1255,28.9,83,Lipote,augmented_smote
+5.5,480,78,1255,28.9,83,Lipote,augmented_smote
+5.6,450,79,1255,28.4,83,Lipote,augmented_smote
+5.5,471,78,1255,28.7,83,Lipote,augmented_smote
+5.6,453,78,1255,28.5,83,Lipote,augmented_smote
+5.7,450,80,1255,28.2,82,Lipote,augmented_smote
+5.6,450,79,1255,28.3,83,Lipote,augmented_smote
+5.5,480,78,1255,28.8,83,Lipote,augmented_smote
+5.6,450,79,1255,28.4,83,Lipote,augmented_smote
+5.6,452,79,1255,28.4,83,Lipote,augmented_smote
+5.6,450,79,1255,28.4,83,Lipote,augmented_smote
+5.7,450,80,1126,28.1,81,Lipote,augmented_smote
+5.5,478,78,1255,28.8,83,Lipote,augmented_smote
+5.5,477,78,1255,28.8,83,Lipote,augmented_smote
+5.6,463,78,1255,28.6,83,Lipote,augmented_smote
+5.6,457,78,1255,28.5,83,Lipote,augmented_smote
+5.7,450,80,1255,28.2,82,Lipote,augmented_smote
+5.5,474,78,1255,28.7,83,Lipote,augmented_smote
+5.7,450,80,1167,28.1,81,Lipote,augmented_smote
+5.6,450,79,1255,28.3,83,Lipote,augmented_smote
+5.6,463,78,1255,28.6,83,Lipote,augmented_smote
+5.7,450,81,1050,28.1,80,Lipote,augmented_smote
+5.6,453,78,1255,28.5,83,Lipote,augmented_smote
+5.6,463,78,1255,28.6,83,Lipote,augmented_smote
+5.5,471,78,1255,28.7,83,Lipote,augmented_smote
+5.5,477,78,1255,28.8,83,Lipote,augmented_smote
+5.7,450,80,1173,28.1,81,Lipote,augmented_smote
+5.6,453,78,1255,28.5,83,Lipote,augmented_smote
+5.5,480,78,1255,28.9,83,Lipote,augmented_smote
+5.6,461,78,1255,28.6,83,Lipote,augmented_smote
+5.6,450,79,1255,28.3,83,Lipote,augmented_smote
+5.5,478,78,1255,28.8,83,Lipote,augmented_smote
+5.5,477,78,1255,28.8,83,Lipote,augmented_smote
+5.6,453,78,1255,28.5,83,Lipote,augmented_smote
+5.7,450,80,1155,28.1,81,Lipote,augmented_smote
+5.5,480,78,1255,28.8,83,Lipote,augmented_smote
+5.5,470,78,1255,28.7,83,Lipote,augmented_smote
+5.5,471,78,1255,28.7,83,Lipote,augmented_smote
+5.6,462,78,1255,28.6,83,Lipote,augmented_smote
+5.6,459,78,1255,28.5,83,Lipote,augmented_smote
+5.5,471,78,1255,28.7,83,Lipote,augmented_smote
+5.5,479,78,1255,28.8,83,Lipote,augmented_smote
+5.5,480,78,1255,28.8,83,Lipote,augmented_smote
+5.7,450,81,1072,28.1,81,Lipote,augmented_smote
+5.5,472,78,1255,28.7,83,Lipote,augmented_smote
+5.6,450,80,1255,28.3,82,Lipote,augmented_smote
+5.6,455,78,1255,28.5,83,Lipote,augmented_smote
+5.6,463,78,1255,28.6,83,Lipote,augmented_smote
+5.6,453,78,1255,28.5,83,Lipote,augmented_smote
+5.6,464,78,1255,28.6,83,Lipote,augmented_smote
+5.6,450,79,1255,28.4,83,Lipote,augmented_smote
+5.6,450,79,1255,28.3,83,Lipote,augmented_smote
+5.7,450,80,1193,28.2,81,Lipote,augmented_smote
+5.5,472,78,1255,28.7,83,Lipote,augmented_smote
+5.7,450,80,1255,28.2,82,Lipote,augmented_smote
+5.7,450,80,1255,28.2,82,Lipote,augmented_smote
+5.6,459,78,1255,28.5,83,Lipote,augmented_smote
+5.7,450,80,1189,28.1,81,Lipote,augmented_smote
+5.5,480,78,1255,28.9,83,Lipote,augmented_smote
+5.6,453,78,1255,28.5,83,Lipote,augmented_smote
+5.6,462,78,1255,28.6,83,Lipote,augmented_smote
+5.7,450,80,1145,28.1,81,Lipote,augmented_smote
+5.5,473,78,1255,28.7,83,Lipote,augmented_smote
+5.6,456,78,1255,28.5,83,Lipote,augmented_smote
+5.7,450,80,1100,28.1,81,Lipote,augmented_smote
+5.5,473,78,1255,28.7,83,Lipote,augmented_smote
+5.6,450,79,1255,28.3,82,Lipote,augmented_smote
+5.5,480,78,1255,28.9,83,Lipote,augmented_smote
+5.5,485,76,2400,28.9,87,Sili Labuyo,original
+5.5,485,76,2400,28.9,87,Sili Labuyo,original
+5.7,420,81,950,28.0,80,Sili Labuyo,original
+5.6,467,77,2200,28.7,85,Sili Labuyo,augmented_smote
+5.5,485,76,2400,28.9,87,Sili Labuyo,augmented_smote
+5.5,477,77,2232,28.8,86,Sili Labuyo,augmented_smote
+5.5,485,76,2400,28.9,87,Sili Labuyo,augmented_smote
+5.7,450,80,2200,28.1,84,Sili Labuyo,augmented_smote
+5.6,450,79,2200,28.3,84,Sili Labuyo,augmented_smote
+5.7,450,80,2200,28.1,84,Sili Labuyo,augmented_smote
+5.6,457,78,2200,28.5,84,Sili Labuyo,augmented_smote
+5.5,482,76,2344,28.9,87,Sili Labuyo,augmented_smote
+5.6,450,79,2200,28.4,84,Sili Labuyo,augmented_smote
+5.7,450,80,2200,28.1,84,Sili Labuyo,augmented_smote
+5.5,485,76,2400,28.9,87,Sili Labuyo,augmented_smote
+5.5,477,77,2211,28.8,86,Sili Labuyo,augmented_smote
+5.5,474,77,2200,28.7,86,Sili Labuyo,augmented_smote
+5.5,485,76,2400,28.9,87,Sili Labuyo,augmented_smote
+5.5,476,77,2202,28.8,86,Sili Labuyo,augmented_smote
+5.6,450,79,2200,28.4,84,Sili Labuyo,augmented_smote
+5.7,450,80,2200,28.1,84,Sili Labuyo,augmented_smote
+5.7,450,80,2200,28.1,84,Sili Labuyo,augmented_smote
+5.6,453,78,2200,28.5,84,Sili Labuyo,augmented_smote
+5.5,474,77,2200,28.8,86,Sili Labuyo,augmented_smote
+5.7,450,80,2200,28.2,84,Sili Labuyo,augmented_smote
+5.5,485,76,2400,28.9,87,Sili Labuyo,augmented_smote
+5.6,467,77,2200,28.6,85,Sili Labuyo,augmented_smote
+5.5,485,76,2400,28.9,87,Sili Labuyo,augmented_smote
+5.7,450,80,2200,28.1,84,Sili Labuyo,augmented_smote
+5.7,450,80,2200,28.0,84,Sili Labuyo,augmented_smote
+5.5,485,76,2400,28.9,87,Sili Labuyo,augmented_smote
+5.6,450,79,2200,28.4,84,Sili Labuyo,augmented_smote
+5.6,450,79,2200,28.4,84,Sili Labuyo,augmented_smote
+5.6,461,78,2200,28.6,84,Sili Labuyo,augmented_smote
+5.5,485,76,2400,28.9,87,Sili Labuyo,augmented_smote
+5.5,485,76,2400,28.9,87,Sili Labuyo,augmented_smote
+5.6,450,79,2200,28.3,84,Sili Labuyo,augmented_smote
+5.7,450,80,2200,28.2,84,Sili Labuyo,augmented_smote
+5.6,462,78,2200,28.6,85,Sili Labuyo,augmented_smote
+5.6,457,78,2200,28.5,84,Sili Labuyo,augmented_smote
+5.7,450,80,2200,28.2,84,Sili Labuyo,augmented_smote
+5.5,485,76,2400,28.9,87,Sili Labuyo,augmented_smote
+5.6,450,79,2200,28.4,84,Sili Labuyo,augmented_smote
+5.5,471,77,2200,28.7,85,Sili Labuyo,augmented_smote
+5.6,463,78,2200,28.6,85,Sili Labuyo,augmented_smote
+5.6,460,78,2200,28.6,84,Sili Labuyo,augmented_smote
+5.6,468,77,2200,28.7,85,Sili Labuyo,augmented_smote
+5.7,450,80,2200,28.1,84,Sili Labuyo,augmented_smote
+5.5,485,76,2400,28.9,87,Sili Labuyo,augmented_smote
+5.5,485,76,2400,28.9,87,Sili Labuyo,augmented_smote
+5.5,485,76,2400,28.9,87,Sili Labuyo,augmented_smote
+5.6,461,78,2200,28.6,84,Sili Labuyo,augmented_smote
+5.6,451,79,2200,28.4,84,Sili Labuyo,augmented_smote
+5.5,485,76,2400,28.9,87,Sili Labuyo,augmented_smote
+5.6,450,79,2200,28.3,84,Sili Labuyo,augmented_smote
+5.7,450,80,2200,28.0,84,Sili Labuyo,augmented_smote
+5.5,481,76,2309,28.8,87,Sili Labuyo,augmented_smote
+5.7,450,80,2200,28.2,84,Sili Labuyo,augmented_smote
+5.5,485,76,2400,28.9,87,Sili Labuyo,augmented_smote
+5.5,481,76,2300,28.8,87,Sili Labuyo,augmented_smote
+5.5,485,76,2400,28.9,87,Sili Labuyo,augmented_smote
+5.5,485,76,2400,28.9,87,Sili Labuyo,augmented_smote
+5.5,474,77,2200,28.8,86,Sili Labuyo,augmented_smote
+5.6,457,78,2200,28.5,84,Sili Labuyo,augmented_smote
+5.5,485,76,2400,28.9,87,Sili Labuyo,augmented_smote
+5.5,485,76,2400,28.9,87,Sili Labuyo,augmented_smote
+5.5,485,76,2400,28.9,87,Sili Labuyo,augmented_smote
+5.6,450,79,2200,28.4,84,Sili Labuyo,augmented_smote
+5.5,485,76,2400,28.9,87,Sili Labuyo,augmented_smote
+5.5,485,76,2400,28.9,87,Sili Labuyo,augmented_smote
+5.7,450,80,2200,28.1,84,Sili Labuyo,augmented_smote
+5.5,470,77,2200,28.7,85,Sili Labuyo,augmented_smote
+5.5,485,76,2400,28.9,87,Sili Labuyo,augmented_smote
+5.7,450,80,2200,28.2,84,Sili Labuyo,augmented_smote
+5.6,450,79,2200,28.4,84,Sili Labuyo,augmented_smote
+5.6,466,77,2200,28.6,85,Sili Labuyo,augmented_smote
+5.6,454,78,2200,28.5,84,Sili Labuyo,augmented_smote
+5.5,485,76,2400,28.9,87,Sili Labuyo,augmented_smote
+5.6,461,78,2200,28.6,84,Sili Labuyo,augmented_smote
+5.7,450,80,2200,28.1,84,Sili Labuyo,augmented_smote
+5.5,485,76,2400,28.9,87,Sili Labuyo,augmented_smote
+5.5,475,77,2200,28.8,86,Sili Labuyo,augmented_smote
+5.6,450,80,2200,28.3,84,Sili Labuyo,augmented_smote
+5.5,472,77,2200,28.7,86,Sili Labuyo,augmented_smote
+5.7,450,80,2200,28.2,84,Sili Labuyo,augmented_smote
+5.6,459,78,2200,28.5,84,Sili Labuyo,augmented_smote
+5.6,450,80,2200,28.2,84,Sili Labuyo,augmented_smote
+5.5,485,76,2400,28.9,87,Sili Labuyo,augmented_smote
+5.6,460,78,2200,28.5,84,Sili Labuyo,augmented_smote
+5.6,450,79,2200,28.3,84,Sili Labuyo,augmented_smote
+5.5,485,76,2400,28.9,87,Sili Labuyo,augmented_smote
+5.5,472,77,2200,28.7,86,Sili Labuyo,augmented_smote
+5.6,450,79,2200,28.3,84,Sili Labuyo,augmented_smote
+5.7,450,80,2200,28.0,84,Sili Labuyo,augmented_smote
+5.6,468,77,2200,28.7,85,Sili Labuyo,augmented_smote
+5.5,485,76,2400,28.9,87,Sili Labuyo,augmented_smote
+5.5,469,77,2200,28.7,85,Sili Labuyo,augmented_smote
+6.1,390,76,1850,28.3,78,Orchid,original
+5.7,393,79,1600,27.8,82,Orchid,augmented_smote
+5.7,393,79,1600,27.9,81,Orchid,augmented_smote
+6.1,393,76,1763,28.0,78,Orchid,augmented_smote
+6.3,393,79,1600,27.8,82,Orchid,augmented_smote
+6.3,393,78,1888,28.0,82,Orchid,augmented_smote
+5.7,393,79,1600,28.0,80,Orchid,augmented_smote
+5.7,393,79,1600,28.0,80,Orchid,augmented_smote
+6.1,393,75,2000,28.0,82,Orchid,augmented_smote
+6.3,393,79,1600,27.7,82,Orchid,augmented_smote
+6.0,393,79,1600,27.6,82,Orchid,augmented_smote
+5.8,393,74,2000,28.0,81,Orchid,augmented_smote
+5.7,393,73,2000,28.0,82,Orchid,augmented_smote
+5.7,393,79,1600,27.7,82,Orchid,augmented_smote
+6.0,393,77,1712,28.0,80,Orchid,augmented_smote
+5.9,393,79,1600,27.5,82,Orchid,augmented_smote
+6.0,393,78,1600,28.0,79,Orchid,augmented_smote
+6.3,393,77,1861,28.0,79,Orchid,augmented_smote
+6.3,393,77,1864,28.0,80,Orchid,augmented_smote
+5.7,393,79,1600,27.7,82,Orchid,augmented_smote
+5.7,393,73,2000,28.0,82,Orchid,augmented_smote
+6.1,393,79,1600,27.6,82,Orchid,augmented_smote
+5.7,393,73,2000,28.0,82,Orchid,augmented_smote
+5.7,393,79,1600,28.0,80,Orchid,augmented_smote
+5.8,393,79,1600,27.7,82,Orchid,augmented_smote
+5.7,393,73,2000,28.0,82,Orchid,augmented_smote
+5.7,393,79,1600,27.9,82,Orchid,augmented_smote
+6.2,393,79,1600,28.0,82,Orchid,augmented_smote
+5.7,393,78,2000,28.0,82,Orchid,augmented_smote
+6.3,393,78,1880,28.0,82,Orchid,augmented_smote
+6.0,393,78,1600,28.0,79,Orchid,augmented_smote
+6.0,393,79,1600,28.0,81,Orchid,augmented_smote
+6.0,393,79,1600,28.0,81,Orchid,augmented_smote
+5.7,393,79,1600,27.4,82,Orchid,augmented_smote
+6.3,393,79,1893,28.0,82,Orchid,augmented_smote
+6.2,392,76,1856,28.0,79,Orchid,augmented_smote
+5.9,393,79,1600,27.9,82,Orchid,augmented_smote
+5.7,393,73,2000,28.0,82,Orchid,augmented_smote
+5.7,393,79,1600,27.6,82,Orchid,augmented_smote
+5.7,393,79,1600,28.0,80,Orchid,augmented_smote
+5.7,393,79,1600,27.7,82,Orchid,augmented_smote
+6.2,393,79,1600,28.0,82,Orchid,augmented_smote
+6.2,393,79,1600,27.7,82,Orchid,augmented_smote
+5.7,393,73,2000,28.0,82,Orchid,augmented_smote
+5.7,393,79,1600,28.0,80,Orchid,augmented_smote
+5.7,393,73,2000,28.0,82,Orchid,augmented_smote
+5.7,393,73,2000,28.0,82,Orchid,augmented_smote
+5.8,393,79,1600,27.7,82,Orchid,augmented_smote
+5.9,393,79,1600,27.8,82,Orchid,augmented_smote
+5.7,393,73,2000,28.0,82,Orchid,augmented_smote
+6.3,393,79,1600,28.0,82,Orchid,augmented_smote
+5.7,393,73,2000,28.0,82,Orchid,augmented_smote
+5.8,393,79,1600,28.0,80,Orchid,augmented_smote
+6.1,393,79,1600,28.0,81,Orchid,augmented_smote
+5.7,393,75,2000,28.0,82,Orchid,augmented_smote
+5.7,393,78,2000,28.0,82,Orchid,augmented_smote
+5.7,393,75,2000,28.0,82,Orchid,augmented_smote
+5.9,393,79,1600,27.5,82,Orchid,augmented_smote
+6.2,393,77,1860,28.0,79,Orchid,augmented_smote
+6.3,393,78,1877,28.0,81,Orchid,augmented_smote
+5.7,393,73,2000,28.0,82,Orchid,augmented_smote
+6.0,393,77,1749,28.0,79,Orchid,augmented_smote
+5.9,393,78,1600,28.0,79,Orchid,augmented_smote
+6.3,393,79,1810,28.0,82,Orchid,augmented_smote
+6.3,393,79,1786,27.9,82,Orchid,augmented_smote
+6.1,393,76,1957,28.0,78,Orchid,augmented_smote
+6.3,393,79,1661,28.0,82,Orchid,augmented_smote
+5.7,393,76,2000,28.0,82,Orchid,augmented_smote
+5.7,393,79,1755,28.0,82,Orchid,augmented_smote
+5.9,393,79,1600,27.5,82,Orchid,augmented_smote
+5.9,393,79,1600,27.9,82,Orchid,augmented_smote
+6.3,393,79,1715,27.9,82,Orchid,augmented_smote
+5.7,393,79,1600,28.0,80,Orchid,augmented_smote
+5.7,393,73,2000,28.0,82,Orchid,augmented_smote
+6.0,393,77,1735,28.0,80,Orchid,augmented_smote
+6.3,393,79,1824,28.0,82,Orchid,augmented_smote
+5.7,393,73,2000,28.0,82,Orchid,augmented_smote
+6.3,393,79,1600,27.7,82,Orchid,augmented_smote
+6.3,393,79,1661,28.0,82,Orchid,augmented_smote
+6.2,392,76,1855,28.0,79,Orchid,augmented_smote
+5.9,393,79,1600,27.5,82,Orchid,augmented_smote
+5.7,393,73,2000,28.0,82,Orchid,augmented_smote
+5.7,393,73,2000,28.0,82,Orchid,augmented_smote
+5.7,393,79,2000,27.8,82,Orchid,augmented_smote
+5.7,393,79,1600,27.7,82,Orchid,augmented_smote
+5.9,393,79,1600,28.0,81,Orchid,augmented_smote
+5.7,393,73,2000,28.0,82,Orchid,augmented_smote
+5.7,393,79,1600,27.9,82,Orchid,augmented_smote
+5.7,393,73,2000,28.0,82,Orchid,augmented_smote
+6.3,393,78,1890,28.0,82,Orchid,augmented_smote
+5.8,393,79,1600,28.0,79,Orchid,augmented_smote
+5.7,393,73,2000,28.0,82,Orchid,augmented_smote
+6.3,393,77,1862,28.0,79,Orchid,augmented_smote
+5.8,393,73,2000,28.0,82,Orchid,augmented_smote
+5.7,393,73,2000,28.0,82,Orchid,augmented_smote
+6.0,435,79,2000,28.1,82,Papaya,original
+5.5,450,86,700,26.5,87,Papaya,original
+5.8,448,81,1800,26.7,84,Papaya,augmented_smote
+6.0,436,79,1940,28.0,82,Papaya,augmented_smote
+5.8,445,81,1800,27.0,84,Papaya,augmented_smote
+5.9,437,80,1830,27.9,83,Papaya,augmented_smote
+6.0,436,80,1871,27.9,82,Papaya,augmented_smote
+6.0,435,79,1964,28.1,82,Papaya,augmented_smote
+5.8,447,81,1800,26.9,84,Papaya,augmented_smote
+6.0,436,79,1933,28.0,82,Papaya,augmented_smote
+5.8,449,81,1800,26.6,84,Papaya,augmented_smote
+5.8,450,81,1800,26.5,84,Papaya,augmented_smote
+5.8,442,81,1800,27.3,84,Papaya,augmented_smote
+5.9,438,80,1800,27.8,83,Papaya,augmented_smote
+5.8,440,81,1800,27.6,84,Papaya,augmented_smote
+5.8,440,81,1800,27.6,84,Papaya,augmented_smote
+5.9,439,81,1800,27.7,83,Papaya,augmented_smote
+5.8,444,81,1800,27.1,84,Papaya,augmented_smote
+5.9,439,81,1800,27.7,83,Papaya,augmented_smote
+5.8,446,81,1800,26.9,84,Papaya,augmented_smote
+5.8,442,81,1800,27.3,84,Papaya,augmented_smote
+5.8,445,81,1800,27.0,84,Papaya,augmented_smote
+5.8,440,81,1800,27.6,84,Papaya,augmented_smote
+5.8,444,81,1800,27.1,84,Papaya,augmented_smote
+5.8,443,81,1800,27.2,84,Papaya,augmented_smote
+5.8,440,81,1800,27.5,84,Papaya,augmented_smote
+5.9,437,80,1850,27.9,83,Papaya,augmented_smote
+5.9,437,80,1822,27.9,83,Papaya,augmented_smote
+6.0,436,79,1909,28.0,82,Papaya,augmented_smote
+5.8,440,81,1800,27.6,84,Papaya,augmented_smote
+5.8,440,81,1800,27.6,84,Papaya,augmented_smote
+5.8,442,81,1800,27.3,84,Papaya,augmented_smote
+5.8,442,81,1800,27.3,84,Papaya,augmented_smote
+5.8,440,81,1800,27.6,84,Papaya,augmented_smote
+5.8,447,81,1800,26.8,84,Papaya,augmented_smote
+5.9,439,81,1800,27.6,83,Papaya,augmented_smote
+5.8,443,81,1800,27.2,84,Papaya,augmented_smote
+5.8,444,81,1800,27.1,84,Papaya,augmented_smote
+5.8,443,81,1800,27.3,84,Papaya,augmented_smote
+6.0,436,79,1937,28.0,82,Papaya,augmented_smote
+5.8,449,81,1800,26.6,84,Papaya,augmented_smote
+5.8,446,81,1800,26.9,84,Papaya,augmented_smote
+5.8,445,81,1800,27.0,84,Papaya,augmented_smote
+5.8,449,81,1800,26.6,84,Papaya,augmented_smote
+6.0,435,79,1966,28.1,82,Papaya,augmented_smote
+5.8,441,81,1800,27.4,84,Papaya,augmented_smote
+5.9,437,80,1836,27.9,83,Papaya,augmented_smote
+5.8,440,81,1800,27.5,84,Papaya,augmented_smote
+5.8,442,81,1800,27.4,84,Papaya,augmented_smote
+5.8,447,81,1800,26.8,84,Papaya,augmented_smote
+5.8,441,81,1800,27.4,84,Papaya,augmented_smote
+5.9,437,80,1801,27.9,83,Papaya,augmented_smote
+5.8,450,81,1800,26.5,84,Papaya,augmented_smote
+5.8,447,81,1800,26.9,84,Papaya,augmented_smote
+5.9,437,80,1800,27.9,83,Papaya,augmented_smote
+5.9,437,80,1800,27.8,83,Papaya,augmented_smote
+5.8,441,81,1800,27.4,84,Papaya,augmented_smote
+5.8,440,81,1800,27.6,84,Papaya,augmented_smote
+5.8,448,81,1800,26.7,84,Papaya,augmented_smote
+5.9,437,80,1841,27.9,83,Papaya,augmented_smote
+5.8,440,81,1800,27.5,84,Papaya,augmented_smote
+5.8,440,81,1800,27.5,84,Papaya,augmented_smote
+5.8,441,81,1800,27.5,84,Papaya,augmented_smote
+5.8,443,81,1800,27.3,84,Papaya,augmented_smote
+5.8,449,81,1800,26.6,84,Papaya,augmented_smote
+5.8,440,81,1800,27.6,84,Papaya,augmented_smote
+5.8,449,81,1800,26.6,84,Papaya,augmented_smote
+5.8,443,81,1800,27.3,84,Papaya,augmented_smote
+5.9,439,81,1800,27.6,83,Papaya,augmented_smote
+5.8,443,81,1800,27.3,84,Papaya,augmented_smote
+6.0,436,79,1947,28.0,82,Papaya,augmented_smote
+5.8,440,81,1800,27.5,84,Papaya,augmented_smote
+5.8,450,81,1800,26.5,84,Papaya,augmented_smote
+5.8,448,81,1800,26.8,84,Papaya,augmented_smote
+5.8,440,81,1800,27.6,84,Papaya,augmented_smote
+5.8,440,81,1800,27.6,84,Papaya,augmented_smote
+5.8,443,81,1800,27.2,84,Papaya,augmented_smote
+5.8,442,81,1800,27.3,84,Papaya,augmented_smote
+5.9,439,81,1800,27.6,83,Papaya,augmented_smote
+5.8,447,81,1800,26.9,84,Papaya,augmented_smote
+5.8,450,81,1800,26.5,84,Papaya,augmented_smote
+5.8,444,81,1800,27.1,84,Papaya,augmented_smote
+5.8,443,81,1800,27.3,84,Papaya,augmented_smote
+6.0,436,80,1881,28.0,82,Papaya,augmented_smote
+5.8,442,81,1800,27.4,84,Papaya,augmented_smote
+5.8,440,81,1800,27.5,84,Papaya,augmented_smote
+5.8,449,81,1800,26.6,84,Papaya,augmented_smote
+5.8,442,81,1800,27.3,84,Papaya,augmented_smote
+5.8,447,81,1800,26.8,84,Papaya,augmented_smote
+5.9,437,80,1800,27.8,83,Papaya,augmented_smote
+5.9,439,81,1800,27.7,83,Papaya,augmented_smote
+5.8,442,81,1800,27.4,84,Papaya,augmented_smote
+5.9,437,80,1803,27.9,83,Papaya,augmented_smote
+5.8,447,81,1800,26.9,84,Papaya,augmented_smote
+6.0,436,79,1953,28.0,82,Papaya,augmented_smote
+5.8,441,81,1800,27.4,84,Papaya,augmented_smote
+5.8,443,81,1800,27.2,84,Papaya,augmented_smote
+5.8,450,81,1800,26.5,84,Papaya,augmented_smote
+6.6,535,75,2600,28.7,94,Pechay,original
+6.9,540,76,2700,29.0,93,Pechay,original
+6.7,536,75,2618,28.8,94,Pechay,augmented_smote
+6.6,535,75,2604,28.7,94,Pechay,augmented_smote
+6.8,538,76,2656,28.9,93,Pechay,augmented_smote
+6.6,535,75,2610,28.7,94,Pechay,augmented_smote
+6.8,538,76,2654,28.9,93,Pechay,augmented_smote
+6.8,538,76,2656,28.9,93,Pechay,augmented_smote
+6.9,540,76,2696,29.0,93,Pechay,augmented_smote
+6.7,537,75,2633,28.8,94,Pechay,augmented_smote
+6.9,539,76,2687,29.0,93,Pechay,augmented_smote
+6.7,536,75,2626,28.8,94,Pechay,augmented_smote
+6.6,535,75,2608,28.7,94,Pechay,augmented_smote
+6.7,537,75,2648,28.8,94,Pechay,augmented_smote
+6.7,537,75,2638,28.8,94,Pechay,augmented_smote
+6.6,536,75,2615,28.7,94,Pechay,augmented_smote
+6.8,538,76,2668,28.9,93,Pechay,augmented_smote
+6.7,537,75,2647,28.8,94,Pechay,augmented_smote
+6.9,540,76,2697,29.0,93,Pechay,augmented_smote
+6.9,540,76,2692,29.0,93,Pechay,augmented_smote
+6.8,538,76,2669,28.9,93,Pechay,augmented_smote
+6.7,537,75,2642,28.8,94,Pechay,augmented_smote
+6.7,537,75,2647,28.8,94,Pechay,augmented_smote
+6.8,538,76,2655,28.9,93,Pechay,augmented_smote
+6.8,539,76,2676,28.9,93,Pechay,augmented_smote
+6.6,536,75,2611,28.7,94,Pechay,augmented_smote
+6.6,535,75,2600,28.7,94,Pechay,augmented_smote
+6.8,539,76,2674,28.9,93,Pechay,augmented_smote
+6.8,539,76,2677,28.9,93,Pechay,augmented_smote
+6.9,540,76,2690,29.0,93,Pechay,augmented_smote
+6.7,537,75,2641,28.8,94,Pechay,augmented_smote
+6.8,539,76,2675,28.9,93,Pechay,augmented_smote
+6.8,538,76,2661,28.9,93,Pechay,augmented_smote
+6.9,540,76,2697,29.0,93,Pechay,augmented_smote
+6.7,537,75,2647,28.8,94,Pechay,augmented_smote
+6.9,540,76,2694,29.0,93,Pechay,augmented_smote
+6.8,538,76,2660,28.9,93,Pechay,augmented_smote
+6.8,538,76,2664,28.9,93,Pechay,augmented_smote
+6.7,537,75,2634,28.8,94,Pechay,augmented_smote
+6.7,537,75,2642,28.8,94,Pechay,augmented_smote
+6.7,537,75,2640,28.8,94,Pechay,augmented_smote
+6.9,539,76,2687,29.0,93,Pechay,augmented_smote
+6.8,538,76,2656,28.9,93,Pechay,augmented_smote
+6.6,536,75,2615,28.7,94,Pechay,augmented_smote
+6.8,538,76,2657,28.9,93,Pechay,augmented_smote
+6.7,537,75,2632,28.8,94,Pechay,augmented_smote
+6.8,539,76,2674,28.9,93,Pechay,augmented_smote
+6.6,535,75,2604,28.7,94,Pechay,augmented_smote
+6.7,537,75,2642,28.8,94,Pechay,augmented_smote
+6.8,538,76,2664,28.9,93,Pechay,augmented_smote
+6.6,535,75,2608,28.7,94,Pechay,augmented_smote
+6.6,535,75,2604,28.7,94,Pechay,augmented_smote
+6.7,536,75,2625,28.8,94,Pechay,augmented_smote
+6.8,538,76,2655,28.9,93,Pechay,augmented_smote
+6.7,537,75,2632,28.8,94,Pechay,augmented_smote
+6.7,536,75,2624,28.8,94,Pechay,augmented_smote
+6.6,535,75,2602,28.7,94,Pechay,augmented_smote
+6.6,536,75,2612,28.7,94,Pechay,augmented_smote
+6.8,538,76,2660,28.9,93,Pechay,augmented_smote
+6.9,540,76,2699,29.0,93,Pechay,augmented_smote
+6.7,537,75,2636,28.8,94,Pechay,augmented_smote
+6.7,536,75,2619,28.8,94,Pechay,augmented_smote
+6.7,537,75,2643,28.8,94,Pechay,augmented_smote
+6.9,540,76,2693,29.0,93,Pechay,augmented_smote
+6.8,539,76,2675,28.9,93,Pechay,augmented_smote
+6.9,540,76,2691,29.0,93,Pechay,augmented_smote
+6.9,540,76,2692,29.0,93,Pechay,augmented_smote
+6.8,538,76,2663,28.9,93,Pechay,augmented_smote
+6.8,538,76,2669,28.9,93,Pechay,augmented_smote
+6.7,536,75,2628,28.8,94,Pechay,augmented_smote
+6.9,540,76,2697,29.0,93,Pechay,augmented_smote
+6.6,535,75,2604,28.7,94,Pechay,augmented_smote
+6.7,537,75,2646,28.8,94,Pechay,augmented_smote
+6.6,535,75,2602,28.7,94,Pechay,augmented_smote
+6.6,536,75,2613,28.7,94,Pechay,augmented_smote
+6.8,539,76,2674,28.9,93,Pechay,augmented_smote
+6.9,540,76,2700,29.0,93,Pechay,augmented_smote
+6.7,536,75,2620,28.8,94,Pechay,augmented_smote
+6.7,537,75,2650,28.8,94,Pechay,augmented_smote
+6.7,537,75,2631,28.8,94,Pechay,augmented_smote
+6.7,537,75,2636,28.8,94,Pechay,augmented_smote
+6.9,539,76,2687,29.0,93,Pechay,augmented_smote
+6.8,539,76,2674,28.9,93,Pechay,augmented_smote
+6.8,538,76,2653,28.9,93,Pechay,augmented_smote
+6.8,539,76,2678,28.9,93,Pechay,augmented_smote
+6.7,536,75,2622,28.8,94,Pechay,augmented_smote
+6.8,538,76,2666,28.9,93,Pechay,augmented_smote
+6.8,538,76,2667,28.9,93,Pechay,augmented_smote
+6.7,536,75,2622,28.8,94,Pechay,augmented_smote
+6.9,539,76,2686,29.0,93,Pechay,augmented_smote
+6.8,538,76,2670,28.9,93,Pechay,augmented_smote
+6.9,539,76,2686,29.0,93,Pechay,augmented_smote
+6.8,538,76,2655,28.9,93,Pechay,augmented_smote
+6.6,535,75,2608,28.7,94,Pechay,augmented_smote
+6.8,538,76,2651,28.9,93,Pechay,augmented_smote
+6.8,538,76,2658,28.9,93,Pechay,augmented_smote
+6.8,539,76,2672,28.9,93,Pechay,augmented_smote
+6.6,535,75,2608,28.7,94,Pechay,augmented_smote
+5.3,520,77,2800,28.8,86,Pineapple,original
+5.4,500,77,2900,28.6,88,Pineapple,original
+4.0,594,73,39100,34.1,99,Pineapple,original
+5.5,440,76,21062,31.5,99,Pineapple,original
+9.0,624,72,43700,33.5,99,Pineapple,original
+4.5,580,74,32011,33.1,96,Pineapple,augmented_smote
+6.0,578,74,25753,31.4,93,Pineapple,augmented_smote
+5.5,441,76,21153,31.5,99,Pineapple,augmented_smote
+6.0,595,73,34141,32.4,96,Pineapple,augmented_smote
+6.0,543,75,17096,30.3,92,Pineapple,augmented_smote
+6.0,603,73,35414,32.5,96,Pineapple,augmented_smote
+4.5,597,73,39568,34.0,99,Pineapple,augmented_smote
+4.5,580,74,32064,33.1,96,Pineapple,augmented_smote
+5.3,516,77,2822,28.8,86,Pineapple,augmented_smote
+6.0,554,74,35103,32.7,99,Pineapple,augmented_smote
+5.4,504,77,2881,28.6,88,Pineapple,augmented_smote
+5.4,497,77,8001,29.6,90,Pineapple,augmented_smote
+5.1,600,73,40069,34.0,99,Pineapple,augmented_smote
+5.3,506,77,5339,29.0,89,Pineapple,augmented_smote
+5.5,460,76,15114,30.6,95,Pineapple,augmented_smote
+4.5,569,74,26727,32.3,95,Pineapple,augmented_smote
+5.4,523,77,4067,28.9,86,Pineapple,augmented_smote
+4.5,594,73,38982,34.1,99,Pineapple,augmented_smote
+6.0,616,72,41080,33.2,98,Pineapple,augmented_smote
+5.5,441,76,20877,31.5,99,Pineapple,augmented_smote
+4.5,551,74,34047,33.4,99,Pineapple,augmented_smote
+6.0,548,75,18718,30.5,92,Pineapple,augmented_smote
+5.2,528,77,6794,29.4,87,Pineapple,augmented_smote
+4.5,587,73,38309,34.0,99,Pineapple,augmented_smote
+4.5,552,74,34210,33.4,99,Pineapple,augmented_smote
+5.5,603,73,40452,33.9,99,Pineapple,augmented_smote
+4.5,574,74,31426,32.9,97,Pineapple,augmented_smote
+4.6,597,73,39612,34.0,99,Pineapple,augmented_smote
+4.9,505,75,28721,32.6,99,Pineapple,augmented_smote
+6.0,546,76,13146,30.0,89,Pineapple,augmented_smote
+6.0,559,73,35716,32.8,99,Pineapple,augmented_smote
+4.5,597,73,39532,34.0,99,Pineapple,augmented_smote
+4.5,586,73,35310,33.5,98,Pineapple,augmented_smote
+5.3,517,77,2814,28.8,86,Pineapple,augmented_smote
+6.0,542,75,16569,30.2,92,Pineapple,augmented_smote
+6.0,552,74,34817,32.7,99,Pineapple,augmented_smote
+6.0,584,74,30699,31.9,95,Pineapple,augmented_smote
+6.0,555,75,16460,30.4,90,Pineapple,augmented_smote
+6.0,611,73,38396,32.9,97,Pineapple,augmented_smote
+5.5,451,76,18523,31.1,97,Pineapple,augmented_smote
+4.5,563,75,23981,31.9,94,Pineapple,augmented_smote
+6.0,599,73,33898,32.4,96,Pineapple,augmented_smote
+5.3,506,77,5220,29.0,89,Pineapple,augmented_smote
+5.3,506,77,5058,28.9,89,Pineapple,augmented_smote
+5.4,490,77,9537,29.8,91,Pineapple,augmented_smote
+5.4,484,77,11004,30.0,92,Pineapple,augmented_smote
+5.3,501,77,7229,29.5,89,Pineapple,augmented_smote
+5.3,513,77,4501,29.1,87,Pineapple,augmented_smote
+5.4,501,77,2897,28.6,88,Pineapple,augmented_smote
+4.5,579,73,37385,33.9,99,Pineapple,augmented_smote
+5.4,474,76,13257,30.3,93,Pineapple,augmented_smote
+4.5,587,73,36384,33.7,98,Pineapple,augmented_smote
+6.0,604,73,37253,32.7,97,Pineapple,augmented_smote
+5.4,473,77,11151,29.9,93,Pineapple,augmented_smote
+5.3,515,77,2823,28.8,86,Pineapple,augmented_smote
+5.4,471,77,11603,30.0,93,Pineapple,augmented_smote
+6.0,570,75,22466,31.1,92,Pineapple,augmented_smote
+5.8,535,76,8752,29.5,88,Pineapple,augmented_smote
+6.0,598,73,40533,33.2,99,Pineapple,augmented_smote
+4.9,506,75,28843,32.6,99,Pineapple,augmented_smote
+5.4,476,76,12839,30.3,93,Pineapple,augmented_smote
+5.4,478,76,12477,30.2,93,Pineapple,augmented_smote
+5.3,457,76,23042,31.8,99,Pineapple,augmented_smote
+6.0,619,72,42953,33.6,99,Pineapple,augmented_smote
+5.4,500,77,3054,28.6,88,Pineapple,augmented_smote
+5.3,602,73,40316,33.9,99,Pineapple,augmented_smote
+6.0,554,75,20708,30.7,93,Pineapple,augmented_smote
+5.4,507,77,2865,28.7,87,Pineapple,augmented_smote
+4.8,511,75,29356,32.7,99,Pineapple,augmented_smote
+5.0,539,76,12016,30.1,89,Pineapple,augmented_smote
+6.0,611,72,41769,33.8,99,Pineapple,augmented_smote
+6.0,478,75,25716,31.9,99,Pineapple,augmented_smote
+6.0,554,74,35070,32.7,99,Pineapple,augmented_smote
+5.0,524,76,12036,30.0,91,Pineapple,augmented_smote
+5.4,490,77,5939,29.1,90,Pineapple,augmented_smote
+5.3,517,77,3468,28.9,86,Pineapple,augmented_smote
+6.0,546,74,34139,32.7,99,Pineapple,augmented_smote
+4.9,599,73,39907,34.0,99,Pineapple,augmented_smote
+5.7,604,73,40619,33.9,99,Pineapple,augmented_smote
+6.0,607,73,37995,32.8,97,Pineapple,augmented_smote
+4.5,559,74,25790,32.1,95,Pineapple,augmented_smote
+5.3,512,77,2840,28.7,87,Pineapple,augmented_smote
+6.0,499,75,28364,32.1,99,Pineapple,augmented_smote
+5.1,532,76,8807,29.7,88,Pineapple,augmented_smote
+6.0,560,75,22573,31.0,93,Pineapple,augmented_smote
+5.4,463,76,15869,30.7,95,Pineapple,augmented_smote
+6.0,543,76,11887,29.8,89,Pineapple,augmented_smote
+5.4,473,76,13424,30.4,94,Pineapple,augmented_smote
+6.0,613,72,41973,33.7,99,Pineapple,augmented_smote
+4.5,546,74,33456,33.3,99,Pineapple,augmented_smote
+5.7,420,81,950,28.0,80,Eggplant,original
+5.5,485,76,2400,28.9,87,Eggplant,original
+5.5,471,77,2081,28.7,85,Eggplant,augmented_smote
+5.5,470,77,2069,28.7,85,Eggplant,augmented_smote
+5.5,484,76,2372,28.9,87,Eggplant,augmented_smote
+5.6,440,79,1398,28.3,82,Eggplant,augmented_smote
+5.7,432,80,1217,28.2,81,Eggplant,augmented_smote
+5.7,432,80,1223,28.2,81,Eggplant,augmented_smote
+5.6,452,79,1654,28.4,83,Eggplant,augmented_smote
+5.5,471,77,2089,28.7,86,Eggplant,augmented_smote
+5.5,473,77,2126,28.7,86,Eggplant,augmented_smote
+5.5,482,76,2335,28.9,87,Eggplant,augmented_smote
+5.5,474,77,2148,28.7,86,Eggplant,augmented_smote
+5.6,449,79,1592,28.4,83,Eggplant,augmented_smote
+5.6,460,78,1846,28.6,84,Eggplant,augmented_smote
+5.6,449,79,1592,28.4,83,Eggplant,augmented_smote
+5.6,440,79,1392,28.3,82,Eggplant,augmented_smote
+5.5,470,77,2062,28.7,85,Eggplant,augmented_smote
+5.5,477,77,2223,28.8,86,Eggplant,augmented_smote
+5.6,464,78,1941,28.6,85,Eggplant,augmented_smote
+5.5,481,76,2310,28.8,87,Eggplant,augmented_smote
+5.5,470,77,2075,28.7,85,Eggplant,augmented_smote
+5.6,468,77,2014,28.7,85,Eggplant,augmented_smote
+5.6,456,78,1744,28.5,84,Eggplant,augmented_smote
+5.6,455,78,1740,28.5,84,Eggplant,augmented_smote
+5.6,458,78,1805,28.5,84,Eggplant,augmented_smote
+5.5,477,77,2219,28.8,86,Eggplant,augmented_smote
+5.6,467,77,2002,28.7,85,Eggplant,augmented_smote
+5.5,483,76,2357,28.9,87,Eggplant,augmented_smote
+5.6,456,78,1751,28.5,84,Eggplant,augmented_smote
+5.6,449,79,1596,28.4,83,Eggplant,augmented_smote
+5.5,479,76,2276,28.8,86,Eggplant,augmented_smote
+5.6,466,77,1967,28.6,85,Eggplant,augmented_smote
+5.6,452,79,1671,28.4,83,Eggplant,augmented_smote
+5.6,442,79,1438,28.3,82,Eggplant,augmented_smote
+5.7,435,80,1279,28.2,82,Eggplant,augmented_smote
+5.7,429,80,1145,28.1,81,Eggplant,augmented_smote
+5.7,421,81,967,28.0,80,Eggplant,augmented_smote
+5.6,441,79,1428,28.3,82,Eggplant,augmented_smote
+5.7,420,81,960,28.0,80,Eggplant,augmented_smote
+5.6,459,78,1824,28.5,84,Eggplant,augmented_smote
+5.6,462,78,1881,28.6,84,Eggplant,augmented_smote
+5.7,435,80,1274,28.2,82,Eggplant,augmented_smote
+5.5,477,77,2227,28.8,86,Eggplant,augmented_smote
+5.6,457,78,1774,28.5,84,Eggplant,augmented_smote
+5.5,477,77,2228,28.8,86,Eggplant,augmented_smote
+5.6,467,77,2000,28.7,85,Eggplant,augmented_smote
+5.6,451,79,1643,28.4,83,Eggplant,augmented_smote
+5.7,429,80,1144,28.1,81,Eggplant,augmented_smote
+5.5,476,77,2191,28.8,86,Eggplant,augmented_smote
+5.6,458,78,1806,28.5,84,Eggplant,augmented_smote
+5.6,466,77,1987,28.6,85,Eggplant,augmented_smote
+5.5,472,77,2117,28.7,86,Eggplant,augmented_smote
+5.5,477,77,2232,28.8,86,Eggplant,augmented_smote
+5.6,452,79,1668,28.4,83,Eggplant,augmented_smote
+5.6,459,78,1818,28.5,84,Eggplant,augmented_smote
+5.6,466,77,1983,28.6,85,Eggplant,augmented_smote
+5.6,448,79,1567,28.4,83,Eggplant,augmented_smote
+5.6,450,79,1611,28.4,83,Eggplant,augmented_smote
+5.5,485,76,2398,28.9,87,Eggplant,augmented_smote
+5.7,430,80,1184,28.1,81,Eggplant,augmented_smote
+5.6,437,80,1328,28.2,82,Eggplant,augmented_smote
+5.7,423,81,1022,28.0,80,Eggplant,augmented_smote
+5.7,424,81,1047,28.1,80,Eggplant,augmented_smote
+5.6,448,79,1581,28.4,83,Eggplant,augmented_smote
+5.6,442,79,1438,28.3,82,Eggplant,augmented_smote
+5.7,420,81,955,28.0,80,Eggplant,augmented_smote
+5.7,428,80,1137,28.1,81,Eggplant,augmented_smote
+5.6,445,79,1503,28.3,83,Eggplant,augmented_smote
+5.6,439,80,1382,28.3,82,Eggplant,augmented_smote
+5.7,435,80,1277,28.2,82,Eggplant,augmented_smote
+5.7,428,80,1130,28.1,81,Eggplant,augmented_smote
+5.5,472,77,2109,28.7,86,Eggplant,augmented_smote
+5.5,470,77,2059,28.7,85,Eggplant,augmented_smote
+5.5,483,76,2362,28.9,87,Eggplant,augmented_smote
+5.6,441,79,1411,28.3,82,Eggplant,augmented_smote
+5.7,434,80,1262,28.2,82,Eggplant,augmented_smote
+5.6,454,78,1714,28.5,84,Eggplant,augmented_smote
+5.6,468,77,2011,28.7,85,Eggplant,augmented_smote
+5.5,479,76,2260,28.8,86,Eggplant,augmented_smote
+5.6,439,80,1363,28.3,82,Eggplant,augmented_smote
+5.7,422,81,1001,28.0,80,Eggplant,augmented_smote
+5.7,434,80,1265,28.2,82,Eggplant,augmented_smote
+5.6,450,79,1629,28.4,83,Eggplant,augmented_smote
+5.7,423,81,1025,28.0,80,Eggplant,augmented_smote
+5.7,429,80,1140,28.1,81,Eggplant,augmented_smote
+5.7,432,80,1217,28.2,81,Eggplant,augmented_smote
+5.6,449,79,1589,28.4,83,Eggplant,augmented_smote
+5.7,429,80,1143,28.1,81,Eggplant,augmented_smote
+5.6,459,78,1831,28.5,84,Eggplant,augmented_smote
+5.6,455,78,1733,28.5,84,Eggplant,augmented_smote
+5.6,454,78,1706,28.5,84,Eggplant,augmented_smote
+5.7,433,80,1239,28.2,81,Eggplant,augmented_smote
+5.5,481,76,2303,28.8,87,Eggplant,augmented_smote
+5.5,474,77,2149,28.7,86,Eggplant,augmented_smote
+5.6,456,78,1755,28.5,84,Eggplant,augmented_smote
+5.5,483,76,2362,28.9,87,Eggplant,augmented_smote
+5.7,435,80,1278,28.2,82,Eggplant,augmented_smote
+6.7,530,74,3000,29.5,92,Squash,original
+6.3,525,74,3200,29.1,88,Squash,original
+6.3,526,72,3180,29.2,89,Squash,original
+6.7,529,73,3010,29.2,87,Squash,original
+6.3,527,71,3160,29.0,90,Squash,original
+6.7,528,73,3050,29.2,91,Squash,original
+6.7,530,74,3006,29.5,92,Squash,augmented_smote
+6.7,529,73,3015,29.2,87,Squash,augmented_smote
+6.3,526,73,3190,29.1,89,Squash,augmented_smote
+6.4,526,74,3158,29.2,89,Squash,augmented_smote
+6.7,528,73,3062,29.2,91,Squash,augmented_smote
+6.6,529,73,3040,29.2,88,Squash,augmented_smote
+6.6,528,73,3067,29.2,91,Squash,augmented_smote
+6.6,527,73,3098,29.2,90,Squash,augmented_smote
+6.4,527,72,3121,29.2,88,Squash,augmented_smote
+6.5,527,73,3081,29.2,87,Squash,augmented_smote
+6.6,529,73,3034,29.4,92,Squash,augmented_smote
+6.6,528,73,3067,29.2,87,Squash,augmented_smote
+6.5,528,74,3081,29.3,90,Squash,augmented_smote
+6.7,530,74,3002,29.4,91,Squash,augmented_smote
+6.5,527,74,3119,29.1,88,Squash,augmented_smote
+6.6,529,74,3049,29.4,91,Squash,augmented_smote
+6.7,529,73,3016,29.2,87,Squash,augmented_smote
+6.3,525,74,3196,29.1,88,Squash,augmented_smote
+6.4,528,72,3121,29.1,90,Squash,augmented_smote
+6.3,526,73,3186,29.1,89,Squash,augmented_smote
+6.6,529,74,3046,29.4,91,Squash,augmented_smote
+6.5,527,74,3105,29.3,90,Squash,augmented_smote
+6.7,529,73,3010,29.2,87,Squash,augmented_smote
+6.4,527,71,3137,29.0,90,Squash,augmented_smote
+6.7,529,73,3016,29.2,87,Squash,augmented_smote
+6.3,525,74,3190,29.1,88,Squash,augmented_smote
+6.7,530,74,3003,29.4,91,Squash,augmented_smote
+6.7,530,74,3004,29.5,92,Squash,augmented_smote
+6.5,527,72,3115,29.1,90,Squash,augmented_smote
+6.7,529,73,3006,29.3,89,Squash,augmented_smote
+6.7,528,73,3042,29.2,90,Squash,augmented_smote
+6.3,526,72,3181,29.2,89,Squash,augmented_smote
+6.4,526,74,3174,29.1,89,Squash,augmented_smote
+6.7,528,73,3035,29.2,90,Squash,augmented_smote
+6.6,528,72,3083,29.1,91,Squash,augmented_smote
+6.6,528,73,3073,29.2,91,Squash,augmented_smote
+6.3,526,72,3172,29.0,89,Squash,augmented_smote
+6.4,526,74,3171,29.1,89,Squash,augmented_smote
+6.5,529,73,3062,29.3,91,Squash,augmented_smote
+6.5,528,73,3087,29.4,91,Squash,augmented_smote
+6.6,528,73,3071,29.2,91,Squash,augmented_smote
+6.7,530,74,3002,29.4,91,Squash,augmented_smote
+6.7,528,73,3041,29.3,91,Squash,augmented_smote
+6.4,527,72,3136,29.2,90,Squash,augmented_smote
+6.7,529,73,3017,29.2,88,Squash,augmented_smote
+6.7,529,73,3010,29.2,87,Squash,augmented_smote
+6.7,530,74,3017,29.5,92,Squash,augmented_smote
+6.3,526,72,3180,29.0,89,Squash,augmented_smote
+6.3,525,74,3200,29.1,88,Squash,augmented_smote
+6.3,526,72,3183,29.2,89,Squash,augmented_smote
+6.4,526,74,3134,29.1,88,Squash,augmented_smote
+6.5,528,74,3085,29.3,90,Squash,augmented_smote
+6.3,527,71,3143,29.1,90,Squash,augmented_smote
+6.7,529,73,3029,29.2,89,Squash,augmented_smote
+6.5,529,73,3070,29.3,91,Squash,augmented_smote
+6.3,527,71,3157,29.0,90,Squash,augmented_smote
+6.3,526,72,3185,29.2,89,Squash,augmented_smote
+6.3,526,73,3188,29.1,89,Squash,augmented_smote
+6.5,527,72,3101,29.2,88,Squash,augmented_smote
+6.5,528,72,3091,29.1,89,Squash,augmented_smote
+6.7,529,73,3020,29.2,87,Squash,augmented_smote
+6.3,525,74,3185,29.1,88,Squash,augmented_smote
+6.5,528,73,3086,29.4,91,Squash,augmented_smote
+6.6,529,73,3037,29.4,92,Squash,augmented_smote
+6.3,526,72,3168,29.2,89,Squash,augmented_smote
+6.3,526,72,3180,29.0,89,Squash,augmented_smote
+6.7,530,74,3002,29.5,91,Squash,augmented_smote
+6.3,527,72,3168,29.0,90,Squash,augmented_smote
+6.4,528,72,3113,29.1,91,Squash,augmented_smote
+6.3,527,71,3166,29.1,90,Squash,augmented_smote
+6.4,528,72,3104,29.2,91,Squash,augmented_smote
+6.7,528,73,3048,29.2,91,Squash,augmented_smote
+6.4,526,72,3162,29.2,89,Squash,augmented_smote
+6.3,527,71,3150,29.0,90,Squash,augmented_smote
+6.7,528,73,3055,29.2,91,Squash,augmented_smote
+6.7,530,74,3004,29.4,90,Squash,augmented_smote
+6.7,530,74,3003,29.4,91,Squash,augmented_smote
+6.3,527,71,3163,29.0,90,Squash,augmented_smote
+6.6,529,74,3027,29.5,92,Squash,augmented_smote
+6.5,528,73,3090,29.2,88,Squash,augmented_smote
+6.3,526,72,3176,29.2,89,Squash,augmented_smote
+6.7,529,73,3013,29.2,87,Squash,augmented_smote
+6.3,526,72,3174,29.1,89,Squash,augmented_smote
+6.6,528,72,3060,29.1,88,Squash,augmented_smote
+6.4,526,74,3158,29.2,89,Squash,augmented_smote
+6.6,528,72,3080,29.1,91,Squash,augmented_smote
+6.7,529,74,3023,29.4,92,Squash,augmented_smote
+6.4,528,72,3130,29.1,90,Squash,augmented_smote
+6.4,495,81,1650,27.8,92,Sweet Potato,original
+6.8,550,75,2500,29.2,95,Sweet Potato,original
+5.4,470,83,1300,27.9,90,Sweet Potato,original
+4.0,771,79,8280,28.8,99,Sweet Potato,original
+4.5,810,66,9337,29.3,99,Sweet Potato,original
+6.2,600,78,2500,29.2,95,Sweet Potato,augmented_smote
+6.1,511,79,1918,28.6,93,Sweet Potato,augmented_smote
+5.5,600,78,2500,29.2,95,Sweet Potato,augmented_smote
+5.5,600,78,2500,29.1,95,Sweet Potato,augmented_smote
+6.5,512,79,1908,28.2,93,Sweet Potato,augmented_smote
+5.5,600,78,2500,29.3,95,Sweet Potato,augmented_smote
+5.5,600,78,2500,29.3,95,Sweet Potato,augmented_smote
+5.8,561,81,2500,28.0,94,Sweet Potato,augmented_smote
+5.5,583,81,2500,28.2,93,Sweet Potato,augmented_smote
+6.6,516,79,1969,28.3,93,Sweet Potato,augmented_smote
+5.5,600,79,2500,28.8,95,Sweet Potato,augmented_smote
+6.7,535,78,2262,28.8,94,Sweet Potato,augmented_smote
+6.7,543,78,2387,29.0,95,Sweet Potato,augmented_smote
+5.5,600,78,2500,29.3,95,Sweet Potato,augmented_smote
+5.5,600,78,2500,29.0,95,Sweet Potato,augmented_smote
+6.0,507,79,1849,28.5,92,Sweet Potato,augmented_smote
+5.5,471,83,1312,27.9,90,Sweet Potato,augmented_smote
+6.5,514,79,1940,28.3,93,Sweet Potato,augmented_smote
+5.6,482,82,1479,28.1,91,Sweet Potato,augmented_smote
+5.9,600,78,2500,29.2,95,Sweet Potato,augmented_smote
+5.5,472,83,1323,27.9,90,Sweet Potato,augmented_smote
+5.5,529,80,2500,28.1,92,Sweet Potato,augmented_smote
+5.5,505,83,2104,28.0,91,Sweet Potato,augmented_smote
+5.5,580,78,2500,28.4,93,Sweet Potato,augmented_smote
+6.4,496,81,1661,27.8,92,Sweet Potato,augmented_smote
+5.5,600,78,2500,29.1,95,Sweet Potato,augmented_smote
+5.5,600,78,2500,29.3,95,Sweet Potato,augmented_smote
+5.5,600,80,2500,28.6,95,Sweet Potato,augmented_smote
+5.9,483,82,1486,27.8,91,Sweet Potato,augmented_smote
+5.5,600,78,2500,28.5,95,Sweet Potato,augmented_smote
+6.7,556,78,2500,29.2,95,Sweet Potato,augmented_smote
+5.8,492,81,1627,28.3,91,Sweet Potato,augmented_smote
+5.5,600,78,2500,29.0,95,Sweet Potato,augmented_smote
+5.9,484,82,1491,27.8,91,Sweet Potato,augmented_smote
+5.5,600,78,2500,29.3,95,Sweet Potato,augmented_smote
+5.5,600,78,2500,29.0,95,Sweet Potato,augmented_smote
+6.3,493,81,1622,27.8,92,Sweet Potato,augmented_smote
+5.7,600,78,2500,29.2,95,Sweet Potato,augmented_smote
+5.5,515,81,2370,28.1,91,Sweet Potato,augmented_smote
+6.0,503,80,1793,28.4,92,Sweet Potato,augmented_smote
+5.5,600,78,2500,29.0,95,Sweet Potato,augmented_smote
+5.8,481,82,1451,27.9,91,Sweet Potato,augmented_smote
+6.2,532,79,2500,28.0,93,Sweet Potato,augmented_smote
+5.5,600,80,2500,28.6,95,Sweet Potato,augmented_smote
+5.5,600,81,2500,28.3,94,Sweet Potato,augmented_smote
+5.5,600,78,2500,29.1,95,Sweet Potato,augmented_smote
+5.5,600,78,2500,29.2,95,Sweet Potato,augmented_smote
+5.5,600,78,2500,29.3,95,Sweet Potato,augmented_smote
+5.5,600,78,2500,29.3,95,Sweet Potato,augmented_smote
+6.7,532,78,2220,28.7,94,Sweet Potato,augmented_smote
+6.2,526,80,2414,27.9,93,Sweet Potato,augmented_smote
+6.4,580,78,2500,29.1,95,Sweet Potato,augmented_smote
+5.5,600,80,2500,28.4,95,Sweet Potato,augmented_smote
+6.0,503,80,1791,28.4,92,Sweet Potato,augmented_smote
+5.5,600,78,2500,29.3,95,Sweet Potato,augmented_smote
+5.8,600,78,2500,29.1,95,Sweet Potato,augmented_smote
+5.5,600,78,2500,29.1,95,Sweet Potato,augmented_smote
+6.6,541,78,2359,29.0,94,Sweet Potato,augmented_smote
+6.2,536,79,2500,28.0,93,Sweet Potato,augmented_smote
+5.5,600,80,2500,28.5,95,Sweet Potato,augmented_smote
+5.5,600,78,2500,29.3,95,Sweet Potato,augmented_smote
+5.6,475,83,1374,27.9,90,Sweet Potato,augmented_smote
+5.5,600,78,2500,28.9,95,Sweet Potato,augmented_smote
+6.7,532,78,2227,28.7,94,Sweet Potato,augmented_smote
+5.5,580,78,2500,28.4,93,Sweet Potato,augmented_smote
+6.5,514,79,1946,28.3,93,Sweet Potato,augmented_smote
+5.5,600,78,2500,28.8,95,Sweet Potato,augmented_smote
+5.5,600,78,2500,28.9,95,Sweet Potato,augmented_smote
+5.5,600,80,2500,28.5,95,Sweet Potato,augmented_smote
+5.5,600,79,2500,28.6,95,Sweet Potato,augmented_smote
+5.5,600,79,2500,28.8,95,Sweet Potato,augmented_smote
+5.5,600,80,2500,28.2,95,Sweet Potato,augmented_smote
+5.5,600,79,2500,28.8,95,Sweet Potato,augmented_smote
+6.3,492,81,1606,27.8,92,Sweet Potato,augmented_smote
+6.4,495,81,1650,27.8,92,Sweet Potato,augmented_smote
+6.4,578,78,2500,29.1,95,Sweet Potato,augmented_smote
+5.5,600,79,2500,28.7,95,Sweet Potato,augmented_smote
+5.5,600,80,2500,28.6,95,Sweet Potato,augmented_smote
+6.1,488,82,1552,27.8,91,Sweet Potato,augmented_smote
+5.7,478,82,1405,27.9,91,Sweet Potato,augmented_smote
+5.5,586,78,2500,28.4,93,Sweet Potato,augmented_smote
+5.7,600,78,2500,29.2,95,Sweet Potato,augmented_smote
+5.5,517,81,2400,28.1,91,Sweet Potato,augmented_smote
+6.6,529,78,2177,28.7,94,Sweet Potato,augmented_smote
+5.5,600,78,2500,28.8,95,Sweet Potato,augmented_smote
+5.6,584,80,2500,28.1,94,Sweet Potato,augmented_smote
+5.5,600,78,2500,29.3,95,Sweet Potato,augmented_smote
+6.3,493,81,1619,27.8,92,Sweet Potato,augmented_smote
+5.5,600,78,2500,28.9,95,Sweet Potato,augmented_smote
+5.9,600,78,2500,29.1,95,Sweet Potato,augmented_smote
+6.0,515,78,2750,28.4,89,Sweet Sorghum,original
+6.2,480,82,1500,27.5,90,Sweet Sorghum,original
+5.3,520,77,2800,28.8,86,Sweet Sorghum,original
+6.0,515,78,2750,28.4,89,Sweet Sorghum,original
+6.2,480,82,1500,27.5,90,Sweet Sorghum,original
+5.3,520,77,2800,28.8,86,Sweet Sorghum,original
+6.1,506,79,2422,28.2,89,Sweet Sorghum,augmented_smote
+6.2,485,81,2000,27.6,90,Sweet Sorghum,augmented_smote
+6.0,508,79,2511,28.2,89,Sweet Sorghum,augmented_smote
+6.0,515,78,2750,28.4,89,Sweet Sorghum,augmented_smote
+5.9,516,78,2759,28.5,88,Sweet Sorghum,augmented_smote
+5.5,520,77,2800,28.8,88,Sweet Sorghum,augmented_smote
+5.9,516,78,2757,28.5,89,Sweet Sorghum,augmented_smote
+6.0,489,81,2000,27.8,89,Sweet Sorghum,augmented_smote
+5.5,516,77,2670,28.7,88,Sweet Sorghum,augmented_smote
+6.1,496,80,2078,27.9,90,Sweet Sorghum,augmented_smote
+5.6,509,78,2427,28.4,88,Sweet Sorghum,augmented_smote
+5.8,498,80,2094,28.1,88,Sweet Sorghum,augmented_smote
+6.1,506,79,2416,28.2,89,Sweet Sorghum,augmented_smote
+6.0,514,78,2728,28.4,89,Sweet Sorghum,augmented_smote
+5.7,500,79,2155,28.2,88,Sweet Sorghum,augmented_smote
+6.2,480,82,2000,27.5,90,Sweet Sorghum,augmented_smote
+5.5,519,77,2788,28.7,88,Sweet Sorghum,augmented_smote
+5.9,516,78,2760,28.5,88,Sweet Sorghum,augmented_smote
+5.5,520,77,2800,28.8,88,Sweet Sorghum,augmented_smote
+5.7,500,79,2158,28.2,88,Sweet Sorghum,augmented_smote
+5.5,517,77,2704,28.7,88,Sweet Sorghum,augmented_smote
+5.5,520,77,2800,28.8,88,Sweet Sorghum,augmented_smote
+6.1,497,80,2101,27.9,90,Sweet Sorghum,augmented_smote
+5.5,511,78,2498,28.5,88,Sweet Sorghum,augmented_smote
+5.5,510,78,2484,28.5,88,Sweet Sorghum,augmented_smote
+5.9,515,78,2755,28.4,89,Sweet Sorghum,augmented_smote
+5.8,517,78,2766,28.5,88,Sweet Sorghum,augmented_smote
+5.5,520,77,2800,28.8,88,Sweet Sorghum,augmented_smote
+6.1,490,81,2000,27.7,90,Sweet Sorghum,augmented_smote
+6.2,487,81,2000,27.7,90,Sweet Sorghum,augmented_smote
+6.2,482,82,2000,27.6,90,Sweet Sorghum,augmented_smote
+5.6,518,77,2779,28.6,88,Sweet Sorghum,augmented_smote
+6.2,480,82,2000,27.5,90,Sweet Sorghum,augmented_smote
+5.5,519,77,2795,28.8,88,Sweet Sorghum,augmented_smote
+6.1,493,80,2000,27.8,90,Sweet Sorghum,augmented_smote
+5.5,518,77,2733,28.7,88,Sweet Sorghum,augmented_smote
+5.6,505,79,2323,28.3,88,Sweet Sorghum,augmented_smote
+5.6,518,77,2780,28.6,88,Sweet Sorghum,augmented_smote
+5.8,516,78,2762,28.5,88,Sweet Sorghum,augmented_smote
+6.1,496,80,2056,27.9,90,Sweet Sorghum,augmented_smote
+6.2,485,81,2000,27.6,90,Sweet Sorghum,augmented_smote
+5.8,517,78,2766,28.5,88,Sweet Sorghum,augmented_smote
+6.2,481,82,2000,27.5,90,Sweet Sorghum,augmented_smote
+6.2,486,81,2000,27.7,90,Sweet Sorghum,augmented_smote
+5.5,519,77,2786,28.7,88,Sweet Sorghum,augmented_smote
+5.6,518,77,2782,28.7,88,Sweet Sorghum,augmented_smote
+5.5,519,77,2792,28.7,88,Sweet Sorghum,augmented_smote
+5.5,518,77,2783,28.7,88,Sweet Sorghum,augmented_smote
+5.8,517,78,2765,28.5,88,Sweet Sorghum,augmented_smote
+5.5,518,77,2784,28.7,88,Sweet Sorghum,augmented_smote
+6.0,515,78,2750,28.4,89,Sweet Sorghum,augmented_smote
+5.6,509,78,2434,28.4,88,Sweet Sorghum,augmented_smote
+6.0,515,78,2750,28.4,89,Sweet Sorghum,augmented_smote
+5.6,518,77,2781,28.6,88,Sweet Sorghum,augmented_smote
+6.0,515,78,2752,28.4,89,Sweet Sorghum,augmented_smote
+6.1,503,79,2317,28.1,89,Sweet Sorghum,augmented_smote
+5.7,517,78,2769,28.6,88,Sweet Sorghum,augmented_smote
+5.5,519,77,2790,28.7,88,Sweet Sorghum,augmented_smote
+6.1,505,79,2401,28.1,89,Sweet Sorghum,augmented_smote
+6.0,515,78,2750,28.4,89,Sweet Sorghum,augmented_smote
+5.8,516,78,2761,28.5,88,Sweet Sorghum,augmented_smote
+6.0,489,81,2000,27.8,89,Sweet Sorghum,augmented_smote
+5.7,517,78,2771,28.6,88,Sweet Sorghum,augmented_smote
+6.0,488,81,2000,27.8,89,Sweet Sorghum,augmented_smote
+6.1,497,80,2115,27.9,90,Sweet Sorghum,augmented_smote
+6.2,482,82,2000,27.6,90,Sweet Sorghum,augmented_smote
+6.2,487,81,2000,27.7,90,Sweet Sorghum,augmented_smote
+5.9,491,81,2000,27.9,89,Sweet Sorghum,augmented_smote
+6.2,480,82,2000,27.5,90,Sweet Sorghum,augmented_smote
+5.8,517,78,2766,28.5,88,Sweet Sorghum,augmented_smote
+6.0,512,78,2631,28.3,89,Sweet Sorghum,augmented_smote
+6.0,513,78,2662,28.3,89,Sweet Sorghum,augmented_smote
+6.2,481,82,2000,27.5,90,Sweet Sorghum,augmented_smote
+6.1,499,80,2184,28.0,89,Sweet Sorghum,augmented_smote
+5.5,519,77,2795,28.8,88,Sweet Sorghum,augmented_smote
+6.0,514,78,2730,28.4,89,Sweet Sorghum,augmented_smote
+6.0,513,78,2671,28.3,89,Sweet Sorghum,augmented_smote
+6.2,480,82,2000,27.5,90,Sweet Sorghum,augmented_smote
+6.1,500,80,2217,28.0,89,Sweet Sorghum,augmented_smote
+6.2,481,82,2000,27.5,90,Sweet Sorghum,augmented_smote
+5.5,519,77,2794,28.8,88,Sweet Sorghum,augmented_smote
+5.7,517,78,2775,28.6,88,Sweet Sorghum,augmented_smote
+5.5,519,77,2787,28.7,88,Sweet Sorghum,augmented_smote
+5.6,518,77,2775,28.6,88,Sweet Sorghum,augmented_smote
+5.8,517,78,2766,28.5,88,Sweet Sorghum,augmented_smote
+6.1,499,80,2193,28.0,89,Sweet Sorghum,augmented_smote
+5.9,492,81,2000,27.9,89,Sweet Sorghum,augmented_smote
+5.6,508,79,2397,28.4,88,Sweet Sorghum,augmented_smote
+6.9,540,76,2700,29.0,93,String Bean,original
+6.6,535,75,2600,28.7,94,String Bean,original
+6.6,536,75,2613,28.7,94,String Bean,augmented_smote
+6.7,536,75,2626,28.8,94,String Bean,augmented_smote
+6.8,538,76,2660,28.9,93,String Bean,augmented_smote
+6.8,539,76,2679,28.9,93,String Bean,augmented_smote
+6.8,538,76,2654,28.9,93,String Bean,augmented_smote
+6.8,538,76,2662,28.9,93,String Bean,augmented_smote
+6.6,536,75,2614,28.7,94,String Bean,augmented_smote
+6.9,539,76,2689,29.0,93,String Bean,augmented_smote
+6.9,540,76,2699,29.0,93,String Bean,augmented_smote
+6.7,537,75,2640,28.8,94,String Bean,augmented_smote
+6.6,535,75,2603,28.7,94,String Bean,augmented_smote
+6.7,537,75,2647,28.8,94,String Bean,augmented_smote
+6.8,539,76,2672,28.9,93,String Bean,augmented_smote
+6.7,536,75,2624,28.8,94,String Bean,augmented_smote
+6.9,540,76,2695,29.0,93,String Bean,augmented_smote
+6.8,539,76,2677,28.9,93,String Bean,augmented_smote
+6.7,537,75,2645,28.8,94,String Bean,augmented_smote
+6.8,539,76,2677,28.9,93,String Bean,augmented_smote
+6.8,538,76,2659,28.9,93,String Bean,augmented_smote
+6.8,538,76,2664,28.9,93,String Bean,augmented_smote
+6.8,538,76,2660,28.9,93,String Bean,augmented_smote
+6.7,536,75,2627,28.8,94,String Bean,augmented_smote
+6.7,536,75,2627,28.8,94,String Bean,augmented_smote
+6.8,538,76,2659,28.9,93,String Bean,augmented_smote
+6.9,539,76,2689,29.0,93,String Bean,augmented_smote
+6.9,540,76,2699,29.0,93,String Bean,augmented_smote
+6.8,538,76,2661,28.9,93,String Bean,augmented_smote
+6.9,539,76,2685,29.0,93,String Bean,augmented_smote
+6.8,539,76,2674,28.9,93,String Bean,augmented_smote
+6.6,536,75,2614,28.7,94,String Bean,augmented_smote
+6.7,537,75,2638,28.8,94,String Bean,augmented_smote
+6.6,536,75,2610,28.7,94,String Bean,augmented_smote
+6.9,539,76,2685,29.0,93,String Bean,augmented_smote
+6.8,538,76,2665,28.9,93,String Bean,augmented_smote
+6.7,536,75,2628,28.8,94,String Bean,augmented_smote
+6.8,538,76,2669,28.9,93,String Bean,augmented_smote
+6.8,539,76,2680,28.9,93,String Bean,augmented_smote
+6.8,538,76,2660,28.9,93,String Bean,augmented_smote
+6.7,537,75,2633,28.8,94,String Bean,augmented_smote
+6.7,537,75,2633,28.8,94,String Bean,augmented_smote
+6.7,536,75,2618,28.8,94,String Bean,augmented_smote
+6.8,539,76,2677,28.9,93,String Bean,augmented_smote
+6.6,536,75,2613,28.7,94,String Bean,augmented_smote
+6.7,536,75,2618,28.8,94,String Bean,augmented_smote
+6.7,537,75,2648,28.8,94,String Bean,augmented_smote
+6.7,536,75,2621,28.8,94,String Bean,augmented_smote
+6.6,535,75,2607,28.7,94,String Bean,augmented_smote
+6.7,536,75,2619,28.8,94,String Bean,augmented_smote
+6.6,535,75,2607,28.7,94,String Bean,augmented_smote
+6.8,538,76,2653,28.9,93,String Bean,augmented_smote
+6.6,535,75,2606,28.7,94,String Bean,augmented_smote
+6.6,535,75,2609,28.7,94,String Bean,augmented_smote
+6.6,536,75,2611,28.7,94,String Bean,augmented_smote
+6.7,537,75,2632,28.8,94,String Bean,augmented_smote
+6.6,535,75,2607,28.7,94,String Bean,augmented_smote
+6.8,538,76,2654,28.9,93,String Bean,augmented_smote
+6.7,537,75,2637,28.8,94,String Bean,augmented_smote
+6.6,535,75,2607,28.7,94,String Bean,augmented_smote
+6.9,540,76,2696,29.0,93,String Bean,augmented_smote
+6.7,537,75,2642,28.8,94,String Bean,augmented_smote
+6.7,536,75,2627,28.8,94,String Bean,augmented_smote
+6.7,537,75,2635,28.8,94,String Bean,augmented_smote
+6.8,539,76,2675,28.9,93,String Bean,augmented_smote
+6.8,538,76,2661,28.9,93,String Bean,augmented_smote
+6.6,536,75,2616,28.7,94,String Bean,augmented_smote
+6.8,538,76,2662,28.9,93,String Bean,augmented_smote
+6.8,539,76,2671,28.9,93,String Bean,augmented_smote
+6.6,535,75,2604,28.7,94,String Bean,augmented_smote
+6.7,537,75,2641,28.8,94,String Bean,augmented_smote
+6.7,536,75,2627,28.8,94,String Bean,augmented_smote
+6.7,537,75,2634,28.8,94,String Bean,augmented_smote
+6.8,539,76,2683,28.9,93,String Bean,augmented_smote
+6.6,536,75,2613,28.7,94,String Bean,augmented_smote
+6.6,536,75,2614,28.7,94,String Bean,augmented_smote
+6.7,537,75,2646,28.8,94,String Bean,augmented_smote
+6.9,539,76,2689,29.0,93,String Bean,augmented_smote
+6.6,535,75,2605,28.7,94,String Bean,augmented_smote
+6.8,539,76,2677,28.9,93,String Bean,augmented_smote
+6.6,536,75,2612,28.7,94,String Bean,augmented_smote
+6.8,539,76,2678,28.9,93,String Bean,augmented_smote
+6.6,535,75,2600,28.7,94,String Bean,augmented_smote
+6.7,537,75,2632,28.8,94,String Bean,augmented_smote
+6.8,539,76,2681,28.9,93,String Bean,augmented_smote
+6.8,538,76,2658,28.9,93,String Bean,augmented_smote
+6.8,538,76,2668,28.9,93,String Bean,augmented_smote
+6.8,538,76,2661,28.9,93,String Bean,augmented_smote
+6.6,535,75,2605,28.7,94,String Bean,augmented_smote
+6.6,535,75,2609,28.7,94,String Bean,augmented_smote
+6.7,536,75,2619,28.8,94,String Bean,augmented_smote
+6.8,538,76,2654,28.9,93,String Bean,augmented_smote
+6.7,537,75,2642,28.8,94,String Bean,augmented_smote
+6.8,538,76,2653,28.9,93,String Bean,augmented_smote
+6.7,537,75,2646,28.8,94,String Bean,augmented_smote
+6.7,536,75,2625,28.8,94,String Bean,augmented_smote
+6.8,538,76,2670,28.9,93,String Bean,augmented_smote
+6.8,538,76,2663,28.9,93,String Bean,augmented_smote
+6.5,465,82,1200,27.6,95,Gabi,original
+6.5,485,82,1200,27.5,98,Gabi,original
+6.7,470,84,1000,27.1,96,Gabi,original
+6.4,475,80,1300,28.3,97,Gabi,original
+6.7,460,85,1100,27.3,99,Gabi,original
+6.3,505,83,1400,27.6,94,Gabi,original
+6.8,480,80,1600,28.0,96,Gabi,original
+6.6,495,81,1500,27.9,95,Gabi,original
+6.6,464,84,1152,27.6,96,Gabi,augmented_smote
+6.5,470,82,1245,27.5,96,Gabi,augmented_smote
+6.5,470,80,1283,27.8,96,Gabi,augmented_smote
+6.6,470,84,1140,27.3,95,Gabi,augmented_smote
+6.5,470,83,1424,27.7,94,Gabi,augmented_smote
+6.5,470,81,1264,27.8,96,Gabi,augmented_smote
+6.7,470,80,1553,27.8,96,Gabi,augmented_smote
+6.6,470,81,1376,27.7,96,Gabi,augmented_smote
+6.5,470,81,1273,27.8,96,Gabi,augmented_smote
+6.6,470,84,1134,27.3,95,Gabi,augmented_smote
+6.7,470,84,1100,27.1,96,Gabi,augmented_smote
+6.5,470,82,1228,27.5,96,Gabi,augmented_smote
+6.5,470,82,1298,27.7,95,Gabi,augmented_smote
+6.5,470,82,1377,27.8,95,Gabi,augmented_smote
+6.5,469,82,1242,27.6,95,Gabi,augmented_smote
+6.5,470,80,1381,27.8,96,Gabi,augmented_smote
+6.5,470,83,1394,27.6,94,Gabi,augmented_smote
+6.5,464,82,1188,27.6,95,Gabi,augmented_smote
+6.5,470,82,1274,27.5,96,Gabi,augmented_smote
+6.7,469,84,1100,27.2,96,Gabi,augmented_smote
+6.8,470,80,1587,27.8,96,Gabi,augmented_smote
+6.6,470,83,1100,27.2,96,Gabi,augmented_smote
+6.6,467,83,1192,27.8,96,Gabi,augmented_smote
+6.7,470,80,1544,27.8,96,Gabi,augmented_smote
+6.7,464,85,1115,27.3,96,Gabi,augmented_smote
+6.5,470,80,1366,27.8,96,Gabi,augmented_smote
+6.5,470,82,1460,27.8,95,Gabi,augmented_smote
+6.6,470,83,1100,27.2,96,Gabi,augmented_smote
+6.6,468,83,1100,27.3,96,Gabi,augmented_smote
+6.7,470,84,1100,27.1,96,Gabi,augmented_smote
+6.6,470,81,1376,27.7,96,Gabi,augmented_smote
+6.5,470,81,1415,27.8,96,Gabi,augmented_smote
+6.5,470,82,1233,27.6,95,Gabi,augmented_smote
+6.5,470,82,1468,27.8,95,Gabi,augmented_smote
+6.5,470,80,1297,27.8,96,Gabi,augmented_smote
+6.8,470,80,1588,27.8,96,Gabi,augmented_smote
+6.5,470,82,1427,27.7,94,Gabi,augmented_smote
+6.5,470,81,1261,27.8,96,Gabi,augmented_smote
+6.5,470,82,1329,27.7,95,Gabi,augmented_smote
+6.6,470,80,1469,27.8,96,Gabi,augmented_smote
+6.5,470,82,1200,27.6,96,Gabi,augmented_smote
+6.5,470,83,1405,27.6,94,Gabi,augmented_smote
+6.7,470,84,1100,27.1,96,Gabi,augmented_smote
+6.7,460,85,1100,27.3,96,Gabi,augmented_smote
+6.8,470,80,1594,27.8,96,Gabi,augmented_smote
+6.5,470,84,1264,27.5,96,Gabi,augmented_smote
+6.5,470,83,1209,27.4,95,Gabi,augmented_smote
+6.6,470,84,1100,27.2,96,Gabi,augmented_smote
+6.5,470,83,1415,27.6,94,Gabi,augmented_smote
+6.5,470,83,1400,27.6,94,Gabi,augmented_smote
+6.5,470,83,1396,27.6,94,Gabi,augmented_smote
+6.6,470,83,1156,27.4,96,Gabi,augmented_smote
+6.7,463,85,1100,27.2,96,Gabi,augmented_smote
+6.6,470,81,1452,27.8,95,Gabi,augmented_smote
+6.7,464,85,1115,27.3,96,Gabi,augmented_smote
+6.5,470,83,1430,27.7,94,Gabi,augmented_smote
+6.5,470,82,1442,27.7,94,Gabi,augmented_smote
+6.8,470,80,1577,27.8,96,Gabi,augmented_smote
+6.5,470,81,1250,27.8,96,Gabi,augmented_smote
+6.5,470,81,1264,27.8,96,Gabi,augmented_smote
+6.7,464,85,1100,27.2,96,Gabi,augmented_smote
+6.6,470,83,1100,27.4,96,Gabi,augmented_smote
+6.5,470,81,1245,27.8,96,Gabi,augmented_smote
+6.5,470,81,1340,27.8,96,Gabi,augmented_smote
+6.7,465,84,1122,27.3,96,Gabi,augmented_smote
+6.7,463,85,1100,27.2,96,Gabi,augmented_smote
+6.5,470,84,1313,27.5,95,Gabi,augmented_smote
+6.5,470,82,1217,27.6,96,Gabi,augmented_smote
+6.5,470,84,1293,27.5,96,Gabi,augmented_smote
+6.6,467,84,1128,27.4,96,Gabi,augmented_smote
+6.7,462,85,1100,27.3,96,Gabi,augmented_smote
+6.7,470,81,1549,27.8,95,Gabi,augmented_smote
+6.5,470,80,1335,27.8,96,Gabi,augmented_smote
+6.5,470,82,1431,27.7,94,Gabi,augmented_smote
+6.6,470,84,1141,27.4,96,Gabi,augmented_smote
+6.5,470,82,1355,27.8,95,Gabi,augmented_smote
+6.5,470,82,1154,27.4,96,Gabi,augmented_smote
+6.7,470,81,1472,27.8,96,Gabi,augmented_smote
+6.6,470,81,1494,27.8,95,Gabi,augmented_smote
+6.5,465,82,1188,27.6,95,Gabi,augmented_smote
+6.6,470,83,1138,27.4,96,Gabi,augmented_smote
+6.7,470,80,1565,27.8,96,Gabi,augmented_smote
+6.6,470,81,1492,27.8,95,Gabi,augmented_smote
+6.6,470,81,1490,27.8,95,Gabi,augmented_smote
+6.9,540,76,2700,29.0,93,Upo,original
+6.9,540,76,2700,29.0,93,Upo,augmented_smote
+6.9,540,76,2700,29.0,93,Upo,augmented_smote
+6.9,540,76,2700,29.0,93,Upo,augmented_smote
+6.7,537,75,2634,28.8,94,Upo,augmented_smote
+6.7,537,75,2648,28.8,94,Upo,augmented_smote
+6.7,537,75,2645,28.8,94,Upo,augmented_smote
+6.6,536,75,2613,28.7,94,Upo,augmented_smote
+6.6,535,75,2601,28.7,94,Upo,augmented_smote
+6.7,536,75,2622,28.8,94,Upo,augmented_smote
+6.7,536,75,2617,28.8,94,Upo,augmented_smote
+6.6,535,75,2601,28.7,94,Upo,augmented_smote
+6.8,538,76,2668,28.9,93,Upo,augmented_smote
+6.8,538,76,2654,28.9,93,Upo,augmented_smote
+6.7,537,75,2638,28.8,94,Upo,augmented_smote
+6.6,536,75,2610,28.7,94,Upo,augmented_smote
+6.8,539,76,2675,28.9,93,Upo,augmented_smote
+6.9,540,76,2700,29.0,93,Upo,augmented_smote
+6.8,538,76,2665,28.9,93,Upo,augmented_smote
+6.7,537,75,2632,28.8,94,Upo,augmented_smote
+6.8,538,76,2663,28.9,93,Upo,augmented_smote
+6.9,540,76,2700,29.0,93,Upo,augmented_smote
+6.7,537,75,2631,28.8,94,Upo,augmented_smote
+6.6,535,75,2610,28.7,94,Upo,augmented_smote
+6.9,540,76,2700,29.0,93,Upo,augmented_smote
+6.7,536,75,2620,28.8,94,Upo,augmented_smote
+6.7,536,75,2621,28.8,94,Upo,augmented_smote
+6.9,540,76,2700,29.0,93,Upo,augmented_smote
+6.8,538,76,2651,28.9,93,Upo,augmented_smote
+6.9,540,76,2700,29.0,93,Upo,augmented_smote
+6.7,537,75,2644,28.8,94,Upo,augmented_smote
+6.8,538,76,2662,28.9,93,Upo,augmented_smote
+6.9,540,76,2700,29.0,93,Upo,augmented_smote
+6.7,537,75,2645,28.8,94,Upo,augmented_smote
+6.7,537,75,2645,28.8,94,Upo,augmented_smote
+6.9,540,76,2700,29.0,93,Upo,augmented_smote
+6.9,540,76,2700,29.0,93,Upo,augmented_smote
+6.9,540,76,2695,29.0,93,Upo,augmented_smote
+6.9,540,76,2700,29.0,93,Upo,augmented_smote
+6.9,540,76,2700,29.0,93,Upo,augmented_smote
+6.9,540,76,2700,29.0,93,Upo,augmented_smote
+6.9,540,76,2697,29.0,93,Upo,augmented_smote
+6.7,537,75,2644,28.8,94,Upo,augmented_smote
+6.9,540,76,2692,29.0,93,Upo,augmented_smote
+6.9,540,76,2700,29.0,93,Upo,augmented_smote
+6.9,540,76,2700,29.0,93,Upo,augmented_smote
+6.6,535,75,2608,28.7,94,Upo,augmented_smote
+6.7,537,75,2639,28.8,94,Upo,augmented_smote
+6.9,540,76,2700,29.0,93,Upo,augmented_smote
+6.7,536,75,2622,28.8,94,Upo,augmented_smote
+6.7,536,75,2625,28.8,94,Upo,augmented_smote
+6.7,537,75,2642,28.8,94,Upo,augmented_smote
+6.9,540,76,2700,29.0,93,Upo,augmented_smote
+6.8,538,76,2660,28.9,93,Upo,augmented_smote
+6.8,538,76,2664,28.9,93,Upo,augmented_smote
+6.9,540,76,2700,29.0,93,Upo,augmented_smote
+6.7,536,75,2626,28.8,94,Upo,augmented_smote
+6.7,537,75,2639,28.8,94,Upo,augmented_smote
+6.9,540,76,2700,29.0,93,Upo,augmented_smote
+6.9,540,76,2700,29.0,93,Upo,augmented_smote
+6.6,535,75,2602,28.7,94,Upo,augmented_smote
+6.9,540,76,2691,29.0,93,Upo,augmented_smote
+6.9,540,76,2700,29.0,93,Upo,augmented_smote
+6.7,536,75,2619,28.8,94,Upo,augmented_smote
+6.9,540,76,2691,29.0,93,Upo,augmented_smote
+6.7,537,75,2646,28.8,94,Upo,augmented_smote
+6.7,536,75,2624,28.8,94,Upo,augmented_smote
+6.9,540,76,2692,29.0,93,Upo,augmented_smote
+6.6,535,75,2606,28.7,94,Upo,augmented_smote
+6.9,540,76,2700,29.0,93,Upo,augmented_smote
+6.9,540,76,2700,29.0,93,Upo,augmented_smote
+6.7,537,75,2649,28.8,94,Upo,augmented_smote
+6.8,538,76,2650,28.9,93,Upo,augmented_smote
+6.9,540,76,2700,29.0,93,Upo,augmented_smote
+6.7,537,75,2635,28.8,94,Upo,augmented_smote
+6.8,538,76,2668,28.9,93,Upo,augmented_smote
+6.7,537,75,2646,28.8,94,Upo,augmented_smote
+6.8,538,76,2651,28.9,93,Upo,augmented_smote
+6.9,540,76,2700,29.0,93,Upo,augmented_smote
+6.8,538,76,2653,28.9,93,Upo,augmented_smote
+6.7,537,75,2637,28.8,94,Upo,augmented_smote
+6.9,540,76,2700,29.0,93,Upo,augmented_smote
+6.8,538,76,2665,28.9,93,Upo,augmented_smote
+6.9,540,76,2700,29.0,93,Upo,augmented_smote
+6.7,536,75,2620,28.8,94,Upo,augmented_smote
+6.9,540,76,2700,29.0,93,Upo,augmented_smote
+6.6,536,75,2616,28.7,94,Upo,augmented_smote
+6.7,536,75,2621,28.8,94,Upo,augmented_smote
+6.7,536,75,2629,28.8,94,Upo,augmented_smote
+6.9,540,76,2700,29.0,93,Upo,augmented_smote
+6.7,536,75,2625,28.8,94,Upo,augmented_smote
+6.9,540,76,2700,29.0,93,Upo,augmented_smote
+6.8,538,76,2667,28.9,93,Upo,augmented_smote
+6.9,540,76,2693,29.0,93,Upo,augmented_smote
+6.9,539,76,2689,29.0,93,Upo,augmented_smote
+6.9,539,76,2686,29.0,93,Upo,augmented_smote
+6.7,537,75,2634,28.8,94,Upo,augmented_smote
+5.4,470,83,1300,27.9,90,Ube,original
+6.8,550,75,2500,29.2,95,Ube,original
+6.4,495,81,1650,27.8,92,Ube,original
+5.4,470,83,1300,27.9,90,Ube,original
+4.0,771,79,8280,28.8,99,Ube,original
+4.5,810,66,9337,29.3,99,Ube,original
+5.8,480,80,2000,29.2,94,Ube,augmented_smote
+5.0,480,81,2000,28.4,94,Ube,augmented_smote
+5.0,480,80,2000,28.9,94,Ube,augmented_smote
+5.8,480,80,2000,28.0,93,Ube,augmented_smote
+5.0,480,80,2000,29.0,94,Ube,augmented_smote
+5.0,480,80,2000,29.2,94,Ube,augmented_smote
+5.2,480,82,2000,28.0,91,Ube,augmented_smote
+5.8,480,80,2000,28.8,94,Ube,augmented_smote
+5.0,480,80,2000,28.7,94,Ube,augmented_smote
+5.8,480,80,1874,28.2,93,Ube,augmented_smote
+5.8,480,80,1892,28.5,92,Ube,augmented_smote
+5.4,470,83,1300,27.9,90,Ube,augmented_smote
+5.0,480,80,2000,29.1,94,Ube,augmented_smote
+5.0,480,80,2000,29.0,94,Ube,augmented_smote
+5.8,480,80,2000,28.9,94,Ube,augmented_smote
+5.0,480,80,2000,29.1,94,Ube,augmented_smote
+5.1,480,80,2000,29.0,94,Ube,augmented_smote
+5.4,470,83,1300,27.9,90,Ube,augmented_smote
+5.8,480,81,1646,27.8,92,Ube,augmented_smote
+5.4,470,83,1300,27.9,90,Ube,augmented_smote
+5.0,480,80,2000,28.9,94,Ube,augmented_smote
+5.4,470,83,1300,27.9,90,Ube,augmented_smote
+5.4,470,83,1300,27.9,90,Ube,augmented_smote
+5.8,480,81,2000,28.0,93,Ube,augmented_smote
+5.6,475,83,1375,27.9,90,Ube,augmented_smote
+5.4,470,83,1300,27.9,90,Ube,augmented_smote
+5.8,480,80,2000,29.0,94,Ube,augmented_smote
+5.0,480,80,2000,28.7,94,Ube,augmented_smote
+5.1,480,80,2000,28.3,93,Ube,augmented_smote
+5.0,480,80,2000,29.1,94,Ube,augmented_smote
+5.8,480,80,2000,27.9,92,Ube,augmented_smote
+5.0,480,80,2000,29.2,94,Ube,augmented_smote
+5.8,480,81,1688,27.9,92,Ube,augmented_smote
+5.0,480,80,2000,28.6,94,Ube,augmented_smote
+5.7,480,82,1516,28.1,91,Ube,augmented_smote
+5.8,480,81,1696,27.9,92,Ube,augmented_smote
+5.4,480,80,2000,29.2,94,Ube,augmented_smote
+5.8,480,81,1708,27.9,92,Ube,augmented_smote
+5.6,474,83,1358,27.9,90,Ube,augmented_smote
+5.8,480,80,2000,29.2,94,Ube,augmented_smote
+5.0,480,80,2000,29.0,94,Ube,augmented_smote
+5.0,480,81,2000,28.4,94,Ube,augmented_smote
+5.8,480,80,1812,28.1,93,Ube,augmented_smote
+5.0,480,80,2000,29.2,94,Ube,augmented_smote
+5.0,480,81,2000,28.4,94,Ube,augmented_smote
+5.7,480,80,2000,28.4,94,Ube,augmented_smote
+5.8,480,80,2000,28.8,94,Ube,augmented_smote
+5.0,480,80,2000,28.5,94,Ube,augmented_smote
+5.2,480,80,2000,28.3,92,Ube,augmented_smote
+5.0,480,80,2000,28.7,94,Ube,augmented_smote
+5.8,480,80,2000,29.1,94,Ube,augmented_smote
+5.3,480,83,1947,28.0,91,Ube,augmented_smote
+5.0,480,80,2000,28.6,94,Ube,augmented_smote
+5.4,470,83,1300,27.9,90,Ube,augmented_smote
+5.8,480,81,2000,28.0,93,Ube,augmented_smote
+5.6,480,82,1468,28.1,91,Ube,augmented_smote
+5.8,480,81,1614,27.8,92,Ube,augmented_smote
+5.0,480,80,2000,28.8,94,Ube,augmented_smote
+5.8,480,80,2000,29.2,94,Ube,augmented_smote
+5.8,480,80,2000,28.7,93,Ube,augmented_smote
+5.8,480,82,1491,27.8,91,Ube,augmented_smote
+5.4,470,83,1300,27.9,90,Ube,augmented_smote
+5.0,480,81,2000,28.3,94,Ube,augmented_smote
+5.8,480,80,2000,29.1,94,Ube,augmented_smote
+5.4,470,83,1300,27.9,90,Ube,augmented_smote
+5.0,480,80,2000,29.0,94,Ube,augmented_smote
+5.8,480,80,1739,27.9,92,Ube,augmented_smote
+5.0,480,80,2000,28.9,94,Ube,augmented_smote
+5.8,480,80,2000,28.6,94,Ube,augmented_smote
+5.4,480,80,2000,29.2,94,Ube,augmented_smote
+5.8,480,81,1585,27.8,92,Ube,augmented_smote
+5.0,480,80,2000,29.2,94,Ube,augmented_smote
+5.8,480,80,2000,29.2,94,Ube,augmented_smote
+5.3,480,82,1932,28.0,91,Ube,augmented_smote
+5.8,480,82,1454,27.9,91,Ube,augmented_smote
+5.8,480,80,2000,29.1,94,Ube,augmented_smote
+5.5,475,82,1377,28.0,90,Ube,augmented_smote
+5.1,480,80,2000,28.3,93,Ube,augmented_smote
+5.2,480,82,2000,28.0,91,Ube,augmented_smote
+5.7,478,82,1408,27.9,91,Ube,augmented_smote
+5.6,480,80,2000,28.5,94,Ube,augmented_smote
+5.7,477,82,1403,27.9,91,Ube,augmented_smote
+5.8,480,82,1472,27.9,91,Ube,augmented_smote
+5.6,479,82,1429,28.0,91,Ube,augmented_smote
+5.6,479,82,1429,28.0,91,Ube,augmented_smote
+5.0,480,81,2000,28.4,94,Ube,augmented_smote
+5.0,480,80,2000,28.4,94,Ube,augmented_smote
+5.0,480,80,2000,28.6,94,Ube,augmented_smote

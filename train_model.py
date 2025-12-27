@@ -31,7 +31,7 @@ CREATE_VISUALIZATIONS = True  # Change to False to skip visualizations
 
 # Hyperparameter tuning configuration
 # Set to False to use default parameters instead of RandomizedSearchCV
-USE_HYPERPARAMETER_TUNING = False  # Change to False to skip hyperparameter tuning
+USE_HYPERPARAMETER_TUNING = True  # Change to False to skip hyperparameter tuning
 RANDOM_SEARCH_ITERATIONS = 20  # Number of iterations for RandomizedSearchCV
 RANDOM_SEARCH_CV = 3  # Cross-validation folds for RandomizedSearchCV
 RANDOM_SEED = 42

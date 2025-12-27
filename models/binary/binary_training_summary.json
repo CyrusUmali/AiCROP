@@ -1,0 +1,282 @@
+{
+  "Ampalaya": {
+    "accuracy": 0.9857142857142858,
+    "precision": 0.7272727272727273,
+    "recall": 0.8,
+    "f1_score": 0.7619047619047619,
+    "positive_samples": 100,
+    "negative_samples": 3400
+  },
+  "Avocado": {
+    "accuracy": 0.9952380952380953,
+    "precision": 0.9629629629629629,
+    "recall": 0.8666666666666667,
+    "f1_score": 0.9122807017543859,
+    "positive_samples": 100,
+    "negative_samples": 3400
+  },
+  "Bamboo": {
+    "accuracy": 0.9990476190476191,
+    "precision": 1.0,
+    "recall": 0.9666666666666667,
+    "f1_score": 0.9830508474576272,
+    "positive_samples": 100,
+    "negative_samples": 3400
+  },
+  "Banana": {
+    "accuracy": 0.9847619047619047,
+    "precision": 0.9375,
+    "recall": 0.5,
+    "f1_score": 0.6521739130434783,
+    "positive_samples": 100,
+    "negative_samples": 3400
+  },
+  "Black Pepper": {
+    "accuracy": 0.9961904761904762,
+    "precision": 0.9333333333333333,
+    "recall": 0.9333333333333333,
+    "f1_score": 0.9333333333333333,
+    "positive_samples": 100,
+    "negative_samples": 3400
+  },
+  "Cacao": {
+    "accuracy": 0.9961904761904762,
+    "precision": 0.9333333333333333,
+    "recall": 0.9333333333333333,
+    "f1_score": 0.9333333333333333,
+    "positive_samples": 100,
+    "negative_samples": 3400
+  },
+  "Calamansi": {
+    "accuracy": 0.9942857142857143,
+    "precision": 0.9,
+    "recall": 0.9,
+    "f1_score": 0.9,
+    "positive_samples": 100,
+    "negative_samples": 3400
+  },
+  "Cassava": {
+    "accuracy": 0.9952380952380953,
+    "precision": 0.9310344827586207,
+    "recall": 0.9,
+    "f1_score": 0.9152542372881356,
+    "positive_samples": 99,
+    "negative_samples": 3401
+  },
+  "Coconut": {
+    "accuracy": 0.9809523809523809,
+    "precision": 1.0,
+    "recall": 0.3333333333333333,
+    "f1_score": 0.5,
+    "positive_samples": 100,
+    "negative_samples": 3400
+  },
+  "Coffee": {
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0,
+    "positive_samples": 100,
+    "negative_samples": 3400
+  },
+  "Eggplant": {
+    "accuracy": 0.9904761904761905,
+    "precision": 0.7631578947368421,
+    "recall": 0.9666666666666667,
+    "f1_score": 0.8529411764705882,
+    "positive_samples": 100,
+    "negative_samples": 3400
+  },
+  "Forage Grass": {
+    "accuracy": 0.9971428571428571,
+    "precision": 1.0,
+    "recall": 0.9,
+    "f1_score": 0.9473684210526315,
+    "positive_samples": 100,
+    "negative_samples": 3400
+  },
+  "Gabi": {
+    "accuracy": 0.9980952380952381,
+    "precision": 1.0,
+    "recall": 0.9333333333333333,
+    "f1_score": 0.9655172413793104,
+    "positive_samples": 100,
+    "negative_samples": 3400
+  },
+  "Ginger": {
+    "accuracy": 0.9961904761904762,
+    "precision": 0.9642857142857143,
+    "recall": 0.9,
+    "f1_score": 0.9310344827586207,
+    "positive_samples": 100,
+    "negative_samples": 3400
+  },
+  "Ipil Ipil": {
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0,
+    "positive_samples": 100,
+    "negative_samples": 3400
+  },
+  "Jackfruit": {
+    "accuracy": 0.9971428571428571,
+    "precision": 1.0,
+    "recall": 0.9,
+    "f1_score": 0.9473684210526315,
+    "positive_samples": 101,
+    "negative_samples": 3399
+  },
+  "Katuray": {
+    "accuracy": 0.9980952380952381,
+    "precision": 0.9375,
+    "recall": 1.0,
+    "f1_score": 0.967741935483871,
+    "positive_samples": 100,
+    "negative_samples": 3400
+  },
+  "Kulo": {
+    "accuracy": 0.9933333333333333,
+    "precision": 1.0,
+    "recall": 0.7666666666666667,
+    "f1_score": 0.8679245283018868,
+    "positive_samples": 100,
+    "negative_samples": 3400
+  },
+  "Lanzones": {
+    "accuracy": 0.9980952380952381,
+    "precision": 0.9666666666666667,
+    "recall": 0.9666666666666667,
+    "f1_score": 0.9666666666666667,
+    "positive_samples": 100,
+    "negative_samples": 3400
+  },
+  "Lipote": {
+    "accuracy": 0.9980952380952381,
+    "precision": 1.0,
+    "recall": 0.9333333333333333,
+    "f1_score": 0.9655172413793104,
+    "positive_samples": 100,
+    "negative_samples": 3400
+  },
+  "Maize": {
+    "accuracy": 0.981904761904762,
+    "precision": 0.8666666666666667,
+    "recall": 0.43333333333333335,
+    "f1_score": 0.5777777777777777,
+    "positive_samples": 100,
+    "negative_samples": 3400
+  },
+  "Mango": {
+    "accuracy": 0.9828571428571429,
+    "precision": 0.7,
+    "recall": 0.7,
+    "f1_score": 0.7,
+    "positive_samples": 100,
+    "negative_samples": 3400
+  },
+  "Orchid": {
+    "accuracy": 0.9980952380952381,
+    "precision": 1.0,
+    "recall": 0.9333333333333333,
+    "f1_score": 0.9655172413793104,
+    "positive_samples": 100,
+    "negative_samples": 3400
+  },
+  "Papaya": {
+    "accuracy": 0.9942857142857143,
+    "precision": 0.9615384615384616,
+    "recall": 0.8333333333333334,
+    "f1_score": 0.8928571428571429,
+    "positive_samples": 100,
+    "negative_samples": 3400
+  },
+  "Pechay": {
+    "accuracy": 0.9666666666666667,
+    "precision": 0.42857142857142855,
+    "recall": 0.5,
+    "f1_score": 0.46153846153846156,
+    "positive_samples": 100,
+    "negative_samples": 3400
+  },
+  "Pineapple": {
+    "accuracy": 0.9980952380952381,
+    "precision": 1.0,
+    "recall": 0.9333333333333333,
+    "f1_score": 0.9655172413793104,
+    "positive_samples": 100,
+    "negative_samples": 3400
+  },
+  "Rambutan": {
+    "accuracy": 0.9952380952380953,
+    "precision": 0.9310344827586207,
+    "recall": 0.9,
+    "f1_score": 0.9152542372881356,
+    "positive_samples": 100,
+    "negative_samples": 3400
+  },
+  "Rice": {
+    "accuracy": 0.9952380952380953,
+    "precision": 1.0,
+    "recall": 0.8333333333333334,
+    "f1_score": 0.9090909090909091,
+    "positive_samples": 100,
+    "negative_samples": 3400
+  },
+  "Sili Labuyo": {
+    "accuracy": 0.9914285714285714,
+    "precision": 0.92,
+    "recall": 0.7666666666666667,
+    "f1_score": 0.8363636363636363,
+    "positive_samples": 100,
+    "negative_samples": 3400
+  },
+  "Squash": {
+    "accuracy": 0.9828571428571429,
+    "precision": 0.7307692307692307,
+    "recall": 0.6333333333333333,
+    "f1_score": 0.6785714285714286,
+    "positive_samples": 100,
+    "negative_samples": 3400
+  },
+  "String Bean": {
+    "accuracy": 0.9676190476190476,
+    "precision": 0.4090909090909091,
+    "recall": 0.3,
+    "f1_score": 0.34615384615384615,
+    "positive_samples": 100,
+    "negative_samples": 3400
+  },
+  "Sweet Potato": {
+    "accuracy": 0.9942857142857143,
+    "precision": 0.9615384615384616,
+    "recall": 0.8333333333333334,
+    "f1_score": 0.8928571428571429,
+    "positive_samples": 100,
+    "negative_samples": 3400
+  },
+  "Sweet Sorghum": {
+    "accuracy": 0.9885714285714285,
+    "precision": 0.875,
+    "recall": 0.7,
+    "f1_score": 0.7777777777777778,
+    "positive_samples": 100,
+    "negative_samples": 3400
+  },
+  "Ube": {
+    "accuracy": 0.9961904761904762,
+    "precision": 0.9333333333333333,
+    "recall": 0.9333333333333333,
+    "f1_score": 0.9333333333333333,
+    "positive_samples": 100,
+    "negative_samples": 3400
+  },
+  "Upo": {
+    "accuracy": 0.9733333333333334,
+    "precision": 0.53125,
+    "recall": 0.5666666666666667,
+    "f1_score": 0.5483870967741935,
+    "positive_samples": 100,
+    "negative_samples": 3400
+  }
+}

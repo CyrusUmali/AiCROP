@@ -1,0 +1,350 @@
+{
+  "training_summary": {
+    "total_crops": 36,
+    "models_trained_per_crop": 4,
+    "best_models_distribution": {
+      "XGBoost": 1,
+      "SVM": 5,
+      "Random Forest": 23,
+      "Logistic Regression": 7
+    },
+    "average_performance": {
+      "roc_auc": 0.9993069141999508,
+      "f1_score": 0.9433068661216204,
+      "accuracy": 0.9976896112173359
+    },
+    "training_date": "2025-12-21 18:17:25"
+  },
+  "crop_performance": [
+    {
+      "crop": "Ampalaya",
+      "best_model": "XGBoost",
+      "roc_auc": 1.0,
+      "f1_score": 0.9666666666666667,
+      "accuracy": 0.9980879541108987,
+      "suitable_samples": 98,
+      "total_samples": 3484
+    },
+    {
+      "crop": "Avocado",
+      "best_model": "SVM",
+      "roc_auc": 0.9947726634858265,
+      "f1_score": 0.0,
+      "accuracy": 0.9732313575525813,
+      "suitable_samples": 92,
+      "total_samples": 3484
+    },
+    {
+      "crop": "Bamboo",
+      "best_model": "Random Forest",
+      "roc_auc": 1.0,
+      "f1_score": 1.0,
+      "accuracy": 1.0,
+      "suitable_samples": 99,
+      "total_samples": 3484
+    },
+    {
+      "crop": "Banana",
+      "best_model": "SVM",
+      "roc_auc": 0.9989825989334831,
+      "f1_score": 0.9818181818181818,
+      "accuracy": 0.9990439770554493,
+      "suitable_samples": 94,
+      "total_samples": 3484
+    },
+    {
+      "crop": "Black Pepper",
+      "best_model": "Random Forest",
+      "roc_auc": 1.0,
+      "f1_score": 1.0,
+      "accuracy": 1.0,
+      "suitable_samples": 97,
+      "total_samples": 3484
+    },
+    {
+      "crop": "Cacao",
+      "best_model": "Random Forest",
+      "roc_auc": 1.0,
+      "f1_score": 1.0,
+      "accuracy": 1.0,
+      "suitable_samples": 92,
+      "total_samples": 3484
+    },
+    {
+      "crop": "Calamansi",
+      "best_model": "Logistic Regression",
+      "roc_auc": 1.0,
+      "f1_score": 1.0,
+      "accuracy": 1.0,
+      "suitable_samples": 98,
+      "total_samples": 3484
+    },
+    {
+      "crop": "Cassava",
+      "best_model": "Random Forest",
+      "roc_auc": 1.0,
+      "f1_score": 1.0,
+      "accuracy": 1.0,
+      "suitable_samples": 99,
+      "total_samples": 3484
+    },
+    {
+      "crop": "Coconut",
+      "best_model": "Random Forest",
+      "roc_auc": 0.9983511086163346,
+      "f1_score": 0.9454545454545454,
+      "accuracy": 0.997131931166348,
+      "suitable_samples": 94,
+      "total_samples": 3484
+    },
+    {
+      "crop": "Coffee",
+      "best_model": "Random Forest",
+      "roc_auc": 0.9998643745973621,
+      "f1_score": 0.9354838709677419,
+      "accuracy": 0.9961759082217974,
+      "suitable_samples": 98,
+      "total_samples": 3484
+    },
+    {
+      "crop": "Eggplant",
+      "best_model": "Random Forest",
+      "roc_auc": 1.0,
+      "f1_score": 1.0,
+      "accuracy": 1.0,
+      "suitable_samples": 94,
+      "total_samples": 3484
+    },
+    {
+      "crop": "Forage Grass",
+      "best_model": "SVM",
+      "roc_auc": 1.0,
+      "f1_score": 0.9830508474576272,
+      "accuracy": 0.9990439770554493,
+      "suitable_samples": 99,
+      "total_samples": 3484
+    },
+    {
+      "crop": "Gabi",
+      "best_model": "Random Forest",
+      "roc_auc": 0.9997895032276172,
+      "f1_score": 0.9433962264150944,
+      "accuracy": 0.997131931166348,
+      "suitable_samples": 92,
+      "total_samples": 3484
+    },
+    {
+      "crop": "Ginger",
+      "best_model": "Random Forest",
+      "roc_auc": 0.9987097008686803,
+      "f1_score": 0.9019607843137255,
+      "accuracy": 0.9952198852772467,
+      "suitable_samples": 91,
+      "total_samples": 3484
+    },
+    {
+      "crop": "Ipil Ipil",
+      "best_model": "Random Forest",
+      "roc_auc": 0.9999343832020997,
+      "f1_score": 0.9836065573770492,
+      "accuracy": 0.9990439770554493,
+      "suitable_samples": 99,
+      "total_samples": 3484
+    },
+    {
+      "crop": "Jackfruit",
+      "best_model": "Random Forest",
+      "roc_auc": 1.0,
+      "f1_score": 1.0,
+      "accuracy": 1.0,
+      "suitable_samples": 99,
+      "total_samples": 3484
+    },
+    {
+      "crop": "Kamoteng Baging",
+      "best_model": "Logistic Regression",
+      "roc_auc": 1.0,
+      "f1_score": 0.9836065573770492,
+      "accuracy": 0.9990439770554493,
+      "suitable_samples": 99,
+      "total_samples": 3484
+    },
+    {
+      "crop": "Katuray",
+      "best_model": "Logistic Regression",
+      "roc_auc": 1.0,
+      "f1_score": 1.0,
+      "accuracy": 1.0,
+      "suitable_samples": 99,
+      "total_samples": 3484
+    },
+    {
+      "crop": "Kulo",
+      "best_model": "Random Forest",
+      "roc_auc": 1.0,
+      "f1_score": 1.0,
+      "accuracy": 1.0,
+      "suitable_samples": 99,
+      "total_samples": 3484
+    },
+    {
+      "crop": "Lanzones",
+      "best_model": "Logistic Regression",
+      "roc_auc": 1.0,
+      "f1_score": 1.0,
+      "accuracy": 1.0,
+      "suitable_samples": 97,
+      "total_samples": 3484
+    },
+    {
+      "crop": "Lipote",
+      "best_model": "Random Forest",
+      "roc_auc": 1.0,
+      "f1_score": 0.9811320754716981,
+      "accuracy": 0.9990439770554493,
+      "suitable_samples": 87,
+      "total_samples": 3484
+    },
+    {
+      "crop": "Maize",
+      "best_model": "Random Forest",
+      "roc_auc": 1.0,
+      "f1_score": 0.9666666666666667,
+      "accuracy": 0.9980879541108987,
+      "suitable_samples": 97,
+      "total_samples": 3484
+    },
+    {
+      "crop": "Mango",
+      "best_model": "Random Forest",
+      "roc_auc": 1.0,
+      "f1_score": 1.0,
+      "accuracy": 1.0,
+      "suitable_samples": 98,
+      "total_samples": 3484
+    },
+    {
+      "crop": "Orchid",
+      "best_model": "Logistic Regression",
+      "roc_auc": 1.0,
+      "f1_score": 1.0,
+      "accuracy": 1.0,
+      "suitable_samples": 99,
+      "total_samples": 3484
+    },
+    {
+      "crop": "Papaya",
+      "best_model": "SVM",
+      "roc_auc": 1.0,
+      "f1_score": 0.9830508474576272,
+      "accuracy": 0.9990439770554493,
+      "suitable_samples": 99,
+      "total_samples": 3484
+    },
+    {
+      "crop": "Pechay",
+      "best_model": "Random Forest",
+      "roc_auc": 1.0,
+      "f1_score": 1.0,
+      "accuracy": 1.0,
+      "suitable_samples": 99,
+      "total_samples": 3484
+    },
+    {
+      "crop": "Pineapple",
+      "best_model": "Random Forest",
+      "roc_auc": 1.0,
+      "f1_score": 0.9454545454545454,
+      "accuracy": 0.997131931166348,
+      "suitable_samples": 95,
+      "total_samples": 3484
+    },
+    {
+      "crop": "Rambutan",
+      "best_model": "SVM",
+      "roc_auc": 0.9901137644022825,
+      "f1_score": 0.9615384615384616,
+      "accuracy": 0.9980879541108987,
+      "suitable_samples": 90,
+      "total_samples": 3484
+    },
+    {
+      "crop": "Rice",
+      "best_model": "Random Forest",
+      "roc_auc": 1.0,
+      "f1_score": 1.0,
+      "accuracy": 1.0,
+      "suitable_samples": 99,
+      "total_samples": 3484
+    },
+    {
+      "crop": "Sili Labuyo",
+      "best_model": "Logistic Regression",
+      "roc_auc": 1.0,
+      "f1_score": 0.9830508474576272,
+      "accuracy": 0.9990439770554493,
+      "suitable_samples": 99,
+      "total_samples": 3484
+    },
+    {
+      "crop": "Squash",
+      "best_model": "Random Forest",
+      "roc_auc": 0.999796561896043,
+      "f1_score": 0.9090909090909091,
+      "accuracy": 0.9952198852772467,
+      "suitable_samples": 98,
+      "total_samples": 3484
+    },
+    {
+      "crop": "String Bean",
+      "best_model": "Logistic Regression",
+      "roc_auc": 1.0,
+      "f1_score": 0.9830508474576272,
+      "accuracy": 0.9990439770554493,
+      "suitable_samples": 99,
+      "total_samples": 3484
+    },
+    {
+      "crop": "Sweet Potato",
+      "best_model": "Random Forest",
+      "roc_auc": 0.9986056430446194,
+      "f1_score": 0.8709677419354839,
+      "accuracy": 0.9923518164435946,
+      "suitable_samples": 99,
+      "total_samples": 3484
+    },
+    {
+      "crop": "Sweet Sorghum",
+      "best_model": "Random Forest",
+      "roc_auc": 0.9961286089238846,
+      "f1_score": 0.75,
+      "accuracy": 0.9866156787762906,
+      "suitable_samples": 99,
+      "total_samples": 3484
+    },
+    {
+      "crop": "Ube",
+      "best_model": "Random Forest",
+      "roc_auc": 1.0,
+      "f1_score": 1.0,
+      "accuracy": 1.0,
+      "suitable_samples": 99,
+      "total_samples": 3484
+    },
+    {
+      "crop": "Upo",
+      "best_model": "Random Forest",
+      "roc_auc": 1.0,
+      "f1_score": 1.0,
+      "accuracy": 1.0,
+      "suitable_samples": 99,
+      "total_samples": 3484
+    }
+  ],
+  "file_locations": {
+    "individual_models": "models/binary_crop_models/",
+    "suitability_predictor": "models/suitability_models/crop_suitability_predictor.pkl",
+    "all_models_package": "precomputation/all_binary_crop_models.pkl",
+    "visualizations": "visualizations/binary_crops/"
+  }
+}
