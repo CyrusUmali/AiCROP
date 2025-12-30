@@ -28,7 +28,7 @@ df = None
 CROP_STATS_CACHE = {}
 
 # Suitability threshold
-SUITABILITY_THRESHOLD = 0.75
+SUITABILITY_THRESHOLD = 0.6
 
 # Multiclass filtering threshold
 MULTICLASS_FILTER_THRESHOLD = 0.1  # Minimum confidence to consider from multiclass models
@@ -191,13 +191,39 @@ class EnhancedSuitabilityResponse(BaseModel):
 # ------------------ Core Logic ------------------
 
 def feature_score(value, min_val, max_val):
+    """Calculate parameter score with soft center-peaked approach."""
+    
+    # If value is exactly at the ideal center
+    ideal_center = (min_val + max_val) / 2
+    
     if min_val <= value <= max_val:
-        return 1.0
-    range_width = max_val - min_val if max_val != min_val else 1
-    if value < min_val:
-        return max(0.0, 1 - abs(value - min_val) / range_width)
+        # Within optimal range
+        if value == ideal_center:
+            return 1.0  # Perfect at center
+        
+        # Calculate distance from center (normalized 0-1)
+        distance_from_center = abs(value - ideal_center) / ((max_val - min_val) / 2)
+        
+        # Soft scoring: 85-100% within range
+        # Quadratic decay gives smooth gradient
+        score = 1.0 - (distance_from_center ** 2) * 0.15
+        
+        return max(0.85, score)  # Minimum 85% within optimal range
+    
     else:
-        return max(0.0, 1 - abs(value - max_val) / range_width)
+        # Outside optimal range - linear decay
+        range_width = max_val - min_val if max_val != min_val else 1
+        
+        if value < min_val:
+            distance = (min_val - value) / range_width
+        else:  # value > max_val
+            distance = (value - max_val) / range_width
+        
+        # Exponential decay outside range for steeper penalty
+        score = max(0.0, 0.85 * np.exp(-distance * 1.5))
+        return score
+
+
 
 
 def get_crop_stats(crop: str) -> dict:
