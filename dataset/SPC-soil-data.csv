@@ -5,6 +5,8 @@ soil_ph,fertility_ec,humidity,sunlight,soil_temp,soil_moisture,label
 6.7,529,73,3010,29.2,87,Ampalaya
 6.3,527,71,3160,29.0,90,Ampalaya
 6.7,528,73,3050,29.2,91,Ampalaya
+6.6,535,75,2600,28.7,94,Ampalaya
+6.9,540,76,2700,29,93,Ampalaya
 5.5,455,85,1150,27.1,85,Avocado
 6.1,415,79,1750,28.3,83,Avocado
 6.2,440,80,1450,28.1,88,Avocado
@@ -55,7 +57,6 @@ soil_ph,fertility_ec,humidity,sunlight,soil_temp,soil_moisture,label
 6,515,78,2750,28.4,89,Maize
 6.8,550,75,2500,29.2,95,Maize
 6,515,78,2750,28.4,89,Maize
-6.2,480,82,1500,27.5,90,Maize
 5.3,520,77,2800,28.8,86,Maize
 6.8,405,79,1900,28,84,Maize 
 6.5,475,80,1215,27,99,Coffee
@@ -83,6 +84,10 @@ soil_ph,fertility_ec,humidity,sunlight,soil_temp,soil_moisture,label
 5.9,485,83,1500,26.9,89,Ginger
 6.2,410,78,2200,28.4,83,Ipil Ipil
 6.8,405,79,1900,28,84,Ipil Ipil
+6.2,480,82,1500,27.5,90,Ipil Ipil
+5.3,520,77,2800,28.8,86,Ipil Ipil
+6,515,78,2750,28.4,89,Ipil Ipil
+6.8,550,75,2500,29.2,95,Ipil Ipil
 5.7,470,84,1050,27.4,89,Jackfruit
 6.8,405,79,1900,28,84,Jackfruit
 5.7,420,81,950,28,80,Jackfruit
@@ -102,48 +107,13 @@ soil_ph,fertility_ec,humidity,sunlight,soil_temp,soil_moisture,label
 6.1,465,82,1250,27.5,86,Rambutan
 5.5,445,88,800,26.6,81,Rambutan
 5.7,440,87,900,26.7,82,Rambutan
-6.8,550,75,2500,29.2,95,Rice
-6.2,480,82,1500,27.5,90,Rice
-5.3,520,77,2800,28.8,86,Rice
-6,515,78,2750,28.4,89,Rice
-6,515,78,2750,28.4,89,Rice
-6.2,480,82,1500,27.5,90,Rice
-5.3,520,77,2800,28.8,86,Rice
 6.8,550,75,2500,29.2,95,Banana
 6.4,495,81,1650,27.8,92,Banana
 5.4,470,83,1300,27.9,90,Banana
 4,771,79,8280,28.8,99,Banana
 4.5,810,66,9337,29.3,99,Banana
-4.5,359,70,15839,34.6,99,Kamoteng Baging
-6,517,88,1094,28.5,99,Kamoteng Baging
-6.5,465,82,1200,27.6,95,Kamoteng Baging
-6.5,485,82,1200,27.5,98,Kamoteng Baging
-6.7,470,84,1000,27.1,96,Kamoteng Baging
-6.4,475,80,1300,28.3,97,Kamoteng Baging
-6.7,460,85,1100,27.3,99,Kamoteng Baging
-6.3,505,83,1400,27.6,94,Kamoteng Baging
-6.8,480,80,1600,28,96,Kamoteng Baging
-6.6,495,81,1500,27.9,95,Kamoteng Baging
-6.3,460,78,1800,28.2,90,Kamoteng Baging
-5.5,455,85,1150,27.1,85,Kamoteng Baging
-6.4,500,80,1900,27.7,93,Kamoteng Baging
-6.2,530,79,2400,28.2,91,Kamoteng Baging
-6,525,81,2000,27.8,94,Kamoteng Baging
-6.1,515,77,2500,28.4,88,Kamoteng Baging
-6.5,490,80,1800,28,92,Kamoteng Baging
-6.3,505,78,2200,27.5,90,Kamoteng Baging
-5.9,485,83,1500,26.9,89,Kamoteng Baging
-4.5,359,70,15839,34.6,99,Kamoteng Baging
-6.4,495,81,1650,27.8,92,Kamoteng Baging
-5.4,470,83,1300,27.9,90,Kamoteng Baging
 6.2,410,78,2200,28.4,83,Katuray
 6.8,405,79,1900,28,84,Katuray
-5.7,470,84,1050,27.4,89,Kulo
-5.7,470,84,1050,27.4,89,Kulo
-6.8,405,79,1900,28,84,Kulo
-5.7,420,81,950,28,80,Kulo
-6.1,390,76,1850,28.3,78,Kulo
-4,632,62,8077,29.5,99,Kulo
 5.7,420,81,950,28,80,Lipote
 5.5,485,76,2400,28.9,87,Lipote
 6.1,390,76,1850,28.3,78,Orchid
@@ -163,6 +133,12 @@ soil_ph,fertility_ec,humidity,sunlight,soil_temp,soil_moisture,label
 5.5,450,86,700,26.5,87,Papaya
 6.6,535,75,2600,28.7,94,Pechay
 6.9,540,76,2700,29,93,Pechay
+6.3,525,74,3200,29.1,88,Pechay
+6.7,530,74,3000,29.5,92,Pechay
+6.3,526,72,3180,29.2,89,Pechay
+6.7,529,73,3010,29.2,87,Pechay
+6.3,527,71,3160,29.0,90,Pechay
+6.7,528,73,3050,29.2,91,Pechay
 5.3,520,77,2800,28.8,86,Pineapple
 5.4,500,77,2900,28.6,88,Pineapple
 4,594,73,39100,34.1,99,Pineapple
@@ -172,12 +148,6 @@ soil_ph,fertility_ec,humidity,sunlight,soil_temp,soil_moisture,label
 5.5,485,76,2400,28.9,87,Eggplant
 5.5,485,76,2400,28.9,87,Sili Labuyo
 5.7,420,81,950,28,80,Sili Labuyo
-6.3,525,74,3200,29.1,88,Ampalaya
-6.7,530,74,3000,29.5,92,Ampalaya
-6.3,526,72,3180,29.2,89,Ampalaya
-6.7,529,73,3010,29.2,87,Ampalaya
-6.3,527,71,3160,29.0,90,Ampalaya
-6.7,528,73,3050,29.2,91,Ampalaya
 5.7,420,81,950,28,80,Eggplant
 5.5,485,76,2400,28.9,87,Eggplant
 5.5,485,76,2400,28.9,87,Sili Labuyo
@@ -201,6 +171,8 @@ soil_ph,fertility_ec,humidity,sunlight,soil_temp,soil_moisture,label
 6.7,529,73,3010,29.2,87,Squash
 6.3,527,71,3160,29.0,90,Squash
 6.7,528,73,3050,29.2,91,Squash
+6.6,535,75,2600,28.7,94,Squash
+6.9,540,76,2700,29,93,Squash
 6.4,495,81,1650,27.8,92,Sweet Potato
 6.8,550,75,2500,29.2,95,Sweet Potato
 5.4,470,83,1300,27.9,90,Sweet Potato
@@ -214,6 +186,12 @@ soil_ph,fertility_ec,humidity,sunlight,soil_temp,soil_moisture,label
 5.3,520,77,2800,28.8,86,Sweet Sorghum
 6.9,540,76,2700,29,93,String Bean
 6.6,535,75,2600,28.7,94,String Bean
+6.7,530,74,3000,29.5,92,String Bean
+6.3,525,74,3200,29.1,88,String Bean
+6.3,526,72,3180,29.2,89,String Bean
+6.7,529,73,3010,29.2,87,String Bean
+6.3,527,71,3160,29.0,90,String Bean
+6.7,528,73,3050,29.2,91,String Bean
 6.5,465,82,1200,27.6,95,Gabi
 6.5,485,82,1200,27.5,98,Gabi
 6.7,470,84,1000,27.1,96,Gabi
@@ -222,9 +200,23 @@ soil_ph,fertility_ec,humidity,sunlight,soil_temp,soil_moisture,label
 6.3,505,83,1400,27.6,94,Gabi
 6.8,480,80,1600,28,96,Gabi
 6.6,495,81,1500,27.9,95,Gabi
+6.8,550,75,2500,29.2,95,Rice
+6.2,480,82,1500,27.5,90,Rice
+5.3,520,77,2800,28.8,86,Rice
+6,515,78,2750,28.4,89,Rice
+5.7,470,84,1050,27.4,89,Kulo 
+6.8,405,79,1900,28,84,Kulo
+5.7,420,81,950,28,80,Kulo
+6.1,390,76,1850,28.3,78,Kulo
+4,632,62,8077,29.5,99,Kulo
 6.9,540,76,2700,29,93,Upo
-6.9,540,76,2700,29,93,Upo
-6.6,535,75,2600,28.7,94,Upo
+6.6,535,75,2600,28.7,94,Upo 
+6.3,525,74,3200,29.1,88,Upo
+6.7,530,74,3000,29.5,92,Upo
+6.3,526,72,3180,29.2,89,Upo
+6.7,529,73,3010,29.2,87,Upo
+6.3,527,71,3160,29.0,90,Upo
+6.7,528,73,3050,29.2,91,Upo
 5.4,470,83,1300,27.9,90,Ube
 6.8,550,75,2500,29.2,95,Ube
 6.4,495,81,1650,27.8,92,Ube

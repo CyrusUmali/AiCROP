@@ -522,6 +522,28 @@ if __name__ == "__main__":
         soil_temp_range=(28, 31), soil_temp_mean=29.5,        
         soil_moisture_range=(87, 93), soil_moisture_mean=90,
         method='smote'  # Optional: specify method, or let it auto-select
+    ) 
+  
+    generator.fill_crop_to_target(
+        crop_name="Squash",
+        target_count=100,
+        ph_range=(5.8, 7.2), ph_mean=6.5,                     
+        ec_range=(500, 600), ec_mean=550,                  
+        humidity_range=(68, 80), humidity_mean=75,           
+        sunlight_range=(2000, 10000), sunlight_mean=6000,
+        soil_temp_range=(27, 32), soil_temp_mean=30,
+        soil_moisture_range=(85, 94), soil_moisture_mean=90  # drought-tolerant
+    )
+
+    generator.fill_crop_to_target(
+        crop_name="Pechay",
+        target_count=100,
+        ph_range=(6.0, 7.2), ph_mean=6.6,
+        ec_range=(475, 595), ec_mean=535,             
+        humidity_range=(68, 82), humidity_mean=75,            
+        sunlight_range=(2400, 2800), sunlight_mean=2600,
+        soil_temp_range=(26, 31), soil_temp_mean=28.7,          
+        soil_moisture_range=(91, 97), soil_moisture_mean=94  
     )
     
     generator.fill_crop_to_target(
@@ -595,20 +617,8 @@ if __name__ == "__main__":
  
  
 
-
+  
     
- 
-#(*) Pechay - tropical, fast growth, high fertility & water demand
-    generator.fill_crop_to_target(
-        crop_name="Pechay",
-        target_count=100,
-        ph_range=(6.0, 7.2), ph_mean=6.6,
-        ec_range=(475, 595), ec_mean=535,             
-        humidity_range=(68, 82), humidity_mean=75,            
-        sunlight_range=(2400, 2800), sunlight_mean=2600,
-        soil_temp_range=(26, 31), soil_temp_mean=28.7,          
-        soil_moisture_range=(91, 97), soil_moisture_mean=94  
-    )
 
  
 
@@ -634,16 +644,7 @@ if __name__ == "__main__":
   
      
 
-    generator.fill_crop_to_target(
-        crop_name="Squash",
-        target_count=100,
-        ph_range=(5.8, 7.2), ph_mean=6.5,                     
-        ec_range=(500, 600), ec_mean=550,                  
-        humidity_range=(68, 80), humidity_mean=75,           
-        sunlight_range=(2000, 10000), sunlight_mean=6000,
-        soil_temp_range=(27, 32), soil_temp_mean=30,
-        soil_moisture_range=(85, 94), soil_moisture_mean=90  # drought-tolerant
-    )
+    
 
 
  
@@ -695,16 +696,16 @@ if __name__ == "__main__":
         method= 'smote' 
     )
 
-
+ 
     generator.fill_crop_to_target(
         crop_name="Bamboo",
         target_count=100,
-        ph_range=(4, 5.5), ph_mean=4.5,
-        ec_range=(628, 637), ec_mean=632,                
-        humidity_range=(60, 66), humidity_mean=62,          
+        ph_range=(4, 6.3), ph_mean=5.5,
+        ec_range=(375, 657), ec_mean=550,                
+        humidity_range=(60, 87), humidity_mean=73,          
         sunlight_range=(6000, 12000), sunlight_mean=8077,  
-        soil_temp_range=(28, 31), soil_temp_mean=29.5,        
-        soil_moisture_range=(92, 99), soil_moisture_mean=95,
+        soil_temp_range=(26, 31), soil_temp_mean=29.5,        
+        soil_moisture_range=(77, 99), soil_moisture_mean= 90 ,
         method= 'smote'
     )
 
@@ -748,16 +749,16 @@ if __name__ == "__main__":
         # method='smote'
     )
  
-    generator.fill_crop_to_target(
-        crop_name="Kamoteng Baging",
-        target_count=100,
-        ph_range=(4.0, 5.5), ph_mean=4.5,
-        ec_range=(340, 368), ec_mean=359,                 
-        humidity_range=(68, 74), humidity_mean=70 ,
-        sunlight_range=(14000, 17000), sunlight_mean=15839,   
-        soil_temp_range=(25 , 35), soil_temp_mean=34.6,
-        soil_moisture_range=(88, 99), soil_moisture_mean=95
-    )
+    # generator.fill_crop_to_target(
+    #     crop_name="Kamoteng Baging",
+    #     target_count=100,
+    #     ph_range=(4.0, 5.5), ph_mean=4.5,
+    #     ec_range=(340, 368), ec_mean=359,                 
+    #     humidity_range=(68, 74), humidity_mean=70 ,
+    #     sunlight_range=(14000, 17000), sunlight_mean=15839,   
+    #     soil_temp_range=(25 , 35), soil_temp_mean=34.6,
+    #     soil_moisture_range=(88, 99), soil_moisture_mean=95
+    # )
 
     
     generator.fill_crop_to_target(
@@ -912,7 +913,7 @@ if __name__ == "__main__":
         sunlight_range=(900, 2600), sunlight_mean=1700,
         soil_temp_range=(27.5, 31.3), soil_temp_mean=28.9,    
         soil_moisture_range=(78, 91), soil_moisture_mean=87
-        # method not specified = auto-selects based on sample count
+         
     ) 
 
     # Example: Crop with only 1 sample - use similar crop as template
@@ -996,16 +997,17 @@ if __name__ == "__main__":
         soil_temp_range=(26, 29), soil_temp_mean=28,
         soil_moisture_range=(84, 91), soil_moisture_mean=87  # consistently moist but not waterlogged
     )
+ 
 
     generator.fill_crop_to_target(
         crop_name="Ipil Ipil",
         target_count=100,
         ph_range=(6.2, 7.2), ph_mean=6.8,
-        ec_range=(398, 412), ec_mean=405,
-        humidity_range=(77, 81), humidity_mean=79,   
-        sunlight_range=(1800, 2000), sunlight_mean=1900,   # low light / filtered shade
-        soil_temp_range=(26, 29), soil_temp_mean=28,
-        soil_moisture_range=(82, 87), soil_moisture_mean=84  # consistently moist but not waterlogged
+        ec_range=(398, 570), ec_mean=405,
+        humidity_range=(73, 84), humidity_mean=79,   
+        sunlight_range=(1300, 3000), sunlight_mean=1900,   # low light / filtered shade
+        soil_temp_range=(26, 30), soil_temp_mean=28,
+        soil_moisture_range=(81, 97), soil_moisture_mean=84  # consistently moist but not waterlogged
     )
     
     # Show final summary
