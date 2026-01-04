@@ -1,19 +1,19 @@
 {
   "Ampalaya": {
-    "accuracy": 0.9857142857142858,
-    "precision": 0.7272727272727273,
-    "recall": 0.8,
-    "f1_score": 0.7619047619047619,
-    "balanced_accuracy": 0.8955882352941177,
+    "accuracy": 0.98,
+    "precision": 0.8,
+    "recall": 0.4,
+    "f1_score": 0.5333333333333333,
+    "balanced_accuracy": 0.6985294117647058,
     "positive_samples": 100,
     "negative_samples": 3400
   },
   "Avocado": {
     "accuracy": 0.9952380952380953,
-    "precision": 0.9629629629629629,
-    "recall": 0.8666666666666667,
-    "f1_score": 0.9122807017543859,
-    "balanced_accuracy": 0.932843137254902,
+    "precision": 1.0,
+    "recall": 0.8333333333333334,
+    "f1_score": 0.9090909090909091,
+    "balanced_accuracy": 0.9166666666666667,
     "positive_samples": 100,
     "negative_samples": 3400
   },
@@ -27,11 +27,11 @@
     "negative_samples": 3400
   },
   "Banana": {
-    "accuracy": 0.9847619047619047,
-    "precision": 0.9375,
-    "recall": 0.5,
-    "f1_score": 0.6521739130434783,
-    "balanced_accuracy": 0.7495098039215686,
+    "accuracy": 0.9828571428571429,
+    "precision": 0.8,
+    "recall": 0.5333333333333333,
+    "f1_score": 0.64,
+    "balanced_accuracy": 0.7647058823529411,
     "positive_samples": 100,
     "negative_samples": 3400
   },
@@ -54,47 +54,47 @@
     "negative_samples": 3400
   },
   "Calamansi": {
-    "accuracy": 0.9942857142857143,
-    "precision": 0.9,
-    "recall": 0.9,
-    "f1_score": 0.9,
-    "balanced_accuracy": 0.9485294117647058,
+    "accuracy": 0.9933333333333333,
+    "precision": 0.896551724137931,
+    "recall": 0.8666666666666667,
+    "f1_score": 0.8813559322033898,
+    "balanced_accuracy": 0.9318627450980392,
     "positive_samples": 100,
     "negative_samples": 3400
   },
   "Cassava": {
     "accuracy": 0.9952380952380953,
-    "precision": 0.9310344827586207,
-    "recall": 0.9,
-    "f1_score": 0.9152542372881356,
-    "balanced_accuracy": 0.9490196078431372,
-    "positive_samples": 99,
-    "negative_samples": 3401
+    "precision": 0.9032258064516129,
+    "recall": 0.9333333333333333,
+    "f1_score": 0.9180327868852459,
+    "balanced_accuracy": 0.9651960784313726,
+    "positive_samples": 100,
+    "negative_samples": 3400
   },
   "Coconut": {
     "accuracy": 0.9809523809523809,
-    "precision": 1.0,
-    "recall": 0.3333333333333333,
-    "f1_score": 0.5,
-    "balanced_accuracy": 0.6666666666666666,
+    "precision": 0.9166666666666666,
+    "recall": 0.36666666666666664,
+    "f1_score": 0.5238095238095238,
+    "balanced_accuracy": 0.682843137254902,
     "positive_samples": 100,
     "negative_samples": 3400
   },
   "Coffee": {
-    "accuracy": 1.0,
-    "precision": 1.0,
+    "accuracy": 0.9990476190476191,
+    "precision": 0.967741935483871,
     "recall": 1.0,
-    "f1_score": 1.0,
-    "balanced_accuracy": 1.0,
+    "f1_score": 0.9836065573770492,
+    "balanced_accuracy": 0.9995098039215686,
     "positive_samples": 100,
     "negative_samples": 3400
   },
   "Eggplant": {
-    "accuracy": 0.9904761904761905,
-    "precision": 0.7631578947368421,
-    "recall": 0.9666666666666667,
-    "f1_score": 0.8529411764705882,
-    "balanced_accuracy": 0.978921568627451,
+    "accuracy": 0.9923809523809524,
+    "precision": 0.7894736842105263,
+    "recall": 1.0,
+    "f1_score": 0.8823529411764706,
+    "balanced_accuracy": 0.996078431372549,
     "positive_samples": 100,
     "negative_samples": 3400
   },
@@ -117,47 +117,47 @@
     "negative_samples": 3400
   },
   "Ginger": {
-    "accuracy": 0.9961904761904762,
-    "precision": 0.9642857142857143,
-    "recall": 0.9,
-    "f1_score": 0.9310344827586207,
-    "balanced_accuracy": 0.9495098039215686,
-    "positive_samples": 100,
-    "negative_samples": 3400
-  },
-  "Ipil Ipil": {
-    "accuracy": 1.0,
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1_score": 1.0,
-    "balanced_accuracy": 1.0,
-    "positive_samples": 100,
-    "negative_samples": 3400
-  },
-  "Jackfruit": {
     "accuracy": 0.9971428571428571,
     "precision": 1.0,
     "recall": 0.9,
     "f1_score": 0.9473684210526315,
     "balanced_accuracy": 0.95,
-    "positive_samples": 101,
-    "negative_samples": 3399
+    "positive_samples": 100,
+    "negative_samples": 3400
+  },
+  "Ipil Ipil": {
+    "accuracy": 0.9990476190476191,
+    "precision": 0.967741935483871,
+    "recall": 1.0,
+    "f1_score": 0.9836065573770492,
+    "balanced_accuracy": 0.9995098039215686,
+    "positive_samples": 100,
+    "negative_samples": 3400
+  },
+  "Jackfruit": {
+    "accuracy": 0.9952380952380953,
+    "precision": 0.9629629629629629,
+    "recall": 0.8666666666666667,
+    "f1_score": 0.9122807017543859,
+    "balanced_accuracy": 0.932843137254902,
+    "positive_samples": 100,
+    "negative_samples": 3400
   },
   "Katuray": {
-    "accuracy": 0.9980952380952381,
-    "precision": 0.9375,
+    "accuracy": 0.9990476190476191,
+    "precision": 0.967741935483871,
     "recall": 1.0,
-    "f1_score": 0.967741935483871,
-    "balanced_accuracy": 0.9990196078431373,
+    "f1_score": 0.9836065573770492,
+    "balanced_accuracy": 0.9995098039215686,
     "positive_samples": 100,
     "negative_samples": 3400
   },
   "Kulo": {
-    "accuracy": 0.9933333333333333,
+    "accuracy": 0.9923809523809524,
     "precision": 1.0,
-    "recall": 0.7666666666666667,
-    "f1_score": 0.8679245283018868,
-    "balanced_accuracy": 0.8833333333333333,
+    "recall": 0.7333333333333333,
+    "f1_score": 0.8461538461538461,
+    "balanced_accuracy": 0.8666666666666667,
     "positive_samples": 100,
     "negative_samples": 3400
   },
@@ -180,20 +180,20 @@
     "negative_samples": 3400
   },
   "Maize": {
-    "accuracy": 0.981904761904762,
-    "precision": 0.8666666666666667,
-    "recall": 0.43333333333333335,
-    "f1_score": 0.5777777777777777,
-    "balanced_accuracy": 0.7156862745098039,
+    "accuracy": 0.9771428571428571,
+    "precision": 0.6363636363636364,
+    "recall": 0.4666666666666667,
+    "f1_score": 0.5384615384615384,
+    "balanced_accuracy": 0.7294117647058824,
     "positive_samples": 100,
     "negative_samples": 3400
   },
   "Mango": {
-    "accuracy": 0.9828571428571429,
-    "precision": 0.7,
-    "recall": 0.7,
-    "f1_score": 0.7,
-    "balanced_accuracy": 0.8455882352941176,
+    "accuracy": 0.9866666666666667,
+    "precision": 0.8333333333333334,
+    "recall": 0.6666666666666666,
+    "f1_score": 0.7407407407407407,
+    "balanced_accuracy": 0.8313725490196078,
     "positive_samples": 100,
     "negative_samples": 3400
   },
@@ -216,11 +216,11 @@
     "negative_samples": 3400
   },
   "Pechay": {
-    "accuracy": 0.9666666666666667,
-    "precision": 0.42857142857142855,
-    "recall": 0.5,
-    "f1_score": 0.46153846153846156,
-    "balanced_accuracy": 0.7401960784313726,
+    "accuracy": 0.9647619047619047,
+    "precision": 0.1111111111111111,
+    "recall": 0.03333333333333333,
+    "f1_score": 0.05128205128205128,
+    "balanced_accuracy": 0.5127450980392158,
     "positive_samples": 100,
     "negative_samples": 3400
   },
@@ -234,11 +234,11 @@
     "negative_samples": 3400
   },
   "Rambutan": {
-    "accuracy": 0.9952380952380953,
-    "precision": 0.9310344827586207,
-    "recall": 0.9,
-    "f1_score": 0.9152542372881356,
-    "balanced_accuracy": 0.9490196078431372,
+    "accuracy": 0.9971428571428571,
+    "precision": 0.9655172413793104,
+    "recall": 0.9333333333333333,
+    "f1_score": 0.9491525423728814,
+    "balanced_accuracy": 0.9661764705882353,
     "positive_samples": 100,
     "negative_samples": 3400
   },
@@ -252,38 +252,38 @@
     "negative_samples": 3400
   },
   "Sili Labuyo": {
-    "accuracy": 0.9914285714285714,
-    "precision": 0.92,
+    "accuracy": 0.9933333333333333,
+    "precision": 1.0,
     "recall": 0.7666666666666667,
-    "f1_score": 0.8363636363636363,
-    "balanced_accuracy": 0.8823529411764706,
+    "f1_score": 0.8679245283018868,
+    "balanced_accuracy": 0.8833333333333333,
     "positive_samples": 100,
     "negative_samples": 3400
   },
   "Squash": {
-    "accuracy": 0.9828571428571429,
-    "precision": 0.7307692307692307,
-    "recall": 0.6333333333333333,
-    "f1_score": 0.6785714285714286,
-    "balanced_accuracy": 0.8132352941176471,
+    "accuracy": 0.9676190476190476,
+    "precision": 0.375,
+    "recall": 0.2,
+    "f1_score": 0.2608695652173913,
+    "balanced_accuracy": 0.5950980392156863,
     "positive_samples": 100,
     "negative_samples": 3400
   },
   "String Bean": {
-    "accuracy": 0.9676190476190476,
-    "precision": 0.4090909090909091,
-    "recall": 0.3,
-    "f1_score": 0.34615384615384615,
-    "balanced_accuracy": 0.6436274509803922,
+    "accuracy": 0.9961904761904762,
+    "precision": 0.9333333333333333,
+    "recall": 0.9333333333333333,
+    "f1_score": 0.9333333333333333,
+    "balanced_accuracy": 0.9656862745098039,
     "positive_samples": 100,
     "negative_samples": 3400
   },
   "Sweet Potato": {
-    "accuracy": 0.9942857142857143,
-    "precision": 0.9615384615384616,
-    "recall": 0.8333333333333334,
-    "f1_score": 0.8928571428571429,
-    "balanced_accuracy": 0.9161764705882354,
+    "accuracy": 0.9895238095238095,
+    "precision": 0.8518518518518519,
+    "recall": 0.7666666666666667,
+    "f1_score": 0.8070175438596491,
+    "balanced_accuracy": 0.8813725490196078,
     "positive_samples": 100,
     "negative_samples": 3400
   },
@@ -297,20 +297,20 @@
     "negative_samples": 3400
   },
   "Ube": {
-    "accuracy": 0.9961904761904762,
-    "precision": 0.9333333333333333,
-    "recall": 0.9333333333333333,
-    "f1_score": 0.9333333333333333,
-    "balanced_accuracy": 0.9656862745098039,
+    "accuracy": 0.9942857142857143,
+    "precision": 0.8529411764705882,
+    "recall": 0.9666666666666667,
+    "f1_score": 0.90625,
+    "balanced_accuracy": 0.9808823529411765,
     "positive_samples": 100,
     "negative_samples": 3400
   },
   "Upo": {
-    "accuracy": 0.9733333333333334,
-    "precision": 0.53125,
-    "recall": 0.5666666666666667,
-    "f1_score": 0.5483870967741935,
-    "balanced_accuracy": 0.7759803921568628,
+    "accuracy": 0.9638095238095238,
+    "precision": 0.1,
+    "recall": 0.03333333333333333,
+    "f1_score": 0.05,
+    "balanced_accuracy": 0.5122549019607844,
     "positive_samples": 100,
     "negative_samples": 3400
   }

@@ -1,0 +1,18 @@
+Aggregated binary model performance:
+        accuracy  balanced_accuracy  precision     recall   f1_score
+count  35.000000          35.000000  35.000000  35.000000  35.000000
+mean    0.991129           0.884510   0.865755   0.771429   0.807291
+std     0.009843           0.136735   0.227010   0.271542   0.250807
+min     0.963810           0.512255   0.100000   0.033333   0.050000
+25%     0.989048           0.857598   0.852397   0.716667   0.792398
+50%     0.995238           0.950000   0.961538   0.900000   0.909091
+75%     0.997619           0.966667   1.000000   0.933333   0.957335
+max     0.999048           0.999510   1.000000   1.000000   0.983607
+C:\VSCODE\AICROP - Copy\train_model3.py:173: MatplotlibDeprecationWarning: The 'labels' parameter of boxplot() has been renamed 'tick_labels' since Matplotlib 3.9; support for the old name will be dropped in 3.11.
+  plt.boxplot(
+✓ Aggregated performance plot saved → models/binary\binary_model_performance_distribution.png
+
+================================================================================
+BINARY TRAINING + AGGREGATED EVALUATION COMPLETE
+================================================================================
+PS C:\VSCODE\AICROP - Copy>
