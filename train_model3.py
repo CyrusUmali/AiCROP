@@ -1,17 +1,21 @@
-import os
-import json
-import pickle
-import numpy as np
 import pandas as pd
+import os
+import pickle
+import json
+
 import seaborn as sns
 import matplotlib.pyplot as plt
 
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import (
+    accuracy_score,
+    precision_score,
+    recall_score,
+    f1_score,
     roc_auc_score,
     average_precision_score,
-    brier_score_loss
+    confusion_matrix
 )
 
 # ==========================================================
@@ -19,180 +23,194 @@ from sklearn.metrics import (
 # ==========================================================
 DATASET_PATH = "dataset/enhanced_crop_data.csv"
 MODEL_DIR = "models/binary"
+CONF_MATRIX_DIR = os.path.join(MODEL_DIR, "confusion_matrices")
+METRICS_PLOT_DIR = os.path.join(MODEL_DIR, "metrics_plots")
 RANDOM_SEED = 42
-TEST_SIZE = 0.3
-MIN_POSITIVE_SAMPLES = 20
 
 FEATURE_COLS = [
-    "soil_ph",
-    "fertility_ec",
-    "humidity",
-    "sunlight",
-    "soil_temp",
-    "soil_moisture"
+    'soil_ph',
+    'fertility_ec',
+    'humidity',
+    'sunlight',
+    'soil_temp',
+    'soil_moisture'
 ]
 
-sns.set_style("whitegrid")
+TEST_SIZE = 0.3
 os.makedirs(MODEL_DIR, exist_ok=True)
+os.makedirs(CONF_MATRIX_DIR, exist_ok=True)
+os.makedirs(METRICS_PLOT_DIR, exist_ok=True)
+
+sns.set_style("whitegrid")
 
 # ==========================================================
-# HELPERS
+# HELPER FUNCTIONS
 # ==========================================================
 def normalize_crop_name(name: str) -> str:
-    return str(name).strip().replace("\xa0", " ")
+    return str(name).strip().replace('\xa0', ' ')
 
-def crop_to_filename(crop: str) -> str:
-    return crop.lower().replace(" ", "_") + "_binary_rf.pkl"
+def crop_to_filename(crop_name: str) -> str:
+    return (
+        normalize_crop_name(crop_name)
+        .lower()
+        .replace(' ', '_')
+        .replace('-', '_')
+        .replace('.', '')
+        + "_binary_rf.pkl"
+    )
+
+def plot_confusion_matrix_png(y_true, y_pred, crop, save_dir):
+    cm = confusion_matrix(y_true, y_pred)
+    plt.figure(figsize=(4, 3))
+    sns.heatmap(
+        cm,
+        annot=True,
+        fmt="d",
+        cmap="Blues",
+        xticklabels=["Not Suitable", "Suitable"],
+        yticklabels=["Not Suitable", "Suitable"]
+    )
+    plt.title(f"Confusion Matrix – {crop}")
+    plt.ylabel("Actual")
+    plt.xlabel("Predicted")
+    plt.tight_layout()
+    png_path = os.path.join(save_dir, f"{crop_to_filename(crop).replace('.pkl','')}_cm.png")
+    plt.savefig(png_path)
+    plt.close()
+    return png_path
+
+def plot_metrics_bar(metrics_df, save_path):
+    """Plot metrics (precision, recall, F1, ROC-AUC, PR-AUC) per crop."""
+    # Only keep numeric metric columns
+    metric_cols = ["accuracy", "precision", "recall", "f1_score", "roc_auc", "pr_auc"]
+    metrics_numeric = metrics_df[["crop"] + metric_cols]
+
+    metrics_long = metrics_numeric.melt(id_vars="crop", var_name="metric", value_name="value")
+    
+    plt.figure(figsize=(12,6))
+    sns.barplot(data=metrics_long, x="crop", y="value", hue="metric")
+    plt.xticks(rotation=45, ha='right')
+    plt.ylim(0,1)
+    plt.title("Per-Crop Binary Suitability Metrics")
+    plt.tight_layout()
+    plt.savefig(save_path)
+    plt.close()
+
+
+def plot_metrics_box(metrics_df, save_path):
+    """Boxplot showing metric distribution across crops."""
+    metric_cols = ["accuracy", "precision", "recall", "f1_score", "roc_auc", "pr_auc"]
+    metrics_numeric = metrics_df[["crop"] + metric_cols]
+
+    metrics_long = metrics_numeric.melt(id_vars="crop", var_name="metric", value_name="value")
+    
+    plt.figure(figsize=(8,6))
+    sns.boxplot(data=metrics_long, x="metric", y="value")
+    plt.ylim(0,1)
+    plt.title("Distribution of Metrics Across Crops")
+    plt.tight_layout()
+    plt.savefig(save_path)
+    plt.close()
 
 # ==========================================================
 # LOAD DATA
 # ==========================================================
 df = pd.read_csv(DATASET_PATH)
-df["label"] = df["label"].apply(normalize_crop_name)
+df['label'] = df['label'].astype(str).apply(normalize_crop_name)
+
+print(f"Loaded dataset: {len(df)} rows")
+print(f"Unique crops: {df['label'].nunique()}")
 
 # ==========================================================
-# TRAIN BINARY MODELS
+# TRAIN ONE BINARY MODEL PER CROP
 # ==========================================================
-metrics_list = []
+summary = []
 
-for crop in sorted(df["label"].unique()):
-    df_bin = df.copy()
-    df_bin["target"] = (df_bin["label"] == crop).astype(int)
+for crop in sorted(df['label'].unique()):
+    print(f"\nTraining binary suitability model for: {crop}")
 
-    X = df_bin[FEATURE_COLS]
-    y = df_bin["target"]
+    df_binary = df.copy()
+    df_binary['target'] = (df_binary['label'] == crop).astype(int)
 
-    pos = int(y.sum())
-    neg = int(len(y) - pos)
-
-    if pos < MIN_POSITIVE_SAMPLES:
-        continue
+    X = df_binary[FEATURE_COLS]
+    y = df_binary['target']
 
     X_train, X_test, y_train, y_test = train_test_split(
-        X, y, stratify=y, test_size=TEST_SIZE, random_state=RANDOM_SEED
+        X, y, test_size=TEST_SIZE, stratify=y, random_state=RANDOM_SEED
     )
 
     model = RandomForestClassifier(
         n_estimators=300,
         max_depth=10,
-        max_features="sqrt",
+        max_features='sqrt',
         random_state=RANDOM_SEED,
         n_jobs=-1
     )
 
     model.fit(X_train, y_train)
-    y_proba = model.predict_proba(X_test)[:, 1]
+
+    # ===============================
+    # EVALUATION
+    # ===============================
+    y_pred = model.predict(X_test)
+    y_prob = model.predict_proba(X_test)[:,1]
 
     metrics = {
         "crop": crop,
-        "roc_auc": roc_auc_score(y_test, y_proba),
-        "pr_auc": average_precision_score(y_test, y_proba),
-        "brier_score": brier_score_loss(y_test, y_proba),
-        "positive_samples": pos,
-        "negative_samples": neg
+        "accuracy": accuracy_score(y_test, y_pred),
+        "precision": precision_score(y_test, y_pred, zero_division=0),
+        "recall": recall_score(y_test, y_pred, zero_division=0),
+        "f1_score": f1_score(y_test, y_pred, zero_division=0),
+        "roc_auc": roc_auc_score(y_test, y_prob),
+        "pr_auc": average_precision_score(y_test, y_prob),
+        "positive_samples": int(y.sum()),
+        "negative_samples": int(len(y) - y.sum())
     }
 
-    metrics_list.append(metrics)
+    # Save confusion matrix PNG
+    cm_path = plot_confusion_matrix_png(y_test, y_pred, crop, CONF_MATRIX_DIR)
+    metrics["confusion_matrix_png"] = cm_path
 
-    with open(os.path.join(MODEL_DIR, crop_to_filename(crop)), "wb") as f:
-        pickle.dump({
-            "crop": crop,
-            "model": model,
-            "features": FEATURE_COLS,
-            "metrics": metrics
-        }, f)
+    print(
+        f"Acc: {metrics['accuracy']:.3f} | "
+        f"Prec: {metrics['precision']:.3f} | "
+        f"Rec: {metrics['recall']:.3f} | "
+        f"F1: {metrics['f1_score']:.3f} | "
+        f"PR-AUC: {metrics['pr_auc']:.3f}"
+    )
+
+    # Save model artifact
+    artifact = {
+        "crop": crop,
+        "model": model,
+        "feature_columns": FEATURE_COLS,
+        "metrics": metrics,
+        "random_seed": RANDOM_SEED
+    }
+
+    model_path = os.path.join(MODEL_DIR, crop_to_filename(crop))
+    with open(model_path, "wb") as f:
+        pickle.dump(artifact, f)
+
+    summary.append(metrics)
 
 # ==========================================================
-# SAVE METRICS DATA (FOR VISUALIZATION)
+# SAVE SUMMARY JSON
 # ==========================================================
-metrics_df = pd.DataFrame(metrics_list)
-
-metrics_df.to_csv(
-    os.path.join(MODEL_DIR, "binary_metrics_for_visualization.csv"),
-    index=False
-)
-
-metrics_df.set_index("crop").to_json(
-    os.path.join(MODEL_DIR, "binary_metrics_per_crop.json"),
-    indent=2
-)
+summary_df = pd.DataFrame(summary)
+summary_path = os.path.join(MODEL_DIR, "binary_training_summary.json")
+summary_df.to_json(summary_path, orient="records", indent=2)
+print(f"\n✓ Summary saved → {summary_path}")
 
 # ==========================================================
-# VISUALIZATION
+# AGGREGATED VISUALIZATIONS
 # ==========================================================
-fig, axes = plt.subplots(2, 3, figsize=(18, 12))
+bar_plot_path = os.path.join(METRICS_PLOT_DIR, "metrics_per_crop.png")
+plot_metrics_bar(summary_df, bar_plot_path)
+print(f"✓ Per-crop metrics bar plot saved → {bar_plot_path}")
 
-# ROC-AUC vs PR-AUC
-sns.boxplot(
-    data=metrics_df[["roc_auc", "pr_auc"]],
-    ax=axes[0, 0]
-)
-axes[0, 0].set_title("ROC-AUC & PR-AUC Distribution")
+box_plot_path = os.path.join(METRICS_PLOT_DIR, "metrics_distribution.png")
+plot_metrics_box(summary_df, box_plot_path)
+print(f"✓ Metrics distribution boxplot saved → {box_plot_path}")
 
-# Brier Score
-sns.boxplot(
-    data=metrics_df,
-    y="brier_score",
-    ax=axes[0, 1],
-    color="salmon"
-)
-axes[0, 1].set_title("Brier Score (Lower is Better)")
-
-# ROC vs Brier
-sns.scatterplot(
-    data=metrics_df,
-    x="roc_auc",
-    y="brier_score",
-    size="positive_samples",
-    hue="pr_auc",
-    ax=axes[0, 2]
-)
-axes[0, 2].set_title("ROC-AUC vs Brier Score")
-
-# Sample size vs ROC
-sns.scatterplot(
-    data=metrics_df,
-    x="positive_samples",
-    y="roc_auc",
-    ax=axes[1, 0]
-)
-axes[1, 0].set_xscale("log")
-axes[1, 0].set_title("Sample Size vs ROC-AUC")
-
-# Brier Histogram
-sns.histplot(
-    data=metrics_df,
-    x="brier_score",
-    bins=15,
-    kde=True,
-    ax=axes[1, 1]
-)
-axes[1, 1].set_title("Brier Score Distribution")
-
-# Correlation Heatmap
-corr = metrics_df[
-    ["roc_auc", "pr_auc", "brier_score", "positive_samples"]
-].corr()
-
-sns.heatmap(
-    corr,
-    annot=True,
-    cmap="coolwarm",
-    ax=axes[1, 2]
-)
-axes[1, 2].set_title("Metric Correlations")
-
-plt.suptitle(
-    "Binary Crop Suitability Model Diagnostics",
-    fontsize=16,
-    fontweight="bold"
-)
-
-plt.tight_layout()
-plt.savefig(
-    os.path.join(MODEL_DIR, "binary_model_diagnostics.png"),
-    dpi=300
-)
-plt.close()
-
-print("✅ Binary training + visualization complete")
+print("\nBINARY SUITABILITY TRAINING COMPLETE")

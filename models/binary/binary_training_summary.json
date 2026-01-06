@@ -1,247 +1,422 @@
-{
-  "Ampalaya": {
-    "roc_auc": 0.987173202614379,
-    "pr_auc": 0.7019794309594707,
-    "brier_score": 0.014565991889805115,
-    "positive_samples": 100,
-    "negative_samples": 3400
+[
+  {
+    "crop":"Ampalaya",
+    "accuracy":0.98,
+    "precision":0.8,
+    "recall":0.4,
+    "f1_score":0.5333333333,
+    "roc_auc":0.9871732026,
+    "pr_auc":0.701979431,
+    "positive_samples":100,
+    "negative_samples":3400,
+    "confusion_matrix_png":"models\/binary\\confusion_matrices\\ampalaya_binary_rf_cm.png"
   },
-  "Avocado": {
-    "roc_auc": 0.9995751633986927,
-    "pr_auc": 0.9877394636015325,
-    "brier_score": 0.004093211742222402,
-    "positive_samples": 100,
-    "negative_samples": 3400
+  {
+    "crop":"Avocado",
+    "accuracy":0.9952380952,
+    "precision":1.0,
+    "recall":0.8333333333,
+    "f1_score":0.9090909091,
+    "roc_auc":0.9995751634,
+    "pr_auc":0.9877394636,
+    "positive_samples":100,
+    "negative_samples":3400,
+    "confusion_matrix_png":"models\/binary\\confusion_matrices\\avocado_binary_rf_cm.png"
   },
-  "Bamboo": {
-    "roc_auc": 0.9823202614379086,
-    "pr_auc": 0.9676190476190476,
-    "brier_score": 0.0014877641779000865,
-    "positive_samples": 100,
-    "negative_samples": 3400
+  {
+    "crop":"Bamboo",
+    "accuracy":0.999047619,
+    "precision":1.0,
+    "recall":0.9666666667,
+    "f1_score":0.9830508475,
+    "roc_auc":0.9823202614,
+    "pr_auc":0.9676190476,
+    "positive_samples":100,
+    "negative_samples":3400,
+    "confusion_matrix_png":"models\/binary\\confusion_matrices\\bamboo_binary_rf_cm.png"
   },
-  "Banana": {
-    "roc_auc": 0.9859967320261437,
-    "pr_auc": 0.7873214822201656,
-    "brier_score": 0.012511074945363371,
-    "positive_samples": 100,
-    "negative_samples": 3400
+  {
+    "crop":"Banana",
+    "accuracy":0.9828571429,
+    "precision":0.8,
+    "recall":0.5333333333,
+    "f1_score":0.64,
+    "roc_auc":0.985996732,
+    "pr_auc":0.7873214822,
+    "positive_samples":100,
+    "negative_samples":3400,
+    "confusion_matrix_png":"models\/binary\\confusion_matrices\\banana_binary_rf_cm.png"
   },
-  "Black Pepper": {
-    "roc_auc": 0.9806372549019609,
-    "pr_auc": 0.9450264550264549,
-    "brier_score": 0.0033574511155071785,
-    "positive_samples": 100,
-    "negative_samples": 3400
+  {
+    "crop":"Black Pepper",
+    "accuracy":0.9961904762,
+    "precision":0.9333333333,
+    "recall":0.9333333333,
+    "f1_score":0.9333333333,
+    "roc_auc":0.9806372549,
+    "pr_auc":0.945026455,
+    "positive_samples":100,
+    "negative_samples":3400,
+    "confusion_matrix_png":"models\/binary\\confusion_matrices\\black_pepper_binary_rf_cm.png"
   },
-  "Cacao": {
-    "roc_auc": 0.9986111111111111,
-    "pr_auc": 0.9266173958213075,
-    "brier_score": 0.003007280973035118,
-    "positive_samples": 100,
-    "negative_samples": 3400
+  {
+    "crop":"Cacao",
+    "accuracy":0.9961904762,
+    "precision":0.9333333333,
+    "recall":0.9333333333,
+    "f1_score":0.9333333333,
+    "roc_auc":0.9986111111,
+    "pr_auc":0.9266173958,
+    "positive_samples":100,
+    "negative_samples":3400,
+    "confusion_matrix_png":"models\/binary\\confusion_matrices\\cacao_binary_rf_cm.png"
   },
-  "Calamansi": {
-    "roc_auc": 0.9990196078431373,
-    "pr_auc": 0.9656901393625531,
-    "brier_score": 0.004916594466664844,
-    "positive_samples": 100,
-    "negative_samples": 3400
+  {
+    "crop":"Calamansi",
+    "accuracy":0.9933333333,
+    "precision":0.8965517241,
+    "recall":0.8666666667,
+    "f1_score":0.8813559322,
+    "roc_auc":0.9990196078,
+    "pr_auc":0.9656901394,
+    "positive_samples":100,
+    "negative_samples":3400,
+    "confusion_matrix_png":"models\/binary\\confusion_matrices\\calamansi_binary_rf_cm.png"
   },
-  "Cassava": {
-    "roc_auc": 0.9816013071895425,
-    "pr_auc": 0.9532726978737165,
-    "brier_score": 0.0038377534703563053,
-    "positive_samples": 100,
-    "negative_samples": 3400
+  {
+    "crop":"Cassava",
+    "accuracy":0.9952380952,
+    "precision":0.9032258065,
+    "recall":0.9333333333,
+    "f1_score":0.9180327869,
+    "roc_auc":0.9816013072,
+    "pr_auc":0.9532726979,
+    "positive_samples":100,
+    "negative_samples":3400,
+    "confusion_matrix_png":"models\/binary\\confusion_matrices\\cassava_binary_rf_cm.png"
   },
-  "Coconut": {
-    "roc_auc": 0.996078431372549,
-    "pr_auc": 0.8684191923357799,
-    "brier_score": 0.011288832663114229,
-    "positive_samples": 100,
-    "negative_samples": 3400
+  {
+    "crop":"Coconut",
+    "accuracy":0.980952381,
+    "precision":0.9166666667,
+    "recall":0.3666666667,
+    "f1_score":0.5238095238,
+    "roc_auc":0.9960784314,
+    "pr_auc":0.8684191923,
+    "positive_samples":100,
+    "negative_samples":3400,
+    "confusion_matrix_png":"models\/binary\\confusion_matrices\\coconut_binary_rf_cm.png"
   },
-  "Coffee": {
-    "roc_auc": 0.9992973856209151,
-    "pr_auc": 0.9603099605369164,
-    "brier_score": 0.0016154030119813099,
-    "positive_samples": 100,
-    "negative_samples": 3400
+  {
+    "crop":"Coffee",
+    "accuracy":0.999047619,
+    "precision":0.9677419355,
+    "recall":1.0,
+    "f1_score":0.9836065574,
+    "roc_auc":0.9992973856,
+    "pr_auc":0.9603099605,
+    "positive_samples":100,
+    "negative_samples":3400,
+    "confusion_matrix_png":"models\/binary\\confusion_matrices\\coffee_binary_rf_cm.png"
   },
-  "Eggplant": {
-    "roc_auc": 0.9978758169934641,
-    "pr_auc": 0.9042214309187994,
-    "brier_score": 0.006559871681428743,
-    "positive_samples": 100,
-    "negative_samples": 3400
+  {
+    "crop":"Eggplant",
+    "accuracy":0.9923809524,
+    "precision":0.7894736842,
+    "recall":1.0,
+    "f1_score":0.8823529412,
+    "roc_auc":0.997875817,
+    "pr_auc":0.9042214309,
+    "positive_samples":100,
+    "negative_samples":3400,
+    "confusion_matrix_png":"models\/binary\\confusion_matrices\\eggplant_binary_rf_cm.png"
   },
-  "Forage Grass": {
-    "roc_auc": 0.9979575163398693,
-    "pr_auc": 0.956917211328976,
-    "brier_score": 0.0035037368123103183,
-    "positive_samples": 100,
-    "negative_samples": 3400
+  {
+    "crop":"Forage Grass",
+    "accuracy":0.9971428571,
+    "precision":1.0,
+    "recall":0.9,
+    "f1_score":0.9473684211,
+    "roc_auc":0.9979575163,
+    "pr_auc":0.9569172113,
+    "positive_samples":100,
+    "negative_samples":3400,
+    "confusion_matrix_png":"models\/binary\\confusion_matrices\\forage_grass_binary_rf_cm.png"
   },
-  "Gabi": {
-    "roc_auc": 0.9994444444444445,
-    "pr_auc": 0.9862552594670407,
-    "brier_score": 0.0019400263844797179,
-    "positive_samples": 100,
-    "negative_samples": 3400
+  {
+    "crop":"Gabi",
+    "accuracy":0.9980952381,
+    "precision":1.0,
+    "recall":0.9333333333,
+    "f1_score":0.9655172414,
+    "roc_auc":0.9994444444,
+    "pr_auc":0.9862552595,
+    "positive_samples":100,
+    "negative_samples":3400,
+    "confusion_matrix_png":"models\/binary\\confusion_matrices\\gabi_binary_rf_cm.png"
   },
-  "Ginger": {
-    "roc_auc": 0.9980228758169934,
-    "pr_auc": 0.9670889736192646,
-    "brier_score": 0.003283900297005332,
-    "positive_samples": 100,
-    "negative_samples": 3400
+  {
+    "crop":"Ginger",
+    "accuracy":0.9971428571,
+    "precision":1.0,
+    "recall":0.9,
+    "f1_score":0.9473684211,
+    "roc_auc":0.9980228758,
+    "pr_auc":0.9670889736,
+    "positive_samples":100,
+    "negative_samples":3400,
+    "confusion_matrix_png":"models\/binary\\confusion_matrices\\ginger_binary_rf_cm.png"
   },
-  "Ipil Ipil": {
-    "roc_auc": 1.0,
-    "pr_auc": 1.0,
-    "brier_score": 0.0011112473169548128,
-    "positive_samples": 100,
-    "negative_samples": 3400
+  {
+    "crop":"Ipil Ipil",
+    "accuracy":0.999047619,
+    "precision":0.9677419355,
+    "recall":1.0,
+    "f1_score":0.9836065574,
+    "roc_auc":1.0,
+    "pr_auc":1.0,
+    "positive_samples":100,
+    "negative_samples":3400,
+    "confusion_matrix_png":"models\/binary\\confusion_matrices\\ipil_ipil_binary_rf_cm.png"
   },
-  "Jackfruit": {
-    "roc_auc": 0.980686274509804,
-    "pr_auc": 0.9621541461412151,
-    "brier_score": 0.00342636050161853,
-    "positive_samples": 100,
-    "negative_samples": 3400
+  {
+    "crop":"Jackfruit",
+    "accuracy":0.9952380952,
+    "precision":0.962962963,
+    "recall":0.8666666667,
+    "f1_score":0.9122807018,
+    "roc_auc":0.9806862745,
+    "pr_auc":0.9621541461,
+    "positive_samples":100,
+    "negative_samples":3400,
+    "confusion_matrix_png":"models\/binary\\confusion_matrices\\jackfruit_binary_rf_cm.png"
   },
-  "Katuray": {
-    "roc_auc": 0.9999019607843137,
-    "pr_auc": 0.9966641947843282,
-    "brier_score": 0.0013055730238903,
-    "positive_samples": 100,
-    "negative_samples": 3400
+  {
+    "crop":"Katuray",
+    "accuracy":0.999047619,
+    "precision":0.9677419355,
+    "recall":1.0,
+    "f1_score":0.9836065574,
+    "roc_auc":0.9999019608,
+    "pr_auc":0.9966641948,
+    "positive_samples":100,
+    "negative_samples":3400,
+    "confusion_matrix_png":"models\/binary\\confusion_matrices\\katuray_binary_rf_cm.png"
   },
-  "Kulo": {
-    "roc_auc": 0.9922712418300654,
-    "pr_auc": 0.9489377186133746,
-    "brier_score": 0.005715477598184241,
-    "positive_samples": 100,
-    "negative_samples": 3400
+  {
+    "crop":"Kulo",
+    "accuracy":0.9923809524,
+    "precision":1.0,
+    "recall":0.7333333333,
+    "f1_score":0.8461538462,
+    "roc_auc":0.9922712418,
+    "pr_auc":0.9489377186,
+    "positive_samples":100,
+    "negative_samples":3400,
+    "confusion_matrix_png":"models\/binary\\confusion_matrices\\kulo_binary_rf_cm.png"
   },
-  "Lanzones": {
-    "roc_auc": 0.9997712418300653,
-    "pr_auc": 0.9916237660772329,
-    "brier_score": 0.0015955885913421606,
-    "positive_samples": 100,
-    "negative_samples": 3400
+  {
+    "crop":"Lanzones",
+    "accuracy":0.9980952381,
+    "precision":0.9666666667,
+    "recall":0.9666666667,
+    "f1_score":0.9666666667,
+    "roc_auc":0.9997712418,
+    "pr_auc":0.9916237661,
+    "positive_samples":100,
+    "negative_samples":3400,
+    "confusion_matrix_png":"models\/binary\\confusion_matrices\\lanzones_binary_rf_cm.png"
   },
-  "Lipote": {
-    "roc_auc": 0.9999346405228758,
-    "pr_auc": 0.9979166666666667,
-    "brier_score": 0.0019346551800778764,
-    "positive_samples": 100,
-    "negative_samples": 3400
+  {
+    "crop":"Lipote",
+    "accuracy":0.9980952381,
+    "precision":1.0,
+    "recall":0.9333333333,
+    "f1_score":0.9655172414,
+    "roc_auc":0.9999346405,
+    "pr_auc":0.9979166667,
+    "positive_samples":100,
+    "negative_samples":3400,
+    "confusion_matrix_png":"models\/binary\\confusion_matrices\\lipote_binary_rf_cm.png"
   },
-  "Maize": {
-    "roc_auc": 0.9776797385620914,
-    "pr_auc": 0.6266266307835856,
-    "brier_score": 0.015031709998586568,
-    "positive_samples": 100,
-    "negative_samples": 3400
+  {
+    "crop":"Maize",
+    "accuracy":0.9771428571,
+    "precision":0.6363636364,
+    "recall":0.4666666667,
+    "f1_score":0.5384615385,
+    "roc_auc":0.9776797386,
+    "pr_auc":0.6266266308,
+    "positive_samples":100,
+    "negative_samples":3400,
+    "confusion_matrix_png":"models\/binary\\confusion_matrices\\maize_binary_rf_cm.png"
   },
-  "Mango": {
-    "roc_auc": 0.9803921568627451,
-    "pr_auc": 0.7670992953211511,
-    "brier_score": 0.011562751822037417,
-    "positive_samples": 100,
-    "negative_samples": 3400
+  {
+    "crop":"Mango",
+    "accuracy":0.9866666667,
+    "precision":0.8333333333,
+    "recall":0.6666666667,
+    "f1_score":0.7407407407,
+    "roc_auc":0.9803921569,
+    "pr_auc":0.7670992953,
+    "positive_samples":100,
+    "negative_samples":3400,
+    "confusion_matrix_png":"models\/binary\\confusion_matrices\\mango_binary_rf_cm.png"
   },
-  "Orchid": {
-    "roc_auc": 0.9643464052287583,
-    "pr_auc": 0.9352380952380952,
-    "brier_score": 0.0026507479908904705,
-    "positive_samples": 100,
-    "negative_samples": 3400
+  {
+    "crop":"Orchid",
+    "accuracy":0.9980952381,
+    "precision":1.0,
+    "recall":0.9333333333,
+    "f1_score":0.9655172414,
+    "roc_auc":0.9643464052,
+    "pr_auc":0.9352380952,
+    "positive_samples":100,
+    "negative_samples":3400,
+    "confusion_matrix_png":"models\/binary\\confusion_matrices\\orchid_binary_rf_cm.png"
   },
-  "Papaya": {
-    "roc_auc": 0.9995098039215686,
-    "pr_auc": 0.9838468600793868,
-    "brier_score": 0.0035503180838458302,
-    "positive_samples": 100,
-    "negative_samples": 3400
+  {
+    "crop":"Papaya",
+    "accuracy":0.9942857143,
+    "precision":0.9615384615,
+    "recall":0.8333333333,
+    "f1_score":0.8928571429,
+    "roc_auc":0.9995098039,
+    "pr_auc":0.9838468601,
+    "positive_samples":100,
+    "negative_samples":3400,
+    "confusion_matrix_png":"models\/binary\\confusion_matrices\\papaya_binary_rf_cm.png"
   },
-  "Pechay": {
-    "roc_auc": 0.9487581699346405,
-    "pr_auc": 0.22900582700149252,
-    "brier_score": 0.0248352459654946,
-    "positive_samples": 100,
-    "negative_samples": 3400
+  {
+    "crop":"Pechay",
+    "accuracy":0.9647619048,
+    "precision":0.1111111111,
+    "recall":0.0333333333,
+    "f1_score":0.0512820513,
+    "roc_auc":0.9487581699,
+    "pr_auc":0.229005827,
+    "positive_samples":100,
+    "negative_samples":3400,
+    "confusion_matrix_png":"models\/binary\\confusion_matrices\\pechay_binary_rf_cm.png"
   },
-  "Pineapple": {
-    "roc_auc": 1.0,
-    "pr_auc": 0.9999999999999999,
-    "brier_score": 0.001307835095178746,
-    "positive_samples": 100,
-    "negative_samples": 3400
+  {
+    "crop":"Pineapple",
+    "accuracy":0.9980952381,
+    "precision":1.0,
+    "recall":0.9333333333,
+    "f1_score":0.9655172414,
+    "roc_auc":1.0,
+    "pr_auc":1.0,
+    "positive_samples":100,
+    "negative_samples":3400,
+    "confusion_matrix_png":"models\/binary\\confusion_matrices\\pineapple_binary_rf_cm.png"
   },
-  "Rambutan": {
-    "roc_auc": 0.9981372549019608,
-    "pr_auc": 0.964855797076512,
-    "brier_score": 0.004704523649999649,
-    "positive_samples": 100,
-    "negative_samples": 3400
+  {
+    "crop":"Rambutan",
+    "accuracy":0.9971428571,
+    "precision":0.9655172414,
+    "recall":0.9333333333,
+    "f1_score":0.9491525424,
+    "roc_auc":0.9981372549,
+    "pr_auc":0.9648557971,
+    "positive_samples":100,
+    "negative_samples":3400,
+    "confusion_matrix_png":"models\/binary\\confusion_matrices\\rambutan_binary_rf_cm.png"
   },
-  "Rice": {
-    "roc_auc": 0.9987908496732026,
-    "pr_auc": 0.9709593301547326,
-    "brier_score": 0.003811822553487144,
-    "positive_samples": 100,
-    "negative_samples": 3400
+  {
+    "crop":"Rice",
+    "accuracy":0.9952380952,
+    "precision":1.0,
+    "recall":0.8333333333,
+    "f1_score":0.9090909091,
+    "roc_auc":0.9987908497,
+    "pr_auc":0.9709593302,
+    "positive_samples":100,
+    "negative_samples":3400,
+    "confusion_matrix_png":"models\/binary\\confusion_matrices\\rice_binary_rf_cm.png"
   },
-  "Sili Labuyo": {
-    "roc_auc": 0.9863725490196078,
-    "pr_auc": 0.880561949654451,
-    "brier_score": 0.00805832928281049,
-    "positive_samples": 100,
-    "negative_samples": 3400
+  {
+    "crop":"Sili Labuyo",
+    "accuracy":0.9933333333,
+    "precision":1.0,
+    "recall":0.7666666667,
+    "f1_score":0.8679245283,
+    "roc_auc":0.986372549,
+    "pr_auc":0.8805619497,
+    "positive_samples":100,
+    "negative_samples":3400,
+    "confusion_matrix_png":"models\/binary\\confusion_matrices\\sili_labuyo_binary_rf_cm.png"
   },
-  "Squash": {
-    "roc_auc": 0.9757352941176471,
-    "pr_auc": 0.4363882079357968,
-    "brier_score": 0.019741352562802635,
-    "positive_samples": 100,
-    "negative_samples": 3400
+  {
+    "crop":"Squash",
+    "accuracy":0.9676190476,
+    "precision":0.375,
+    "recall":0.2,
+    "f1_score":0.2608695652,
+    "roc_auc":0.9757352941,
+    "pr_auc":0.4363882079,
+    "positive_samples":100,
+    "negative_samples":3400,
+    "confusion_matrix_png":"models\/binary\\confusion_matrices\\squash_binary_rf_cm.png"
   },
-  "String Bean": {
-    "roc_auc": 0.9988725490196079,
-    "pr_auc": 0.9234142691322973,
-    "brier_score": 0.0032884866190309014,
-    "positive_samples": 100,
-    "negative_samples": 3400
+  {
+    "crop":"String Bean",
+    "accuracy":0.9961904762,
+    "precision":0.9333333333,
+    "recall":0.9333333333,
+    "f1_score":0.9333333333,
+    "roc_auc":0.998872549,
+    "pr_auc":0.9234142691,
+    "positive_samples":100,
+    "negative_samples":3400,
+    "confusion_matrix_png":"models\/binary\\confusion_matrices\\string_bean_binary_rf_cm.png"
   },
-  "Sweet Potato": {
-    "roc_auc": 0.9760294117647059,
-    "pr_auc": 0.8837498652133381,
-    "brier_score": 0.008058235509279064,
-    "positive_samples": 100,
-    "negative_samples": 3400
+  {
+    "crop":"Sweet Potato",
+    "accuracy":0.9895238095,
+    "precision":0.8518518519,
+    "recall":0.7666666667,
+    "f1_score":0.8070175439,
+    "roc_auc":0.9760294118,
+    "pr_auc":0.8837498652,
+    "positive_samples":100,
+    "negative_samples":3400,
+    "confusion_matrix_png":"models\/binary\\confusion_matrices\\sweet_potato_binary_rf_cm.png"
   },
-  "Sweet Sorghum": {
-    "roc_auc": 0.9979738562091504,
-    "pr_auc": 0.9243437118465722,
-    "brier_score": 0.006554553634569162,
-    "positive_samples": 100,
-    "negative_samples": 3400
+  {
+    "crop":"Sweet Sorghum",
+    "accuracy":0.9885714286,
+    "precision":0.875,
+    "recall":0.7,
+    "f1_score":0.7777777778,
+    "roc_auc":0.9979738562,
+    "pr_auc":0.9243437118,
+    "positive_samples":100,
+    "negative_samples":3400,
+    "confusion_matrix_png":"models\/binary\\confusion_matrices\\sweet_sorghum_binary_rf_cm.png"
   },
-  "Ube": {
-    "roc_auc": 0.9984967320261438,
-    "pr_auc": 0.9655014047255427,
-    "brier_score": 0.005023014452523411,
-    "positive_samples": 100,
-    "negative_samples": 3400
+  {
+    "crop":"Ube",
+    "accuracy":0.9942857143,
+    "precision":0.8529411765,
+    "recall":0.9666666667,
+    "f1_score":0.90625,
+    "roc_auc":0.998496732,
+    "pr_auc":0.9655014047,
+    "positive_samples":100,
+    "negative_samples":3400,
+    "confusion_matrix_png":"models\/binary\\confusion_matrices\\ube_binary_rf_cm.png"
   },
-  "Upo": {
-    "roc_auc": 0.9384150326797387,
-    "pr_auc": 0.2403585295899893,
-    "brier_score": 0.024718955959518382,
-    "positive_samples": 100,
-    "negative_samples": 3400
+  {
+    "crop":"Upo",
+    "accuracy":0.9638095238,
+    "precision":0.1,
+    "recall":0.0333333333,
+    "f1_score":0.05,
+    "roc_auc":0.9384150327,
+    "pr_auc":0.2403585296,
+    "positive_samples":100,
+    "negative_samples":3400,
+    "confusion_matrix_png":"models\/binary\\confusion_matrices\\upo_binary_rf_cm.png"
   }
-}
+]
