@@ -1,0 +1,62 @@
+[
+  {
+    "Model":"Decision Tree",
+    "MRR":0.8434300561,
+    "MAP":0,
+    "Top-3 Acc":0,
+    "Top-5 Acc":0,
+    "Precision@3":0,
+    "Recall@3":0,
+    "Hit Rate@3":0,
+    "Accuracy":0.8142857143,
+    "F1-Score":0.814785606,
+    "CV Mean":0.8142857143,
+    "CV Std":0,
+    "Type":"Decision"
+  },
+  {
+    "Model":"Logistic Regression",
+    "MRR":0.7412895302,
+    "MAP":0,
+    "Top-3 Acc":0,
+    "Top-5 Acc":0,
+    "Precision@3":0,
+    "Recall@3":0,
+    "Hit Rate@3":0,
+    "Accuracy":0.6038095238,
+    "F1-Score":0.586570503,
+    "CV Mean":0.6038095238,
+    "CV Std":0,
+    "Type":"Logistic"
+  },
+  {
+    "Model":"Random Forest",
+    "MRR":0.8963113506,
+    "MAP":0,
+    "Top-3 Acc":0,
+    "Top-5 Acc":0,
+    "Precision@3":0,
+    "Recall@3":0,
+    "Hit Rate@3":0,
+    "Accuracy":0.8352380952,
+    "F1-Score":0.8320405379,
+    "CV Mean":0.8352380952,
+    "CV Std":0,
+    "Type":"Random"
+  },
+  {
+    "Model":"Xgboost",
+    "MRR":0.8945044361,
+    "MAP":0,
+    "Top-3 Acc":0,
+    "Top-5 Acc":0,
+    "Precision@3":0,
+    "Recall@3":0,
+    "Hit Rate@3":0,
+    "Accuracy":0.8295238095,
+    "F1-Score":0.8271371422,
+    "CV Mean":0.8295238095,
+    "CV Std":0,
+    "Type":"Xgboost"
+  }
+]

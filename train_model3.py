@@ -10,11 +10,10 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import (
     accuracy_score,
+    balanced_accuracy_score,
     precision_score,
     recall_score,
     f1_score,
-    roc_auc_score,
-    average_precision_score,
     confusion_matrix
 )
 
@@ -79,35 +78,15 @@ def plot_confusion_matrix_png(y_true, y_pred, crop, save_dir):
     plt.close()
     return png_path
 
-def plot_metrics_bar(metrics_df, save_path):
-    """Plot metrics (precision, recall, F1, ROC-AUC, PR-AUC) per crop."""
-    # Only keep numeric metric columns
-    metric_cols = ["accuracy", "precision", "recall", "f1_score", "roc_auc", "pr_auc"]
-    metrics_numeric = metrics_df[["crop"] + metric_cols]
-
-    metrics_long = metrics_numeric.melt(id_vars="crop", var_name="metric", value_name="value")
-    
-    plt.figure(figsize=(12,6))
-    sns.barplot(data=metrics_long, x="crop", y="value", hue="metric")
-    plt.xticks(rotation=45, ha='right')
-    plt.ylim(0,1)
-    plt.title("Per-Crop Binary Suitability Metrics")
-    plt.tight_layout()
-    plt.savefig(save_path)
-    plt.close()
-
-
 def plot_metrics_box(metrics_df, save_path):
-    """Boxplot showing metric distribution across crops."""
-    metric_cols = ["accuracy", "precision", "recall", "f1_score", "roc_auc", "pr_auc"]
-    metrics_numeric = metrics_df[["crop"] + metric_cols]
-
-    metrics_long = metrics_numeric.melt(id_vars="crop", var_name="metric", value_name="value")
-    
+    """Boxplot showing distribution of key metrics across crops."""
+    metric_cols = ["balanced_accuracy", "precision", "recall", "f1_score"]
+    metrics_long = metrics_df.melt(id_vars="crop", value_vars=metric_cols,
+                                   var_name="metric", value_name="value")
     plt.figure(figsize=(8,6))
     sns.boxplot(data=metrics_long, x="metric", y="value")
     plt.ylim(0,1)
-    plt.title("Distribution of Metrics Across Crops")
+    plt.title("Distribution of Binary Crop Suitability Metrics Across Crops")
     plt.tight_layout()
     plt.savefig(save_path)
     plt.close()
@@ -127,8 +106,8 @@ print(f"Unique crops: {df['label'].nunique()}")
 summary = []
 
 for crop in sorted(df['label'].unique()):
-    print(f"\nTraining binary suitability model for: {crop}")
-
+    # ... (training code remains the same, but WITHOUT print statements)
+    
     df_binary = df.copy()
     df_binary['target'] = (df_binary['label'] == crop).astype(int)
 
@@ -153,33 +132,20 @@ for crop in sorted(df['label'].unique()):
     # EVALUATION
     # ===============================
     y_pred = model.predict(X_test)
-    y_prob = model.predict_proba(X_test)[:,1]
 
     metrics = {
         "crop": crop,
-        "accuracy": accuracy_score(y_test, y_pred),
+        "balanced_accuracy": balanced_accuracy_score(y_test, y_pred),
         "precision": precision_score(y_test, y_pred, zero_division=0),
         "recall": recall_score(y_test, y_pred, zero_division=0),
-        "f1_score": f1_score(y_test, y_pred, zero_division=0),
-        "roc_auc": roc_auc_score(y_test, y_prob),
-        "pr_auc": average_precision_score(y_test, y_prob),
-        "positive_samples": int(y.sum()),
-        "negative_samples": int(len(y) - y.sum())
+        "f1_score": f1_score(y_test, y_pred, zero_division=0)
     }
 
-    # Save confusion matrix PNG
+    # Save confusion matrix PNG (silently)
     cm_path = plot_confusion_matrix_png(y_test, y_pred, crop, CONF_MATRIX_DIR)
     metrics["confusion_matrix_png"] = cm_path
 
-    print(
-        f"Acc: {metrics['accuracy']:.3f} | "
-        f"Prec: {metrics['precision']:.3f} | "
-        f"Rec: {metrics['recall']:.3f} | "
-        f"F1: {metrics['f1_score']:.3f} | "
-        f"PR-AUC: {metrics['pr_auc']:.3f}"
-    )
-
-    # Save model artifact
+    # Save model artifact (silently)
     artifact = {
         "crop": crop,
         "model": model,
@@ -195,22 +161,26 @@ for crop in sorted(df['label'].unique()):
     summary.append(metrics)
 
 # ==========================================================
-# SAVE SUMMARY JSON
+# CREATE AND PRINT ONLY THE VISUALIZATION DATA
 # ==========================================================
 summary_df = pd.DataFrame(summary)
+
+print("=" * 60)
+print("DATA USED TO VISUALIZE THE CHART (summary_df):")
+print("=" * 60)
+print("\nDataFrame Structure:")
+print(f"Rows: {len(summary_df)} (one per crop)")
+print(f"Columns: {list(summary_df.columns)}")
+print("\nFirst 5 rows of the data:")
+print(summary_df.head())
+print("\nStatistical Summary of Metrics:")
+print(summary_df[['balanced_accuracy', 'precision', 'recall', 'f1_score']].describe())
+print("=" * 60)
+
+# The rest of the code for saving JSON and creating the plot continues...
 summary_path = os.path.join(MODEL_DIR, "binary_training_summary.json")
 summary_df.to_json(summary_path, orient="records", indent=2)
-print(f"\n✓ Summary saved → {summary_path}")
-
-# ==========================================================
-# AGGREGATED VISUALIZATIONS
-# ==========================================================
-bar_plot_path = os.path.join(METRICS_PLOT_DIR, "metrics_per_crop.png")
-plot_metrics_bar(summary_df, bar_plot_path)
-print(f"✓ Per-crop metrics bar plot saved → {bar_plot_path}")
 
 box_plot_path = os.path.join(METRICS_PLOT_DIR, "metrics_distribution.png")
 plot_metrics_box(summary_df, box_plot_path)
-print(f"✓ Metrics distribution boxplot saved → {box_plot_path}")
-
-print("\nBINARY SUITABILITY TRAINING COMPLETE")
+print(f"✓ Boxplot saved → {box_plot_path}")

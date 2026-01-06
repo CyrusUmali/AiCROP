@@ -469,6 +469,17 @@ for name, model in models.items():
         )
         print(f"  ✓ Decision tree visualization saved to {dot_file_path}")
 
+
+
+
+
+
+
+
+
+
+        
+
 # ============================================================================
 # VISUALIZATION 4: Model Performance Comparison
 # ============================================================================
@@ -500,6 +511,87 @@ if CREATE_VISUALIZATIONS:
     plt.tight_layout()
     plt.savefig('visualizations/04_model_comparison.png', dpi=300, bbox_inches='tight')
     print("\n✓ Saved: visualizations/04_model_comparison.png")
+    plt.close()
+
+# ============================================================================
+# CREATE COMPARISON DATAFRAME FOR VISUALIZATION (if not already created)
+# ============================================================================
+if 'comparison_df' not in locals() and 'comparison_df' not in globals():
+    # Create comparison data from metrics
+    comparison_data = []
+    
+    for model_name, model_metrics in metrics.items():
+        # Get metrics that were already calculated
+        has_proba = hasattr(models[model_name], 'predict_proba')
+        
+        # Get Top-K metrics if available
+        top_k_acc = model_metrics.get('top_k_accuracy', {})
+        
+        # Store comparison data
+        model_info = {
+            'Model': model_name,
+            # Primary metrics for recommendation systems
+            'MRR': model_metrics.get('mrr', 0) if has_proba else 0,
+            'Top-1 Acc': top_k_acc.get('top_1', 0) if top_k_acc else 0,
+            'Top-3 Acc': top_k_acc.get('top_3', 0) if top_k_acc else 0,
+            'Top-5 Acc': top_k_acc.get('top_5', 0) if top_k_acc else 0,
+            'Hit Rate@3': top_k_acc.get('top_3', 0) if top_k_acc else 0,  # Same as Top-3 Acc
+            
+            # Basic metrics
+            'Accuracy': model_metrics['accuracy'],
+            'F1-Score': model_metrics['f1_score'],
+            
+            # Model characteristics
+            'Supports Ranking': has_proba,
+            'Type': type(models[model_name]).__name__
+        }
+        
+        comparison_data.append(model_info)
+    
+    # Create comparison DataFrame
+    comparison_df = pd.DataFrame(comparison_data)
+    
+    # Sort by Top-3 Accuracy (most relevant for recommendation)
+    comparison_df = comparison_df.sort_values('Top-3 Acc', ascending=False)
+    
+    print("✓ Created comparison DataFrame for visualization")
+
+# ============================================================================
+# VISUALIZATION: Top-K Model Performance Comparison (Same format as Vis 4)
+# ============================================================================
+if CREATE_VISUALIZATIONS:
+    fig, axes = plt.subplots(2, 2, figsize=(14, 10))
+    
+    # Define Top-K metrics to visualize (in the same 2x2 grid format)
+    metric_names = ['Top-1 Acc', 'Top-3 Acc', 'Top-5 Acc', 'MRR']
+    metric_labels = ['Top-1 Accuracy', 'Top-3 Accuracy', 'Top-5 Accuracy', 'Mean Reciprocal Rank (MRR)']
+    
+    for idx, (metric_key, metric_label) in enumerate(zip(metric_names, metric_labels)):
+        ax = axes[idx // 2, idx % 2]
+        
+        # Get model names from comparison_df (already sorted by Top-3 Acc)
+        model_names = comparison_df['Model'].tolist()
+        values = comparison_df[metric_key].tolist()
+        
+        # Create bars (use consistent colors if you want)
+        bars = ax.bar(model_names, values, alpha=0.7, edgecolor='black')
+        ax.set_ylabel('Score')
+        ax.set_title(f'{metric_label} by Model')
+        ax.set_ylim([0, 1.0])
+        ax.set_xticklabels(model_names, rotation=45, ha='right')
+        
+        # Add value labels on bars
+        for bar, value in zip(bars, values):
+            height = bar.get_height()
+            ax.text(bar.get_x() + bar.get_width()/2., height,
+                    f'{value:.3f}',
+                    ha='center', va='bottom', fontsize=9)
+    
+    plt.suptitle('Top-K Model Performance Comparison for Crop Recommendation', 
+                 fontsize=16, y=1.02)
+    plt.tight_layout()
+    plt.savefig('visualizations/08_topk_model_comparison.png', dpi=300, bbox_inches='tight')
+    print("\n✓ Saved: visualizations/08_topk_model_comparison.png")
     plt.close()
 
 

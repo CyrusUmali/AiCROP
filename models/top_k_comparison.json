@@ -1,0 +1,50 @@
+[
+  {
+    "Model":"Decision Tree",
+    "Accuracy":0.8142857143,
+    "Top-1 Acc":0,
+    "Top-3 Acc":0,
+    "Top-5 Acc":0,
+    "Top-10 Acc":0,
+    "MRR":0.8434300561,
+    "MAP":0,
+    "Precision@3":0,
+    "Recall@3":0
+  },
+  {
+    "Model":"Logistic Regression",
+    "Accuracy":0.6038095238,
+    "Top-1 Acc":0,
+    "Top-3 Acc":0,
+    "Top-5 Acc":0,
+    "Top-10 Acc":0,
+    "MRR":0.7412895302,
+    "MAP":0,
+    "Precision@3":0,
+    "Recall@3":0
+  },
+  {
+    "Model":"Random Forest",
+    "Accuracy":0.8352380952,
+    "Top-1 Acc":0,
+    "Top-3 Acc":0,
+    "Top-5 Acc":0,
+    "Top-10 Acc":0,
+    "MRR":0.8963113506,
+    "MAP":0,
+    "Precision@3":0,
+    "Recall@3":0
+  },
+  {
+    "Model":"Xgboost",
+    "Accuracy":0.8295238095,
+    "Top-1 Acc":0,
+    "Top-3 Acc":0,
+    "Top-5 Acc":0,
+    "Top-10 Acc":0,
+    "MRR":0.8945044361,
+    "MAP":0,
+    "Precision@3":0,
+    "Recall@3":0
+  }
+]
