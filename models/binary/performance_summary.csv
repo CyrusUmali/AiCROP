@@ -1,0 +1,4 @@
+Metric,Range,Direction,Mean,Std,Interpretation
+ROC-AUC,0.5-1.0,Higher is better,0.989,0.015,Excellent
+PR-AUC,0-1.0,Higher is better,0.872,0.198,Excellent
+Brier Score,0-1.0,Lower is better,0.007,0.006,Excellent

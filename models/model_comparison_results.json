@@ -1,0 +1,50 @@
+[
+  {
+    "Model":"Random Forest",
+    "MRR":0.8963287214,
+    "MAP":0.8963287214,
+    "Top-3 Acc":0.9495238095,
+    "Top-5 Acc":0.9828571429,
+    "Precision@3":0.3165079365,
+    "Recall@3":0.9495238095,
+    "Hit Rate@3":0.9495238095,
+    "Accuracy":0.8352380952,
+    "F1-Score":0.8320405379,
+    "CV Mean":0.8216326531,
+    "CV Std":0.0066569414,
+    "Supports Ranking":true,
+    "Type":"RandomForestClassifier"
+  },
+  {
+    "Model":"Decision Tree",
+    "MRR":0.8436215167,
+    "MAP":0.8436215167,
+    "Top-3 Acc":0.859047619,
+    "Top-5 Acc":0.8771428571,
+    "Precision@3":0.2863492063,
+    "Recall@3":0.859047619,
+    "Hit Rate@3":0.859047619,
+    "Accuracy":0.8142857143,
+    "F1-Score":0.814785606,
+    "CV Mean":0.7873469388,
+    "CV Std":0.0079983339,
+    "Supports Ranking":true,
+    "Type":"DecisionTreeClassifier"
+  },
+  {
+    "Model":"Logistic Regression",
+    "MRR":0.7412895302,
+    "MAP":0.7412895302,
+    "Top-3 Acc":0.8504761905,
+    "Top-5 Acc":0.9257142857,
+    "Precision@3":0.2834920635,
+    "Recall@3":0.8504761905,
+    "Hit Rate@3":0.8504761905,
+    "Accuracy":0.6038095238,
+    "F1-Score":0.586570503,
+    "CV Mean":0.5734693878,
+    "CV Std":0.0121766807,
+    "Supports Ranking":true,
+    "Type":"LogisticRegression"
+  }
+]

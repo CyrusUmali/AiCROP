@@ -7,7 +7,9 @@ warnings.filterwarnings("ignore")
 # ==========================================================
 # CONFIG
 # ==========================================================
-CSV_PATH = "dataset/SPC-soil-data(orig).csv"
+# CSV_PATH = "dataset/SPC-soil-data(orig).csv"
+# CSV_PATH = "dataset/SPC-soil-data.csv"
+CSV_PATH = "dataset/enhanced_crop_data.csv"
 MODEL_DIR = "models/binary"
 OUTPUT_CSV = "results/spc_rowwise_suitability_results.csv"
 DEBUG_LOG = "results/model_debug_log.txt"

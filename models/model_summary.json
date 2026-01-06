@@ -46,37 +46,76 @@
       "sunlight",
       "soil_temp",
       "soil_moisture"
-    ]
+    ],
+    "train_test_split": {
+      "train_samples": 2450,
+      "test_samples": 1050,
+      "test_percentage": 0.3
+    }
   },
   "model_performance": {
     "Logistic Regression": {
       "accuracy": 0.6038095238095238,
       "precision": 0.6089281727149429,
       "recall": 0.6038095238095238,
-      "f1_score": 0.5865705029535754
+      "f1_score": 0.5865705029535754,
+      "mrr": 0.7412895302300748,
+      "map": 0.7412895302300748,
+      "top_3_accuracy": 0.8504761904761905,
+      "precision@3": 0.283492063492064,
+      "hit_rate@3": 0.8504761904761905,
+      "cv_mean_accuracy": 0.573469387755102,
+      "confidence_gap": 0.17792684620154492,
+      "avg_class_f1": 0.5865705029535753
     },
     "Decision Tree": {
       "accuracy": 0.8142857142857143,
       "precision": 0.8233551422675327,
       "recall": 0.8142857142857143,
-      "f1_score": 0.8147856060482356
+      "f1_score": 0.8147856060482356,
+      "mrr": 0.8436215167376429,
+      "map": 0.8436215167376429,
+      "top_3_accuracy": 0.8590476190476191,
+      "precision@3": 0.2863492063492067,
+      "hit_rate@3": 0.8590476190476191,
+      "cv_mean_accuracy": 0.7873469387755102,
+      "confidence_gap": 0.16819291819291804,
+      "avg_class_f1": 0.8147856060482357
     },
     "Random Forest": {
       "accuracy": 0.8352380952380952,
       "precision": 0.8425462992849998,
       "recall": 0.8352380952380952,
-      "f1_score": 0.8320405378706976
-    },
-    "XGBoost": {
-      "accuracy": 0.8295238095238096,
-      "precision": 0.8359817163757454,
-      "recall": 0.8295238095238096,
-      "f1_score": 0.827137142175604
+      "f1_score": 0.8320405378706976,
+      "mrr": 0.8963287214461254,
+      "map": 0.8963287214461254,
+      "top_3_accuracy": 0.9495238095238095,
+      "precision@3": 0.31650793650793513,
+      "hit_rate@3": 0.9495238095238095,
+      "cv_mean_accuracy": 0.8216326530612245,
+      "confidence_gap": 0.320760788186389,
+      "avg_class_f1": 0.8320405378706976
     }
   },
-  "best_model": "Random Forest",
+  "model_selection_recommendation": {
+    "best_overall_accuracy": "Random Forest",
+    "best_for_ranking_mrr": "Random Forest",
+    "best_for_top3_recommendations": "Random Forest",
+    "best_confidence_calibration": "Random Forest",
+    "recommendation_for_endpoint": "Random Forest",
+    "explanation": "MRR is optimal for recommendation systems where ranking quality matters most"
+  },
+  "ranking_metrics_summary": {
+    "best_mrr_model": "Random Forest",
+    "best_mrr_value": 0.8963287214461254,
+    "best_top3_model": "Random Forest",
+    "best_top3_value": 0.9495238095238095,
+    "average_mrr_across_models": 0.8270799228046144,
+    "average_top3_accuracy": 0.8863492063492063
+  },
   "hyperparameter_tuning_used": false,
   "random_seed": 42,
   "visualizations_created": true,
-  "training_date": "2026-01-04"
+  "training_date": "2026-01-06",
+  "endpoint_usage_note": "Models are used individually with ranking-based recommendations"
 }

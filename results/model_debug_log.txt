@@ -1,6 +1,6 @@
 MODEL CHECK
 ========================================
-Available (36):
+Available (35):
 Ampalaya
 Avocado
 Bamboo
@@ -17,7 +17,6 @@ Gabi
 Ginger
 Ipil Ipil
 Jackfruit
-Kamoteng Baging
 Katuray
 Kulo
 Lanzones
